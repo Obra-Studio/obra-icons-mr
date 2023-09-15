@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="supported-color-schemes" content="light dark">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,YTAS@8..144,137.4,756&display=swap" rel="stylesheet">
+
+	<link rel="icon" media="(prefers-color-scheme:dark)"	href="favicon-i.ico" type="image/x-icon" id="dark-scheme-icon" />
+	<link rel="icon" media="(prefers-color-scheme:light)" href="favicon.ico" type="image/x-icon" id="light-scheme-icon" />
+
+	<script type="text/javascript">
+
+		matcher = window.matchMedia('(prefers-color-scheme: dark)');
+		matcher.addListener(onFaviconUpdate);
+		onFaviconUpdate();
+
+		function onFaviconUpdate() {
+				var lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+				var darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+			if (matcher.matches) {
+					document.head.append(darkSchemeIcon);
+					lightSchemeIcon.remove();
+			} else {
+					document.head.append(lightSchemeIcon);
+					darkSchemeIcon.remove();
+			}
+		}
+
+	</script>
+	<title>Obra Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="logo">
+			Obra studio
+			<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.257/build/spline-viewer.js"></script>
+			<spline-viewer url="https://prod.spline.design/2xO6EIy6jE-A7Mm2/scene.splinecode"></spline-viewer>
+		</div>
+
+		<p class="intro">Crafting great experiences.</p>
+
+		<p>Contact us: <a href="mailto:info@obra.studio">info@obra.studio</a>.</p>
+
+		<p>Obra Studio BV • VAT BE 0783.804.837</p>
+
+	</div>
+
+</body>
+</html>

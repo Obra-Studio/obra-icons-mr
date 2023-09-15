@@ -1,0 +1,5 @@
+<script></script>
+
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.8616 17L17.1384 17C17.5223 17 17.763 16.5853 17.5725 16.2519L10.4341 3.75969C10.2422 3.42378 9.75784 3.42378 9.56589 3.75969L2.42748 16.2519C2.237 16.5853 2.47769 17 2.8616 17Z" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

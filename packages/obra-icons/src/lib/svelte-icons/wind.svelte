@@ -1,0 +1,10 @@
+<script></script>
+
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 10H15C16.3807 10 17.5 8.88071 17.5 7.5V7.5C17.5 6.11929 16.3807 5 15 5V5" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.16667 7.5H8.75001C9.44036 7.5 10 6.94036 10 6.25V6.25C10 5.55964 9.44036 5 8.75001 5V5" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.83333 12.5H13.3333C14.2538 12.5 15 13.2462 15 14.1667V14.1667C15 15.0871 14.2538 15.8333 13.3333 15.8333V15.8333" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 10C16.3807 10 17.5 8.88071 17.5 7.5C17.5 6.11929 16.3807 5 15 5C14.2596 5 13.5944 5.32188 13.1366 5.83333" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.75001 7.5C9.44037 7.5 10 6.94036 10 6.25C10 5.55964 9.44037 5 8.75001 5C8.3798 5 8.04718 5.16094 7.8183 5.41667" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.3333 12.5C14.2538 12.5 15 13.2462 15 14.1667C15 15.0871 14.2538 15.8333 13.3333 15.8333C12.8355 15.8333 12.3887 15.6151 12.0833 15.2691" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

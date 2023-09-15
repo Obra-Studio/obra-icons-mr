@@ -1,0 +1,6 @@
+<script></script>
+
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.3153 6.00978L10.9975 12.3276L7.67227 9.00244L2.68449 13.9902" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.3253 6.00976L17.3155 6.00976L17.3155 9.99998" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
