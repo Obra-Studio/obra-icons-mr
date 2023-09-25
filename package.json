@@ -5,12 +5,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "formatSvelte": "prettier --write --plugin prettier-plugin-svelte **.svelte"
+    "dev:icons": "pnpm --filter obra-icons -r dev",
+    "formatSvelte": "prettier --write --plugin prettier-plugin-svelte **.svelte"
   },
   "engines": {
-      "node": ">=16.14",
-      "pnpm": ">=8.0.0",
-      "npm": "forbidden, use pnpm"
+    "node": ">=16.14",
+    "pnpm": ">=8.0.0",
+    "npm": "forbidden, use pnpm"
   },
   "keywords": [],
   "author": "",
