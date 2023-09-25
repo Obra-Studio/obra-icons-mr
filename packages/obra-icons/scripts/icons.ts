@@ -6,14 +6,6 @@ import { join } from 'desm';
 
 console.time();
 
-declare global {
-	interface ImportMeta {
-		env: {
-			SCRIPTS_FIGMA_API_KEY: string;
-		};
-	}
-}
-
 const figma = ofetch.create({
 	retry: 3,
 	baseURL: 'https://api.figma.com/v1',

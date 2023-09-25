@@ -1,3 +1,12 @@
+declare global {
+	interface ImportMeta {
+		env: {
+			SCRIPTS_FIGMA_API_KEY: string;
+			SCRIPTS_OPENAI_KEY: string;
+		};
+	}
+}
+
 export interface GETImageResponse {
 	err: string | null;
 	images: Record<string, string>;
