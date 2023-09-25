@@ -1,6 +1,0 @@
-<script></script>
-
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10" cy="10" r="7" stroke="black" stroke-width="1.5"/>
-<path d="M6.83994 10.1249L8.48356 12.3337C8.68349 12.6024 9.08588 12.6024 9.28582 12.3337L13.1601 7.1272" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-</svg>

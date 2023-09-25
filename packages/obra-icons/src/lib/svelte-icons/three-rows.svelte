@@ -1,7 +1,0 @@
-<script></script>
-
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="16.6667" y="2.5" width="3.33333" height="13.3333" rx="0.833333" transform="rotate(90 16.6667 2.5)" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="16.6667" y="14.1667" width="3.33333" height="13.3333" rx="0.833333" transform="rotate(90 16.6667 14.1667)" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="16.6667" y="8.33325" width="3.33333" height="13.3333" rx="0.833333" transform="rotate(90 16.6667 8.33325)" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>

@@ -1,8 +1,0 @@
-<script></script>
-
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 10.5L4 10.5M16 10.5L12.5 7M16 10.5L12.5 14" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M16 10.5L4 10.5M16 10.5L12.5 7M16 10.5L12.5 14" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M16 10.5L4 10.5M16 10.5L12.5 7M16 10.5L12.5 14" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M16 10.5L4 10.5M16 10.5L12.5 7M16 10.5L12.5 14" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-</svg>
