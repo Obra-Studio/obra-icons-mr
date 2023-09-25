@@ -1,6 +1,5 @@
 <script>
-
-  import { IconActivity } from '$lib'
+	import { IconActivity } from '$lib';
 </script>
 
 <IconActivity />
