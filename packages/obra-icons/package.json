@@ -11,7 +11,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"generate:icons": "vite-node scripts/icons.ts"
+		"generate:icons": "vite-node --config 'scripts/vite-node.config.ts' scripts/icons.ts"
 	},
 	"exports": {
 		".": {
@@ -53,5 +53,8 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"openai": "^4.10.0"
+	}
 }
