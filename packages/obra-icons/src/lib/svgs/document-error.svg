@@ -1,36 +1,36 @@
 <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
 >
-  <path
-    d="M5 4C5 3.44772 5.44772 3 6 3H14L19 8V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V4Z"
-    stroke="black"
-    stroke-miterlimit="10"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M13 3V9H19"
-    stroke="black"
-    stroke-miterlimit="10"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M14 13L10 17"
-    stroke="black"
-    stroke-miterlimit="10"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M14 17L10 13"
-    stroke="black"
-    stroke-miterlimit="10"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+	<path
+		d="M5 4C5 3.44772 5.44772 3 6 3H14L19 8V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V4Z"
+		stroke="black"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M13 3V9H19"
+		stroke="black"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M14 13L10 17"
+		stroke="black"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M14 17L10 13"
+		stroke="black"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
 </svg>

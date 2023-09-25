@@ -1,28 +1,28 @@
 <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
 >
-  <path
-    d="M8.9998 19.8008L5.9998 19.8008C5.33706 19.8008 4.7998 19.2635 4.7998 18.6008L4.7998 15.6008"
-    stroke="black"
-    stroke-linecap="round"
-  />
-  <path
-    d="M14.3996 19.8008L17.3996 19.8008C18.0624 19.8008 18.5996 19.2635 18.5996 18.6008L18.5996 15.6008"
-    stroke="black"
-    stroke-linecap="round"
-  />
-  <path
-    d="M4.7998 9.00078L4.7998 6.00078C4.7998 5.33804 5.33706 4.80078 5.9998 4.80078L8.9998 4.80078"
-    stroke="black"
-    stroke-linecap="round"
-  />
-  <path
-    d="M18.5996 9.00078L18.5996 6.00078C18.5996 5.33804 18.0624 4.80078 17.3996 4.80078L14.3996 4.80078"
-    stroke="black"
-    stroke-linecap="round"
-  />
+	<path
+		d="M8.9998 19.8008L5.9998 19.8008C5.33706 19.8008 4.7998 19.2635 4.7998 18.6008L4.7998 15.6008"
+		stroke="black"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M14.3996 19.8008L17.3996 19.8008C18.0624 19.8008 18.5996 19.2635 18.5996 18.6008L18.5996 15.6008"
+		stroke="black"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M4.7998 9.00078L4.7998 6.00078C4.7998 5.33804 5.33706 4.80078 5.9998 4.80078L8.9998 4.80078"
+		stroke="black"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M18.5996 9.00078L18.5996 6.00078C18.5996 5.33804 18.0624 4.80078 17.3996 4.80078L14.3996 4.80078"
+		stroke="black"
+		stroke-linecap="round"
+	/>
 </svg>

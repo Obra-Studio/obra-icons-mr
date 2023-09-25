@@ -1,70 +1,71 @@
 <svelte:options namespace="svg" />
+
 <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
 >
-  <path
-    d="M5 18.1406L6.1995 18.1061"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M12 18.1406L19.2 18.0864"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <circle
-    cx="9"
-    cy="18.1406"
-    r="2"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M5 11.9707L13.2 11.9361"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M17.9951 12H19.204"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M5 6L6.1995 5.9655"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M12 6L19.2 5.94576"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <circle
-    cx="9"
-    cy="6"
-    r="2"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <circle
-    cx="15.2002"
-    cy="12.1367"
-    r="2"
-    stroke="black"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+	<path
+		d="M5 18.1406L6.1995 18.1061"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M12 18.1406L19.2 18.0864"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<circle
+		cx="9"
+		cy="18.1406"
+		r="2"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M5 11.9707L13.2 11.9361"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M17.9951 12H19.204"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M5 6L6.1995 5.9655"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M12 6L19.2 5.94576"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<circle
+		cx="9"
+		cy="6"
+		r="2"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<circle
+		cx="15.2002"
+		cy="12.1367"
+		r="2"
+		stroke="black"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
 </svg>
 

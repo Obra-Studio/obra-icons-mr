@@ -1,18 +1,18 @@
 <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
 >
-  <path
-    d="M4.52126 19.2009L10.2 13.801M4.52126 19.2009H8.7639M4.52126 19.2009L4.52126 14.9583"
-    stroke="black"
-    stroke-linecap="round"
-  />
-  <path
-    d="M19.2004 4.52171L13.8004 9.60039M19.2004 4.52171L14.9578 4.52171M19.2004 4.52171L19.2004 8.76435"
-    stroke="black"
-    stroke-linecap="round"
-  />
+	<path
+		d="M4.52126 19.2009L10.2 13.801M4.52126 19.2009H8.7639M4.52126 19.2009L4.52126 14.9583"
+		stroke="black"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M19.2004 4.52171L13.8004 9.60039M19.2004 4.52171L14.9578 4.52171M19.2004 4.52171L19.2004 8.76435"
+		stroke="black"
+		stroke-linecap="round"
+	/>
 </svg>
