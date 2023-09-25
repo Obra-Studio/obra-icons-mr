@@ -1,0 +1,14 @@
+<svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M7.99414 6H8.00614" stroke="#FF0000" stroke-linecap="round" />
+  <path d="M15.9941 6H16.0061" stroke="#FF0000" stroke-linecap="round" />
+  <path d="M7.99414 12H8.00614" stroke="#FF0000" stroke-linecap="round" />
+  <path d="M15.9941 12H16.0061" stroke="#FF0000" stroke-linecap="round" />
+  <path d="M7.99414 18H8.00614" stroke="#FF0000" stroke-linecap="round" />
+  <path d="M15.9941 18H16.0061" stroke="#FF0000" stroke-linecap="round" />
+</svg>
