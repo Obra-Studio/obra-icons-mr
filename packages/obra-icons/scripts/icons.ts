@@ -1,5 +1,5 @@
 import type { GETImageResponse, GETNodesResponse } from './types.d';
-import { writeFile, readFile, mkdir, rm } from 'node:fs/promises';
+import { writeFile, mkdir, rm } from 'node:fs/promises';
 import * as prettier from 'prettier';
 import { ofetch } from 'ofetch';
 import { join } from 'desm';
@@ -24,7 +24,7 @@ const figma = ofetch.create({
 
 //? Configure exports
 const EXPORTS_FILE = join(import.meta.url, '../src/lib/index.ts');
-const EXPORTS_REL = './icons'
+const EXPORTS_REL = './icons';
 
 //? Configure output directories
 const SVELTE_OUT_DIR = join(import.meta.url, '../src/lib/icons');
@@ -139,7 +139,7 @@ for (const { svg, name } of icons) {
 	await writeFile(
 		`${SVELTE_OUT_DIR}/${pascal_name}.svelte`,
 		svelte_component,
-		'utf-8'
+		'utf-8',
 	);
 }
 
@@ -147,8 +147,8 @@ console.log('Generating exports');
 
 const export_statements = icons.map(({ name }) => {
 	const pascal_name = icon_name_to_pascal(name);
-	return `export { default as ${pascal_name} } from '${EXPORTS_REL}/${pascal_name}.svelte';`
-})
+	return `export { default as ${pascal_name} } from '${EXPORTS_REL}/${pascal_name}.svelte';`;
+});
 
 await writeFile(EXPORTS_FILE, export_statements.join('\n'), 'utf-8');
 
