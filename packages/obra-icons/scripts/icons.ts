@@ -31,8 +31,9 @@ const SVELTE_OUT_DIR = join(import.meta.url, '../src/lib/icons');
 const SVG_OUT_DIR = join(import.meta.url, '../src/lib/svgs');
 
 //? Configure figma file and frame locations
-const FILE_ID = 'tC7ggQc0GO5RuqOchuIkCZ';
-const NODE_ID = '2216:16';
+// todo update
+const FILE_ID = '';
+const NODE_ID = '';
 
 console.log('Cleaning Output Directories');
 
