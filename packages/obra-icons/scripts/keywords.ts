@@ -25,8 +25,6 @@ console.log('Generating keywords');
 //? Map the keywords icon_name:keywords
 const keywords_map = new Map<string, string[]>();
 
-let i = 0;
-
 //? Generate the keywords map
 for (const name of icon_names) {
 	console.log(`  Generating keywords for icon "${name}"`);
