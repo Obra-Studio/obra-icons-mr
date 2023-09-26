@@ -2,6 +2,8 @@ import { KEYWORDS_FILE, SVG_OUT_DIR } from './paths';
 import { writeFile, readdir } from 'fs/promises';
 import { basename } from 'path';
 import OpenAI from 'openai';
+// thanks typescript
+import './types.d';
 
 console.time('generate keywords');
 
