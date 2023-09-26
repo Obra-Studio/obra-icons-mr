@@ -2,9 +2,15 @@ import type { GETImageResponse, GETNodesResponse } from './types.d';
 import { writeFile, mkdir, rm } from 'node:fs/promises';
 import * as prettier from 'prettier';
 import { ofetch } from 'ofetch';
-import { join } from 'desm';
+import OpenAI from 'openai';
+import {
+	SVG_OUT_DIR,
+	SVELTE_OUT_DIR,
+	EXPORTS_REL,
+	EXPORTS_FILE,
+} from './paths';
 
-console.time();
+console.time('generate icons');
 
 const figma = ofetch.create({
 	retry: 3,
@@ -13,14 +19,6 @@ const figma = ofetch.create({
 		'X-FIGMA-TOKEN': import.meta.env.SCRIPTS_FIGMA_API_KEY,
 	},
 });
-
-//? Configure exports
-const EXPORTS_FILE = join(import.meta.url, '../src/lib/index.ts');
-const EXPORTS_REL = './icons';
-
-//? Configure output directories
-const SVELTE_OUT_DIR = join(import.meta.url, '../src/lib/icons');
-const SVG_OUT_DIR = join(import.meta.url, '../src/lib/svgs');
 
 //? Configure figma file and frame locations
 // todo update
@@ -81,7 +79,8 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 			console.log(`      Downloading Icon (${id}) "${name}"`);
 
 			//? Fetch the svg data from the link
-			const raw_svg = await ofetch(link, { responseType: 'text' });
+			// const raw_svg = await ofetch(link, { responseType: 'text' });
+			const raw_svg = `<svg></svg>`;
 
 			//? Format the svg with prettier
 			const svg = await prettier.format(raw_svg, {
@@ -144,4 +143,4 @@ const export_statements = icons.map(({ name }) => {
 
 await writeFile(EXPORTS_FILE, export_statements.join('\n'), 'utf-8');
 
-console.timeEnd();
+console.timeEnd('generate icons');
