@@ -5,39 +5,118 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M5 7L5.93366 20.0712C5.97104 20.5946 6.40648 21 6.93112 21H17.0689C17.5935 21 18.029 20.5946 18.0663 20.0712L19 7"
-		stroke="black"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M3 7H21"
-		stroke="black"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M8 6V4C8 3.44772 8.44772 3 9 3H15C15.5523 3 16 3.44772 16 4V6"
-		stroke="black"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M10 11V17"
-		stroke="black"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M14 11V17"
-		stroke="black"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g clip-path="url(#clip0_76_5595)">
+		<g filter="url(#filter0_d_76_5595)">
+			<rect width="24" height="24" fill="white" />
+			<circle
+				opacity="0.5"
+				cx="12"
+				cy="12"
+				r="10"
+				stroke="#8C58CD"
+				stroke-width="0.2"
+			/>
+			<rect
+				opacity="0.5"
+				x="4"
+				y="2"
+				width="16"
+				height="20"
+				rx="2"
+				stroke="#8C58CD"
+				stroke-width="0.2"
+			/>
+			<rect
+				opacity="0.5"
+				x="22"
+				y="4"
+				width="16"
+				height="20"
+				rx="2"
+				transform="rotate(90 22 4)"
+				stroke="#8C58CD"
+				stroke-width="0.2"
+			/>
+		</g>
+		<path
+			d="M5 7L5.93366 20.0712C5.97104 20.5946 6.40648 21 6.93112 21H17.0689C17.5935 21 18.029 20.5946 18.0663 20.0712L19 7"
+			stroke="#2EE0CB"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M3 7H21"
+			stroke="#2EE0CB"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M8 6V4C8 3.44772 8.44772 3 9 3H15C15.5523 3 16 3.44772 16 4V6"
+			stroke="#2EE0CB"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M10 11V17"
+			stroke="#00D555"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M14 11V17"
+			stroke="#00D555"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+	<defs>
+		<filter
+			id="filter0_d_76_5595"
+			x="-4"
+			y="0"
+			width="32"
+			height="32"
+			filterUnits="userSpaceOnUse"
+			color-interpolation-filters="sRGB"
+		>
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix
+				in="SourceAlpha"
+				type="matrix"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+				result="hardAlpha"
+			/>
+			<feOffset dy="4" />
+			<feGaussianBlur stdDeviation="2" />
+			<feComposite in2="hardAlpha" operator="out" />
+			<feColorMatrix
+				type="matrix"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+			/>
+			<feBlend
+				mode="normal"
+				in2="BackgroundImageFix"
+				result="effect1_dropShadow_76_5595"
+			/>
+			<feBlend
+				mode="normal"
+				in="SourceGraphic"
+				in2="effect1_dropShadow_76_5595"
+				result="shape"
+			/>
+		</filter>
+		<clipPath id="clip0_76_5595">
+			<rect width="24" height="24" fill="white" />
+		</clipPath>
+	</defs>
 </svg>

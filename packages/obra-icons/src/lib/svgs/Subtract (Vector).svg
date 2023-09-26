@@ -5,8 +5,8 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_76_5823)">
-		<g filter="url(#filter0_d_76_5823)">
+	<g clip-path="url(#clip0_76_4468)">
+		<g filter="url(#filter0_d_76_4468)">
 			<rect width="24" height="24" fill="white" />
 			<circle
 				opacity="0.5"
@@ -39,33 +39,15 @@
 			/>
 		</g>
 		<path
-			d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-			stroke="#504DCB"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			d="M12 17L12 7"
+			d="M17.1 12L5.70001 12"
 			stroke="#00D555"
 			stroke-width="2"
-			stroke-miterlimit="10"
 			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			d="M8 11L12 7L16 11"
-			stroke="#9D9929"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 	</g>
 	<defs>
 		<filter
-			id="filter0_d_76_5823"
+			id="filter0_d_76_4468"
 			x="-4"
 			y="0"
 			width="32"
@@ -90,16 +72,16 @@
 			<feBlend
 				mode="normal"
 				in2="BackgroundImageFix"
-				result="effect1_dropShadow_76_5823"
+				result="effect1_dropShadow_76_4468"
 			/>
 			<feBlend
 				mode="normal"
 				in="SourceGraphic"
-				in2="effect1_dropShadow_76_5823"
+				in2="effect1_dropShadow_76_4468"
 				result="shape"
 			/>
 		</filter>
-		<clipPath id="clip0_76_5823">
+		<clipPath id="clip0_76_4468">
 			<rect width="24" height="24" fill="white" />
 		</clipPath>
 	</defs>

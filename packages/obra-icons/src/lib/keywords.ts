@@ -1,19 +1,27 @@
 //prettier-ignore
 export default {
+  'Subtract (Vector)': [
+    'minus',
+    'deduct',
+    'remove',
+    'decrease',
+    'less',
+    'take away'
+  ],
   'activity': [
     'action',
     'movement',
     'motion',
-    'exercise',
-    'work',
-    'task'
+    'operation',
+    'process',
+    'work'
   ],
   'add': [
     'plus',
     'increase',
-    'more',
-    'insert',
     'append',
+    'insert',
+    'join',
     'include'
   ],
   'airplay': [
@@ -43,17 +51,16 @@ export default {
   'align-left': [
     'justify',
     'format',
+    'indent',
     'order',
     'arrange',
-    'sequence',
-    'line-up'
+    'organize'
   ],
   'align-right': [
     'justify-right',
     'right-alignment',
-    'right-justify',
     'format-right',
-    'right-format',
+    'right-justify',
     'right-align'
   ],
   'archive': [
@@ -83,10 +90,10 @@ export default {
   'arrow-left-up': [
     'back',
     'return',
-    'previous',
     'upward',
-    'diagonal',
-    'reverse'
+    'previous',
+    'reverse',
+    'ascend'
   ],
   'arrow-left': [
     'back',
@@ -97,19 +104,19 @@ export default {
     'undo'
   ],
   'arrow-right-down': [
+    'diagonal',
     'direction',
     'pointer',
     'indicator',
     'downward',
-    'rightward',
-    'navigate'
+    'rightward'
   ],
   'arrow-right-up': [
     'diagonal',
     'direction',
     'pointer',
     'upward',
-    'northeast',
+    'rightward',
     'indicator'
   ],
   'arrow-right': [
@@ -125,8 +132,8 @@ export default {
     'rise',
     'elevate',
     'upward',
-    'increase',
-    'boost'
+    'climb',
+    'soar'
   ],
   'attachment': [
     'clip',
@@ -180,8 +187,8 @@ export default {
     'invoices',
     'payments',
     'receipts',
-    'dues',
-    'charges'
+    'charges',
+    'expenses'
   ],
   'bluetooth': [
     'wireless',
@@ -205,14 +212,14 @@ export default {
     'thick',
     'emphasized',
     'dark',
-    'intense'
+    'highlighted'
   ],
   'book-open': [
-    'literature',
     'reading',
+    'literature',
+    'novel',
     'textbook',
     'manual',
-    'novel',
     'guide'
   ],
   'book': [
@@ -256,19 +263,19 @@ export default {
     'suitcase'
   ],
   'calendar': [
-    'schedule',
     'date',
+    'schedule',
     'planner',
     'diary',
     'agenda',
-    'timetable'
+    'timeline'
   ],
   'call': [
     'phone',
     'dial',
     'ring',
-    'telephone',
     'contact',
+    'talk',
     'communicate'
   ],
   'camera': [
@@ -279,61 +286,13 @@ export default {
     'photo',
     'capture'
   ],
-  'caret-down': [
-    'dropdown',
-    'arrow',
-    'downward',
-    'descend',
-    'point',
-    'lower'
-  ],
-  'caret-left-right': [
-    'toggle',
-    'switch',
-    'swap',
-    'exchange',
-    'flip',
-    'reverse'
-  ],
-  'caret-left': [
-    'arrow',
-    'back',
-    'previous',
-    'left',
-    'return',
-    'backward'
-  ],
-  'caret-right': [
-    'arrow',
-    'pointer',
-    'indicator',
-    'next',
-    'forward',
-    'direction'
-  ],
-  'caret-up-down': [
-    'toggle',
-    'switch',
-    'flip',
-    'invert',
-    'reverse',
-    'swap'
-  ],
-  'caret-up': [
-    'arrow-up',
-    'upward',
-    'ascend',
-    'rise',
-    'elevate',
-    'increase'
-  ],
   'check': [
     'tick',
     'confirm',
     'approve',
     'verify',
     'validate',
-    'okay'
+    'accept'
   ],
   'chevron-double-down': [
     'arrows',
@@ -409,11 +368,11 @@ export default {
   ],
   'circle-arrow-down': [
     'download',
-    'lower',
     'descend',
+    'lower',
     'drop',
-    'downward',
-    'reduce'
+    'fall',
+    'sink'
   ],
   'circle-arrow-left': [
     'back',
@@ -444,7 +403,7 @@ export default {
     'approve',
     'tick',
     'complete',
-    'verify',
+    'verified',
     'accept'
   ],
   'circle-error': [
@@ -473,9 +432,9 @@ export default {
   ],
   'circle-percent': [
     'pie-chart',
-    'percentage',
     'ratio',
     'proportion',
+    'percentage',
     'fraction',
     'division'
   ],
@@ -501,7 +460,7 @@ export default {
     'danger',
     'hazard',
     'alarm',
-    'notice'
+    'risk'
   ],
   'circle': [
     'round',
@@ -520,18 +479,18 @@ export default {
     'task-done'
   ],
   'clipboard-empty': [
-    'notepad',
     'blank',
-    'sheet',
-    'document',
+    'notepad',
     'paper',
-    'form'
+    'document',
+    'sheet',
+    'notebook'
   ],
   'clipboard-error': [
     'mistake',
     'fault',
-    'error',
     'issue',
+    'error',
     'problem',
     'failure'
   ],
@@ -565,10 +524,10 @@ export default {
   'cloud-download-alt': [
     'download',
     'transfer',
+    'save',
     'retrieve',
-    'fetch',
-    'import',
-    'get'
+    'get',
+    'fetch'
   ],
   'cloud-download': [
     'download',
@@ -604,19 +563,19 @@ export default {
   ],
   'cloudy': [
     'overcast',
-    'cloud',
     'gloomy',
+    'cloud',
     'foggy',
-    'misty',
-    'hazy'
+    'hazy',
+    'misty'
   ],
   'code': [
     'programming',
     'script',
     'algorithm',
     'syntax',
-    'binary',
-    'software'
+    'software',
+    'development'
   ],
   'comment': [
     'feedback',
@@ -630,8 +589,8 @@ export default {
     'direction',
     'navigation',
     'guide',
-    'orient',
     'map',
+    'locator',
     'route'
   ],
   'computer': [
@@ -639,7 +598,7 @@ export default {
     'laptop',
     'desktop',
     'machine',
-    'device',
+    'hardware',
     'system'
   ],
   'copy': [
@@ -653,18 +612,18 @@ export default {
   'credit-card': [
     'payment',
     'debit',
-    'visa',
-    'mastercard',
     'transaction',
-    'banking'
+    'banking',
+    'purchase',
+    'finance'
   ],
   'database': [
     'storage',
     'archive',
     'repository',
     'data',
-    'records',
-    'server'
+    'server',
+    'records'
   ],
   'delete-alt': [
     'remove',
@@ -683,20 +642,19 @@ export default {
     'clear'
   ],
   'document-add': [
-    'upload',
-    'insert',
-    'new',
-    'create',
-    'append',
-    'file-add'
+    'file-add',
+    'paper-add',
+    'report-add',
+    'sheet-add',
+    'note-add'
   ],
   'document-check': [
-    'verify',
-    'approve',
-    'confirm',
-    'validate',
-    'certify',
-    'authenticate'
+    'approval',
+    'confirmation',
+    'verification',
+    'validation',
+    'endorsement',
+    'certification'
   ],
   'document-download': [
     'file-download',
@@ -722,19 +680,20 @@ export default {
     'failure'
   ],
   'document-missing': [
-    'lost-file',
-    'missing-paper',
-    'vanished-document',
-    'absent-record',
-    'gone-file'
+    'lost file',
+    'missing paper',
+    'absent record',
+    'vanished document',
+    'disappeared file',
+    'gone document'
   ],
   'document-remove': [
     'delete-file',
-    'erase-document',
-    'discard-paper',
+    'erase-paper',
+    'discard-document',
     'remove-text',
-    'trash-document',
-    'eliminate-file'
+    'eliminate-record',
+    'wipe-file'
   ],
   'document-small': [
     'file',
@@ -764,8 +723,8 @@ export default {
     'modify',
     'change',
     'update',
-    'alter',
     'revise',
+    'alter',
     'correct'
   ],
   'edit': [
@@ -781,7 +740,6 @@ export default {
     'message',
     'correspondence',
     'letter',
-    'inbox',
     'communication'
   ],
   'enter': [
@@ -789,16 +747,16 @@ export default {
     'go',
     'proceed',
     'login',
-    'start',
-    'confirm'
+    'confirm',
+    'access'
   ],
   'equalizer': [
-    'adjuster',
-    'balancer',
-    'controller',
     'levels',
-    'mixer',
-    'tuner'
+    'controls',
+    'settings',
+    'adjustments',
+    'sliders',
+    'balance'
   ],
   'expand': [
     'enlarge',
@@ -806,7 +764,7 @@ export default {
     'extend',
     'widen',
     'grow',
-    'stretch'
+    'amplify'
   ],
   'export': [
     'send',
@@ -844,25 +802,25 @@ export default {
     'sort',
     'sieve',
     'refine',
-    'screen',
     'purify',
+    'screen',
     'cleanse'
   ],
   'filter': [
-    'sieve',
-    'strainer',
-    'purifier',
     'sort',
+    'sieve',
     'refine',
-    'cleanse'
+    'purify',
+    'cleanse',
+    'screen'
   ],
   'flag': [
     'banner',
-    'standard',
-    'ensign',
-    'symbol',
     'emblem',
-    'sign'
+    'symbol',
+    'sign',
+    'marker',
+    'standard'
   ],
   'folder-add': [
     'insert',
@@ -897,20 +855,20 @@ export default {
     'glitch'
   ],
   'folder-remove': [
-    'delete-folder',
-    'erase-folder',
-    'subtract-folder',
-    'remove-directory',
-    'eliminate-folder',
-    'purge-folder'
+    'delete',
+    'erase',
+    'discard',
+    'eliminate',
+    'subtract',
+    'remove'
   ],
   'folder': [
     'directory',
     'file',
     'binder',
     'portfolio',
-    'container',
-    'storage'
+    'document',
+    'container'
   ],
   'fullscreen': [
     'expand',
@@ -939,9 +897,10 @@ export default {
   'heart': [
     'love',
     'affection',
-    'passion',
     'romance',
-    'emotion'
+    'passion',
+    'emotion',
+    'sentiment'
   ],
   'home': [
     'house',
@@ -955,9 +914,9 @@ export default {
     'code',
     'web',
     'markup',
+    'language',
     'internet',
-    'browser',
-    'script'
+    'programming'
   ],
   'image': [
     'picture',
@@ -965,15 +924,15 @@ export default {
     'snapshot',
     'illustration',
     'graphic',
-    'visual'
+    'photograph'
   ],
   'inbox-alt': [
     'mail',
     'messages',
     'correspondence',
-    'emails',
+    'email',
     'letters',
-    'communication'
+    'post'
   ],
   'inbox': [
     'mail',
@@ -1018,9 +977,9 @@ export default {
     'design',
     'format',
     'structure',
+    'arrangement',
     'template',
-    'blueprint',
-    'pattern'
+    'blueprint'
   ],
   'lifebuoy': [
     'lifesaver',
@@ -1033,10 +992,10 @@ export default {
   'link': [
     'connection',
     'chain',
-    'bond',
     'connect',
-    'attach',
-    'join'
+    'bond',
+    'relationship',
+    'network'
   ],
   'list': [
     'catalog',
@@ -1044,7 +1003,7 @@ export default {
     'inventory',
     'register',
     'record',
-    'directory'
+    'roster'
   ],
   'location': [
     'map',
@@ -1055,11 +1014,11 @@ export default {
     'marker'
   ],
   'lock': [
-    'secure',
+    'security',
     'safety',
     'protection',
     'padlock',
-    'security',
+    'secure',
     'key'
   ],
   'log-in': [
@@ -1084,7 +1043,7 @@ export default {
     'post',
     'correspondence',
     'message',
-    'communication'
+    'email'
   ],
   'media': [
     'video',
@@ -1128,11 +1087,11 @@ export default {
   ],
   'message-square': [
     'chat',
+    'text',
     'talk',
     'speech',
     'dialogue',
-    'conversation',
-    'discussion'
+    'conversation'
   ],
   'message': [
     'chat',
@@ -1155,8 +1114,8 @@ export default {
     'smartphone',
     'handset',
     'phone',
-    'cell',
-    'telecommunication'
+    'device',
+    'cell'
   ],
   'monitor': [
     'screen',
@@ -1177,8 +1136,8 @@ export default {
   'multiply': [
     'times',
     'product',
-    'cross',
     'multiplication',
+    'cross',
     'calculate',
     'math'
   ],
@@ -1198,21 +1157,13 @@ export default {
     'map',
     'path'
   ],
-  'next': [
-    'forward',
-    'proceed',
-    'continue',
-    'advance',
-    'ahead',
-    'following'
-  ],
   'note': [
     'memo',
     'message',
     'document',
     'reminder',
     'text',
-    'scribble'
+    'paper'
   ],
   'notification': [
     'alert',
@@ -1220,7 +1171,7 @@ export default {
     'reminder',
     'announcement',
     'warning',
-    'alarm'
+    'signal'
   ],
   'options-horizontal': [
     'settings',
@@ -1244,14 +1195,14 @@ export default {
     'fastener',
     'holder',
     'binder',
-    'clamp'
+    'link'
   ],
   'pause-play': [
     'stop-start',
     'halt-resume',
-    'suspend-continue',
-    'interrupt-proceed',
-    'break-restart'
+    'break-continue',
+    'suspend-proceed',
+    'interrupt-restart'
   ],
   'pen': [
     'writing',
@@ -1266,8 +1217,8 @@ export default {
     'ratio',
     'fraction',
     'proportion',
-    'rate',
-    'portion'
+    'portion',
+    'part'
   ],
   'phone': [
     'call',
@@ -1275,7 +1226,7 @@ export default {
     'mobile',
     'cell',
     'dial',
-    'communicate'
+    'ring'
   ],
   'pie-chart': [
     'graph',
@@ -1291,14 +1242,14 @@ export default {
     'pointer',
     'tag',
     'spot',
-    'map-marker'
+    'place'
   ],
   'play': [
     'start',
     'go',
     'run',
-    'launch',
     'begin',
+    'launch',
     'proceed'
   ],
   'previous': [
@@ -1310,11 +1261,12 @@ export default {
     'last'
   ],
   'print': [
+    'copy',
     'publish',
     'output',
     'imprint',
     'press',
-    'copy'
+    'reproduce'
   ],
   'radio': [
     'broadcast',
@@ -1337,7 +1289,8 @@ export default {
     'update',
     'renew',
     'restart',
-    'reset'
+    'reset',
+    'resync'
   ],
   'remove': [
     'delete',
@@ -1356,8 +1309,8 @@ export default {
     'order'
   ],
   'reorder': [
-    'arrange',
     'sort',
+    'arrange',
     'organize',
     'sequence',
     'reshuffle',
@@ -1367,8 +1320,8 @@ export default {
     'loop',
     'cycle',
     'redo',
-    'reiterate',
     'replay',
+    'refresh',
     'again'
   ],
   'rss': [
@@ -1398,8 +1351,8 @@ export default {
     'choose',
     'pick',
     'option',
-    'selection',
     'choice',
+    'selection',
     'decide'
   ],
   'send-alt': [
@@ -1413,8 +1366,8 @@ export default {
   'send': [
     'dispatch',
     'transmit',
-    'deliver',
     'forward',
+    'deliver',
     'mail',
     'post'
   ],
@@ -1428,16 +1381,16 @@ export default {
   ],
   'settings': [
     'preferences',
-    'controls',
-    'options',
     'configuration',
     'setup',
+    'options',
+    'controls',
     'adjustments'
   ],
   'share-alt': [
     'distribute',
-    'disseminate',
     'spread',
+    'disseminate',
     'propagate',
     'broadcast',
     'divulge'
@@ -1455,8 +1408,8 @@ export default {
     'defenseless',
     'vulnerable',
     'exposed',
-    'unshielded',
-    'unsecured'
+    'unsecured',
+    'unsafe'
   ],
   'shield': [
     'protection',
@@ -1472,7 +1425,7 @@ export default {
     'jumble',
     'scramble',
     'rearrange',
-    'interchange'
+    'stir'
   ],
   'shuffle': [
     'mix',
@@ -1480,14 +1433,13 @@ export default {
     'jumble',
     'scramble',
     'rearrange',
-    'interchange'
+    'stir'
   ],
   'sidebar': [
     'menu',
     'navigation',
     'panel',
     'column',
-    'bar',
     'drawer'
   ],
   'sliders': [
@@ -1509,18 +1461,10 @@ export default {
   'stop': [
     'halt',
     'pause',
-    'end',
     'cease',
-    'finish',
-    'terminate'
-  ],
-  'subtract': [
-    'minus',
-    'remove',
-    'decrease',
-    'less',
-    'deduct',
-    'take away'
+    'end',
+    'block',
+    'freeze'
   ],
   'switch': [
     'toggle',
@@ -1543,7 +1487,8 @@ export default {
     'device',
     'gadget',
     'touchscreen',
-    'ipad'
+    'ipad',
+    'electronic'
   ],
   'tag': [
     'label',
@@ -1559,23 +1504,23 @@ export default {
     'schedule',
     'to-do',
     'plan',
-    'tasks'
+    'duties'
   ],
   'text': [
     'message',
-    'script',
     'words',
+    'script',
     'note',
-    'document',
-    'writing'
+    'writing',
+    'document'
   ],
   'three-rows': [
     'grid',
     'table',
     'matrix',
     'layout',
-    'chart',
-    'columns'
+    'columns',
+    'lines'
   ],
   'transfer': [
     'exchange',
@@ -1597,9 +1542,9 @@ export default {
     'increase',
     'growth',
     'rise',
-    'upward',
     'progress',
-    'ascend'
+    'upward',
+    'improvement'
   ],
   'two-columns': [
     'split',
@@ -1617,20 +1562,12 @@ export default {
     'bifold',
     'dual'
   ],
-  'type': [
-    'text',
-    'font',
-    'keyboard',
-    'write',
-    'input',
-    'letter'
-  ],
   'underline': [
     'underscore',
-    'highlight',
-    'emphasis',
     'line',
-    'mark'
+    'highlight',
+    'mark',
+    'emphasis'
   ],
   'undo': [
     'reverse',
@@ -1661,13 +1598,13 @@ export default {
     'signup',
     'join',
     'enroll',
-    'new-member',
-    'create-account'
+    'create-account',
+    'new-member'
   ],
   'user-arrow-down': [
     'download',
-    'lower',
     'descend',
+    'lower',
     'drop',
     'fall',
     'sink'
@@ -1683,25 +1620,26 @@ export default {
   'user-cross': [
     'exit',
     'logout',
-    'sign-out',
     'leave',
     'remove',
-    'dismiss'
+    'delete',
+    'close'
   ],
   'user-remove': [
     'delete-user',
     'erase-user',
-    'remove-person',
+    'remove-member',
     'subtract-user',
     'eliminate-user',
-    'dismiss-user'
+    'expel-user'
   ],
   'user': [
     'profile',
     'account',
     'person',
     'member',
-    'individual'
+    'individual',
+    'avatar'
   ],
   'video': [
     'clip',
@@ -1714,8 +1652,8 @@ export default {
   'volume-1': [
     'sound',
     'audio',
-    'speaker',
     'noise',
+    'speaker',
     'loudness',
     'amplifier'
   ],
@@ -1733,7 +1671,7 @@ export default {
     'quiet',
     'sound-off',
     'no-sound',
-    'unhearable'
+    'unheard'
   ],
   'volume': [
     'sound',
@@ -1761,19 +1699,18 @@ export default {
   ],
   'wifi': [
     'internet',
-    'network',
     'connection',
+    'network',
     'signal',
     'wireless',
     'hotspot'
   ],
   'zoom-in': [
     'enlarge',
-    'expand',
     'magnify',
+    'expand',
     'increase',
-    'amplify',
-    'boost'
+    'amplify'
   ],
   'zoom-out': [
     'shrink',
@@ -1781,6 +1718,6 @@ export default {
     'minimize',
     'decrease',
     'lessen',
-    'contract'
+    'narrow'
   ]
 };
