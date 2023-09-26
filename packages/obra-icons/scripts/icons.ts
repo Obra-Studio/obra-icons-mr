@@ -78,8 +78,7 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 			console.log(`      Downloading Icon (${id}) "${name}"`);
 
 			//? Fetch the svg data from the link
-			// const raw_svg = await ofetch(link, { responseType: 'text' });
-			const raw_svg = `<svg></svg>`;
+			const raw_svg = await ofetch(link, { responseType: 'text' });
 
 			//? Format the svg with prettier
 			const svg = await prettier.format(raw_svg, {
