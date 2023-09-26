@@ -21,9 +21,8 @@ const figma = ofetch.create({
 });
 
 //? Configure figma file and frame locations
-// todo update
-const FILE_ID = '';
-const NODE_ID = '';
+const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
+const NODE_ID = '78:88310';
 
 console.log('Cleaning Output Directories');
 
@@ -143,4 +142,5 @@ const export_statements = icons.map(({ name }) => {
 
 await writeFile(EXPORTS_FILE, export_statements.join('\n'), 'utf-8');
 
+console.log(`Done - ${icons.length} icons generated`);
 console.timeEnd('generate icons');
