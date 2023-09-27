@@ -29,9 +29,9 @@ const keywords_map = new Map<string, string[]>();
 for (const name of icon_names) {
 	console.log(`Generating keywords for icon "${name}"`);
 
-	//? Ask gpt4 for keywords
+	//? Ask gpt for keywords
 	const completion = await openai.chat.completions.create({
-		model: 'gpt-4',
+		model: 'gpt-3.5-turbo',
 		n: 1,
 		temperature: 0,
 		max_tokens: 50,
@@ -39,11 +39,11 @@ for (const name of icon_names) {
 		messages: [
             //? The prompt
             { role: 'system', content: 'The user will give you an icon name, please provide no more than 6 synonyms. Each synonym should be a simple plain english word, that a user might give when searching for the icon.' },
-            
+
             //? Example
             { role: 'user', content: 'clock' },
             { role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
-            
+
             //? Provide the icon
             { role: 'user', content: name },
         ],
