@@ -5,86 +5,12 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_77_41493)">
-		<g filter="url(#filter0_d_77_41493)">
-			<rect width="24" height="24" fill="white" />
-			<circle
-				opacity="0.5"
-				cx="12"
-				cy="12"
-				r="10"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="4"
-				y="2"
-				width="16"
-				height="20"
-				rx="2"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="22"
-				y="4"
-				width="16"
-				height="20"
-				rx="2"
-				transform="rotate(90 22 4)"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-		</g>
-		<path
-			d="M3.96209 5.13087C6.04489 3.08968 9.42177 3.08968 11.5046 5.13087V5.13087C11.7798 5.40059 12.2202 5.40059 12.4954 5.13087V5.13087C14.5782 3.08968 17.9551 3.08968 20.0379 5.13087C22.1207 7.17205 22.1207 10.4815 20.0379 12.5227L12.8399 19.5768C12.3733 20.0341 11.6267 20.0341 11.1601 19.5768L3.96209 12.5227C1.87929 10.4815 1.87929 7.17205 3.96209 5.13087Z"
-			stroke="#2EE0CB"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-	</g>
-	<defs>
-		<filter
-			id="filter0_d_77_41493"
-			x="-4"
-			y="0"
-			width="32"
-			height="32"
-			filterUnits="userSpaceOnUse"
-			color-interpolation-filters="sRGB"
-		>
-			<feFlood flood-opacity="0" result="BackgroundImageFix" />
-			<feColorMatrix
-				in="SourceAlpha"
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-				result="hardAlpha"
-			/>
-			<feOffset dy="4" />
-			<feGaussianBlur stdDeviation="2" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-			/>
-			<feBlend
-				mode="normal"
-				in2="BackgroundImageFix"
-				result="effect1_dropShadow_77_41493"
-			/>
-			<feBlend
-				mode="normal"
-				in="SourceGraphic"
-				in2="effect1_dropShadow_77_41493"
-				result="shape"
-			/>
-		</filter>
-		<clipPath id="clip0_77_41493">
-			<rect width="24" height="24" fill="white" />
-		</clipPath>
-	</defs>
+	<path
+		d="M3.96209 5.1309C6.04489 3.08971 9.42177 3.08971 11.5046 5.1309L12 5.61643L12.4954 5.1309C14.5782 3.08971 17.9551 3.08971 20.0379 5.1309C22.1207 7.17208 22.1207 10.4815 20.0379 12.5227L12 20.4L3.96209 12.5227C1.87929 10.4815 1.87929 7.17208 3.96209 5.1309Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
 </svg>

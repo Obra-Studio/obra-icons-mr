@@ -5,92 +5,18 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_76_5216)">
-		<g filter="url(#filter0_d_76_5216)">
-			<rect width="24" height="24" fill="white" />
-			<circle
-				opacity="0.5"
-				cx="12"
-				cy="12"
-				r="10"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="4"
-				y="2"
-				width="16"
-				height="20"
-				rx="2"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="22"
-				y="4"
-				width="16"
-				height="20"
-				rx="2"
-				transform="rotate(90 22 4)"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-		</g>
-		<path
-			d="M22.0004 12H16.0004L14.0004 15H10.0004L8.00038 12H2.00038"
-			stroke="#2EE0CB"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			d="M5.45038 5.11L2.00038 12V18C2.00038 18.5304 2.21109 19.0391 2.58616 19.4142C2.96124 19.7893 3.46994 20 4.00038 20H20.0004C20.5308 20 21.0395 19.7893 21.4146 19.4142C21.7897 19.0391 22.0004 18.5304 22.0004 18V12L18.5504 5.11C18.3848 4.77679 18.1296 4.49637 17.8133 4.30028C17.4971 4.10419 17.1325 4.0002 16.7604 4H7.24038C6.86829 4.0002 6.50364 4.10419 6.18742 4.30028C5.8712 4.49637 5.61595 4.77679 5.45038 5.11Z"
-			stroke="#2EE0CB"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-	</g>
-	<defs>
-		<filter
-			id="filter0_d_76_5216"
-			x="-4"
-			y="0"
-			width="32"
-			height="32"
-			filterUnits="userSpaceOnUse"
-			color-interpolation-filters="sRGB"
-		>
-			<feFlood flood-opacity="0" result="BackgroundImageFix" />
-			<feColorMatrix
-				in="SourceAlpha"
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-				result="hardAlpha"
-			/>
-			<feOffset dy="4" />
-			<feGaussianBlur stdDeviation="2" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-			/>
-			<feBlend
-				mode="normal"
-				in2="BackgroundImageFix"
-				result="effect1_dropShadow_76_5216"
-			/>
-			<feBlend
-				mode="normal"
-				in="SourceGraphic"
-				in2="effect1_dropShadow_76_5216"
-				result="shape"
-			/>
-		</filter>
-		<clipPath id="clip0_76_5216">
-			<rect width="24" height="24" fill="white" />
-		</clipPath>
-	</defs>
+	<path
+		d="M22.0004 12H16.0004L14.0004 15H10.0004L8.00038 12H2.00038"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M5.45038 5.11006L2.00038 12.0001V18.0001C2.00038 18.5305 2.21109 19.0392 2.58616 19.4143C2.96124 19.7893 3.46994 20.0001 4.00038 20.0001H20.0004C20.5308 20.0001 21.0395 19.7893 21.4146 19.4143C21.7897 19.0392 22.0004 18.5305 22.0004 18.0001V12.0001L18.5504 5.11006C18.3848 4.77685 18.1296 4.49643 17.8133 4.30034C17.4971 4.10425 17.1325 4.00026 16.7604 4.00006H7.24038C6.86829 4.00026 6.50364 4.10425 6.18742 4.30034C5.8712 4.49643 5.61595 4.77685 5.45038 5.11006Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
 </svg>

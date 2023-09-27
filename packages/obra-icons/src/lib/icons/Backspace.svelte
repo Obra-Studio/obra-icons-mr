@@ -7,103 +7,29 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_76_6010)">
-		<g filter="url(#filter0_d_76_6010)">
-			<rect width="24" height="24" fill="white" />
-			<circle
-				opacity="0.5"
-				cx="12"
-				cy="12"
-				r="10"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="4"
-				y="2"
-				width="16"
-				height="20"
-				rx="2"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="22"
-				y="4"
-				width="16"
-				height="20"
-				rx="2"
-				transform="rotate(90 22 4)"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-		</g>
-		<path
-			d="M3.55782 11.3492L8.70068 5.34921C8.89066 5.12756 9.16801 5 9.45994 5H21V19H9.45994C9.16801 19 8.89066 18.8724 8.70068 18.6508L3.55782 12.6508C3.23683 12.2763 3.23683 11.7237 3.55782 11.3492Z"
-			stroke="#8C58CD"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			d="M17 9L11 15"
-			stroke="#00D555"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			d="M17 15L11 9"
-			stroke="#00D555"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-	</g>
-	<defs>
-		<filter
-			id="filter0_d_76_6010"
-			x="-4"
-			y="0"
-			width="32"
-			height="32"
-			filterUnits="userSpaceOnUse"
-			color-interpolation-filters="sRGB"
-		>
-			<feFlood flood-opacity="0" result="BackgroundImageFix" />
-			<feColorMatrix
-				in="SourceAlpha"
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-				result="hardAlpha"
-			/>
-			<feOffset dy="4" />
-			<feGaussianBlur stdDeviation="2" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-			/>
-			<feBlend
-				mode="normal"
-				in2="BackgroundImageFix"
-				result="effect1_dropShadow_76_6010"
-			/>
-			<feBlend
-				mode="normal"
-				in="SourceGraphic"
-				in2="effect1_dropShadow_76_6010"
-				result="shape"
-			/>
-		</filter>
-		<clipPath id="clip0_76_6010">
-			<rect width="24" height="24" fill="white" />
-		</clipPath>
-	</defs>
+	<path
+		d="M3.55782 11.3492L8.70068 5.34921C8.89066 5.12756 9.16801 5 9.45994 5H21V19H9.45994C9.16801 19 8.89066 18.8724 8.70068 18.6508L3.55782 12.6508C3.23683 12.2763 3.23683 11.7237 3.55782 11.3492Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M17 9L11 15"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M17 15L11 9"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
 </svg>
 

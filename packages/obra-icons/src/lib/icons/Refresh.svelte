@@ -7,95 +7,21 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_76_4776)">
-		<g filter="url(#filter0_d_76_4776)">
-			<rect width="24" height="24" fill="white" />
-			<circle
-				opacity="0.5"
-				cx="12"
-				cy="12"
-				r="10"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="4"
-				y="2"
-				width="16"
-				height="20"
-				rx="2"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-			<rect
-				opacity="0.5"
-				x="22"
-				y="4"
-				width="16"
-				height="20"
-				rx="2"
-				transform="rotate(90 22 4)"
-				stroke="#8C58CD"
-				stroke-width="0.2"
-			/>
-		</g>
-		<path
-			d="M20 13.5C20 17.6 16.6 21 12.5 21C8.4 21 5 17.6 5 13.5C5 9.4 8.4 6 12.5 6H16.5"
-			stroke="#2EE0CB"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			d="M13.5 3L16.5 6L13.5 9"
-			stroke="#2EE0CB"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-	</g>
-	<defs>
-		<filter
-			id="filter0_d_76_4776"
-			x="-4"
-			y="0"
-			width="32"
-			height="32"
-			filterUnits="userSpaceOnUse"
-			color-interpolation-filters="sRGB"
-		>
-			<feFlood flood-opacity="0" result="BackgroundImageFix" />
-			<feColorMatrix
-				in="SourceAlpha"
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-				result="hardAlpha"
-			/>
-			<feOffset dy="4" />
-			<feGaussianBlur stdDeviation="2" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix
-				type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-			/>
-			<feBlend
-				mode="normal"
-				in2="BackgroundImageFix"
-				result="effect1_dropShadow_76_4776"
-			/>
-			<feBlend
-				mode="normal"
-				in="SourceGraphic"
-				in2="effect1_dropShadow_76_4776"
-				result="shape"
-			/>
-		</filter>
-		<clipPath id="clip0_76_4776">
-			<rect width="24" height="24" fill="white" />
-		</clipPath>
-	</defs>
+	<path
+		d="M20 13.5C20 17.6 16.6 21 12.5 21C8.4 21 5 17.6 5 13.5C5 9.4 8.4 6 12.5 6H16.5"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M13.5 3L16.5 6L13.5 9"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
 </svg>
 

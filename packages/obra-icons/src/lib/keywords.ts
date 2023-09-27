@@ -1,1723 +1,1577 @@
 //prettier-ignore
 export default {
-  'Subtract (Vector)': [
-    'minus',
-    'deduct',
-    'remove',
-    'decrease',
-    'less',
-    'take away'
-  ],
   'activity': [
-    'action',
     'movement',
-    'motion',
-    'operation',
-    'process',
-    'work'
+    'action',
+    'exercise',
+    'busyness',
+    'motion'
   ],
   'add': [
     'plus',
+    'sum',
     'increase',
-    'append',
-    'insert',
-    'join',
-    'include'
+    'combine',
+    'append'
   ],
   'airplay': [
     'stream',
-    'broadcast',
-    'cast',
-    'mirror',
-    'project',
-    'display'
+    'wireless',
+    'casting',
+    'mirroring',
+    'screen sharing'
   ],
   'align-center': [
+    'center',
     'middle',
-    'centered',
-    'balance',
-    'equilibrium',
-    'symmetry',
-    'midpoint'
+    'align middle',
+    'horizontal center',
+    'center align',
+    'centered'
   ],
   'align-justify': [
-    'format',
-    'text',
-    'layout',
     'justify',
-    'alignment',
-    'paragraph'
+    'align',
+    'text',
+    'paragraph',
+    'format',
+    'spacing'
   ],
   'align-left': [
+    'left',
     'justify',
-    'format',
-    'indent',
-    'order',
-    'arrange',
-    'organize'
+    'align start',
+    'align text left'
   ],
   'align-right': [
+    'right-align',
     'justify-right',
-    'right-alignment',
-    'format-right',
-    'right-justify',
-    'right-align'
+    'align to the right',
+    'align text right',
+    'align content right'
   ],
   'archive': [
-    'storage',
     'file',
-    'box',
     'folder',
-    'record',
-    'document'
+    'storage',
+    'documents',
+    'backup'
   ],
   'arrow-down': [
-    'download',
+    'down',
+    'downward',
     'descend',
-    'drop',
     'lower',
-    'fall',
-    'sink'
+    'decrease'
   ],
   'arrow-left-down': [
-    'backwards',
-    'decline',
-    'decrease',
-    'downward',
-    'fall',
-    'descend'
+    'left-down',
+    'down-left',
+    'diagonal-left',
+    'southwest',
+    'lower-left',
+    'descending-left'
   ],
   'arrow-left-up': [
-    'back',
-    'return',
-    'upward',
-    'previous',
-    'reverse',
-    'ascend'
+    'up-left',
+    'diagonal-up-left',
+    'left-up',
+    'northwest',
+    'upward-left',
+    'leftward-up'
   ],
   'arrow-left': [
+    'left',
     'back',
     'previous',
     'return',
-    'reverse',
-    'backward',
-    'undo'
+    'backward'
   ],
   'arrow-right-down': [
+    'arrow',
+    'right',
+    'down',
     'diagonal',
     'direction',
-    'pointer',
-    'indicator',
-    'downward',
-    'rightward'
+    'angle'
   ],
   'arrow-right-up': [
-    'diagonal',
-    'direction',
-    'pointer',
-    'upward',
-    'rightward',
-    'indicator'
+    'upward arrow',
+    'right-pointing arrow',
+    'arrow going up and to the right',
+    'diagonal arrow',
+    'arrow pointing northeast'
   ],
   'arrow-right': [
+    'right',
     'forward',
     'next',
-    'proceed',
-    'continue',
-    'advance',
-    'go'
+    'direction',
+    'pointer'
   ],
   'arrow-up': [
-    'ascend',
-    'rise',
-    'elevate',
+    'up',
     'upward',
-    'climb',
-    'soar'
+    'pointing up',
+    'ascending',
+    'increase',
+    'rise'
   ],
   'attachment': [
-    'clip',
-    'paperclip',
-    'link',
     'file',
+    'paperclip',
     'document',
-    'bind'
+    'clip',
+    'link'
   ],
   'backspace': [
     'delete',
-    'remove',
     'erase',
     'undo',
-    'clear',
-    'back'
+    'remove',
+    'clear'
   ],
   'ban': [
     'prohibit',
-    'block',
     'forbid',
-    'stop',
-    'deny',
-    'restrict'
+    'restrict',
+    'block',
+    'bar',
+    'disallow'
   ],
   'bar-chart-alt-2': [
-    'graph',
-    'diagram',
+    'bar graph',
     'statistics',
-    'data',
-    'report',
-    'analysis'
+    'data visualization',
+    'analytics',
+    'chart',
+    'graph'
   ],
   'bar-chart-alt': [
     'graph',
-    'diagram',
     'statistics',
     'data',
-    'report',
-    'analysis'
+    'analytics',
+    'diagram'
   ],
   'bar-chart': [
     'graph',
     'diagram',
     'statistics',
-    'histogram',
-    'plot',
-    'data'
+    'data',
+    'analytics'
   ],
   'bills': [
-    'invoices',
+    'money',
     'payments',
-    'receipts',
-    'charges',
-    'expenses'
+    'invoices',
+    'expenses',
+    'financial',
+    'utilities'
   ],
   'bluetooth': [
     'wireless',
-    'connection',
-    'sync',
-    'pairing',
-    'link',
-    'connectivity'
+    'connectivity',
+    'device',
+    'communication',
+    'transmission'
   ],
   'board': [
-    'plank',
-    'panel',
-    'slab',
-    'table',
-    'sign',
-    'chalkboard'
+    'whiteboard',
+    'blackboard',
+    'chalkboard',
+    'noticeboard',
+    'whiteboard marker',
+    'bulletin board'
   ],
   'bold': [
+    'thick',
     'strong',
     'heavy',
-    'thick',
-    'emphasized',
     'dark',
-    'highlighted'
+    'emphasized'
   ],
   'book-open': [
+    'book',
+    'open book',
     'reading',
     'literature',
-    'novel',
-    'textbook',
-    'manual',
-    'guide'
+    'knowledge',
+    'education'
   ],
   'book': [
     'novel',
-    'textbook',
-    'manual',
-    'guide',
-    'journal',
-    'notebook'
+    'literature',
+    'text',
+    'story',
+    'publication'
   ],
   'bookmark-alt': [
-    'marker',
-    'tag',
-    'label',
-    'tab',
-    'pointer',
-    'note'
+    'bookmark',
+    'favorite',
+    'save',
+    'marker'
   ],
   'bookmark': [
     'marker',
-    'tag',
+    'flag',
     'label',
-    'tab',
-    'pointer',
-    'note'
+    'tag',
+    'pointer'
   ],
   'box': [
-    'crate',
     'container',
     'package',
-    'parcel',
     'carton',
-    'case'
+    'crate',
+    'bin'
   ],
   'briefcase': [
-    'portfolio',
-    'case',
     'bag',
     'luggage',
+    'portfolio',
     'satchel',
-    'suitcase'
+    'case'
   ],
   'calendar': [
     'date',
     'schedule',
     'planner',
-    'diary',
     'agenda',
-    'timeline'
+    'timetable'
   ],
   'call': [
     'phone',
     'dial',
     'ring',
-    'contact',
-    'talk',
+    'telephone',
     'communicate'
   ],
   'camera': [
-    'photograph',
-    'snapshot',
-    'picture',
-    'image',
     'photo',
-    'capture'
+    'picture',
+    'photography',
+    'snapshot',
+    'image'
   ],
   'check': [
     'tick',
+    'mark',
     'confirm',
-    'approve',
     'verify',
-    'validate',
-    'accept'
+    'approve',
+    'validate'
   ],
   'chevron-double-down': [
-    'arrows',
-    'downward',
-    'double',
-    'descend',
-    'lower',
-    'drop'
+    'arrow',
+    'down',
+    'double arrow',
+    'expand',
+    'collapse'
   ],
   'chevron-double-left': [
-    'back',
-    'previous',
-    'rewind',
-    'return',
-    'reverse',
-    'backward'
+    'double arrow',
+    'back arrow',
+    'left arrow',
+    'double left arrow',
+    'previous arrow'
   ],
   'chevron-double-right': [
-    'arrows',
+    'double arrow',
+    'right arrow',
     'forward',
     'next',
-    'proceed',
-    'advance',
-    'continue'
+    'navigate',
+    'go'
   ],
   'chevron-double-up': [
-    'arrows',
-    'upward',
+    'arrow',
+    'up',
     'double',
-    'increase',
-    'elevate',
-    'ascend'
+    'top',
+    'direction',
+    'point'
   ],
   'chevron-down': [
-    'arrow-down',
-    'dropdown',
-    'downward',
-    'descend',
-    'lower',
-    'fall'
+    'arrow down',
+    'downward arrow',
+    'triangle down',
+    'pointing down'
   ],
   'chevron-left': [
     'back',
+    'arrow',
     'previous',
-    'arrow-left',
-    'return',
-    'backward',
-    'navigate-left'
+    'left arrow',
+    'backward'
   ],
   'chevron-right': [
     'arrow',
-    'next',
     'forward',
-    'proceed',
-    'continue',
-    'advance'
+    'next',
+    'right arrow',
+    'direction',
+    'navigate'
   ],
   'chevron-up': [
     'arrow-up',
     'upward',
-    'ascend',
-    'rise',
-    'elevate',
-    'increase'
+    'triangle-up',
+    'point-up'
   ],
   'circle-add': [
+    'add',
     'plus',
     'create',
     'new',
-    'insert',
-    'addition',
     'append'
   ],
   'circle-arrow-down': [
-    'download',
-    'descend',
-    'lower',
-    'drop',
-    'fall',
-    'sink'
+    'down arrow',
+    'circle down',
+    'arrow pointing down',
+    'circle pointing down',
+    'arrow down',
+    'circle down arrow'
   ],
   'circle-arrow-left': [
     'back',
     'previous',
     'return',
-    'undo',
-    'rewind',
-    'reverse'
+    'reverse',
+    'counter-clockwise'
   ],
   'circle-arrow-right': [
-    'forward',
     'next',
-    'proceed',
-    'continue',
-    'advance',
-    'go'
+    'forward',
+    'right arrow',
+    'circle arrow',
+    'rotate',
+    'turn'
   ],
   'circle-arrow-up': [
-    'upload',
-    'elevate',
-    'ascend',
-    'rise',
-    'lift',
-    'increase'
+    'rotate',
+    'upward',
+    'arrow',
+    'circle',
+    'direction',
+    'spin'
   ],
   'circle-check': [
     'confirm',
     'approve',
     'tick',
-    'complete',
-    'verified',
-    'accept'
+    'validate',
+    'verify'
   ],
   'circle-error': [
+    'error',
     'warning',
     'alert',
-    'caution',
-    'danger',
-    'error',
-    'problem'
+    'problem',
+    'issue',
+    'failure'
   ],
   'circle-euro': [
+    'euro',
     'currency',
     'money',
-    'coin',
-    'euro',
-    'cash',
-    'finance'
+    'finance',
+    'european',
+    'euro sign'
   ],
   'circle-info': [
     'information',
     'details',
-    'help',
-    'guide',
-    'instructions',
-    'faq'
+    'explanation',
+    'notification',
+    'alert',
+    'help'
   ],
   'circle-percent': [
-    'pie-chart',
-    'ratio',
-    'proportion',
+    'progress',
+    'completion',
     'percentage',
-    'fraction',
-    'division'
+    'circle chart',
+    'round percentage',
+    'circular progress'
   ],
   'circle-question': [
-    'help',
-    'info',
-    'query',
-    'inquiry',
-    'assistance',
-    'guidance'
+    'unknown',
+    'uncertain',
+    'confused',
+    'mystery',
+    'doubt',
+    'enigma'
   ],
   'circle-subtract': [
+    'minus',
     'remove',
     'delete',
     'subtract',
-    'minus',
-    'cut',
-    'erase'
+    'exclude',
+    'take away'
   ],
   'circle-warning': [
     'alert',
     'caution',
+    'exclamation',
     'danger',
-    'hazard',
-    'alarm',
-    'risk'
+    'notification'
   ],
   'circle': [
     'round',
     'ring',
-    'disk',
     'sphere',
-    'loop',
-    'orb'
+    'disc',
+    'oval'
   ],
   'clipboard-check': [
-    'confirm',
-    'verify',
-    'complete',
-    'approve',
-    'checklist',
-    'task-done'
+    'clipboard',
+    'checkmark',
+    'completed',
+    'verified',
+    'done',
+    'finished'
   ],
   'clipboard-empty': [
-    'blank',
-    'notepad',
-    'paper',
-    'document',
-    'sheet',
-    'notebook'
+    'clipboard',
+    'empty clipboard',
+    'blank clipboard',
+    'clipboard with no content',
+    'clear clipboard',
+    'clipboard without text'
   ],
   'clipboard-error': [
-    'mistake',
-    'fault',
-    'issue',
     'error',
+    'warning',
+    'issue',
     'problem',
+    'alert',
     'failure'
   ],
   'clipboard': [
     'notepad',
-    'memo',
-    'record',
     'document',
-    'sheet',
-    'paper'
+    'writing pad',
+    'clipboard',
+    'notebook'
   ],
   'clock-alt': [
-    'timer',
-    'hourglass',
-    'chronometer',
-    'timepiece',
-    'watch',
-    'alarm'
+    'alternate clock',
+    'alternative clock',
+    'clock variation',
+    'clock alternative',
+    'different clock',
+    'modified clock'
   ],
   'clock': [
-    'timer, hour, minute, second, timepiece, chronometer'
+    'timepiece',
+    'timer',
+    'chronometer',
+    'hourglass',
+    'wristwatch',
+    'pendulum'
   ],
   'close': [
     'exit',
-    'end',
-    'stop',
-    'cancel',
+    'shut',
     'terminate',
+    'end',
     'finish'
   ],
   'cloud-download-alt': [
-    'download',
-    'transfer',
-    'save',
-    'retrieve',
-    'get',
-    'fetch'
+    'cloud download',
+    'cloud arrow down',
+    'download cloud',
+    'cloud with arrow down',
+    'cloud download alternative'
   ],
   'cloud-download': [
     'download',
-    'transfer',
+    'cloud',
+    'save',
     'retrieve',
-    'fetch',
-    'import',
-    'get'
+    'get',
+    'import'
   ],
   'cloud-upload-alt': [
-    'upload',
-    'transfer',
-    'send',
-    'sky',
-    'storage',
-    'internet'
+    'cloud upload',
+    'cloud arrow up',
+    'upload to cloud',
+    'cloud upload icon',
+    'cloud with arrow up',
+    'cloud upload alternative'
   ],
   'cloud-upload': [
     'upload',
-    'transfer',
-    'send',
-    'sky',
-    'storage',
-    'internet'
+    'cloud',
+    'arrow-up',
+    'file transfer',
+    'cloud storage'
   ],
   'cloud': [
     'sky',
     'weather',
-    'fluffy',
-    'overcast',
+    'rain',
     'storm',
-    'fog'
+    'skyline'
   ],
   'cloudy': [
     'overcast',
-    'gloomy',
-    'cloud',
-    'foggy',
-    'hazy',
-    'misty'
+    'partly cloudy',
+    'cloud-covered',
+    'gray',
+    'dull'
   ],
   'code': [
     'programming',
     'script',
-    'algorithm',
-    'syntax',
+    'development',
     'software',
-    'development'
+    'coding'
   ],
   'comment': [
-    'feedback',
     'message',
-    'note',
-    'remark',
-    'discussion',
-    'chat'
+    'chat',
+    'feedback',
+    'reply',
+    'speak',
+    'discuss'
   ],
   'compass': [
     'direction',
     'navigation',
-    'guide',
-    'map',
-    'locator',
-    'route'
+    'magnet',
+    'north',
+    'south',
+    'east',
+    'west'
   ],
   'computer': [
     'PC',
     'laptop',
     'desktop',
     'machine',
-    'hardware',
-    'system'
+    'device'
   ],
   'copy': [
     'duplicate',
     'replicate',
     'clone',
-    'reproduce',
-    'mirror',
-    'double'
+    'imitate',
+    'reproduce'
   ],
   'credit-card': [
     'payment',
-    'debit',
-    'transaction',
-    'banking',
-    'purchase',
-    'finance'
+    'debit card',
+    'bank card',
+    'plastic money',
+    'credit payment',
+    'card payment'
   ],
   'database': [
-    'storage',
-    'archive',
-    'repository',
     'data',
-    'server',
-    'records'
+    'storage',
+    'information',
+    'record',
+    'file'
   ],
   'delete-alt': [
     'remove',
-    'erase',
-    'discard',
     'trash',
-    'eliminate',
-    'wipe'
+    'discard',
+    'erase',
+    'cancel'
   ],
   'delete': [
     'remove',
     'erase',
-    'discard',
     'trash',
-    'eliminate',
-    'clear'
+    'discard',
+    'uninstall'
   ],
   'document-add': [
-    'file-add',
-    'paper-add',
-    'report-add',
-    'sheet-add',
-    'note-add'
+    'add document',
+    'new document',
+    'create document',
+    'upload document',
+    'attach document',
+    'append document'
   ],
   'document-check': [
-    'approval',
-    'confirmation',
-    'verification',
-    'validation',
-    'endorsement',
-    'certification'
+    'verified',
+    'approved',
+    'validated',
+    'confirmed',
+    'certified'
   ],
   'document-download': [
-    'file-download',
-    'paper-download',
-    'text-download',
-    'report-download',
-    'sheet-download'
+    'download',
+    'file',
+    'save',
+    'get',
+    'retrieve',
+    'import'
   ],
   'document-empty': [
     'blank',
-    'paper',
+    'empty',
     'file',
-    'sheet',
-    'note',
+    'paper',
+    'document',
     'page'
   ],
   'document-error': [
-    'mistake',
-    'fault',
+    'error',
+    'warning',
     'issue',
     'problem',
-    'error-report',
+    'alert',
     'failure'
   ],
   'document-missing': [
-    'lost file',
-    'missing paper',
-    'absent record',
-    'vanished document',
-    'disappeared file',
-    'gone document'
+    'missing document',
+    'file not found',
+    'document not found',
+    'absent document',
+    'lost document',
+    'unavailable document'
   ],
   'document-remove': [
-    'delete-file',
-    'erase-paper',
-    'discard-document',
-    'remove-text',
-    'eliminate-record',
-    'wipe-file'
+    'delete',
+    'remove',
+    'discard',
+    'erase',
+    'trash',
+    'cancel'
   ],
   'document-small': [
     'file',
     'paper',
-    'record',
-    'sheet',
     'note',
-    'report'
+    'record',
+    'document',
+    'sheet'
   ],
   'document': [
-    'file',
     'paper',
+    'file',
     'record',
-    'report',
-    'sheet',
-    'form'
+    'text',
+    'note'
   ],
   'download': [
+    'save',
     'transfer',
-    'receive',
-    'get',
-    'fetch',
+    'retrieve',
     'import',
-    'load'
+    'get'
   ],
   'edit-alt': [
+    'edit',
     'modify',
     'change',
     'update',
     'revise',
-    'alter',
-    'correct'
+    'alter'
   ],
   'edit': [
     'modify',
     'change',
-    'update',
     'revise',
+    'update',
     'alter',
-    'correct'
+    'amend'
   ],
   'email': [
     'mail',
     'message',
-    'correspondence',
-    'letter',
+    'inbox',
+    'envelope',
     'communication'
   ],
   'enter': [
+    'input',
+    'type',
     'submit',
-    'go',
-    'proceed',
-    'login',
-    'confirm',
-    'access'
+    'text',
+    'keyboard'
   ],
   'equalizer': [
-    'levels',
-    'controls',
-    'settings',
-    'adjustments',
-    'sliders',
+    'sound',
+    'audio',
+    'music',
+    'volume',
     'balance'
   ],
   'expand': [
     'enlarge',
-    'increase',
+    'stretch',
+    'spread',
     'extend',
     'widen',
-    'grow',
-    'amplify'
+    'inflate'
   ],
   'export': [
-    'send',
+    'save',
+    'download',
     'transfer',
-    'outbound',
-    'deliver',
-    'dispatch',
-    'ship'
+    'share',
+    'send'
   ],
   'external-link': [
-    'outbound',
-    'redirect',
+    'link',
+    'website',
+    'external',
     'hyperlink',
-    'webpage',
-    'url',
-    'browser'
+    'web',
+    'URL'
   ],
   'eye': [
-    'vision',
     'sight',
-    'view',
+    'vision',
+    'gaze',
     'look',
-    'see',
-    'observe'
+    'peep'
   ],
   'favorite': [
     'like',
-    'heart',
     'love',
-    'bookmark',
-    'star',
-    'preferred'
+    'heart',
+    'preferred',
+    'cherished'
   ],
   'filter-alt': [
+    'filter',
     'sort',
-    'sieve',
     'refine',
-    'purify',
-    'screen',
-    'cleanse'
+    'adjust',
+    'modify'
   ],
   'filter': [
     'sort',
-    'sieve',
     'refine',
-    'purify',
-    'cleanse',
-    'screen'
+    'screen',
+    'separate',
+    'organize'
   ],
   'flag': [
     'banner',
-    'emblem',
-    'symbol',
-    'sign',
     'marker',
-    'standard'
+    'pennant',
+    'symbol',
+    'emblem'
   ],
   'folder-add': [
-    'insert',
-    'upload',
-    'directory',
-    'file',
-    'include',
-    'append'
+    'add folder',
+    'create folder',
+    'new folder',
+    'folder plus',
+    'folder with plus sign'
   ],
   'folder-check': [
-    'verified',
-    'approved',
-    'confirmed',
-    'validated',
-    'authorized',
-    'endorsed'
+    'folder with checkmark',
+    'checked folder',
+    'verified folder',
+    'folder tick',
+    'folder completed'
   ],
   'folder-download': [
-    'retrieve',
-    'import',
-    'get',
-    'receive',
-    'pull',
-    'fetch'
+    'download folder',
+    'save folder',
+    'folder with arrow',
+    'folder with down arrow',
+    'folder for downloading',
+    'folder for saving'
   ],
   'folder-error': [
-    'mistake',
-    'issue',
-    'problem',
-    'error',
-    'fault',
-    'glitch'
+    'error folder',
+    'warning folder',
+    'problem folder',
+    'issue folder',
+    'alert folder'
   ],
   'folder-remove': [
     'delete',
-    'erase',
+    'remove',
+    'trash',
     'discard',
-    'eliminate',
-    'subtract',
-    'remove'
+    'uninstall'
   ],
   'folder': [
     'directory',
     'file',
-    'binder',
-    'portfolio',
     'document',
+    'storage',
     'container'
   ],
   'fullscreen': [
-    'expand',
-    'enlarge',
     'maximize',
+    'enlarge',
+    'expand',
     'zoom',
-    'stretch',
-    'magnify'
+    'screen',
+    'window'
   ],
   'globe': [
     'world',
     'earth',
     'planet',
     'map',
-    'sphere',
-    'atlas'
+    'global'
   ],
   'grid': [
-    'matrix',
     'table',
+    'matrix',
     'layout',
-    'chart',
-    'framework',
-    'pattern'
+    'pattern',
+    'gridiron'
   ],
   'heart': [
     'love',
-    'affection',
-    'romance',
+    'cardio',
     'passion',
-    'emotion',
-    'sentiment'
+    'affection',
+    'emotion'
   ],
   'home': [
     'house',
     'residence',
     'dwelling',
-    'habitat',
     'abode',
-    'property'
+    'domicile'
   ],
   'html': [
-    'code',
     'web',
+    'code',
+    'website',
     'markup',
-    'language',
-    'internet',
     'programming'
   ],
   'image': [
     'picture',
     'photo',
-    'snapshot',
-    'illustration',
     'graphic',
+    'illustration',
     'photograph'
   ],
   'inbox-alt': [
+    'inbox',
     'mail',
     'messages',
-    'correspondence',
     'email',
-    'letters',
-    'post'
+    'notification',
+    'envelope'
   ],
   'inbox': [
     'mail',
     'messages',
     'email',
-    'correspondence',
-    'post',
-    'letters'
+    'mailbox',
+    'communication'
   ],
   'italic': [
     'slanted',
-    'tilted',
     'oblique',
-    'angled',
-    'leaned',
-    'cursive'
+    'sloping',
+    'angled'
   ],
   'kanban': [
     'board',
-    'project',
-    'tasks',
+    'task',
     'workflow',
-    'management',
-    'schedule'
+    'project',
+    'organization'
   ],
   'laptop': [
     'computer',
     'notebook',
-    'macbook',
-    'pc',
-    'netbook',
-    'ultrabook'
+    'portable computer',
+    'laptop computer',
+    'notebook computer'
   ],
   'layers': [
     'stack',
-    'levels',
-    'sheets',
-    'strata',
-    'tiers'
+    'arrange',
+    'overlay',
+    'pile',
+    'group'
   ],
   'layout': [
     'design',
+    'arrangement',
     'format',
     'structure',
-    'arrangement',
-    'template',
-    'blueprint'
+    'organization'
   ],
   'lifebuoy': [
-    'lifesaver',
-    'float',
-    'ring',
-    'rescue',
-    'safety',
-    'survival'
+    'life preserver',
+    'life ring',
+    'safety buoy',
+    'rescue buoy',
+    'flotation device'
   ],
   'link': [
-    'connection',
-    'chain',
     'connect',
-    'bond',
-    'relationship',
-    'network'
+    'attach',
+    'join',
+    'combine',
+    'tie',
+    'bond'
   ],
   'list': [
+    'bullet points',
+    'inventory',
     'catalog',
     'menu',
-    'inventory',
-    'register',
-    'record',
-    'roster'
+    'directory',
+    'index'
   ],
   'location': [
-    'map',
-    'pin',
     'place',
-    'destination',
-    'spot',
-    'marker'
+    'position',
+    'address',
+    'map',
+    'destination'
   ],
   'lock': [
-    'security',
-    'safety',
-    'protection',
-    'padlock',
     'secure',
-    'key'
+    'key',
+    'padlock',
+    'security',
+    'password'
   ],
   'log-in': [
-    'sign-in',
-    'entry',
+    'login',
+    'sign in',
+    'authenticate',
     'access',
     'enter',
-    'join',
-    'start'
+    'connect'
   ],
   'log-out': [
+    'sign out',
+    'logout',
     'exit',
     'leave',
-    'sign-out',
-    'depart',
-    'quit',
-    'escape'
-  ],
-  'mail': [
-    'envelope',
-    'letter',
-    'post',
-    'correspondence',
-    'message',
-    'email'
+    'log off'
   ],
   'media': [
     'video',
+    'music',
     'audio',
-    'multimedia',
-    'broadcast',
-    'stream',
-    'playback'
+    'entertainment',
+    'multimedia'
   ],
   'megaphone': [
-    'speaker',
     'loudspeaker',
-    'horn',
+    'speaker',
+    'amplifier',
     'announcement',
-    'broadcast',
-    'shout'
+    'public address',
+    'bullhorn'
   ],
   'menu': [
     'list',
     'options',
     'navigation',
-    'directory',
-    'catalog',
-    'choices'
+    'hamburger',
+    'dropdown'
   ],
   'message-alt': [
-    'text',
+    'message',
     'chat',
-    'note',
     'communication',
-    'dialogue',
-    'talk'
+    'text',
+    'notification'
   ],
   'message-circle': [
     'chat',
-    'talk',
     'conversation',
-    'discussion',
-    'dialogue',
-    'communication'
+    'messaging',
+    'communication',
+    'talk',
+    'dialogue'
   ],
   'message-square': [
+    'message',
     'chat',
-    'text',
-    'talk',
-    'speech',
-    'dialogue',
-    'conversation'
+    'inbox',
+    'communication',
+    'notification'
   ],
   'message': [
     'chat',
     'text',
-    'note',
     'communication',
-    'dialogue',
-    'talk'
+    'inbox',
+    'notification'
   ],
   'minimize': [
     'reduce',
     'shrink',
-    'lessen',
-    'decrease',
     'downsize',
+    'compact',
     'condense'
-  ],
-  'mobile': [
-    'cellphone',
-    'smartphone',
-    'handset',
-    'phone',
-    'device',
-    'cell'
   ],
   'monitor': [
     'screen',
     'display',
     'computer',
-    'desktop',
-    'television',
-    'TV'
+    'TV',
+    'display screen'
   ],
   'move': [
     'shift',
-    'transfer',
     'relocate',
-    'transport',
-    'drag',
-    'push'
+    'transfer',
+    'adjust',
+    'slide',
+    'drag'
   ],
   'multiply': [
+    'multiply',
     'times',
-    'product',
+    'multiply sign',
     'multiplication',
-    'cross',
-    'calculate',
-    'math'
+    'product',
+    'multiply symbol'
   ],
   'navigation-n': [
-    'compass',
     'direction',
-    'north',
-    'arrow',
+    'map',
     'guide',
-    'map'
+    'compass',
+    'wayfinding'
   ],
   'navigation-ne': [
+    'navigation',
     'direction',
-    'compass',
-    'route',
-    'guide',
     'map',
-    'path'
+    'compass',
+    'wayfinding'
   ],
   'note': [
     'memo',
+    'paper',
     'message',
-    'document',
     'reminder',
-    'text',
-    'paper'
+    'sticky',
+    'pad'
   ],
   'notification': [
     'alert',
     'message',
     'reminder',
-    'announcement',
-    'warning',
-    'signal'
+    'notification bell',
+    'inbox'
   ],
   'options-horizontal': [
     'settings',
-    'preferences',
-    'controls',
-    'adjustments',
-    'configuration',
-    'menu'
+    'menu',
+    'horizontal menu',
+    'horizontal options',
+    'horizontal settings'
   ],
   'options-vertical': [
     'menu',
     'settings',
-    'preferences',
-    'controls',
-    'adjustments',
-    'configuration'
+    'vertical menu',
+    'dropdown',
+    'list',
+    'navigation'
   ],
   'paperclip': [
-    'attachment',
     'clip',
     'fastener',
-    'holder',
     'binder',
-    'link'
+    'attachment',
+    'pin',
+    'clamp'
   ],
   'pause-play': [
-    'stop-start',
-    'halt-resume',
-    'break-continue',
-    'suspend-proceed',
-    'interrupt-restart'
+    'toggle',
+    'switch',
+    'play-pause',
+    'pause-resume',
+    'start-stop'
   ],
   'pen': [
-    'writing',
-    'ink',
-    'quill',
+    'writing utensil',
     'marker',
-    'pencil',
-    'scribe'
+    'ballpoint',
+    'ink pen',
+    'stylus'
   ],
   'percent': [
     'percentage',
-    'ratio',
-    'fraction',
+    'rate',
     'proportion',
-    'portion',
-    'part'
+    'fraction',
+    'ratio'
   ],
   'phone': [
-    'call',
-    'telephone',
     'mobile',
-    'cell',
-    'dial',
-    'ring'
+    'cellphone',
+    'telephone',
+    'smartphone',
+    'device'
   ],
   'pie-chart': [
+    'chart',
     'graph',
     'diagram',
     'statistics',
-    'report',
     'data',
-    'analysis'
+    'visualization'
   ],
   'pin': [
     'marker',
-    'location',
-    'pointer',
-    'tag',
-    'spot',
-    'place'
+    'needle',
+    'point',
+    'thumbtack',
+    'peg'
   ],
   'play': [
     'start',
-    'go',
-    'run',
     'begin',
-    'launch',
-    'proceed'
+    'activate',
+    'commence',
+    'initiate',
+    'launch'
   ],
   'previous': [
     'back',
-    'before',
+    'previous page',
+    'previous button',
+    'last',
     'prior',
-    'preceding',
-    'earlier',
-    'last'
+    'earlier'
   ],
   'print': [
+    'printer',
     'copy',
-    'publish',
-    'output',
-    'imprint',
-    'press',
-    'reproduce'
+    'document',
+    'paper',
+    'output'
   ],
   'radio': [
+    'music',
     'broadcast',
-    'transmitter',
-    'receiver',
-    'tuner',
-    'stereo',
-    'antenna'
-  ],
-  'receipt': [
-    'bill',
-    'invoice',
-    'voucher',
-    'slip',
-    'ticket',
-    'check'
+    'wireless',
+    'tuner'
   ],
   'refresh': [
     'reload',
     'update',
     'renew',
     'restart',
-    'reset',
-    'resync'
+    'sync'
   ],
   'remove': [
     'delete',
     'erase',
-    'discard',
-    'eliminate',
-    'subtract',
-    'clear'
+    'clear',
+    'uninstall',
+    'discard'
   ],
   'reorder-alt': [
-    'arrange',
-    'sort',
-    'organize',
-    'sequence',
     'rearrange',
-    'order'
+    'sort',
+    'shuffle',
+    'reorganize',
+    'switch',
+    'swap'
   ],
   'reorder': [
-    'sort',
     'arrange',
+    'sort',
     'organize',
-    'sequence',
-    'reshuffle',
+    'shuffle',
     'rearrange'
   ],
   'repeat': [
     'loop',
     'cycle',
-    'redo',
     'replay',
-    'refresh',
-    'again'
+    'recurrence',
+    'repetition'
   ],
   'rss': [
-    'feed',
-    'broadcast',
-    'stream',
-    'update',
     'news',
-    'channel'
+    'feed',
+    'syndication',
+    'updates',
+    'articles'
   ],
   'scan': [
-    'examine',
-    'inspect',
-    'review',
     'search',
-    'check',
-    'analyze'
+    'detect',
+    'read',
+    'analyze',
+    'inspect'
   ],
   'search': [
+    'magnifying glass',
     'find',
     'lookup',
-    'explore',
-    'scan',
-    'investigate'
+    'seek',
+    'scan'
   ],
   'select': [
     'choose',
     'pick',
-    'option',
-    'choice',
-    'selection',
-    'decide'
+    'click',
+    'highlight',
+    'opt',
+    'toggle'
   ],
   'send-alt': [
-    'dispatch',
-    'transmit',
-    'forward',
-    'deliver',
-    'post',
-    'mail'
+    'send',
+    'message',
+    'email',
+    'share',
+    'forward'
   ],
   'send': [
-    'dispatch',
-    'transmit',
-    'forward',
-    'deliver',
     'mail',
-    'post'
+    'message',
+    'transmit',
+    'deliver',
+    'forward'
   ],
   'server': [
-    'database',
-    'network',
+    'computer',
     'host',
-    'storage',
-    'cloud',
-    'mainframe'
+    'network',
+    'data',
+    'machine'
   ],
   'settings': [
+    'options',
     'preferences',
     'configuration',
-    'setup',
-    'options',
     'controls',
     'adjustments'
   ],
   'share-alt': [
-    'distribute',
-    'spread',
-    'disseminate',
-    'propagate',
-    'broadcast',
-    'divulge'
+    'share',
+    'social',
+    'network',
+    'media',
+    'communication'
   ],
   'share': [
+    'send',
+    'transfer',
     'distribute',
-    'spread',
-    'disseminate',
-    'divulge',
-    'broadcast',
-    'propagate'
+    'exchange',
+    'collaborate'
+  ],
+  'shield-check': [
+    'verified',
+    'approved',
+    'secure',
+    'protected',
+    'safety',
+    'tick'
   ],
   'shield-off': [
-    'unprotected',
-    'defenseless',
-    'vulnerable',
-    'exposed',
-    'unsecured',
-    'unsafe'
+    'disable',
+    'protection-off',
+    'security-off',
+    'defend-off',
+    'guard-off'
   ],
   'shield': [
     'protection',
-    'armor',
-    'safeguard',
-    'defence',
     'guard',
-    'security'
+    'armor',
+    'defender',
+    'safeguard'
   ],
   'shuffle-alt': [
-    'mix',
+    'shuffle',
     'randomize',
-    'jumble',
-    'scramble',
-    'rearrange',
-    'stir'
+    'mix',
+    'alternate',
+    'switch',
+    'rearrange'
   ],
   'shuffle': [
     'mix',
     'randomize',
-    'jumble',
-    'scramble',
     'rearrange',
-    'stir'
+    'jumble',
+    'scramble'
   ],
   'sidebar': [
     'menu',
     'navigation',
     'panel',
-    'column',
+    'side menu',
     'drawer'
   ],
   'sliders': [
+    'adjust',
     'controls',
-    'adjusters',
-    'levers',
-    'dials',
-    'toggles',
+    'settings',
+    'bars',
     'knobs'
   ],
   'sort': [
     'arrange',
-    'order',
-    'classify',
     'organize',
-    'sequence',
-    'categorize'
+    'order',
+    'categorize',
+    'filter'
   ],
   'stop': [
     'halt',
-    'pause',
     'cease',
     'end',
-    'block',
-    'freeze'
+    'terminate',
+    'pause',
+    'block'
+  ],
+  'subtract': [
+    'minus',
+    'deduct',
+    'take away',
+    'reduce',
+    'decrease'
   ],
   'switch': [
     'toggle',
-    'flip',
-    'change',
-    'shift',
-    'swap',
-    'exchange'
+    'button',
+    'lever',
+    'power',
+    'control'
   ],
   'table': [
     'desk',
-    'counter',
-    'stand',
+    'furniture',
     'surface',
     'workstation',
-    'furniture'
+    'dining',
+    'coffee'
   ],
   'tablet': [
-    'pad',
     'device',
-    'gadget',
-    'touchscreen',
-    'ipad',
-    'electronic'
+    'iPad',
+    'screen',
+    'mobile',
+    'computer'
   ],
   'tag': [
     'label',
-    'sticker',
-    'badge',
     'marker',
-    'ticket',
+    'badge',
+    'sticker',
     'tab'
   ],
   'task-list': [
+    'to-do list',
     'checklist',
     'agenda',
-    'schedule',
-    'to-do',
-    'plan',
-    'duties'
+    'task manager',
+    'task tracker'
   ],
   'text': [
     'message',
-    'words',
-    'script',
-    'note',
+    'chat',
+    'communication',
     'writing',
-    'document'
+    'sms'
   ],
   'three-rows': [
     'grid',
     'table',
-    'matrix',
     'layout',
+    'rows',
     'columns',
-    'lines'
+    'matrix'
   ],
   'transfer': [
-    'exchange',
-    'swap',
-    'shift',
     'move',
-    'trade',
-    'redirect'
+    'send',
+    'copy',
+    'share',
+    'transport'
   ],
   'trending-down': [
-    'decline',
-    'decrease',
-    'drop',
-    'fall',
-    'downtrend',
-    'plummet'
+    'declining',
+    'decreasing',
+    'falling',
+    'downward',
+    'slumping'
   ],
   'trending-up': [
-    'increase',
     'growth',
-    'rise',
-    'progress',
+    'rising',
+    'increasing',
     'upward',
-    'improvement'
+    'progress',
+    'popular'
   ],
   'two-columns': [
-    'split',
-    'dual',
-    'pair',
-    'double',
-    'bi-column',
-    'twin'
+    'grid',
+    'layout',
+    'table',
+    'columns',
+    'side by side'
   ],
   'two-rows': [
-    'double',
-    'pair',
-    'twin',
-    'duo',
-    'bifold',
-    'dual'
+    'double rows',
+    'dual rows',
+    'pair of rows',
+    'two lines',
+    'two columns'
   ],
   'underline': [
-    'underscore',
     'line',
+    'marker',
+    'underscore',
     'highlight',
-    'mark',
     'emphasis'
   ],
   'undo': [
     'reverse',
-    'back',
-    'rewind',
-    'cancel',
     'revert',
-    'backspace'
+    'cancel',
+    'backtrack',
+    'revoke'
   ],
   'unlock': [
     'open',
     'access',
-    'unfasten',
     'release',
     'unbolt',
-    'unbar'
+    'unseal'
   ],
   'upload': [
-    'transfer',
-    'send',
-    'load',
-    'deliver',
-    'submit',
-    'dispatch'
+    'upload',
+    'uploading',
+    'upload icon',
+    'file upload',
+    'cloud upload',
+    'arrow up'
   ],
   'user-add': [
-    'register',
-    'signup',
-    'join',
-    'enroll',
-    'create-account',
-    'new-member'
+    'add user',
+    'create user',
+    'new user',
+    'register user',
+    'user plus',
+    'user with plus sign'
   ],
   'user-arrow-down': [
-    'download',
-    'descend',
-    'lower',
-    'drop',
-    'fall',
-    'sink'
+    'down arrow',
+    'arrow pointing down',
+    'arrow facing downwards',
+    'arrow pointing towards bottom',
+    'user arrow pointing down',
+    'arrow indicating downward direction'
   ],
   'user-check': [
-    'approval',
-    'confirmation',
-    'verification',
-    'authentication',
-    'validation',
-    'endorsement'
+    'user verification',
+    'user validation',
+    'user authentication',
+    'user confirmation',
+    'user approval'
   ],
   'user-cross': [
-    'exit',
-    'logout',
-    'leave',
-    'remove',
+    'cancel',
     'delete',
-    'close'
+    'remove',
+    'close',
+    'exit'
   ],
   'user-remove': [
-    'delete-user',
-    'erase-user',
-    'remove-member',
-    'subtract-user',
-    'eliminate-user',
-    'expel-user'
+    'delete',
+    'remove',
+    'erase',
+    'discard',
+    'uninstall'
   ],
   'user': [
-    'profile',
-    'account',
     'person',
-    'member',
-    'individual',
-    'avatar'
+    'profile',
+    'avatar',
+    'account',
+    'customer'
   ],
   'video': [
-    'clip',
-    'footage',
-    'recording',
     'movie',
     'film',
-    'playback'
+    'clip',
+    'record',
+    'play'
   ],
   'volume-1': [
     'sound',
     'audio',
-    'noise',
     'speaker',
-    'loudness',
-    'amplifier'
+    'mute',
+    'loudness'
   ],
   'volume-2': [
     'sound',
     'audio',
-    'loudness',
-    'noise',
-    'speaker',
-    'amplifier'
+    'level',
+    'mute',
+    'speaker'
   ],
   'volume-x': [
     'mute',
+    'sound off',
+    'no sound',
     'silence',
-    'quiet',
-    'sound-off',
-    'no-sound',
-    'unheard'
+    'audio off'
   ],
   'volume': [
     'sound',
-    'loudness',
     'audio',
-    'noise',
-    'speaker',
-    'mute'
+    'level',
+    'mute',
+    'speaker'
   ],
   'warning-triangle': [
     'alert',
     'caution',
     'danger',
-    'hazard',
-    'alarm',
-    'risk'
+    'exclamation',
+    'triangle',
+    'hazard'
   ],
   'wifi-off': [
+    'no wifi',
     'disconnected',
     'offline',
-    'no internet',
-    'unplugged',
-    'no signal',
-    'no wifi'
+    'no connection',
+    'wifi disabled'
   ],
   'wifi': [
     'internet',
-    'connection',
-    'network',
-    'signal',
     'wireless',
-    'hotspot'
+    'network',
+    'connection',
+    'signal'
   ],
   'zoom-in': [
-    'enlarge',
     'magnify',
+    'enlarge',
     'expand',
-    'increase',
-    'amplify'
+    'zoom',
+    'close-up'
   ],
   'zoom-out': [
+    'minus',
+    'decrease',
     'shrink',
     'reduce',
-    'minimize',
-    'decrease',
-    'lessen',
-    'narrow'
+    'outward',
+    'minimize'
   ]
 };
