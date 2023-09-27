@@ -9,7 +9,7 @@
 					</h2>
 
 					<div class="justify-content-center button-group">
-						<a class="button inverse" href="#">
+						<a class="button inverse" href="/">
 							<svg
 								width="20"
 								height="20"
@@ -27,7 +27,7 @@
 							<span>Buy on Figma community</span>
 						</a>
 
-						<a class="button inverse" href="#">
+						<a class="button inverse" href="/">
 							<svg
 								width="20"
 								height="20"
