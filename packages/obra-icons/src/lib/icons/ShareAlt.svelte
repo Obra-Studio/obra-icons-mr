@@ -15,14 +15,14 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M8.59 13.51L15.42 17.49"
+		d="M8.59003 13.51L15.42 17.49"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+		d="M18 7.99998C19.6569 7.99998 21 6.65684 21 4.99998C21 3.34313 19.6569 1.99998 18 1.99998C16.3431 1.99998 15 3.34313 15 4.99998C15 6.65684 16.3431 7.99998 18 7.99998Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

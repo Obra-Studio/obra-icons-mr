@@ -24,7 +24,7 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '151:966';
+const NODE_ID = '153:1009';
 
 console.log('Cleaning Output Directories');
 
@@ -138,7 +138,7 @@ console.log('Generating exports');
 
 const export_statements = icons.map(({ name }) => {
 	const pascal_name = icon_name_to_pascal(name);
-	return `export { default as ${pascal_name} } from '${EXPORTS_REL}/${pascal_name}.svelte';`;
+	return `export { default as Icon${pascal_name} } from '${EXPORTS_REL}/${pascal_name}.svelte';`;
 });
 
 await writeFile(EXPORTS_FILE, export_statements.join('\n'), 'utf-8');

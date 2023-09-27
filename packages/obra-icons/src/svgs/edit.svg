@@ -6,7 +6,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M4.00001 20V16L17 3L21 7L8.00001 20H4.00001Z"
+		d="M4 20V16L17 3L21 7L8 20H4Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

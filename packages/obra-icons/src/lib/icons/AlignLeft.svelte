@@ -8,28 +8,28 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M16.9999 10.0001H2.99988"
+		d="M16.9999 10.0001H2.99991"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M20.9999 6H2.99988"
+		d="M20.9999 6H2.99991"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M20.9999 13.9999H2.99988"
+		d="M20.9999 13.9999H2.99991"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M16.9999 18H2.99988"
+		d="M16.9999 18H2.99991"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

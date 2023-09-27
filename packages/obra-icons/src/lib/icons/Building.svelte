@@ -1,0 +1,76 @@
+<svelte:options namespace="svg" />
+
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<rect
+		x="5"
+		y="3"
+		width="14"
+		height="18"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M3 21H21"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<rect
+		x="9.63782"
+		y="7.5"
+		width="0.1"
+		height="0.1"
+		stroke="black"
+		stroke-width="1.5"
+	/>
+	<rect
+		x="9.63782"
+		y="12"
+		width="0.1"
+		height="0.1"
+		stroke="black"
+		stroke-width="1.5"
+	/>
+	<rect
+		x="9.63782"
+		y="16.5"
+		width="0.1"
+		height="0.1"
+		stroke="black"
+		stroke-width="1.5"
+	/>
+	<rect
+		x="14.1495"
+		y="16.5"
+		width="0.1"
+		height="0.1"
+		stroke="black"
+		stroke-width="1.5"
+	/>
+	<rect
+		x="14.1495"
+		y="12.05"
+		width="0.1"
+		height="0.1"
+		stroke="black"
+		stroke-width="1.5"
+	/>
+	<rect
+		x="14.1495"
+		y="7.54999"
+		width="0.1"
+		height="0.1"
+		stroke="black"
+		stroke-width="1.5"
+	/>
+</svg>
+

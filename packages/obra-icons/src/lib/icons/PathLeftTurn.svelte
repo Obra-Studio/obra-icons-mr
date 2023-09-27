@@ -1,0 +1,29 @@
+<svelte:options namespace="svg" />
+
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<path
+		d="M8.13333 5.06667L11.4515 8.38481C11.9201 8.85344 12.6799 8.85344 13.1485 8.38481L16.4667 5.06667"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M4.8 8.40002L8.11814 11.7182C8.58677 12.1868 8.58677 12.9466 8.11814 13.4152L4.8 16.7334"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M8.39999 19.8L19.8 8.40003"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+	/>
+</svg>
+

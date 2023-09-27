@@ -8,14 +8,14 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M4.00012 21V14"
+		d="M4.00009 21V14"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M4.00012 10V3"
+		d="M4.00009 10V3"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -36,7 +36,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M20.0004 21.0001V16.0001"
+		d="M20.0004 21V16"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -50,7 +50,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M1.00012 14H7.00012"
+		d="M1.00009 14H7.00009"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -64,7 +64,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M17.0004 16.0001H23.0004"
+		d="M17.0004 16H23.0004"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

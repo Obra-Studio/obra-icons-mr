@@ -1,0 +1,60 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<path
+		d="M12 7V12"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M18 12H6"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M18 12V17"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M6 12V17"
+		stroke="black"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M14 3H10V7H14V3Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M20 17H16V21H20V17Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M8 17H4V21H8V17Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+</svg>

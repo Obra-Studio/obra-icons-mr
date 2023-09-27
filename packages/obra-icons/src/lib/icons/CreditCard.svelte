@@ -8,16 +8,26 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M19.3636 5.40002H4.63636C3.73262 5.40002 3 6.13875 3 7.05002V16.95C3 17.8613 3.73262 18.6 4.63636 18.6H19.3636C20.2674 18.6 21 17.8613 21 16.95V7.05002C21 6.13875 20.2674 5.40002 19.3636 5.40002Z"
+		d="M20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z"
 		stroke="black"
 		stroke-width="2"
+		stroke-miterlimit="10"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M3 10.2H21"
+		d="M20 5H4C3.44772 5 3 5.44772 3 6V8C3 8.55228 3.44772 9 4 9H20C20.5523 9 21 8.55228 21 8V6C21 5.44772 20.5523 5 20 5Z"
 		stroke="black"
 		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M7 13H11"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>

@@ -15,7 +15,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M10.0001 7H7.00011V16H10.0001V7Z"
+		d="M10.0001 6.99997H7.00011V16H10.0001V6.99997Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

@@ -6,7 +6,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M3 5C3 4.44772 3.44772 4 4 4H20C20.5523 4 21 4.44772 21 5V16C21 16.5523 20.5523 17 20 17H4C3.44772 17 3 16.5523 3 16V5Z"
+		d="M3 4.99997C3 4.44768 3.44772 3.99997 4 3.99997H20C20.5523 3.99997 21 4.44768 21 4.99997V16C21 16.5523 20.5523 17 20 17H4C3.44772 17 3 16.5523 3 16V4.99997Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -14,7 +14,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M21 19.9999L3 19.9999"
+		d="M21 20L3 20"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

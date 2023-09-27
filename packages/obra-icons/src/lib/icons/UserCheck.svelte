@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_151_1900)">
+	<g clip-path="url(#clip0_153_1748)">
 		<path
 			fill-rule="evenodd"
 			clip-rule="evenodd"
@@ -23,7 +23,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath id="clip0_151_1900">
+		<clipPath id="clip0_153_1748">
 			<rect width="24" height="24" fill="white" />
 		</clipPath>
 	</defs>
