@@ -27,7 +27,7 @@ const keywords_map = new Map<string, string[]>();
 
 //? Generate the keywords map
 for (const name of icon_names) {
-	console.log(`  Generating keywords for icon "${name}"`);
+	console.log(`Generating keywords for icon "${name}"`);
 
 	//? Ask gpt4 for keywords
 	const completion = await openai.chat.completions.create({
@@ -74,7 +74,7 @@ const template = `//prettier-ignore
 export default ${keywords_json};
 `;
 
-//? Write they keywords
+//? Write the keywords
 await writeFile(KEYWORDS_FILE, template, 'utf-8');
 
 console.timeEnd('generate keywords');
