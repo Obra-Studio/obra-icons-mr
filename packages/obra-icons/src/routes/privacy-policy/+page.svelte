@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Privacy policy - Obra Icons</title>
+</svelte:head>
+
 <div class="container-small padding-medium margin-0-auto">
 	<div class="vertical-container-xx-large">
 		<div

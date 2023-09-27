@@ -455,6 +455,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Icons - Obra Icons</title>
+</svelte:head>
+
 <div class="responds-to-dark">
 	<div class="bg-dark-grey">
 		<div class="container padding-medium margin-0-auto">

@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Home - Obra Icons</title>
+</svelte:head>
+
 <div class="is-dark">
 	<div class="bg-black">
 		<div class="container padding-medium margin-0-auto">
