@@ -24,9 +24,12 @@
 
 		const result = await search(data.searchEngine, {
 			properties: ['name', 'keywords'],
-			tolerance: 1,
+			tolerance: 2,
 			term: query,
 			limit: 50,
+			sortBy: {
+				property: 'name',
+			},
 		});
 
 		icons = result.hits.map((hit) => hit.document.componentName);
