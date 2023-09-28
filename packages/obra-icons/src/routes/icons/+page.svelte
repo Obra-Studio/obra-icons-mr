@@ -24,11 +24,14 @@
 
 		const result = await search(data.searchDb, {
 			properties: ['name', 'keywords'],
-			tolerance: 2,
+			tolerance: 10,
 			term: query,
 			limit: 50,
 			sortBy: {
 				property: 'name',
+			},
+			boost: {
+				name: 2,
 			},
 		});
 
