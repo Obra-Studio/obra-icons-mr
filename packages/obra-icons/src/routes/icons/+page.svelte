@@ -23,7 +23,10 @@
 		}
 
 		const result = await search(data.searchEngine, {
+			properties: ['name', 'keywords'],
+			tolerance: 1,
 			term: query,
+			limit: 50,
 		});
 
 		icons = result.hits.map((hit) => hit.document.componentName);
