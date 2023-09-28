@@ -11,7 +11,9 @@ export async function load() {
 		},
 	});
 
-	for (const [name, keywords] of Object.entries(iconSearchData)) {
+	const entries = Object.entries(iconSearchData);
+
+	for (const [name, keywords] of entries) {
 		await insert(searchDb, {
 			componentName: iconNamePascal(name),
 			keywords,
@@ -20,6 +22,7 @@ export async function load() {
 	}
 
 	return {
+		iconsCount: entries.length,
 		searchDb,
 	};
 }
