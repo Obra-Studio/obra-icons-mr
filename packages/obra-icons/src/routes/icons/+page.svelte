@@ -22,7 +22,7 @@
 			return;
 		}
 
-		const result = await search(data.searchEngine, {
+		const result = await search(data.searchDb, {
 			properties: ['name', 'keywords'],
 			tolerance: 2,
 			term: query,
