@@ -15,8 +15,23 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
-	<circle cx="12" cy="11.5" r="1.5" fill="black" />
-	<circle cx="16" cy="11.5" r="1.5" fill="black" />
-	<circle cx="8" cy="11.5" r="1.5" fill="black" />
+	<path
+		d="M16 12H16.012"
+		stroke="black"
+		stroke-width="3"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M12 12H12.012"
+		stroke="black"
+		stroke-width="3"
+		stroke-linecap="round"
+	/>
+	<path
+		d="M8 12H8.012"
+		stroke="black"
+		stroke-width="3"
+		stroke-linecap="round"
+	/>
 </svg>
 

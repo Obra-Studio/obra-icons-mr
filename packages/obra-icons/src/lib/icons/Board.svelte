@@ -8,7 +8,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M20 3.99997H15V20H20C20.5523 20 21 19.5523 21 19V4.99997C21 4.44768 20.5523 3.99997 20 3.99997Z"
+		d="M20 4H15V20H20C20.5523 20 21 19.5523 21 19V5C21 4.44772 20.5523 4 20 4Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -16,7 +16,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M15 3.99997H9V20H15V3.99997Z"
+		d="M15 4H9V20H15V4Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -24,7 +24,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M9 3.99997H4C3.44772 3.99997 3 4.44768 3 4.99997V19C3 19.5523 3.44772 20 4 20H9V3.99997Z"
+		d="M9 4H4C3.44772 4 3 4.44772 3 5V19C3 19.5523 3.44772 20 4 20H9V4Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

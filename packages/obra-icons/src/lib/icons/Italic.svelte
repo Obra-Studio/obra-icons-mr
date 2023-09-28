@@ -8,21 +8,21 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M19 4.00006H10"
+		d="M19 4H10"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M14 19.9999H5.00003"
+		d="M14 20H5.00003"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M15 4.00006L9.00005 20.0001"
+		d="M15.0001 4L9.00006 20"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

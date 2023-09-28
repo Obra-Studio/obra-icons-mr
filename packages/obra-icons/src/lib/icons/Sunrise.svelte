@@ -24,7 +24,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M18.364 9.63605L17.6569 10.3432"
+		d="M18.364 9.63599L17.6569 10.3431"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

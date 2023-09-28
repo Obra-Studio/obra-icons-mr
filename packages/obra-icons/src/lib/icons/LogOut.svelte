@@ -16,7 +16,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M17 16L21 12L17 7.99997"
+		d="M17 16L21 12L17 8"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -24,7 +24,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M10 20H5.00003C4.44775 20 4.00003 19.5523 4.00003 19L4.00003 5.00003C4.00003 4.44775 4.44775 4.00003 5.00003 4.00003H10"
+		d="M10 20H5C4.44772 20 4 19.5523 4 19L4 5C4 4.44771 4.44772 4 5 4H10"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

@@ -5,9 +5,9 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_153_1604)">
+	<g clip-path="url(#clip0_187_58547)">
 		<path
-			d="M21.4919 2.70068L15.1279 21.7926L10.1782 14.0144L2.40001 9.06464L21.4919 2.70068Z"
+			d="M21.4919 2.70063L15.1279 21.7925L10.1782 14.0143L2.40001 9.06459L21.4919 2.70063Z"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -15,7 +15,7 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			d="M10.1787 14.0146L21.4924 2.70088"
+			d="M10.1787 14.0146L21.4924 2.70093"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -24,7 +24,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath id="clip0_153_1604">
+		<clipPath id="clip0_187_58547">
 			<rect width="24" height="24" fill="white" />
 		</clipPath>
 	</defs>

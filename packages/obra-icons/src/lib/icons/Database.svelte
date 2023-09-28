@@ -18,7 +18,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M20 9.99997C20 11.6568 16.4183 13 12 13C7.58172 13 4 11.6568 4 9.99997"
+		d="M20 10C20 11.6569 16.4183 13 12 13C7.58172 13 4 11.6569 4 10"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

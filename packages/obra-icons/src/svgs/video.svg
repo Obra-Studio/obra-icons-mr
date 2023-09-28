@@ -6,16 +6,82 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M20.4673 8.15134L15.079 12.0001L20.4673 15.8489V8.15134Z"
+		d="M19 4H5C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4Z"
 		stroke="black"
 		stroke-width="2"
+		stroke-miterlimit="10"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M13.5395 6.61172H5.07225C4.222 6.61172 3.53275 7.30098 3.53275 8.15122V15.8487C3.53275 16.699 4.222 17.3882 5.07225 17.3882H13.5395C14.3898 17.3882 15.079 16.699 15.079 15.8487V8.15122C15.079 7.30098 14.3898 6.61172 13.5395 6.61172Z"
+		d="M19 4H5C4.44772 4 4 4.44772 4 5V11C4 11.5523 4.44772 12 5 12H19C19.5523 12 20 11.5523 20 11V5C20 4.44772 19.5523 4 19 4Z"
 		stroke="black"
 		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M8 4H5C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H8V4Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M8 4H5C4.44772 4 4 4.44772 4 5V7C4 7.55228 4.44772 8 5 8H8V4Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M8 8H4V12H8V8Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M8 12H4V16H8V12Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M19 4H16V20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M19 4H16V7C16 7.55228 16.4477 8 17 8H20V5C20 4.44772 19.5523 4 19 4Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M20 8H16V12H20V8Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M20 12H16V16H20V12Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>

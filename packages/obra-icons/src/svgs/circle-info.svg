@@ -7,13 +7,13 @@
 >
 	<circle cx="12" cy="12" r="9" stroke="black" stroke-width="2" />
 	<path
-		d="M11.9999 16.7121L11.9999 10.6732"
+		d="M11.9999 16.7122L11.9999 10.6733"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 	/>
 	<path
-		d="M12.0029 7.32996H12.0149"
+		d="M12.0029 7.32983H12.0149"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

@@ -8,14 +8,14 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M20.7784 7.21174L13.1969 14.7932L9.20672 10.8029L3.22139 16.7883"
+		d="M20.7784 7.21168L13.197 14.7931L9.20674 10.8029L3.22141 16.7882"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M15.9903 7.21172L20.7786 7.21172L20.7786 12"
+		d="M15.9903 7.21174L20.7786 7.21173L20.7786 12"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

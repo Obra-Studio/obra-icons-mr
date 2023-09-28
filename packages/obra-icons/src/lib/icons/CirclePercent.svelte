@@ -24,13 +24,13 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M14.4879 14.4999H14.4999"
+		d="M14.4879 14.5H14.4999"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 	/>
 	<path
-		d="M9.48804 9.50012H9.50004"
+		d="M9.48804 9.5H9.50004"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

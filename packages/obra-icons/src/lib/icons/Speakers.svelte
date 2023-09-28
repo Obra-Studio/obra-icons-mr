@@ -16,13 +16,18 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M12 17C13.6568 17 15 15.6569 15 14C15 12.3431 13.6568 11 12 11C10.3431 11 8.99997 12.3431 8.99997 14C8.99997 15.6569 10.3431 17 12 17Z"
+		d="M12 17C13.6569 17 15 15.6569 15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 15.6569 10.3431 17 12 17Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
-	<circle cx="12" cy="7.5" r="1.5" fill="black" />
+	<path
+		d="M12 7H12.012"
+		stroke="black"
+		stroke-width="3"
+		stroke-linecap="round"
+	/>
 </svg>
 
