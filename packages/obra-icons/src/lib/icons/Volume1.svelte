@@ -8,7 +8,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M11.0004 5L6.00037 9H2.00037V15H6.00037L11.0004 19V5Z"
+		d="M11.0004 5L6.0004 9H2.0004V15H6.0004L11.0004 19V5Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

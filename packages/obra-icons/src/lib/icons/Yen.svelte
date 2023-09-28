@@ -8,13 +8,13 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M7.4584 15.4211H16.7392"
+		d="M7.45837 15.4211H16.7391"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 	/>
 	<path
-		d="M7.4584 12.144H16.7392"
+		d="M7.45837 12.144H16.7391"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

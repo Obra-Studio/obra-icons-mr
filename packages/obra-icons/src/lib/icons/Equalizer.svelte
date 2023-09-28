@@ -31,7 +31,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M5.00002 11.9714L13.2 11.9369"
+		d="M5 11.9714L13.2 11.9369"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -45,7 +45,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M5.00002 6.00012L6.19952 5.96562"
+		d="M5 6.00012L6.1995 5.96562"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -59,7 +59,7 @@
 		stroke-linejoin="round"
 	/>
 	<circle
-		cx="9.00002"
+		cx="9"
 		cy="6"
 		r="2"
 		stroke="black"

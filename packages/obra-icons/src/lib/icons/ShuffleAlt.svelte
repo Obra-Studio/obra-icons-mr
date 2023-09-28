@@ -15,7 +15,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M3.99999 20L21 3"
+		d="M4 20L21 3"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -36,7 +36,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M3.99999 4L8.99999 9"
+		d="M4 4L9 9"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

@@ -22,7 +22,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M17 9.5H7"
+		d="M17 9.5H6.99998"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

@@ -24,7 +24,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M3.00002 10H14"
+		d="M3 10H14"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -48,7 +48,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M3.00002 18H5.00002"
+		d="M3 18H5"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
