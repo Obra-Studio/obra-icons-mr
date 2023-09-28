@@ -1,18 +1,32 @@
 <script lang="ts">
+	import { iconNameKebab } from './utils';
+	import { search } from '@orama/orama';
 	import * as iconMap from '$lib/index';
 
-	const icons = Object.entries(iconMap);
 	const { IconSearch } = iconMap;
 
-	/**
-	 * Turns "IconAlignCenter" to "align-center"
-	 */
-	function iconNameKebab(str: string) {
-		return str
-			.replace('Icon', '')
-			.match(/[A-Z][a-z]*/g)
-			?.join(' ')
-			.toLowerCase();
+	export let data;
+
+	let icons = Object.keys(iconMap);
+
+	function getIconComponent(name: string) {
+		return iconMap[name as keyof typeof iconMap];
+	}
+
+	async function find(query: string) {
+		query = query.trim();
+
+		//? Don't search if the query is empty
+		if (query.length == 0) {
+			icons = Object.keys(iconMap);
+			return;
+		}
+
+		const result = await search(data.searchEngine, {
+			term: query,
+		});
+
+		icons = result.hits.map((hit) => hit.document.componentName);
 	}
 </script>
 
@@ -25,6 +39,7 @@
 		<div class="container padding-medium margin-0-auto">
 			<div class="input-with-icon">
 				<input
+					on:input={(e) => find(e.currentTarget.value)}
 					placeholder="Search {icons.length} Obra Icons and Obra Plus Icons..."
 					type="text"
 				/>
@@ -34,13 +49,13 @@
 
 			<div class="vertical-container-x-large">
 				<ul class="icon-grid">
-					{#each icons as [name, icon]}
+					{#each icons as name}
 						{@const nameKebab = iconNameKebab(name)}
 
 						<li class="icon-item">
 							<!-- Want to render the icon here e.g. <svelte:component this={icon} />-->
 							<!-- {transformIconString(icon)} -->
-							<svelte:component this={icon} />
+							<svelte:component this={getIconComponent(name)} />
 						</li>
 					{/each}
 				</ul>
