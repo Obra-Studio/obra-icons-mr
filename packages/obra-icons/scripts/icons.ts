@@ -54,15 +54,30 @@ const icon_name_map = new Map<string, string>();
 for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 	console.log(`  Processing frame (${frame_id}) "${frame.document.name}"`);
 
+	const duplicates: [id: string, name: string][] = [];
+
 	//? Loop over the found icons
 	for (const icon of frame.document.children) {
-		//? Prevent duplicate icons
+		//? Add duplicate icons to an array
 		if (icon_name_map.has(icon.name)) {
-			throw new Error(`Found duplicate icon (${icon.id}) "${icon.name}"`);
+			duplicates.push([icon.id, icon.name]);
 		}
 
 		//? Add the icon id & name to the name:id map
 		icon_name_map.set(icon.name, icon.id);
+	}
+
+	//? If duplicates are found log them and exit
+	if (duplicates.length) {
+		console.error(
+			`\n\nERR: Found duplicates in frame (${frame_id}) "${frame.document.name}:`,
+		);
+
+		for (const [id, name] of duplicates) {
+			console.error(`  (${id}) "${name}"`);
+		}
+
+		process.exit(1);
 	}
 
 	console.log(`      Found ${frame.document.children.length} Icons`);
