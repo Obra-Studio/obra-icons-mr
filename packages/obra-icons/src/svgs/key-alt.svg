@@ -6,35 +6,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M12 7V17"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M19 12H5"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M19 12V17"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M5 12V17"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M14 3H10V7H14V3Z"
+		d="M4.22181 4.2218L12.7071 12.7071"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -42,7 +14,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M21 17H17V21H21V17Z"
+		d="M5.63603 5.63599L3.51471 7.75731"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -50,15 +22,18 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M7 17H3V21H7V17Z"
+		d="M7.75735 7.75732L5.63603 9.87864"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
-	<path
-		d="M14 17H10V21H14V17Z"
+	<circle
+		cx="16.2426"
+		cy="16.2426"
+		r="5"
+		transform="rotate(45 16.2426 16.2426)"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

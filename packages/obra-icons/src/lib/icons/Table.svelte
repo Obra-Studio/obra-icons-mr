@@ -8,7 +8,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M21 9.50003H12V14.5H21V9.50003Z"
+		d="M21 9.5H12V14.5H21V9.5Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -16,7 +16,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M12 9.50003H3V14.5H12V9.50003Z"
+		d="M12 9.5H3V14.5H12V9.5Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

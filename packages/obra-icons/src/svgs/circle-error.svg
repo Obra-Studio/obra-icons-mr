@@ -6,7 +6,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M15.5 8.49997L8.5 15.5"
+		d="M15.5 8.5L8.5 15.5"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -14,7 +14,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M15.5 15.5L8.5 8.49997"
+		d="M15.5 15.5L8.5 8.5"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

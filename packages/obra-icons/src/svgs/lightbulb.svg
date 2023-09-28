@@ -1,5 +1,3 @@
-<svelte:options namespace="svg" />
-
 <svg
 	width="24"
 	height="24"
@@ -8,35 +6,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M12 7V17"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M19 12H5"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M19 12V17"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M5 12V17"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M14 3H10V7H14V3Z"
+		d="M9 18V17.1998C9 16.4613 8.59033 15.7848 8.00426 15.3354C6.81956 14.427 5 12.6074 5 10C5 6.13401 8.13401 3 12 3C15.866 3 19 6.13401 19 10C19 12.6074 17.1804 14.427 15.9957 15.3354C15.4097 15.7848 15 16.4613 15 17.1998V18"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -44,7 +14,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M21 17H17V21H21V17Z"
+		d="M9 18H15"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -52,7 +22,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M7 17H3V21H7V17Z"
+		d="M9 21H15"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -60,7 +30,15 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M14 17H10V21H14V17Z"
+		d="M10 10H14"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M12 10V18"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -68,4 +46,3 @@
 		stroke-linejoin="round"
 	/>
 </svg>
-

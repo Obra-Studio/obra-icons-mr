@@ -9,11 +9,11 @@
 >
 	<rect
 		x="20"
-		y="3.99997"
+		y="4"
 		width="6"
 		height="16"
 		rx="1"
-		transform="rotate(90 20 3.99997)"
+		transform="rotate(90 20 4)"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

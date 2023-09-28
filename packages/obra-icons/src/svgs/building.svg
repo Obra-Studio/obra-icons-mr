@@ -16,7 +16,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M3 21H21"
+		d="M3.00001 21H21"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -64,7 +64,7 @@
 	/>
 	<rect
 		x="14.1495"
-		y="7.54999"
+		y="7.55005"
 		width="0.1"
 		height="0.1"
 		stroke="black"

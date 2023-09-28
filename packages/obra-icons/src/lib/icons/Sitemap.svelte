@@ -8,28 +8,28 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M12 7V12"
+		d="M12 7V17"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M18 12H6"
+		d="M19 12H5"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M18 12V17"
+		d="M19 12V17"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M6 12V17"
+		d="M5 12V17"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
@@ -44,7 +44,7 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M20 17H16V21H20V17Z"
+		d="M21 17H17V21H21V17Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"
@@ -52,7 +52,15 @@
 		stroke-linejoin="round"
 	/>
 	<path
-		d="M8 17H4V21H8V17Z"
+		d="M7 17H3V21H7V17Z"
+		stroke="black"
+		stroke-width="2"
+		stroke-miterlimit="10"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+	<path
+		d="M14 17H10V21H14V17Z"
 		stroke="black"
 		stroke-width="2"
 		stroke-miterlimit="10"

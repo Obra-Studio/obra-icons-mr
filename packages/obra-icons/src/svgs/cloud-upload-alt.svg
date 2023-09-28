@@ -6,7 +6,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<path
-		d="M16 16.0001L12 12.0001L8 16.0001"
+		d="M16 16L12 12L8 16"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

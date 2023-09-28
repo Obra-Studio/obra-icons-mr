@@ -31,11 +31,11 @@
 	/>
 	<rect
 		x="20"
-		y="9.99997"
+		y="10"
 		width="4"
 		height="16"
 		rx="1"
-		transform="rotate(90 20 9.99997)"
+		transform="rotate(90 20 10)"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"

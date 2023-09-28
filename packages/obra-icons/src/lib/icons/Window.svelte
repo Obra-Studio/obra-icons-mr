@@ -30,7 +30,7 @@
 		stroke-linecap="round"
 	/>
 	<path
-		d="M9.28003 7H9.29203"
+		d="M9.28001 7H9.29201"
 		stroke="black"
 		stroke-width="2"
 		stroke-linecap="round"
