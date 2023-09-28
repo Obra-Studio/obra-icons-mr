@@ -49,7 +49,7 @@
 
 			<div class="vertical-container-x-large">
 				<ul class="icon-grid">
-					{#each icons as name}
+					{#each icons as name (name)}
 						{@const nameKebab = iconNameKebab(name)}
 
 						<li class="icon-item">
