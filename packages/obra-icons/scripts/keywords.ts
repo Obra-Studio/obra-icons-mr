@@ -44,8 +44,8 @@ for (const name of icon_names) {
             { role: 'user', content: 'clock' },
             { role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
 
-            //? Provide the icon
-            { role: 'user', content: name },
+            //? Provide the icon without -fill
+            { role: 'user', content: name.replace(/-fill$/, '') },
         ],
 	});
 
