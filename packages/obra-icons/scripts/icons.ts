@@ -117,7 +117,7 @@ for (const chunk of icon_chunks) {
 			const raw_svg = await ofetch(link, { responseType: 'text' });
 
 			//? Format the svg with prettier
-			const svg = await prettier.format(raw_svg, {
+			let svg = await prettier.format(raw_svg, {
 				singleQuote: true,
 				quoteProps: 'as-needed',
 				trailingComma: 'all',
@@ -128,6 +128,8 @@ for (const chunk of icon_chunks) {
 				tabWidth: 4,
 				parser: 'html',
 			});
+
+			svg = svg.trim();
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg });
