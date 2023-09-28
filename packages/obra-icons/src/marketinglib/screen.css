@@ -381,7 +381,7 @@ h4, .drop-down-heading-visually h3 {
     }
 
     .responds-to-dark .icon-item svg * {
-        fill: #FFF;
+        stroke: #FFF;
     }
 }
 
