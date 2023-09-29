@@ -2,7 +2,7 @@ import type { GETImageResponse, GETNodesResponse } from './types.d';
 import { writeFile, mkdir, rm } from 'node:fs/promises';
 import * as prettier from 'prettier';
 import { ofetch } from 'ofetch';
-
+import OpenAI from 'openai';
 import {
 	SVG_OUT_DIR,
 	SVELTE_OUT_DIR,
@@ -24,9 +24,9 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '194:39775';
+const NODE_ID = '153:1009';
 
-console.log('Cleaning Output Directories');
+console.log('\nCleaning Output Directories');
 
 //? Clean & Create svg output directory
 await rm(SVG_OUT_DIR, { recursive: true, force: true });
@@ -36,7 +36,7 @@ await mkdir(SVG_OUT_DIR, { recursive: true });
 await rm(SVELTE_OUT_DIR, { recursive: true, force: true });
 await mkdir(SVELTE_OUT_DIR, { recursive: true });
 
-console.log('Finding Frames');
+console.log('\nFinding Frames');
 
 //? Get the frame with the icons
 const frames = await figma<GETNodesResponse>(
@@ -48,22 +48,41 @@ interface Icon {
 	svg: string;
 }
 
-//? All icons
-const icons: Icon[] = [];
-
-//? Map of icon id:name
-const name_map = new Map<string, string>();
+//? Map of icon name:id
+const icon_name_map = new Map<string, string>();
 
 for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 	console.log(`  Processing frame (${frame_id}) "${frame.document.name}"`);
 
-	//? Get the icon ids and add the name to the id:name map
-	const icon_ids = frame.document.children.map((icon) => {
-		name_map.set(icon.id, icon.name);
-		return icon.id;
-	});
+	//? Loop over the found icons
+	for (const icon of frame.document.children) {
+		//? Prevent duplicate icons
+		if (icon_name_map.has(icon.name)) {
+			throw new Error(`Found duplicate icon (${icon.id}) "${icon.name}"`);
+		}
 
-	console.log('    Finding Icons');
+		//? Add the icon id & name to the name:id map
+		icon_name_map.set(icon.name, icon.id);
+	}
+
+	console.log(`      Found ${frame.document.children.length} Icons`);
+}
+
+//? Split the icon_name_map into chunks of 100 for downloading svgs
+const icon_chunks = split(
+	[...icon_name_map] as [name: string, id: string][],
+	100,
+);
+
+console.log(`\nProcessing ${icon_chunks.length} Icon Chunks`);
+
+//? All icons
+const icons: Icon[] = [];
+
+//? Process each icon chunk
+for (const chunk of icon_chunks) {
+	console.log(`  Processing Icon Chunk`);
+	const ids = chunk.map(([name, id]) => id);
 
 	//? Fetch the icon svg urls
 	const images = await figma<GETImageResponse>(
@@ -74,10 +93,10 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 
 	//? Run all the icon downloads and formats in parallel
 	await Promise.all(
-		Object.entries(images.images).map(async ([id, link]) => {
-			//? Find the icon name from the icon id:name map
-			const name = name_map.get(id);
-			if (!name) throw new Error(`No name for ${id}`);
+		chunk.map(async ([name, id]) => {
+			//? Find the SVG link to download from
+			const link = images[id];
+			if (!link) throw new Error(`No link for ${id}`);
 
 			console.log(`      Downloading Icon (${id}) "${name}"`);
 
@@ -97,9 +116,9 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 				parser: 'html',
 			});
 
-			// @todo change every id attribute to class
+			//? Change every id attribute to class
 			svg = svg.replace(/id="/g, 'class="');
-
+			//? Also very id like line_2 line_3 etc to "line"
 			svg = svg.replace(/(class="[^"]+)_\d+"/g, '$1"');
 
 			//? Add each icon to the icons array
@@ -108,12 +127,18 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 	);
 }
 
+//? Sort the array in place (mutates)
+icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
+
 //? Generate the svelte component from an svg
 const svelte_template = (svg: string) => `<svelte:options namespace="svg" />
 
 ${svg}
 `;
 
+/**
+ * ? Turns arrow-left -> ArrowLeft
+ */
 function icon_name_to_pascal(name: string) {
 	//? Every icon is prefixed with oi (Obra Icons)
 	return name
@@ -123,7 +148,7 @@ function icon_name_to_pascal(name: string) {
 		.join('');
 }
 
-console.log('Writing Icons');
+console.log('\nWriting Icons');
 
 for (const { svg, name } of icons) {
 	console.log(`  Writing Icon "${name}"`);
@@ -143,7 +168,7 @@ for (const { svg, name } of icons) {
 	);
 }
 
-console.log('Generating exports');
+console.log('\nGenerating exports');
 
 const export_statements = icons.map(({ name }) => {
 	const pascal_name = icon_name_to_pascal(name);
@@ -152,5 +177,5 @@ const export_statements = icons.map(({ name }) => {
 
 await writeFile(EXPORTS_FILE, export_statements.join('\n'), 'utf-8');
 
-console.log(`Done - ${icons.length} icons generated`);
+console.log(`\nDone - ${icons.length} icons generated\n`);
 console.timeEnd('generate icons');

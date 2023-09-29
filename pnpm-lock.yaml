@@ -18,6 +18,9 @@ importers:
         specifier: ^4.10.0
         version: 4.10.0
     devDependencies:
+      '@orama/orama':
+        specifier: ^1.2.8
+        version: 1.2.8
       '@sveltejs/adapter-auto':
         specifier: ^2.0.0
         version: 2.0.0(@sveltejs/kit@1.22.4)
@@ -51,6 +54,9 @@ importers:
       eslint-plugin-svelte:
         specifier: ^2.30.0
         version: 2.30.0(eslint@8.28.0)(svelte@4.0.5)
+      just-split:
+        specifier: ^3.2.0
+        version: 3.2.0
       ofetch:
         specifier: ^1.3.3
         version: 1.3.3
@@ -391,6 +397,11 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@orama/orama@1.2.8:
+    resolution: {integrity: sha512-C7aXZ9kW00IHA4j6C/CO6BQ9Zuuwf3GiinnPk2jBXWiBXUszOxw8dHHToJrDix+Vn2HvfepSYPczrFguSHHsMA==}
+    engines: {node: '>= 16.0.0'}
     dev: true
 
   /@polka/url@1.0.0-next.23:
@@ -1439,6 +1450,10 @@ packages:
 
   /jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
+    dev: true
+
+  /just-split@3.2.0:
+    resolution: {integrity: sha512-hh57dN5koTBkmg3T6gBFISVVaW5bgZ6Ct1W5KODD5M7hQJKqGzTKkfMwOil8MBxyztLQEjh/v6UGXE8cP5tnqQ==}
     dev: true
 
   /keyv@4.5.3:
