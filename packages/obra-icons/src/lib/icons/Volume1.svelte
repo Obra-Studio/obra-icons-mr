@@ -7,19 +7,23 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M11.0004 5L6.0004 9H2.0004V15H6.0004L11.0004 19V5Z"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M15.5401 8.45996C16.4775 9.3976 17.004 10.6691 17.004 11.995C17.004 13.3208 16.4775 14.5923 15.5401 15.53"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-volume-1">
+		<path
+			class="oi-vector"
+			d="M11.0004 5L6.00038 9H2.00038V15H6.00038L11.0004 19V5Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M15.5401 8.45996C16.4775 9.3976 17.004 10.6691 17.004 11.995C17.004 13.3208 16.4775 14.5923 15.5401 15.53"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

@@ -1,0 +1,26 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-inbox-alt">
+		<path
+			class="oi-vector"
+			d="M22.0004 12H16.0004L14.0004 15H10.0004L8.00037 12H2.00037"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M5.45037 5.11L2.00037 12V18C2.00037 18.5304 2.21108 19.0391 2.58615 19.4142C2.96123 19.7893 3.46993 20 4.00037 20H20.0004C20.5308 20 21.0395 19.7893 21.4146 19.4142C21.7897 19.0391 22.0004 18.5304 22.0004 18V12L18.5504 5.11C18.3848 4.77679 18.1295 4.49637 17.8133 4.30028C17.4971 4.10419 17.1325 4.0002 16.7604 4H7.24037C6.86828 4.0002 6.50363 4.10419 6.18741 4.30028C5.87119 4.49637 5.61594 4.77679 5.45037 5.11Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

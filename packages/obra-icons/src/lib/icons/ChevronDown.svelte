@@ -7,13 +7,16 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M18 10L12 16L6 10"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-chevron-down">
+		<path
+			class="oi-incomplete-triangle"
+			d="M18 10L12 16L6 10"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

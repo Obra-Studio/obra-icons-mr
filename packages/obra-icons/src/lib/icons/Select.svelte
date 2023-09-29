@@ -7,21 +7,25 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M16 15L12 19L8 15"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M8 9L12 5L16 9"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-select">
+		<path
+			class="oi-incomplete-triangle"
+			d="M16 15L12 19L8 15"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-incomplete-triangle"
+			d="M8 9L12 5L16 9"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

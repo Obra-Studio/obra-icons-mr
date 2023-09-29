@@ -7,23 +7,28 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M18.006 11.994L18.006 12.006"
-		stroke="black"
-		stroke-width="4"
-		stroke-linecap="round"
-	/>
-	<path
-		d="M12.006 11.994L12.006 12.006"
-		stroke="black"
-		stroke-width="4"
-		stroke-linecap="round"
-	/>
-	<path
-		d="M6.00598 11.994L6.00598 12.006"
-		stroke="black"
-		stroke-width="4"
-		stroke-linecap="round"
-	/>
+	<g class="oi-options-horizontal">
+		<path
+			class="oi-dot"
+			d="M18.006 11.994L18.006 12.006"
+			stroke="black"
+			stroke-width="4"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-dot"
+			d="M12.006 11.994L12.006 12.006"
+			stroke="black"
+			stroke-width="4"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-dot"
+			d="M6.00598 11.994L6.00598 12.006"
+			stroke="black"
+			stroke-width="4"
+			stroke-linecap="round"
+		/>
+	</g>
 </svg>
 

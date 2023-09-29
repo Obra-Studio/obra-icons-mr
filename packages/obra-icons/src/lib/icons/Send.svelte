@@ -7,8 +7,9 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_192_1750)">
+	<g class="oi-send" clip-path="url(#clip0_194_40486)">
 		<path
+			class="oi-vector"
 			d="M21.4919 2.70063L15.1279 21.7925L10.1782 14.0143L2.40001 9.06459L21.4919 2.70063Z"
 			stroke="black"
 			stroke-width="2"
@@ -17,6 +18,7 @@
 			stroke-linejoin="round"
 		/>
 		<path
+			class="oi-line"
 			d="M10.1787 14.0146L21.4924 2.70093"
 			stroke="black"
 			stroke-width="2"
@@ -26,7 +28,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath id="clip0_192_1750">
+		<clipPath class="clip0_194">
 			<rect width="24" height="24" fill="white" />
 		</clipPath>
 	</defs>

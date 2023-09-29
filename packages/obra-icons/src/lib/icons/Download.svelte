@@ -7,29 +7,34 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M12 16V3"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M16 12L12 16L8 12"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M5 18V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V18"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-download">
+		<path
+			class="oi-line"
+			d="M12 16V3"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M16 12L12 16L8 12"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M5 18V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V18"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

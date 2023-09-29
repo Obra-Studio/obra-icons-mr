@@ -7,17 +7,21 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M7.79999 5.40002V19.8"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-	/>
-	<path
-		d="M15.6 5.40002V19.8"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-	/>
+	<g class="oi-path-straight">
+		<path
+			class="oi-line"
+			d="M7.79999 5.40002V19.8"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-line"
+			d="M15.6 5.40002V19.8"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+	</g>
 </svg>
 

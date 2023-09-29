@@ -2,7 +2,7 @@ import type { GETImageResponse, GETNodesResponse } from './types.d';
 import { writeFile, mkdir, rm } from 'node:fs/promises';
 import * as prettier from 'prettier';
 import { ofetch } from 'ofetch';
-import OpenAI from 'openai';
+
 import {
 	SVG_OUT_DIR,
 	SVELTE_OUT_DIR,
@@ -24,7 +24,7 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '192:1042';
+const NODE_ID = '194:39775';
 
 console.log('Cleaning Output Directories');
 
@@ -67,7 +67,9 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 
 	//? Fetch the icon svg urls
 	const images = await figma<GETImageResponse>(
-		`/images/${FILE_ID}?format=svg&ids=${icon_ids.join(',')}`,
+		`/images/${FILE_ID}?format=svg&ids=${icon_ids.join(
+			',',
+		)}&svg_include_id=true`,
 	);
 
 	//? Run all the icon downloads and formats in parallel
@@ -83,7 +85,7 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 			const raw_svg = await ofetch(link, { responseType: 'text' });
 
 			//? Format the svg with prettier
-			const svg = await prettier.format(raw_svg, {
+			let svg = await prettier.format(raw_svg, {
 				singleQuote: true,
 				quoteProps: 'as-needed',
 				trailingComma: 'all',
@@ -94,6 +96,11 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 				tabWidth: 4,
 				parser: 'html',
 			});
+
+			// @todo change every id attribute to class
+			svg = svg.replace(/id="/g, 'class="');
+
+			svg = svg.replace(/(class="[^"]+)_\d+"/g, '$1"');
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg });
@@ -108,7 +115,9 @@ ${svg}
 `;
 
 function icon_name_to_pascal(name: string) {
+	//? Every icon is prefixed with oi (Obra Icons)
 	return name
+		.replace('oi-', '')
 		.split('-')
 		.map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
 		.join('');

@@ -7,8 +7,25 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<circle cx="12" cy="12" r="9" stroke="black" stroke-width="2" />
-	<ellipse cx="12" cy="12" rx="4" ry="9" stroke="black" stroke-width="2" />
-	<path d="M3 12H21" stroke="black" stroke-width="2" />
+	<g class="oi-globe">
+		<circle
+			class="oi-ellipse"
+			cx="12"
+			cy="12"
+			r="9"
+			stroke="black"
+			stroke-width="2"
+		/>
+		<ellipse
+			class="oi-ellipse"
+			cx="12"
+			cy="12"
+			rx="4"
+			ry="9"
+			stroke="black"
+			stroke-width="2"
+		/>
+		<path class="oi-line" d="M3 12H21" stroke="black" stroke-width="2" />
+	</g>
 </svg>
 

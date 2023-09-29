@@ -7,17 +7,21 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M2.39996 15L13.2 15M2.39996 15L6.59996 19.2M2.39996 15L6.59996 10.8"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-	/>
-	<path
-		d="M21.6 9.00005L10.8 9.00005M21.6 9.00005L17.4 4.80005M21.6 9.00005L17.4 13.2"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-	/>
+	<g class="oi-transfer">
+		<path
+			class="oi-vector"
+			d="M2.39996 15L13.2 15M2.39996 15L6.59996 19.2M2.39996 15L6.59996 10.8"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M21.6 9.00005L10.8 9.00005M21.6 9.00005L17.4 4.80005M21.6 9.00005L17.4 13.2"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+	</g>
 </svg>
 

@@ -7,12 +7,15 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M21.4999 12H17.9999L14.9999 21L8.99994 3L5.99994 12H2.49994"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-activity">
+		<path
+			class="oi-vector"
+			d="M21.4999 12H17.9999L14.9999 21L8.99994 3L5.99994 12H2.49994"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

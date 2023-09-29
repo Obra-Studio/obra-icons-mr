@@ -7,17 +7,19 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		fill-rule="evenodd"
-		clip-rule="evenodd"
-		d="M8 3H6C4.89543 3 4 3.89543 4 5V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V5C20 3.89543 19.1046 3 18 3H16V4C16 4.36429 15.9026 4.70583 15.7324 5H18V20H6V5H8.26756C8.09739 4.70583 8 4.36429 8 4V3ZM10 3H14V4H10V3Z"
-		fill="black"
-	/>
-	<path
-		d="M9 5V3C9 2.44772 9.44772 2 10 2H14C14.5523 2 15 2.44772 15 3V5C15 5.55228 14.5523 6 14 6H10C9.44772 6 9 5.55228 9 5Z"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-	/>
+	<g class="oi-clipboard-empty">
+		<path
+			class="oi-box"
+			d="M5 20V5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-fill"
+			d="M9 5V3C9 2.44772 9.44772 2 10 2H14C14.5523 2 15 2.44772 15 3V5C15 5.55228 14.5523 6 14 6H10C9.44772 6 9 5.55228 9 5Z"
+			fill="black"
+		/>
+	</g>
 </svg>
 

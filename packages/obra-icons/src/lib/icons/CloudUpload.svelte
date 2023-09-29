@@ -7,29 +7,34 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M12 10V20"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M10 12L12 10L14 12"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M16 16C18.7615 16 21 13.7614 21 11C21 8.23857 18.7615 6 16 6C15.8623 6 15.7261 6.00556 15.5912 6.01648C14.8235 4.24178 13.0568 3 11 3C8.23853 3 6 5.23857 6 8C6 8.042 6.00061 8.08388 6.00159 8.12563C4.27563 8.56913 3 10.1356 3 12C3 14.2091 4.79089 16 7 16H8"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-cloud-upload">
+		<path
+			class="oi-line"
+			d="M12 10V20"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-incomplete-triangle"
+			d="M10 12L12 10L14 12"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M16 16C18.7615 16 21 13.7614 21 11C21 8.23857 18.7615 6 16 6C15.8623 6 15.7261 6.00556 15.5912 6.01648C14.8235 4.24178 13.0568 3 11 3C8.23853 3 6 5.23857 6 8C6 8.042 6.00061 8.08388 6.00159 8.12563C4.27563 8.56913 3 10.1356 3 12C3 14.2091 4.79089 16 7 16H8"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

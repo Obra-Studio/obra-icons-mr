@@ -7,21 +7,25 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<rect
-		x="8"
-		y="8"
-		width="13"
-		height="13"
-		rx="2"
-		stroke="black"
-		stroke-width="2"
-	/>
-	<path
-		d="M5.00037 16C4.46993 16 3.96123 15.7893 3.58615 15.4142C3.21108 15.0391 3.00037 14.5304 3.00037 14V5C3.00037 4.46957 3.21108 3.96086 3.58615 3.58579C3.96123 3.21071 4.46993 3 5.00037 3H14.0004C14.5308 3 15.0395 3.21071 15.4146 3.58579C15.7897 3.96086 16.0004 4.46957 16.0004 5"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-copy">
+		<rect
+			class="oi-box"
+			x="8"
+			y="8"
+			width="13"
+			height="13"
+			rx="2"
+			stroke="black"
+			stroke-width="2"
+		/>
+		<path
+			class="oi-vector"
+			d="M5.00037 16C4.46993 16 3.96123 15.7893 3.58615 15.4142C3.21108 15.0391 3.00037 14.5304 3.00037 14V5C3.00037 4.46957 3.21108 3.96086 3.58615 3.58579C3.96123 3.21071 4.46993 3 5.00037 3H14.0004C14.5308 3 15.0395 3.21071 15.4146 3.58579C15.7897 3.96086 16.0004 4.46957 16.0004 5"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

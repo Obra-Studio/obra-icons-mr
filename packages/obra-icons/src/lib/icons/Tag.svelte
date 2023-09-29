@@ -7,13 +7,15 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g clip-path="url(#clip0_192_1844)">
+	<g class="oi-tag" clip-path="url(#clip0_194_40580)">
 		<path
+			class="oi-vector"
 			d="M4.94558 13.4308C4.4955 12.9807 4.24264 12.3703 4.24264 11.7338L4.24264 6.64259C4.24264 5.31711 5.31716 4.24259 6.64264 4.24259L11.7338 4.24259C12.3703 4.24259 12.9808 4.49544 13.4309 4.94553L20.3647 11.8793C21.3019 12.8166 21.3019 14.3362 20.3647 15.2735L15.2735 20.3646C14.3362 21.3019 12.8167 21.3019 11.8794 20.3646L4.94558 13.4308Z"
 			stroke="black"
 			stroke-width="2"
 		/>
 		<path
+			class="oi-mini-dot"
 			d="M8.49377 8.48523H8.50577"
 			stroke="black"
 			stroke-width="2"
@@ -21,7 +23,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath id="clip0_192_1844">
+		<clipPath class="clip0_194">
 			<rect width="24" height="24" fill="white" />
 		</clipPath>
 	</defs>

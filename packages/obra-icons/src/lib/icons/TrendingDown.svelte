@@ -7,19 +7,23 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M20.0418 16.7882L12.4604 9.20678L8.47013 13.197L2.4848 7.21167"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M15.2538 16.7883H20.042V12"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-trending-down">
+		<path
+			class="oi-vector"
+			d="M20.0418 16.7882L12.4604 9.20678L8.47016 13.197L2.48483 7.21167"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-incomplete-triangle"
+			d="M15.2538 16.7883H20.042V12"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 

@@ -7,11 +7,14 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M17.1 12L5.70001 12"
-		stroke="black"
-		stroke-width="2"
-		stroke-linecap="round"
-	/>
+	<g class="oi-subtract">
+		<path
+			class="oi-line"
+			d="M17.1 12L5.69998 12"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+	</g>
 </svg>
 

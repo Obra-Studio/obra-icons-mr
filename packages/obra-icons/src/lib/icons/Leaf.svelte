@@ -7,21 +7,25 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M15.4786 15.4786C17.3997 13.5574 17.1401 10.183 14.8988 7.94169C12 5.0429 5.0429 5.0429 5.0429 5.0429C5.0429 5.0429 5.0429 12 7.94169 14.8988C10.183 17.1401 13.5574 17.3997 15.4786 15.4786Z"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="10"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
-	<path
-		d="M19 19L11 11"
-		stroke="black"
-		stroke-width="2"
-		stroke-miterlimit="2.16568"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<g class="oi-leaf">
+		<path
+			class="oi-vector"
+			d="M15.4786 15.4786C17.3997 13.5574 17.1401 10.183 14.8988 7.94169C12 5.0429 5.0429 5.0429 5.0429 5.0429C5.0429 5.0429 5.0429 12 7.94169 14.8988C10.183 17.1401 13.5574 17.3997 15.4786 15.4786Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M19 19L11 11"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="2.16568"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
 </svg>
 
