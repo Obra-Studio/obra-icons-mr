@@ -1,5 +1,6 @@
 import type { GETImageResponse, GETNodesResponse } from './types.d';
 import { writeFile, mkdir, rm } from 'node:fs/promises';
+import { icon_name_to_pascal } from './utils';
 import * as prettier from 'prettier';
 import { ofetch } from 'ofetch';
 import split from 'just-split';
@@ -152,16 +153,6 @@ const svelte_template = (svg: string) => `<svelte:options namespace="svg" />
 
 ${svg}
 `;
-
-/**
- * ? Turns arrow-left -> ArrowLeft
- */
-function icon_name_to_pascal(name: string) {
-	return name
-		.split('-')
-		.map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
-		.join('');
-}
 
 console.log('\nWriting Icons');
 

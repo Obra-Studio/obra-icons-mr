@@ -1,5 +1,7 @@
-import { KEYWORDS_FILE, SVG_OUT_DIR } from './paths';
+import { ICON_COUNT_FILE, KEYWORDS_FILE, SVG_OUT_DIR } from './paths';
 import { writeFile, readdir } from 'fs/promises';
+import { icon_name_to_pascal } from './utils';
+import { create, insert } from '@orama/orama';
 import { basename } from 'path';
 import OpenAI from 'openai';
 // thanks typescript
@@ -25,40 +27,44 @@ console.log('Generating keywords');
 //? Map the keywords icon_name:keywords
 const keywords_map = new Map<string, string[]>();
 
-//? Generate the keywords map
-for (const name of icon_names) {
-	console.log(`Generating keywords for icon "${name}"`);
+//? Generate the keywords map in parallel
+await Promise.all(
+	icon_names.map(async (nameKebab) => {
+		console.log(`Generating keywords for icon "${nameKebab}"`);
 
-	//? Ask gpt for keywords
-	const completion = await openai.chat.completions.create({
-		model: 'gpt-3.5-turbo',
-		n: 1,
-		temperature: 0,
-		max_tokens: 50,
-		// prettier-ignore
-		messages: [
-            //? The prompt
-            { role: 'system', content: 'The user will give you an icon name, please provide no more than 6 synonyms. Each synonym should be a simple plain english word, that a user might give when searching for the icon.' },
+		//? Ask gpt for keywords
+		const completion = await openai.chat.completions.create({
+			model: 'gpt-3.5-turbo',
+			n: 1,
+			temperature: 0,
+			max_tokens: 50,
+			// prettier-ignore
+			messages: [
+			//? The prompt
+			{ role: 'system', content: 'The user will give you an icon name, please provide no more than 6 synonyms. Each synonym should be a simple plain english word, that a user might give when searching for the icon.' },
+	
+			//? Example
+			{ role: 'user', content: 'clock' },
+			{ role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
+	
+			//? Provide the icon without -fill
+			{ role: 'user', content: nameKebab.replace(/-fill$/, '') },
+		],
+		});
 
-            //? Example
-            { role: 'user', content: 'clock' },
-            { role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
+		//? Parse and normalise the result
+		const keywords = completion.choices[0].message.content
+			?.trim()
+			.split('\n');
 
-            //? Provide the icon without -fill
-            { role: 'user', content: name.replace(/-fill$/, '') },
-        ],
-	});
+		if (!keywords || !keywords.length) {
+			//? Handle no keywords, hopefully this doesn't happen
+			throw new Error(`No keywords for ${nameKebab}`);
+		}
 
-	//? Parse and normalise the result
-	const keywords = completion.choices[0].message.content?.trim().split('\n');
-
-	if (!keywords || !keywords.length) {
-		//? Handle no keywords, hopefully this doesn't happen
-		throw new Error(`No keywords for ${name}`);
-	}
-
-	keywords_map.set(name, keywords);
-}
+		keywords_map.set(nameKebab, keywords);
+	}),
+);
 
 console.log('Writing keywords');
 
