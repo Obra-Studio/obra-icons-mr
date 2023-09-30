@@ -58,13 +58,16 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 
 	//? Loop over the found icons
 	for (const icon of frame.document.children) {
+		//? Normalise the icon name
+		const name = icon.name.replace('oi-', '');
+
 		//? Add duplicate icons to an array
-		if (icon_name_map.has(icon.name)) {
-			duplicates.push([icon.id, icon.name]);
+		if (icon_name_map.has(name)) {
+			duplicates.push([icon.id, name]);
 		}
 
 		//? Add the icon id & name to the name:id map
-		icon_name_map.set(icon.name, icon.id);
+		icon_name_map.set(name, icon.id);
 	}
 
 	//? If duplicates are found log them and exit
@@ -154,9 +157,7 @@ ${svg}
  * ? Turns arrow-left -> ArrowLeft
  */
 function icon_name_to_pascal(name: string) {
-	//? Every icon is prefixed with oi (Obra Icons)
 	return name
-		.replace('oi-', '')
 		.split('-')
 		.map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
 		.join('');
