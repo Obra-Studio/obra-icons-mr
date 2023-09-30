@@ -5,6 +5,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
+<<<<<<< HEAD:packages/obra-icons/src/svgs/flask.svg
 	<path
 		d="M6.64335 21H17.3567C18.9348 21 19.8913 19.2577 19.044 17.9262L14 10V3H10V10L4.95602 17.9262C4.10874 19.2577 5.06517 21 6.64335 21Z"
 		stroke="black"
@@ -39,4 +40,48 @@
 		stroke-width="2"
 		stroke-linecap="round"
 	/>
+=======
+	<g class="oi-shuffle-alt">
+		<path
+			class="oi-incomplete-triangle"
+			d="M16 3H21V8"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M3.99999 20L21 3"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-incomplete-triangle"
+			d="M21 16V21H16"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M15 15L21 21"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M3.99999 4L8.99999 9"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+>>>>>>> origin/main:packages/obra-icons/src/lib/icons/ShuffleAlt.svelte
 </svg>

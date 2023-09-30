@@ -1,0 +1,43 @@
+<svelte:options namespace="svg" />
+
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-cyclist">
+		<circle
+			class="oi-ellipse"
+			cx="5.5"
+			cy="15"
+			r="3"
+			stroke="black"
+			stroke-width="2"
+		/>
+		<circle
+			class="oi-ellipse"
+			cx="18.5"
+			cy="15"
+			r="3"
+			stroke="black"
+			stroke-width="2"
+		/>
+		<path
+			class="oi-vector"
+			d="M12 16V13L9.60265 10.2031C9.26259 9.80638 9.28531 9.21471 9.6548 8.84522L11 7.50002C11.6667 7.33336 13.3 7.40002 14.5 9.00002H17"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M15.2071 3.29289C15.5977 3.68342 15.5977 4.31658 15.2071 4.70711L14.7963 5.11791C14.6132 5.35059 14.3291 5.5 14.01 5.5H14C13.5956 5.5 13.2309 5.25636 13.0761 4.88268C12.9214 4.50901 13.0069 4.07889 13.2929 3.79289L13.7929 3.29289C14.1834 2.90237 14.8166 2.90237 15.2071 3.29289Z"
+			fill="black"
+		/>
+	</g>
+</svg>
+

@@ -1,0 +1,53 @@
+<svelte:options namespace="svg" />
+
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-scissors">
+		<path
+			class="oi-vector"
+			d="M6.00009 9C7.65695 9 9.00009 7.65685 9.00009 6C9.00009 4.34315 7.65695 3 6.00009 3C4.34324 3 3.00009 4.34315 3.00009 6C3.00009 7.65685 4.34324 9 6.00009 9Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M6.00009 21C7.65695 21 9.00009 19.6569 9.00009 18C9.00009 16.3431 7.65695 15 6.00009 15C4.34324 15 3.00009 16.3431 3.00009 18C3.00009 19.6569 4.34324 21 6.00009 21Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M20.0001 4L8.12009 15.88"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M14.4701 14.48L20.0001 20"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M8.12009 8.12L12.0001 12"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>
+

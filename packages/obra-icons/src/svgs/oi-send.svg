@@ -1,0 +1,45 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+<<<<<<< HEAD:packages/obra-icons/src/svgs/send.svg
+	<g clip-path="url(#clip0_181_38927)">
+		<path
+=======
+	<g class="oi-send" clip-path="url(#clip0_194_40486)">
+		<path
+			class="oi-vector"
+>>>>>>> origin/main:packages/obra-icons/src/svgs/oi-send.svg
+			d="M21.4919 2.70063L15.1279 21.7925L10.1782 14.0143L2.40001 9.06459L21.4919 2.70063Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+<<<<<<< HEAD:packages/obra-icons/src/svgs/send.svg
+=======
+			class="oi-line"
+>>>>>>> origin/main:packages/obra-icons/src/svgs/oi-send.svg
+			d="M10.1787 14.0146L21.4924 2.70093"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+	<defs>
+<<<<<<< HEAD:packages/obra-icons/src/svgs/send.svg
+		<clipPath id="clip0_181_38927">
+=======
+		<clipPath class="clip0_194">
+>>>>>>> origin/main:packages/obra-icons/src/svgs/oi-send.svg
+			<rect width="24" height="24" fill="white" />
+		</clipPath>
+	</defs>
+</svg>

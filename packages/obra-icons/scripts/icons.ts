@@ -23,8 +23,8 @@ const figma = ofetch.create({
 //? Configure figma file and frame locations
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
-//? You can get the id from running "figma.currentPage.selection[0].id" in console
-const NODE_ID = '181:38173';
+// You can get the id from figma.currentPage.selection.id via console
+const NODE_ID = '194:39775';
 
 console.log('\nCleaning Output Directories');
 
@@ -101,7 +101,7 @@ for (const chunk of icon_chunks) {
 
 	//? Fetch the icon svg urls
 	const { images } = await figma<GETImageResponse>(
-		`/images/${FILE_ID}?format=svg&ids=${ids.join(',')}`,
+		`/images/${FILE_ID}?format=svg&svg_include_id=true&ids=${ids}`,
 	);
 
 	//? Run all the icon downloads and formats in parallel
@@ -130,6 +130,10 @@ for (const chunk of icon_chunks) {
 			});
 
 			svg = svg.trim();
+			// @todo change every id attribute to class
+			svg = svg.replace(/id="/g, 'class="');
+
+			svg = svg.replace(/(class="[^"]+)_\d+"/g, '$1"');
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg });
@@ -150,7 +154,9 @@ ${svg}
  * ? Turns arrow-left -> ArrowLeft
  */
 function icon_name_to_pascal(name: string) {
+	//? Every icon is prefixed with oi (Obra Icons)
 	return name
+		.replace('oi-', '')
 		.split('-')
 		.map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
 		.join('');
