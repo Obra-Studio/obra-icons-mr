@@ -132,13 +132,8 @@ for (const chunk of icon_chunks) {
 			//? Remove weird whitespace
 			svg = svg.trim();
 
-			//todo can we use this?
-			// svg = svg.replace(/id="([^ "]+)"/, 'class="$1"');
-
-			// @todo change every id attribute to class
-			svg = svg.replace(/id="/g, 'class="');
-
-			svg = svg.replace(/(class="[^"]+)_\d+"/g, '$1"');
+			//? Turn id="oi-vector_2" -> class="oi-vector"
+			svg = svg.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg });
