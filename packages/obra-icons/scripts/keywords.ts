@@ -1,7 +1,5 @@
-import { ICON_COUNT_FILE, KEYWORDS_FILE, SVG_OUT_DIR } from './paths';
+import { KEYWORDS_FILE, SVG_OUT_DIR } from './paths';
 import { writeFile, readdir } from 'fs/promises';
-import { icon_name_to_pascal } from './utils';
-import { create, insert } from '@orama/orama';
 import { basename } from 'path';
 import OpenAI from 'openai';
 // thanks typescript
@@ -82,12 +80,5 @@ export default ${keywords_json};
 
 //? Write the keywords
 await writeFile(KEYWORDS_FILE, template, 'utf-8');
-
-//? Write the icon count
-await writeFile(
-	ICON_COUNT_FILE,
-	`export default ${icon_names.length};`,
-	'utf-8',
-);
 
 console.timeEnd('generate keywords');

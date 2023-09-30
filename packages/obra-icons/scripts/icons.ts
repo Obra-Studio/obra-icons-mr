@@ -9,6 +9,7 @@ import {
 	SVELTE_OUT_DIR,
 	EXPORTS_REL,
 	EXPORTS_FILE,
+	ICON_COUNT_FILE,
 } from './paths';
 
 console.time('generate icons');
@@ -176,12 +177,17 @@ for (const { svg, name } of icons) {
 
 console.log('\nGenerating exports');
 
+//? Generate the export statements
 const export_statements = icons.map(({ name }) => {
 	const pascal_name = icon_name_to_pascal(name);
 	return `export { default as Icon${pascal_name} } from '${EXPORTS_REL}/${pascal_name}.svelte';`;
 });
 
+//? Write out the ts file
 await writeFile(EXPORTS_FILE, export_statements.join('\n'), 'utf-8');
+
+//? Write the icon count
+await writeFile(ICON_COUNT_FILE, `export default ${icons.length};`, 'utf-8');
 
 console.log(`\nDone - ${icons.length} icons generated\n`);
 console.timeEnd('generate icons');
