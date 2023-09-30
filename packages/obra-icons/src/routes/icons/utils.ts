@@ -1,5 +1,3 @@
-import type * as iconMap from '$lib';
-
 /**
  * Turns "IconAlignCenter" to "align-center"
  */

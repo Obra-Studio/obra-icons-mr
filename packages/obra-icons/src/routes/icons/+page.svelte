@@ -23,19 +23,20 @@
 		}
 
 		const result = await search(data.searchDb, {
-			properties: ['name', 'keywords'],
+			properties: ['nameKebab', 'keywords'],
 			tolerance: 10,
 			term: query,
 			limit: 50,
 			sortBy: {
-				property: 'name',
+				property: 'nameKebab',
 			},
 			boost: {
-				name: 2,
+				nameKebab: 2,
+				keywords: 1,
 			},
 		});
 
-		icons = result.hits.map((hit) => hit.document.componentName);
+		icons = result.hits.map((hit) => hit.document.namePascal);
 	}
 </script>
 
