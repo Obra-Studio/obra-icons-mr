@@ -8,7 +8,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g class="oi-yen">
-		<g class="Group 3">
+		<g id="Group 3">
 			<path
 				class="oi-line"
 				d="M7.4584 15.4211H16.7392"
@@ -33,4 +33,3 @@
 		</g>
 	</g>
 </svg>
-

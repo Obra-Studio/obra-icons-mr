@@ -25,7 +25,7 @@
 		/>
 		<path
 			class="oi-mini-dot"
-			d="M12.0029 7.32983H12.0149"
+			d="M12.0029 7.32996H12.0149"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -39,4 +39,3 @@
 		/>
 	</g>
 </svg>
-

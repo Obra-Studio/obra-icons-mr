@@ -10,7 +10,7 @@
 	<g class="oi-key-alt">
 		<path
 			class="oi-line"
-			d="M4.22181 4.2218L12.7071 12.7071"
+			d="M4 4L12 12"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -19,7 +19,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M5.63603 5.63599L3.51471 7.75731"
+			d="M6 6L4 8"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M7.75735 7.75732L5.63603 9.87864"
+			d="M8 8L6 10"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -37,10 +37,10 @@
 		/>
 		<circle
 			class="oi-ellipse"
-			cx="16.2426"
-			cy="16.2426"
+			cx="16"
+			cy="16.0711"
 			r="5"
-			transform="rotate(45 16.2426 16.2426)"
+			transform="rotate(45 16 16.0711)"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -49,4 +49,3 @@
 		/>
 	</g>
 </svg>
-

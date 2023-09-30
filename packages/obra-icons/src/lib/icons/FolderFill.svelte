@@ -11,4 +11,3 @@
 		<path class="oi-fill" d="M3 5H9L11 7H21V19H3V5Z" fill="black" />
 	</g>
 </svg>
-

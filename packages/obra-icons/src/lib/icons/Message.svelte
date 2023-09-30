@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M17 9.5H6.99998"
+			d="M17 9.5H7"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -37,4 +37,3 @@
 		/>
 	</g>
 </svg>
-

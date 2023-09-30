@@ -39,7 +39,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M6.34314 17.6569L5.63603 18.364"
+			d="M6.34314 17.6567L5.63603 18.3638"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -75,7 +75,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M6.34314 6.34314L5.63603 5.63603"
+			d="M6.34314 6.34326L5.63603 5.63615"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -84,7 +84,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M18.364 18.3639L17.6569 17.6568"
+			d="M18.364 18.364L17.6569 17.6569"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -93,4 +93,3 @@
 		/>
 	</g>
 </svg>
-

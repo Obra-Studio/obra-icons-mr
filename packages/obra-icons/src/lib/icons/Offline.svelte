@@ -19,7 +19,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M21 3L3 21"
+			d="M21 21L3 3"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -28,4 +28,3 @@
 		/>
 	</g>
 </svg>
-

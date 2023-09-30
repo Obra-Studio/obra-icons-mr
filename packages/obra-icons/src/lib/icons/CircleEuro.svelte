@@ -11,7 +11,7 @@
 		<circle
 			class="oi-ellipse"
 			cx="12"
-			cy="12"
+			cy="12.0001"
 			r="9"
 			stroke="black"
 			stroke-width="2"
@@ -39,4 +39,3 @@
 		/>
 	</g>
 </svg>
-

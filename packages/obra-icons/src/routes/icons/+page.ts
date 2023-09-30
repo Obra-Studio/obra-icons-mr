@@ -1,25 +1,28 @@
-import { iconNamePascal } from './utils';
-import { create, insert } from '@orama/orama';
+import { create, insert, search } from '@orama/orama';
 import iconSearchData from '$lib/keywords';
+import { iconNamePascal } from './utils';
 
 export async function load() {
-	const searchEngine = await create({
+	const searchDb = await create({
 		schema: {
-			name: 'string',
-			componentName: 'string',
+			nameKebab: 'string',
+			namePascal: 'string',
 			keywords: 'string[]',
 		},
 	});
 
-	for (const [name, keywords] of Object.entries(iconSearchData)) {
-		await insert(searchEngine, {
-			componentName: iconNamePascal(name),
+	const entries = Object.entries(iconSearchData);
+
+	for (const [nameKebab, keywords] of entries) {
+		await insert(searchDb, {
+			namePascal: iconNamePascal(nameKebab),
+			nameKebab,
 			keywords,
-			name,
 		});
 	}
 
 	return {
-		searchEngine,
+		iconsCount: entries.length,
+		searchDb,
 	};
 }

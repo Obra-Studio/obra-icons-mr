@@ -7,6 +7,13 @@ export default {
     'busyness',
     'motion'
   ],
+  'add-connection': [
+    'network',
+    'link',
+    'join',
+    'connect',
+    'wireless'
+  ],
   'add': [
     'plus',
     'sum',
@@ -49,6 +56,13 @@ export default {
     'align to the right',
     'align text right',
     'align content right'
+  ],
+  'archive-fill': [
+    'file',
+    'folder',
+    'storage',
+    'documents',
+    'backup'
   ],
   'archive': [
     'file',
@@ -139,6 +153,13 @@ export default {
     'bar',
     'disallow'
   ],
+  'bank': [
+    'money',
+    'finance',
+    'financial institution',
+    'cash',
+    'savings'
+  ],
   'bar-chart-alt-2': [
     'bar graph',
     'statistics',
@@ -160,6 +181,29 @@ export default {
     'statistics',
     'data',
     'analytics'
+  ],
+  'barcode-scan': [
+    'barcode',
+    'scan',
+    'barcode reader',
+    'barcode scanner',
+    'scanning',
+    'barcode detection'
+  ],
+  'battery': [
+    'power',
+    'energy',
+    'charge',
+    'cell',
+    'electricity'
+  ],
+  'bill': [
+    'invoice',
+    'payment',
+    'statement',
+    'receipt',
+    'account',
+    'money'
   ],
   'bills': [
     'money',
@@ -184,12 +228,32 @@ export default {
     'whiteboard marker',
     'bulletin board'
   ],
+  'boat': [
+    'ship',
+    'vessel',
+    'watercraft',
+    'yacht',
+    'sailboat'
+  ],
   'bold': [
     'thick',
     'strong',
     'heavy',
     'dark',
     'emphasized'
+  ],
+  'bolt-fill': [
+    'lightning',
+    'electricity',
+    'thunder',
+    'flash'
+  ],
+  'bolt': [
+    'lightning',
+    'electricity',
+    'thunderbolt',
+    'flash',
+    'energy'
   ],
   'book-open': [
     'book',
@@ -206,11 +270,24 @@ export default {
     'story',
     'publication'
   ],
+  'bookmark-alt-fill': [
+    'bookmark',
+    'favorite',
+    'save',
+    'marker'
+  ],
   'bookmark-alt': [
     'bookmark',
     'favorite',
     'save',
     'marker'
+  ],
+  'bookmark-fill': [
+    'marker',
+    'flag',
+    'label',
+    'tag',
+    'pointer'
   ],
   'bookmark': [
     'marker',
@@ -219,12 +296,40 @@ export default {
     'tag',
     'pointer'
   ],
+  'box-3d': [
+    'cube',
+    '3D box',
+    'cuboid',
+    'rectangular prism',
+    'solid box'
+  ],
+  'box-fill': [
+    'container',
+    'package',
+    'carton',
+    'crate',
+    'bin'
+  ],
+  'box-striped': [
+    'striped box',
+    'patterned box',
+    'lined box',
+    'box with stripes',
+    'box with lines'
+  ],
   'box': [
     'container',
     'package',
     'carton',
     'crate',
     'bin'
+  ],
+  'brackets': [
+    'parentheses',
+    'braces',
+    'square brackets',
+    'angle brackets',
+    'curly brackets'
   ],
   'briefcase': [
     'bag',
@@ -233,12 +338,54 @@ export default {
     'satchel',
     'case'
   ],
+  'bug': [
+    'insect',
+    'beetle',
+    'creepy-crawly',
+    'pest',
+    'critter'
+  ],
+  'building': [
+    'house',
+    'structure',
+    'architecture',
+    'construction',
+    'edifice'
+  ],
+  'calculator-fill': [
+    'math',
+    'mathematics',
+    'arithmetic',
+    'computation',
+    'adding machine'
+  ],
+  'calculator': [
+    'math',
+    'mathematics',
+    'arithmetic',
+    'computation',
+    'adding machine'
+  ],
+  'calendar-check': [
+    'schedule',
+    'appointment',
+    'reminder',
+    'planner',
+    'agenda'
+  ],
+  'calendar-cross': [
+    'cancelled',
+    'delete',
+    'remove',
+    'crossed out',
+    'invalid',
+    'unavailable'
+  ],
   'calendar': [
     'date',
     'schedule',
     'planner',
-    'agenda',
-    'timetable'
+    'agenda'
   ],
   'call': [
     'phone',
@@ -254,6 +401,64 @@ export default {
     'snapshot',
     'image'
   ],
+  'car': [
+    'vehicle',
+    'automobile',
+    'auto',
+    'carriage',
+    'motorcar'
+  ],
+  'caret-down': [
+    'arrow down',
+    'downward arrow',
+    'dropdown',
+    'select',
+    'expand',
+    'collapse'
+  ],
+  'caret-left-right': [
+    'arrow',
+    'direction',
+    'navigate',
+    'move',
+    'left-right',
+    'horizontal'
+  ],
+  'caret-left': [
+    'arrow-left',
+    'back',
+    'previous',
+    'left arrow'
+  ],
+  'caret-right': [
+    'arrow',
+    'forward',
+    'next',
+    'play',
+    'go',
+    'right'
+  ],
+  'caret-up-down': [
+    'arrow',
+    'up-down',
+    'direction',
+    'indicator',
+    'pointer',
+    'navigation'
+  ],
+  'caret-up': [
+    'arrow-up',
+    'upward',
+    'point-up',
+    'triangle-up'
+  ],
+  'cast': [
+    'act',
+    'perform',
+    'dramatize',
+    'role',
+    'theater'
+  ],
   'check': [
     'tick',
     'mark',
@@ -261,6 +466,28 @@ export default {
     'verify',
     'approve',
     'validate'
+  ],
+  'checkbox-off': [
+    'unchecked',
+    'empty',
+    'not selected',
+    'off',
+    'unticked'
+  ],
+  'checkbox': [
+    'tickbox',
+    'selection',
+    'checkmark',
+    'marker',
+    'indicator'
+  ],
+  'checklist': [
+    'to-do list',
+    'task list',
+    'agenda',
+    'inventory',
+    'check mark',
+    'note'
   ],
   'chevron-double-down': [
     'arrow',
@@ -319,6 +546,13 @@ export default {
     'triangle-up',
     'point-up'
   ],
+  'circle-add-fill': [
+    'add',
+    'plus',
+    'create',
+    'new',
+    'append'
+  ],
   'circle-add': [
     'add',
     'plus',
@@ -357,12 +591,42 @@ export default {
     'direction',
     'spin'
   ],
+  'circle-back': [
+    'return',
+    'reverse',
+    'loop',
+    'cycle',
+    'retrace'
+  ],
+  'circle-check-fill': [
+    'confirm',
+    'approve',
+    'tick',
+    'verified',
+    'success'
+  ],
   'circle-check': [
     'confirm',
     'approve',
     'tick',
     'validate',
     'verify'
+  ],
+  'circle-close-fill': [
+    'close',
+    'cancel',
+    'exit',
+    'delete',
+    'remove',
+    'x'
+  ],
+  'circle-dollar': [
+    'money',
+    'currency',
+    'dollar sign',
+    'finance',
+    'economy',
+    'cash'
   ],
   'circle-error': [
     'error',
@@ -378,7 +642,37 @@ export default {
     'money',
     'finance',
     'european',
-    'euro sign'
+    'dollar'
+  ],
+  'circle-exclamation-fill': [
+    'warning',
+    'alert',
+    'caution',
+    'attention',
+    'exclamation',
+    'error'
+  ],
+  'circle-fill': [
+    'round',
+    'ring',
+    'sphere',
+    'disc',
+    'oval'
+  ],
+  'circle-forward': [
+    'next',
+    'forward',
+    'arrow',
+    'play',
+    'skip'
+  ],
+  'circle-info-fill': [
+    'information',
+    'details',
+    'explanation',
+    'notification',
+    'alert',
+    'help'
   ],
   'circle-info': [
     'information',
@@ -395,6 +689,14 @@ export default {
     'circle chart',
     'round percentage',
     'circular progress'
+  ],
+  'circle-question-fill': [
+    'unknown',
+    'uncertain',
+    'confused',
+    'mystery',
+    'doubt',
+    'enigma'
   ],
   'circle-question': [
     'unknown',
@@ -430,9 +732,8 @@ export default {
     'clipboard',
     'checkmark',
     'completed',
-    'verified',
     'done',
-    'finished'
+    'verified'
   ],
   'clipboard-empty': [
     'clipboard',
@@ -447,8 +748,7 @@ export default {
     'warning',
     'issue',
     'problem',
-    'alert',
-    'failure'
+    'alert'
   ],
   'clipboard': [
     'notepad',
@@ -464,6 +764,14 @@ export default {
     'clock alternative',
     'different clock',
     'modified clock'
+  ],
+  'clock-fill': [
+    'timepiece',
+    'timer',
+    'chronometer',
+    'hourglass',
+    'wristwatch',
+    'pendulum'
   ],
   'clock': [
     'timepiece',
@@ -499,15 +807,16 @@ export default {
     'cloud upload',
     'cloud arrow up',
     'upload to cloud',
+    'cloud upload alternative',
     'cloud upload icon',
-    'cloud with arrow up',
-    'cloud upload alternative'
+    'cloud upload symbol'
   ],
   'cloud-upload': [
     'upload',
     'cloud',
     'arrow-up',
     'file transfer',
+    'data transfer',
     'cloud storage'
   ],
   'cloud': [
@@ -524,6 +833,21 @@ export default {
     'gray',
     'dull'
   ],
+  'code-alt': [
+    'programming',
+    'development',
+    'syntax',
+    'scripting',
+    'coding'
+  ],
+  'code-branch': [
+    'branch',
+    'code',
+    'code merge',
+    'code versioning',
+    'code repository',
+    'code collaboration'
+  ],
   'code': [
     'programming',
     'script',
@@ -536,8 +860,7 @@ export default {
     'chat',
     'feedback',
     'reply',
-    'speak',
-    'discuss'
+    'speak'
   ],
   'compass': [
     'direction',
@@ -548,6 +871,13 @@ export default {
     'east',
     'west'
   ],
+  'computer-monitor': [
+    'screen',
+    'display',
+    'monitor',
+    'desktop',
+    'computer screen'
+  ],
   'computer': [
     'PC',
     'laptop',
@@ -555,12 +885,41 @@ export default {
     'machine',
     'device'
   ],
+  'connect': [
+    'link',
+    'join',
+    'network',
+    'wireless',
+    'internet'
+  ],
+  'contact-book': [
+    'address book',
+    'phone book',
+    'contacts',
+    'directory',
+    'phone numbers'
+  ],
   'copy': [
     'duplicate',
     'replicate',
     'clone',
     'imitate',
     'reproduce'
+  ],
+  'cpu': [
+    'processor',
+    'computer',
+    'central processing unit',
+    'chip',
+    'microprocessor'
+  ],
+  'credit-card-fill': [
+    'payment',
+    'debit card',
+    'bank card',
+    'plastic money',
+    'credit payment',
+    'card payment'
   ],
   'credit-card': [
     'payment',
@@ -570,12 +929,28 @@ export default {
     'credit payment',
     'card payment'
   ],
-  'database': [
-    'data',
-    'storage',
-    'information',
-    'record',
-    'file'
+  'crop': [
+    'cut',
+    'trim',
+    'resize',
+    'edit',
+    'adjust',
+    'crop'
+  ],
+  'crown': [
+    'royal',
+    'king',
+    'queen',
+    'jewel',
+    'tiara'
+  ],
+  'cyclist': [
+    'bike',
+    'bicyclist',
+    'rider',
+    'cycling',
+    'biking',
+    'pedaler'
   ],
   'delete-alt': [
     'remove',
@@ -584,12 +959,41 @@ export default {
     'erase',
     'cancel'
   ],
+  'delete-fill': [
+    'remove',
+    'erase',
+    'trash',
+    'discard',
+    'uninstall'
+  ],
   'delete': [
     'remove',
     'erase',
     'trash',
     'discard',
     'uninstall'
+  ],
+  'diamond': [
+    'gem',
+    'jewel',
+    'crystal',
+    'precious stone',
+    'sparkler'
+  ],
+  'disconnect': [
+    'unplug',
+    'separate',
+    'detach',
+    'unlink',
+    'break',
+    'split'
+  ],
+  'divide': [
+    'split',
+    'separate',
+    'partition',
+    'break',
+    'cut'
   ],
   'document-add': [
     'add document',
@@ -606,12 +1010,19 @@ export default {
     'confirmed',
     'certified'
   ],
+  'document-code': [
+    'code file',
+    'programming document',
+    'source code',
+    'coding document',
+    'text file'
+  ],
   'document-download': [
     'download',
-    'file',
     'save',
     'get',
     'retrieve',
+    'fetch',
     'import'
   ],
   'document-empty': [
@@ -629,6 +1040,13 @@ export default {
     'problem',
     'alert',
     'failure'
+  ],
+  'document-fill': [
+    'paper',
+    'file',
+    'record',
+    'text',
+    'note'
   ],
   'document-missing': [
     'missing document',
@@ -661,12 +1079,26 @@ export default {
     'text',
     'note'
   ],
+  'double-check': [
+    'verify',
+    'confirm',
+    'recheck',
+    'review',
+    'inspect'
+  ],
   'download': [
     'save',
     'transfer',
     'retrieve',
     'import',
     'get'
+  ],
+  'drop': [
+    'water',
+    'liquid',
+    'drip',
+    'fall',
+    'rain'
   ],
   'edit-alt': [
     'edit',
@@ -683,6 +1115,14 @@ export default {
     'update',
     'alter',
     'amend'
+  ],
+  'elevator': [
+    'lift',
+    'escalator',
+    'vertical transport',
+    'elevating platform',
+    'hoist',
+    'dumbwaiter'
   ],
   'email': [
     'mail',
@@ -704,6 +1144,14 @@ export default {
     'music',
     'volume',
     'balance'
+  ],
+  'euro': [
+    'currency',
+    'money',
+    'euro sign',
+    'euro symbol',
+    'euro currency',
+    'euro coin'
   ],
   'expand': [
     'enlarge',
@@ -728,12 +1176,40 @@ export default {
     'web',
     'URL'
   ],
+  'eye-off': [
+    'hidden',
+    'invisible',
+    'concealed',
+    'closed',
+    'obscured'
+  ],
   'eye': [
     'sight',
     'vision',
     'gaze',
     'look',
     'peep'
+  ],
+  'fat-marker': [
+    'marker',
+    'thick marker',
+    'bold marker',
+    'wide marker',
+    'chubby marker'
+  ],
+  'favorite-fill': [
+    'like',
+    'love',
+    'heart',
+    'preferred',
+    'cherished'
+  ],
+  'favorite-off': [
+    'unfavorite',
+    'unlike',
+    'dislike',
+    'remove',
+    'cancel'
   ],
   'favorite': [
     'like',
@@ -756,6 +1232,13 @@ export default {
     'separate',
     'organize'
   ],
+  'fish': [
+    'aquatic creature',
+    'marine animal',
+    'sea creature',
+    'finned friend',
+    'swimming organism'
+  ],
   'flag': [
     'banner',
     'marker',
@@ -763,12 +1246,34 @@ export default {
     'symbol',
     'emblem'
   ],
+  'flask': [
+    'bottle',
+    'vial',
+    'beaker',
+    'container',
+    'chemistry'
+  ],
+  'fog': [
+    'mist',
+    'haze',
+    'smog',
+    'vapor',
+    'cloud'
+  ],
   'folder-add': [
     'add folder',
     'create folder',
     'new folder',
     'folder plus',
     'folder with plus sign'
+  ],
+  'folder-alt': [
+    'folder alternative',
+    'folder alternative version',
+    'alternative folder',
+    'folder variation',
+    'folder alternative design',
+    'folder alternative icon'
   ],
   'folder-check': [
     'folder with checkmark',
@@ -790,7 +1295,15 @@ export default {
     'warning folder',
     'problem folder',
     'issue folder',
-    'alert folder'
+    'alert folder',
+    'trouble folder'
+  ],
+  'folder-fill': [
+    'directory',
+    'file',
+    'document',
+    'storage',
+    'container'
   ],
   'folder-remove': [
     'delete',
@@ -806,6 +1319,13 @@ export default {
     'storage',
     'container'
   ],
+  'font-size': [
+    'text size',
+    'letter size',
+    'text scale',
+    'font scale',
+    'text magnification'
+  ],
   'fullscreen': [
     'maximize',
     'enlarge',
@@ -813,6 +1333,14 @@ export default {
     'zoom',
     'screen',
     'window'
+  ],
+  'gift': [
+    'present',
+    'box',
+    'surprise',
+    'package',
+    'birthday',
+    'celebration'
   ],
   'globe': [
     'world',
@@ -827,6 +1355,21 @@ export default {
     'layout',
     'pattern',
     'gridiron'
+  ],
+  'hashtag': [
+    'pound sign',
+    'number sign',
+    'hash',
+    'sharp',
+    'tag',
+    'octothorpe'
+  ],
+  'heart-fill': [
+    'love',
+    'cardio',
+    'passion',
+    'affection',
+    'emotion'
   ],
   'heart': [
     'love',
@@ -859,10 +1402,9 @@ export default {
   'inbox-alt': [
     'inbox',
     'mail',
-    'messages',
-    'email',
-    'notification',
-    'envelope'
+    'message',
+    'envelope',
+    'notification'
   ],
   'inbox': [
     'mail',
@@ -883,6 +1425,34 @@ export default {
     'workflow',
     'project',
     'organization'
+  ],
+  'key-alt': [
+    'key',
+    'alternative key',
+    'keyboard',
+    'modifier key',
+    'alt key',
+    'keyboard shortcut'
+  ],
+  'key': [
+    'lock',
+    'door',
+    'access',
+    'unlock'
+  ],
+  'land': [
+    'earth',
+    'ground',
+    'terrain',
+    'soil',
+    'landscape'
+  ],
+  'language': [
+    'speech',
+    'communication',
+    'linguistics',
+    'verbal',
+    'tongue'
   ],
   'laptop': [
     'computer',
@@ -905,12 +1475,48 @@ export default {
     'structure',
     'organization'
   ],
+  'leaf': [
+    'plant',
+    'foliage',
+    'greenery',
+    'botanical',
+    'nature'
+  ],
+  'left-indent': [
+    'indentation',
+    'margin',
+    'spacing',
+    'alignment',
+    'tab',
+    'padding'
+  ],
   'lifebuoy': [
     'life preserver',
     'life ring',
     'safety buoy',
     'rescue buoy',
     'flotation device'
+  ],
+  'lightbulb': [
+    'lamp',
+    'bulb',
+    'illumination',
+    'light',
+    'electricity'
+  ],
+  'line-spacing': [
+    'spacing',
+    'line height',
+    'text spacing',
+    'paragraph spacing',
+    'line gap'
+  ],
+  'link-alt': [
+    'link',
+    'hyperlink',
+    'anchor',
+    'web link',
+    'website link'
   ],
   'link': [
     'connect',
@@ -920,20 +1526,26 @@ export default {
     'tie',
     'bond'
   ],
-  'list': [
-    'bullet points',
-    'inventory',
-    'catalog',
-    'menu',
-    'directory',
-    'index'
+  'location-marker': [
+    'location',
+    'pin',
+    'map',
+    'marker',
+    'navigation'
   ],
   'location': [
     'place',
     'position',
     'address',
-    'map',
-    'destination'
+    'destination',
+    'map'
+  ],
+  'lock-fill': [
+    'secure',
+    'key',
+    'padlock',
+    'security',
+    'password'
   ],
   'lock': [
     'secure',
@@ -951,18 +1563,48 @@ export default {
     'connect'
   ],
   'log-out': [
-    'sign out',
     'logout',
+    'sign out',
     'exit',
     'leave',
     'log off'
+  ],
+  'map': [
+    'location',
+    'navigation',
+    'guide',
+    'compass',
+    'atlas'
+  ],
+  'marker-alt': [
+    'highlighter',
+    'pen',
+    'marker',
+    'text marker',
+    'underline'
+  ],
+  'marker': [
+    'pen',
+    'highlighter',
+    'writing tool',
+    'sharpie',
+    'felt-tip pen'
+  ],
+  'medcase': [
+    'medicine',
+    'medical',
+    'health',
+    'case',
+    'first aid',
+    'pharmacy'
   ],
   'media': [
     'video',
     'music',
     'audio',
-    'entertainment',
-    'multimedia'
+    'play',
+    'pause',
+    'record'
   ],
   'megaphone': [
     'loudspeaker',
@@ -1008,6 +1650,21 @@ export default {
     'inbox',
     'notification'
   ],
+  'mic-off': [
+    'mute',
+    'silence',
+    'disable',
+    'quiet',
+    'sound off'
+  ],
+  'mic': [
+    'microphone',
+    'mic',
+    'audio',
+    'sound',
+    'record',
+    'voice'
+  ],
   'minimize': [
     'reduce',
     'shrink',
@@ -1015,12 +1672,19 @@ export default {
     'compact',
     'condense'
   ],
-  'monitor': [
-    'screen',
-    'display',
-    'computer',
-    'TV',
-    'display screen'
+  'moon': [
+    'night',
+    'lunar',
+    'celestial',
+    'astronomy',
+    'nighttime'
+  ],
+  'mountains': [
+    'hills',
+    'peaks',
+    'ranges',
+    'summits',
+    'mounts'
   ],
   'move': [
     'shift',
@@ -1038,6 +1702,14 @@ export default {
     'product',
     'multiply symbol'
   ],
+  'musical-note': [
+    'music',
+    'note',
+    'sound',
+    'melody',
+    'tune',
+    'song'
+  ],
   'navigation-n': [
     'direction',
     'map',
@@ -1052,6 +1724,13 @@ export default {
     'compass',
     'wayfinding'
   ],
+  'newspaper': [
+    'news',
+    'journal',
+    'publication',
+    'press',
+    'magazine'
+  ],
   'note': [
     'memo',
     'paper',
@@ -1060,6 +1739,14 @@ export default {
     'sticky',
     'pad'
   ],
+  'notification-off': [
+    'mute',
+    'silence',
+    'disable',
+    'turn off',
+    'quiet',
+    'no alerts'
+  ],
   'notification': [
     'alert',
     'message',
@@ -1067,12 +1754,28 @@ export default {
     'notification bell',
     'inbox'
   ],
+  'office': [
+    'workplace',
+    'business',
+    'company',
+    'desk',
+    'job'
+  ],
+  'offline': [
+    'disconnected',
+    'unavailable',
+    'not online',
+    'offline mode',
+    'no internet',
+    'out of service'
+  ],
   'options-horizontal': [
     'settings',
     'menu',
     'horizontal menu',
     'horizontal options',
-    'horizontal settings'
+    'horizontal settings',
+    'horizontal menu options'
   ],
   'options-vertical': [
     'menu',
@@ -1082,6 +1785,21 @@ export default {
     'list',
     'navigation'
   ],
+  'ordered-list': [
+    'list',
+    'numbered list',
+    'sequence',
+    'ranking',
+    'index',
+    'catalog'
+  ],
+  'package': [
+    'box',
+    'parcel',
+    'shipment',
+    'container',
+    'carton'
+  ],
   'paperclip': [
     'clip',
     'fastener',
@@ -1090,12 +1808,65 @@ export default {
     'pin',
     'clamp'
   ],
+  'parking': [
+    'car park',
+    'parking lot',
+    'parking spot',
+    'parking garage',
+    'parking space'
+  ],
+  'path-crossing': [
+    'intersection',
+    'crossroad',
+    'crossing',
+    'junction',
+    'crosswalk',
+    'pedestrian crossing'
+  ],
+  'path-left-turn': [
+    'left',
+    'turn',
+    'arrow',
+    'direction',
+    'route',
+    'navigation'
+  ],
+  'path-right-turn': [
+    'right turn',
+    'direction change',
+    'curve',
+    'bend',
+    'turning',
+    'corner'
+  ],
+  'path-straight': [
+    'line',
+    'direction',
+    'route',
+    'straight line',
+    'pathway'
+  ],
   'pause-play': [
     'toggle',
     'switch',
     'play-pause',
     'pause-resume',
     'start-stop'
+  ],
+  'pause': [
+    'stop',
+    'halt',
+    'break',
+    'freeze',
+    'suspend'
+  ],
+  'payment-request': [
+    'payment',
+    'request',
+    'invoice',
+    'bill',
+    'transaction',
+    'payment order'
   ],
   'pen': [
     'writing utensil',
@@ -1118,13 +1889,35 @@ export default {
     'smartphone',
     'device'
   ],
-  'pie-chart': [
+  'pie-chart-2-parts': [
+    'chart',
+    'graph',
+    'diagram',
+    'data',
+    'statistics',
+    'visualization'
+  ],
+  'pie-chart-3-parts': [
     'chart',
     'graph',
     'diagram',
     'statistics',
+    'data visualization'
+  ],
+  'pie-chart-single-part': [
+    'chart',
+    'graph',
+    'diagram',
     'data',
+    'statistics',
     'visualization'
+  ],
+  'pin-fill': [
+    'marker',
+    'needle',
+    'point',
+    'thumbtack',
+    'peg'
   ],
   'pin': [
     'marker',
@@ -1156,11 +1949,47 @@ export default {
     'paper',
     'output'
   ],
+  'qr-code-scan': [
+    'qr code',
+    'scan',
+    'barcode',
+    'reader',
+    'code scanner',
+    'barcode scanner'
+  ],
+  'radio-off': [
+    'mute',
+    'silence',
+    'off',
+    'disable',
+    'quiet'
+  ],
   'radio': [
     'music',
     'broadcast',
     'wireless',
     'tuner'
+  ],
+  'rain': [
+    'shower',
+    'precipitation',
+    'downpour',
+    'drizzle',
+    'storm'
+  ],
+  'receipt': [
+    'bill',
+    'invoice',
+    'purchase',
+    'transaction',
+    'payment'
+  ],
+  'redo': [
+    'repeat',
+    'refresh',
+    'replay',
+    'start over',
+    'do again'
   ],
   'refresh': [
     'reload',
@@ -1198,6 +2027,27 @@ export default {
     'recurrence',
     'repetition'
   ],
+  'repeating-payment': [
+    'subscription',
+    'recurring payment',
+    'auto-debit',
+    'repeating transaction',
+    'recurring billing'
+  ],
+  'rocket-ship-fill': [
+    'rocket',
+    'spaceship',
+    'spacecraft',
+    'astronaut',
+    'space travel'
+  ],
+  'rocket-ship': [
+    'rocket',
+    'spaceship',
+    'spacecraft',
+    'astronaut',
+    'space travel'
+  ],
   'rss': [
     'news',
     'feed',
@@ -1205,12 +2055,33 @@ export default {
     'updates',
     'articles'
   ],
+  'ruler': [
+    'measure',
+    'tool',
+    'straightedge',
+    'yardstick',
+    'scale'
+  ],
   'scan': [
     'search',
     'detect',
     'read',
     'analyze',
     'inspect'
+  ],
+  'scanner': [
+    'scan',
+    'copier',
+    'printer',
+    'document',
+    'machine'
+  ],
+  'scissors': [
+    'cut',
+    'shears',
+    'clippers',
+    'snips',
+    'trimmers'
   ],
   'search': [
     'magnifying glass',
@@ -1248,6 +2119,13 @@ export default {
     'data',
     'machine'
   ],
+  'settings-fill': [
+    'options',
+    'preferences',
+    'configuration',
+    'controls',
+    'adjustments'
+  ],
   'settings': [
     'options',
     'preferences',
@@ -1268,6 +2146,14 @@ export default {
     'distribute',
     'exchange',
     'collaborate'
+  ],
+  'shield-check-fill': [
+    'verified',
+    'approved',
+    'secure',
+    'protected',
+    'safety',
+    'tick'
   ],
   'shield-check': [
     'verified',
@@ -1291,6 +2177,30 @@ export default {
     'defender',
     'safeguard'
   ],
+  'shopping-cart-add': [
+    'add to cart',
+    'shopping cart plus',
+    'add item to cart',
+    'add to shopping cart',
+    'cart plus',
+    'add to basket'
+  ],
+  'shopping-cart-cross': [
+    'remove',
+    'delete',
+    'cancel',
+    'discard',
+    'cross out',
+    'eliminate'
+  ],
+  'shopping-cart': [
+    'cart',
+    'basket',
+    'trolley',
+    'bag',
+    'purchase',
+    'shop'
+  ],
   'shuffle-alt': [
     'shuffle',
     'randomize',
@@ -1313,6 +2223,36 @@ export default {
     'side menu',
     'drawer'
   ],
+  'sign-in': [
+    'login',
+    'log in',
+    'signin',
+    'sign in',
+    'enter',
+    'authenticate'
+  ],
+  'sign-out': [
+    'logout',
+    'exit',
+    'log off',
+    'sign off',
+    'sign out',
+    'leave'
+  ],
+  'signal': [
+    'network',
+    'connection',
+    'wireless',
+    'communication',
+    'indicator'
+  ],
+  'sitemap': [
+    'diagram',
+    'structure',
+    'navigation',
+    'hierarchy',
+    'outline'
+  ],
   'sliders': [
     'adjust',
     'controls',
@@ -1320,12 +2260,54 @@ export default {
     'bars',
     'knobs'
   ],
+  'snow': [
+    'winter',
+    'snowflake',
+    'frost',
+    'ice',
+    'blizzard'
+  ],
+  'snowflake': [
+    'snow',
+    'winter',
+    'ice',
+    'frost',
+    'cold'
+  ],
   'sort': [
     'arrange',
     'organize',
     'order',
     'categorize',
     'filter'
+  ],
+  'sparkles-fill': [
+    'glitter',
+    'shimmer',
+    'twinkle',
+    'shine',
+    'glimmer'
+  ],
+  'sparkles': [
+    'glitter',
+    'shimmer',
+    'twinkle',
+    'shine',
+    'glimmer'
+  ],
+  'speakers': [
+    'audio',
+    'sound',
+    'music',
+    'loudspeakers',
+    'stereo'
+  ],
+  'stethoscope': [
+    'medical',
+    'doctor',
+    'health',
+    'heartbeat',
+    'auscultation'
   ],
   'stop': [
     'halt',
@@ -1335,12 +2317,53 @@ export default {
     'pause',
     'block'
   ],
+  'store-alt': [
+    'shop',
+    'boutique',
+    'retail',
+    'market',
+    'storefront'
+  ],
+  'store': [
+    'shop',
+    'boutique',
+    'market',
+    'retail',
+    'mall'
+  ],
+  'storm': [
+    'thunderstorm',
+    'rainstorm',
+    'tempest',
+    'hurricane',
+    'cyclone'
+  ],
   'subtract': [
     'minus',
-    'deduct',
     'take away',
-    'reduce',
+    'deduct',
+    'remove',
     'decrease'
+  ],
+  'sun': [
+    'sunny',
+    'sunshine',
+    'daylight',
+    'solar',
+    'sunbeam'
+  ],
+  'sunrise': [
+    'morning',
+    'dawn',
+    'sun up',
+    'daybreak'
+  ],
+  'sunset': [
+    'dusk',
+    'evening',
+    'twilight',
+    'sun going down',
+    'nightfall'
   ],
   'switch': [
     'toggle',
@@ -1348,6 +2371,20 @@ export default {
     'lever',
     'power',
     'control'
+  ],
+  'table-alt-2': [
+    'table',
+    'desk',
+    'furniture',
+    'office',
+    'workstation'
+  ],
+  'table-alt': [
+    'table',
+    'desk',
+    'furniture',
+    'surface',
+    'workstation'
   ],
   'table': [
     'desk',
@@ -1359,10 +2396,18 @@ export default {
   ],
   'tablet': [
     'device',
-    'iPad',
+    'pad',
     'screen',
-    'mobile',
-    'computer'
+    'computer',
+    'mobile'
+  ],
+  'tag-horizontal': [
+    'label',
+    'badge',
+    'marker',
+    'strip',
+    'band',
+    'ribbon'
   ],
   'tag': [
     'label',
@@ -1378,6 +2423,21 @@ export default {
     'task manager',
     'task tracker'
   ],
+  'temperature': [
+    'heat',
+    'thermometer',
+    'weather',
+    'climate',
+    'degree'
+  ],
+  'terminal': [
+    'command line',
+    'console',
+    'shell',
+    'prompt',
+    'cmd',
+    'terminal window'
+  ],
   'text': [
     'message',
     'chat',
@@ -1392,6 +2452,57 @@ export default {
     'rows',
     'columns',
     'matrix'
+  ],
+  'thumbs-down': [
+    'dislike',
+    'disapproval',
+    'thumbs down',
+    'not good',
+    'negative',
+    'reject'
+  ],
+  'thumbs-up': [
+    'like',
+    'approve',
+    'positive',
+    'good',
+    'upvote'
+  ],
+  'timer': [
+    'clock',
+    'countdown',
+    'stopwatch',
+    'alarm',
+    'chronometer'
+  ],
+  'toggle-off': [
+    'switch',
+    'disable',
+    'deactivate',
+    'turn off',
+    'uncheck',
+    'untoggle'
+  ],
+  'toggle-on': [
+    'switch',
+    'activate',
+    'enable',
+    'turn on',
+    'power on'
+  ],
+  'tool': [
+    'equipment',
+    'implement',
+    'instrument',
+    'device',
+    'utensil'
+  ],
+  'train': [
+    'railway',
+    'locomotive',
+    'railroad',
+    'transportation',
+    'commute'
   ],
   'transfer': [
     'move',
@@ -1415,25 +2526,39 @@ export default {
     'progress',
     'popular'
   ],
-  'two-columns': [
-    'grid',
-    'layout',
-    'table',
-    'columns',
-    'side by side'
+  'triangle': [
+    'shape',
+    'pyramid',
+    'polygon',
+    'trigon',
+    'three-sided figure'
   ],
-  'two-rows': [
-    'double rows',
-    'dual rows',
-    'pair of rows',
-    'two lines',
-    'two columns'
+  'truck': [
+    'vehicle',
+    'lorry',
+    'pickup',
+    'van',
+    'automobile'
+  ],
+  'tv': [
+    'television',
+    'screen',
+    'monitor',
+    'television set',
+    'TV screen'
+  ],
+  'umbrella': [
+    'rain',
+    'shelter',
+    'parasol',
+    'canopy'
   ],
   'underline': [
     'line',
     'marker',
     'underscore',
     'highlight',
+    'underscore',
     'emphasis'
   ],
   'undo': [
@@ -1450,13 +2575,20 @@ export default {
     'unbolt',
     'unseal'
   ],
+  'unordered-list': [
+    'list',
+    'bullet points',
+    'items',
+    'unordered items',
+    'bullet list'
+  ],
   'upload': [
     'upload',
     'uploading',
-    'upload icon',
-    'file upload',
-    'cloud upload',
-    'arrow up'
+    'upload file',
+    'upload document',
+    'upload image',
+    'upload photo'
   ],
   'user-add': [
     'add user',
@@ -1488,19 +2620,48 @@ export default {
     'close',
     'exit'
   ],
-  'user-remove': [
-    'delete',
-    'remove',
-    'erase',
-    'discard',
-    'uninstall'
-  ],
   'user': [
     'person',
     'profile',
     'avatar',
     'account',
     'customer'
+  ],
+  'users': [
+    'people',
+    'individuals',
+    'members',
+    'customers',
+    'clients'
+  ],
+  'vault': [
+    'safe',
+    'lockbox',
+    'strongbox',
+    'security',
+    'treasure chest'
+  ],
+  'vial': [
+    'bottle',
+    'flask',
+    'container',
+    'phial',
+    'jar'
+  ],
+  'video-camera': [
+    'camera',
+    'recorder',
+    'film',
+    'video',
+    'cinema',
+    'camcorder'
+  ],
+  'video-off': [
+    'mute',
+    'silence',
+    'disable',
+    'turn off',
+    'no sound'
   ],
   'video': [
     'movie',
@@ -1537,6 +2698,21 @@ export default {
     'mute',
     'speaker'
   ],
+  'wallet': [
+    'purse',
+    'money holder',
+    'billfold',
+    'cardholder',
+    'coin purse'
+  ],
+  'warning-triangle-fill': [
+    'alert',
+    'caution',
+    'danger',
+    'exclamation',
+    'triangle',
+    'hazard'
+  ],
   'warning-triangle': [
     'alert',
     'caution',
@@ -1544,6 +2720,19 @@ export default {
     'exclamation',
     'triangle',
     'hazard'
+  ],
+  'watch': [
+    'timepiece',
+    'wristwatch',
+    'timekeeper',
+    'timepiece'
+  ],
+  'webcam': [
+    'camera',
+    'video',
+    'live',
+    'stream',
+    'record'
   ],
   'wifi-off': [
     'no wifi',
@@ -1558,6 +2747,27 @@ export default {
     'network',
     'connection',
     'signal'
+  ],
+  'wind': [
+    'breeze',
+    'gust',
+    'air',
+    'blow',
+    'draft'
+  ],
+  'window': [
+    'pane',
+    'glass',
+    'opening',
+    'frame',
+    'view'
+  ],
+  'yen': [
+    'currency',
+    'money',
+    'Japanese currency',
+    'Japanese yen',
+    'cash'
   ],
   'zoom-in': [
     'magnify',

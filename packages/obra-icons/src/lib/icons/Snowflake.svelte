@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M19.6569 15.6569L16 12"
+			d="M19.6569 15.6567L16 11.9999"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -46,7 +46,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M15.6569 19.6569L12 16"
+			d="M15.6569 19.6567L12 15.9999"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -64,7 +64,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M8.34314 19.6569L12 16"
+			d="M8.34314 19.657L12 16.0001"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -82,7 +82,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M4.34314 15.6569L8 12"
+			d="M4.34314 15.657L8 12.0001"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -90,7 +90,7 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
+			class="oi-line_10"
 			d="M15.6568 4.34315L12 8"
 			stroke="black"
 			stroke-width="2"
@@ -100,4 +100,3 @@
 		/>
 	</g>
 </svg>
-

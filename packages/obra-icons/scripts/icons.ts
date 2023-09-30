@@ -2,7 +2,7 @@ import type { GETImageResponse, GETNodesResponse } from './types.d';
 import { writeFile, mkdir, rm } from 'node:fs/promises';
 import * as prettier from 'prettier';
 import { ofetch } from 'ofetch';
-import OpenAI from 'openai';
+import split from 'just-split';
 import {
 	SVG_OUT_DIR,
 	SVELTE_OUT_DIR,
@@ -24,7 +24,7 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '153:1009';
+const NODE_ID = '218:23456';
 
 console.log('\nCleaning Output Directories');
 
@@ -54,15 +54,33 @@ const icon_name_map = new Map<string, string>();
 for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 	console.log(`  Processing frame (${frame_id}) "${frame.document.name}"`);
 
+	const duplicates: [id: string, name: string][] = [];
+
 	//? Loop over the found icons
 	for (const icon of frame.document.children) {
-		//? Prevent duplicate icons
-		if (icon_name_map.has(icon.name)) {
-			throw new Error(`Found duplicate icon (${icon.id}) "${icon.name}"`);
+		//? Normalise the icon name
+		const name = icon.name.replace('oi-', '');
+
+		//? Add duplicate icons to an array
+		if (icon_name_map.has(name)) {
+			duplicates.push([icon.id, name]);
 		}
 
 		//? Add the icon id & name to the name:id map
-		icon_name_map.set(icon.name, icon.id);
+		icon_name_map.set(name, icon.id);
+	}
+
+	//? If duplicates are found log them and exit
+	if (duplicates.length) {
+		console.error(
+			`\n\nERR: Found duplicates in frame (${frame_id}) "${frame.document.name}:`,
+		);
+
+		for (const [id, name] of duplicates) {
+			console.error(`  (${id}) "${name}"`);
+		}
+
+		process.exit(1);
 	}
 
 	console.log(`      Found ${frame.document.children.length} Icons`);
@@ -85,10 +103,8 @@ for (const chunk of icon_chunks) {
 	const ids = chunk.map(([name, id]) => id);
 
 	//? Fetch the icon svg urls
-	const images = await figma<GETImageResponse>(
-		`/images/${FILE_ID}?format=svg&ids=${icon_ids.join(
-			',',
-		)}&svg_include_id=true`,
+	const { images } = await figma<GETImageResponse>(
+		`/images/${FILE_ID}?format=svg&svg_include_id=true&ids=${ids}`,
 	);
 
 	//? Run all the icon downloads and formats in parallel
@@ -116,10 +132,11 @@ for (const chunk of icon_chunks) {
 				parser: 'html',
 			});
 
-			//? Change every id attribute to class
-			svg = svg.replace(/id="/g, 'class="');
-			//? Also very id like line_2 line_3 etc to "line"
-			svg = svg.replace(/(class="[^"]+)_\d+"/g, '$1"');
+			//? Remove weird whitespace
+			svg = svg.trim();
+
+			//? Turn id="oi_vector_2" -> class="oi-vector"
+			svg = svg.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg });
@@ -140,9 +157,7 @@ ${svg}
  * ? Turns arrow-left -> ArrowLeft
  */
 function icon_name_to_pascal(name: string) {
-	//? Every icon is prefixed with oi (Obra Icons)
 	return name
-		.replace('oi-', '')
 		.split('-')
 		.map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
 		.join('');

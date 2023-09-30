@@ -41,11 +41,10 @@
 		/>
 		<path
 			class="oi-medium-dot"
-			d="M18.4902 20.0262H18.5022"
+			d="M18.4902 20.0264H18.5022"
 			stroke="black"
 			stroke-width="3"
 			stroke-linecap="round"
 		/>
 	</g>
 </svg>
-

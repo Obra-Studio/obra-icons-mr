@@ -22,14 +22,21 @@
 			return;
 		}
 
-		const result = await search(data.searchEngine, {
-			properties: ['name', 'keywords'],
-			tolerance: 1,
+		const result = await search(data.searchDb, {
+			properties: ['nameKebab', 'keywords'],
+			tolerance: 10,
 			term: query,
 			limit: 50,
+			sortBy: {
+				property: 'nameKebab',
+			},
+			boost: {
+				nameKebab: 2,
+				keywords: 1,
+			},
 		});
 
-		icons = result.hits.map((hit) => hit.document.componentName);
+		icons = result.hits.map((hit) => hit.document.namePascal);
 	}
 </script>
 
@@ -43,7 +50,7 @@
 			<div class="input-with-icon">
 				<input
 					on:input={(e) => find(e.currentTarget.value)}
-					placeholder="Search {icons.length} Obra Icons and Obra Plus Icons..."
+					placeholder="Search {data.iconsCount} Obra Icons and Obra Plus Icons..."
 					type="text"
 				/>
 
