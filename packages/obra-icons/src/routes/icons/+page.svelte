@@ -2,6 +2,7 @@
 	import { iconNameKebab } from './utils';
 	import { search } from '@orama/orama';
 	import * as iconMap from '$lib/index';
+	import iconsCount from '$lib/count';
 
 	const { IconSearch } = iconMap;
 
@@ -50,7 +51,7 @@
 			<div class="input-with-icon">
 				<input
 					on:input={(e) => find(e.currentTarget.value)}
-					placeholder="Search {data.iconsCount} Obra Icons and Obra Plus Icons..."
+					placeholder="Search {iconsCount} Obra Icons and Obra Plus Icons..."
 					type="text"
 				/>
 

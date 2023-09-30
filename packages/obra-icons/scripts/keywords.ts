@@ -77,4 +77,11 @@ export default ${keywords_json};
 //? Write the keywords
 await writeFile(KEYWORDS_FILE, template, 'utf-8');
 
+//? Write the icon count
+await writeFile(
+	ICON_COUNT_FILE,
+	`export default ${icon_names.length};`,
+	'utf-8',
+);
+
 console.timeEnd('generate keywords');

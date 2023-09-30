@@ -1,4 +1,4 @@
-import { create, insert, search } from '@orama/orama';
+import { create, insert } from '@orama/orama';
 import iconSearchData from '$lib/keywords';
 import { iconNamePascal } from './utils';
 
@@ -22,7 +22,6 @@ export async function load() {
 	}
 
 	return {
-		iconsCount: entries.length,
 		searchDb,
 	};
 }

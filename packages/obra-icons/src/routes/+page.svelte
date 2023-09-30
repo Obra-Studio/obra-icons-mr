@@ -1,9 +1,7 @@
 <script>
 	import { IconArrowRight, IconChevronRight, IconDownload } from '$lib';
 	import FigmaIcon from '$marketinglib/components/icons/FigmaIcon.svelte';
-
-	import * as iconMap from '$lib/index';
-	let icons = Object.keys(iconMap);
+	import iconsCount from '$lib/count';
 </script>
 
 <svelte:head>
@@ -52,7 +50,7 @@
 				<ul class="justify-content-center flex gap-medium">
 					<li class="opacity-75">Version 1.0.0</li>
 					<li class="opacity-75">
-						{icons.length} high quality icons
+						{iconsCount} high quality icons
 					</li>
 				</ul>
 
