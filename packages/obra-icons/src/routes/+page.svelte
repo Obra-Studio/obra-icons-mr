@@ -26,7 +26,11 @@
 							<IconArrowRight />
 						</a>
 
-						<a class="button inverse" href="/icons">
+						<a
+							class="button inverse"
+							href="/"
+							onclick="alert('Coming soon!')"
+						>
 							<span>Buy the files</span>
 							<IconArrowRight />
 						</a>
@@ -172,7 +176,11 @@
 					</ul>
 
 					<div class="button-group">
-						<a class="button" href="/">
+						<a
+							class="button"
+							href="/"
+							onclick="alert('Coming soon!')"
+						>
 							<span>Buy the files</span>
 							<IconArrowRight />
 						</a>
