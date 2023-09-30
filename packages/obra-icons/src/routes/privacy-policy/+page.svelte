@@ -15,18 +15,25 @@
 
 			<p>
 				Welcome to the marketing website for Obra Icons ("we," "us," or
-				"our"). This Privacy Policy explains how we collect, use, and
-				protect your data when you visit our website, which implements
-				Matomo analytics. We are committed to protecting your privacy
-				and complying with the European Union's General Data Protection
-				Regulation (GDPR) and the United States privacy laws and
-				regulations.
+				"our").
 			</p>
 
 			<p>
-				Please read this Privacy Policy carefully to understand how we
-				handle your data. By using the Obra Icons marketing website, you
-				agree to the practices described in this policy.
+				This Privacy Policy explains how we collect, use, and protect
+				your data when you visit our website, which implements Matomo
+				analytics.
+			</p>
+
+			<p>
+				We are committed to protecting your privacy and complying with
+				the European Union's General Data Protection Regulation (GDPR)
+				and the United States privacy laws and regulations.
+			</p>
+
+			<p>
+				Please read this Privacy Policy to understand how we handle your
+				data. By using the Obra Icons marketing website, you agree to
+				the practices described in this policy.
 			</p>
 
 			<h2>2. Information We Collect</h2>
@@ -53,15 +60,13 @@
 				it. Specifically:
 			</p>
 
-			<ol>
+			<ul>
 				<li>
-					<p>
-						<strong>3.1. Website Improvement:</strong> We use Matomo
-						analytics data to analyze user behavior on our website, identify
-						areas for improvement, and optimize the user experience.
-					</p>
+					Website Improvement: We use Matomo analytics data to analyze
+					user behavior on our website, identify areas for
+					improvement, and optimize the user experience.
 				</li>
-			</ol>
+			</ul>
 
 			<h2>4. Data Sharing</h2>
 
@@ -80,21 +85,17 @@
 				for analytics purposes. These include:
 			</p>
 
-			<ol>
+			<ul>
 				<li>
-					<p>
-						<strong>5.1. Access:</strong> You have the right to access
-						the non-personal information we collect about your website
-						visits.
-					</p>
+					<strong>5.1. Access: </strong>You have the right to access
+					the non-personal information we collect about your website
+					visits.
 				</li>
 				<li>
-					<p>
-						<strong>5.2. Object:</strong> You can object to the processing
-						of your non-personal information for analytics purposes.
-					</p>
+					<strong>5.2. Object:</strong> You can object to the processing
+					of your non-personal information for analytics purposes.
 				</li>
-			</ol>
+			</ul>
 
 			<h2>6. Data Security</h2>
 
@@ -110,8 +111,7 @@
 
 			<p>
 				If you have any questions or concerns regarding your privacy or
-				this Privacy Policy, please contact us at [Your Contact
-				Information].
+				this Privacy Policy, please contact us at legal@obra.studio
 			</p>
 
 			<h2>8. Changes to this Privacy Policy</h2>
@@ -132,20 +132,19 @@
 
 			<p>
 				Obra Icons - Marketing website<br />
-				Located online at https://icons.mono.company<br />
+				Located online at https://icons.mono.company
 			</p>
 
-			<h2>Responsible publisher</h2>
+			<h2>Published by</h2>
 
 			<p>
 				Obra Studio BV<br />
 				Guldenvliesstraat 77<br />
 				2600 Berchem<br />
-				Belgium<br />
+				Belgium
 			</p>
 
 			<h2>Contact us</h2>
-
 			<p>
 				E-mail <a href="mailto:info@obra.studio">info@obra.studio</a>.
 			</p>

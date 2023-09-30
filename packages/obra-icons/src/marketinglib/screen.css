@@ -184,6 +184,19 @@ h4, .drop-down-heading-visually h3 {
     color: #000;
 }
 
+.button svg {
+    width: 1.25rem;
+    height: 1.25rem;;
+}
+
+.button svg * {
+    stroke: #FFF;
+}
+
+.button.inverse svg * {
+    stroke: #000;
+}
+
 /* Advantages - Image holder specific
    ========================================================================== */
 
@@ -281,20 +294,6 @@ h4, .drop-down-heading-visually h3 {
         align-items: center;
         gap: var(--spacing-medium);
     }
-}
-
-/* Heading and list
-   ========================================================================== */
-
-.heading-and-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.heading-and-list li {
-    opacity: .75;
 }
 
 /* Hero
@@ -574,6 +573,13 @@ h4, .drop-down-heading-visually h3 {
 
 .vertical-container-xxx-large {
     padding: var(--spacing-xxx-large) 0;
+}
+
+/* Opacity
+   ========================================================================== */
+
+.opacity-75 {
+    opacity: .75;
 }
 
 /* Classes related to modifying links inside

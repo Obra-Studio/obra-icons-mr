@@ -16,9 +16,9 @@
 			<ul class="flex gap-small muted-links">
 				<li>
 					<NavItem
-						href="/licensing"
-						active={$page.url.pathname === '/licensing'}
-						>Licensing</NavItem
+						href="/licensing-agreement"
+						active={$page.url.pathname === '/licensing-agreement'}
+						>Licensing agreement</NavItem
 					>
 				</li>
 				<li>
@@ -26,6 +26,13 @@
 						href="/privacy-policy"
 						active={$page.url.pathname === '/privacy-policy'}
 						>Privacy policy</NavItem
+					>
+				</li>
+				<li>
+					<NavItem
+						href="/support"
+						active={$page.url.pathname === '/support'}
+						>Support</NavItem
 					>
 				</li>
 			</ul>
