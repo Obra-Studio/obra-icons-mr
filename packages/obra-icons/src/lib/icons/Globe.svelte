@@ -28,4 +28,3 @@
 		<path class="oi-line" d="M3 12H21" stroke="black" stroke-width="2" />
 	</g>
 </svg>
-

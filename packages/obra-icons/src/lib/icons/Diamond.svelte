@@ -1,0 +1,20 @@
+<svelte:options namespace="svg" />
+
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-diamond">
+		<path
+			class="oi-vector"
+			d="M21 10L17 5H12M21 10L12 20M21 10L16 10M12 20L3 10M12 20L16 10M12 20L8 10M3 10L7 5H12M3 10H8M8 10L12 5M8 10L16 10M12 5L16 10"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="2.16568"
+			stroke-linecap="round"
+		/>
+	</g>
+</svg>

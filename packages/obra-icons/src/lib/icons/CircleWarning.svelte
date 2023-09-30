@@ -18,7 +18,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M12.012 7.37207L12.012 13.411"
+			d="M12.012 7.37195L12.012 13.4108"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -32,11 +32,10 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M12.009 7.33008L12.009 13.369"
+			d="M12.009 7.32996L12.009 13.3689"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
 		/>
 	</g>
 </svg>
-

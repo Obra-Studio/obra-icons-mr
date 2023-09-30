@@ -1,0 +1,58 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-wallet">
+		<path
+			class="oi-vector"
+			d="M2 8.2751C2 7.48809 2.63799 6.8501 3.425 6.8501H5.8V8.2751V9.7001H3.425C2.63799 9.7001 2 9.0621 2 8.2751V8.2751Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M5.80005 4H21V13.5H18.15V10.7C18.15 10.1477 17.7023 9.7 17.15 9.7H5.80005V4Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M5.80005 6.8501H21"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M2 8.27502V18.1C2 19.7569 3.34315 21.1 5 21.1H17.15C17.7023 21.1 18.15 20.6523 18.15 20.1V10.7C18.15 10.1477 17.7023 9.70002 17.15 9.70002H10.075"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M10.075 6.8501H3.425C2.63799 6.8501 2 7.48809 2 8.2751V8.2751C2 9.0621 2.63799 9.7001 3.425 9.7001H10.075"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-mini-dot"
+			d="M14 15H14.01"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

@@ -10,7 +10,7 @@
 	<g class="oi-sliders">
 		<path
 			class="oi-line"
-			d="M4.0001 21V14"
+			d="M4.00012 21V14"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -18,7 +18,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M4.0001 10V3"
+			d="M4.00012 10V3"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -58,7 +58,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M1.0001 14H7.0001"
+			d="M1.00012 14H7.00012"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -82,4 +82,3 @@
 		/>
 	</g>
 </svg>
-
