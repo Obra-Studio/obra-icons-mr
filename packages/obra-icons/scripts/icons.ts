@@ -129,7 +129,12 @@ for (const chunk of icon_chunks) {
 				parser: 'html',
 			});
 
+			//? Remove weird whitespace
 			svg = svg.trim();
+
+			//todo can we use this?
+			// svg = svg.replace(/id="([^ "]+)"/, 'class="$1"');
+
 			// @todo change every id attribute to class
 			svg = svg.replace(/id="/g, 'class="');
 
