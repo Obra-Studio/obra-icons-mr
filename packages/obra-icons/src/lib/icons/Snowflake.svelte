@@ -90,7 +90,7 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
+			class="oi-line_10"
 			d="M15.6568 4.34315L12 8"
 			stroke="black"
 			stroke-width="2"

@@ -28,7 +28,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_218">
+		<clipPath class="clip0_218_24480">
 			<rect width="24" height="24" fill="white" />
 		</clipPath>
 	</defs>

@@ -88,7 +88,7 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
+			class="oi-box_10"
 			d="M20 12H16V16H20V12Z"
 			stroke="black"
 			stroke-width="2"
