@@ -32,9 +32,8 @@ export default {
     'center',
     'middle',
     'align middle',
-    'horizontal center',
-    'center align',
-    'centered'
+    'align text center',
+    'align content center'
   ],
   'align-justify': [
     'justify',
@@ -185,10 +184,10 @@ export default {
   'barcode-scan': [
     'barcode',
     'scan',
-    'barcode reader',
-    'barcode scanner',
+    'QR code',
+    'reader',
     'scanning',
-    'barcode detection'
+    'barcode scanner'
   ],
   'battery': [
     'power',
@@ -251,9 +250,8 @@ export default {
   'bolt': [
     'lightning',
     'electricity',
-    'thunderbolt',
-    'flash',
-    'energy'
+    'thunder',
+    'flash'
   ],
   'book-open': [
     'book',
@@ -385,7 +383,8 @@ export default {
     'date',
     'schedule',
     'planner',
-    'agenda'
+    'agenda',
+    'timetable'
   ],
   'call': [
     'phone',
@@ -609,8 +608,8 @@ export default {
     'confirm',
     'approve',
     'tick',
-    'validate',
-    'verify'
+    'verified',
+    'success'
   ],
   'circle-close-fill': [
     'close',
@@ -634,7 +633,7 @@ export default {
     'alert',
     'problem',
     'issue',
-    'failure'
+    'exclamation'
   ],
   'circle-euro': [
     'euro',
@@ -684,8 +683,8 @@ export default {
   ],
   'circle-percent': [
     'progress',
-    'completion',
     'percentage',
+    'completion',
     'circle chart',
     'round percentage',
     'circular progress'
@@ -748,7 +747,8 @@ export default {
     'warning',
     'issue',
     'problem',
-    'alert'
+    'alert',
+    'failure'
   ],
   'clipboard': [
     'notepad',
@@ -860,7 +860,8 @@ export default {
     'chat',
     'feedback',
     'reply',
-    'speak'
+    'speak',
+    'discuss'
   ],
   'compass': [
     'direction',
@@ -986,7 +987,7 @@ export default {
     'detach',
     'unlink',
     'break',
-    'split'
+    'remove'
   ],
   'divide': [
     'split',
@@ -1039,7 +1040,7 @@ export default {
     'issue',
     'problem',
     'alert',
-    'failure'
+    'bug'
   ],
   'document-fill': [
     'paper',
@@ -1091,7 +1092,7 @@ export default {
     'transfer',
     'retrieve',
     'import',
-    'get'
+    'grab'
   ],
   'drop': [
     'water',
@@ -1272,8 +1273,8 @@ export default {
     'folder alternative version',
     'alternative folder',
     'folder variation',
-    'folder alternative design',
-    'folder alternative icon'
+    'folder different',
+    'folder alternative design'
   ],
   'folder-check': [
     'folder with checkmark',
@@ -1295,8 +1296,7 @@ export default {
     'warning folder',
     'problem folder',
     'issue folder',
-    'alert folder',
-    'trouble folder'
+    'fault folder'
   ],
   'folder-fill': [
     'directory',
@@ -1402,9 +1402,10 @@ export default {
   'inbox-alt': [
     'inbox',
     'mail',
-    'message',
-    'envelope',
-    'notification'
+    'messages',
+    'email',
+    'notification',
+    'envelope'
   ],
   'inbox': [
     'mail',
@@ -1737,7 +1738,7 @@ export default {
     'message',
     'reminder',
     'sticky',
-    'pad'
+    'document'
   ],
   'notification-off': [
     'mute',
@@ -1894,8 +1895,7 @@ export default {
     'graph',
     'diagram',
     'data',
-    'statistics',
-    'visualization'
+    'statistics'
   ],
   'pie-chart-3-parts': [
     'chart',
@@ -2065,9 +2065,9 @@ export default {
   'scan': [
     'search',
     'detect',
-    'read',
     'analyze',
-    'inspect'
+    'read',
+    'explore'
   ],
   'scanner': [
     'scan',
@@ -2143,8 +2143,8 @@ export default {
   'share': [
     'send',
     'transfer',
-    'distribute',
     'exchange',
+    'distribute',
     'collaborate'
   ],
   'shield-check-fill': [
@@ -2199,7 +2199,7 @@ export default {
     'trolley',
     'bag',
     'purchase',
-    'shop'
+    'shopping'
   ],
   'shuffle-alt': [
     'shuffle',
@@ -2214,7 +2214,8 @@ export default {
     'randomize',
     'rearrange',
     'jumble',
-    'scramble'
+    'switch',
+    'shuffle'
   ],
   'sidebar': [
     'menu',
@@ -2272,7 +2273,8 @@ export default {
     'winter',
     'ice',
     'frost',
-    'cold'
+    'cold',
+    'snow crystal'
   ],
   'sort': [
     'arrange',
@@ -2340,9 +2342,9 @@ export default {
   ],
   'subtract': [
     'minus',
-    'take away',
     'deduct',
-    'remove',
+    'take away',
+    'reduce',
     'decrease'
   ],
   'sun': [
@@ -2396,10 +2398,10 @@ export default {
   ],
   'tablet': [
     'device',
-    'pad',
+    'iPad',
     'screen',
-    'computer',
-    'mobile'
+    'mobile',
+    'computer'
   ],
   'tag-horizontal': [
     'label',
@@ -2478,17 +2480,17 @@ export default {
   'toggle-off': [
     'switch',
     'disable',
-    'deactivate',
     'turn off',
-    'uncheck',
-    'untoggle'
+    'deactivate',
+    'shut down'
   ],
   'toggle-on': [
     'switch',
+    'button',
     'activate',
     'enable',
-    'turn on',
-    'power on'
+    'on/off',
+    'toggle'
   ],
   'tool': [
     'equipment',
@@ -2558,7 +2560,6 @@ export default {
     'marker',
     'underscore',
     'highlight',
-    'underscore',
     'emphasis'
   ],
   'undo': [
@@ -2680,9 +2681,9 @@ export default {
   'volume-2': [
     'sound',
     'audio',
-    'level',
+    'speaker',
     'mute',
-    'speaker'
+    'loudness'
   ],
   'volume-x': [
     'mute',
