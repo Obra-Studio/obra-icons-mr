@@ -37,18 +37,19 @@ await Promise.all(
 			n: 1,
 			temperature: 0,
 			max_tokens: 50,
+
 			// prettier-ignore
 			messages: [
-			//? The prompt
-			{ role: 'system', content: 'The user will give you an icon name, please provide no more than 6 synonyms. Each synonym should be a simple plain english word, that a user might give when searching for the icon.' },
-	
-			//? Example
-			{ role: 'user', content: 'clock' },
-			{ role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
-	
-			//? Provide the icon without -fill
-			{ role: 'user', content: nameKebab.replace(/-fill$/, '') },
-		],
+				//? The prompt
+				{ role: 'system', content: 'The user will give you an icon name, please provide no more than 6 synonyms. Each synonym should be a simple plain english word, that a user might give when searching for the icon.' },
+		
+				//? Example
+				{ role: 'user', content: 'clock' },
+				{ role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
+		
+				//? Provide the icon without -fill
+				{ role: 'user', content: nameKebab.replace(/-fill$/, '').replace(/-/g, ' ') },
+			],
 		});
 
 		//? Parse and normalise the result
@@ -67,16 +68,21 @@ await Promise.all(
 
 console.log('Writing keywords');
 
-//? Convert the keywords map to json
+//? Generate the keywords json object and sort them alphabetically
 const keywords_json = JSON.stringify(
-	Object.fromEntries(keywords_map),
+	Object.fromEntries(
+		//? Convert the map to [name, keywords[]][]
+		[...keywords_map.entries()]
+			//? Sort the entries alphabetically
+			.sort((a, b) => (a[0].toLowerCase() > b[0].toLowerCase() ? 1 : -1)),
+	),
 	null,
 	2,
-).replace(/"/g, "'");
+);
 
 //? The keywords ts file template
-const template = `//prettier-ignore
-export default ${keywords_json};
+const template = `// prettier-ignore
+export default ${keywords_json.replace(/"/g, "'")};
 `;
 
 //? Write the keywords
