@@ -31,11 +31,9 @@
 			sortBy: {
 				property: 'nameKebab',
 			},
-			boost: {
-				nameKebab: 2,
-				keywords: 1,
-			},
 		});
+
+		console.log(result);
 
 		icons = result.hits.map((hit) => hit.document.namePascal);
 	}
