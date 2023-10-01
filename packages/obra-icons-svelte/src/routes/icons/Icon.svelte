@@ -87,7 +87,7 @@
 
 	.icon-item {
 		position: relative;
-		min-height: 140px;
+		min-height: 160px;
 
 		display: flex;
 		flex-direction: column;
@@ -105,6 +105,16 @@
 		.icon-item {
 			border-color: #555;
 			color: #fff;
+		}
+
+		:global(svg *) {
+			stroke: #fff;
+			stroke-width: 1.5px;
+		}
+
+		.icon-item :global(svg .oi-fill) {
+			fill: #fff;
+			stroke: none;
 		}
 
 		.icon-item :global(svg *) {
@@ -127,7 +137,7 @@
 
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		padding: 8px;
 	}
@@ -135,8 +145,8 @@
 	.overlay .button {
 		cursor: pointer;
 		width: 100%;
-		padding: 12px;
-		font-size: 80%;
+		padding: 8px 12px;
+		font-size: 75%;
 	}
 
 	.toast {

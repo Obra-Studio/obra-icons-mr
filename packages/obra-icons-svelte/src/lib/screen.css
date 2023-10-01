@@ -342,6 +342,19 @@ h4, .drop-down-heading-visually h3 {
     width: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+
+    .input-with-icon svg * {
+        stroke: #fff;
+    }
+
+    .input-with-icon svg .oi-fill {
+        fill: #fff;
+        stroke: none;
+    }
+
+}
+
 .input-with-icon input {
     border: 1px solid #CCC;
     padding: .75rem .75rem .75rem 2.25rem;
@@ -371,13 +384,6 @@ h4, .drop-down-heading-visually h3 {
     top: .65rem;
 }
 
-@media (prefers-color-scheme: dark) {
-
-    .responds-to-dark .input-with-icon svg * {
-        fill: #FFF;
-    }
-
-}
 
 /* Utility classes with direct mapping to CSS
    ========================================================================== */
