@@ -189,10 +189,7 @@
 					</ul>
 
 					<div class="button-group">
-						<a
-							class="button"
-							href="https://obra.lemonsqueezy.com/checkout/buy/3b880ad5-368d-400c-bca3-6e212267fa1a?discount=0"
-						>
+						<a class="button" href="https://sowl.co/s/bdgsNv">
 							<span>Buy the files</span>
 							<IconArrowRight />
 						</a>
