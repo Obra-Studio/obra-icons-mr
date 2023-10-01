@@ -1,6 +1,17 @@
-import { create, insert } from '@orama/orama';
+import { create, insert, search } from '@orama/orama';
 import iconSearchData from '$lib/keywords';
-import { iconNamePascal } from './utils';
+
+/**
+ * Turns "align-center" to "IconAlignCenter"
+ */
+function iconNamePascal(name: string) {
+	const pascal = name
+		.split('-')
+		.map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
+		.join('');
+
+	return `Icon${pascal}`;
+}
 
 export async function load() {
 	const searchDb = await create({
@@ -22,6 +33,11 @@ export async function load() {
 	}
 
 	return {
+		defaultSearch: await search(searchDb, {
+			properties: ['nameKebab'],
+			limit: entries.length,
+			term: '',
+		}),
 		searchDb,
 	};
 }
