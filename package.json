@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:icons": "pnpm --filter obra-icons -r dev",
+    "dev:icons": "pnpm --filter obra-icons-svelte -r dev",
     "formatSvelte": "prettier --write --plugin prettier-plugin-svelte **.svelte"
   },
   "engines": {
