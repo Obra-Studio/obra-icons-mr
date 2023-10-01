@@ -42,7 +42,7 @@
 			<div class="input-with-icon">
 				<input
 					on:input={(e) => find(e.currentTarget.value)}
-					placeholder="Search {iconsCount} Obra Icons and Obra Plus Icons..."
+					placeholder="Search {iconsCount} Obra Icons..."
 					type="text"
 				/>
 
