@@ -184,10 +184,10 @@ const export_statements = icons.map(({ name }) => {
 });
 
 //? Write out the ts file
-await writeFile(EXPORTS_FILE, export_statements.join('\n'), 'utf-8');
+await writeFile(EXPORTS_FILE, `${export_statements.join('\n')}\n`, 'utf-8');
 
 //? Write the icon count
-await writeFile(ICON_COUNT_FILE, `export default ${icons.length};`, 'utf-8');
+await writeFile(ICON_COUNT_FILE, `export default ${icons.length};\n`, 'utf-8');
 
 console.log(`\nDone - ${icons.length} icons generated\n`);
 console.timeEnd('generate icons');
