@@ -1,7 +1,7 @@
 <script lang="ts">
+	import * as iconMap from '$package/index';
 	import { iconNameKebab } from './utils';
 	import { search } from '@orama/orama';
-	import * as iconMap from '$lib/index';
 	import iconsCount from '$lib/count';
 
 	const { IconSearch } = iconMap;

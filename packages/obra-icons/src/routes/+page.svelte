@@ -1,6 +1,6 @@
 <script>
 	import { IconArrowRight, IconChevronRight, IconDownload } from '$lib';
-	import FigmaIcon from '$marketinglib/components/icons/FigmaIcon.svelte';
+	import FigmaIcon from '$lib/components/icons/FigmaIcon.svelte';
 	import iconsCount from '$lib/count';
 </script>
 

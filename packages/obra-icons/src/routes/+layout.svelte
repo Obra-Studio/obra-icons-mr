@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Footer from '$marketinglib/components/Footer.svelte';
-	import Header from '$marketinglib/components/Header.svelte';
-	import '$marketinglib/screen.css';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import '$lib/screen.css';
 </script>
 
 <Header />

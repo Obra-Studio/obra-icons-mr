@@ -6,15 +6,15 @@ export default {
     "task",
     "exercise",
     "event",
-    "work"
+    "busy"
   ],
   "add": [
     "plus",
+    "create",
     "insert",
     "include",
     "append",
-    "attach",
-    "incorporate"
+    "attach"
   ],
   "add-connection": [
     "network",
@@ -24,8 +24,8 @@ export default {
     "relationship",
     "friendship",
     "plus",
-    "insert",
-    "include"
+    "create",
+    "insert"
   ],
   "airplay": [
     "stream",
@@ -110,7 +110,7 @@ export default {
   "arrow-left-up": [
     "back",
     "upwards",
-    "leftwards",
+    "leftward",
     "direction",
     "navigate",
     "move"
@@ -340,7 +340,7 @@ export default {
     "carton",
     "crate",
     "bin",
-    "chest"
+    "parcel"
   ],
   "box-3d": [
     "cube",
@@ -390,9 +390,9 @@ export default {
     "insect",
     "pest",
     "beetle",
-    "creepy-crawly",
     "infection",
-    "glitch"
+    "glitch",
+    "error"
   ],
   "building": [
     "house",
@@ -566,9 +566,9 @@ export default {
     "arrow",
     "down",
     "expand",
-    "collapse",
     "double arrow",
-    "downward arrow"
+    "collapse",
+    "dropdown"
   ],
   "chevron-double-left": [
     "back",
@@ -584,7 +584,7 @@ export default {
     "next",
     "double arrow",
     "double right",
-    "right arrow"
+    "double chevron"
   ],
   "chevron-double-up": [
     "arrow",
@@ -597,10 +597,10 @@ export default {
   "chevron-down": [
     "arrow",
     "downward",
-    "triangle",
     "pointing down",
     "expand",
-    "collapse"
+    "collapse",
+    "dropdown"
   ],
   "chevron-left": [
     "back",
@@ -704,8 +704,8 @@ export default {
     "return",
     "loop",
     "reverse",
-    "undo",
     "retreat",
+    "go back",
     "retrace",
     "round",
     "shape",
@@ -939,7 +939,7 @@ export default {
     "different clock",
     "clock variation",
     "clock alternative version",
-    "clock alternative design",
+    "alternative time",
     "timepiece",
     "timer",
     "wristwatch"
@@ -948,9 +948,9 @@ export default {
     "timepiece",
     "timer",
     "wristwatch",
-    "hourglass",
     "chronometer",
-    "timekeeper"
+    "hourglass",
+    "sundial"
   ],
   "close": [
     "exit",
@@ -1003,11 +1003,11 @@ export default {
   ],
   "cloud-upload-alt": [
     "cloud upload",
-    "upload",
-    "arrow up",
-    "cloud arrow",
-    "file upload",
-    "data transfer",
+    "cloud arrow up",
+    "upload to cloud",
+    "cloud upload icon",
+    "cloud upload symbol",
+    "cloud upload button",
     "sky",
     "weather",
     "storage"
@@ -1215,8 +1215,8 @@ export default {
     "paper",
     "upload",
     "new",
-    "create",
     "add",
+    "create",
     "record"
   ],
   "document-check": [
@@ -1304,7 +1304,7 @@ export default {
     "note",
     "record",
     "document",
-    "sheet"
+    "small document"
   ],
   "double-check": [
     "verify",
@@ -1591,8 +1591,8 @@ export default {
     "lettering",
     "typography",
     "scaling",
-    "text dimension",
-    "character size"
+    "text scaling",
+    "font scaling"
   ],
   "fullscreen": [
     "maximize",
@@ -1605,10 +1605,10 @@ export default {
   "gift": [
     "present",
     "surprise",
+    "package",
     "box",
     "celebration",
-    "birthday",
-    "holiday"
+    "birthday"
   ],
   "globe": [
     "world",
@@ -1627,12 +1627,12 @@ export default {
     "checkerboard"
   ],
   "hashtag": [
-    "pound",
+    "pound sign",
     "number sign",
-    "tag",
-    "sharp",
     "hash",
-    "octothorpe"
+    "tag",
+    "social media",
+    "trending"
   ],
   "heart": [
     "love",
@@ -1727,8 +1727,8 @@ export default {
     "access"
   ],
   "land": [
-    "ground",
     "earth",
+    "ground",
     "terrain",
     "soil",
     "landscape",
@@ -1811,8 +1811,8 @@ export default {
     "attach",
     "join",
     "combine",
-    "merge",
-    "tie"
+    "tie",
+    "associate"
   ],
   "link-alt": [
     "link",
@@ -1920,9 +1920,9 @@ export default {
     "loudspeaker",
     "announcement",
     "speaker",
+    "public address",
     "bullhorn",
-    "amplifier",
-    "public address"
+    "amplifier"
   ],
   "menu": [
     "list",
@@ -1946,7 +1946,7 @@ export default {
     "text",
     "notification",
     "inbox",
-    "email"
+    "mail"
   ],
   "message-circle": [
     "chat",
@@ -2068,9 +2068,9 @@ export default {
     "alert",
     "message",
     "reminder",
+    "notice",
     "ping",
-    "notification",
-    "bell"
+    "signal"
   ],
   "notification-off": [
     "mute",
@@ -2089,7 +2089,7 @@ export default {
     "company",
     "desk",
     "building",
-    "workspace"
+    "professional"
   ],
   "offline": [
     "disconnected",
@@ -2234,17 +2234,17 @@ export default {
     "chart",
     "graph",
     "diagram",
-    "data",
     "statistics",
+    "data",
     "visualization"
   ],
   "pie-chart-3-parts": [
     "chart",
     "graph",
     "diagram",
-    "pie",
     "statistics",
-    "data"
+    "data",
+    "visualization"
   ],
   "pie-chart-single-part": [
     "chart",
@@ -2793,7 +2793,7 @@ export default {
     "furniture",
     "surface",
     "workstation",
-    "alternate"
+    "alternative"
   ],
   "table-alt-2": [
     "table",
@@ -3015,9 +3015,9 @@ export default {
     "import",
     "attach",
     "send",
-    "transfer",
+    "submit",
     "load",
-    "submit"
+    "transfer"
   ],
   "user": [
     "person",
@@ -3204,11 +3204,11 @@ export default {
   ],
   "wifi-off": [
     "no wifi",
-    "disconnected",
+    "disconnect",
     "offline",
-    "network off",
+    "no connection",
     "wireless off",
-    "no internet",
+    "network off",
     "internet",
     "wireless",
     "network"
@@ -3231,11 +3231,11 @@ export default {
   ],
   "yen": [
     "currency",
-    "money",
     "Japanese",
+    "money",
     "Japan",
     "yen symbol",
-    "yen sign"
+    "Japanese currency"
   ],
   "zoom-in": [
     "magnify",
