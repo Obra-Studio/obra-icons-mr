@@ -1,6 +1,6 @@
 {
-	"name": "obra-icons",
-	"version": "0.3.3",
+	"name": "obra-icons-svelte",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
