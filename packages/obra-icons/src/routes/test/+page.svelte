@@ -1,5 +1,5 @@
 <script>
-	import * as icons from '$lib';
+	import * as icons from '$package';
 	export let size = '24';
 	export let weight = 1;
 </script>

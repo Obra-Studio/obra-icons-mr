@@ -1,5 +1,5 @@
 <script>
-	import { IconArrowRight, IconChevronRight, IconDownload } from '$lib';
+	import { IconArrowRight, IconChevronRight, IconDownload } from '$package';
 	import FigmaIcon from '$lib/components/icons/FigmaIcon.svelte';
 	import iconsCount from '$lib/count';
 </script>
