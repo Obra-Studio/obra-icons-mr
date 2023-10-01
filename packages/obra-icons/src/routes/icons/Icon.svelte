@@ -60,10 +60,10 @@
 
 		<button
 			class="button"
-			use:copy={`import { ${namePascal} } from 'obra-icons'`}
+			use:copy={`import { ${namePascal} } from 'obra-icons-svelte'`}
 			on:svelte-copy={() => showToast('Copied!')}
 		>
-			Copy import
+			Copy Svelte import
 		</button>
 	</div>
 
