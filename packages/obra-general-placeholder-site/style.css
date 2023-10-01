@@ -11,6 +11,21 @@ body {
 	font-family: Inter, "Helvetica Neue", Arial, sans-serif;
 	line-height: 1.5;
 	font-size: 16px;
+	margin: 32px 0;
+}
+
+.t-highlight-stack {
+	margin: 48px 0 0;
+}
+
+svg {
+	margin: 32px 0 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	svg * {
+		fill: #FFF;
+	}
 }
 
 p.intro {
