@@ -23,15 +23,17 @@ const icon_names = icon_files.map((name) => basename(name).slice(0, -4));
 
 console.log('Generating keywords');
 
+type KeywordTuple = [name: string, keywords: string[]];
+
 //? Map the keywords icon_name:keywords
-const keywords: Array<[name: string, keywords: string[]]> = [];
+const name_keywords: KeywordTuple[] = [];
 
 let i = 0;
 
 //? Generate the keywords map in parallel
 await Promise.all(
 	icon_names.map(async (nameKebab) => {
-		console.log(`  Generating keywords for icon "${nameKebab}" [${i++}]`);
+		console.log(`  Generating keywords for icon "${nameKebab}"`);
 
 		//? Ask gpt for keywords
 		const completion = await openai.chat.completions.create({
@@ -70,26 +72,49 @@ await Promise.all(
 			throw new Error(`No keywords for ${nameKebab}`);
 		}
 
-		keywords.push([nameKebab, generated_keywords]);
+		name_keywords.push([nameKebab, generated_keywords]);
 	}),
 );
+
+//? Sort the array in place (mutates)
+name_keywords.sort((a, b) =>
+	a[0].toLowerCase() > b[0].toLowerCase() ? 1 : -1,
+);
+
+const keywords_object: Record<string, string[]> = {};
+
+console.log('Mapping Keywords');
+
+for (const [name, keywords] of name_keywords) {
+	console.log(`  Processing "${name}"`);
+
+	if (name.includes('-')) {
+		//? Get the first part of the name. E.g. "user-add" -> "user"
+		const key = name.slice(0, name.indexOf('-'));
+
+		//? Find an entry where the name matches the key
+		const found = name_keywords.find(([name]) => name == key);
+
+		if (found) {
+			console.log(`    Merging keywords from icon "${key}"`);
+
+			//? Add the keywords from the found icon to the current one
+			keywords.push(...found[1].slice(0, 3));
+		}
+	}
+
+	//? Add the keywords to the object and remove duplicates using Set
+	keywords_object[name] = Array.from(new Set(keywords));
+}
 
 console.log('Writing keywords');
 
 //? Generate the keywords json object and sort them alphabetically
-const keywords_json = JSON.stringify(
-	Object.fromEntries(
-		keywords
-			//? Sort the entries alphabetically
-			.sort((a, b) => (a[0].toLowerCase() > b[0].toLowerCase() ? 1 : -1)),
-	),
-	null,
-	2,
-);
+const keywords_json = JSON.stringify(keywords_object, null, 2);
 
 //? The keywords ts file template
 const template = `// prettier-ignore
-export default ${keywords_json.replace(/"/g, "'")};
+export default ${keywords_json};
 `;
 
 //? Write the keywords
