@@ -39,7 +39,10 @@
 						</nav>
 					</div>
 
-					<a href="/" class="button">
+					<a
+						href="https://github.com/Obra-Studio/obra-icons-svelte"
+						class="button"
+					>
 						<svg
 							width="20"
 							height="20"
