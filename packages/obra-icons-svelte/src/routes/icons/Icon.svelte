@@ -101,6 +101,18 @@
 		border-radius: 3px;
 	}
 
+	.icon-item :global(.oi-dot) {
+		stroke-width: 4px;
+	}
+
+	.icon-item :global(.oi-medium-dot) {
+		stroke-width: 3px;
+	}
+
+	.icon-item :global(.oi-mini-dot) {
+		stroke-width: 2px;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		.icon-item {
 			border-color: #555;
@@ -137,16 +149,17 @@
 
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: center;
+		gap: 8px;
 
 		padding: 8px;
 	}
 
 	.overlay .button {
-		cursor: pointer;
 		width: 100%;
+		font-weight: 400;
 		padding: 8px 12px;
-		font-size: 75%;
+		font-size: 80%;
 	}
 
 	.toast {
