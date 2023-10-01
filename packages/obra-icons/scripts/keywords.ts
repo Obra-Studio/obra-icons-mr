@@ -24,7 +24,7 @@ const icon_names = icon_files.map((name) => basename(name).slice(0, -4));
 console.log('Generating keywords');
 
 //? Map the keywords icon_name:keywords
-const keywords_map = new Map<string, string[]>();
+const keywords: Array<[name: string, keywords: string[]]> = [];
 
 //? Generate the keywords map in parallel
 await Promise.all(
@@ -53,16 +53,16 @@ await Promise.all(
 		});
 
 		//? Parse and normalise the result
-		const keywords = completion.choices[0].message.content
+		const generated_keywords = completion.choices[0].message.content
 			?.trim()
 			.split('\n');
 
-		if (!keywords || !keywords.length) {
+		if (!generated_keywords || !generated_keywords.length) {
 			//? Handle no keywords, hopefully this doesn't happen
 			throw new Error(`No keywords for ${nameKebab}`);
 		}
 
-		keywords_map.set(nameKebab, keywords);
+		keywords.push([nameKebab, generated_keywords]);
 	}),
 );
 
@@ -71,8 +71,7 @@ console.log('Writing keywords');
 //? Generate the keywords json object and sort them alphabetically
 const keywords_json = JSON.stringify(
 	Object.fromEntries(
-		//? Convert the map to [name, keywords[]][]
-		[...keywords_map.entries()]
+		keywords
 			//? Sort the entries alphabetically
 			.sort((a, b) => (a[0].toLowerCase() > b[0].toLowerCase() ? 1 : -1)),
 	),
