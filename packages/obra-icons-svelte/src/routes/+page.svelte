@@ -132,7 +132,7 @@
 							</p>
 							<p>
 								Need a specific icon? <a
-									href="mailto:iconrequest@obra.studio."
+									href="mailto:iconrequest@obra.studio"
 									>Let us know</a
 								>.
 							</p>
@@ -149,7 +149,7 @@
 
 							<p>
 								Need a specific icon? <a
-									href="mailto:iconrequest@obra.studio."
+									href="mailto:iconrequest@obra.studio"
 									>Let us know</a
 								>.
 							</p>
