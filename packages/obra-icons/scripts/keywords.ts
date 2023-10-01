@@ -10,6 +10,7 @@ console.time('generate keywords');
 //? Create the OpenAI client
 const openai = new OpenAI({
 	apiKey: import.meta.env.SCRIPTS_OPENAI_KEY,
+	timeout: 60 * 1000,
 });
 
 console.log('Finding icon names');
