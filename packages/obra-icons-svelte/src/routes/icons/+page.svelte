@@ -62,6 +62,8 @@
 							nameKebab={document.nameKebab}
 							namePascal={document.namePascal}
 						/>
+					{:else}
+						<p class="text-align-center">No results found.</p>
 					{/each}
 				</ul>
 			</div>
