@@ -28,8 +28,8 @@
 			tolerance: 10,
 			term: query,
 			limit: 50,
-			sortBy: {
-				property: 'nameKebab',
+			boost: {
+				keywords: 2,
 			},
 		});
 
