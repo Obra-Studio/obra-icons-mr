@@ -26,7 +26,7 @@
 
 						<a
 							class="button inverse"
-							href="https://obra.lemonsqueezy.com/checkout/buy/3b880ad5-368d-400c-bca3-6e212267fa1a?discount=0"
+							href="https://sowl.co/s/bdgsNv"
 						>
 							<span>Buy the files</span>
 							<IconArrowRight />

@@ -18,10 +18,11 @@
 			<h2>Invoicing & purchasing platform</h2>
 
 			<p>
-				When you purchase Obra Icons Files, the purchase, payment and
-				invoicing is handled through <a
-					href="https://obra.lemonsqueezy.com/">LemonSqueezy</a
-				>.
+				When you purchase Obra Icons Files, the payment and invoicing is
+				handled through <a href="https://stripe.com/">Stripe</a>. The
+				digital goods will be delivered to you via
+				<a href="https://www.sendowl.com/">SendOwl</a> upon payment. Missing
+				the delivery? Contact us!
 			</p>
 
 			<h2>Users & volume licensing</h2>

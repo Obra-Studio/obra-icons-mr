@@ -121,12 +121,20 @@
 				or inability to use our products.
 			</p>
 
-			<h2>Payment</h2>
+			<h2>Payments</h2>
 
 			<p>
-				We use <a href="https://obra.lemonsqueezy.com/">Lemonsqueezy</a>
+				We use <a href="https://stripe.com/">Stripe</a>
 				for payments. You can read their Terms of use and Privacy Policy
 				on their site.
+			</p>
+
+			<h2>Digital goods delivery</h2>
+
+			<p>
+				We use <a href="https://www.sendowl.com/">SendOwl</a>
+				for digital goods delivery. You can read their Terms of use and Privacy
+				Policy on their site.
 			</p>
 
 			<h2>Refund Policy</h2>
