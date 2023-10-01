@@ -1,4 +1,4 @@
-# obra-icons
+# obra-icons-svelte
 
 Obra Icons for Svelte.
 
@@ -7,14 +7,14 @@ A simple, consistent set of icons, perfect for user interfaces. Obra Icons consi
 ## Installation
 
 ```bash
-npm install obra-icons
+npm install obra-icons-svelte
 ```
 
 ## Importing an icon
 
 ```svelte
 <script>
-  import { IconActivity } from 'obra-icons';
+  import { IconActivity } from 'obra-icons-svelte';
 </script>
 ```
 
