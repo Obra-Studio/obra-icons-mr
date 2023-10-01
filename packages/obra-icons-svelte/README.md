@@ -1,6 +1,6 @@
 # obra-icons-svelte
 
-Obra Icons for Svelte.
+Obra Icons for <a href="https://svelte.dev/">Svelte</a>.
 
 A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 350 icons.
 
