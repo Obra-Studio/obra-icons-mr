@@ -19,8 +19,8 @@
 
 			<p>
 				When you purchase Obra Icons Files, the purchase, payment and
-				invoicing is handled through <a href="https://lemonsqueezy.com/"
-					>LemonSqueezy</a
+				invoicing is handled through <a
+					href="https://obra.lemonsqueezy.com/">LemonSqueezy</a
 				>.
 			</p>
 

@@ -124,8 +124,9 @@
 			<h2>Payment</h2>
 
 			<p>
-				We use <a href="https://lemonsqueezy.com/">Lemonsqueezy</a> for payments.
-				You can read their Terms of use and Privacy Policy on their site.
+				We use <a href="https://obra.lemonsqueezy.com/">Lemonsqueezy</a>
+				for payments. You can read their Terms of use and Privacy Policy
+				on their site.
 			</p>
 
 			<h2>Refund Policy</h2>
