@@ -26,8 +26,7 @@
 
 						<a
 							class="button inverse"
-							href="/"
-							onclick="alert('Coming soon!')"
+							href="https://obra.lemonsqueezy.com/checkout/buy/3b880ad5-368d-400c-bca3-6e212267fa1a?discount=0"
 						>
 							<span>Buy the files</span>
 							<IconArrowRight />
@@ -113,20 +112,29 @@
 						<div class="content">
 							<h3>Multiple weights and sizes</h3>
 							<p>
-								Has support for multiple weights and sizes (24
-								and 32px). Weight-matched against commonly used
-								sans-serif fonts, like Inter and Proxima Nova.
+								Has support for multiple stroke weights (1, 1.5
+								and 2px) and sizes (24 and 32px). Ability to set
+								specific weights to exactly match the weight of
+								your font uses, for extreme visual consistency.
 							</p>
 						</div>
 					</li>
 					<li>
 						<div class="content">
-							<h3>Curated</h3>
+							<h3>Over 350 icons</h3>
 							<p>
-								We strive for less icons with the highest
-								quality. We selected the essential icons for UI
-								design evaluated against tons of real-life UI
-								design projects.
+								Obra Icons contains many icons, so you won’t run
+								into the situation where you can’t find the
+								right icon for your needs. We selected the
+								essential icons for UI design evaluated against
+								tons of real-life UI design projects, and are
+								continuously growing the set.
+							</p>
+							<p>
+								Need a specific icon? <a
+									href="mailto:iconrequest@obra.studio."
+									>Let us know</a
+								>.
 							</p>
 						</div>
 					</li>
@@ -134,9 +142,16 @@
 						<div class="content">
 							<h3>Easy to use</h3>
 							<p>
-								Download an icon from the website, use the Figma
-								plugin, download the SVG set or integrate in
-								your dev stack using the npm package.
+								Download an icon from the website, buy the files
+								for use in a design app or integrate in your
+								Svelte project using the npm package.
+							</p>
+
+							<p>
+								Need a specific icon? <a
+									href="mailto:iconrequest@obra.studio."
+									>Let us know</a
+								>.
 							</p>
 						</div>
 					</li>
@@ -148,13 +163,13 @@
 
 <div class="container padding-medium margin-0-auto">
 	<div class="vertical-container-x-large">
-		<div class="columns buy-obra-icons-plus">
+		<div class="columns buy-obra-icons">
 			<div class="column">
 				<div class="text-align-center">
 					<img
-						srcset="/illustration-obra-plus.png 1x, /illustration-obra-plus@2x.png 2x"
-						src="/illustration-obra-plus.png"
-						alt="Obra Icons Plus"
+						srcset="/illustration-buy-obra-files.png 1x, /illustration-buy-obra-files@2x.png 2x"
+						src="/illustration-buy-obra-files.png"
+						alt="Obra Icons Files"
 					/>
 				</div>
 			</div>
@@ -165,8 +180,8 @@
 
 					<ul>
 						<li>
-							SVG files with original, non-outlined vectors for
-							further customization
+							SVG files with both outlined and non-outlined
+							vectors for further customization
 						</li>
 						<li>
 							<code>.fig</code> file for direct import into Figma
@@ -176,8 +191,7 @@
 					<div class="button-group">
 						<a
 							class="button"
-							href="/"
-							onclick="alert('Coming soon!')"
+							href="https://obra.lemonsqueezy.com/checkout/buy/3b880ad5-368d-400c-bca3-6e212267fa1a?discount=0"
 						>
 							<span>Buy the files</span>
 							<IconArrowRight />

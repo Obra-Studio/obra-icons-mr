@@ -1,6 +1,8 @@
 # obra-icons
 
-A simple, consistent set of icons, perfect for user interfaces. Obra Icons and Obra Icons Plus consists of more than 300 icons.
+Obra Icons for Svelte.
+
+A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 350 icons.
 
 ## Installation
 
@@ -18,4 +20,4 @@ npm install obra-icons
 
 ## Which icons are available?
 
-For a full reference, see the [Obra Icons website](https://icons.obra.studio).
+For a full reference, see the list at [Obra Icons website](https://icons.obra.studio/icons).

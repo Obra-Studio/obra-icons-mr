@@ -228,14 +228,14 @@ h4, .drop-down-heading-visually h3 {
 
 @media (min-width: 640px) {
 
-    .columns.buy-obra-icons-plus {
+    .columns.buy-obra-icons {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         gap: var(--spacing-x-large);
     }
 
-    .columns.buy-obra-icons-plus .column {
+    .columns.buy-obra-icons .column {
         flex: 1 1 50%;
     }
 

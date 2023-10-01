@@ -50,14 +50,13 @@
 			</div>
 
 			{#if dev}
-				<p>Found {icons.hits.length} icons</p>
+				<!--				<p>Found {icons.hits.length} icons</p>-->
 			{/if}
 
 			<div class="vertical-container-x-large">
 				<ul class="icon-grid">
 					{#each icons.hits as { document } (document.nameKebab)}
 						{@const svg = getSvg(document.nameKebab)}
-
 						<Icon
 							{svg}
 							nameKebab={document.nameKebab}

@@ -41,7 +41,9 @@
 </script>
 
 <li class="icon-item">
-	{@html svg}
+	<div class="icon">{@html svg}</div>
+
+	<span class="icon-name">{nameKebab}</span>
 
 	<div class="overlay">
 		<button class="button" on:click={() => downloadSvg(nameKebab, svg)}>
@@ -73,11 +75,23 @@
 </li>
 
 <style>
+	.icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	.icon-name {
+		display: block;
+		font-size: 80%;
+	}
+
 	.icon-item {
 		position: relative;
 		min-height: 140px;
 
 		display: flex;
+		flex-direction: column;
+		gap: 8px;
 		align-items: center;
 		justify-content: center;
 
