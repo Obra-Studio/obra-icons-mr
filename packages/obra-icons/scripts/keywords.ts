@@ -26,10 +26,12 @@ console.log('Generating keywords');
 //? Map the keywords icon_name:keywords
 const keywords: Array<[name: string, keywords: string[]]> = [];
 
+let i = 0;
+
 //? Generate the keywords map in parallel
 await Promise.all(
 	icon_names.map(async (nameKebab) => {
-		console.log(`Generating keywords for icon "${nameKebab}"`);
+		console.log(`  Generating keywords for icon "${nameKebab}" [${i++}]`);
 
 		//? Ask gpt for keywords
 		const completion = await openai.chat.completions.create({
@@ -47,10 +49,16 @@ await Promise.all(
 				{ role: 'user', content: 'clock' },
 				{ role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
 		
+				//? Example 2
+				{ role: 'user', content: 'user-add' },
+				{ role: 'assistant', content: 'person\nprofile\ncustomer\naccount\nplus\ncreate' },
+
 				//? Provide the icon without -fill
-				{ role: 'user', content: nameKebab.replace(/-fill$/, '').replace(/-/g, ' ') },
+				{ role: 'user', content: nameKebab.replace(/-fill$/, '') },
 			],
 		});
+
+		console.log(`  Generated keywords for icon "${nameKebab}" [${i++}]`);
 
 		//? Parse and normalise the result
 		const generated_keywords = completion.choices[0].message.content
