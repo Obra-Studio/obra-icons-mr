@@ -1,9 +1,11 @@
 declare global {
 	interface ImportMeta {
-		env: {
-			SCRIPTS_FIGMA_API_KEY: string;
-			SCRIPTS_OPENAI_KEY: string;
-		};
+		readonly env: ImportMetaEnv;
+	}
+
+	interface ImportMetaEnv {
+		readonly SCRIPTS_FIGMA_API_KEY: string;
+		readonly SCRIPTS_OPENAI_KEY: string;
 	}
 }
 
