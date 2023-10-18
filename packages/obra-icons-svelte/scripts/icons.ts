@@ -143,9 +143,11 @@ for (const chunk of icon_chunks) {
 
 			// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
 			// Turn stroke="black" into stroke={color}
+			// Turn fill="black" into fill={color}
 			const svgSvelte = svg
 				.replace(/(width|height)="24"(?! stroke-width)/g, '$1={size}')
-				.replace(/stroke="black"/g, 'stroke={color}');
+				.replace(/stroke="black"/g, 'stroke={color}')
+				.replace(/fill="black"/g, 'fill={color}');
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg, svgSvelte });

@@ -13,7 +13,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g class="oi-radio">
-		<circle class="oi-fill" cx="12" cy="12" r="3" fill="black" />
+		<circle class="oi-fill" cx="12" cy="12" r="3" fill={color} />
 		<circle
 			class="oi-ellipse"
 			cx="12"

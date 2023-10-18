@@ -23,7 +23,7 @@
 		<path
 			class="oi-fill"
 			d="M9 5V3C9 2.44772 9.44772 2 10 2H14C14.5523 2 15 2.44772 15 3V5C15 5.55228 14.5523 6 14 6H10C9.44772 6 9 5.55228 9 5Z"
-			fill="black"
+			fill={color}
 		/>
 		<path
 			class="oi-vector"

@@ -25,7 +25,7 @@
 		<path
 			class="oi-fill"
 			d="M12 17C10.8954 17 10 18.0447 10 19.3333C10 21 12 23 12 23C12 23 14 21 14 19.3333C14 18.0447 13.1046 17 12 17Z"
-			fill="black"
+			fill={color}
 		/>
 		<path
 			class="oi-mini-dot"
@@ -38,12 +38,12 @@
 		<path
 			class="oi-fill"
 			d="M15.1611 11C14.7209 12.6479 13.9553 13.9312 13.5002 14.5L16 17.5L19 12.5L15.1611 11Z"
-			fill="black"
+			fill={color}
 		/>
 		<path
 			class="oi-fill"
 			d="M8.83885 11C9.27913 12.6479 10.0447 13.9312 10.4998 14.5L8 17.5L5 12.5L8.83885 11Z"
-			fill="black"
+			fill={color}
 		/>
 	</g>
 </svg>
