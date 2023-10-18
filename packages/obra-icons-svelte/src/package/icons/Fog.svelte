@@ -1,8 +1,13 @@
 <svelte:options namespace="svg" />
 
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+</script>
+
 <svg
-	width="24"
-	height="24"
+	width={size}
+	height={size}
 	viewBox="0 0 24 24"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +16,7 @@
 		<path
 			class="oi-line"
 			d="M5 14H14"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -20,7 +25,7 @@
 		<path
 			class="oi-line"
 			d="M17 14H21"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -28,8 +33,8 @@
 		/>
 		<path
 			class="oi-line"
-			d="M3.00002 10H14"
-			stroke="black"
+			d="M3 10H14"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -38,7 +43,7 @@
 		<path
 			class="oi-line"
 			d="M17 10H19"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -47,7 +52,7 @@
 		<path
 			class="oi-line"
 			d="M8 18H19"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -55,8 +60,8 @@
 		/>
 		<path
 			class="oi-line"
-			d="M3.00002 18H5.00002"
-			stroke="black"
+			d="M3 18H5"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -65,7 +70,7 @@
 		<path
 			class="oi-line"
 			d="M12 6H21"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -74,7 +79,7 @@
 		<path
 			class="oi-line"
 			d="M5 6H9"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"

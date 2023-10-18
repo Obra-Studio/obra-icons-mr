@@ -1,8 +1,13 @@
 <svelte:options namespace="svg" />
 
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+</script>
+
 <svg
-	width="24"
-	height="24"
+	width={size}
+	height={size}
 	viewBox="0 0 24 24"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +21,7 @@
 			height="16"
 			rx="1"
 			transform="rotate(90 20 3)"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -29,7 +34,7 @@
 			height="16"
 			rx="1"
 			transform="rotate(90 20 17)"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -42,7 +47,7 @@
 			height="16"
 			rx="1"
 			transform="rotate(90 20 10)"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"

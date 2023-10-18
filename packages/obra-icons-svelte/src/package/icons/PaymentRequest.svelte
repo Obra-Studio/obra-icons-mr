@@ -1,8 +1,13 @@
 <svelte:options namespace="svg" />
 
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+</script>
+
 <svg
-	width="24"
-	height="24"
+	width={size}
+	height={size}
 	viewBox="0 0 24 24"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +16,7 @@
 		<path
 			class="oi-box"
 			d="M16 15H20C20.5523 15 21 14.5523 21 14V4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V14C3 14.5523 3.44772 15 4 15H8"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -22,7 +27,7 @@
 			cx="12"
 			cy="9"
 			r="3"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -31,7 +36,7 @@
 		<path
 			class="oi-line"
 			d="M12 15V21"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -39,7 +44,7 @@
 		<path
 			class="oi-incomplete-triangle"
 			d="M14 19L12 21L10 19"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"

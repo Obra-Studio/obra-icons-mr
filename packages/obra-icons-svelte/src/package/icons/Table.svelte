@@ -1,8 +1,13 @@
 <svelte:options namespace="svg" />
 
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+</script>
+
 <svg
-	width="24"
-	height="24"
+	width={size}
+	height={size}
 	viewBox="0 0 24 24"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +16,7 @@
 		<path
 			class="oi-box"
 			d="M21 9.5H12V14.5H21V9.5Z"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -20,7 +25,7 @@
 		<path
 			class="oi-box"
 			d="M12 9.5H3V14.5H12V9.5Z"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -29,7 +34,7 @@
 		<path
 			class="oi-box"
 			d="M21 14.5H12V19.5H20C20.5523 19.5 21 19.0523 21 18.5V14.5Z"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -38,7 +43,7 @@
 		<path
 			class="oi-box"
 			d="M12 14.5H3V18.5C3 19.0523 3.44772 19.5 4 19.5H12V14.5Z"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -47,7 +52,7 @@
 		<path
 			class="oi-box"
 			d="M20 4.5H12V9.5H21V5.5C21 4.94772 20.5523 4.5 20 4.5Z"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"
@@ -56,7 +61,7 @@
 		<path
 			class="oi-box"
 			d="M12 4.5H4C3.44772 4.5 3 4.94772 3 5.5V9.5H12V4.5Z"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-miterlimit="10"
 			stroke-linecap="round"

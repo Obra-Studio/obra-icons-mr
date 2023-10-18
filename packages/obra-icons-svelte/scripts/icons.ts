@@ -48,6 +48,7 @@ const frames = await figma<GETNodesResponse>(
 interface Icon {
 	name: string;
 	svg: string;
+	svgSvelte: string;
 }
 
 //? Map of icon name:id
@@ -140,11 +141,14 @@ for (const chunk of icon_chunks) {
 			//? Turn id="oi_vector_2" -> class="oi-vector"
 			svg = svg.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
 
-			// Turn width="24" and height="24" into width={size} and height={size}
-			svg = svg.replace(/(width|height)="(\d+)"/g, '$1={size}');
+			// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
+			// Turn stroke="black" into stroke={color}
+			const svgSvelte = svg
+				.replace(/(width|height)="24"(?! stroke-width)/g, '$1={size}')
+				.replace(/stroke="black"/g, 'stroke={color}');
 
 			//? Add each icon to the icons array
-			icons.push({ name, svg });
+			icons.push({ name, svg, svgSvelte });
 		}),
 	);
 }
@@ -153,22 +157,26 @@ for (const chunk of icon_chunks) {
 icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
 
 //? Generate the svelte component from an svg
-const svelte_template = (svg: string) => `<svelte:options namespace="svg" />
+
+const svelte_template = (
+	svgSvelte: string,
+) => `<svelte:options namespace="svg" />
 
 <script>
   export let size = 24
+  export let color = 'currentColor'
 </script>
 
-${svg}
+${svgSvelte}
 `;
 
 console.log('\nWriting Icons');
 
-for (const { svg, name } of icons) {
+for (let { svg, svgSvelte, name } of icons) {
 	console.log(`  Writing Icon "${name}"`);
 
 	//? Get the svelte component template
-	const svelte_component = svelte_template(svg);
+	const svelte_component = svelte_template(svgSvelte);
 	const pascal_name = icon_name_to_pascal(name);
 
 	//? Write the svg file

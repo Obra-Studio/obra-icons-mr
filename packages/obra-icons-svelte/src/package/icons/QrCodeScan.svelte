@@ -1,8 +1,13 @@
 <svelte:options namespace="svg" />
 
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+</script>
+
 <svg
-	width="24"
-	height="24"
+	width={size}
+	height={size}
 	viewBox="0 0 24 24"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +16,7 @@
 		<path
 			class="oi-vector"
 			d="M9 3H4.0001C3.44782 3 3.00011 3.4477 3.0001 3.99998L3 9M15.0001 3H20.0001C20.5524 3 21.0001 3.44772 21.0001 4V9M3.00006 15L3.00011 20C3.00012 20.5523 3.44783 21 4.00011 21H9M15.0001 21H20.0001C20.5524 21 21.0001 20.5523 21.0001 20V15"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -22,7 +27,7 @@
 			y="7"
 			width="3"
 			height="3"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linejoin="round"
 		/>
@@ -32,7 +37,7 @@
 			y="7"
 			width="3"
 			height="3"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linejoin="round"
 		/>
@@ -42,7 +47,7 @@
 			y="14"
 			width="3"
 			height="3"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linejoin="round"
 		/>
@@ -52,7 +57,7 @@
 			y="14"
 			width="0.1"
 			height="0.1"
-			stroke="black"
+			stroke={color}
 			stroke-width="1.5"
 		/>
 		<rect
@@ -61,7 +66,7 @@
 			y="17"
 			width="0.1"
 			height="0.1"
-			stroke="black"
+			stroke={color}
 			stroke-width="1.5"
 		/>
 		<rect
@@ -70,7 +75,7 @@
 			y="14"
 			width="0.1"
 			height="0.1"
-			stroke="black"
+			stroke={color}
 			stroke-width="1.5"
 		/>
 		<rect
@@ -79,7 +84,7 @@
 			y="17"
 			width="0.1"
 			height="0.1"
-			stroke="black"
+			stroke={color}
 			stroke-width="1.5"
 		/>
 		<rect
@@ -88,7 +93,7 @@
 			y="15.5"
 			width="0.1"
 			height="0.1"
-			stroke="black"
+			stroke={color}
 			stroke-width="1.5"
 		/>
 	</g>

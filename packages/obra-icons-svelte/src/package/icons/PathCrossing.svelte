@@ -1,8 +1,13 @@
 <svelte:options namespace="svg" />
 
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+</script>
+
 <svg
-	width="24"
-	height="24"
+	width={size}
+	height={size}
 	viewBox="0 0 24 24"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
@@ -10,29 +15,29 @@
 	<g class="oi-path-crossing">
 		<path
 			class="oi-line"
-			d="M16.4667 4.79988L13.1485 8.11802C12.6799 8.58665 11.9201 8.58665 11.4515 8.11802L8.13334 4.79988"
-			stroke="black"
+			d="M16.4667 4.8L13.1485 8.11815C12.6799 8.58678 11.9201 8.58678 11.4515 8.11815L8.13334 4.8"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-line"
 			d="M16.4667 19.8L13.1485 16.4818C12.6799 16.0132 11.9201 16.0132 11.4515 16.4818L8.13334 19.8"
-			stroke="black"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-line"
-			d="M19.8 16.4666L16.4819 13.1484C16.0132 12.6798 16.0132 11.92 16.4819 11.4514L19.8 8.13322"
-			stroke="black"
+			d="M19.8 16.4667L16.4818 13.1485C16.0132 12.6799 16.0132 11.9201 16.4818 11.4515L19.8 8.13334"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-line"
-			d="M4.8 16.4666L8.11815 13.1484C8.58678 12.6798 8.58678 11.92 8.11815 11.4514L4.8 8.13322"
-			stroke="black"
+			d="M4.8 16.4667L8.11815 13.1485C8.58678 12.6799 8.58678 11.9201 8.11815 11.4515L4.8 8.13334"
+			stroke={color}
 			stroke-width="2"
 			stroke-linecap="round"
 		/>

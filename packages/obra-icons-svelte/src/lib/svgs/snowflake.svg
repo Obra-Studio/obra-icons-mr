@@ -26,7 +26,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M19.6569 15.6567L16 11.9999"
+			d="M19.6569 15.6569L16 12"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -44,7 +44,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M15.6569 19.6567L12 15.9999"
+			d="M15.6569 19.6569L12 16"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -62,7 +62,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M8.34314 19.657L12 16.0001"
+			d="M8.34314 19.6569L12 16"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -80,7 +80,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M4.34314 15.657L8 12.0001"
+			d="M4.34314 15.6569L8 12"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"

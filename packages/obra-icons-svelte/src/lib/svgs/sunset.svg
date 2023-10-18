@@ -53,7 +53,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M6.34314 10.3433L5.63603 9.63615"
+			d="M6.34314 10.3431L5.63603 9.63603"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -62,7 +62,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M11.9999 8L11.9999 3"
+			d="M12 8L12 3"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
