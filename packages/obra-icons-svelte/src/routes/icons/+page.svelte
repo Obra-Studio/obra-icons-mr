@@ -11,26 +11,52 @@
 
 	let icons = data.defaultSearch;
 
-	async function find(query: string) {
-		query = query.trim();
+	let searching = false;
+	let query: string = '';
+	let lastQuery: string = query;
 
-		//? Don't search if the query is empty
-		if (query.length == 0) {
-			icons = data.defaultSearch;
-			return;
+	function input(event: { currentTarget: HTMLInputElement }) {
+		query = event.currentTarget.value.trim();
+
+		if (query != lastQuery) {
+			console.log(`trying to search for "${query}"`);
+			find();
+		} else {
+			console.log(
+				`not repeating same search - q: "${query}" lq: "${lastQuery}"`,
+			);
 		}
+	}
 
-		icons = await search(data.searchDb, {
-			properties: ['nameKebab', 'keywords'],
-			tolerance: 10,
-			term: query,
-			limit: 50,
-			boost: {
-				keywords: 2,
-			},
-		});
+	async function find() {
+		if (searching) return;
 
-		console.log(icons);
+		const currentQuery = query;
+		console.debug(`searching for "${currentQuery}"`);
+
+		searching = true;
+
+		icons =
+			query.length == 0
+				? data.defaultSearch
+				: await search(data.searchDb, {
+						term: currentQuery,
+						properties: ['nameKebab', 'keywords'],
+						tolerance: 10,
+						limit: 50,
+						boost: {
+							keywords: 2,
+						},
+				  });
+
+		// await new Promise((resolve) => setTimeout(resolve, 1000));
+
+		lastQuery = currentQuery;
+		searching = false;
+
+		if (currentQuery != query) {
+			find();
+		}
 	}
 </script>
 
@@ -43,7 +69,7 @@
 		<div class="container padding-medium margin-0-auto">
 			<div class="input-with-icon">
 				<input
-					on:input={(e) => find(e.currentTarget.value)}
+					on:input={input}
 					placeholder="Search {iconsCount} Obra Icons..."
 					type="text"
 				/>
@@ -52,7 +78,10 @@
 			</div>
 
 			{#if dev}
-				<!--				<p>Found {icons.hits.length} icons</p>-->
+				<p>Found {icons.hits.length} icons</p>
+				<p>Query: "{query}"</p>
+				<p>LQuery: "{lastQuery}"</p>
+				<p>Searching: {searching}</p>
 			{/if}
 
 			<div class="vertical-container-x-large">
@@ -78,5 +107,9 @@
 		display: grid;
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	}
+
+	p {
+		color: #ffffff;
 	}
 </style>
