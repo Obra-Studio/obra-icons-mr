@@ -13,17 +13,10 @@
 		<div class="container padding-medium margin-0-auto">
 			<div class="vertical-container-xxx-large">
 				<div class="hero">
-
-					<div class="text-align-center" style="margin: 2rem 0;">
-						<a href="https://www.producthunt.com/posts/obra-icons?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-obra&#0045;icons" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=417795&theme=light" alt="Obra&#0032;Icons - A&#0032;simple&#0044;&#0032;consistent&#0032;set&#0032;of&#0032;icons&#0044;&#0032;perfect&#0032;for&#0032;UI | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-					</div>
-					
 					<h2 class="text-align-center">
 						A simple, consistent set of icons, perfect for user
 						interfaces.
 					</h2>
-
-
 
 					<div class="justify-content-center button-group">
 						<a class="button inverse" href="/icons">
