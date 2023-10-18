@@ -80,7 +80,7 @@
 				<IconSearch />
 			</div>
 
-			{#if dev || $page.url.searchParams.has('debug')}
+			{#if dev && $page.url.searchParams.has('debug')}
 				<p>Found {icons.hits.length} icons</p>
 				<p>Query: "{query}"</p>
 				<p>LQuery: "{lastQuery}"</p>
