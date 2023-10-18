@@ -18,6 +18,12 @@ npm install obra-icons-svelte
 </script>
 ```
 
+## Customizing an icon
+
+```svelte
+   <IconActivity size={24} color="red" />
+```
+
 ## Which icons are available?
 
 For a full reference, see the list at [Obra Icons website](https://icons.obra.studio/icons).
