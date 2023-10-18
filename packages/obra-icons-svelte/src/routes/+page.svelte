@@ -48,12 +48,12 @@
 							<img
 								srcset="/illustration-quality.png 1x, /illustration-quality@2x.png 2x"
 								src="/illustration-quality.png"
-								alt="Extremely high quality"
+								alt="Super high quality"
 							/>
 						</div>
 
 						<div class="content">
-							<h3>Extremely high quality</h3>
+							<h3>Super high quality</h3>
 							<p>
 								Detailed vectors, consistent to the highest
 								level, with crisp details and consistent
@@ -74,10 +74,11 @@
 						<div class="content">
 							<h3>Multiple weights and sizes</h3>
 							<p>
-								Has support for multiple stroke weights (1, 1.5
-								and 2px) and sizes (24 and 32px). Ability to set
-								specific weights to exactly match the weight of
-								your font uses, for extreme visual consistency.
+								Obra Icons supports multiple stroke weights (1,
+								1.5 and 2px) and sizes (24 and 32px). We offer
+								the ability to set specific weights to exactly
+								match the weight of your font uses, for perfect
+								visual consistency.
 							</p>
 						</div>
 					</li>
@@ -110,7 +111,7 @@
 							</p>
 
 							<p>
-								Need a specific icon? <a
+								Need an integration in another framework? <a
 									href="mailto:iconrequest@obra.studio"
 									>Let us know</a
 								>.
