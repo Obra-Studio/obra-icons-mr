@@ -90,6 +90,19 @@ h4, .drop-down-heading-visually h3 {
     font-weight: 600;
 }
 
+code {
+    font-size: 85%;
+    background: #EEE;
+    padding: .3rem;
+    border-radius: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .is-dark code {
+        background: #222;
+    }
+}
+
 /* Logo
    ========================================================================== */
 
@@ -287,7 +300,7 @@ h4, .drop-down-heading-visually h3 {
 /* Footer
    ========================================================================== */
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
     .footer {
         display: flex;
         justify-content: space-between;
@@ -295,6 +308,8 @@ h4, .drop-down-heading-visually h3 {
         gap: var(--spacing-medium);
     }
 }
+
+
 
 /* Hero
    ========================================================================== */
