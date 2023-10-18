@@ -114,8 +114,4 @@
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 	}
-
-	p {
-		color: #ffffff;
-	}
 </style>
