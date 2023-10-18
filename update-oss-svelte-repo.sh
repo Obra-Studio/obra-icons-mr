@@ -20,8 +20,12 @@ rm -rf dist
 rm pnpm-lock.yaml
 # Remove the build scripts
 rm -rf scripts
+rm -rf src/lib
+# Remove node_modules
+rm -rf node_modules
 # Remove the marketing website root
 rm src/app.html
 # Remove the marketing website
 rm -rf src/routes
 rm -rf static
+
