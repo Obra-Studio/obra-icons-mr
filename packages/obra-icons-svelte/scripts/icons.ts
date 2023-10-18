@@ -163,26 +163,15 @@ icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
 
 //? Generate the svelte component from an svg
 
-const svelte_template_stroke = (
+const svelte_template = (
 	svgSvelte: string,
 ) => `<svelte:options namespace="svg" />
 
 <script>
   export let size = 24
   export let color = 'currentColor'
+  // svelte-ignore unused-export-let
   export let strokeWidth = 2
-</script>
-
-${svgSvelte}
-`;
-
-const svelte_template_fill = (
-	svgSvelte: string,
-) => `<svelte:options namespace="svg" />
-
-<script>
-  export let size = 24
-  export let color = 'currentColor'
 </script>
 
 ${svgSvelte}
@@ -195,11 +184,7 @@ for (let { svg, svgSvelte, name } of icons) {
 
 	let svelte_component: string;
 	//? Get the svelte component template
-	if (name.includes('fill')) {
-		svelte_component = svelte_template_fill(svgSvelte);
-	} else {
-		svelte_component = svelte_template_stroke(svgSvelte);
-	}
+	svelte_component = svelte_template(svgSvelte);
 
 	const pascal_name = icon_name_to_pascal(name);
 

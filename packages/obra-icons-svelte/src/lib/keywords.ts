@@ -83,10 +83,10 @@ export default {
   "arrow-left-down": [
     "left-down",
     "down-left",
-    "arrow",
-    "direction",
-    "navigate",
-    "move"
+    "arrow down left",
+    "diagonal arrow",
+    "southwest arrow",
+    "bottom-left arrow"
   ],
   "arrow-left-up": [
     "back",
@@ -113,12 +113,12 @@ export default {
     "arrow diagonal down and right"
   ],
   "arrow-right-up": [
-    "upward",
+    "upward arrow",
+    "right arrow",
     "direction",
     "move",
-    "point",
-    "go",
-    "navigate"
+    "navigate",
+    "go"
   ],
   "arrow-up": [
     "up",
@@ -220,9 +220,9 @@ export default {
     "wireless",
     "connectivity",
     "device",
-    "communication",
     "transmission",
-    "technology"
+    "communication",
+    "pairing"
   ],
   "board": [
     "whiteboard",
@@ -310,10 +310,10 @@ export default {
   "bookmark-fill": [
     "save",
     "favorite",
+    "flag",
     "marker",
     "tag",
-    "flag",
-    "clip"
+    "pin"
   ],
   "box": [
     "container",
@@ -344,9 +344,9 @@ export default {
     "stripes",
     "lines",
     "pattern",
-    "texture",
-    "box design",
     "striped box",
+    "box with stripes",
+    "box design",
     "container",
     "package",
     "carton"
@@ -393,9 +393,9 @@ export default {
   ],
   "calculator-fill": [
     "math",
-    "mathematics",
     "arithmetic",
     "computation",
+    "mathematics",
     "adding machine",
     "number cruncher"
   ],
@@ -442,7 +442,7 @@ export default {
     "photography",
     "image",
     "snapshot",
-    "shoot"
+    "shutter"
   ],
   "car": [
     "vehicle",
@@ -613,7 +613,7 @@ export default {
     "next",
     "double arrow",
     "double right",
-    "right arrow"
+    "double chevron"
   ],
   "chevron-double-up": [
     "arrow",
@@ -626,10 +626,10 @@ export default {
   "chevron-down": [
     "arrow",
     "downward",
-    "triangle",
     "pointing down",
     "expand",
-    "collapse"
+    "collapse",
+    "dropdown"
   ],
   "chevron-left": [
     "back",
@@ -665,9 +665,9 @@ export default {
   ],
   "circle-add": [
     "add",
-    "plus",
     "create",
     "new",
+    "plus",
     "append",
     "insert",
     "round",
@@ -840,8 +840,9 @@ export default {
     "information",
     "details",
     "about",
+    "help",
+    "question",
     "i",
-    "circle",
     "round",
     "shape",
     "ring"
@@ -850,8 +851,9 @@ export default {
     "information",
     "details",
     "about",
+    "help",
+    "question",
     "i",
-    "circle",
     "round",
     "shape",
     "ring"
@@ -1114,8 +1116,8 @@ export default {
     "network",
     "join",
     "bridge",
-    "attach",
-    "combine"
+    "sync",
+    "attach"
   ],
   "contact-book": [
     "address book",
@@ -1171,15 +1173,15 @@ export default {
     "royal",
     "monarch",
     "headpiece",
-    "tiara"
+    "coronet"
   ],
   "cyclist": [
     "biker",
     "rider",
     "cycling",
-    "bike",
+    "bicycle",
     "pedaler",
-    "bicyclist"
+    "bike"
   ],
   "delete": [
     "remove",
@@ -1292,7 +1294,7 @@ export default {
     "error document",
     "error file",
     "error notification",
-    "error icon",
+    "error report",
     "file",
     "paper",
     "record"
@@ -1505,7 +1507,7 @@ export default {
     "refine",
     "adjust",
     "modify",
-    "change",
+    "alternate",
     "search"
   ],
   "fish": [
@@ -1520,9 +1522,9 @@ export default {
     "banner",
     "marker",
     "symbol",
-    "pennant",
     "emblem",
-    "sign"
+    "pennant",
+    "standard"
   ],
   "flask": [
     "bottle",
@@ -1654,12 +1656,12 @@ export default {
     "checkerboard"
   ],
   "hashtag": [
-    "pound",
+    "pound sign",
     "number sign",
-    "tag",
-    "sharp",
     "hash",
-    "octothorpe"
+    "tag",
+    "social media",
+    "trending"
   ],
   "heart": [
     "love",
@@ -1706,8 +1708,8 @@ export default {
     "photo",
     "graphic",
     "illustration",
-    "visual",
-    "artwork"
+    "photograph",
+    "drawing"
   ],
   "inbox": [
     "email",
@@ -1762,12 +1764,12 @@ export default {
     "access"
   ],
   "land": [
-    "earth",
     "ground",
+    "earth",
     "terrain",
     "soil",
     "landscape",
-    "country"
+    "property"
   ],
   "language": [
     "tongue",
@@ -1949,7 +1951,7 @@ export default {
     "medicine",
     "doctor's bag",
     "first aid kit",
-    "medical supplies"
+    "patient folder"
   ],
   "media": [
     "video",
@@ -1963,9 +1965,9 @@ export default {
     "loudspeaker",
     "announcement",
     "speaker",
-    "public address",
     "bullhorn",
-    "amplifier"
+    "amplifier",
+    "public address"
   ],
   "menu": [
     "list",
@@ -2055,9 +2057,9 @@ export default {
     "shift",
     "transfer",
     "relocate",
-    "adjust",
+    "drag",
     "slide",
-    "drag"
+    "reposition"
   ],
   "multiply": [
     "times",
@@ -2076,12 +2078,12 @@ export default {
     "note"
   ],
   "navigation-n": [
-    "direction",
-    "map",
-    "guide",
-    "compass",
-    "route",
-    "travel"
+    "menu",
+    "list",
+    "options",
+    "navigate",
+    "explore",
+    "go"
   ],
   "navigation-ne": [
     "menu",
@@ -2138,9 +2140,9 @@ export default {
     "disconnected",
     "unavailable",
     "not online",
-    "offline mode",
     "no internet",
-    "out of service"
+    "offline mode",
+    "not connected"
   ],
   "options-horizontal": [
     "menu",
@@ -2723,7 +2725,7 @@ export default {
     "shine",
     "twinkle",
     "glimmer",
-    "shimmer",
+    "dazzle",
     "spark"
   ],
   "sparkles-fill": [
@@ -2738,7 +2740,7 @@ export default {
     "audio",
     "sound",
     "music",
-    "volume",
+    "stereo",
     "amplifier",
     "loudspeakers"
   ],
@@ -2976,11 +2978,11 @@ export default {
   ],
   "trending-down": [
     "declining",
-    "falling",
     "decreasing",
-    "downward",
+    "falling",
     "slumping",
-    "dropping"
+    "dropping",
+    "descend"
   ],
   "trending-up": [
     "growth",
@@ -2992,10 +2994,10 @@ export default {
   ],
   "triangle": [
     "shape",
-    "pyramid",
     "polygon",
+    "pyramid",
+    "arrow",
     "trigon",
-    "three-sided",
     "delta"
   ],
   "truck": [
@@ -3051,8 +3053,8 @@ export default {
     "bullet points",
     "items",
     "unordered items",
-    "unordered bullet list",
-    "unordered checklist"
+    "unordered bullet points",
+    "unordered elements"
   ],
   "upload": [
     "import",
@@ -3093,15 +3095,12 @@ export default {
     "customer"
   ],
   "user-check": [
-    "verify",
-    "validate",
-    "confirm",
-    "inspect",
-    "review",
-    "examine",
     "person",
     "profile",
-    "customer"
+    "customer",
+    "account",
+    "verify",
+    "validate"
   ],
   "user-cross": [
     "remove",
@@ -3271,9 +3270,9 @@ export default {
     "pane",
     "frame",
     "view",
-    "screen",
     "interface",
-    "browser"
+    "screen",
+    "display"
   ],
   "yen": [
     "currency",
@@ -3281,7 +3280,7 @@ export default {
     "Japanese",
     "Japan",
     "yen symbol",
-    "yen sign"
+    "Japanese currency"
   ],
   "zoom-in": [
     "magnify",
