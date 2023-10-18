@@ -53,8 +53,6 @@
 						},
 				  });
 
-		// await new Promise((resolve) => setTimeout(resolve, 1000));
-
 		lastQuery = currentQuery;
 		searching = false;
 		sc--;
