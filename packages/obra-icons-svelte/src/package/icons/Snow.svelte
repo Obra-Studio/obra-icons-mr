@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -17,7 +18,7 @@
 			class="oi-vector"
 			d="M19.0005 16C20.2147 15.0878 21 13.6356 21 12C21 9.23858 18.7614 7 16 7C15.9667 7 15.9334 7.00033 15.9002 7.00098C15.4373 4.71825 13.4193 3 11 3C8.23858 3 6 5.23858 6 8C6 8.37684 6.04169 8.74395 6.12071 9.09695C4.33457 9.4976 3 11.0929 3 13C3 14.1947 3.52376 15.2671 4.35418 16"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -26,28 +27,28 @@
 			class="oi-mini-dot"
 			d="M9.5 17H9.512"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-mini-dot"
 			d="M14.5004 16H14.5124"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-mini-dot"
 			d="M13.5 20H13.512"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-mini-dot"
 			d="M8.48804 21.0001H8.50004"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 	</g>

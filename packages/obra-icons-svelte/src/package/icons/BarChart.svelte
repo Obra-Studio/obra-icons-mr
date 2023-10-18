@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -21,7 +22,7 @@
 			height="18"
 			rx="1.2"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
 		<rect
 			class="oi-box"
@@ -31,7 +32,7 @@
 			height="13"
 			rx="1.2"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
 		<rect
 			class="oi-box"
@@ -41,7 +42,7 @@
 			height="8"
 			rx="1.2"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
 	</g>
 </svg>

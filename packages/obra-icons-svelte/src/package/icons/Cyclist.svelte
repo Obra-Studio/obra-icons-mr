@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -19,7 +20,7 @@
 			cy="15"
 			r="3"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
 		<circle
 			class="oi-ellipse"
@@ -27,13 +28,13 @@
 			cy="15"
 			r="3"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
 		<path
 			class="oi-vector"
 			d="M12 16V13L9.60265 10.2031C9.26259 9.80638 9.28531 9.21471 9.6548 8.84522L11 7.50002C11.6667 7.33336 13.3 7.40002 14.5 9.00002H17"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path

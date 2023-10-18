@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -19,7 +20,7 @@
 			cy="12"
 			r="9"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
 		<ellipse
 			class="oi-ellipse"
@@ -28,8 +29,8 @@
 			rx="4"
 			ry="9"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
-		<path class="oi-line" d="M3 12H21" stroke={color} stroke-width="2" />
+		<path class="oi-line" d="M3 12H21" stroke={color} stroke-width={strokeWidth} />
 	</g>
 </svg>

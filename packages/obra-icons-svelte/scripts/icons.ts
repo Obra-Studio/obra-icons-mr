@@ -147,7 +147,10 @@ for (const chunk of icon_chunks) {
 			const svgSvelte = svg
 				.replace(/(width|height)="24"(?! stroke-width)/g, '$1={size}')
 				.replace(/stroke="black"/g, 'stroke={color}')
-				.replace(/fill="black"/g, 'fill={color}');
+				.replace(/fill="black"/g, 'fill={color}')
+				.replace(/stroke-width="2"/g, 'stroke-width={strokeWidth}')
+				.replace(/stroke-width="3"/g, 'stroke-width={strokeWidth*1.5}')
+				.replace(/stroke-width="4"/g, 'stroke-width={strokeWidth*2}');
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg, svgSvelte });
@@ -167,6 +170,7 @@ const svelte_template = (
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 ${svgSvelte}

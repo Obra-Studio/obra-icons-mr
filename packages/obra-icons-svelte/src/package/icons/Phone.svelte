@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -17,7 +18,7 @@
 			class="oi-box"
 			d="M16 2.5H8C6.89543 2.5 6 3.39543 6 4.5V19.5C6 20.6046 6.89543 21.5 8 21.5H16C17.1046 21.5 18 20.6046 18 19.5V4.5C18 3.39543 17.1046 2.5 16 2.5Z"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -26,7 +27,7 @@
 			class="oi-mini-dot"
 			d="M12 18H12.012"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 	</g>

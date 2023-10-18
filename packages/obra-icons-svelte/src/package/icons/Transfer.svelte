@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -17,14 +18,14 @@
 			class="oi-vector"
 			d="M2.39996 15L13.2 15M2.39996 15L6.59996 19.2M2.39996 15L6.59996 10.8"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-vector"
 			d="M21.6 9.00005L10.8 9.00005M21.6 9.00005L17.4 4.80005M21.6 9.00005L17.4 13.2"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 	</g>

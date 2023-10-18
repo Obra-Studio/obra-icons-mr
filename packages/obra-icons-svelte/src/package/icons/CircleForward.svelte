@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -19,13 +20,13 @@
 			cy="12.0001"
 			r="9"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 		/>
 		<path
 			class="oi-vector"
 			d="M16 10L11 10C9.34315 10 8 11.3431 8 13V13C8 14.6569 9.34315 16 11 16L12 16"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -34,7 +35,7 @@
 			class="oi-incomplete-triangle"
 			d="M14 12L16 10L14 8"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"

@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -17,42 +18,42 @@
 			class="oi-dot"
 			d="M7.99399 6H8.00599"
 			stroke={color}
-			stroke-width="4"
+			stroke-width={strokeWidth*2}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-dot"
 			d="M15.994 6H16.006"
 			stroke={color}
-			stroke-width="4"
+			stroke-width={strokeWidth*2}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-dot"
 			d="M7.99399 12H8.00599"
 			stroke={color}
-			stroke-width="4"
+			stroke-width={strokeWidth*2}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-dot"
 			d="M15.994 12H16.006"
 			stroke={color}
-			stroke-width="4"
+			stroke-width={strokeWidth*2}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-dot"
 			d="M7.99399 18H8.00599"
 			stroke={color}
-			stroke-width="4"
+			stroke-width={strokeWidth*2}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-dot"
 			d="M15.994 18H16.006"
 			stroke={color}
-			stroke-width="4"
+			stroke-width={strokeWidth*2}
 			stroke-linecap="round"
 		/>
 	</g>

@@ -3,6 +3,7 @@
 <script>
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -17,7 +18,7 @@
 			class="oi-vector"
 			d="M7 7V17"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
@@ -25,7 +26,7 @@
 			class="oi-vector"
 			d="M17 11V12C17 13.1046 16.1046 14 15 14H9C7.89543 14 7 14.8954 7 16V17"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
@@ -33,7 +34,7 @@
 			class="oi-ellipse"
 			d="M17 11C18.1045 11 19 10.1046 19 9C19 7.89543 18.1045 7 17 7C15.8954 7 15 7.89543 15 9C15 10.1046 15.8954 11 17 11Z"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -42,7 +43,7 @@
 			class="oi-ellipse"
 			d="M6.99997 21C8.10454 21 8.99997 20.1046 8.99997 19C8.99997 17.8954 8.10454 17 6.99997 17C5.8954 17 4.99997 17.8954 4.99997 19C4.99997 20.1046 5.8954 21 6.99997 21Z"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -51,7 +52,7 @@
 			class="oi-ellipse"
 			d="M6.99997 7C8.10454 7 8.99997 6.10457 8.99997 5C8.99997 3.89543 8.10454 3 6.99997 3C5.8954 3 4.99997 3.89543 4.99997 5C4.99997 6.10457 5.8954 7 6.99997 7Z"
 			stroke={color}
-			stroke-width="2"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"

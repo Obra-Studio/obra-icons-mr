@@ -20,8 +20,10 @@ npm install obra-icons-svelte
 
 ## Customizing an icon
 
+Use the `size`, `color` and `strokeWidth` props to customize the icon.
+
 ```svelte
-   <IconActivity size={24} color="red" />
+   <IconActivity size={24} color="red" strokeWidth={1} />
 ```
 
 ## Which icons are available?
