@@ -6,6 +6,7 @@
 	import { getSvg } from '$lib/svgs';
 
 	import Icon from './Icon.svelte';
+	import { page } from '$app/stores';
 
 	export let data;
 
@@ -28,12 +29,15 @@
 		}
 	}
 
+	let sc = 0;
+
 	async function find() {
 		if (searching) return;
 
 		const currentQuery = query;
 		console.debug(`searching for "${currentQuery}"`);
 
+		sc++;
 		searching = true;
 
 		icons =
@@ -53,6 +57,7 @@
 
 		lastQuery = currentQuery;
 		searching = false;
+		sc--;
 
 		if (currentQuery != query) {
 			find();
@@ -77,11 +82,12 @@
 				<IconSearch />
 			</div>
 
-			{#if dev}
+			{#if dev || $page.url.searchParams.has('debug')}
 				<p>Found {icons.hits.length} icons</p>
 				<p>Query: "{query}"</p>
 				<p>LQuery: "{lastQuery}"</p>
 				<p>Searching: {searching}</p>
+				<p>SC: {sc}</p>
 			{/if}
 
 			<div class="vertical-container-x-large">
