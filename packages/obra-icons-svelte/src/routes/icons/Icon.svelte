@@ -163,19 +163,21 @@
 	}
 
 	.toast {
-		position: absolute;
+		position: fixed;
 		bottom: 12px;
 		left: 50%;
+		z-index: 3000;
 		transform: translateX(-50%);
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
-		padding: 12px;
+		padding: 12px 24px;
+
 		border-radius: 4px;
-		background: rgba(0, 0, 0, 0.3);
-		backdrop-filter: blur(4px);
+		color: #fff;
+		background: rgba(0, 0, 0, 0.85);
 
 		pointer-events: none;
 	}
