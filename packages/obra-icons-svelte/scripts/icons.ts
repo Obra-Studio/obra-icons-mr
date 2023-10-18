@@ -26,7 +26,7 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '226:27199';
+const NODE_ID = '266:1152';
 
 console.log('\nCleaning Output Directories');
 
@@ -140,6 +140,9 @@ for (const chunk of icon_chunks) {
 			//? Turn id="oi_vector_2" -> class="oi-vector"
 			svg = svg.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
 
+			// Turn width="24" and height="24" into width={size} and height={size}
+			svg = svg.replace(/(width|height)="(\d+)"/g, '$1={size}');
+
 			//? Add each icon to the icons array
 			icons.push({ name, svg });
 		}),
@@ -151,6 +154,10 @@ icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
 
 //? Generate the svelte component from an svg
 const svelte_template = (svg: string) => `<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+</script>
 
 ${svg}
 `;
