@@ -1,5 +1,5 @@
 <script>
-	import { IconAdd } from '$package';
+	import * as icons from '$package';
 	export let size = '24';
 	export let weight = 1;
 </script>
@@ -34,16 +34,18 @@
 		</div>
 
 		<div class="grid">
-			<div
-				class="icon-wrapper"
-				class:weight05={weight === 0.5}
-				class:weight1={weight === 1}
-				class:weight15={weight === 1.5}
-				class:weight2={weight === 2}
-				style="width: {size}px; height: {size}px;"
-			>
-				<IconAdd />
-			</div>
+			{#each Object.values(icons) as component}
+				<div
+					class="icon-wrapper"
+					class:weight05={weight === 0.5}
+					class:weight1={weight === 1}
+					class:weight15={weight === 1.5}
+					class:weight2={weight === 2}
+					style="width: {size}px; height: {size}px;"
+				>
+					<svelte:component this={component} />
+				</div>
+			{/each}
 		</div>
 	</div>
 </div>
