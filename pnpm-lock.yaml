@@ -15,8 +15,8 @@ importers:
   packages/obra-icons-svelte:
     devDependencies:
       '@orama/orama':
-        specifier: ^1.2.8
-        version: 1.2.10
+        specifier: '=1.2.8'
+        version: 1.2.8
       '@sveltejs/adapter-auto':
         specifier: ^2.0.0
         version: 2.1.0(@sveltejs/kit@1.25.1)
@@ -416,8 +416,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@orama/orama@1.2.10:
-    resolution: {integrity: sha512-B5L8/klWim9Mepc0suK3pG8NkEPRDUa/CfhXCISDHaEFLiTvJXDmB8Zr9A+fWnU+2vIJm0aTzv2LWMNms9qAiw==}
+  /@orama/orama@1.2.8:
+    resolution: {integrity: sha512-C7aXZ9kW00IHA4j6C/CO6BQ9Zuuwf3GiinnPk2jBXWiBXUszOxw8dHHToJrDix+Vn2HvfepSYPczrFguSHHsMA==}
     engines: {node: '>= 16.0.0'}
     dev: true
 
