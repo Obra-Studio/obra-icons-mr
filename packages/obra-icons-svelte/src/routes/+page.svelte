@@ -84,7 +84,7 @@
 					</li>
 					<li>
 						<div class="content">
-							<h3>Over 350 icons</h3>
+							<h3>Over 450 icons</h3>
 							<p>
 								Obra Icons contains many icons, so you won’t run
 								into the situation where you can’t find the
