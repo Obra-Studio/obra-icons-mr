@@ -70,7 +70,7 @@ export default {
     "lower",
     "decrease",
     "drop",
-    "reduce"
+    "fall"
   ],
   "arrow-left": [
     "back",
@@ -91,17 +91,17 @@ export default {
   "arrow-left-up": [
     "back",
     "upwards",
-    "leftward",
+    "leftwards",
     "direction",
     "navigate",
     "move"
   ],
   "arrow-right": [
+    "right",
     "forward",
     "next",
-    "right",
     "direction",
-    "move",
+    "pointer",
     "navigate"
   ],
   "arrow-right-down": [
@@ -113,12 +113,12 @@ export default {
     "arrow diagonal down and right"
   ],
   "arrow-right-up": [
-    "upward arrow",
-    "right arrow",
+    "upward",
     "direction",
     "move",
-    "navigate",
-    "go"
+    "point",
+    "go",
+    "navigate"
   ],
   "arrow-up": [
     "up",
@@ -273,12 +273,12 @@ export default {
     "text"
   ],
   "book-open": [
-    "book",
-    "open",
     "read",
-    "pages",
+    "open book",
     "literature",
     "novel",
+    "pages",
+    "library",
     "story"
   ],
   "bookmark": [
@@ -321,7 +321,7 @@ export default {
     "carton",
     "crate",
     "bin",
-    "parcel"
+    "chest"
   ],
   "box-3d": [
     "cube",
@@ -393,9 +393,9 @@ export default {
   ],
   "calculator-fill": [
     "math",
+    "mathematics",
     "arithmetic",
     "computation",
-    "mathematics",
     "adding machine",
     "number cruncher"
   ],
@@ -578,10 +578,10 @@ export default {
   "chevron-down": [
     "arrow",
     "downward",
-    "triangle",
     "pointing down",
     "expand",
-    "collapse"
+    "collapse",
+    "dropdown"
   ],
   "chevron-left": [
     "back",
@@ -662,10 +662,10 @@ export default {
   "circle-arrow-right": [
     "next",
     "forward",
-    "right arrow",
-    "circle arrow",
-    "proceed",
     "move",
+    "navigate",
+    "proceed",
+    "go",
     "round",
     "shape",
     "ring"
@@ -685,8 +685,8 @@ export default {
     "return",
     "loop",
     "reverse",
-    "undo",
     "retreat",
+    "go back",
     "retrace",
     "round",
     "shape",
@@ -763,8 +763,8 @@ export default {
     "alert",
     "attention",
     "exclamation",
+    "error",
     "caution",
-    "notification",
     "round",
     "shape",
     "ring"
@@ -802,9 +802,8 @@ export default {
     "information",
     "details",
     "about",
-    "help",
-    "question",
     "i",
+    "circle",
     "round",
     "shape",
     "ring"
@@ -876,9 +875,9 @@ export default {
     "completed",
     "verified",
     "done",
-    "finished",
     "tick",
     "mark",
+    "confirm",
     "notepad",
     "document",
     "paper"
@@ -919,7 +918,7 @@ export default {
     "different clock",
     "clock variation",
     "clock alternative version",
-    "clock alternative design",
+    "alternative time",
     "timepiece",
     "timer",
     "wristwatch"
@@ -928,9 +927,9 @@ export default {
     "timepiece",
     "timer",
     "wristwatch",
-    "hourglass",
     "chronometer",
-    "timekeeper"
+    "hourglass",
+    "sundial"
   ],
   "close": [
     "exit",
@@ -1073,10 +1072,10 @@ export default {
   "contact-book": [
     "address book",
     "phone book",
-    "contacts",
     "directory",
-    "contact list",
-    "address list"
+    "contacts",
+    "address list",
+    "contact list"
   ],
   "copy": [
     "duplicate",
@@ -1130,9 +1129,9 @@ export default {
     "biker",
     "rider",
     "cycling",
-    "bike",
+    "bicycle",
     "pedaler",
-    "bicyclist"
+    "bike"
   ],
   "delete": [
     "remove",
@@ -1241,11 +1240,11 @@ export default {
   ],
   "document-error": [
     "file error",
+    "paper error",
+    "document issue",
     "error message",
-    "error document",
-    "error file",
     "error notification",
-    "error icon",
+    "error alert",
     "file",
     "paper",
     "record"
@@ -1284,7 +1283,7 @@ export default {
     "note",
     "record",
     "document",
-    "small document"
+    "sheet"
   ],
   "double-check": [
     "verify",
@@ -1375,12 +1374,12 @@ export default {
     "widen"
   ],
   "export": [
-    "save",
     "download",
-    "backup",
+    "save",
     "transfer",
-    "extract",
-    "output"
+    "share",
+    "backup",
+    "extract"
   ],
   "external-link": [
     "link",
@@ -1412,10 +1411,10 @@ export default {
   "fat-marker": [
     "marker",
     "highlighter",
-    "pen",
-    "thick marker",
+    "thick pen",
     "text marker",
-    "bold marker"
+    "bold marker",
+    "wide-tip marker"
   ],
   "favorite": [
     "like",
@@ -1458,7 +1457,7 @@ export default {
     "refine",
     "adjust",
     "modify",
-    "change",
+    "alternate",
     "search"
   ],
   "fish": [
@@ -1470,8 +1469,8 @@ export default {
     "fin"
   ],
   "flag": [
-    "banner",
     "marker",
+    "banner",
     "symbol",
     "emblem",
     "pennant",
@@ -1481,8 +1480,8 @@ export default {
     "bottle",
     "beaker",
     "vial",
+    "container",
     "chemistry",
-    "experiment",
     "science"
   ],
   "fog": [
@@ -1490,8 +1489,7 @@ export default {
     "haze",
     "smog",
     "cloud",
-    "vapor",
-    "fume"
+    "vapor"
   ],
   "folder": [
     "directory",
@@ -1525,7 +1523,7 @@ export default {
     "verify",
     "confirm",
     "tick",
-    "completed",
+    "complete",
     "file",
     "document"
   ],
@@ -1571,8 +1569,8 @@ export default {
     "lettering",
     "typography",
     "scaling",
-    "text dimension",
-    "character size"
+    "text scaling",
+    "font scaling"
   ],
   "fullscreen": [
     "maximize",
@@ -1604,15 +1602,15 @@ export default {
     "layout",
     "pattern",
     "gridiron",
-    "grating"
+    "checkerboard"
   ],
   "hashtag": [
-    "pound sign",
+    "pound",
     "number sign",
-    "hash",
     "tag",
-    "social media",
-    "trending"
+    "sharp",
+    "hash",
+    "octothorpe"
   ],
   "heart": [
     "love",
@@ -1690,8 +1688,8 @@ export default {
   "kanban": [
     "board",
     "task",
-    "workflow",
     "project",
+    "workflow",
     "organization",
     "management"
   ],
@@ -1715,20 +1713,20 @@ export default {
     "access"
   ],
   "land": [
-    "ground",
     "earth",
+    "ground",
     "terrain",
     "soil",
     "landscape",
-    "property"
+    "country"
   ],
   "language": [
-    "tongue",
     "speech",
     "communication",
+    "tongue",
+    "verbal",
     "lingo",
-    "dialect",
-    "verbal"
+    "dialect"
   ],
   "laptop": [
     "computer",
@@ -1799,8 +1797,8 @@ export default {
     "attach",
     "join",
     "combine",
-    "merge",
-    "tie"
+    "tie",
+    "associate"
   ],
   "link-add": [
     "attach",
@@ -1890,7 +1888,7 @@ export default {
   "marker-alt": [
     "highlighter",
     "pen",
-    "marker",
+    "pencil",
     "annotate",
     "edit",
     "write",
@@ -1902,7 +1900,7 @@ export default {
     "medicine",
     "doctor's bag",
     "first aid kit",
-    "medical supplies"
+    "patient folder"
   ],
   "media": [
     "video",
@@ -2008,9 +2006,9 @@ export default {
     "shift",
     "transfer",
     "relocate",
-    "drag",
+    "adjust",
     "slide",
-    "reposition"
+    "drag"
   ],
   "multiply": [
     "times",
@@ -2091,9 +2089,9 @@ export default {
     "disconnected",
     "unavailable",
     "not online",
-    "offline mode",
     "no internet",
-    "out of service"
+    "offline mode",
+    "not connected"
   ],
   "options-horizontal": [
     "menu",
@@ -2239,8 +2237,8 @@ export default {
     "graph",
     "diagram",
     "pie",
-    "statistics",
-    "data"
+    "three",
+    "segments"
   ],
   "pie-chart-single-part": [
     "chart",
@@ -2311,8 +2309,8 @@ export default {
     "silence",
     "turn off",
     "disable",
-    "quiet",
     "no sound",
+    "quiet",
     "music",
     "broadcast",
     "station"
@@ -2620,8 +2618,8 @@ export default {
     "exit",
     "log off",
     "sign off",
-    "disconnect",
-    "leave"
+    "end session",
+    "disconnect"
   ],
   "signal": [
     "network",
@@ -2691,7 +2689,7 @@ export default {
     "audio",
     "sound",
     "music",
-    "volume",
+    "stereo",
     "amplifier",
     "loudspeakers"
   ],
@@ -2717,7 +2715,7 @@ export default {
     "market",
     "boutique",
     "mall",
-    "buy"
+    "storefront"
   ],
   "store-alt": [
     "shop",
@@ -2795,9 +2793,9 @@ export default {
     "table",
     "desk",
     "furniture",
-    "office",
     "workstation",
-    "surface"
+    "surface",
+    "office"
   ],
   "tablet": [
     "device",
@@ -2866,10 +2864,10 @@ export default {
   "thumbs-down": [
     "dislike",
     "disapproval",
-    "not good",
     "negative",
     "reject",
-    "thumb down"
+    "thumb down",
+    "not good"
   ],
   "thumbs-up": [
     "like",
@@ -2885,7 +2883,7 @@ export default {
     "alarm",
     "clock",
     "chronometer",
-    "time"
+    "timepiece"
   ],
   "toggle-off": [
     "disable",
@@ -2931,9 +2929,9 @@ export default {
     "declining",
     "falling",
     "decreasing",
-    "dropping",
+    "downward",
     "slumping",
-    "downward"
+    "dropping"
   ],
   "trending-up": [
     "growth",
@@ -3040,7 +3038,7 @@ export default {
     "customer down",
     "account down",
     "arrow down",
-    "user down",
+    "down arrow",
     "person",
     "profile",
     "customer"
@@ -3156,11 +3154,11 @@ export default {
   ],
   "wallet": [
     "purse",
-    "money",
-    "cash",
+    "money holder",
     "billfold",
-    "coin purse",
-    "cardholder"
+    "cash carrier",
+    "coin pouch",
+    "card holder"
   ],
   "warning-triangle": [
     "alert",
@@ -3230,8 +3228,8 @@ export default {
   ],
   "yen": [
     "currency",
-    "money",
     "Japanese",
+    "money",
     "Japan",
     "yen symbol",
     "Japanese currency"
