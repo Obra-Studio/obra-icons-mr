@@ -1,7 +1,5 @@
 <script>
-	import { IconArrowRight, IconChevronRight, IconDownload } from '$package';
-	import FigmaIcon from '$lib/components/icons/FigmaIcon.svelte';
-	import iconsCount from '$lib/count';
+	import { IconArrowRight } from '$package';
 </script>
 
 <svelte:head>
@@ -31,42 +29,6 @@
 							<span>Buy the files</span>
 							<IconArrowRight />
 						</a>
-
-						<!--						<a class="button inverse" href="/">-->
-						<!--							<FigmaIcon />-->
-						<!--							<span>Buy on Figma community</span>-->
-						<!--						</a>-->
-
-						<!--						<a class="button inverse" href="/">-->
-						<!--							<IconDownload />-->
-						<!--							<span>Buy via download</span>-->
-						<!--						</a>-->
-					</div>
-				</div>
-			</div>
-
-			<div class="vertical-container-x-large">
-				<ul class="justify-content-center flex gap-medium">
-					<li class="opacity-75">Version 1.0.0</li>
-					<li class="opacity-75">
-						{iconsCount} high quality icons
-					</li>
-				</ul>
-
-				<div class="padding-medium text-align-center">
-					<div class="hide-md">
-						<img
-							srcset="/base-mobile.png 1x, /base-mobile@2x.png 2x"
-							src="/base-mobile.png"
-							alt="Base set - Obra Icons"
-						/>
-					</div>
-					<div class="show-md hide-sm">
-						<img
-							srcset="/base.png 1x, /base@2x.png 2x"
-							src="/base.png"
-							alt="Base set - Obra Icons"
-						/>
 					</div>
 				</div>
 			</div>
@@ -176,7 +138,7 @@
 
 			<div class="column">
 				<div class="content">
-					<h2>Buy the Obra Icons files</h2>
+					<h2>Buy the source files</h2>
 
 					<ul>
 						<li>

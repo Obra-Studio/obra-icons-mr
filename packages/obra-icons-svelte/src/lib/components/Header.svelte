@@ -55,7 +55,7 @@
 								fill="white"
 							/>
 						</svg>
-						<span>GitHub</span>
+						<span>Svelte package</span>
 					</a>
 				</div>
 			</div>
