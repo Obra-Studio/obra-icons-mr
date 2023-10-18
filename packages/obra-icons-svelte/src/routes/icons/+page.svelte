@@ -29,6 +29,8 @@
 				keywords: 2,
 			},
 		});
+
+		console.log(icons);
 	}
 </script>
 
