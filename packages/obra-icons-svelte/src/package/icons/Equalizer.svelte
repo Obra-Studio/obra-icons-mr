@@ -16,7 +16,7 @@
 	<g class="oi-equalizer">
 		<path
 			class="oi-vector"
-			d="M5 18.1401L6.1995 18.1056"
+			d="M5.00003 18.1401L6.19953 18.1056"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

@@ -15,9 +15,11 @@
 >
 	<g class="oi-caret-up">
 		<path
-			class="oi-fill"
+			class="oi-vector"
 			d="M8.06752 14C7.6436 14 7.41202 13.5056 7.68341 13.1799L11.6159 8.46093C11.8158 8.22105 12.1842 8.22106 12.3841 8.46093L16.3166 13.1799C16.588 13.5056 16.3564 14 15.9325 14L8.06752 14Z"
-			fill={color}
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 		/>
 	</g>
 </svg>

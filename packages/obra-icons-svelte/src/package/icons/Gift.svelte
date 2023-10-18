@@ -16,7 +16,7 @@
 	<g class="oi-gift">
 		<path
 			class="oi-vector"
-			d="M20.0001 12V22H4.00012V12"
+			d="M20.0001 12V22H4.00011V12"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

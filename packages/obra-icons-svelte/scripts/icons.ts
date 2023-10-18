@@ -26,7 +26,7 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '266:1152';
+const NODE_ID = '266:8772';
 
 console.log('\nCleaning Output Directories');
 
@@ -163,7 +163,7 @@ icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
 
 //? Generate the svelte component from an svg
 
-const svelte_template = (
+const svelte_template_stroke = (
 	svgSvelte: string,
 ) => `<svelte:options namespace="svg" />
 
@@ -176,13 +176,31 @@ const svelte_template = (
 ${svgSvelte}
 `;
 
+const svelte_template_fill = (
+	svgSvelte: string,
+) => `<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+</script>
+
+${svgSvelte}
+`;
+
 console.log('\nWriting Icons');
 
 for (let { svg, svgSvelte, name } of icons) {
 	console.log(`  Writing Icon "${name}"`);
 
+	let svelte_component: string;
 	//? Get the svelte component template
-	const svelte_component = svelte_template(svgSvelte);
+	if (name.includes('fill')) {
+		svelte_component = svelte_template_fill(svgSvelte);
+	} else {
+		svelte_component = svelte_template_stroke(svgSvelte);
+	}
+
 	const pascal_name = icon_name_to_pascal(name);
 
 	//? Write the svg file

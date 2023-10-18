@@ -15,14 +15,18 @@
 >
 	<g class="oi-caret-left-right">
 		<path
-			class="oi-fill"
+			class="oi-vector"
 			d="M10 15.3773C10 15.8102 9.48728 16.0386 9.16552 15.749L5.41294 12.3716C5.19225 12.173 5.19225 11.827 5.41294 11.6284L9.16552 8.25103C9.48728 7.96145 10 8.1898 10 8.62268L10 15.3773Z"
-			fill={color}
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 		/>
 		<path
-			class="oi-fill"
+			class="oi-vector"
 			d="M14 8.62268C14 8.1898 14.5127 7.96145 14.8345 8.25103L18.5871 11.6284C18.8077 11.827 18.8077 12.173 18.5871 12.3716L14.8345 15.749C14.5127 16.0386 14 15.8102 14 15.3773L14 8.62268Z"
-			fill={color}
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 		/>
 	</g>
 </svg>

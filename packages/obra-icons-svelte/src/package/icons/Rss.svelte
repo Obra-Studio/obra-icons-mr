@@ -16,7 +16,7 @@
 	<g class="oi-rss">
 		<path
 			class="oi-vector"
-			d="M4.00005 11C6.38699 11 8.67618 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20"
+			d="M4.00005 11C6.387 11 8.67618 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

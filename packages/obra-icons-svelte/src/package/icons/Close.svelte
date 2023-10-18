@@ -16,7 +16,7 @@
 	<g class="oi-close">
 		<path
 			class="oi-line"
-			d="M18.0001 6L6.00006 18"
+			d="M18.0001 6L6.00009 18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -24,7 +24,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M6.00006 6L18.0001 18"
+			d="M6.00009 6L18.0001 18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

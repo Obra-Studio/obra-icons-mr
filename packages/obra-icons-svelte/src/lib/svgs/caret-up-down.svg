@@ -7,14 +7,18 @@
 >
 	<g class="oi-caret-up-down">
 		<path
-			class="oi-fill"
+			class="oi-vector"
 			d="M15.3773 14C15.8102 14 16.0386 14.5127 15.749 14.8345L12.3716 18.5871C12.173 18.8077 11.827 18.8077 11.6284 18.5871L8.25103 14.8345C7.96145 14.5127 8.1898 14 8.62268 14H15.3773Z"
-			fill="black"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
 		/>
 		<path
-			class="oi-fill"
+			class="oi-vector"
 			d="M8.62268 10C8.1898 10 7.96145 9.48728 8.25103 9.16552L11.6284 5.41294C11.827 5.19225 12.173 5.19225 12.3716 5.41294L15.749 9.16552C16.0386 9.48728 15.8102 10 15.3773 10L8.62268 10Z"
-			fill="black"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
 		/>
 	</g>
 </svg>
