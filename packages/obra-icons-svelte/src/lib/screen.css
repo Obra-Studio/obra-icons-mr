@@ -358,6 +358,10 @@ code {
     text-wrap: balance;
 }
 
+.hero .button-group {
+    display: grid;
+}
+
 /* Responsive utilities
    ========================================================================== */
 
