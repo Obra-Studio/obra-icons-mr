@@ -18,7 +18,7 @@
 	<g class="oi-path-left-turn">
 		<path
 			class="oi-line"
-			d="M8.13332 5.06673L11.4515 8.38487C11.9201 8.8535 12.6799 8.8535 13.1485 8.38487L16.4667 5.06673"
+			d="M8.13333 5.06673L11.4515 8.38487C11.9201 8.8535 12.6799 8.8535 13.1485 8.38487L16.4667 5.06673"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -32,7 +32,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M8.4 19.8L19.8 8.40003"
+			d="M8.39999 19.8L19.8 8.40003"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
