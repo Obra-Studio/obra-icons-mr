@@ -14,10 +14,10 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-align-justify">
+	<g class="oi-align-text-left">
 		<path
 			class="oi-line"
-			d="M21.0001 10H3.00009"
+			d="M16.9999 10H2.9999"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -25,7 +25,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M21.0001 6H3.00009"
+			d="M20.9999 6H2.9999"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -33,7 +33,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M21.0001 14H3.00009"
+			d="M20.9999 14H2.9999"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -41,7 +41,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M21.0001 18H3.00009"
+			d="M16.9999 18H2.9999"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

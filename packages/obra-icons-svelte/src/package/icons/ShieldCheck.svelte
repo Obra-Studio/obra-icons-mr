@@ -17,7 +17,7 @@
 	<g class="oi-shield-check">
 		<path
 			class="oi-vector"
-			d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"
+			d="M12 22C12 22 20 18 20 12V5L12 2L4.00001 5V12C4.00001 18 12 22 12 22Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

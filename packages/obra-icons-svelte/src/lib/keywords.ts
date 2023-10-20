@@ -18,22 +18,22 @@ export default {
   ],
   "add": [
     "plus",
-    "create",
     "insert",
     "include",
     "append",
-    "attach"
+    "attach",
+    "incorporate"
   ],
   "add-roundrect": [
     "rectangle",
     "shape",
     "box",
-    "rounded",
-    "curved",
-    "corner",
+    "container",
+    "frame",
+    "border",
     "plus",
-    "create",
-    "insert"
+    "insert",
+    "include"
   ],
   "airplay": [
     "stream",
@@ -50,14 +50,6 @@ export default {
     "notification",
     "wake-up",
     "siren"
-  ],
-  "align-center": [
-    "center",
-    "middle",
-    "horizontal centering",
-    "text alignment",
-    "centered",
-    "middle alignment"
   ],
   "align-group-bottom": [
     "bottom-align",
@@ -76,12 +68,12 @@ export default {
     "middle-align"
   ],
   "align-group-left": [
-    "align left",
-    "group left",
-    "align group",
-    "left alignment",
-    "group alignment",
-    "left grouping"
+    "align",
+    "group",
+    "left",
+    "arrange",
+    "organize",
+    "horizontal"
   ],
   "align-group-right": [
     "right-align",
@@ -107,29 +99,37 @@ export default {
     "middle",
     "vertical center"
   ],
-  "align-justify": [
-    "justify",
+  "align-text-center": [
+    "center",
+    "middle",
+    "text center",
+    "align center",
+    "center align",
+    "centered"
+  ],
+  "align-text-justify": [
     "align",
     "text",
-    "format",
-    "spacing",
-    "arrange"
+    "justify",
+    "alignment",
+    "justified",
+    "paragraph"
   ],
-  "align-left": [
+  "align-text-left": [
     "left",
-    "justify",
-    "text",
-    "horizontal",
-    "align",
-    "position"
+    "text left",
+    "align left",
+    "left align",
+    "text alignment",
+    "left text"
   ],
-  "align-right": [
-    "right",
-    "justify",
-    "align",
-    "position",
-    "move",
-    "arrange"
+  "align-text-right": [
+    "right-align",
+    "text-right",
+    "justify-right",
+    "align-right",
+    "text-align-right",
+    "right-justified"
   ],
   "align-to-middle": [
     "center",
@@ -190,15 +190,15 @@ export default {
   "arrow-left-down": [
     "left-down",
     "down-left",
-    "arrow",
-    "direction",
-    "navigate",
-    "move"
+    "arrow down left",
+    "diagonal arrow",
+    "southwest arrow",
+    "bottom-left arrow"
   ],
   "arrow-left-up": [
     "back",
     "upwards",
-    "leftwards",
+    "leftward",
     "direction",
     "navigate",
     "move"
@@ -220,12 +220,12 @@ export default {
     "arrow diagonal down and right"
   ],
   "arrow-right-up": [
-    "upward",
+    "upward arrow",
+    "right arrow",
     "direction",
     "move",
-    "point",
-    "go",
-    "navigate"
+    "navigate",
+    "go"
   ],
   "arrow-up": [
     "up",
@@ -240,8 +240,8 @@ export default {
     "increase",
     "ascending order",
     "ascending sequence",
-    "ascending direction",
-    "ascending trend"
+    "ascending trend",
+    "ascending pattern"
   ],
   "atom": [
     "molecule",
@@ -524,7 +524,7 @@ export default {
     "carton",
     "crate",
     "bin",
-    "chest"
+    "parcel"
   ],
   "box-3d": [
     "cube",
@@ -550,7 +550,7 @@ export default {
     "carton",
     "crate",
     "bin",
-    "chest"
+    "parcel"
   ],
   "brackets": [
     "parentheses",
@@ -717,7 +717,7 @@ export default {
     "expand",
     "collapse",
     "dropdown",
-    "menu"
+    "select"
   ],
   "caret-left": [
     "arrow",
@@ -839,8 +839,8 @@ export default {
     "selected",
     "enabled",
     "activated",
-    "on",
-    "marked"
+    "marked",
+    "on"
   ],
   "checklist": [
     "to-do",
@@ -854,9 +854,9 @@ export default {
     "arrow",
     "down",
     "expand",
-    "collapse",
     "double arrow",
-    "downward arrow"
+    "collapse",
+    "dropdown"
   ],
   "chevron-double-left": [
     "back",
@@ -872,7 +872,7 @@ export default {
     "next",
     "double arrow",
     "double right",
-    "double chevron"
+    "right arrow"
   ],
   "chevron-double-up": [
     "arrow",
@@ -885,10 +885,10 @@ export default {
   "chevron-down": [
     "arrow",
     "downward",
+    "triangle",
     "pointing down",
     "expand",
-    "collapse",
-    "dropdown"
+    "collapse"
   ],
   "chevron-left": [
     "back",
@@ -924,9 +924,9 @@ export default {
   ],
   "circle-add": [
     "add",
+    "plus",
     "create",
     "new",
-    "plus",
     "append",
     "insert",
     "round",
@@ -1002,10 +1002,10 @@ export default {
   "circle-arrow-right-fill": [
     "next",
     "forward",
-    "move",
-    "navigate",
+    "right arrow",
+    "circle arrow",
     "proceed",
-    "go",
+    "move",
     "round",
     "shape",
     "ring"
@@ -1036,8 +1036,8 @@ export default {
     "return",
     "loop",
     "reverse",
-    "undo",
     "retreat",
+    "go back",
     "retrace",
     "round",
     "shape",
@@ -1082,7 +1082,7 @@ export default {
     "exit",
     "delete",
     "remove",
-    "x",
+    "end",
     "round",
     "shape",
     "ring"
@@ -1101,9 +1101,9 @@ export default {
   "circle-divide": [
     "split",
     "divide",
-    "segment",
-    "partition",
     "separate",
+    "partition",
+    "segment",
     "break",
     "round",
     "shape",
@@ -1209,8 +1209,9 @@ export default {
     "information",
     "details",
     "about",
+    "help",
+    "question",
     "i",
-    "circle",
     "round",
     "shape",
     "ring"
@@ -1219,8 +1220,9 @@ export default {
     "information",
     "details",
     "about",
+    "help",
+    "question",
     "i",
-    "circle",
     "round",
     "shape",
     "ring"
@@ -1303,9 +1305,9 @@ export default {
     "completed",
     "verified",
     "done",
-    "finished",
     "tick",
     "mark",
+    "confirm",
     "notepad",
     "document",
     "paper"
@@ -1314,9 +1316,9 @@ export default {
     "completed",
     "verified",
     "done",
+    "finished",
     "tick",
     "mark",
-    "confirm",
     "notepad",
     "document",
     "paper"
@@ -1377,9 +1379,9 @@ export default {
     "timepiece",
     "timer",
     "wristwatch",
-    "hourglass",
     "chronometer",
-    "timekeeper"
+    "hourglass",
+    "sundial"
   ],
   "clock-alt": [
     "clock alternative",
@@ -1667,6 +1669,14 @@ export default {
     "hardware",
     "microprocessor"
   ],
+  "cpu-fill": [
+    "processor",
+    "computer",
+    "central processing unit",
+    "chip",
+    "hardware",
+    "microprocessor"
+  ],
   "credit-card": [
     "payment",
     "debit card",
@@ -1705,7 +1715,7 @@ export default {
     "royal",
     "monarch",
     "headpiece",
-    "coronet"
+    "tiara"
   ],
   "crown-alt": [
     "king",
@@ -1806,19 +1816,19 @@ export default {
   "discount": [
     "sale",
     "offer",
-    "promotion",
-    "rebate",
+    "promo",
+    "reduction",
     "deal",
     "markdown"
   ],
   "discount-fill": [
     "sale",
     "offer",
-    "promo",
-    "reduction",
+    "promotion",
+    "rebate",
     "deal",
     "markdown",
-    "promotion"
+    "promo"
   ],
   "divide": [
     "split",
@@ -1849,8 +1859,8 @@ export default {
     "paper",
     "upload",
     "new",
-    "create",
     "add",
+    "create",
     "record"
   ],
   "document-add-fill": [
@@ -1975,7 +1985,7 @@ export default {
     "error document",
     "error file",
     "error notification",
-    "error report",
+    "error icon",
     "file",
     "paper",
     "record"
@@ -2249,7 +2259,7 @@ export default {
     "downcast"
   ],
   "face-wink": [
-    "wink",
+    "winking",
     "smile",
     "emoji",
     "expression",
@@ -2273,12 +2283,12 @@ export default {
     "move ahead"
   ],
   "fat-marker": [
-    "marker",
-    "highlighter",
-    "thick pen",
-    "text marker",
+    "thick marker",
     "bold marker",
-    "wide-tip marker"
+    "wide marker",
+    "chubby marker",
+    "jumbo marker",
+    "big marker"
   ],
   "favorite": [
     "like",
@@ -2293,8 +2303,8 @@ export default {
     "heart",
     "bookmark",
     "star",
-    "save",
-    "favorite"
+    "preference",
+    "cherished"
   ],
   "favorite-fill-off": [
     "favorite",
@@ -2329,7 +2339,7 @@ export default {
     "refine",
     "adjust",
     "modify",
-    "change",
+    "alternate",
     "search"
   ],
   "filter-fill": [
@@ -2422,8 +2432,8 @@ export default {
     "bottle",
     "beaker",
     "vial",
-    "container",
     "chemistry",
+    "experiment",
     "science"
   ],
   "flip": [
@@ -2431,8 +2441,8 @@ export default {
     "turn",
     "invert",
     "reverse",
-    "flip-flop",
-    "swap"
+    "flip over",
+    "flip side"
   ],
   "flip-vertical": [
     "mirror",
@@ -2443,6 +2453,14 @@ export default {
     "upside down",
     "rotate",
     "turn"
+  ],
+  "flower": [
+    "blossom",
+    "petal",
+    "flora",
+    "plant",
+    "bloom",
+    "daisy"
   ],
   "fog": [
     "mist",
@@ -2605,8 +2623,8 @@ export default {
     "lettering",
     "typography",
     "scaling",
-    "text scaling",
-    "font scaling"
+    "text dimension",
+    "character size"
   ],
   "fork-left": [
     "left fork",
@@ -2759,10 +2777,11 @@ export default {
     "alternative",
     "tag",
     "symbol",
-    "alternate",
-    "hash",
+    "social media",
+    "metadata",
     "pound sign",
-    "number sign"
+    "number sign",
+    "hash"
   ],
   "heart": [
     "love",
@@ -2950,13 +2969,13 @@ export default {
     "tree",
     "botanical"
   ],
-  "left-indent": [
+  "left-indent-text": [
     "indentation",
-    "margin",
+    "text alignment",
+    "paragraph formatting",
+    "text formatting",
     "spacing",
-    "alignment",
-    "tab",
-    "offset"
+    "margin"
   ],
   "lifebuoy": [
     "safety",
@@ -2970,36 +2989,45 @@ export default {
     "lamp",
     "bulb",
     "illumination",
-    "light",
+    "bright",
     "idea",
-    "bright"
+    "electric"
   ],
   "lightbulb-off": [
-    "light",
-    "bulb",
-    "off",
     "dark",
+    "off",
     "inactive",
     "disabled",
+    "switched off",
+    "unlit",
     "lamp",
+    "bulb",
     "illumination"
   ],
   "lightbulb-on": [
     "light",
     "bulb",
     "lamp",
+    "on",
     "illuminate",
     "bright",
-    "on",
     "illumination"
   ],
-  "line-spacing": [
-    "spacing",
+  "line-spacing-compact": [
+    "tight",
+    "narrow",
+    "compressed",
+    "condensed",
+    "close",
+    "compact"
+  ],
+  "line-spacing-spacious": [
     "line height",
-    "text spacing",
-    "paragraph spacing",
-    "line gap",
-    "text leading"
+    "spacing",
+    "wide",
+    "roomy",
+    "airy",
+    "expansive"
   ],
   "link": [
     "connect",
@@ -3077,6 +3105,54 @@ export default {
     "end session",
     "log off",
     "disconnect"
+  ],
+  "machine-learning": [
+    "AI",
+    "artificial intelligence",
+    "data analysis",
+    "predictive modeling",
+    "deep learning",
+    "neural networks"
+  ],
+  "machine-learning-fill": [
+    "AI",
+    "artificial intelligence",
+    "data analysis",
+    "predictive modeling",
+    "deep learning",
+    "neural networks"
+  ],
+  "magic-wand": [
+    "wand",
+    "spell",
+    "wizard",
+    "enchant",
+    "sorcery",
+    "magician"
+  ],
+  "magic-wand-ai": [
+    "magic",
+    "wand",
+    "artificial intelligence",
+    "AI",
+    "smart",
+    "technology"
+  ],
+  "magic-wand-ai-fill": [
+    "magic",
+    "wand",
+    "artificial intelligence",
+    "AI",
+    "smart",
+    "technology"
+  ],
+  "magic-wand-fill": [
+    "wand",
+    "spell",
+    "wizard",
+    "enchant",
+    "sorcery",
+    "magician"
   ],
   "map": [
     "location",
@@ -3264,9 +3340,9 @@ export default {
     "shift",
     "transfer",
     "relocate",
-    "drag",
+    "adjust",
     "slide",
-    "reposition"
+    "drag"
   ],
   "multiply": [
     "times",
@@ -3328,9 +3404,9 @@ export default {
     "direction",
     "compass",
     "arrow",
-    "north-east",
     "northeast",
-    "navigate"
+    "diagonal",
+    "angle"
   ],
   "navigation-south": [
     "down",
@@ -3375,8 +3451,8 @@ export default {
   "next": [
     "forward",
     "arrow",
-    "continue",
     "proceed",
+    "continue",
     "navigate",
     "advance"
   ],
@@ -3449,7 +3525,7 @@ export default {
     "company",
     "desk",
     "building",
-    "professional"
+    "workspace"
   ],
   "offline": [
     "disconnected",
@@ -3488,7 +3564,7 @@ export default {
     "list",
     "order",
     "sequence",
-    "items",
+    "steps",
     "index"
   ],
   "package": [
@@ -3721,8 +3797,8 @@ export default {
   ],
   "print-fill": [
     "copy",
-    "document",
     "paper",
+    "document",
     "printer",
     "output",
     "hardcopy"
@@ -3756,8 +3832,8 @@ export default {
     "silence",
     "turn off",
     "disable",
-    "quiet",
     "no sound",
+    "quiet",
     "music",
     "broadcast",
     "station"
@@ -3830,13 +3906,12 @@ export default {
   ],
   "reorder-alt": [
     "rearrange",
+    "sort",
+    "change order",
     "swap",
-    "switch",
     "reorganize",
     "alternate",
-    "change",
     "arrange",
-    "sort",
     "organize"
   ],
   "repeat": [
@@ -3879,6 +3954,14 @@ export default {
     "replay",
     "backtrack",
     "reverse"
+  ],
+  "right-indent-text": [
+    "align",
+    "indent",
+    "text",
+    "paragraph",
+    "format",
+    "spacing"
   ],
   "road-sign-both": [
     "road sign",
@@ -3945,8 +4028,8 @@ export default {
     "swivel"
   ],
   "route": [
-    "path",
     "direction",
+    "path",
     "way",
     "navigation",
     "map",
@@ -4017,12 +4100,12 @@ export default {
     "elect"
   ],
   "send": [
-    "mail",
-    "message",
-    "email",
-    "transmit",
     "deliver",
-    "forward"
+    "transmit",
+    "forward",
+    "dispatch",
+    "transfer",
+    "submit"
   ],
   "send-alt": [
     "message",
@@ -4031,7 +4114,7 @@ export default {
     "transmit",
     "forward",
     "share",
-    "mail"
+    "deliver"
   ],
   "server": [
     "computer",
@@ -4303,17 +4386,17 @@ export default {
     "audio",
     "sound",
     "music",
-    "volume",
-    "amplifier",
-    "loudspeakers"
+    "stereo",
+    "loudspeakers",
+    "amplifiers"
   ],
   "speakers-fill": [
     "audio",
     "sound",
     "music",
-    "stereo",
-    "loudspeakers",
-    "amplifiers"
+    "volume",
+    "amplifier",
+    "loudspeakers"
   ],
   "statistic-down": [
     "decrease",
@@ -4467,7 +4550,7 @@ export default {
     "furniture",
     "surface",
     "workstation",
-    "alternate"
+    "alternative"
   ],
   "table-alt-2": [
     "table",
@@ -4609,9 +4692,9 @@ export default {
     "rows",
     "lines",
     "horizontal",
-    "stacked",
-    "layers",
-    "levels"
+    "triple",
+    "trio",
+    "series"
   ],
   "thumbsdown": [
     "dislike",
@@ -4639,11 +4722,11 @@ export default {
   ],
   "tickets-two": [
     "tickets",
-    "admission",
-    "pass",
-    "entry",
-    "dual",
-    "pair"
+    "dual tickets",
+    "pair of tickets",
+    "two tickets",
+    "double tickets",
+    "couple tickets"
   ],
   "timer": [
     "countdown",
@@ -4691,7 +4774,7 @@ export default {
     "transportation",
     "coach",
     "sightseeing",
-    "vacation"
+    "excursion"
   ],
   "train": [
     "railway",
@@ -4719,11 +4802,11 @@ export default {
   ],
   "trending-down": [
     "declining",
-    "falling",
     "decreasing",
-    "downward",
+    "falling",
     "slumping",
-    "dropping"
+    "dropping",
+    "descend"
   ],
   "trending-up": [
     "growth",
@@ -4735,10 +4818,10 @@ export default {
   ],
   "triangle": [
     "shape",
-    "polygon",
     "pyramid",
-    "arrow",
+    "polygon",
     "trigon",
+    "three-sided",
     "delta"
   ],
   "triangle-fill": [
@@ -4818,16 +4901,16 @@ export default {
     "bullet points",
     "items",
     "unordered items",
-    "unordered bullet points",
-    "unordered elements"
+    "unordered bullet list",
+    "unordered checklist"
   ],
   "upload": [
     "import",
     "attach",
     "send",
-    "submit",
+    "transfer",
     "load",
-    "transfer"
+    "submit"
   ],
   "user": [
     "person",
@@ -4860,15 +4943,12 @@ export default {
     "customer"
   ],
   "user-check": [
-    "verify",
-    "validate",
-    "confirm",
-    "inspect",
-    "review",
-    "examine",
     "person",
     "profile",
-    "customer"
+    "customer",
+    "account",
+    "verify",
+    "validate"
   ],
   "user-cross": [
     "remove",
@@ -5087,8 +5167,8 @@ export default {
     "pane",
     "frame",
     "view",
-    "screen",
     "interface",
+    "screen",
     "display"
   ],
   "wine-glass": [

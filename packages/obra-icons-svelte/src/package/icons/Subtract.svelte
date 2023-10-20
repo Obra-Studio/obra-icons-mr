@@ -17,7 +17,7 @@
 	<g class="oi-subtract">
 		<path
 			class="oi-line"
-			d="M17.1 12L5.7 12"
+			d="M17.1 12L5.69998 12"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

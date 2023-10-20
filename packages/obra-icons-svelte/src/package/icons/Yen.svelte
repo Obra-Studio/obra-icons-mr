@@ -17,14 +17,14 @@
 	<g class="oi-yen">
 		<path
 			class="oi-line"
-			d="M7.45837 15.4211H16.7391"
+			d="M7.45839 15.4211H16.7392"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-line"
-			d="M7.45837 12.144H16.7391"
+			d="M7.45839 12.144H16.7392"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

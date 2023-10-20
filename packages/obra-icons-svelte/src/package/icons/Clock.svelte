@@ -17,7 +17,7 @@
 	<g class="oi-clock">
 		<path
 			class="oi-vector"
-			d="M12 7.19995L12 12.0999C12 12.3761 12.2239 12.5999 12.5 12.5999L16.8 12.5999"
+			d="M12 7.19995L12 12.0999C12 12.3761 12.2238 12.5999 12.5 12.5999L16.8 12.5999"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

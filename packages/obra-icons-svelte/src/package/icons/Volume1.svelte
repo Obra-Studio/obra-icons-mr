@@ -17,7 +17,7 @@
 	<g class="oi-volume-1">
 		<path
 			class="oi-vector"
-			d="M11.0004 5L6.00038 9H2.00038V15H6.00038L11.0004 19V5Z"
+			d="M11.0004 4.99994L6.00037 8.99994H2.00037V14.9999H6.00037L11.0004 18.9999V4.99994Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

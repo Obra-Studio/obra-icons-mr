@@ -5,10 +5,10 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-left-indent">
+	<g class="oi-align-text-right">
 		<path
 			class="oi-line"
-			d="M13 6H21"
+			d="M21 10H7.00001"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -16,7 +16,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M13 10H21"
+			d="M21 6H3.00001"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -24,7 +24,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M13 14H21"
+			d="M21 14H3.00001"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -32,23 +32,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M13 18H21"
-			stroke="black"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-line"
-			d="M9 6V18"
-			stroke="black"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-incomplete-triangle"
-			d="M5 10L3 12L5 14"
+			d="M21 18H7.00001"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
