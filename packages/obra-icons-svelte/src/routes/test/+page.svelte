@@ -12,7 +12,8 @@
 	<div class="vertical-container-xx-large">
 		<div class="flex gap-medium margin-bottom-medium">
 			<p>
-				<label>Size</label><input
+				<label for="size">Size</label><input
+					id="size"
 					type="range"
 					bind:value={size}
 					min="16"
@@ -22,8 +23,9 @@
 				{size}
 			</p>
 			<p>
-				<label>Weight</label><input
+				<label for="weight">Weight</label><input
 					type="range"
+					id="weight"
 					bind:value={weight}
 					min=".5"
 					step=".5"

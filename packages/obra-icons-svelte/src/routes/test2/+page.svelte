@@ -11,12 +11,15 @@
 
 <div class="controls">
 	<div class="control-group">
-		<label>Color</label><input type="color" bind:value={color} />
+		<label for="color">Color</label>
+		<input id="color" type="color" bind:value={color} />
 		{color}
 	</div>
 
 	<div class="control-group">
-		<label>Size</label><input
+		<label for="size">Size</label>
+		<input
+			id="size"
 			type="range"
 			bind:value={size}
 			min="16"
@@ -27,7 +30,9 @@
 	</div>
 
 	<div class="control-group">
-		<label>Weight</label><input
+		<label id="weight">Weight</label>
+		<input
+			id="weight"
 			type="range"
 			bind:value={weight}
 			min=".5"
