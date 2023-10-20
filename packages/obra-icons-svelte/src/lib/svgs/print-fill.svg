@@ -1,0 +1,29 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-print-fill">
+		<rect
+			class="oi-fill"
+			x="7"
+			y="3"
+			width="10"
+			height="5"
+			rx="1"
+			fill="black"
+		/>
+		<path
+			class="oi-fill"
+			d="M6 16C6 16.5523 5.55228 17 5 17H3C2.44772 17 2 16.5523 2 16V11C2 9.89543 2.89543 9 4 9H20C21.1046 9 22 9.89543 22 11V16C22 16.5523 21.5523 17 21 17H19C18.4477 17 18 16.5523 18 16V14.5C18 13.9477 17.5523 13.5 17 13.5H7C6.44772 13.5 6 13.9477 6 14.5V16Z"
+			fill="black"
+		/>
+		<path
+			class="oi-fill"
+			d="M7 16C7 15.4477 7.44772 15 8 15H16C16.5523 15 17 15.4477 17 16V22H7V16Z"
+			fill="black"
+		/>
+	</g>
+</svg>

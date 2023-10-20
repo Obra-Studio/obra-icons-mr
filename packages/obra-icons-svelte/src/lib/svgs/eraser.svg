@@ -1,0 +1,27 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-eraser">
+		<path
+			id="Vector 33"
+			d="M8.5 20.5H19"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M14.8284 14.8284L19.7781 9.87867C20.5592 9.09763 20.5592 7.8313 19.7781 7.05025L16.9497 4.22182C16.1686 3.44077 14.9023 3.44077 14.1213 4.22182L9.17152 9.17157M14.8284 14.8284L9.87863 19.7782C9.09758 20.5592 7.83125 20.5592 7.0502 19.7782L4.22178 16.9497C3.44073 16.1687 3.44073 14.9024 4.22178 14.1213L9.17152 9.17157M14.8284 14.8284L9.17152 9.17157"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

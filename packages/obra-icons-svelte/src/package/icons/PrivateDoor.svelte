@@ -1,0 +1,43 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-private-door">
+		<path
+			class="oi-vector"
+			d="M5 2H16C16.7956 2 17.5587 2.31607 18.1213 2.87868C18.6839 3.44129 19 4.20435 19 5V19C19 19.2652 18.8946 19.5196 18.7071 19.7071C18.5196 19.8946 18.2652 20 18 20H15"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M5 2L12.588 3.518C13.268 3.65392 13.8799 4.02121 14.3197 4.55739C14.7594 5.09358 14.9998 5.76555 15 6.459V20.78C14.9999 20.9279 14.967 21.0739 14.9037 21.2076C14.8404 21.3412 14.7482 21.4592 14.6338 21.5529C14.5194 21.6466 14.3856 21.7138 14.2422 21.7496C14.0987 21.7854 13.949 21.789 13.804 21.76L6.608 20.322C6.15444 20.2313 5.74633 19.9863 5.45314 19.6286C5.15995 19.2708 4.99982 18.8225 5 18.36V2Z"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M12 12V14"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

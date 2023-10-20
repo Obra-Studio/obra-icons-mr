@@ -1,0 +1,32 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-flag-fill">
+		<path
+			class="oi-fill"
+			d="M4.00007 4.00005C12.0001 2.00005 12.0001 7.00005 20.0001 5.00005C20.0001 8.00005 20.0001 13 20.0001 16C12.0001 18 12.0001 13 4.00007 15C4.00007 12 3.99992 7.00006 4.00007 4.00005Z"
+			fill={color}
+		/>
+		<path
+			class="oi-line"
+			d="M5 10L5 19"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

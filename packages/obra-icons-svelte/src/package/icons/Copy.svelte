@@ -15,13 +15,9 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g class="oi-copy">
-		<rect
+		<path
 			class="oi-box"
-			x="8"
-			y="8"
-			width="13"
-			height="13"
-			rx="2"
+			d="M8 10C8 8.89543 8.89543 8 10 8H19C20.1046 8 21 8.89543 21 10V19C21 20.1046 20.1046 21 19 21H10C8.89543 21 8 20.1046 8 19V10Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>

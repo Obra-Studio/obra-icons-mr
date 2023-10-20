@@ -1,0 +1,37 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-road-sign-parking">
+		<path
+			class="oi-box"
+			d="M19 4H5C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4Z"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M9 16V11.8123M9 11.8123V8C9.78839 8 11.7194 8 12.9419 8C14.1644 8 15 8.86049 15 9.96107C15 10.9739 13.8949 11.8123 13.0123 11.8123C12.759 11.8123 12.1825 11.8245 11.9273 11.8123H9Z"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="2.16568"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

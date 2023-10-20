@@ -1,0 +1,46 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-bar-chart-fill">
+		<rect
+			class="oi-fill"
+			x="2"
+			y="2"
+			width="5"
+			height="20"
+			rx="2"
+			fill={color}
+		/>
+		<rect
+			class="oi-fill"
+			x="9.5"
+			y="7"
+			width="5"
+			height="15"
+			rx="2"
+			fill={color}
+		/>
+		<rect
+			class="oi-fill"
+			x="17"
+			y="12"
+			width="5"
+			height="10"
+			rx="2"
+			fill={color}
+		/>
+	</g>
+</svg>

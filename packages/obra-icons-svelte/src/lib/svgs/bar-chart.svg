@@ -12,7 +12,7 @@
 			y="3"
 			width="4"
 			height="18"
-			rx="1.2"
+			rx="1"
 			stroke="black"
 			stroke-width="2"
 		/>
@@ -22,7 +22,7 @@
 			y="8"
 			width="4"
 			height="13"
-			rx="1.2"
+			rx="1"
 			stroke="black"
 			stroke-width="2"
 		/>
@@ -32,7 +32,7 @@
 			y="13"
 			width="4"
 			height="8"
-			rx="1.2"
+			rx="1"
 			stroke="black"
 			stroke-width="2"
 		/>

@@ -1,0 +1,55 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-tour-bus">
+		<path
+			class="oi-vector"
+			d="M4.5 11.5H19.5M4.5 11.5V17C4.5 17.2652 4.60536 17.5196 4.79289 17.7071C4.98043 17.8946 5.23478 18 5.5 18H18.5C18.7652 18 19.0196 17.8946 19.2071 17.7071C19.3946 17.5196 19.5 17.2652 19.5 17V11.5M4.5 11.5V4C4.5 3.73478 4.60536 3.48043 4.79289 3.29289C4.98043 3.10536 5.23478 3 5.5 3H18.5C18.7652 3 19.0196 3.10536 19.2071 3.29289C19.3946 3.48043 19.5 3.73478 19.5 4V11.5"
+			stroke="black"
+			stroke-width="2"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M7.5 21C7.10218 21 6.72064 20.842 6.43934 20.5607C6.15804 20.2794 6 19.8978 6 19.5V18H9V19.5C9 19.8978 8.84196 20.2794 8.56066 20.5607C8.27936 20.842 7.89782 21 7.5 21ZM16.5 21C16.1022 21 15.7206 20.842 15.4393 20.5607C15.158 20.2794 15 19.8978 15 19.5V18H18V19.5C18 19.8978 17.842 20.2794 17.5607 20.5607C17.2794 20.842 16.8978 21 16.5 21Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M3 6V8M21 6V8"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-mini-dot"
+			d="M7.5 14.99L7.5 15"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-mini-dot"
+			d="M16.5 14.99L16.5 15"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M15.5 3L11 8M19 3.5L16.5 6.5"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+		/>
+	</g>
+</svg>

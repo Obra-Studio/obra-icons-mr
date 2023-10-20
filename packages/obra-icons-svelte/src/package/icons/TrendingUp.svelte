@@ -17,7 +17,7 @@
 	<g class="oi-trending-up">
 		<path
 			class="oi-vector"
-			d="M20.7784 7.21168L13.197 14.7931L9.20674 10.8029L3.22141 16.7882"
+			d="M20.7783 7.21168L13.1969 14.7931L9.20671 10.8029L3.22137 16.7882"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -25,7 +25,7 @@
 		/>
 		<path
 			class="oi-incomplete-triangle"
-			d="M15.9903 7.21174L20.7786 7.21173L20.7786 12"
+			d="M15.9904 7.21174L20.7786 7.21173L20.7786 12"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

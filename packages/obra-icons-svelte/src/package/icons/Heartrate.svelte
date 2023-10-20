@@ -17,7 +17,7 @@
 	<g class="oi-heartrate">
 		<path
 			class="oi-vector"
-			d="M21.4999 12H17.9999L14.9999 21L8.99994 3L5.99994 12H2.49994"
+			d="M21.5 12H18L15 21L8.99995 3L5.99995 12H2.49995"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

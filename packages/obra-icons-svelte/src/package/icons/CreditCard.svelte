@@ -25,20 +25,18 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
-			d="M20 5H4C3.44772 5 3 5.44772 3 6V8C3 8.55228 3.44772 9 4 9H20C20.5523 9 21 8.55228 21 8V6C21 5.44772 20.5523 5 20 5Z"
+			class="oi-line"
+			d="M3 9.6001L21 9.6001"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M7 13H11"
+			d="M7 14H9"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>

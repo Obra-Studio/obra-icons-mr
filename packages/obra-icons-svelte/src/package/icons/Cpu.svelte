@@ -15,85 +15,81 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g class="oi-cpu">
-		<path
+		<rect
 			class="oi-box"
-			d="M17.25 5H6.75C5.7835 5 5 5.7835 5 6.75V17.25C5 18.2165 5.7835 19 6.75 19H17.25C18.2165 19 19 18.2165 19 17.25V6.75C19 5.7835 18.2165 5 17.25 5Z"
+			x="9"
+			y="9"
+			width="6"
+			height="6"
+			rx="1"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
-		<path
+		<rect
 			class="oi-box"
-			d="M15 9H9V15H15V9Z"
+			x="6"
+			y="6"
+			width="12"
+			height="12"
+			rx="2"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M10 2.5V4.99575"
+			d="M15 18V21"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M14 2.5V4.99575"
+			d="M9 18V21"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M10 19V21.4958"
+			d="M6 15H3"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M14 19V21.4958"
+			d="M21 15H18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M19 9.5H21.4958"
+			d="M6 9H3"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M19 14H21.4958"
+			d="M21 9H18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M2.50256 9.5H4.99832"
+			d="M9 3V6"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M2.50256 14H4.99832"
+			d="M15 3V6"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

@@ -1,0 +1,34 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-check-in">
+		<path
+			class="oi-vector"
+			d="M12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 9.419 6.302 10.348 7.125 11.375L12 17L16.875 11.375C17.698 10.348 18 9.419 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<circle
+			class="oi-ellipse"
+			cx="12"
+			cy="7.5"
+			r="2"
+			stroke="black"
+			stroke-width="2"
+		/>
+		<path
+			class="oi-vector"
+			d="M5 15.1429C3.149 15.8699 2 16.8809 2 17.9999C2 20.2099 6.477 21.9999 12 21.9999C17.523 21.9999 22 20.2099 22 17.9999C22 16.8809 20.851 15.8699 19 15.1429"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

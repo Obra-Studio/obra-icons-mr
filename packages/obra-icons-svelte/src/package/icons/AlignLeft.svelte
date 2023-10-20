@@ -17,7 +17,7 @@
 	<g class="oi-align-left">
 		<path
 			class="oi-line"
-			d="M16.9999 10H2.99988"
+			d="M16.9999 10H2.99991"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -25,7 +25,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M20.9999 6H2.99988"
+			d="M20.9999 6H2.99991"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -33,7 +33,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M20.9999 14H2.99988"
+			d="M20.9999 14H2.99991"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -41,7 +41,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M16.9999 18H2.99988"
+			d="M16.9999 18H2.99991"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

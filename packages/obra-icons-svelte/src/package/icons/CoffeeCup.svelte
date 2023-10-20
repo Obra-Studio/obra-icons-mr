@@ -1,0 +1,58 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-coffee-cup">
+		<path
+			class="oi-vector"
+			d="M15.2374 10.505H4.64215V15.8026C4.64215 18.7285 7.01399 21.1003 9.93979 21.1003C12.8656 21.1003 15.2374 18.7284 15.2374 15.8026V10.505Z"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M15.2374 12.8596H17.3578C18.4624 12.8596 19.3578 13.755 19.3578 14.8596V16.7459C19.3578 17.8505 18.4624 18.7459 17.3578 18.7459L14.5 18.7459"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M6.6198 4C6.79951 4.4 7.35018 5.00165 6.38751 5.47782C5.42485 5.95398 6.26039 6.66667 6.6198 7"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M10.1198 3C10.2995 3.53333 10.8502 4.33553 9.88751 4.97042C8.92485 5.60531 9.76039 6.55556 10.1198 7"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M13.6198 4C13.7995 4.4 14.3502 5.00165 13.3875 5.47782C12.4249 5.95398 13.2604 6.66667 13.6198 7"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+		/>
+	</g>
+</svg>

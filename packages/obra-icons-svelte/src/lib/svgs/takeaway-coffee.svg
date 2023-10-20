@@ -1,0 +1,19 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-takeaway-coffee">
+		<path
+			class="oi-vector"
+			d="M6.5 7.5H18M6.5 7.5L7.38889 13.5M6.5 7.5H6.25C5.55964 7.5 5 6.94036 5 6.25V6.25C5 5.55964 5.55964 5 6.25 5H7.38889M18 7.5L16.8889 13.5M18 7.5H18.25C18.9404 7.5 19.5 6.94036 19.5 6.25V6.25C19.5 5.55964 18.9404 5 18.25 5H16.8889M7.38889 13.5L8.5 21H15.5L16.8889 13.5M7.38889 13.5H16.8889M7.38889 5V2.5H16.8889V5M7.38889 5H16.8889"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

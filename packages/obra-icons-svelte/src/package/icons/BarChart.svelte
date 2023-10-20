@@ -21,7 +21,7 @@
 			y="3"
 			width="4"
 			height="18"
-			rx="1.2"
+			rx="1"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>
@@ -31,7 +31,7 @@
 			y="8"
 			width="4"
 			height="13"
-			rx="1.2"
+			rx="1"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>
@@ -41,7 +41,7 @@
 			y="13"
 			width="4"
 			height="8"
-			rx="1.2"
+			rx="1"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>

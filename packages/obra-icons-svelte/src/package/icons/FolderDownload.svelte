@@ -25,17 +25,8 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
-			d="M12 15.5L12 10.5"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-incomplete-triangle"
-			d="M14 13.5L12 15.5L10 13.5"
+			class="oi-vector"
+			d="M14 13.5L12 15.5M12 15.5L10 13.5M12 15.5L12 10.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
