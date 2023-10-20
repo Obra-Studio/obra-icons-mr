@@ -139,21 +139,16 @@
 
 			<div class="column">
 				<div class="content">
-					<h2>Buy the source files</h2>
-
-					<ul>
-						<li>
-							SVG files with both outlined and non-outlined
-							vectors for further customization
-						</li>
-						<li>
-							<code>.fig</code> file for direct import into Figma
-						</li>
-					</ul>
-
+					<h2>Buy the Figma source file</h2>
+					<p>Buy the source file for direct import into Figma.</p>
+					<p>
+						This file contains the original vectors, and its
+						categorized into different categories. You can use this
+						file to extend Obra Icons to fit your own design system.
+					</p>
 					<div class="button-group">
 						<a class="button" href="https://sowl.co/s/bdgsNv">
-							<span>Buy the files</span>
+							<span>Buy the file</span>
 							<IconArrowRight />
 						</a>
 					</div>
