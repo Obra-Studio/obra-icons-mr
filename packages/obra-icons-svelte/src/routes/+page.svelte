@@ -26,7 +26,7 @@
 							class="button inverse"
 							href="https://sowl.co/s/bdgsNv"
 						>
-							<span>Buy the files</span>
+							<span>Buy the file</span>
 							<IconArrowRight />
 						</a>
 					</div>
@@ -142,9 +142,10 @@
 					<h2>Buy the Figma source file</h2>
 					<p>Buy the source file for direct import into Figma.</p>
 					<p>
-						This file contains the original vectors, and its
+						This file contains the original vectors of the 600+ icons, with its icons
 						categorized into different categories. You can use this
-						file to extend Obra Icons to fit your own design system.
+						file to extend Obra Icons to fit your own designs or
+						design system.
 					</p>
 					<div class="button-group">
 						<a class="button" href="https://sowl.co/s/bdgsNv">
