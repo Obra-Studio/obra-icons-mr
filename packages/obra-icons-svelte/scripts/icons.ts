@@ -26,7 +26,7 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '282:42991';
+const NODE_ID = '282:51317';
 
 console.log('\nCleaning Output Directories');
 
@@ -144,13 +144,19 @@ for (const chunk of icon_chunks) {
 			// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
 			// Turn stroke="black" into stroke={color}
 			// Turn fill="black" into fill={color}
+			// Add dynamic stroke widths
+			// Add class="obra-icon" after xmlns
 			const svgSvelte = svg
 				.replace(/(width|height)="24"(?! stroke-width)/g, '$1={size}')
 				.replace(/stroke="black"/g, 'stroke={color}')
 				.replace(/fill="black"/g, 'fill={color}')
 				.replace(/stroke-width="2"/g, 'stroke-width={strokeWidth}')
 				.replace(/stroke-width="3"/g, 'stroke-width={strokeWidth*1.5}')
-				.replace(/stroke-width="4"/g, 'stroke-width={strokeWidth*2}');
+				.replace(/stroke-width="4"/g, 'stroke-width={strokeWidth*2}')
+				.replace(
+					/xmlns="http:\/\/www\.w3\.org\/2000\/svg"/g,
+					'xmlns="http://www.w3.org/2000/svg"\n\tclass="obra-icon"',
+				);
 
 			//? Add each icon to the icons array
 			icons.push({ name, svg, svgSvelte });

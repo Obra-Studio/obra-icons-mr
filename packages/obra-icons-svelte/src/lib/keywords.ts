@@ -18,11 +18,11 @@ export default {
   ],
   "add": [
     "plus",
+    "create",
     "insert",
     "include",
     "append",
-    "attach",
-    "incorporate"
+    "attach"
   ],
   "add-roundrect": [
     "rectangle",
@@ -32,8 +32,8 @@ export default {
     "frame",
     "border",
     "plus",
-    "insert",
-    "include"
+    "create",
+    "insert"
   ],
   "airplay": [
     "stream",
@@ -55,9 +55,9 @@ export default {
     "bottom-align",
     "align to bottom",
     "group at bottom",
-    "bottom grouping",
-    "bottom alignment",
-    "align bottom"
+    "bottom group",
+    "align bottom",
+    "bottom alignment"
   ],
   "align-group-horizontal-center": [
     "center",
@@ -128,8 +128,8 @@ export default {
     "text-right",
     "justify-right",
     "align-right",
-    "text-align-right",
-    "right-justified"
+    "right-justified",
+    "text-align-right"
   ],
   "align-to-middle": [
     "center",
@@ -204,11 +204,11 @@ export default {
     "move"
   ],
   "arrow-right": [
+    "right",
     "forward",
     "next",
-    "right",
     "direction",
-    "move",
+    "pointer",
     "navigate"
   ],
   "arrow-right-down": [
@@ -220,12 +220,12 @@ export default {
     "arrow diagonal down and right"
   ],
   "arrow-right-up": [
-    "upward arrow",
-    "right arrow",
+    "upward",
     "direction",
     "move",
-    "navigate",
-    "go"
+    "point",
+    "go",
+    "navigate"
   ],
   "arrow-up": [
     "up",
@@ -615,8 +615,8 @@ export default {
     "pastry",
     "baked goods",
     "sweet treat",
-    "celebration",
-    "birthday"
+    "birthday cake",
+    "cupcake"
   ],
   "calculator-alt": [
     "calculator",
@@ -924,9 +924,9 @@ export default {
   ],
   "circle-add": [
     "add",
-    "plus",
     "create",
     "new",
+    "plus",
     "append",
     "insert",
     "round",
@@ -935,9 +935,9 @@ export default {
   ],
   "circle-add-fill": [
     "add",
+    "plus",
     "create",
     "new",
-    "plus",
     "append",
     "insert",
     "round",
@@ -1036,8 +1036,8 @@ export default {
     "return",
     "loop",
     "reverse",
+    "undo",
     "retreat",
-    "go back",
     "retrace",
     "round",
     "shape",
@@ -1101,9 +1101,9 @@ export default {
   "circle-divide": [
     "split",
     "divide",
-    "separate",
-    "partition",
     "segment",
+    "partition",
+    "separate",
     "break",
     "round",
     "shape",
@@ -1209,9 +1209,8 @@ export default {
     "information",
     "details",
     "about",
-    "help",
-    "question",
     "i",
+    "circle",
     "round",
     "shape",
     "ring"
@@ -1379,9 +1378,9 @@ export default {
     "timepiece",
     "timer",
     "wristwatch",
-    "chronometer",
     "hourglass",
-    "sundial"
+    "chronometer",
+    "timekeeper"
   ],
   "clock-alt": [
     "clock alternative",
@@ -1400,7 +1399,7 @@ export default {
     "different clock",
     "clock variation",
     "clock alternative version",
-    "alternative time",
+    "clock alternative design",
     "timepiece",
     "timer",
     "wristwatch"
@@ -1703,11 +1702,11 @@ export default {
   ],
   "cross": [
     "X",
-    "mark",
     "delete",
     "remove",
     "cancel",
-    "close"
+    "close",
+    "terminate"
   ],
   "crown": [
     "king",
@@ -1816,8 +1815,8 @@ export default {
   "discount": [
     "sale",
     "offer",
-    "promo",
-    "reduction",
+    "promotion",
+    "rebate",
     "deal",
     "markdown"
   ],
@@ -1827,8 +1826,7 @@ export default {
     "promotion",
     "rebate",
     "deal",
-    "markdown",
-    "promo"
+    "markdown"
   ],
   "divide": [
     "split",
@@ -1985,7 +1983,7 @@ export default {
     "error document",
     "error file",
     "error notification",
-    "error icon",
+    "error report",
     "file",
     "paper",
     "record"
@@ -2024,7 +2022,7 @@ export default {
     "note",
     "record",
     "document",
-    "small document"
+    "sheet"
   ],
   "document-small-fill": [
     "file",
@@ -2032,7 +2030,7 @@ export default {
     "note",
     "record",
     "document",
-    "sheet"
+    "small document"
   ],
   "document-upload": [
     "file",
@@ -2237,9 +2235,9 @@ export default {
   "face-sad": [
     "sad",
     "unhappy",
-    "downcast",
-    "dejected",
+    "depressed",
     "gloomy",
+    "downcast",
     "miserable"
   ],
   "face-very-happy": [
@@ -2259,7 +2257,7 @@ export default {
     "downcast"
   ],
   "face-wink": [
-    "winking",
+    "wink",
     "smile",
     "emoji",
     "expression",
@@ -2283,12 +2281,12 @@ export default {
     "move ahead"
   ],
   "fat-marker": [
-    "thick marker",
+    "marker",
+    "highlighter",
+    "thick pen",
+    "text marker",
     "bold marker",
-    "wide marker",
-    "chubby marker",
-    "jumbo marker",
-    "big marker"
+    "wide-tip marker"
   ],
   "favorite": [
     "like",
@@ -2383,8 +2381,8 @@ export default {
     "fin"
   ],
   "flag": [
-    "banner",
     "marker",
+    "banner",
     "symbol",
     "emblem",
     "pennant",
@@ -2405,8 +2403,8 @@ export default {
     "back",
     "previous",
     "go back",
-    "banner",
     "marker",
+    "banner",
     "symbol"
   ],
   "flag-right": [
@@ -2415,9 +2413,9 @@ export default {
     "arrow",
     "direction",
     "approve",
-    "confirm",
-    "banner",
+    "success",
     "marker",
+    "banner",
     "symbol"
   ],
   "flashlight": [
@@ -2425,15 +2423,15 @@ export default {
     "light",
     "lamp",
     "beam",
-    "illumination",
-    "portable light"
+    "portable light",
+    "handheld light"
   ],
   "flask": [
     "bottle",
     "beaker",
     "vial",
+    "container",
     "chemistry",
-    "experiment",
     "science"
   ],
   "flip": [
@@ -2490,11 +2488,11 @@ export default {
   ],
   "folder-add-fill": [
     "directory",
-    "create folder",
     "new folder",
+    "create folder",
     "add folder",
-    "make folder",
     "folder plus",
+    "folder create",
     "file",
     "document"
   ],
@@ -2623,8 +2621,8 @@ export default {
     "lettering",
     "typography",
     "scaling",
-    "text dimension",
-    "character size"
+    "text scaling",
+    "font scaling"
   ],
   "fork-left": [
     "left fork",
@@ -2746,7 +2744,7 @@ export default {
     "layout",
     "pattern",
     "gridiron",
-    "grating"
+    "checkerboard"
   ],
   "hand-move": [
     "drag",
@@ -2938,12 +2936,12 @@ export default {
     "text"
   ],
   "language": [
-    "tongue",
     "speech",
     "communication",
+    "tongue",
+    "verbal",
     "lingo",
-    "dialect",
-    "verbal"
+    "dialect"
   ],
   "layers": [
     "stack",
@@ -2994,14 +2992,13 @@ export default {
     "electric"
   ],
   "lightbulb-off": [
-    "dark",
+    "light",
+    "bulb",
     "off",
+    "dark",
     "inactive",
     "disabled",
-    "switched off",
-    "unlit",
     "lamp",
-    "bulb",
     "illumination"
   ],
   "lightbulb-on": [
@@ -3009,8 +3006,8 @@ export default {
     "bulb",
     "lamp",
     "on",
-    "illuminate",
     "bright",
+    "illuminate",
     "illumination"
   ],
   "line-spacing-compact": [
@@ -3024,10 +3021,10 @@ export default {
   "line-spacing-spacious": [
     "line height",
     "spacing",
-    "wide",
     "roomy",
+    "wide",
     "airy",
-    "expansive"
+    "generous"
   ],
   "link": [
     "connect",
@@ -3135,8 +3132,8 @@ export default {
     "wand",
     "artificial intelligence",
     "AI",
-    "smart",
-    "technology"
+    "tool",
+    "brush"
   ],
   "magic-wand-ai-fill": [
     "magic",
@@ -3193,7 +3190,7 @@ export default {
     "medicine",
     "doctor's bag",
     "first aid kit",
-    "medical supplies"
+    "patient folder"
   ],
   "megaphone": [
     "loudspeaker",
@@ -3340,9 +3337,9 @@ export default {
     "shift",
     "transfer",
     "relocate",
-    "adjust",
+    "drag",
     "slide",
-    "drag"
+    "reposition"
   ],
   "multiply": [
     "times",
@@ -3401,12 +3398,12 @@ export default {
     "right"
   ],
   "navigation-north-north-est": [
-    "direction",
     "compass",
+    "direction",
     "arrow",
+    "north-east",
     "northeast",
-    "diagonal",
-    "angle"
+    "navigate"
   ],
   "navigation-south": [
     "down",
@@ -3525,7 +3522,7 @@ export default {
     "company",
     "desk",
     "building",
-    "workspace"
+    "professional"
   ],
   "offline": [
     "disconnected",
@@ -3603,7 +3600,7 @@ export default {
     "arrow",
     "direction",
     "route",
-    "navigation",
+    "navigate",
     "turn",
     "curve"
   ],
@@ -3675,9 +3672,9 @@ export default {
     "chart",
     "graph",
     "diagram",
+    "pie",
     "statistics",
-    "data",
-    "visualization"
+    "data"
   ],
   "pie-chart-single-part": [
     "chart",
@@ -3789,8 +3786,8 @@ export default {
   ],
   "print": [
     "copy",
-    "document",
     "paper",
+    "document",
     "printer",
     "output",
     "hardcopy"
@@ -3832,8 +3829,8 @@ export default {
     "silence",
     "turn off",
     "disable",
-    "no sound",
     "quiet",
+    "no sound",
     "music",
     "broadcast",
     "station"
@@ -3844,7 +3841,7 @@ export default {
     "sound",
     "audio",
     "play",
-    "tune",
+    "on",
     "broadcast",
     "station"
   ],
@@ -4214,11 +4211,11 @@ export default {
   ],
   "shopping": [
     "buy",
+    "purchase",
     "cart",
     "store",
-    "purchase",
-    "shop",
-    "retail"
+    "retail",
+    "shop"
   ],
   "shopping-cart": [
     "cart",
@@ -4226,8 +4223,7 @@ export default {
     "trolley",
     "bag",
     "purchase",
-    "buy",
-    "store"
+    "buy"
   ],
   "shopping-cart-add": [
     "add to cart",
@@ -4236,8 +4232,7 @@ export default {
     "shop",
     "add item",
     "add to basket",
-    "cart",
-    "store"
+    "cart"
   ],
   "shopping-cart-cross": [
     "remove",
@@ -4247,8 +4242,8 @@ export default {
     "cross out",
     "remove from cart",
     "buy",
-    "cart",
-    "store"
+    "purchase",
+    "cart"
   ],
   "shuffle": [
     "mix",
@@ -4288,8 +4283,8 @@ export default {
     "exit",
     "log off",
     "sign off",
-    "disconnect",
-    "leave"
+    "end session",
+    "disconnect"
   ],
   "signal": [
     "network",
@@ -4386,9 +4381,9 @@ export default {
     "audio",
     "sound",
     "music",
-    "stereo",
-    "loudspeakers",
-    "amplifiers"
+    "volume",
+    "amplifier",
+    "loudspeakers"
   ],
   "speakers-fill": [
     "audio",
@@ -4452,7 +4447,7 @@ export default {
     "market",
     "boutique",
     "mall",
-    "storefront"
+    "buy"
   ],
   "store-fill": [
     "shop",
@@ -4504,9 +4499,9 @@ export default {
   ],
   "surveillance-cameras-two": [
     "security cameras",
-    "CCTV cameras",
+    "CCTV",
     "video surveillance",
-    "monitoring cameras",
+    "monitoring",
     "camera system",
     "dual cameras"
   ],
@@ -4531,10 +4526,10 @@ export default {
   "sword": [
     "blade",
     "weapon",
-    "knight",
-    "steel",
+    "knife",
     "cutlass",
-    "saber"
+    "saber",
+    "dagger"
   ],
   "table": [
     "desk",
@@ -4699,9 +4694,9 @@ export default {
   "thumbsdown": [
     "dislike",
     "disapproval",
-    "negative",
-    "thumb down",
+    "thumbs down",
     "not good",
+    "negative",
     "reject"
   ],
   "thumbsup": [
@@ -4798,7 +4793,7 @@ export default {
     "exchange",
     "shift",
     "relocate",
-    "transport"
+    "handover"
   ],
   "trending-down": [
     "declining",
@@ -4901,16 +4896,16 @@ export default {
     "bullet points",
     "items",
     "unordered items",
-    "unordered bullet list",
-    "unordered checklist"
+    "unordered bullet points",
+    "unordered elements"
   ],
   "upload": [
     "import",
     "attach",
     "send",
-    "transfer",
+    "submit",
     "load",
-    "submit"
+    "transfer"
   ],
   "user": [
     "person",
@@ -4937,18 +4932,21 @@ export default {
     "customer down",
     "account down",
     "arrow down",
-    "down arrow",
+    "user down",
     "person",
     "profile",
     "customer"
   ],
   "user-check": [
+    "verify",
+    "validate",
+    "confirm",
+    "inspect",
+    "review",
+    "examine",
     "person",
     "profile",
-    "customer",
-    "account",
-    "verify",
-    "validate"
+    "customer"
   ],
   "user-cross": [
     "remove",
@@ -5167,8 +5165,8 @@ export default {
     "pane",
     "frame",
     "view",
-    "interface",
     "screen",
+    "interface",
     "display"
   ],
   "wine-glass": [
