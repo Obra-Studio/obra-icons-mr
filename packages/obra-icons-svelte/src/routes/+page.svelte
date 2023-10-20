@@ -21,19 +21,19 @@
 
 					<div class="justify-content-center button-group">
 						<a class="button inverse" href="/icons">
-							<span>Explore {iconsCount} icons</span>
+							<span>Explore {iconsCount} icons for free</span>
 							<IconArrowRight />
 						</a>
 						<a class="button inverse" href="https://www.figma.com/community/file/1297284985156926365">
 							<IconFigma />
-							<span>View on Figma community</span>
+							<span>Buy on Figma community</span>
 							<IconArrowRight />
 						</a>
 						<a
 							class="button inverse"
 							href="https://sowl.co/s/bdgsNv"
 						>
-							<span>Buy the source file</span>
+							<span>Buy the source file directly</span>
 							<IconArrowRight />
 						</a>
 
@@ -166,12 +166,31 @@
 						file to extend Obra Icons to fit your own designs or
 						design system.
 					</p>
+					<p>The advantage of buying directly is that you can get notified of future updates. You can also receive a professional VAT invoice.</p>
 					<div class="button-group">
 						<a class="button" href="https://sowl.co/s/bdgsNv">
-							<span>Buy the file</span>
+							<span>Buy the file directly</span>
+							<IconArrowRight />
+						</a>
+						<a class="button" href="https://www.figma.com/community/file/1297284985156926365">
+							<span class="icon-fill-wrapper inverse">
+								<IconFigma />
+							</span>
+							<span>Buy via Figma community</span>
 							<IconArrowRight />
 						</a>
 					</div>
+
+					<div class="vertical-container blacked-links">
+						<p>
+							Need specific exports or file formats? <a
+								href="mailto:info@obra.studio"
+						>Let us know</a
+						>.
+						</p>
+					</div>
+
+
 				</div>
 			</div>
 		</div>

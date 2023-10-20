@@ -220,6 +220,10 @@ code {
     fill: #000;
 }
 
+.button .icon-fill-wrapper.inverse svg * {
+    fill: #FFF;
+}
+
 /* Advantages - Image holder specific
    ========================================================================== */
 
@@ -239,15 +243,16 @@ code {
 /* Section - Buy Obra Icons Plus
    ========================================================================== */
 
-.buy-obra-icons-plus .column:first-child img {
+.buy-obra-icons .column:first-child img {
     margin-bottom: var(--spacing-large);
 }
 
 @media (min-width: 640px) {
-    .buy-obra-icons-plus .column:first-child img {
+    .buy-obra-icons .column:first-child img {
         margin-bottom: 0;
     }
 }
+
 
 @media (min-width: 640px) {
 
@@ -321,25 +326,36 @@ code {
 
 
 
-/* Hero
+/* Buton group
    ========================================================================== */
 
+.button-group {
+    display: flex;
+    gap: var(--spacing-small);
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-group .button {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+   .button-group {
+        flex-direction: row;
+    }
+
+    .button-group .button {
+        width: auto;
+    }
+}
+
+/* Hero
+   ========================================================================== */
 
 .hero h2 {
     margin-bottom: var(--spacing-large);
     text-wrap: balance;
-}
-
-.hero .button-group {
-    display: flex;
-    gap: var(--spacing-medium);
-    flex-direction: column;
-}
-
-@media (min-width: 640px) {
-    .hero .button-group {
-        flex-direction: row;
-    }
 }
 
 /* Responsive utilities
