@@ -1,5 +1,8 @@
 <script>
 	import { IconArrowRight } from '$package';
+	import IconFigma from '$lib/components/icons/FigmaIcon.svelte';
+	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
+	import iconsCount from '$lib/count';
 </script>
 
 <svelte:head>
@@ -18,17 +21,33 @@
 
 					<div class="justify-content-center button-group">
 						<a class="button inverse" href="/icons">
-							<span>Explore the icon set</span>
+							<span>Explore {iconsCount} icons</span>
 							<IconArrowRight />
 						</a>
-
+						<a class="button inverse" href="https://www.figma.com/community/file/1297284985156926365">
+							<IconFigma />
+							<span>View on Figma community</span>
+							<IconArrowRight />
+						</a>
 						<a
 							class="button inverse"
 							href="https://sowl.co/s/bdgsNv"
 						>
-							<span>Buy the file</span>
+							<span>Buy the source file</span>
 							<IconArrowRight />
 						</a>
+
+						<a
+								href="https://github.com/Obra-Studio/obra-icons-svelte"
+								class="button inverse"
+						>
+							<span class="icon-fill-wrapper">
+								<GithubIcon />
+							</span>
+							<span>Free svelte package (MIT licensed)</span>
+							<IconArrowRight />
+						</a>
+
 					</div>
 				</div>
 			</div>

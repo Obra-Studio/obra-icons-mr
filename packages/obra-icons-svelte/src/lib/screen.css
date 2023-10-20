@@ -199,7 +199,12 @@ code {
 
 .button svg {
     width: 1.25rem;
-    height: 1.25rem;;
+    height: 1.25rem;
+}
+
+.button .icon-fill-wrapper {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .button svg * {
@@ -208,6 +213,11 @@ code {
 
 .button.inverse svg * {
     stroke: #000;
+}
+
+.button .icon-fill-wrapper svg * {
+    stroke: none;
+    fill: #000;
 }
 
 /* Advantages - Image holder specific
