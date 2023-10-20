@@ -84,10 +84,10 @@
 					</li>
 					<li>
 						<div class="content">
-							<h3>Over 450 icons</h3>
+							<h3>Over 600 icons</h3>
 							<p>
-								Obra Icons contains many icons, so you won’t run
-								into the situation where you can’t find the
+								The icon set contains many icons, so you won’t
+								run into the situation where you can’t find the
 								right icon for your needs. We selected the
 								essential icons for UI design evaluated against
 								tons of real-life UI design projects, and are
