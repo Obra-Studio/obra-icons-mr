@@ -1,7 +1,7 @@
 <script>
 	import * as icons from '$package';
 	export let size = '24';
-	export let weight = 1;
+	export let weight = 2;
 </script>
 
 <svelte:head>
@@ -10,7 +10,7 @@
 
 <div class="padding-medium margin-0-auto">
 	<div class="vertical-container-xx-large">
-		<div class="flex gap-medium margin-bottom-medium">
+		<div class="controls flex gap-medium margin-bottom-medium">
 			<p>
 				<label for="size">Size</label><input
 					id="size"
@@ -53,9 +53,17 @@
 </div>
 
 <style>
+
+	.controls {
+		position: sticky;
+		top: 0;
+		background: #F0F0F0;
+	}
+
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 24px;
 	}
 
 	.icon-wrapper :global(svg) {
