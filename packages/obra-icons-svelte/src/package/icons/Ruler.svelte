@@ -18,7 +18,7 @@
 	<g class="oi-ruler">
 		<path
 			class="oi-box"
-			d="M2.0273 16.4194L16.1694 2.27722L21.4727 7.58052L7.3306 21.7227L2.0273 16.4194Z"
+			d="M2.0273 16.4194L16.1694 2.27728L21.4727 7.58058L7.3306 21.7227L2.0273 16.4194Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="2.16568"
@@ -36,7 +36,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M15.4623 12.8839L14.4016 11.8232"
+			d="M15.4623 12.8839L14.4017 11.8232"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="2.16568"

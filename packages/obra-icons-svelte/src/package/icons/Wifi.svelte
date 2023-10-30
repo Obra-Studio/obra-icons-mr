@@ -15,7 +15,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-wifi">
+	<g class="oi-wifi" clip-path="url(#clip0_297_190742)">
 		<path
 			class="oi-vector"
 			d="M4.99994 12.5501C6.9765 10.9037 9.46754 10.0022 12.0399 10.0022C14.6123 10.0022 17.1034 10.9037 19.0799 12.5501"
@@ -49,4 +49,9 @@
 			stroke-linejoin="round"
 		/>
 	</g>
+	<defs>
+		<clipPath class="clip0_297_190742">
+			<rect width={size} height={size} fill="white" />
+		</clipPath>
+	</defs>
 </svg>

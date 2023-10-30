@@ -18,33 +18,28 @@
 	<g class="oi-align-text-left">
 		<path
 			class="oi-line"
-			d="M16.9999 10H2.99989"
+			d="M21 7H3"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M20.9999 6H2.99989"
+			d="M13 12H3"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M20.9999 14H2.99989"
+			d="M18 17H3"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-line"
-			d="M16.9999 18H2.99989"
-			stroke={color}
-			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>

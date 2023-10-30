@@ -18,22 +18,33 @@ export default {
   ],
   "add": [
     "plus",
+    "create",
     "insert",
     "include",
     "append",
-    "attach",
-    "incorporate"
+    "attach"
   ],
   "add-roundrect": [
     "rectangle",
     "shape",
     "box",
-    "rounded",
-    "curved",
-    "corner",
+    "container",
+    "frame",
+    "border",
     "plus",
-    "insert",
-    "include"
+    "create",
+    "insert"
+  ],
+  "add-roundrect-fill": [
+    "rectangle",
+    "shape",
+    "box",
+    "container",
+    "frame",
+    "border",
+    "plus",
+    "create",
+    "insert"
   ],
   "airplay": [
     "stream",
@@ -99,20 +110,52 @@ export default {
     "middle",
     "vertical center"
   ],
-  "align-text-center": [
+  "align-text-4-center": [
+    "text",
+    "align",
     "center",
+    "four",
     "middle",
-    "text center",
-    "align center",
-    "center align",
-    "centered"
+    "justify"
   ],
-  "align-text-justify": [
+  "align-text-4-justify": [
     "align",
     "text",
     "justify",
-    "alignment",
+    "four",
+    "center",
+    "align text"
+  ],
+  "align-text-4-left": [
+    "text",
+    "align",
+    "left",
+    "four",
+    "justify",
+    "format"
+  ],
+  "align-text-4-right": [
+    "text alignment",
+    "right align",
+    "justify",
+    "text formatting",
+    "text positioning",
+    "text alignment right"
+  ],
+  "align-text-centered": [
+    "center",
+    "middle",
+    "text center",
+    "horizontal center",
+    "align center",
+    "centered text"
+  ],
+  "align-text-justified": [
+    "justify",
+    "align",
+    "text",
     "justified",
+    "alignment",
     "paragraph"
   ],
   "align-text-left": [
@@ -128,8 +171,8 @@ export default {
     "text-right",
     "justify-right",
     "align-right",
-    "right-justified",
-    "text-align-right"
+    "text-align-right",
+    "right-justified"
   ],
   "align-to-middle": [
     "center",
@@ -161,7 +204,7 @@ export default {
     "lower",
     "decrease",
     "drop",
-    "fall"
+    "reduce"
   ],
   "arrow-leave-n": [
     "exit",
@@ -198,7 +241,7 @@ export default {
   "arrow-left-up": [
     "back",
     "upwards",
-    "leftwards",
+    "leftward",
     "direction",
     "navigate",
     "move"
@@ -217,15 +260,15 @@ export default {
     "arrow pointing down and right",
     "arrow going down and to the right",
     "arrow slanting down and right",
-    "arrow pointing in a diagonal direction"
+    "arrow diagonal down and right"
   ],
   "arrow-right-up": [
-    "upward arrow",
-    "right arrow",
+    "upward",
     "direction",
     "move",
-    "navigate",
-    "go"
+    "point",
+    "go",
+    "navigate"
   ],
   "arrow-up": [
     "up",
@@ -234,14 +277,6 @@ export default {
     "go up",
     "rise",
     "upward"
-  ],
-  "ascending": [
-    "up",
-    "increase",
-    "ascending order",
-    "ascending sequence",
-    "ascending trend",
-    "ascending pattern"
   ],
   "atom": [
     "molecule",
@@ -268,6 +303,14 @@ export default {
     "computer-generated reality"
   ],
   "backspace": [
+    "delete",
+    "erase",
+    "remove",
+    "undo",
+    "clear",
+    "cancel"
+  ],
+  "backspace-fill": [
     "delete",
     "erase",
     "remove",
@@ -308,6 +351,14 @@ export default {
     "visualization"
   ],
   "bar-chart-box": [
+    "graph",
+    "statistics",
+    "data",
+    "analytics",
+    "diagram",
+    "visualization"
+  ],
+  "bar-chart-box-fill": [
     "graph",
     "statistics",
     "data",
@@ -390,10 +441,10 @@ export default {
   "bedroom": [
     "room",
     "sleeping",
-    "master",
-    "interior",
-    "home",
-    "rest"
+    "bed",
+    "chamber",
+    "rest",
+    "master"
   ],
   "bill": [
     "invoice",
@@ -475,6 +526,14 @@ export default {
     "skeletal",
     "vertebrate"
   ],
+  "bone-fill": [
+    "dog",
+    "skeleton",
+    "animal",
+    "fossil",
+    "skeletal",
+    "vertebrate"
+  ],
   "book": [
     "novel",
     "story",
@@ -532,7 +591,7 @@ export default {
     "carton",
     "crate",
     "bin",
-    "chest"
+    "parcel"
   ],
   "box-3d": [
     "cube",
@@ -623,16 +682,16 @@ export default {
     "pastry",
     "baked goods",
     "sweet treat",
-    "birthday cake",
-    "cupcake"
+    "celebration",
+    "birthday"
   ],
-  "calculator-alt": [
-    "calculator",
+  "calculator": [
     "math",
     "arithmetic",
-    "numbers",
-    "addition",
-    "subtraction"
+    "computation",
+    "mathematics",
+    "adding machine",
+    "number cruncher"
   ],
   "calculator-fill": [
     "math",
@@ -660,13 +719,34 @@ export default {
     "date",
     "planner"
   ],
-  "calendar-cross": [
-    "cancel",
-    "delete",
-    "remove",
-    "cross out",
-    "mark off",
-    "discard",
+  "calendar-check-fill": [
+    "schedule",
+    "appointment",
+    "event",
+    "reminder",
+    "mark",
+    "confirm",
+    "date",
+    "planner"
+  ],
+  "calendar-end-of-month": [
+    "end date",
+    "last day",
+    "month's end",
+    "final day",
+    "closing day",
+    "deadline",
+    "date",
+    "schedule",
+    "planner"
+  ],
+  "calendar-end-of-month-fill": [
+    "end date",
+    "last day",
+    "month's end",
+    "final day",
+    "closing day",
+    "deadline",
     "date",
     "schedule",
     "planner"
@@ -678,6 +758,28 @@ export default {
     "agenda",
     "event",
     "appointment"
+  ],
+  "calendar-remove": [
+    "delete",
+    "remove",
+    "cancel",
+    "erase",
+    "discard",
+    "unmark",
+    "date",
+    "schedule",
+    "planner"
+  ],
+  "calendar-remove-fill": [
+    "delete",
+    "remove",
+    "cancel",
+    "erase",
+    "discard",
+    "unmark",
+    "date",
+    "schedule",
+    "planner"
   ],
   "call": [
     "phone",
@@ -701,7 +803,15 @@ export default {
     "photography",
     "image",
     "snapshot",
-    "shoot"
+    "shutter"
+  ],
+  "camera-fill": [
+    "photo",
+    "picture",
+    "photography",
+    "image",
+    "snapshot",
+    "shutter"
   ],
   "car": [
     "vehicle",
@@ -815,6 +925,22 @@ export default {
     "send",
     "transmit"
   ],
+  "chat-ai": [
+    "conversation",
+    "messaging",
+    "bot",
+    "artificial intelligence",
+    "virtual assistant",
+    "chatbot"
+  ],
+  "chat-ai-fill": [
+    "conversation",
+    "messaging",
+    "bot",
+    "artificial intelligence",
+    "virtual assistant",
+    "chatbot"
+  ],
   "check": [
     "tick",
     "mark",
@@ -822,6 +948,15 @@ export default {
     "confirm",
     "inspect",
     "examine"
+  ],
+  "check-double": [
+    "verify",
+    "confirm",
+    "approve",
+    "tick",
+    "double check",
+    "validate",
+    "mark"
   ],
   "check-in": [
     "arrival",
@@ -893,10 +1028,10 @@ export default {
   "chevron-down": [
     "arrow",
     "downward",
-    "triangle",
     "pointing down",
     "expand",
-    "collapse"
+    "collapse",
+    "dropdown"
   ],
   "chevron-left": [
     "back",
@@ -932,9 +1067,9 @@ export default {
   ],
   "circle-add": [
     "add",
-    "plus",
     "create",
     "new",
+    "plus",
     "append",
     "insert",
     "round",
@@ -943,9 +1078,9 @@ export default {
   ],
   "circle-add-fill": [
     "add",
-    "plus",
     "create",
     "new",
+    "plus",
     "append",
     "insert",
     "round",
@@ -1090,7 +1225,7 @@ export default {
     "exit",
     "delete",
     "remove",
-    "end",
+    "x",
     "round",
     "shape",
     "ring"
@@ -1109,9 +1244,9 @@ export default {
   "circle-divide": [
     "split",
     "divide",
-    "separate",
-    "partition",
     "segment",
+    "partition",
+    "separate",
     "break",
     "round",
     "shape",
@@ -1217,9 +1352,8 @@ export default {
     "information",
     "details",
     "about",
-    "help",
-    "question",
     "i",
+    "circle",
     "round",
     "shape",
     "ring"
@@ -1228,8 +1362,9 @@ export default {
     "information",
     "details",
     "about",
+    "help",
+    "question",
     "i",
-    "circle",
     "round",
     "shape",
     "ring"
@@ -1237,9 +1372,9 @@ export default {
   "circle-question": [
     "help",
     "unknown",
+    "confusion",
     "enquiry",
     "doubt",
-    "confusion",
     "query",
     "round",
     "shape",
@@ -1272,8 +1407,8 @@ export default {
     "remove",
     "delete",
     "subtract",
-    "reduce",
-    "exclude",
+    "circle",
+    "minus sign",
     "round",
     "shape",
     "ring"
@@ -1300,13 +1435,21 @@ export default {
     "shape",
     "ring"
   ],
-  "clipboard": [
-    "notepad",
-    "document",
-    "paper",
-    "writing",
+  "clipboard-add": [
     "copy",
-    "paste"
+    "paste",
+    "add",
+    "document",
+    "note",
+    "write"
+  ],
+  "clipboard-add-fill": [
+    "copy",
+    "paste",
+    "add",
+    "document",
+    "note",
+    "write"
   ],
   "clipboard-check": [
     "completed",
@@ -1314,10 +1457,7 @@ export default {
     "done",
     "tick",
     "mark",
-    "confirm",
-    "notepad",
-    "document",
-    "paper"
+    "confirm"
   ],
   "clipboard-check-fill": [
     "completed",
@@ -1325,10 +1465,7 @@ export default {
     "done",
     "finished",
     "tick",
-    "mark",
-    "notepad",
-    "document",
-    "paper"
+    "mark"
   ],
   "clipboard-empty": [
     "clipboard",
@@ -1336,10 +1473,7 @@ export default {
     "blank",
     "clear",
     "copy",
-    "paste",
-    "notepad",
-    "document",
-    "paper"
+    "paste"
   ],
   "clipboard-empty-fill": [
     "clipboard",
@@ -1347,10 +1481,7 @@ export default {
     "blank",
     "clear",
     "copy",
-    "paste",
-    "notepad",
-    "document",
-    "paper"
+    "paste"
   ],
   "clipboard-error": [
     "error",
@@ -1358,10 +1489,7 @@ export default {
     "issue",
     "problem",
     "alert",
-    "bug",
-    "notepad",
-    "document",
-    "paper"
+    "bug"
   ],
   "clipboard-error-fill": [
     "error",
@@ -1369,18 +1497,23 @@ export default {
     "issue",
     "problem",
     "alert",
-    "bug",
-    "notepad",
-    "document",
-    "paper"
+    "bug"
   ],
-  "clipboard-fill": [
-    "notepad",
-    "document",
-    "paper",
-    "writing",
-    "copy",
-    "paste"
+  "clipboard-tasks": [
+    "to-do",
+    "checklist",
+    "tasks",
+    "notes",
+    "agenda",
+    "planner"
+  ],
+  "clipboard-tasks-fill": [
+    "to-do",
+    "checklist",
+    "tasks",
+    "notes",
+    "agenda",
+    "list"
   ],
   "clock": [
     "timepiece",
@@ -1388,7 +1521,7 @@ export default {
     "wristwatch",
     "hourglass",
     "chronometer",
-    "timekeeper"
+    "pendulum"
   ],
   "clock-alt": [
     "clock alternative",
@@ -1407,7 +1540,7 @@ export default {
     "different clock",
     "clock variation",
     "clock alternative version",
-    "clock alternative design",
+    "alternative time",
     "timepiece",
     "timer",
     "wristwatch"
@@ -1416,9 +1549,9 @@ export default {
     "timepiece",
     "timer",
     "wristwatch",
-    "hourglass",
     "chronometer",
-    "timekeeper"
+    "hourglass",
+    "sundial"
   ],
   "close": [
     "exit",
@@ -1542,10 +1675,10 @@ export default {
   "coffee": [
     "beverage",
     "drink",
-    "mug",
+    "java",
     "caffeine",
-    "hot",
-    "espresso"
+    "mug",
+    "cup"
   ],
   "coffee-alt-2": [
     "coffee",
@@ -1553,7 +1686,8 @@ export default {
     "beverage",
     "drink",
     "mug",
-    "caffeine"
+    "caffeine",
+    "java"
   ],
   "coffee-cup": [
     "coffee",
@@ -1561,7 +1695,8 @@ export default {
     "beverage",
     "drink",
     "cafe",
-    "hot"
+    "hot",
+    "java"
   ],
   "coin": [
     "money",
@@ -1660,6 +1795,14 @@ export default {
     "contact list",
     "address list"
   ],
+  "contact-book-fill": [
+    "address book",
+    "phone book",
+    "contacts",
+    "directory",
+    "contact list",
+    "address list"
+  ],
   "copy": [
     "duplicate",
     "replicate",
@@ -1710,11 +1853,20 @@ export default {
   ],
   "cross": [
     "X",
+    "mark",
+    "delete",
+    "remove",
+    "cancel",
+    "close"
+  ],
+  "cross-fill": [
+    "X",
     "delete",
     "remove",
     "cancel",
     "close",
-    "terminate"
+    "terminate",
+    "mark"
   ],
   "crown": [
     "king",
@@ -1731,6 +1883,22 @@ export default {
     "prince",
     "princess",
     "monarch"
+  ],
+  "crown-alt-fill": [
+    "king",
+    "royal",
+    "queen",
+    "prince",
+    "princess",
+    "monarch"
+  ],
+  "crown-fill": [
+    "king",
+    "queen",
+    "royal",
+    "monarch",
+    "headpiece",
+    "tiara"
   ],
   "cyclist": [
     "biker",
@@ -1788,14 +1956,6 @@ export default {
     "eliminate",
     "uninstall"
   ],
-  "descending": [
-    "down",
-    "decreasing",
-    "falling",
-    "lowering",
-    "reducing",
-    "declining"
-  ],
   "devices": [
     "gadgets",
     "electronics",
@@ -1831,11 +1991,10 @@ export default {
   "discount-fill": [
     "sale",
     "offer",
-    "promo",
-    "reduction",
+    "promotion",
+    "rebate",
     "deal",
-    "markdown",
-    "promotion"
+    "markdown"
   ],
   "divide": [
     "split",
@@ -1843,15 +2002,15 @@ export default {
     "partition",
     "break",
     "cut",
-    "segment"
+    "divide"
   ],
   "divide-alt": [
     "split",
     "separate",
     "partition",
     "divide",
-    "break",
-    "segment"
+    "segment",
+    "break"
   ],
   "document": [
     "file",
@@ -1866,8 +2025,8 @@ export default {
     "paper",
     "upload",
     "new",
-    "create",
     "add",
+    "create",
     "record"
   ],
   "document-add-fill": [
@@ -1875,8 +2034,8 @@ export default {
     "paper",
     "upload",
     "new",
-    "create",
     "add",
+    "create",
     "record"
   ],
   "document-alt": [
@@ -2014,7 +2173,35 @@ export default {
     "blank",
     "record"
   ],
+  "document-missing-fill": [
+    "file",
+    "paper",
+    "absent",
+    "lost",
+    "empty",
+    "blank",
+    "record"
+  ],
+  "document-pdf": [
+    "file",
+    "paper",
+    "PDF",
+    "document",
+    "record",
+    "print"
+  ],
   "document-remove": [
+    "delete",
+    "remove",
+    "erase",
+    "discard",
+    "trash",
+    "cancel",
+    "file",
+    "paper",
+    "record"
+  ],
+  "document-remove-fill": [
     "delete",
     "remove",
     "erase",
@@ -2039,7 +2226,7 @@ export default {
     "note",
     "record",
     "document",
-    "small document"
+    "sheet"
   ],
   "document-upload": [
     "file",
@@ -2059,14 +2246,6 @@ export default {
     "import",
     "record"
   ],
-  "double-check": [
-    "verify",
-    "confirm",
-    "review",
-    "inspect",
-    "validate",
-    "cross-check"
-  ],
   "download": [
     "save",
     "retrieve",
@@ -2081,7 +2260,7 @@ export default {
     "descend",
     "release",
     "let go",
-    "plunge"
+    "plummet"
   ],
   "drop-fill": [
     "fall",
@@ -2089,7 +2268,7 @@ export default {
     "descend",
     "release",
     "let go",
-    "plunge"
+    "plummet"
   ],
   "edit": [
     "modify",
@@ -2132,6 +2311,14 @@ export default {
     "dumbwaiter"
   ],
   "email": [
+    "message",
+    "mailbox",
+    "communication",
+    "envelope",
+    "inbox",
+    "send"
+  ],
+  "email-fill": [
     "message",
     "mailbox",
     "communication",
@@ -2225,6 +2412,14 @@ export default {
     "vision",
     "gaze"
   ],
+  "face-angry": [
+    "angry",
+    "mad",
+    "upset",
+    "furious",
+    "irritated",
+    "enraged"
+  ],
   "face-happy": [
     "smile",
     "joy",
@@ -2232,6 +2427,14 @@ export default {
     "cheerful",
     "delighted",
     "pleased"
+  ],
+  "face-love": [
+    "heart",
+    "affection",
+    "romance",
+    "embrace",
+    "passion",
+    "adore"
   ],
   "face-neutral": [
     "neutral face",
@@ -2244,9 +2447,9 @@ export default {
   "face-sad": [
     "sad",
     "unhappy",
-    "depressed",
-    "gloomy",
     "downcast",
+    "dejected",
+    "gloomy",
     "miserable"
   ],
   "face-very-happy": [
@@ -2268,7 +2471,7 @@ export default {
   "face-wink": [
     "wink",
     "smile",
-    "emoticon",
+    "emoji",
     "expression",
     "happy",
     "playful"
@@ -2319,7 +2522,7 @@ export default {
     "like",
     "heart",
     "unfavorite",
-    "remove"
+    "unbookmark"
   ],
   "favorite-off": [
     "unfavorite",
@@ -2365,6 +2568,14 @@ export default {
     "organize",
     "select"
   ],
+  "fingerprint": [
+    "biometric",
+    "security",
+    "scan",
+    "identity",
+    "thumbprint",
+    "authentication"
+  ],
   "fire": [
     "flame",
     "burn",
@@ -2390,8 +2601,8 @@ export default {
     "fin"
   ],
   "flag": [
-    "marker",
     "banner",
+    "marker",
     "symbol",
     "emblem",
     "pennant",
@@ -2401,9 +2612,9 @@ export default {
     "banner",
     "marker",
     "symbol",
-    "emblem",
     "pennant",
-    "standard"
+    "emblem",
+    "sign"
   ],
   "flag-left": [
     "left arrow",
@@ -2412,8 +2623,8 @@ export default {
     "back",
     "previous",
     "go back",
-    "marker",
     "banner",
+    "marker",
     "symbol"
   ],
   "flag-right": [
@@ -2423,8 +2634,8 @@ export default {
     "direction",
     "approve",
     "confirm",
-    "marker",
     "banner",
+    "marker",
     "symbol"
   ],
   "flashlight": [
@@ -2436,6 +2647,14 @@ export default {
     "handheld light"
   ],
   "flask": [
+    "bottle",
+    "beaker",
+    "vial",
+    "container",
+    "chemistry",
+    "science"
+  ],
+  "flask-fill": [
     "bottle",
     "beaker",
     "vial",
@@ -2487,11 +2706,11 @@ export default {
   ],
   "folder-add": [
     "directory",
-    "create folder",
     "new folder",
+    "create folder",
     "add folder",
-    "make folder",
     "folder plus",
+    "folder create",
     "file",
     "document"
   ],
@@ -2630,8 +2849,8 @@ export default {
     "lettering",
     "typography",
     "scaling",
-    "text scaling",
-    "font scaling"
+    "text dimension",
+    "character size"
   ],
   "fork-left": [
     "left fork",
@@ -2642,12 +2861,12 @@ export default {
     "fork with left turn"
   ],
   "fork-right": [
-    "arrow",
+    "right arrow",
     "direction",
     "turn",
-    "right",
-    "diverge",
-    "split"
+    "split",
+    "divide",
+    "branch"
   ],
   "forward-15-seconds": [
     "skip",
@@ -2707,6 +2926,22 @@ export default {
     "zoom",
     "resize"
   ],
+  "funnel-ascending": [
+    "filter",
+    "sort",
+    "arrange",
+    "order",
+    "categorize",
+    "organize"
+  ],
+  "funnel-descending": [
+    "filter",
+    "sort",
+    "arrange",
+    "organize",
+    "order",
+    "categorize"
+  ],
   "game-controller": [
     "controller",
     "joystick",
@@ -2724,6 +2959,14 @@ export default {
     "consent"
   ],
   "ghost": [
+    "spirit",
+    "phantom",
+    "apparition",
+    "specter",
+    "wraith",
+    "haunt"
+  ],
+  "ghost-fill": [
     "spirit",
     "phantom",
     "apparition",
@@ -2763,6 +3006,14 @@ export default {
     "gridiron",
     "checkerboard"
   ],
+  "grid-fill": [
+    "table",
+    "matrix",
+    "layout",
+    "pattern",
+    "gridiron",
+    "checkerboard"
+  ],
   "hand-move": [
     "drag",
     "slide",
@@ -2792,8 +3043,8 @@ export default {
     "alternative",
     "tag",
     "symbol",
-    "alternate",
-    "hash",
+    "social media",
+    "metadata",
     "pound",
     "number sign"
   ],
@@ -2818,7 +3069,7 @@ export default {
     "love",
     "like",
     "favorite",
-    "unfavorite",
+    "unlike",
     "disable",
     "affection",
     "emotion"
@@ -2879,7 +3130,7 @@ export default {
     "mailbox",
     "communication",
     "received",
-    "notifications"
+    "correspondence"
   ],
   "infinite": [
     "endless",
@@ -2906,6 +3157,14 @@ export default {
     "cursive"
   ],
   "kanban": [
+    "board",
+    "task",
+    "project",
+    "workflow",
+    "organization",
+    "management"
+  ],
+  "kanban-fill": [
     "board",
     "task",
     "project",
@@ -2967,6 +3226,14 @@ export default {
     "merge",
     "superimpose"
   ],
+  "layers-fill": [
+    "stack",
+    "arrange",
+    "overlay",
+    "combine",
+    "merge",
+    "superimpose"
+  ],
   "layout": [
     "design",
     "arrangement",
@@ -2976,6 +3243,14 @@ export default {
     "organization"
   ],
   "leaf": [
+    "plant",
+    "foliage",
+    "greenery",
+    "nature",
+    "tree",
+    "botanical"
+  ],
+  "leaf-fill": [
     "plant",
     "foliage",
     "greenery",
@@ -3003,18 +3278,19 @@ export default {
     "lamp",
     "bulb",
     "illumination",
-    "bright",
     "idea",
+    "bright",
     "electric"
   ],
   "lightbulb-off": [
-    "light",
-    "bulb",
-    "off",
     "dark",
+    "off",
     "inactive",
     "disabled",
+    "switched off",
+    "unlit",
     "lamp",
+    "bulb",
     "illumination"
   ],
   "lightbulb-on": [
@@ -3022,8 +3298,8 @@ export default {
     "bulb",
     "lamp",
     "on",
-    "bright",
     "illuminate",
+    "bright",
     "illumination"
   ],
   "line-spacing-compact": [
@@ -3093,7 +3369,7 @@ export default {
     "padlock",
     "security",
     "protect",
-    "password"
+    "block"
   ],
   "lock-fill": [
     "secure",
@@ -3156,8 +3432,8 @@ export default {
     "wand",
     "artificial intelligence",
     "AI",
-    "tool",
-    "brush"
+    "smart",
+    "technology"
   ],
   "magic-wand-fill": [
     "wand",
@@ -3206,15 +3482,23 @@ export default {
     "medicine",
     "doctor's bag",
     "first aid kit",
+    "patient folder"
+  ],
+  "medcase-fill": [
+    "medical case",
+    "healthcare",
+    "medicine",
+    "doctor's bag",
+    "first aid kit",
     "medical supplies"
   ],
   "megaphone": [
     "loudspeaker",
     "announcement",
     "speaker",
-    "public address",
     "bullhorn",
-    "amplifier"
+    "amplifier",
+    "public address"
   ],
   "mention": [
     "notify",
@@ -3246,7 +3530,7 @@ export default {
     "text",
     "notification",
     "inbox",
-    "email"
+    "mail"
   ],
   "message-alt-fill": [
     "chat",
@@ -3283,6 +3567,14 @@ export default {
     "email"
   ],
   "message-square": [
+    "chat",
+    "text",
+    "communication",
+    "inbox",
+    "notification",
+    "speech bubble"
+  ],
+  "message-square-fill": [
     "chat",
     "text",
     "communication",
@@ -3373,14 +3665,6 @@ export default {
     "twin",
     "dual"
   ],
-  "musical-note-double-alt": [
-    "music",
-    "note",
-    "double",
-    "alternative",
-    "melody",
-    "tune"
-  ],
   "musical-note-single": [
     "music",
     "note",
@@ -3401,9 +3685,9 @@ export default {
     "up",
     "forward",
     "top",
-    "northward",
     "upward",
-    "ahead"
+    "northward",
+    "arrow"
   ],
   "navigation-north-east": [
     "arrow",
@@ -3469,9 +3753,17 @@ export default {
     "navigate",
     "advance"
   ],
+  "next-fill": [
+    "forward",
+    "arrow",
+    "continue",
+    "proceed",
+    "navigate",
+    "advance"
+  ],
   "normal-screen": [
-    "regular",
     "standard",
+    "regular",
     "default",
     "typical",
     "ordinary",
@@ -3577,7 +3869,7 @@ export default {
     "list",
     "order",
     "sequence",
-    "steps",
+    "items",
     "index"
   ],
   "package": [
@@ -3676,14 +3968,6 @@ export default {
     "telephone",
     "call"
   ],
-  "pie-chart-2-parts": [
-    "chart",
-    "graph",
-    "diagram",
-    "data",
-    "statistics",
-    "visualization"
-  ],
   "pie-chart-3-parts": [
     "chart",
     "graph",
@@ -3693,6 +3977,14 @@ export default {
     "data"
   ],
   "pie-chart-single-part": [
+    "chart",
+    "graph",
+    "data",
+    "statistics",
+    "visualization",
+    "segment"
+  ],
+  "pie-chart-single-part-fill": [
     "chart",
     "graph",
     "data",
@@ -3716,14 +4008,13 @@ export default {
     "pharmaceutical",
     "medication"
   ],
-  "pill-alt": [
+  "pill-fill": [
     "medicine",
     "tablet",
+    "capsule",
     "drug",
-    "pharmacy",
-    "health",
-    "medical",
-    "capsule"
+    "pharmaceutical",
+    "medication"
   ],
   "pin": [
     "location",
@@ -3738,8 +4029,8 @@ export default {
     "marker",
     "pin",
     "place",
-    "navigation",
     "map",
+    "navigation",
     "point"
   ],
   "pin-fill": [
@@ -3792,7 +4083,31 @@ export default {
     "launch",
     "commence"
   ],
+  "play-fill": [
+    "start",
+    "begin",
+    "resume",
+    "activate",
+    "launch",
+    "commence"
+  ],
+  "power-off": [
+    "shutdown",
+    "turn off",
+    "switch off",
+    "power down",
+    "stop",
+    "exit"
+  ],
   "previous": [
+    "back",
+    "previous page",
+    "last",
+    "prior",
+    "earlier",
+    "preceding"
+  ],
+  "previous-fill": [
     "back",
     "previous page",
     "last",
@@ -3810,11 +4125,19 @@ export default {
   ],
   "print-fill": [
     "copy",
-    "document",
     "paper",
+    "document",
     "printer",
     "output",
     "hardcopy"
+  ],
+  "prism": [
+    "triangle",
+    "crystal",
+    "light",
+    "refraction",
+    "geometry",
+    "prismatic"
   ],
   "private-door": [
     "door",
@@ -3845,8 +4168,8 @@ export default {
     "silence",
     "turn off",
     "disable",
-    "no sound",
     "quiet",
+    "no sound",
     "music",
     "broadcast",
     "station"
@@ -3908,6 +4231,14 @@ export default {
     "eliminate",
     "discard",
     "uninstall"
+  ],
+  "rent": [
+    "lease",
+    "hire",
+    "borrow",
+    "occupy",
+    "tenant",
+    "pay"
   ],
   "reorder": [
     "arrange",
@@ -3977,12 +4308,12 @@ export default {
     "spacing"
   ],
   "road-sign-both": [
-    "intersection",
-    "crossroads",
-    "junction",
-    "traffic sign",
+    "road sign",
     "direction sign",
-    "road marker"
+    "traffic sign",
+    "intersection sign",
+    "dual sign",
+    "two-way sign"
   ],
   "road-sign-parking": [
     "parking sign",
@@ -4041,22 +4372,30 @@ export default {
     "swivel"
   ],
   "route": [
-    "direction",
     "path",
+    "direction",
     "way",
     "navigation",
     "map",
     "journey"
   ],
   "rss": [
-    "news",
     "feed",
+    "news",
     "updates",
-    "articles",
     "subscribe",
-    "syndication"
+    "syndication",
+    "articles"
   ],
   "ruler": [
+    "measure",
+    "tool",
+    "straightedge",
+    "scale",
+    "yardstick",
+    "measuring stick"
+  ],
+  "ruler-fill": [
     "measure",
     "tool",
     "straightedge",
@@ -4097,12 +4436,12 @@ export default {
     "slice"
   ],
   "search": [
+    "magnifying glass",
     "find",
     "lookup",
     "seek",
     "explore",
-    "scan",
-    "hunt"
+    "scan"
   ],
   "select": [
     "choose",
@@ -4222,16 +4561,16 @@ export default {
     "security",
     "lock",
     "unlock",
-    "remove",
+    "shield",
     "guard"
   ],
   "shopping": [
     "buy",
-    "purchase",
     "cart",
     "store",
-    "retail",
-    "shop"
+    "purchase",
+    "shop",
+    "retail"
   ],
   "shopping-cart": [
     "cart",
@@ -4239,7 +4578,8 @@ export default {
     "trolley",
     "bag",
     "purchase",
-    "buy"
+    "buy",
+    "store"
   ],
   "shopping-cart-add": [
     "add to cart",
@@ -4248,7 +4588,8 @@ export default {
     "shop",
     "add item",
     "add to basket",
-    "cart"
+    "cart",
+    "store"
   ],
   "shopping-cart-cross": [
     "remove",
@@ -4258,8 +4599,8 @@ export default {
     "cross out",
     "remove from cart",
     "buy",
-    "purchase",
-    "cart"
+    "cart",
+    "store"
   ],
   "shuffle": [
     "mix",
@@ -4382,7 +4723,7 @@ export default {
     "shine",
     "twinkle",
     "glimmer",
-    "dazzle",
+    "shimmer",
     "spark"
   ],
   "sparkles-fill": [
@@ -4405,7 +4746,7 @@ export default {
     "audio",
     "sound",
     "music",
-    "stereo",
+    "volume",
     "amplifier",
     "loudspeakers"
   ],
@@ -4457,19 +4798,27 @@ export default {
     "pause",
     "block"
   ],
+  "stop-fill": [
+    "halt",
+    "cease",
+    "end",
+    "terminate",
+    "pause",
+    "block"
+  ],
   "store": [
     "shop",
     "retail",
     "market",
     "boutique",
     "mall",
-    "storefront"
+    "buy"
   ],
   "store-fill": [
     "shop",
     "retail",
-    "boutique",
     "market",
+    "boutique",
     "mall",
     "storefront"
   ],
@@ -4488,6 +4837,26 @@ export default {
     "remove",
     "deduct",
     "reduce"
+  ],
+  "subtract-roundrect": [
+    "minus",
+    "remove",
+    "delete",
+    "subtract",
+    "round rectangle",
+    "rounded square",
+    "take away",
+    "decrease"
+  ],
+  "subtract-roundrect-fill": [
+    "minus",
+    "remove",
+    "delete",
+    "subtract",
+    "round rectangle",
+    "rounded square",
+    "take away",
+    "decrease"
   ],
   "sun": [
     "sunny",
@@ -4515,9 +4884,9 @@ export default {
   ],
   "surveillance-cameras-two": [
     "security cameras",
-    "CCTV cameras",
+    "CCTV",
     "video surveillance",
-    "monitoring cameras",
+    "monitoring",
     "camera system",
     "dual cameras"
   ],
@@ -4531,11 +4900,11 @@ export default {
   ],
   "switch-alt": [
     "toggle",
-    "alternative",
+    "alternate",
     "change",
     "swap",
     "exchange",
-    "alternate",
+    "shift",
     "button",
     "power"
   ],
@@ -4694,26 +5063,26 @@ export default {
   "three-rows": [
     "rows",
     "lines",
-    "horizontal",
-    "stacked",
+    "grid",
     "layers",
-    "levels"
+    "stacked",
+    "arranged"
   ],
   "three-rows-fill": [
     "rows",
     "lines",
     "horizontal",
-    "stacked",
-    "layers",
-    "levels"
+    "triple",
+    "trio",
+    "series"
   ],
   "thumbs-down": [
     "dislike",
     "disapproval",
+    "not good",
     "negative",
     "reject",
-    "thumb down",
-    "not good"
+    "thumb down"
   ],
   "thumbs-up": [
     "like",
@@ -4732,12 +5101,12 @@ export default {
     "individual"
   ],
   "tickets-two": [
+    "tickets",
     "dual tickets",
     "pair of tickets",
-    "double tickets",
     "two tickets",
-    "ticket duo",
-    "ticket couple"
+    "double tickets",
+    "couple tickets"
   ],
   "timer": [
     "countdown",
@@ -4763,14 +5132,6 @@ export default {
     "power",
     "toggle"
   ],
-  "tool": [
-    "equipment",
-    "instrument",
-    "implement",
-    "device",
-    "utensil",
-    "appliance"
-  ],
   "tooth": [
     "teeth",
     "dental",
@@ -4785,7 +5146,7 @@ export default {
     "transportation",
     "coach",
     "sightseeing",
-    "vacation"
+    "excursion"
   ],
   "train": [
     "railway",
@@ -4807,9 +5168,9 @@ export default {
     "send",
     "move",
     "exchange",
-    "shift",
-    "relocate",
-    "transport"
+    "transaction",
+    "deposit",
+    "withdraw"
   ],
   "trending-down": [
     "declining",
@@ -4840,8 +5201,8 @@ export default {
     "pyramid",
     "polygon",
     "trigon",
-    "three-sided",
-    "delta"
+    "delta",
+    "arrow"
   ],
   "truck": [
     "vehicle",
@@ -4954,12 +5315,15 @@ export default {
     "customer"
   ],
   "user-check": [
+    "verify",
+    "validate",
+    "confirm",
+    "inspect",
+    "review",
+    "examine",
     "person",
     "profile",
-    "customer",
-    "account",
-    "verify",
-    "validate"
+    "customer"
   ],
   "user-cross": [
     "remove",
@@ -4971,6 +5335,14 @@ export default {
     "person",
     "profile",
     "customer"
+  ],
+  "user-fill": [
+    "person",
+    "profile",
+    "customer",
+    "account",
+    "avatar",
+    "member"
   ],
   "users": [
     "people",
@@ -5020,6 +5392,14 @@ export default {
     "phial",
     "ampoule"
   ],
+  "vial-fill": [
+    "bottle",
+    "flask",
+    "container",
+    "test tube",
+    "phial",
+    "ampoule"
+  ],
   "video": [
     "movie",
     "film",
@@ -5048,15 +5428,15 @@ export default {
     "film",
     "clip"
   ],
-  "volume": [
+  "volume-1": [
     "sound",
     "audio",
     "level",
     "mute",
     "loudness",
-    "control"
+    "amplify"
   ],
-  "volume-1": [
+  "volume-1-fill": [
     "sound",
     "audio",
     "level",
@@ -5072,16 +5452,53 @@ export default {
     "loudness",
     "amplify"
   ],
+  "volume-2-fill": [
+    "sound",
+    "audio",
+    "level",
+    "mute",
+    "loudness",
+    "amplify"
+  ],
+  "volume-centered": [
+    "sound",
+    "audio",
+    "mute",
+    "center",
+    "middle",
+    "balanced"
+  ],
+  "volume-centered-fill": [
+    "sound",
+    "audio",
+    "mute",
+    "center",
+    "middle",
+    "balanced"
+  ],
+  "volume-off": [
+    "mute",
+    "sound off",
+    "silence",
+    "quiet",
+    "no sound",
+    "disable sound"
+  ],
+  "volume-off-fill": [
+    "mute",
+    "sound off",
+    "silence",
+    "quiet",
+    "no sound",
+    "disable sound"
+  ],
   "volume-x": [
     "mute",
     "sound off",
     "no sound",
     "silence",
     "audio off",
-    "quiet",
-    "sound",
-    "audio",
-    "level"
+    "quiet"
   ],
   "wallet": [
     "purse",
@@ -5178,8 +5595,8 @@ export default {
     "pane",
     "frame",
     "view",
-    "interface",
     "screen",
+    "interface",
     "display"
   ],
   "wine-glass": [
@@ -5206,10 +5623,36 @@ export default {
     "repair",
     "maintenance"
   ],
+  "wrench-alt": [
+    "settings",
+    "tools",
+    "adjust",
+    "config",
+    "gear",
+    "spanner",
+    "tool"
+  ],
+  "wrench-alt-fill": [
+    "settings",
+    "tools",
+    "adjust",
+    "config",
+    "gear",
+    "spanner",
+    "tool"
+  ],
+  "wrench-fill": [
+    "tool",
+    "spanner",
+    "adjust",
+    "fix",
+    "repair",
+    "maintenance"
+  ],
   "yen": [
     "currency",
-    "money",
     "Japanese",
+    "money",
     "Japan",
     "yen symbol",
     "Japanese currency"

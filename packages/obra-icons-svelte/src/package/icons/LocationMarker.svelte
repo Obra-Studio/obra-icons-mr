@@ -18,7 +18,7 @@
 	<g class="oi-location-marker">
 		<path
 			class="oi-vector"
-			d="M12 3C8.13401 3 5 6.13401 5 10C5 15 12 21 12 21C12 21 19 15 19 10C19 6.13401 15.866 3 12 3Z"
+			d="M12 3C8.134 3 4.99999 6.13401 4.99999 10C4.99999 15 12 21 12 21C12 21 19 15 19 10C19 6.13401 15.866 3 12 3Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

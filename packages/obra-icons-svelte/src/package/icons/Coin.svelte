@@ -15,7 +15,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-coin">
+	<g class="oi-coin" clip-path="url(#clip0_297_191376)">
 		<path
 			class="oi-vector"
 			d="M10.5 22C5.25329 22 1 17.5228 1 12C1 6.47715 5.25329 2 10.5 2C15.7467 2 20 6.47715 20 12C20 17.5228 15.7467 22 10.5 22Z"
@@ -40,4 +40,9 @@
 			stroke-linejoin="round"
 		/>
 	</g>
+	<defs>
+		<clipPath class="clip0_297_191376">
+			<rect width={size} height={size} fill="white" />
+		</clipPath>
+	</defs>
 </svg>

@@ -1,0 +1,50 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-fingerprint">
+		<path
+			class="oi-vector"
+			d="M4.15094 15.003C4.08632 14.1917 4.13719 11.5739 4.15071 10.7715C4.18603 9.3995 4.40845 8.02225 4.97202 6.75804C5.50027 5.59794 6.41249 4.67061 7.4735 3.92918C9.76834 2.20985 12.6816 2.10649 15.2207 3.33426C16.4755 3.93811 17.523 4.91527 18.3173 6.04562C19.8374 8.23866 19.9441 10.4912 19.8066 13.0501"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M7.552 8.99804C8.23177 8.01849 8.95165 6.96775 10.0004 6.34814C11.8321 5.26632 14.5121 5.63629 15.8215 7.35376C17.3886 9.49734 17.2121 12.2846 17.2372 14.8182"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M17.2373 17.675V19.4184"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M10.1211 11.5384C10.3237 10.8475 10.5321 10.1943 10.9586 9.6761C12.0094 8.41979 13.505 8.92347 13.8891 10.4461C14.1139 11.2875 14.1168 12.2148 14.1332 13.088C14.138 15.6508 14.1332 18.147 14.1351 20.6944"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M7.4266 11.645C7.31164 13.4184 6.84899 15.7637 7.62731 17.4108C8.38583 19.0682 10.1535 18.8223 10.8725 17.2525C11.4002 16.1396 11.3973 15.4208 11.3983 14.2034"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+		/>
+	</g>
+</svg>

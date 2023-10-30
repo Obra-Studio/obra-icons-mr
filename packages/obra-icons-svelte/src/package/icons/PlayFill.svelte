@@ -1,0 +1,25 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	class="obra-icon"
+>
+	<g class="oi-play-fill">
+		<path
+			class="oi-fill"
+			d="M9.00774 5.01349C7.67443 4.23573 6 5.19747 6 6.74105V17.259C6 18.8026 7.67443 19.7643 9.00774 18.9865L18.0231 13.7276C19.3461 12.9558 19.3461 11.0442 18.0231 10.2725L9.00774 5.01349Z"
+			fill={color}
+		/>
+	</g>
+</svg>

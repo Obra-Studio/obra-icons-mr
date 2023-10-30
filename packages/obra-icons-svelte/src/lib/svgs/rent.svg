@@ -1,0 +1,49 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-rent">
+		<path
+			class="oi-vector"
+			d="M5 9.5V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V9.5"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-incomplete-triangle"
+			d="M3 11L12 3L21 11"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M14.8749 11.4972C13.5189 10.025 9.6814 10.263 9.6814 14.1218C9.6814 17.9805 13.5794 17.839 14.8749 16.4326"
+			stroke="black"
+			stroke-width="1.48387"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-line"
+			d="M9.125 15.0229H12.8347"
+			stroke="black"
+			stroke-width="1.48387"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-line"
+			d="M9.125 13.0806H12.8347"
+			stroke="black"
+			stroke-width="1.48387"
+			stroke-linecap="round"
+		/>
+	</g>
+</svg>

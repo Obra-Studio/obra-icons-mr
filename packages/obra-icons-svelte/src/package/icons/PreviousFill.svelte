@@ -1,0 +1,44 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	class="obra-icon"
+>
+	<g class="oi-previous-fill" clip-path="url(#clip0_297_193883)">
+		<path
+			class="oi-vector"
+			d="M6 7V17"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<g class="oi-fill">
+			<path
+				d="M19 7.76615C19 6.21156 17.304 5.25134 15.971 6.05116L8.91461 10.285C7.61994 11.0618 7.61993 12.9381 8.91461 13.7149L15.971 17.9488C17.304 18.7486 19 17.7884 19 16.2338V7.76615Z"
+				fill={color}
+			/>
+			<path
+				d="M101 7.76615C101 6.21156 102.696 5.25134 104.029 6.05116L111.085 10.285C112.38 11.0618 112.38 12.9381 111.085 13.7149L104.029 17.9488C102.696 18.7486 101 17.7884 101 16.2338V7.76615Z"
+				fill={color}
+			/>
+		</g>
+	</g>
+	<defs>
+		<clipPath class="clip0_297_193883">
+			<rect width={size} height={size} fill="white" />
+		</clipPath>
+	</defs>
+</svg>

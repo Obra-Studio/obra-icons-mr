@@ -26,7 +26,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M7 12L17 12"
+			d="M7 12H17.8203"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -34,7 +34,7 @@
 		/>
 		<path
 			class="oi-incomplete-triangle"
-			d="M17.1213 14.2427L19.2426 12.1213L17.1213 10"
+			d="M17.1213 14.1213L19.2426 12L17.1213 9.87868"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

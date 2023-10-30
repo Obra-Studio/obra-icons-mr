@@ -18,7 +18,7 @@
 	<g class="oi-italic">
 		<path
 			class="oi-line"
-			d="M19.0001 4H10.0001"
+			d="M19 4H10"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -26,7 +26,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M14.0001 20H5.00006"
+			d="M14 20H5.00003"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -34,7 +34,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M15.0001 4L9.00006 20"
+			d="M15 4L9.00005 20"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

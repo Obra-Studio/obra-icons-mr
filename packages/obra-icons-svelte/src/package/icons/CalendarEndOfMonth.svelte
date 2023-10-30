@@ -1,0 +1,59 @@
+<svelte:options namespace="svg" />
+
+<script>
+  export let size = 24
+  export let color = 'currentColor'
+  // svelte-ignore unused-export-let
+  export let strokeWidth = 2
+</script>
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	class="obra-icon"
+>
+	<g class="oi-calendar-end-of-month">
+		<path
+			class="oi-vector"
+			d="M4.00002 6C4.00002 5.44772 4.44773 5 5.00002 5H19C19.5523 5 20 5.44772 20 6V19C20 19.5523 19.5523 20 19 20H5.00002C4.44773 20 4.00002 19.5523 4.00002 19V6Z"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M7.87869 10.7532C8.11679 10.5021 8.77342 10 9.73058 10C10.6161 10 11.4029 10.4448 11.5157 11.4418C11.6806 12.8991 9.38885 13.0574 8.39589 13.0574C9.37958 13.0774 11.7389 13.5477 11.508 14.9542C11.3351 16.0072 10.1709 16.2593 9.73058 16.2676C9.25438 16.2766 8.38663 16.0524 7.66704 15.5144"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M15.9643 16.2679V10.2984C15.9643 10.0816 15.7005 9.975 15.5498 10.1309L14.0357 11.6982"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-line"
+			d="M9 7L9 3"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M15 7L15 3"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

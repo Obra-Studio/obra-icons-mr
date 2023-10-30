@@ -15,7 +15,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-sliders">
+	<g class="oi-sliders" clip-path="url(#clip0_297_191751)">
 		<path
 			class="oi-line"
 			d="M4.00009 21V14"
@@ -89,4 +89,9 @@
 			stroke-linejoin="round"
 		/>
 	</g>
+	<defs>
+		<clipPath class="clip0_297_191751">
+			<rect width={size} height={size} fill="white" />
+		</clipPath>
+	</defs>
 </svg>

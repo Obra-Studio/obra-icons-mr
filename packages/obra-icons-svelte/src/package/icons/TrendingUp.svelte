@@ -18,7 +18,7 @@
 	<g class="oi-trending-up">
 		<path
 			class="oi-vector"
-			d="M20.7784 7.21168L13.197 14.7931L9.20674 10.8029L3.22141 16.7882"
+			d="M20.7784 7.21168L13.1969 14.7931L9.20672 10.8029L3.22139 16.7882"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

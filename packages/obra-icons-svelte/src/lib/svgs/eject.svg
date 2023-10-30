@@ -1,0 +1,28 @@
+<svg
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g class="oi-eject">
+		<path
+			class="oi-triangle"
+			d="M7.76619 18C6.9889 18 6.50878 17.152 6.9087 16.4855L11.1425 9.42916C11.5309 8.78182 12.4691 8.78182 12.8575 9.42915L17.0913 16.4855C17.4912 17.152 17.0111 18 16.2338 18L7.76619 18Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M7 6L17 6"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>
