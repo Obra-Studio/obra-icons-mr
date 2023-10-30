@@ -13,27 +13,27 @@ export default {
     "promo",
     "marketing",
     "commercial",
-    "banner",
+    "campaign",
     "promotion"
   ],
   "add": [
     "plus",
-    "create",
     "insert",
     "include",
     "append",
-    "attach"
+    "attach",
+    "incorporate"
   ],
   "add-roundrect": [
     "rectangle",
     "shape",
     "box",
-    "container",
-    "frame",
-    "border",
+    "rounded",
+    "curved",
+    "corner",
     "plus",
-    "create",
-    "insert"
+    "insert",
+    "include"
   ],
   "add-roundrect-fill": [
     "rectangle",
@@ -43,8 +43,8 @@ export default {
     "frame",
     "border",
     "plus",
-    "create",
-    "insert"
+    "insert",
+    "include"
   ],
   "airplay": [
     "stream",
@@ -163,7 +163,7 @@ export default {
     "text left",
     "align left",
     "left align",
-    "text alignment",
+    "text align left",
     "left text"
   ],
   "align-text-right": [
@@ -171,8 +171,8 @@ export default {
     "text-right",
     "justify-right",
     "align-right",
-    "text-align-right",
-    "right-justified"
+    "right-justified",
+    "text-align-right"
   ],
   "align-to-middle": [
     "center",
@@ -204,7 +204,7 @@ export default {
     "lower",
     "decrease",
     "drop",
-    "reduce"
+    "fall"
   ],
   "arrow-leave-n": [
     "exit",
@@ -284,7 +284,7 @@ export default {
     "element",
     "science",
     "chemistry",
-    "atomic"
+    "nucleus"
   ],
   "attachment": [
     "file",
@@ -682,8 +682,8 @@ export default {
     "pastry",
     "baked goods",
     "sweet treat",
-    "celebration",
-    "birthday"
+    "birthday cake",
+    "cupcake"
   ],
   "calculator": [
     "math",
@@ -811,7 +811,7 @@ export default {
     "photography",
     "image",
     "snapshot",
-    "shutter"
+    "shoot"
   ],
   "car": [
     "vehicle",
@@ -827,7 +827,7 @@ export default {
     "expand",
     "collapse",
     "dropdown",
-    "menu"
+    "select"
   ],
   "caret-down-fill": [
     "arrow",
@@ -1028,10 +1028,10 @@ export default {
   "chevron-down": [
     "arrow",
     "downward",
+    "triangle",
     "pointing down",
     "expand",
-    "collapse",
-    "dropdown"
+    "collapse"
   ],
   "chevron-left": [
     "back",
@@ -1179,8 +1179,8 @@ export default {
     "return",
     "loop",
     "reverse",
+    "undo",
     "retreat",
-    "go back",
     "retrace",
     "round",
     "shape",
@@ -1190,8 +1190,8 @@ export default {
     "return",
     "loop",
     "reverse",
-    "undo",
     "retreat",
+    "go back",
     "retrace",
     "round",
     "shape",
@@ -1236,7 +1236,7 @@ export default {
     "exit",
     "delete",
     "remove",
-    "end",
+    "x",
     "round",
     "shape",
     "ring"
@@ -1312,8 +1312,8 @@ export default {
     "alert",
     "attention",
     "exclamation",
-    "error",
     "caution",
+    "notification",
     "round",
     "shape",
     "ring"
@@ -1372,9 +1372,9 @@ export default {
   "circle-question": [
     "help",
     "unknown",
-    "confusion",
     "enquiry",
     "doubt",
+    "confusion",
     "query",
     "round",
     "shape",
@@ -1383,9 +1383,9 @@ export default {
   "circle-question-fill": [
     "help",
     "unknown",
+    "confusion",
     "enquiry",
     "doubt",
-    "confusion",
     "query",
     "round",
     "shape",
@@ -1407,8 +1407,8 @@ export default {
     "remove",
     "delete",
     "subtract",
-    "circle",
-    "minus sign",
+    "reduce",
+    "exclude",
     "round",
     "shape",
     "ring"
@@ -1463,9 +1463,9 @@ export default {
     "completed",
     "verified",
     "done",
-    "finished",
     "tick",
-    "mark"
+    "mark",
+    "confirm"
   ],
   "clipboard-empty": [
     "clipboard",
@@ -1505,7 +1505,7 @@ export default {
     "tasks",
     "notes",
     "agenda",
-    "planner"
+    "list"
   ],
   "clipboard-tasks-fill": [
     "to-do",
@@ -1521,7 +1521,7 @@ export default {
     "wristwatch",
     "hourglass",
     "chronometer",
-    "pendulum"
+    "timekeeper"
   ],
   "clock-alt": [
     "clock alternative",
@@ -1549,9 +1549,9 @@ export default {
     "timepiece",
     "timer",
     "wristwatch",
-    "chronometer",
     "hourglass",
-    "sundial"
+    "chronometer",
+    "timekeeper"
   ],
   "close": [
     "exit",
@@ -1590,11 +1590,11 @@ export default {
   ],
   "cloud-download-alt": [
     "cloud download",
-    "cloud arrow down",
-    "download cloud",
     "cloud save",
-    "cloud receive",
-    "cloud import",
+    "download",
+    "save",
+    "import",
+    "retrieve",
     "sky",
     "weather",
     "storage"
@@ -1675,10 +1675,10 @@ export default {
   "coffee": [
     "beverage",
     "drink",
-    "java",
-    "caffeine",
     "mug",
-    "cup"
+    "caffeine",
+    "hot",
+    "espresso"
   ],
   "coffee-alt-2": [
     "coffee",
@@ -1686,8 +1686,7 @@ export default {
     "beverage",
     "drink",
     "mug",
-    "caffeine",
-    "java"
+    "caffeine"
   ],
   "coffee-cup": [
     "coffee",
@@ -1695,8 +1694,7 @@ export default {
     "beverage",
     "drink",
     "cafe",
-    "hot",
-    "java"
+    "hot"
   ],
   "coin": [
     "money",
@@ -1853,20 +1851,11 @@ export default {
   ],
   "cross": [
     "X",
-    "mark",
-    "delete",
-    "remove",
-    "cancel",
-    "close"
-  ],
-  "cross-fill": [
-    "X",
     "delete",
     "remove",
     "cancel",
     "close",
-    "terminate",
-    "mark"
+    "terminate"
   ],
   "crown": [
     "king",
@@ -1983,16 +1972,16 @@ export default {
   "discount": [
     "sale",
     "offer",
-    "promotion",
-    "rebate",
+    "promo",
+    "reduction",
     "deal",
     "markdown"
   ],
   "discount-fill": [
     "sale",
     "offer",
-    "promotion",
-    "rebate",
+    "promo",
+    "reduction",
     "deal",
     "markdown"
   ],
@@ -2185,7 +2174,7 @@ export default {
   "document-pdf": [
     "file",
     "paper",
-    "PDF",
+    "pdf",
     "document",
     "record",
     "print"
@@ -2226,7 +2215,7 @@ export default {
     "note",
     "record",
     "document",
-    "sheet"
+    "small document"
   ],
   "document-upload": [
     "file",
@@ -2294,13 +2283,29 @@ export default {
     "alter",
     "amend"
   ],
+  "eject": [
+    "remove",
+    "expel",
+    "push out",
+    "release",
+    "discard",
+    "throw out"
+  ],
+  "eject-fill": [
+    "remove",
+    "expel",
+    "push out",
+    "ejection",
+    "ejector",
+    "ejecting"
+  ],
   "elephant": [
     "animal",
     "mammal",
     "wildlife",
-    "big",
-    "trunk",
-    "tusk"
+    "pachyderm",
+    "tusk",
+    "trunk"
   ],
   "elevator": [
     "lift",
@@ -2316,7 +2321,7 @@ export default {
     "communication",
     "envelope",
     "inbox",
-    "send"
+    "correspondence"
   ],
   "email-fill": [
     "message",
@@ -2401,6 +2406,14 @@ export default {
     "vision",
     "gaze"
   ],
+  "eye-fill": [
+    "sight",
+    "vision",
+    "gaze",
+    "look",
+    "observe",
+    "view"
+  ],
   "eye-off": [
     "hide",
     "conceal",
@@ -2469,22 +2482,22 @@ export default {
     "downcast"
   ],
   "face-wink": [
-    "wink",
+    "winking",
     "smile",
     "emoji",
     "expression",
     "happy",
     "playful"
   ],
-  "fast-backward": [
-    "rewind",
-    "previous",
-    "skip back",
-    "reverse",
-    "backtrack",
-    "go back"
-  ],
   "fast-forward": [
+    "skip",
+    "advance",
+    "next",
+    "forward",
+    "speed up",
+    "move ahead"
+  ],
+  "fast-forward-fill": [
     "skip",
     "advance",
     "next",
@@ -2528,7 +2541,7 @@ export default {
     "unfavorite",
     "remove",
     "dislike",
-    "unlike",
+    "unmark",
     "cancel",
     "delete",
     "like",
@@ -2601,20 +2614,20 @@ export default {
     "fin"
   ],
   "flag": [
-    "banner",
     "marker",
+    "banner",
     "symbol",
     "emblem",
     "pennant",
     "standard"
   ],
   "flag-fill": [
-    "banner",
     "marker",
+    "banner",
     "symbol",
-    "pennant",
     "emblem",
-    "sign"
+    "pennant",
+    "standard"
   ],
   "flag-left": [
     "left arrow",
@@ -2623,8 +2636,8 @@ export default {
     "back",
     "previous",
     "go back",
-    "banner",
     "marker",
+    "banner",
     "symbol"
   ],
   "flag-right": [
@@ -2634,8 +2647,8 @@ export default {
     "direction",
     "approve",
     "confirm",
-    "banner",
     "marker",
+    "banner",
     "symbol"
   ],
   "flashlight": [
@@ -2643,8 +2656,8 @@ export default {
     "light",
     "lamp",
     "beam",
-    "portable light",
-    "handheld light"
+    "illumination",
+    "portable light"
   ],
   "flask": [
     "bottle",
@@ -2706,21 +2719,21 @@ export default {
   ],
   "folder-add": [
     "directory",
-    "new folder",
-    "create folder",
-    "add folder",
-    "folder plus",
-    "folder create",
-    "file",
-    "document"
-  ],
-  "folder-add-fill": [
-    "directory",
     "create folder",
     "new folder",
     "add folder",
     "make folder",
     "folder plus",
+    "file",
+    "document"
+  ],
+  "folder-add-fill": [
+    "directory",
+    "new folder",
+    "create folder",
+    "add folder",
+    "folder plus",
+    "folder create",
     "file",
     "document"
   ],
@@ -2861,12 +2874,12 @@ export default {
     "fork with left turn"
   ],
   "fork-right": [
-    "right arrow",
+    "arrow",
     "direction",
     "turn",
-    "split",
-    "divide",
-    "branch"
+    "right",
+    "diverge",
+    "split"
   ],
   "forward-15-seconds": [
     "skip",
@@ -2987,8 +3000,8 @@ export default {
     "spectacles",
     "shades",
     "eyeglasses",
-    "specs",
-    "vision"
+    "sunglasses",
+    "specs"
   ],
   "globe": [
     "world",
@@ -3031,12 +3044,12 @@ export default {
     "index"
   ],
   "hashtag": [
-    "pound",
+    "pound sign",
     "number sign",
-    "tag",
-    "sharp",
     "hash",
-    "octothorpe"
+    "tag",
+    "social media",
+    "trending"
   ],
   "hashtag-alt": [
     "hashtag",
@@ -3045,8 +3058,9 @@ export default {
     "symbol",
     "social media",
     "metadata",
-    "pound",
-    "number sign"
+    "pound sign",
+    "number sign",
+    "hash"
   ],
   "heart": [
     "love",
@@ -3130,7 +3144,7 @@ export default {
     "mailbox",
     "communication",
     "received",
-    "correspondence"
+    "notifications"
   ],
   "infinite": [
     "endless",
@@ -3278,19 +3292,18 @@ export default {
     "lamp",
     "bulb",
     "illumination",
-    "idea",
     "bright",
+    "idea",
     "electric"
   ],
   "lightbulb-off": [
-    "dark",
+    "light",
+    "bulb",
     "off",
+    "dark",
     "inactive",
     "disabled",
-    "switched off",
-    "unlit",
     "lamp",
-    "bulb",
     "illumination"
   ],
   "lightbulb-on": [
@@ -3424,8 +3437,8 @@ export default {
     "wand",
     "artificial intelligence",
     "AI",
-    "smart",
-    "technology"
+    "tool",
+    "brush"
   ],
   "magic-wand-ai-fill": [
     "magic",
@@ -3467,14 +3480,6 @@ export default {
     "edit",
     "write",
     "writing tool"
-  ],
-  "measure": [
-    "calculate",
-    "quantify",
-    "evaluate",
-    "assess",
-    "gauge",
-    "determine"
   ],
   "medcase": [
     "medical case",
@@ -3530,7 +3535,7 @@ export default {
     "text",
     "notification",
     "inbox",
-    "mail"
+    "email"
   ],
   "message-alt-fill": [
     "chat",
@@ -3685,9 +3690,9 @@ export default {
     "up",
     "forward",
     "top",
-    "upward",
     "northward",
-    "arrow"
+    "upward",
+    "ahead"
   ],
   "navigation-north-east": [
     "arrow",
@@ -3726,8 +3731,8 @@ export default {
     "compass",
     "arrow",
     "southwest",
-    "diagonal",
-    "corner"
+    "left",
+    "down-left"
   ],
   "navigation-west": [
     "left",
@@ -3751,7 +3756,7 @@ export default {
     "proceed",
     "continue",
     "navigate",
-    "advance"
+    "move"
   ],
   "next-fill": [
     "forward",
@@ -3762,8 +3767,8 @@ export default {
     "advance"
   ],
   "normal-screen": [
-    "standard",
     "regular",
+    "standard",
     "default",
     "typical",
     "ordinary",
@@ -3781,9 +3786,9 @@ export default {
     "alert",
     "message",
     "reminder",
-    "notice",
     "ping",
-    "signal"
+    "notification",
+    "bell"
   ],
   "notification-check": [
     "alert",
@@ -3798,9 +3803,9 @@ export default {
     "alert",
     "message",
     "reminder",
-    "notice",
     "ping",
-    "signal"
+    "notification",
+    "bell"
   ],
   "notification-off": [
     "mute",
@@ -3908,7 +3913,7 @@ export default {
     "arrow",
     "direction",
     "route",
-    "navigation",
+    "navigate",
     "turn",
     "curve"
   ],
@@ -3958,7 +3963,7 @@ export default {
     "smartphone",
     "device",
     "telephone",
-    "call"
+    "handset"
   ],
   "phone-fill": [
     "mobile",
@@ -4117,16 +4122,16 @@ export default {
   ],
   "print": [
     "copy",
-    "paper",
     "document",
+    "paper",
     "printer",
     "output",
     "hardcopy"
   ],
   "print-fill": [
     "copy",
-    "paper",
     "document",
+    "paper",
     "printer",
     "output",
     "hardcopy"
@@ -4199,6 +4204,22 @@ export default {
     "paper",
     "transaction",
     "purchase"
+  ],
+  "record": [
+    "document",
+    "file",
+    "log",
+    "capture",
+    "save",
+    "store"
+  ],
+  "record-fill": [
+    "document",
+    "file",
+    "log",
+    "capture",
+    "save",
+    "store"
   ],
   "redact": [
     "edit",
@@ -4291,13 +4312,30 @@ export default {
     "enlarge",
     "shrink"
   ],
+  "rewind": [
+    "back",
+    "reverse",
+    "previous",
+    "retreat",
+    "backward",
+    "rewind"
+  ],
   "rewind-15-seconds": [
     "backward",
     "skip back",
     "previous",
     "replay",
     "backtrack",
-    "reverse"
+    "reverse",
+    "back"
+  ],
+  "rewind-fill": [
+    "back",
+    "reverse",
+    "previous",
+    "retreat",
+    "backward",
+    "rewind"
   ],
   "right-indent-text": [
     "align",
@@ -4436,12 +4474,12 @@ export default {
     "slice"
   ],
   "search": [
-    "magnifying glass",
     "find",
     "lookup",
     "seek",
     "explore",
-    "scan"
+    "scan",
+    "hunt"
   ],
   "select": [
     "choose",
@@ -4640,8 +4678,8 @@ export default {
     "exit",
     "log off",
     "sign off",
-    "disconnect",
-    "leave"
+    "end session",
+    "disconnect"
   ],
   "signal": [
     "network",
@@ -4731,7 +4769,7 @@ export default {
     "shine",
     "twinkle",
     "glimmer",
-    "shimmer",
+    "dazzle",
     "spark"
   ],
   "speakers": [
@@ -4812,7 +4850,7 @@ export default {
     "market",
     "boutique",
     "mall",
-    "buy"
+    "storefront"
   ],
   "store-fill": [
     "shop",
@@ -4843,8 +4881,8 @@ export default {
     "remove",
     "delete",
     "subtract",
-    "round rectangle",
-    "rounded square",
+    "rectangle",
+    "rounded rectangle",
     "take away",
     "decrease"
   ],
@@ -4884,9 +4922,9 @@ export default {
   ],
   "surveillance-cameras-two": [
     "security cameras",
-    "CCTV",
+    "CCTV cameras",
     "video surveillance",
-    "monitoring",
+    "monitoring cameras",
     "camera system",
     "dual cameras"
   ],
@@ -4930,7 +4968,7 @@ export default {
     "furniture",
     "surface",
     "workstation",
-    "alternative"
+    "alternate"
   ],
   "table-alt-2": [
     "table",
@@ -5063,10 +5101,10 @@ export default {
   "three-rows": [
     "rows",
     "lines",
-    "grid",
-    "layers",
-    "stacked",
-    "arranged"
+    "horizontal",
+    "triple",
+    "trio",
+    "series"
   ],
   "three-rows-fill": [
     "rows",
@@ -5101,12 +5139,12 @@ export default {
     "individual"
   ],
   "tickets-two": [
-    "tickets",
     "dual tickets",
     "pair of tickets",
-    "two tickets",
     "double tickets",
-    "couple tickets"
+    "two tickets",
+    "ticket duo",
+    "ticket couple"
   ],
   "timer": [
     "countdown",
@@ -5190,11 +5228,11 @@ export default {
   ],
   "triangle": [
     "shape",
-    "pyramid",
     "polygon",
+    "pyramid",
+    "arrow",
     "trigon",
-    "delta",
-    "arrow"
+    "delta"
   ],
   "triangle-fill": [
     "shape",
@@ -5273,8 +5311,8 @@ export default {
     "bullet points",
     "items",
     "unordered items",
-    "unordered bullet points",
-    "unordered elements"
+    "unordered bullet list",
+    "unordered checklist"
   ],
   "upload": [
     "import",
@@ -5315,15 +5353,12 @@ export default {
     "customer"
   ],
   "user-check": [
-    "verify",
-    "validate",
-    "confirm",
-    "inspect",
-    "review",
-    "examine",
     "person",
     "profile",
-    "customer"
+    "customer",
+    "account",
+    "verify",
+    "validate"
   ],
   "user-cross": [
     "remove",
@@ -5651,8 +5686,8 @@ export default {
   ],
   "yen": [
     "currency",
-    "Japanese",
     "money",
+    "Japanese",
     "Japan",
     "yen symbol",
     "Japanese currency"
