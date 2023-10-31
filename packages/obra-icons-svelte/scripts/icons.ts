@@ -10,6 +10,7 @@ import {
 	EXPORTS_REL,
 	EXPORTS_FILE,
 	ICON_COUNT_FILE,
+	KEYWORDS_OVERRIDES_FILE,
 } from './paths';
 
 console.time('generate icons');
@@ -26,7 +27,7 @@ const figma = ofetch.create({
 
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 // You can get the id from figma.currentPage.selection.id via console
-const NODE_ID = '297:186836';
+const NODE_ID = '299:2010';
 
 console.log('\nCleaning Output Directories');
 
@@ -54,6 +55,27 @@ interface Icon {
 //? Map of icon name:id
 const icon_name_map = new Map<string, string>();
 
+//? Map of icon name:keywords
+const icon_keywords_map = new Map<string, string[]>();
+
+//? Parse an icon name e.g. oi-sparkles-fill[ai,machine-learning]
+function parse_icon_name(raw: string) {
+	const result = raw.match(/oi-([\w\d-]+)(?:\[([\w\d-,]+)\])?/);
+	const [, name, keywords] = result || [];
+
+	if (!name) {
+		return {
+			name: null,
+			keywords: null,
+		};
+	}
+
+	return {
+		name,
+		keywords: (keywords?.split(',') || null) as string[] | null,
+	};
+}
+
 for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 	console.log(`  Processing frame (${frame_id}) "${frame.document.name}"`);
 
@@ -61,16 +83,24 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 
 	//? Loop over the found icons
 	for (const icon of frame.document.children) {
-		//? Normalise the icon name
-		const name = icon.name.replace('oi-', '');
+		const { name, keywords } = parse_icon_name(icon.name);
+
+		if (!name) {
+			throw new Error(
+				`Icon (${icon.id}) "${icon.name}" doesn't have a name`,
+			);
+		}
 
 		//? Add duplicate icons to an array
 		if (icon_name_map.has(name)) {
 			duplicates.push([icon.id, name]);
 		}
 
-		//? Add the icon id & name to the name:id map
 		icon_name_map.set(name, icon.id);
+
+		if (keywords) {
+			icon_keywords_map.set(name, keywords);
+		}
 	}
 
 	//? If duplicates are found log them and exit
@@ -218,6 +248,16 @@ await writeFile(EXPORTS_FILE, `${export_statements.join('\n')}\n`, 'utf-8');
 
 //? Write the icon count
 await writeFile(ICON_COUNT_FILE, `export default ${icons.length};\n`, 'utf-8');
+
+//? Write out the keywords overrides
+await writeFile(
+	KEYWORDS_OVERRIDES_FILE,
+	`export default ${JSON.stringify(
+		Object.fromEntries(icon_keywords_map),
+		null,
+		2,
+	)} as Record<string, string[]>`,
+);
 
 console.log(`\nDone - ${icons.length} icons generated\n`);
 console.timeEnd('generate icons');
