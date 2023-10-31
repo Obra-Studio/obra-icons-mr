@@ -30,7 +30,7 @@ const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 //? You can get the id from figma.currentPage.selection[0].id via console
 const NODE_ID = process.argv[2];
 
-if (!NODE_ID || NODE_ID.includes(':')) {
+if (!NODE_ID || !NODE_ID.includes(':')) {
 	throw new Error(
 		`Please pass the node id as the first argument. E.g. "pnpm generate:icons 297:186836"`,
 	);
