@@ -46,17 +46,19 @@ const frames = await figma<GETNodesResponse>(
 	`/files/${FILE_ID}/nodes?ids=${NODE_ID}`,
 );
 
-interface Icon {
+interface BaseIcon {
+	id: string;
 	name: string;
+	keywords: string[] | null;
+}
+
+interface Icon extends BaseIcon {
 	svg: string;
 	svgSvelte: string;
 }
 
-//? Map of icon name:id
-const icon_name_map = new Map<string, string>();
-
-//? Map of icon name:keywords
-const icon_keywords_map = new Map<string, string[]>();
+//? Map of icon name:icon
+const icon_name_map = new Map<string, BaseIcon>();
 
 //? Parse an icon name e.g. oi-sparkles-fill[ai,machine-learning]
 function parse_icon_name(raw: string) {
@@ -96,11 +98,11 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 			duplicates.push([icon.id, name]);
 		}
 
-		icon_name_map.set(name, icon.id);
-
-		if (keywords) {
-			icon_keywords_map.set(name, keywords);
-		}
+		icon_name_map.set(name, {
+			name,
+			id: icon.id,
+			keywords,
+		});
 	}
 
 	//? If duplicates are found log them and exit
@@ -121,7 +123,7 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 
 //? Split the icon_name_map into chunks of 100 for downloading svgs
 const icon_chunks = split(
-	[...icon_name_map] as [name: string, id: string][],
+	[...icon_name_map] as [name: string, icon: BaseIcon][],
 	100,
 );
 
@@ -133,7 +135,7 @@ const icons: Icon[] = [];
 //? Process each icon chunk
 for (const chunk of icon_chunks) {
 	console.log(`  Processing Icon Chunk`);
-	const ids = chunk.map(([name, id]) => id);
+	const ids = chunk.map(([, id]) => id);
 
 	//? Fetch the icon svg urls
 	const { images } = await figma<GETImageResponse>(
@@ -142,12 +144,12 @@ for (const chunk of icon_chunks) {
 
 	//? Run all the icon downloads and formats in parallel
 	await Promise.all(
-		chunk.map(async ([name, id]) => {
+		chunk.map(async ([name, base_icon]) => {
 			//? Find the SVG link to download from
-			const link = images[id];
-			if (!link) throw new Error(`No link for ${id}`);
+			const link = images[base_icon.id];
+			if (!link) throw new Error(`No link for ${base_icon.id}`);
 
-			console.log(`      Downloading Icon (${id}) "${name}"`);
+			console.log(`      Downloading Icon (${base_icon.id}) "${name}"`);
 
 			//? Fetch the svg data from the link
 			const raw_svg = await ofetch(link, { responseType: 'text' });
@@ -189,7 +191,11 @@ for (const chunk of icon_chunks) {
 				);
 
 			//? Add each icon to the icons array
-			icons.push({ name, svg, svgSvelte });
+			icons.push({
+				...base_icon,
+				svg,
+				svgSvelte,
+			});
 		}),
 	);
 }
@@ -249,11 +255,17 @@ await writeFile(EXPORTS_FILE, `${export_statements.join('\n')}\n`, 'utf-8');
 //? Write the icon count
 await writeFile(ICON_COUNT_FILE, `export default ${icons.length};\n`, 'utf-8');
 
+const keywords_overrides = Object.fromEntries(
+	icons
+		.filter((icon) => icon.keywords?.length)
+		.map(({ name, keywords }) => [name, keywords]),
+);
+
 //? Write out the keywords overrides
 await writeFile(
 	KEYWORDS_OVERRIDES_FILE,
 	`export default ${JSON.stringify(
-		Object.fromEntries(icon_keywords_map),
+		keywords_overrides,
 		null,
 		2,
 	)} as Record<string, string[]>`,
