@@ -1,5 +1,5 @@
-import { KEYWORDS_FILE, SVG_OUT_DIR } from './paths';
-import { writeFile, readdir } from 'fs/promises';
+import { KEYWORDS_FILE, KEYWORDS_OVERRIDES_FILE, SVG_OUT_DIR } from './paths';
+import { writeFile, readFile, readdir } from 'fs/promises';
 import { basename } from 'path';
 import OpenAI from 'openai';
 
@@ -79,12 +79,21 @@ name_keywords.sort((a, b) =>
 	a[0].toLowerCase() > b[0].toLowerCase() ? 1 : -1,
 );
 
+const overrides: Record<string, string[]> = JSON.parse(
+	await readFile(KEYWORDS_OVERRIDES_FILE, 'utf-8'),
+);
+
 const keywords_object: Record<string, string[]> = {};
 
 console.log('Mapping Keywords');
 
 for (const [name, keywords] of name_keywords) {
 	console.log(`  Processing "${name}"`);
+
+	if (overrides[name]) {
+		//? Add the keyword overrides
+		keywords.push(...overrides[name]);
+	}
 
 	if (name.includes('-')) {
 		//? Get the first part of the name. E.g. "user-add" -> "user"

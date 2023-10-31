@@ -252,11 +252,7 @@ const keywords_overrides = Object.fromEntries(
 //? Write out the keywords overrides
 await writeFile(
 	KEYWORDS_OVERRIDES_FILE,
-	`export default ${JSON.stringify(
-		keywords_overrides,
-		null,
-		2,
-	)} as Record<string, string[]>`,
+	JSON.stringify(keywords_overrides, null, 2),
 );
 
 console.log(`\nDone - ${icons.length} icons generated\n`);
