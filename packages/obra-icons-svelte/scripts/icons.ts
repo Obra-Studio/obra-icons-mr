@@ -57,8 +57,7 @@ interface Icon extends BaseIcon {
 	svgSvelte: string;
 }
 
-//? Map of icon name:icon
-const icon_name_map = new Map<string, BaseIcon>();
+const base_icons: BaseIcon[] = [];
 
 //? Parse an icon name e.g. oi-sparkles-fill[ai,machine-learning]
 function parse_icon_name(raw: string) {
@@ -81,8 +80,6 @@ function parse_icon_name(raw: string) {
 for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 	console.log(`  Processing frame (${frame_id}) "${frame.document.name}"`);
 
-	const duplicates: [id: string, name: string][] = [];
-
 	//? Loop over the found icons
 	for (const icon of frame.document.children) {
 		const { name, keywords } = parse_icon_name(icon.name);
@@ -93,49 +90,38 @@ for (const [frame_id, frame] of Object.entries(frames.nodes)) {
 			);
 		}
 
-		//? Add duplicate icons to an array
-		if (icon_name_map.has(name)) {
-			duplicates.push([icon.id, name]);
-		}
-
-		icon_name_map.set(name, {
+		base_icons.push({
 			name,
 			id: icon.id,
 			keywords,
 		});
 	}
 
-	//? If duplicates are found log them and exit
-	if (duplicates.length) {
-		console.error(
-			`\n\nERR: Found duplicates in frame (${frame_id}) "${frame.document.name}:`,
-		);
-
-		for (const [id, name] of duplicates) {
-			console.error(`  (${id}) "${name}"`);
-		}
-
-		process.exit(1);
-	}
-
 	console.log(`      Found ${frame.document.children.length} Icons`);
 }
 
-//? Split the icon_name_map into chunks of 100 for downloading svgs
-const icon_chunks = split(
-	[...icon_name_map] as [name: string, icon: BaseIcon][],
-	100,
-);
+const duplicate_icons = base_icons
+	.map((icon) => icon.name)
+	.filter((name, index, base) => base.indexOf(name) != index);
 
-console.log(`\nProcessing ${icon_chunks.length} Icon Chunks`);
+//? If duplicates are found log them and exit
+if (duplicate_icons.length) {
+	console.error(`\n\nERR: Found duplicate icons:`);
+
+	for (const name of duplicate_icons) {
+		console.error(`  "${name}"`);
+	}
+
+	process.exit(1);
+}
 
 //? All icons
 const icons: Icon[] = [];
 
-//? Process each icon chunk
-for (const chunk of icon_chunks) {
+//? Process icons in chunks of 100
+for (const chunk of split(base_icons, 100)) {
 	console.log(`  Processing Icon Chunk`);
-	const ids = chunk.map(([, id]) => id);
+	const ids = chunk.map(({ id }) => id);
 
 	//? Fetch the icon svg urls
 	const { images } = await figma<GETImageResponse>(
@@ -144,12 +130,14 @@ for (const chunk of icon_chunks) {
 
 	//? Run all the icon downloads and formats in parallel
 	await Promise.all(
-		chunk.map(async ([name, base_icon]) => {
+		chunk.map(async (base_icon) => {
 			//? Find the SVG link to download from
 			const link = images[base_icon.id];
 			if (!link) throw new Error(`No link for ${base_icon.id}`);
 
-			console.log(`      Downloading Icon (${base_icon.id}) "${name}"`);
+			console.log(
+				`      Downloading Icon (${base_icon.id}) "${base_icon.name}"`,
+			);
 
 			//? Fetch the svg data from the link
 			const raw_svg = await ofetch(link, { responseType: 'text' });
