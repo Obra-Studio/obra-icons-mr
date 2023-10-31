@@ -1,5 +1,6 @@
 import { KEYWORDS_FILE, KEYWORDS_OVERRIDES_FILE, SVG_OUT_DIR } from './paths';
 import { writeFile, readFile, readdir } from 'fs/promises';
+import { FILE_WARNING } from './utils';
 import { basename } from 'path';
 import OpenAI from 'openai';
 
@@ -120,7 +121,8 @@ console.log('Writing keywords');
 const keywords_json = JSON.stringify(keywords_object, null, 2);
 
 //? The keywords ts file template
-const template = `// prettier-ignore
+const template = `//${FILE_WARNING}
+// prettier-ignore
 export default ${keywords_json};
 `;
 

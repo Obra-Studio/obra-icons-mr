@@ -1,6 +1,6 @@
 import type { GETImageResponse, GETNodesResponse } from './types.d';
+import { FILE_WARNING, icon_name_to_pascal } from './utils';
 import { writeFile, mkdir, rm } from 'node:fs/promises';
-import { icon_name_to_pascal } from './utils';
 import * as prettier from 'prettier';
 import { ofetch } from 'ofetch';
 import split from 'just-split';
@@ -200,11 +200,11 @@ icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
 
 //? Generate the svelte component from an svg
 
-const svelte_template = (
-	svgSvelte: string,
-) => `<svelte:options namespace="svg" />
+const svelte_template = (svgSvelte: string) => `<!-- ${FILE_WARNING} -->
 
-<script>
+<svelte:options namespace="svg" />
+
+<script lang="ts">
   export let size = 24
   export let color = 'currentColor'
   // svelte-ignore unused-export-let
@@ -219,14 +219,15 @@ console.log('\nWriting Icons');
 for (let { svg, svgSvelte, name } of icons) {
 	console.log(`  Writing Icon "${name}"`);
 
-	let svelte_component: string;
-	//? Get the svelte component template
-	svelte_component = svelte_template(svgSvelte);
-
+	const svelte_component = svelte_template(svgSvelte);
 	const pascal_name = icon_name_to_pascal(name);
 
 	//? Write the svg file
-	await writeFile(`${SVG_OUT_DIR}/${name}.svg`, svg, 'utf-8');
+	await writeFile(
+		`${SVG_OUT_DIR}/${name}.svg`,
+		`<!-- ${FILE_WARNING} -->\n\n${svg}`,
+		'utf-8',
+	);
 
 	//? Write the svelte component
 	await writeFile(
@@ -245,16 +246,25 @@ const export_statements = icons.map(({ name }) => {
 });
 
 //? Write out the ts file
-await writeFile(EXPORTS_FILE, `${export_statements.join('\n')}\n`, 'utf-8');
+await writeFile(
+	EXPORTS_FILE,
+	`//${FILE_WARNING}\n${export_statements.join('\n')}\n`,
+	'utf-8',
+);
 
 //? Write the icon count
-await writeFile(ICON_COUNT_FILE, `export default ${icons.length};\n`, 'utf-8');
+await writeFile(
+	ICON_COUNT_FILE,
+	`//${FILE_WARNING}\nexport default ${icons.length};\n`,
+	'utf-8',
+);
 
-const keywords_overrides = Object.fromEntries(
-	icons
+const keywords_overrides = Object.fromEntries([
+	['//', FILE_WARNING],
+	...icons
 		.filter((icon) => icon.keywords?.length)
 		.map(({ name, keywords }) => [name, keywords]),
-);
+]);
 
 //? Write out the keywords overrides
 await writeFile(
