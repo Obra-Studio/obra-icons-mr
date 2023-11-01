@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-incomplete-triangle"
-			d="M9.19983 6L3.19983 12L9.19983 18"
+			d="M9.1998 6L3.1998 12L9.1998 18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

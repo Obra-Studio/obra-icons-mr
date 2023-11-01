@@ -29,7 +29,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M14.5 18.5C14.5 19.8807 13.3807 21 12 21C10.6192 21 9.49995 19.8807 9.49995 18.5"
+			d="M14.4999 18.5C14.4999 19.8807 13.3807 21 11.9999 21C10.6192 21 9.49994 19.8807 9.49994 18.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -38,7 +38,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M13 4C13 3.44772 12.5522 3 12 3C11.4477 3 11 3.44772 11 4"
+			d="M12.9999 4C12.9999 3.44772 12.5522 3 11.9999 3C11.4477 3 10.9999 3.44772 10.9999 4"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

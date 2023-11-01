@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M11.9999 16.7122L11.9999 10.6733"
+			d="M12 16.7122L11.9999 10.6733"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

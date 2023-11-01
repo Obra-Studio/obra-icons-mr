@@ -20,7 +20,7 @@
 	<g class="oi-edit">
 		<path
 			class="oi-vector"
-			d="M4 20V16L17 3L21 7L8 20H4Z"
+			d="M4.00001 20V16L17 3L21 7L8.00001 20H4.00001Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

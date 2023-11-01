@@ -20,7 +20,7 @@
 	<g class="oi-fullscreen">
 		<path
 			class="oi-vector"
-			d="M4.5213 19.2L10.2 13.8M4.5213 19.2H8.76394M4.5213 19.2L4.5213 14.9573"
+			d="M4.52129 19.2L10.2 13.8M4.52129 19.2H8.76393M4.52129 19.2L4.52129 14.9573"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

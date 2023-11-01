@@ -36,7 +36,7 @@
 		/>
 		<circle
 			class="oi-ellipse"
-			cx="9.00006"
+			cx="9.00005"
 			cy="18.14"
 			r="2"
 			stroke={color}
@@ -46,7 +46,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M5 11.9714L13.2 11.9369"
+			d="M5.00001 11.9714L13.2 11.9369"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -62,7 +62,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M5 6.00012L6.1995 5.96562"
+			d="M5.00001 6.00012L6.19951 5.96562"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -78,7 +78,7 @@
 		/>
 		<circle
 			class="oi-ellipse"
-			cx="9"
+			cx="9.00002"
 			cy="6"
 			r="2"
 			stroke={color}
