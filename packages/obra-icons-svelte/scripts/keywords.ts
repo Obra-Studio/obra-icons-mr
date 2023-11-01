@@ -45,11 +45,11 @@ await Promise.all(
 			messages: [
 				//? The prompt
 				{ role: 'system', content: 'The user will give you an icon name, please provide no more than 6 synonyms. Each synonym should be a simple plain english word, that a user might give when searching for the icon.' },
-		
+
 				//? Example
 				{ role: 'user', content: 'clock' },
 				{ role: 'assistant', content: 'time\nwatch\nalarm\nstopwatch' },
-		
+
 				//? Example 2
 				{ role: 'user', content: 'user-add' },
 				{ role: 'assistant', content: 'person\nprofile\ncustomer\naccount\nplus\ncreate' },
@@ -93,7 +93,7 @@ for (const [name, keywords] of name_keywords) {
 
 	if (overrides[name]) {
 		//? Add the keyword overrides
-		keywords.push(...overrides[name]);
+		keywords.unshift(...overrides[name]);
 	}
 
 	if (name.includes('-')) {
