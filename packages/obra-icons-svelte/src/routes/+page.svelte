@@ -24,6 +24,11 @@
 							<span>Explore {iconsCount} icons for free</span>
 							<IconArrowRight />
 						</a>
+						<a class="button inverse" href="https://www.figma.com/community/file/1300974614896814660/obra-icons-free-1-6-0">
+							<IconFigma />
+							<span>Free file on Figma community</span>
+							<IconArrowRight />
+						</a>
 						<a class="button inverse" href="https://www.figma.com/community/file/1297284985156926365">
 							<IconFigma />
 							<span>Buy on Figma community</span>
