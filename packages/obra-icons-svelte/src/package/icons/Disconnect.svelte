@@ -19,8 +19,8 @@
 >
 	<g class="oi-disconnect">
 		<path
-			class="oi-vector"
-			d="M13.25 16.75L11 19C9.34314 20.6568 6.65685 20.6568 5 19C3.34314 17.3431 3.34314 14.6568 4.99999 13L7.24999 10.75M16.75 13.25L19 11C20.6568 9.34311 20.6568 6.65682 19 4.99996C17.3431 3.34311 14.6568 3.34311 13 4.99997L10.75 7.24997"
+			class="oi-line"
+			d="M8 13L10 11"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -29,49 +29,46 @@
 		/>
 		<path
 			class="oi-line"
-			d="M6 6L4 4"
+			d="M11 16L13 14"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M20 20L18 18"
+			d="M3 21L5.5 18.5"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M5 8.5H3"
+			d="M18.5 5.5L21 3"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
-			d="M21 15.5H19"
+			class="oi-vector"
+			d="M12 7L13.5 5.5C14.8807 4.11929 17.1193 4.11929 18.5 5.5V5.5C19.8807 6.88071 19.8807 9.11929 18.5 10.5L17 12L12 7Z"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
-			d="M8.5 5V3"
+			class="oi-vector"
+			d="M5.5 18.5C4.11929 17.1193 4.11929 14.8807 5.5 13.5L7 12L12 17L10.5 18.5C9.11929 19.8807 6.88071 19.8807 5.5 18.5V18.5Z"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-line"
-			d="M15.5 21V19"
-			stroke={color}
-			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>

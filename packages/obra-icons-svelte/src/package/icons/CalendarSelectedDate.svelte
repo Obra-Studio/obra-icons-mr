@@ -17,37 +17,10 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-car-alt-3">
-		<rect
+	<g class="oi-calendar-selected-date">
+		<path
 			class="oi-vector"
-			x="4"
-			y="11"
-			width="16"
-			height="7"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<rect
-			class="oi-vector"
-			x="5"
-			y="18"
-			width="1"
-			height="2"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<rect
-			class="oi-vector"
-			x="18"
-			y="18"
-			width="1"
-			height="2"
+			d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V6Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -55,27 +28,37 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-vector"
-			d="M20 11L18.2279 5.68377C18.0918 5.27543 17.7097 5 17.2792 5H6.72076C6.29033 5 5.90819 5.27543 5.77208 5.68377L4 11H20Z"
+			class="oi-line"
+			d="M9 7L9 3"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-medium-dot"
-			d="M8 14.5H8.012"
+			class="oi-line"
+			d="M3.99994 10L19.9999 10"
 			stroke={color}
-			stroke-width={strokeWidth*1.5}
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-medium-dot"
-			d="M16 14.5H16.012"
+			class="oi-line"
+			d="M15 7L15 3"
 			stroke={color}
-			stroke-width={strokeWidth*1.5}
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<rect
+			class="oi-square"
+			x="8.5"
+			y="14.5"
+			width="0.1"
+			height="0.1"
+			stroke={color}
+			stroke-width={strokeWidth*2}
 		/>
 	</g>
 </svg>

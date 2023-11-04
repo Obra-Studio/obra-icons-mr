@@ -18,17 +18,36 @@
 	class="obra-icon"
 >
 	<g class="oi-car-alt">
-		<path
-			class="oi-line"
-			d="M11 11L11 6"
+		<rect
+			class="oi-vector"
+			x="4"
+			y="11"
+			width="16"
+			height="7"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
-		<path
+		<rect
 			class="oi-vector"
-			d="M9 16H14M5 16H3V13C3 11.8954 3.89543 11 5 11H19C20.1046 11 21 11.8954 21 13V16H18"
+			x="5"
+			y="18"
+			width="1"
+			height="2"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<rect
+			class="oi-vector"
+			x="18"
+			y="18"
+			width="1"
+			height="2"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -37,28 +56,26 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M17 11L15.5029 7.25722C15.1992 6.4979 14.4637 6 13.6459 6H8.35407C7.53626 6 6.80084 6.4979 6.49711 7.25722L5 11H17Z"
+			d="M20 11L18.2279 5.68377C18.0918 5.27543 17.7097 5 17.2792 5H6.72076C6.29033 5 5.90819 5.27543 5.77208 5.68377L4 11H20Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
-		<circle
-			class="oi-ellipse"
-			cx="7"
-			cy="16"
-			r="2"
+		<path
+			class="oi-medium-dot"
+			d="M8 14.5H8.012"
 			stroke={color}
-			stroke-width={strokeWidth}
+			stroke-width={strokeWidth*1.5}
+			stroke-linecap="round"
 		/>
-		<circle
-			class="oi-ellipse"
-			cx="16"
-			cy="16"
-			r="2"
+		<path
+			class="oi-medium-dot"
+			d="M16 14.5H16.012"
 			stroke={color}
-			stroke-width={strokeWidth}
+			stroke-width={strokeWidth*1.5}
+			stroke-linecap="round"
 		/>
 	</g>
 </svg>

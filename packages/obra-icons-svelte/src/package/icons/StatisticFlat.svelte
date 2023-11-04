@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M7 12H17.8203"
+			d="M7 12L19 12"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

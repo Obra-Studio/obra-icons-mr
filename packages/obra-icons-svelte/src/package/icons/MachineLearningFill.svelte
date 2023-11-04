@@ -34,14 +34,14 @@
 		/>
 		<path
 			class="oi-line"
-			d="M7.66669 18.6666V21"
+			d="M7.66667 18.6666V21"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-line"
-			d="M5.33331 16.3334H2.99998"
+			d="M5.33333 16.3334H3"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -55,7 +55,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M5.33331 11.6666H2.99998"
+			d="M5.33333 11.6666H3"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -69,7 +69,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M7.66669 7V9.33333"
+			d="M7.66667 7V9.33333"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

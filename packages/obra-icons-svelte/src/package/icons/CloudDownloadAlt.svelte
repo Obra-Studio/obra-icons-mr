@@ -20,7 +20,7 @@
 	<g class="oi-cloud-download-alt">
 		<path
 			class="oi-incomplete-triangle"
-			d="M8.0004 17L12.0004 21L16.0004 17"
+			d="M8.00037 17L12.0004 21L16.0004 17"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

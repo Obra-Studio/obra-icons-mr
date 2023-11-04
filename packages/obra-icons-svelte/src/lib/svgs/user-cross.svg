@@ -34,10 +34,11 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M3 21V19C3 16.7909 4.79086 15 7 15H15"
+			d="M3 21V19C3 16.7909 4.79086 15 7 15H14"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

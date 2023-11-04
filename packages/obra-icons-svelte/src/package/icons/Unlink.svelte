@@ -17,44 +17,63 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-shopping-cart-cross">
-		<path
-			class="oi-line"
-			d="M21.1213 3L16.8787 7.24264"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-line"
-			d="M21.1213 7.24264L16.8787 3"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-medium-dot"
-			d="M10 20H10.012"
-			stroke={color}
-			stroke-width={strokeWidth*1.5}
-			stroke-linecap="round"
-		/>
+	<g class="oi-unlink">
 		<path
 			class="oi-vector"
-			d="M1.99963 2H5.99963L8.67963 14.39C8.77108 14.8504 9.02154 15.264 9.38718 15.5583C9.75282 15.8526 10.2103 16.009 10.6796 16H18.3996C18.8689 16.009 19.3265 15.8526 19.6921 15.5583C20.0577 15.264 20.3082 14.8504 20.3996 14.39M7.08115 7H12"
+			d="M13.25 16.75L11 19C9.34317 20.6568 6.65688 20.6568 5.00003 19C3.34317 17.3431 3.34317 14.6568 5.00003 13L7.25002 10.75M16.75 13.25L19 11C20.6569 9.34311 20.6569 6.65682 19 4.99996C17.3432 3.34311 14.6569 3.34311 13 4.99997L10.75 7.24997"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M6 6L4 4"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-medium-dot"
-			d="M18.4902 20.0264H18.5022"
+			class="oi-line"
+			d="M20 20L18 18"
 			stroke={color}
-			stroke-width={strokeWidth*1.5}
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M5 8.5H3"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M21 15.5H19"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M8.5 5V3"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M15.5 21V19"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

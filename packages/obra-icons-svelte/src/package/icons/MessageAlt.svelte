@@ -29,21 +29,21 @@
 		/>
 		<path
 			class="oi-medium-dot"
-			d="M16 12H16.012"
+			d="M16 11.5H16.012"
 			stroke={color}
 			stroke-width={strokeWidth*1.5}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-medium-dot"
-			d="M12 12H12.012"
+			d="M12 11.5H12.012"
 			stroke={color}
 			stroke-width={strokeWidth*1.5}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-medium-dot"
-			d="M8 12H8.012"
+			d="M8 11.5H8.012"
 			stroke={color}
 			stroke-width={strokeWidth*1.5}
 			stroke-linecap="round"

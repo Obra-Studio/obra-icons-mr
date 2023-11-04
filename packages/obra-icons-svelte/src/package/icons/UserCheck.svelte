@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M15.8787 19.0923L17.8787 21.0923L21.8787 17.0923"
+			d="M15 19L17 21L21 17"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -40,6 +40,7 @@
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

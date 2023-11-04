@@ -48,6 +48,7 @@
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

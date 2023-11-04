@@ -35,14 +35,14 @@
 		/>
 		<path
 			class="oi-medium-dot"
-			d="M14 17H14.012"
+			d="M14 17.5H14.012"
 			stroke="black"
 			stroke-width="3"
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-mini-dot"
-			d="M10 16H10.012"
+			d="M10 16.5H10.012"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"

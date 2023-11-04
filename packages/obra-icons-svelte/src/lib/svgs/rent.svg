@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-rent">
+	<g class="oi-rent[mortgage]">
 		<path
 			class="oi-vector"
 			d="M5 9.5V20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20V9.5"

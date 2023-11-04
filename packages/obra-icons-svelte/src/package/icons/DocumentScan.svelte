@@ -17,41 +17,51 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-car-alt-3-fill">
+	<g class="oi-document-scan">
 		<path
-			class="oi-fill"
-			fill-rule="evenodd"
-			clip-rule="evenodd"
-			d="M3 11C3 10.4477 3.44772 10 4 10H20C20.5523 10 21 10.4477 21 11V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V11ZM8 13C7.17157 13 6.5 13.6716 6.5 14.5C6.5 15.3284 7.17157 16 8 16H8.012C8.84043 16 9.512 15.3284 9.512 14.5C9.512 13.6716 8.84043 13 8.012 13H8ZM16 13C15.1716 13 14.5 13.6716 14.5 14.5C14.5 15.3284 15.1716 16 16 16H16.012C16.8404 16 17.512 15.3284 17.512 14.5C17.512 13.6716 16.8404 13 16.012 13H16Z"
-			fill={color}
-		/>
-		<rect
 			class="oi-vector"
-			x="5"
-			y="18"
-			width="1"
-			height="2"
+			d="M3.5 7.5V5.72462C3.5 4.49692 4.49692 3.5 5.72462 3.5H7.5"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M20.5 7.5V5.72462C20.5 4.49692 19.5031 3.5 18.2754 3.5H16.5"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M20.5 16.5V18.2754C20.5 19.5031 19.5031 20.5 18.2754 20.5H16.5"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M3.5 16.5V18.2754C3.5 19.5031 4.49692 20.5 5.72462 20.5H7.5"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-box"
+			d="M8 8C8 7.44772 8.44772 7 9 7H13.1429L16 9.77778V16C16 16.5523 15.5523 17 15 17H9C8.44772 17 8 16.5523 8 16V8Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
-		<rect
-			class="oi-vector"
-			x="18"
-			y="18"
-			width="1"
-			height="2"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
 		<path
 			class="oi-vector"
-			d="M20 11L18.2279 5.68377C18.0918 5.27543 17.7097 5 17.2792 5H6.72076C6.29033 5 5.90819 5.27543 5.77208 5.68377L4 11H20Z"
+			d="M12.5 7V11H16"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

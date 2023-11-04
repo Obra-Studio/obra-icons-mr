@@ -7,18 +7,19 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-shopping">
+	<g class="oi-terminal-alt">
 		<path
-			class="oi-box"
-			d="M7.00003 3H17L20 7H4.00003L7.00003 3Z"
+			class="oi-vector"
+			d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6Z"
 			stroke="black"
 			stroke-width="2"
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
-			d="M4.00003 7H20V20C20 20.5523 19.5523 21 19 21H5.00003C4.44775 21 4.00003 20.5523 4.00003 20V7Z"
+			class="oi-line"
+			d="M13 16H17"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -26,7 +27,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M15.5 11C15.5 12.933 13.933 14.5 12 14.5C10.067 14.5 8.50003 12.933 8.50003 11"
+			d="M7 8L11 12L7 16"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"

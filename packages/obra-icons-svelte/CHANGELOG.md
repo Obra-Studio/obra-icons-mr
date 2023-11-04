@@ -3,13 +3,17 @@ Changelog Obra Icons
 
 We use semantic versioning (semver)
 
+## 1.9
+
+Added more icons
+
 ## 1.8
 
-Added more icons, like family, apps and damages and copyright & registered trademark. Also a simplified university hat for the concept of education.
+Added more icons
 
 ## 1.7
 
-Added alternate vehicle icons.
+Added more icons
 
 ## 1.6
 

@@ -7,62 +7,67 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-car-alt-3">
-		<rect
-			class="oi-vector"
-			x="4"
-			y="11"
-			width="16"
-			height="7"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<rect
-			class="oi-vector"
-			x="5"
-			y="18"
-			width="1"
-			height="2"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<rect
-			class="oi-vector"
-			x="18"
-			y="18"
-			width="1"
-			height="2"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
+	<g class="oi-robot">
 		<path
-			class="oi-vector"
-			d="M20 11L18.2279 5.68377C18.0918 5.27543 17.7097 5 17.2792 5H6.72076C6.29033 5 5.90819 5.27543 5.77208 5.68377L4 11H20Z"
+			class="oi-line"
+			d="M12 3.5V7"
 			stroke="black"
 			stroke-width="2"
-			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-medium-dot"
-			d="M8 14.5H8.012"
+			d="M12 3.5H12.012"
+			stroke="black"
+			stroke-width="3"
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M4 9C4 7.89543 4.89543 7 6 7H18C19.1046 7 20 7.89543 20 9V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V9Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M3 12H4V16H3V12Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M20 12H21V16H20V12Z"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M9 17L15 17"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-medium-dot"
+			d="M9 12H9.012"
 			stroke="black"
 			stroke-width="3"
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-medium-dot"
-			d="M16 14.5H16.012"
+			d="M15 12H15.012"
 			stroke="black"
 			stroke-width="3"
 			stroke-linecap="round"

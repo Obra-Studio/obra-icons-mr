@@ -20,7 +20,7 @@
 	<g class="oi-yuan">
 		<path
 			class="oi-line"
-			d="M7.45839 12.144H16.7392"
+			d="M7.4584 12.144H16.7392"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

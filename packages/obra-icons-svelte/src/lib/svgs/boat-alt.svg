@@ -36,18 +36,20 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
+			class="oi-vector"
 			d="M21 17C17 17 16 14 16 14C16 14 15 17 12 17C9 17 8 14 8 14C8 14 7 17 3 17"
 			stroke="black"
 			stroke-width="2"
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
+			class="oi-vector"
 			d="M21 21C17 21 16 19 16 19C16 19 15 21 12 21C9 21 8 19 8 19C8 19 7 21 3 21"
 			stroke="black"
 			stroke-width="2"
+			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>

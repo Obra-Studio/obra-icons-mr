@@ -35,11 +35,22 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-fill"
-			fill-rule="evenodd"
-			clip-rule="evenodd"
-			d="M14 4H8C6.89543 4 6 4.89543 6 6V11H8V6L14 6V4ZM18 10H20V16C20 17.1046 19.1046 18 18 18H14V16H18L18 10Z"
-			fill="black"
+			class="oi-vector"
+			d="M7 10.5V6C7 5.44772 7.44772 5 8 5H13"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M19 11L19 16C19 16.5523 18.5523 17 18 17L14.5 17"
+			stroke="black"
+			stroke-width="2"
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

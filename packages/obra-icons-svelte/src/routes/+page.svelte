@@ -108,7 +108,7 @@
 					</li>
 					<li>
 						<div class="content">
-							<h3>Over 600 icons</h3>
+							<h3>Over 750 icons</h3>
 							<p>
 								The icon set contains many icons, so you won’t
 								run into the situation where you can’t find the

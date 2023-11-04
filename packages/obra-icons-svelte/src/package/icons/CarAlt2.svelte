@@ -20,7 +20,7 @@
 	<g class="oi-car-alt-2">
 		<path
 			class="oi-line"
-			d="M9.5 11L9.5 6"
+			d="M11 11L11 6"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M9 16H14M5 16H3V11H19C20.1046 11 21 11.8954 21 13V16H18"
+			d="M9 16H14M5 16H3V13C3 11.8954 3.89543 11 5 11H19C20.1046 11 21 11.8954 21 13V16H18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -37,7 +37,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M16 11L15.3216 7.60777C15.1346 6.67292 14.3138 6 13.3604 6H5.63961C4.68625 6 3.86542 6.67292 3.67845 7.60777L3 11H16Z"
+			d="M17 11L15.5029 7.25722C15.1992 6.4979 14.4637 6 13.6459 6H8.35407C7.53626 6 6.80084 6.4979 6.49711 7.25722L5 11H17Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

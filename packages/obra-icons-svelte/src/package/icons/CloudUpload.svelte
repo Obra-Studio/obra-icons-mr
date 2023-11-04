@@ -29,7 +29,7 @@
 		/>
 		<path
 			class="oi-incomplete-triangle"
-			d="M9.99998 12L12 10L14 12"
+			d="M10 12L12 10L14 12"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
