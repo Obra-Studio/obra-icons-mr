@@ -409,6 +409,8 @@ code {
 
 .input-with-icon svg {
     opacity: 0.5;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .input-with-icon:has(input:focus) svg {
