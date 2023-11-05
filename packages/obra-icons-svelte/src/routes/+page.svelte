@@ -165,9 +165,9 @@
 					<h2>Buy the Figma source file</h2>
 					<p>Buy the source file for direct import into Figma.</p>
 					<p>
-						This file contains the original vectors of the 750+ icons, with its icons categorized into different categories. Use this source file to extend or customize the set to your needs.
+						This file contains the original vectors of the 750+ icons, with its icons categorized into different categories. Use it to extend or customize the set to your needs.
 					</p>
-					<p>The advantage of buying directly (via SendOwl) is that you can get notified of future updates. You can also receive a professional VAT invoice.</p>
+					<p>There are 2 options: buying via Figma or buying direct. The advantage of buying direct is that you can get notified of future updates. You can also receive a professional VAT invoice.</p>
 					<div class="button-group">
 						<a class="button" href="https://sowl.co/s/bdgsNv">
 							<span>Buy the file directly</span>
@@ -190,7 +190,6 @@
 						>.
 						</p>
 					</div>
-
 
 				</div>
 			</div>
