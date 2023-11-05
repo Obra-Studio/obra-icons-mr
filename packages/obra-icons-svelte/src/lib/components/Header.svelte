@@ -7,37 +7,38 @@
 	<div class="is-dark">
 		<div class="bg-black">
 			<div class="container padding-medium margin-0-auto is-dark">
-				<div
-					class="flex justify-content-space-between align-items-center gap-medium"
-				>
-					<div class="flex align-items-center gap-large">
-						<h1 class="logo">
-							<a href="./">
-								<img src="/logo-obra.svg" alt="Obra" />
-								<span> Icons</span>
-							</a>
-						</h1>
 
-						<nav>
-							<ul class="flex align-items-center gap-small">
-								<li>
-									<NavItem
-										href="/"
-										active={$page.url.pathname === '/'}
-										>Home</NavItem
-									>
-								</li>
-								<li>
-									<NavItem
-										active={$page.url.pathname.startsWith(
-											'/icons',
-										)}
-										href="/icons">Icons</NavItem
-									>
-								</li>
-							</ul>
-						</nav>
-					</div>
+					<div class="flex justify-content-space-between align-items-center gap-large">
+
+						<div class="flex align-items-center gap-large">
+							<h1 class="logo">
+								<a href="./">
+									<img src="/logo-obra.svg" alt="Obra" />
+									<span> Icons</span>
+								</a>
+							</h1>
+
+							<nav>
+								<ul class="flex align-items-center gap-small">
+									<li>
+										<NavItem
+											href="/"
+											active={$page.url.pathname === '/'}
+											>Home</NavItem
+										>
+									</li>
+									<li>
+										<NavItem
+											active={$page.url.pathname.startsWith(
+												'/icons',
+											)}
+											href="/icons">Explore icons</NavItem
+										>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<p>1.10.0</p>
 
 
 				</div>

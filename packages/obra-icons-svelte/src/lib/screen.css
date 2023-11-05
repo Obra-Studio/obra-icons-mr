@@ -358,8 +358,16 @@ code {
     text-wrap: balance;
 }
 
-.hero .button-group {
-    display: grid;
+@media (max-width: 960px) {
+    .hero .button-group {
+        display: grid;
+    }
+}
+
+.hero .preview {
+    margin-bottom: var(--spacing-large);
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Responsive utilities

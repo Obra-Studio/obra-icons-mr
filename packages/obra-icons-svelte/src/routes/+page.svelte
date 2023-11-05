@@ -1,6 +1,7 @@
 <script>
 	import { IconArrowRight } from '$package';
 	import IconFigma from '$lib/components/icons/FigmaIcon.svelte';
+	import Preview from "$lib/components/Preview.svelte";
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
 	import iconsCount from '$lib/count';
 </script>
@@ -14,6 +15,7 @@
 		<div class="container padding-medium margin-0-auto">
 			<div class="vertical-container-xxx-large">
 				<div class="hero">
+					<Preview />
 					<h2 class="text-align-center">
 						A simple, consistent set of icons, perfect for user
 						interfaces.
@@ -26,19 +28,19 @@
 						</a>
 						<a class="button inverse" href="https://www.figma.com/community/file/1300974614896814660/obra-icons-free-1-6-0">
 							<IconFigma />
-							<span>Free file on Figma community</span>
+							<span>Free version</span>
 							<IconArrowRight />
 						</a>
 						<a class="button inverse" href="https://www.figma.com/community/file/1297284985156926365">
 							<IconFigma />
-							<span>Buy on Figma community</span>
+							<span>Buy via Figma</span>
 							<IconArrowRight />
 						</a>
 						<a
 							class="button inverse"
 							href="https://sowl.co/s/bdgsNv"
 						>
-							<span>Buy the source file directly</span>
+							<span>Buy direct</span>
 							<IconArrowRight />
 						</a>
 
@@ -49,7 +51,7 @@
 							<span class="icon-fill-wrapper">
 								<GithubIcon />
 							</span>
-							<span>Free svelte package (MIT licensed)</span>
+							<span>Free Svelte package (MIT)</span>
 							<IconArrowRight />
 						</a>
 
