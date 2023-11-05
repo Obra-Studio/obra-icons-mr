@@ -98,11 +98,8 @@
 						<div class="content">
 							<h3>Multiple weights and sizes</h3>
 							<p>
-								Obra Icons supports multiple stroke weights (1,
-								1.5 and 2px) and sizes (24 and 32px). We offer
-								the ability to set specific weights to exactly
-								match the weight of your font uses, for perfect
-								visual consistency.
+								Obra Icons are drawn at 2px stroke weight and in a 24x24 frame, and have been designed to work at 3 different stroke weights (1,
+								1.5 and 2px). Since the icons are vector-based and use specific line and vector dot drawing techniques, they also upscale easily to different sizes like 32 and 48px. This makes it easy to use the same icon set for different use cases - from system to illustrative.
 							</p>
 						</div>
 					</li>
