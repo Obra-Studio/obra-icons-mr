@@ -27,7 +27,7 @@
 		/>
 		<path
 			class="oi-mini-dot"
-			d="M7.0293 11.6506H7.0393"
+			d="M7.0293 11.6507H7.0393"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

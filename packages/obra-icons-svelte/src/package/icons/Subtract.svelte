@@ -17,7 +17,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-subtract">
+	<g class="oi-subtract[remove]">
 		<path
 			class="oi-line"
 			d="M17.1 12L5.70001 12"

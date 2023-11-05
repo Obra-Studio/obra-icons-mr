@@ -17,7 +17,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-user-cross">
+	<g class="oi-user-cross[people,person]">
 		<path
 			class="oi-vector"
 			d="M21.1213 16.8787L16.8787 21.1213"

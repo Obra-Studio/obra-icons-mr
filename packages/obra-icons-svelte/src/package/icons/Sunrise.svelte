@@ -38,7 +38,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M18.364 9.63599L17.6569 10.3431"
+			d="M18.364 9.63605L17.6569 10.3432"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

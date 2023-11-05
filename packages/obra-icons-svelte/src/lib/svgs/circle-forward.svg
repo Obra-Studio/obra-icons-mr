@@ -18,7 +18,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M16 10L11 10C9.34315 10 8 11.3431 8 13V13C8 14.6569 9.34315 16 11 16L12 16"
+			d="M16 10L11 10C9.34315 10 8 11.3431 8 13C8 14.6569 9.34315 16 11 16H12"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"

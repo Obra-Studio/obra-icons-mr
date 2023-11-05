@@ -20,7 +20,7 @@
 	<g class="oi-log-out">
 		<path
 			class="oi-line"
-			d="M21 12H9"
+			d="M21 12H9.00001"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

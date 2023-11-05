@@ -20,7 +20,7 @@
 	<g class="oi-compass-tool">
 		<path
 			class="oi-vector"
-			d="M6 22L11.344 7.75M18 22L12.656 7.75"
+			d="M6 22L11.2961 7.86615M18 22L12.6982 7.86615"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

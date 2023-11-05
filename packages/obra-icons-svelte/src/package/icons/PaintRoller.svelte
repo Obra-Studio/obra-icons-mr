@@ -20,7 +20,7 @@
 	<g class="oi-paint-roller">
 		<path
 			class="oi-vector"
-			d="M19 6V6C20.1046 6 21 6.89543 21 8V10C21 11.1046 20.1046 12 19 12H14C12.8954 12 12 12.8954 12 14V14"
+			d="M19 6V6C20.1046 6 21 6.89543 21 8V10C21 11.1046 20.1046 12 19 12H14C12.8954 12 12 12.8954 12 14V15"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

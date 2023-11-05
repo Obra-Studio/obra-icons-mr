@@ -27,5 +27,36 @@
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
+		<path
+			class="oi-medium-dot"
+			d="M12 17H12.012"
+			stroke={color}
+			stroke-width={strokeWidth*1.5}
+			stroke-linecap="round"
+		/>
+		<path
+			class="oi-line"
+			d="M19 5H17"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M19 8H17"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-line"
+			d="M19 11H17"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
 	</g>
 </svg>

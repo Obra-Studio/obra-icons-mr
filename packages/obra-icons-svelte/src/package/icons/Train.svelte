@@ -35,15 +35,6 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
-			d="M15.4689 3H8.53113C6.51384 3 4.81223 4.50215 4.56202 6.50386L3.56202 14.5039C3.26359 16.8913 5.12514 19 7.53113 19H16.4689C18.8749 19 20.7364 16.8913 20.438 14.5039L19.438 6.50386C19.1878 4.50215 17.4862 3 15.4689 3Z"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
 			class="oi-vector"
 			d="M4.51547 8C6.12998 10.412 8.87954 12.0001 12 12.0001C15.1205 12.0001 17.87 10.412 19.4845 8"
 			stroke={color}

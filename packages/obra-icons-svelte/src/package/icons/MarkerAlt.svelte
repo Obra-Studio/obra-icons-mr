@@ -20,7 +20,7 @@
 	<g class="oi-marker-alt">
 		<path
 			class="oi-vector"
-			d="M6.00001 11L17 3L21 7L13 18L6.00001 11Z"
+			d="M6 11L17 3L21 7L13 18L6 11Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

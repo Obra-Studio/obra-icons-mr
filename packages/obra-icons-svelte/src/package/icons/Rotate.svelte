@@ -29,7 +29,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M14.5 5.44336L17.5 5.44336C19.7091 5.44336 21.5 7.23422 21.5 9.44336"
+			d="M13 5.44336L17.5 5.44336C19.7091 5.44336 21.5 7.23422 21.5 9.44336"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

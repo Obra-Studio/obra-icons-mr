@@ -36,11 +36,15 @@
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
+		<path class="oi-fill" d="M14.5 13L17 13L17 10.5L14.5 13Z" fill={color} />
+		<path class="oi-fill" d="M7.5 13L5 13L5 10.5L7.5 13Z" fill={color} />
+		<path class="oi-fill" d="M14.5 7L17 7L17 9.5L14.5 7Z" fill={color} />
+		<path class="oi-fill" d="M7.5 7L5 7L5 9.5L7.5 7Z" fill={color} />
 		<circle
 			class="oi-ellipse"
 			cx="11"
 			cy="10"
-			r="2"
+			r="1.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

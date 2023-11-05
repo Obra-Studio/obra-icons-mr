@@ -20,7 +20,7 @@
 	<g class="oi-arrow-leave-down">
 		<path
 			class="oi-line"
-			d="M12 8L12 20"
+			d="M12 8L12 21"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

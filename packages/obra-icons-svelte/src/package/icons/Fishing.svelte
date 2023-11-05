@@ -17,10 +17,10 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-fishing">
+	<g class="oi-fishing[phishing]">
 		<path
 			class="oi-vector"
-			d="M16 3V7M10 15L7 12V16.5C7 18.9853 9.01472 21 11.5 21V21C13.9853 21 16 18.9853 16 16.5V11"
+			d="M10 15L7 12V16.5C7 18.9853 9.01472 21 11.5 21C13.9853 21 16 18.9853 16 16.5V11M16 7V3"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

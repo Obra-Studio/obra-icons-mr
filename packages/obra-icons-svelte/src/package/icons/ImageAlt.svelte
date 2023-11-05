@@ -34,7 +34,7 @@
 		/>
 		<path
 			class="oi-mini-dot"
-			d="M16.0671 8.14502H16.0791"
+			d="M16.0671 8.14514H16.0791"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

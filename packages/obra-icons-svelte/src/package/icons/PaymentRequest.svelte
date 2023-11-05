@@ -27,6 +27,10 @@
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
+		<path class="oi-fill" d="M5 7.5V5H7.5L5 7.5Z" fill={color} />
+		<path class="oi-fill" d="M19 7.5V5H16.5L19 7.5Z" fill={color} />
+		<path class="oi-fill" d="M7.5 13L5 13L5 10.5L7.5 13Z" fill={color} />
+		<path class="oi-fill" d="M16.5 13L19 13L19 10.5L16.5 13Z" fill={color} />
 		<circle
 			class="oi-ellipse"
 			cx="12"

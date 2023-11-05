@@ -20,7 +20,7 @@
 	<g class="oi-arrow-leave-right[sign-out]">
 		<path
 			class="oi-line"
-			d="M8 12H20"
+			d="M8 12H20.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
