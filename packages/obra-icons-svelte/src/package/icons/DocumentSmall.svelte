@@ -26,14 +26,14 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M14.4 13.2H9.59999"
+			d="M14.4 13.2H9.60002"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-vector"
-			d="M14.4 16.8H9.59999"
+			d="M14.4 16.8H9.60002"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

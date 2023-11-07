@@ -20,7 +20,7 @@
 	<g class="oi-key-alt">
 		<path
 			class="oi-line"
-			d="M4.00002 4L12.5 12.5"
+			d="M4.00001 4L12.5 12.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

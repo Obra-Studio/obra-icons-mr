@@ -18,29 +18,23 @@
 	class="obra-icon"
 >
 	<g class="oi-mention[at]">
-		<path
-			class="oi-vector"
-			d="M12 15.5999C13.9882 15.5999 15.6 13.9881 15.6 11.9999C15.6 10.0117 13.9882 8.3999 12 8.3999C10.0118 8.3999 8.39999 10.0117 8.39999 11.9999C8.39999 13.9881 10.0118 15.5999 12 15.5999Z"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-vector"
-			d="M21 12C21 7.0293 16.9707 3 12 3C7.0293 3 3 7.0293 3 12C3 16.9707 7.0293 21 12 21C14.0268 21 15.897 20.3304 17.4009 19.2"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-vector"
-			d="M15.6 8.3999V11.9999C15.6 12.8999 16.14 14.6999 18.3 14.6999C20.46 14.6999 21 12.8999 21 11.9999"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
+		<g id="Group 2">
+			<path
+				class="Vector"
+				d="M15.231 12.0001C15.0023 14.608 13.1922 16.091 11.1376 16.091C9.08299 16.091 7.71546 14.2593 7.91315 12.0001C8.11083 9.74088 9.79953 7.90918 11.8541 7.90918C13.9087 7.90918 15.4282 9.75009 15.231 12.0001Z"
+				stroke={color}
+				stroke-width={strokeWidth}
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+			<path
+				class="Vector"
+				d="M15.2196 20.2585C13.7682 20.8722 12.8169 21 11.1907 21C6.2511 21 2.60233 16.9705 3.0348 12C3.46726 7.02955 7.8275 3 12.7671 3C18.3312 3 21.39 6.66801 20.96 11.5771C20.6394 15.242 18.3119 16.298 17.0932 16.0807C15.9468 15.8761 15.0005 14.8319 15.1754 12.8335L15.6063 7.91165"
+				stroke={color}
+				stroke-width={strokeWidth}
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</g>
 	</g>
 </svg>

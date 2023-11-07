@@ -28,7 +28,7 @@ const figma = ofetch.create({
 const FILE_ID = 'jEkeNggsUIB8cAWKRudyP2';
 
 //? You can get the id from figma.currentPage.selection[0].id via console
-const NODE_ID = '412:13404';
+const NODE_ID = '424:14638';
 
 if (!NODE_ID || !NODE_ID.includes(':')) {
 	throw new Error(

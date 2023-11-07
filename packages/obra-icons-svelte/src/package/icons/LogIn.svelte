@@ -20,7 +20,7 @@
 	<g class="oi-log-in">
 		<path
 			class="oi-line"
-			d="M15 12H3.00001"
+			d="M15 12H3.00002"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
