@@ -76,8 +76,13 @@
 
 <style>
 	.icon {
-		width: 24px;
-		height: 24px;
+		width: 36px;
+		height: 36px;
+	}
+
+	.icon :global(svg) {
+		width: 100%;
+		height: 100%;
 	}
 
 	.icon-name {
@@ -99,18 +104,6 @@
 		padding: 1.5rem;
 		text-align: center;
 		border-radius: 3px;
-	}
-
-	.icon-item :global(.oi-dot) {
-		stroke-width: 4px;
-	}
-
-	.icon-item :global(.oi-medium-dot) {
-		stroke-width: 3px;
-	}
-
-	.icon-item :global(.oi-mini-dot) {
-		stroke-width: 2px;
 	}
 
 	@media (prefers-color-scheme: dark) {
