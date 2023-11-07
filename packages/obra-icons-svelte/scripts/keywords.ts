@@ -3,6 +3,7 @@ import { writeFile, readFile, readdir } from 'fs/promises';
 import { FILE_WARNING } from './utils';
 import { basename } from 'path';
 import OpenAI from 'openai';
+import './types.d';
 
 console.time('generate keywords');
 
@@ -27,11 +28,34 @@ type KeywordTuple = [name: string, keywords: string[]];
 //? Map the keywords icon_name:keywords
 const name_keywords: KeywordTuple[] = [];
 
+//? Try and load old keywords to prevent regenerating them
+try {
+	const keywords_data = await import(KEYWORDS_FILE);
+
+	const existing_keywords: KeywordTuple[] = Object.entries(
+		keywords_data.default,
+	);
+
+	console.log(`Importing ${existing_keywords.length} existing keywords`);
+
+	for (const [name, keywords] of existing_keywords) {
+		console.log(`  Importing keywords for "${name}"`);
+		name_keywords.push([name, keywords]);
+	}
+} catch {
+	console.log('Unable to find existing keywords file');
+}
+
 let i = 0;
 
 //? Generate the keywords map in parallel
 await Promise.all(
 	icon_names.map(async (nameKebab) => {
+		if (name_keywords.find(([name]) => name == nameKebab)) {
+			console.log(`Skipping "${nameKebab}"`);
+			return;
+		}
+
 		console.log(`  Generating keywords for icon "${nameKebab}"`);
 
 		//? Ask gpt for keywords
