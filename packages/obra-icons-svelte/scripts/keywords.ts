@@ -36,7 +36,7 @@ await Promise.all(
 
 		//? Ask gpt for keywords
 		const completion = await openai.chat.completions.create({
-			model: 'gpt-3.5-turbo',
+			model: 'gpt-3.5-turbo-16k',
 			n: 1,
 			temperature: 0,
 			max_tokens: 50,
