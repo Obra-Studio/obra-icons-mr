@@ -3,15 +3,7 @@ Changelog Obra Icons
 
 We use semantic versioning (semver)
 
-## 1.9
-
-Added more icons
-
-## 1.8
-
-Added more icons
-
-## 1.7
+## 1.7-1.11
 
 Added more icons
 
