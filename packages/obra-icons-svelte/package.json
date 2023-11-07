@@ -12,7 +12,8 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"generate:icons": "vite-node --config 'scripts/vite-node.config.ts' scripts/icons.ts",
-		"generate:keywords": "vite-node --config 'scripts/vite-node.config.ts' scripts/keywords.ts"
+		"generate:keywords": "vite-node --config 'scripts/vite-node.config.ts' scripts/keywords.ts",
+		"generate": "bash scripts/generate.sh"
 	},
 	"exports": {
 		".": {
