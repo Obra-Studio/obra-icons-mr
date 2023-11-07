@@ -1,8 +1,8 @@
 <script>
 	import * as icons from '$package';
 	export let size = '24';
-	export let weight = 1.5;
-	export let color = '#FF0000';
+	export let weight = 2;
+	export let color = '#000000';
 </script>
 
 <svelte:head>
@@ -24,7 +24,7 @@
 			bind:value={size}
 			min="16"
 			step="4"
-			max="96"
+			max="64"
 		/>
 		{size}
 	</div>
@@ -35,7 +35,7 @@
 			id="weight"
 			type="range"
 			bind:value={weight}
-			min=".5"
+			min="1"
 			step=".5"
 			max="2"
 		/>
@@ -75,7 +75,9 @@
 		display: flex;
 		padding: 16px;
 		gap: 24px;
-		background: red;
+		justify-content: center;
+		background: #000;
+		color: #FFF;
 		position: sticky;
 		top: 0;
 	}
