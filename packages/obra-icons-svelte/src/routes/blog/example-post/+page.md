@@ -6,4 +6,4 @@
     }
 </script>
 
-Hello World
+Example content
