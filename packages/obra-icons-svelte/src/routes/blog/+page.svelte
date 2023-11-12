@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { formatDate } from '$lib/blog/utils.js';
+
 	export let data;
 </script>
 
@@ -6,7 +8,7 @@
 	{#each data.posts as post}
 		<li>
 			<a href="/blog/{post.slug}">
-				{post.title}
+				{post.title} - {formatDate(post.date)}
 			</a>
 		</li>
 	{/each}
