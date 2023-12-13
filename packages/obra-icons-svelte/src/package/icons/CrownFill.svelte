@@ -17,11 +17,11 @@
 >
 	<g class="oi-crown-fill">
 		<path
-			class="oi-line"
-			d="M5 20H19"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M4 20C4 19.4477 4.44772 19 5 19H19C19.5523 19 20 19.4477 20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20Z"
+			fill={color}
 		/>
 		<path
 			class="oi-fill"

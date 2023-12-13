@@ -24,22 +24,18 @@
 			fill={color}
 		/>
 		<path
-			class="oi-vector"
-			d="M14.5 18.5C14.5 19.8807 13.3807 21 12 21C10.6192 21 9.49995 19.8807 9.49995 18.5"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M9.49995 17.5C10.0522 17.5 10.5 17.9477 10.5 18.5C10.5 19.3284 11.1715 20 12 20C12.8284 20 13.5 19.3284 13.5 18.5C13.5 17.9477 13.9477 17.5 14.5 17.5C15.0522 17.5 15.5 17.9477 15.5 18.5C15.5 20.433 13.933 22 12 22C10.067 22 8.49995 20.433 8.49995 18.5C8.49995 17.9477 8.94767 17.5 9.49995 17.5Z"
+			fill={color}
 		/>
 		<path
-			class="oi-vector"
-			d="M13 4C13 3.44772 12.5522 3 12 3C11.4477 3 11 3.44772 11 4"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M9.99995 4C9.99995 2.89543 10.8954 2 12 2C13.1045 2 14 2.89543 14 4C14 4.55228 13.5522 5 13 5C12.4477 5 12 4.55228 12 4C12 4.55228 11.5522 5 11 5C10.4477 5 9.99995 4.55228 9.99995 4Z"
+			fill={color}
 		/>
 	</g>
 </svg>

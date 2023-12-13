@@ -9,13 +9,11 @@
 >
 	<g class="oi-leaf-fill">
 		<path
-			class="oi-line"
-			d="M19 19L16 16"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="2.16568"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M15.2929 15.293C15.6834 14.9025 16.3166 14.9025 16.7071 15.293L19.7071 18.293C20.0976 18.6836 20.0976 19.3167 19.7071 19.7073C19.3166 20.0978 18.6834 20.0978 18.2929 19.7073L15.2929 16.7073C14.9024 16.3167 14.9024 15.6836 15.2929 15.293Z"
+			fill="black"
 		/>
 		<path
 			class="oi-fill"

@@ -15,15 +15,13 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-previous-fill" clip-path="url(#clip0_455_10303)">
+	<g class="oi-previous-fill" clip-path="url(#clip0_455_32953)">
 		<path
-			class="oi-vector"
-			d="M6 7V17"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M6 6C6.55228 6 7 6.44772 7 7V17C7 17.5523 6.55228 18 6 18C5.44772 18 5 17.5523 5 17V7C5 6.44772 5.44772 6 6 6Z"
+			fill={color}
 		/>
 		<g class="oi-fill">
 			<path
@@ -37,7 +35,7 @@
 		</g>
 	</g>
 	<defs>
-		<clipPath class="clip0_455_10303">
+		<clipPath class="clip0_455_32953">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

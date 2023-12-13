@@ -17,13 +17,11 @@
 >
 	<g class="oi-pin-fill">
 		<path
-			class="oi-line"
-			d="M12 15V21"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M12 14C12.5523 14 13 14.4477 13 15V21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21V15C11 14.4477 11.4477 14 12 14Z"
+			fill={color}
 		/>
 		<path
 			class="oi-fill"
@@ -31,13 +29,11 @@
 			fill={color}
 		/>
 		<path
-			class="oi-vector"
-			d="M7 3H17"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M6 3C6 2.44772 6.44772 2 7 2H17C17.5523 2 18 2.44772 18 3C18 3.55228 17.5523 4 17 4H7C6.44772 4 6 3.55228 6 3Z"
+			fill={color}
 		/>
 	</g>
 </svg>

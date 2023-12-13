@@ -5,7 +5,6 @@
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
-  export let strokeWidth = 2
 </script>
 
 <svg
@@ -16,7 +15,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-favorite-fill-off">
+	<g class="oi-favorite-off-fill">
 		<path
 			class="oi-fill"
 			fill-rule="evenodd"

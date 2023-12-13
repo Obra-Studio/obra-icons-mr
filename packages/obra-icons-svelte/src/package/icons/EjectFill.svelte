@@ -17,13 +17,11 @@
 >
 	<g class="oi-eject-fill">
 		<path
-			class="oi-vector"
-			d="M7 6L17 6"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M6 6C6 5.44772 6.44772 5 7 5L17 5C17.5523 5 18 5.44771 18 6C18 6.55228 17.5523 7 17 7L7 7C6.44772 7 6 6.55228 6 6Z"
+			fill={color}
 		/>
 		<path
 			class="oi-fill"

@@ -22,12 +22,11 @@
 			fill={color}
 		/>
 		<path
-			class="oi-line"
-			d="M4.99988 21H18.9999"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M3.99988 21C3.99988 20.4477 4.44759 20 4.99988 20H18.9999C19.5522 20 19.9999 20.4477 19.9999 21C19.9999 21.5523 19.5522 22 18.9999 22H4.99988C4.44759 22 3.99988 21.5523 3.99988 21Z"
+			fill={color}
 		/>
 	</g>
 </svg>

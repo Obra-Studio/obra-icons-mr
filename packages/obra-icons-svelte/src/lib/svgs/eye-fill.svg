@@ -16,12 +16,11 @@
 			fill="black"
 		/>
 		<path
-			class="oi-medium-dot"
-			d="M12 11.995L12 12.005"
-			stroke="black"
-			stroke-width="3"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M12 10.495C12.8284 10.495 13.5 11.1643 13.5 11.99L13.5 12C13.5 12.8257 12.8284 13.495 12 13.495C11.1716 13.495 10.5 12.8257 10.5 12L10.5 11.99C10.5 11.1643 11.1716 10.495 12 10.495Z"
+			fill="black"
 		/>
 	</g>
 </svg>

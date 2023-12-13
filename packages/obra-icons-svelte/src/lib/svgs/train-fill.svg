@@ -9,20 +9,18 @@
 >
 	<g class="oi-train-fill">
 		<path
-			class="oi-line"
-			d="M6 19L5 21"
-			stroke="black"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M6.44722 18.1055C6.9412 18.3525 7.14142 18.9532 6.89443 19.4472L5.89443 21.4472C5.64744 21.9412 5.04677 22.1414 4.55279 21.8944C4.05881 21.6474 3.85859 21.0467 4.10558 20.5528L5.10558 18.5528C5.35257 18.0588 5.95324 17.8586 6.44722 18.1055Z"
+			fill="black"
 		/>
 		<path
-			class="oi-line"
-			d="M18 19L19 21"
-			stroke="black"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M17.5528 18.1055C17.0588 18.3525 16.8586 18.9532 17.1056 19.4472L18.1056 21.4472C18.3526 21.9412 18.9532 22.1414 19.4472 21.8944C19.9412 21.6474 20.1414 21.0467 19.8944 20.5528L18.8944 18.5528C18.6474 18.0588 18.0468 17.8586 17.5528 18.1055Z"
+			fill="black"
 		/>
 		<path
 			class="oi-fill"

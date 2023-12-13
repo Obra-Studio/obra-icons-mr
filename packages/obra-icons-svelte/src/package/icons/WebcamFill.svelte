@@ -17,20 +17,18 @@
 >
 	<g class="oi-webcam-fill">
 		<path
-			class="oi-line"
-			d="M19.9158 20.1527L16.9158 17.1527"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M16.2087 16.4456C16.5992 16.0551 17.2324 16.0551 17.6229 16.4456L20.6229 19.4456C21.0134 19.8361 21.0134 20.4693 20.6229 20.8598C20.2324 21.2503 19.5992 21.2503 19.2087 20.8598L16.2087 17.8598C15.8181 17.4693 15.8181 16.8361 16.2087 16.4456Z"
+			fill={color}
 		/>
 		<path
-			class="oi-line"
-			d="M4.41577 20.1527L7.41577 17.1527"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M8.12288 16.4456C7.73236 16.0551 7.09919 16.0551 6.70867 16.4456L3.70867 19.4456C3.31814 19.8361 3.31814 20.4693 3.70867 20.8598C4.09919 21.2503 4.73236 21.2503 5.12288 20.8598L8.12288 17.8598C8.5134 17.4693 8.5134 16.8361 8.12288 16.4456Z"
+			fill={color}
 		/>
 		<path
 			class="oi-fill"
