@@ -5,8 +5,6 @@
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
-  // svelte-ignore unused-export-let
-  export let strokeWidth = 2
 </script>
 
 <svg
@@ -17,7 +15,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-previous-fill" clip-path="url(#clip0_424_22593)">
+	<g class="oi-previous-fill" clip-path="url(#clip0_455_10303)">
 		<path
 			class="oi-vector"
 			d="M6 7V17"
@@ -39,7 +37,7 @@
 		</g>
 	</g>
 	<defs>
-		<clipPath class="clip0_424_22593">
+		<clipPath class="clip0_455_10303">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

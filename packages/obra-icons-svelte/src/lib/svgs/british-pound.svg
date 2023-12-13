@@ -7,10 +7,10 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-rupee">
+	<g class="oi-british-pound">
 		<path
 			class="Vector"
-			d="M13.5 20L8 14.6667H10.75C13.6744 14.6667 16.25 12.3076 16.25 9.33333C16.25 6.35903 13.6744 4 10.75 4"
+			d="M15.5676 5.44173C13.5482 3.40844 10.0646 3.59276 8.27671 5.86867C7.47599 6.88793 7.11525 8.164 7.29556 9.4411L8.12015 15.2523C8.35863 16.9316 7.96195 18.5039 7.22223 20L9.73023 19.1581C10.4824 18.9058 11.2954 18.9058 12.0476 19.1581C12.8615 19.4309 13.6585 19.7588 14.5346 19.6962C15.439 19.6315 16.2086 19.1677 17 18.7691"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -18,14 +18,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M6 4H17"
-			stroke="black"
-			stroke-width="2"
-			stroke-linecap="round"
-		/>
-		<path
-			class="oi-line"
-			d="M6 9.5H17"
+			d="M6 13H12"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"

@@ -5,8 +5,6 @@
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
-  // svelte-ignore unused-export-let
-  export let strokeWidth = 2
 </script>
 
 <svg

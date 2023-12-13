@@ -5,7 +5,6 @@
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
-  // svelte-ignore unused-export-let
   export let strokeWidth = 2
 </script>
 
@@ -20,7 +19,7 @@
 	<g class="oi-image-alt">
 		<path
 			class="oi-box"
-			d="M4.00002 5C4.00002 4.44772 4.44773 4 5.00002 4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H5.00002C4.44773 20 4.00002 19.5523 4.00002 19V5Z"
+			d="M4.00001 5C4.00001 4.44772 4.44773 4 5.00001 4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H5.00001C4.44773 20 4.00001 19.5523 4.00001 19V5Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

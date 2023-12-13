@@ -5,7 +5,6 @@
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
-  // svelte-ignore unused-export-let
   export let strokeWidth = 2
 </script>
 
@@ -22,14 +21,14 @@
 			class="oi-vector"
 			d="M6 15.1362L6.54122 13.6704M10.8319 15.1362L10.2118 13.6704M10.2118 13.6704L8.3387 9.24304C8.30752 9.16934 8.20223 9.17179 8.17451 9.24686L6.54122 13.6704M10.2118 13.6704H6.54122"
 			stroke={color}
-			stroke-width="1.33333"
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-vector"
 			d="M13.0312 15.0343V9H15.0866C16.8821 9 18 10.6609 18 12.0184C18 13.7153 17.007 15.0343 15.0866 15.0343H13.0312Z"
 			stroke={color}
-			stroke-width="1.33333"
+			stroke-width={strokeWidth}
 			stroke-miterlimit="2.16568"
 			stroke-linecap="round"
 			stroke-linejoin="round"
