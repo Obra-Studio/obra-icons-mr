@@ -200,15 +200,26 @@ icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
 
 //? Generate the svelte component from an svg
 
-const svelte_template = (svgSvelte: string) => `<!-- ${FILE_WARNING} -->
+const svelte_template_stroke = (svgSvelte: string) => `<!-- ${FILE_WARNING} -->
 
 <svelte:options namespace="svg" />
 
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
-  // svelte-ignore unused-export-let
   export let strokeWidth = 2
+</script>
+
+${svgSvelte}
+`;
+
+const svelte_template_fill = (svgSvelte: string) => `<!-- ${FILE_WARNING} -->
+
+<svelte:options namespace="svg" />
+
+<script lang="ts">
+  export let size = 24
+  export let color = 'currentColor'
 </script>
 
 ${svgSvelte}
@@ -219,7 +230,13 @@ console.log('\nWriting Icons');
 for (let { svg, svgSvelte, name } of icons) {
 	console.log(`  Writing Icon "${name}"`);
 
-	const svelte_component = svelte_template(svgSvelte);
+	let svelte_component = '';
+	if (name.endsWith('-fill')) {
+		svelte_component = svelte_template_fill(svgSvelte);
+	} else {
+		svelte_component = svelte_template_stroke(svgSvelte);
+	}
+
 	const pascal_name = icon_name_to_pascal(name);
 
 	//? Write the svg file
