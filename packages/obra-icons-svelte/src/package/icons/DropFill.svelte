@@ -15,7 +15,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-drop-fill[water]">
+	<g class="oi-drop-fill">
 		<path
 			class="oi-fill"
 			fill-rule="evenodd"

@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-family[love,parent]">
+	<g class="oi-family">
 		<circle
 			class="oi-vector"
 			cx="7.25"

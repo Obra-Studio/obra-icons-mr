@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-fork-left[branch]">
+	<g class="oi-fork-left">
 		<path
 			class="oi-vector"
 			d="M15 3V21M15 3L11 7M15 3L19 7"

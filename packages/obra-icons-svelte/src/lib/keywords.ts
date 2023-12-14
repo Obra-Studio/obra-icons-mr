@@ -698,6 +698,14 @@ export default {
     "bag",
     "luggage"
   ],
+  "british-pound": [
+    "£",
+    "GBP",
+    "pound sterling",
+    "UK currency",
+    "British money",
+    "British currency"
+  ],
   "brush": [
     "paintbrush",
     "art",
@@ -1407,23 +1415,23 @@ export default {
     "ring"
   ],
   "circle-close": [
+    "x",
     "close",
     "cancel",
     "exit",
     "delete",
     "remove",
-    "x",
     "round",
     "shape",
     "ring"
   ],
   "circle-close-fill": [
+    "x",
     "close",
     "cancel",
     "exit",
     "delete",
     "remove",
-    "x",
     "round",
     "shape",
     "ring"
@@ -1451,6 +1459,7 @@ export default {
     "ring"
   ],
   "circle-dollar": [
+    "$",
     "money",
     "currency",
     "finance",
@@ -1462,6 +1471,7 @@ export default {
     "ring"
   ],
   "circle-dollar-fill": [
+    "$",
     "money",
     "currency",
     "finance",
@@ -1473,6 +1483,7 @@ export default {
     "ring"
   ],
   "circle-euro": [
+    "€",
     "euro",
     "currency",
     "money",
@@ -1484,6 +1495,7 @@ export default {
     "ring"
   ],
   "circle-euro-fill": [
+    "€",
     "euro",
     "currency",
     "money",
@@ -1536,23 +1548,23 @@ export default {
     "ring"
   ],
   "circle-info": [
+    "i",
     "information",
     "details",
     "about",
     "help",
     "question",
-    "i",
     "round",
     "shape",
     "ring"
   ],
   "circle-info-fill": [
+    "i",
     "information",
     "details",
     "about",
     "help",
     "question",
-    "i",
     "round",
     "shape",
     "ring"
@@ -1736,6 +1748,7 @@ export default {
     "hour"
   ],
   "close": [
+    "x",
     "exit",
     "shut down",
     "terminate",
@@ -2638,6 +2651,7 @@ export default {
     "remove"
   ],
   "euro": [
+    "€",
     "currency",
     "money",
     "europe",
@@ -2880,6 +2894,17 @@ export default {
     "heart",
     "bookmark"
   ],
+  "favorite-off-fill": [
+    "unfavorite",
+    "remove",
+    "dislike",
+    "unlike",
+    "cancel",
+    "delete",
+    "like",
+    "heart",
+    "bookmark"
+  ],
   "filter": [
     "sort",
     "refine",
@@ -3051,6 +3076,14 @@ export default {
     "bloom",
     "daisy"
   ],
+  "flower-fill": [
+    "blossom",
+    "petal",
+    "flora",
+    "plant",
+    "bloom",
+    "daisy"
+  ],
   "fog": [
     "mist",
     "haze",
@@ -3206,6 +3239,16 @@ export default {
     "cloud",
     "arrow",
     "directory"
+  ],
+  "folder-user": [
+    "user folder",
+    "person folder",
+    "profile folder",
+    "customer folder",
+    "account folder",
+    "directory",
+    "file",
+    "document"
   ],
   "font-size": [
     "text size",
@@ -3465,6 +3508,16 @@ export default {
     "affection",
     "emotion"
   ],
+  "heart-off-fill": [
+    "heart",
+    "love",
+    "like",
+    "dislike",
+    "unfavorite",
+    "remove",
+    "affection",
+    "emotion"
+  ],
   "heartrate": [
     "heart",
     "pulse",
@@ -3531,6 +3584,14 @@ export default {
     "communication",
     "received",
     "notifications"
+  ],
+  "indian-rupee": [
+    "currency",
+    "money",
+    "INR",
+    "Indian currency",
+    "rupee sign",
+    "Indian money"
   ],
   "infinite": [
     "endless",
@@ -3909,6 +3970,14 @@ export default {
     "writing tool"
   ],
   "mask": [
+    "face covering",
+    "disguise",
+    "costume",
+    "veil",
+    "shield",
+    "protection"
+  ],
+  "mask-fill": [
     "face covering",
     "disguise",
     "costume",
@@ -4877,6 +4946,7 @@ export default {
     "again"
   ],
   "repeating-payment-euro": [
+    "€",
     "recurring",
     "subscription",
     "auto-pay",
@@ -5784,6 +5854,14 @@ export default {
     "degree",
     "hot"
   ],
+  "temporary-work": [
+    "job",
+    "employment",
+    "gig",
+    "contract",
+    "freelance",
+    "temporary"
+  ],
   "terminal": [
     "command line",
     "console",
@@ -6180,6 +6258,15 @@ export default {
     "circle",
     "people"
   ],
+  "user-encircled-alt-2-fill": [
+    "user",
+    "person",
+    "profile",
+    "account",
+    "avatar",
+    "member",
+    "people"
+  ],
   "user-encircled-alt-fill": [
     "person",
     "profile",
@@ -6550,6 +6637,7 @@ export default {
     "maintenance"
   ],
   "yen": [
+    "¥",
     "currency",
     "money",
     "Japanese",

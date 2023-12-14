@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-shopping-cart[shopping-cart]">
+	<g class="oi-shopping-cart">
 		<path
 			class="oi-medium-dot"
 			d="M10 20H10.012"

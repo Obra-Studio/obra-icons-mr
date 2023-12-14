@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-vial[experiment]">
+	<g class="oi-vial">
 		<path
 			class="oi-line"
 			d="M15 3H9"

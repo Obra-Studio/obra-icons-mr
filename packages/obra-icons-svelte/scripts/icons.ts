@@ -168,18 +168,20 @@ for (const chunk of split(base_icons, 100)) {
 			//? Turn id="oi_vector_2" -> class="oi-vector"
 			svg = svg.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
 
-			// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
-			// Turn stroke="black" into stroke={color}
-			// Turn fill="black" into fill={color}
-			// Add dynamic stroke widths
-			// Add class="obra-icon" after xmlns
 			const svgSvelte = svg
+				// Remove keywords from the overall group (g) element
+				.replace(/<g class="oi-(.*)\[(.*)\]">/g, '<g class="oi-$1">')
+				// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
 				.replace(/(width|height)="24"(?! stroke-width)/g, '$1={size}')
+				// Turn stroke="black" into stroke={color}
 				.replace(/stroke="black"/g, 'stroke={color}')
+				// Turn fill="black" into fill={color}
 				.replace(/fill="black"/g, 'fill={color}')
+				// Add dynamic stroke widths
 				.replace(/stroke-width="2"/g, 'stroke-width={strokeWidth}')
 				.replace(/stroke-width="3"/g, 'stroke-width={strokeWidth*1.5}')
 				.replace(/stroke-width="4"/g, 'stroke-width={strokeWidth*2}')
+				// Add general class of "obra-icon" after xmlns
 				.replace(
 					/xmlns="http:\/\/www\.w3\.org\/2000\/svg"/g,
 					'xmlns="http://www.w3.org/2000/svg"\n\tclass="obra-icon"',

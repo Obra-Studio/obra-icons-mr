@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-user-encircled[account]">
+	<g class="oi-user-encircled">
 		<path
 			class="oi-fill"
 			fill-rule="evenodd"

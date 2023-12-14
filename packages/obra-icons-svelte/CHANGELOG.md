@@ -3,6 +3,14 @@ Changelog Obra Icons
 
 We use semantic versioning (semver)
 
+## 1.11.3
+
+Fix a bug where keywords would end up in the Svelte component output
+
+## 1.11.2
+
+Fix a bug where the Svelte compiler would complain about unused props
+
 ## 1.7-1.11
 
 Added more icons

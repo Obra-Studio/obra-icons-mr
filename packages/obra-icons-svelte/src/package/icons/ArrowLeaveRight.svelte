@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-arrow-leave-right[sign-out]">
+	<g class="oi-arrow-leave-right">
 		<path
 			class="oi-line"
 			d="M8 12H20.5"

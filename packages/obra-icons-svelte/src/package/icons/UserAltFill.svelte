@@ -15,7 +15,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-user-alt-fill[people,person]">
+	<g class="oi-user-alt-fill">
 		<path
 			class="oi-fill"
 			d="M9 14C6.23858 14 4 16.2386 4 19V21C4 21.5523 4.44772 22 5 22H19C19.5523 22 20 21.5523 20 21V19C20 16.2386 17.7614 14 15 14H9Z"

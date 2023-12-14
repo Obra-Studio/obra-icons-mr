@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-drop[water]">
+	<g class="oi-drop">
 		<path
 			class="oi-vector"
 			d="M12 21C8.134 21 4.99999 17.866 4.99999 14C4.99999 9 12 3 12 3C12 3 19 9 19 14C19 17.866 15.866 21 12 21Z"

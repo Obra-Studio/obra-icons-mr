@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-mention[at]">
+	<g class="oi-mention">
 		<g id="Group 2">
 			<path
 				class="Vector"

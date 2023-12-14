@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-users[people,persons]">
+	<g class="oi-users">
 		<path
 			class="oi-vector"
 			d="M21 21V19C21 17.5195 20.1956 16.2268 19 15.5352"

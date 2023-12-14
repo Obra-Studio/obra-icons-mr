@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-enter-right[sign-in]">
+	<g class="oi-enter-right">
 		<path
 			class="oi-line"
 			d="M3 12H16"

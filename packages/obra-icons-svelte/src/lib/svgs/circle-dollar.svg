@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-circle-dollar">
+	<g class="oi-circle-dollar[$]">
 		<circle
 			class="oi-ellipse"
 			cx="12"
