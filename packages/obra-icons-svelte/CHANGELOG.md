@@ -3,6 +3,10 @@ Changelog Obra Icons
 
 We use semantic versioning (semver)
 
+## 1.12
+
+Implement that SVGs (that you can copy from the site) always default to currentColor for strokes and fills
+
 ## 1.11.3
 
 Fix a bug where keywords would end up in the Svelte component output
