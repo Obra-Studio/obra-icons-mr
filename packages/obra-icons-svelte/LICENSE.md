@@ -1,6 +1,6 @@
 MIT licensed
 
-The MIT License (MIT) Copyright 2023 Obra Studio BV
+The MIT License (MIT) Copyright 2024 Obra Studio BV
 
 This license pertains only to to Obra Icons as a code package, hereafter named the Software, as packaged in the Github repository. It does NOT pertain to the design files or any helpers such as plugins for design apps.
 

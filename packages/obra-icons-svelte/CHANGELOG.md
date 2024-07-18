@@ -2,6 +2,10 @@
 
 We use semantic versioning (semver)
 
+## 1.13
+
+Get started with releasing again, add 4 icons
+
 ## 1.12
 
 Implement that SVGs (that you can copy from the site) always default to currentColor for strokes and fills
