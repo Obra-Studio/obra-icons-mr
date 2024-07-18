@@ -2,7 +2,7 @@
 
 Obra Icons for <a href="https://svelte.dev/">Svelte</a>.
 
-A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 350 icons.
+A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 750 icons.
 
 ## Installation
 
