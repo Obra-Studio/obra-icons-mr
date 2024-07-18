@@ -23,27 +23,16 @@
 
 					<div class="justify-content-center button-group">
 						<a class="button inverse" href="/icons">
-							<span>Explore {iconsCount} icons for free</span>
-							<IconArrowRight />
-						</a>
-						<a class="button inverse" href="https://www.figma.com/community/file/1300974614896814660/obra-icons-free-1-6-0">
-							<IconFigma />
-							<span>Free version</span>
-							<IconArrowRight />
-						</a>
-						<a class="button inverse" href="https://www.figma.com/community/file/1297284985156926365">
-							<IconFigma />
-							<span>Buy via Figma</span>
+							<span>Explore & download {iconsCount} icons for free</span>
 							<IconArrowRight />
 						</a>
 						<a
 							class="button inverse"
 							href="https://sowl.co/s/bdgsNv"
 						>
-							<span>Buy direct</span>
+							<span>Buy source</span>
 							<IconArrowRight />
 						</a>
-
 						<a
 								href="https://github.com/Obra-Studio/obra-icons-svelte"
 								class="button inverse"
