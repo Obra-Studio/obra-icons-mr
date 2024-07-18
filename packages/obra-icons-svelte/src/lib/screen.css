@@ -2,599 +2,607 @@
    ========================================================================== */
 
 :root {
-    --spacing-tiny: 0.25rem; /* 4px */
-    --spacing-small: 0.5rem; /* 8px */
-    --spacing-small-medium: 0.75rem; /* 12px */
-    --spacing-medium: 1rem; /* 16px */
-    --spacing-large: 1.5rem; /* 24px */
-    --spacing-x-large: 2rem; /* 32px */
-    --spacing-xx-large: 3rem; /* 48px */
-    --spacing-xxx-large: 4rem; /* 64px */
+	--spacing-tiny: 0.25rem; /* 4px */
+	--spacing-small: 0.5rem; /* 8px */
+	--spacing-small-medium: 0.75rem; /* 12px */
+	--spacing-medium: 1rem; /* 16px */
+	--spacing-large: 1.5rem; /* 24px */
+	--spacing-x-large: 2rem; /* 32px */
+	--spacing-xx-large: 3rem; /* 48px */
+	--spacing-xxx-large: 4rem; /* 64px */
 
-    --border-radius-tiny: 0.25rem; /* 4px */
+	--border-radius-tiny: 0.25rem; /* 4px */
 }
 
 /* Reset
    ========================================================================== */
 
-*, *:before, *:after {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
-h1, h2, h3, h4, p, ul, ol {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
 }
 
-ul, ol, li {
-    list-style: none;
+ul,
+ol,
+li {
+	list-style: none;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
-input, select {
-    font-size: inherit;
+input,
+select {
+	font-size: inherit;
 }
 
 /* Responsive typography
    ========================================================================== */
 
 html {
-    font-size: 0.8rem;
+	font-size: 0.8rem;
 }
 
 @media (min-width: 640px) {
-    html {
-        font-size: 1rem;
-    }
+	html {
+		font-size: 1rem;
+	}
 }
 
 /* Base
    ========================================================================== */
 
 body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    line-height: 1.5;
-    font-size: 1rem;
-    color: #333;
+	font-family:
+		Inter,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+		'Segoe UI Symbol';
+	line-height: 1.5;
+	font-size: 1rem;
+	color: #333;
 }
 
 h1 {
-    font-size: 2.25rem; /* 36px */
-    line-height: 1.1;
-    font-weight: 600;
+	font-size: 2.25rem; /* 36px */
+	line-height: 1.1;
+	font-weight: 600;
 }
 
-h2, .drop-down-heading-visually h1 {
-    font-size: 1.75rem; /* 28px */
-    line-height: 1.1;
-    font-weight: 600;
+h2,
+.drop-down-heading-visually h1 {
+	font-size: 1.75rem; /* 28px */
+	line-height: 1.1;
+	font-weight: 600;
 }
 
-h3, .drop-down-heading-visually h2 {
-    font-size: 1.4rem;
-    line-height: 1.3;
-    font-weight: 600;
+h3,
+.drop-down-heading-visually h2 {
+	font-size: 1.4rem;
+	line-height: 1.3;
+	font-weight: 600;
 }
 
-h4, .drop-down-heading-visually h3 {
-    font-size: 1rem;
-    line-height: 1.3;
-    font-weight: 600;
+h4,
+.drop-down-heading-visually h3 {
+	font-size: 1rem;
+	line-height: 1.3;
+	font-weight: 600;
 }
 
 code {
-    font-size: 85%;
-    background: #EEE;
-    padding: .3rem;
-    border-radius: 2px;
+	font-size: 85%;
+	background: #eee;
+	padding: 0.3rem;
+	border-radius: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
-    .is-dark code {
-        background: #222;
-    }
+	.is-dark code {
+		background: #222;
+	}
 }
 
 /* Logo
    ========================================================================== */
 
 .logo a {
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: var(--spacing-small-medium);
-    font-size: 1.75rem; /* 28px */
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	gap: var(--spacing-small-medium);
+	font-size: 1.75rem; /* 28px */
 }
 
 .logo img {
-    width: 3rem;
+	width: 3rem;
 }
 
 @media (min-width: 640px) {
-
-    .logo img {
-        width: 4rem;
-    }
-
+	.logo img {
+		width: 4rem;
+	}
 }
-
-
 
 /* Content
    ========================================================================== */
 
 .content h1 {
-    padding: 0 0 1.5rem;
+	padding: 0 0 1.5rem;
 }
 
 .content h2 {
-    padding: 0 0 0.75rem;
+	padding: 0 0 0.75rem;
 }
 
 .content h3 {
-    padding: 0 0 0.75rem;
+	padding: 0 0 0.75rem;
 }
 
 .content p {
-    padding: 0 0 0.75rem;
+	padding: 0 0 0.75rem;
 }
 
 .content ul {
-    padding: 0 0 1.5rem 1.5rem;
+	padding: 0 0 1.5rem 1.5rem;
 }
 
 .content ul li {
-    list-style: disc;
+	list-style: disc;
 }
 
 .content ol li {
-    list-style: decimal;
+	list-style: decimal;
 }
 
 .legal-content ol li {
-    list-style: none;
+	list-style: none;
 }
 
 /* Button
    ========================================================================== */
 
 .button {
-    border: none;
-    font-size: inherit;
-    padding: 0.75rem;
-    background: #000;
-    font-weight: 600;
-    color: #FFF;
-    display: inline-flex;
-    gap: var(--spacing-tiny);
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: var(--border-radius-tiny);
+	border: none;
+	font-size: inherit;
+	padding: 0.75rem;
+	background: #000;
+	font-weight: 600;
+	color: #fff;
+	display: inline-flex;
+	gap: var(--spacing-tiny);
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: var(--border-radius-tiny);
 }
 
 .button:active {
-    scale: 0.96;
+	scale: 0.96;
 }
 
 @media (min-width: 640px) {
-    .button {
-        padding: 0.5rem 0.75rem;
-    }
+	.button {
+		padding: 0.5rem 0.75rem;
+	}
 }
 
 .button.inverse {
-    background: #FFF;
-    color: #000;
+	background: #fff;
+	color: #000;
 }
 
 .button svg {
-    width: 1.25rem;
-    height: 1.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
 }
 
 .button .icon-fill-wrapper {
-    width: 1.25rem;
-    height: 1.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
 }
 
 .button svg * {
-    stroke: #FFF;
+	stroke: #fff;
 }
 
 .button.inverse svg * {
-    stroke: #000;
+	stroke: #000;
 }
 
 .button .icon-fill-wrapper svg * {
-    stroke: none;
-    fill: #000;
+	stroke: none;
+	fill: #000;
 }
 
 .button .icon-fill-wrapper.inverse svg * {
-    fill: #FFF;
+	fill: #fff;
 }
 
 /* Advantages - Image holder specific
    ========================================================================== */
 
 .advantages .image-holder {
-    margin: 0 0 1rem;
+	margin: 0 0 1rem;
 }
 
 @media (min-width: 640px) {
-
-    .advantages .image-holder {
-        flex: 1 1 40%;
-        margin: 0;
-    }
-
+	.advantages .image-holder {
+		flex: 1 1 40%;
+		margin: 0;
+	}
 }
 
 /* Section - Buy Obra Icons Plus
    ========================================================================== */
 
 .buy-obra-icons .column:first-child img {
-    margin-bottom: var(--spacing-large);
+	margin-bottom: var(--spacing-large);
 }
 
 @media (min-width: 640px) {
-    .buy-obra-icons .column:first-child img {
-        margin-bottom: 0;
-    }
+	.buy-obra-icons .column:first-child img {
+		margin-bottom: 0;
+	}
 }
 
-
 @media (min-width: 640px) {
+	.columns.buy-obra-icons {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		gap: var(--spacing-x-large);
+	}
 
-    .columns.buy-obra-icons {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        gap: var(--spacing-x-large);
-    }
-
-    .columns.buy-obra-icons .column {
-        flex: 1 1 50%;
-    }
-
+	.columns.buy-obra-icons .column {
+		flex: 1 1 50%;
+	}
 }
 
 /* Section -Advantages
    ========================================================================== */
 
 @media (min-width: 640px) {
+	.advantages {
+		display: grid;
+		gap: var(--spacing-large);
+		grid-template-areas:
+			'a a'
+			'b b'
+			'c d';
+	}
 
-    .advantages {
-        display: grid;
-        gap: var(--spacing-large);
-        grid-template-areas:
-    "a a"
-    "b b"
-    "c d";
-    }
+	.advantages .content {
+		flex: 1 1 60%;
+	}
 
-    .advantages .content {
-        flex: 1 1 60%;
-    }
+	.advantages li:first-child {
+		display: flex;
+		grid-area: a;
+		align-items: center;
+		gap: var(--spacing-x-large);
+	}
 
-    .advantages li:first-child {
-        display: flex;
-        grid-area: a;
-        align-items: center;
-        gap: var(--spacing-x-large);
-    }
+	.advantages li:nth-child(2) {
+		grid-area: b;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		gap: var(--spacing-x-large);
+	}
 
-    .advantages li:nth-child(2) {
-        grid-area: b;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        gap: var(--spacing-x-large);
-    }
+	.advantages li:nth-child(3) {
+		grid-area: c;
+	}
 
-    .advantages li:nth-child(3) {
-        grid-area: c;
-    }
-
-    .advantages li:nth-child(4) {
-        grid-area: d;
-    }
-
+	.advantages li:nth-child(4) {
+		grid-area: d;
+	}
 }
 
 /* Footer
    ========================================================================== */
 
 @media (min-width: 900px) {
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: var(--spacing-medium);
-    }
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--spacing-medium);
+	}
 }
-
-
 
 /* Buton group
    ========================================================================== */
 
 .button-group {
-    display: flex;
-    gap: var(--spacing-small);
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	gap: var(--spacing-small);
+	align-items: center;
+	flex-direction: column;
 }
 
 .button-group .button {
-    width: 100%;
+	width: 100%;
 }
 
 @media (min-width: 640px) {
-   .button-group {
-        flex-direction: row;
-    }
+	.button-group {
+		flex-direction: row;
+	}
 
-    .button-group .button {
-        width: auto;
-    }
+	.button-group .button {
+		width: auto;
+	}
 }
 
 /* Hero
    ========================================================================== */
 
 .hero h2 {
-    margin-bottom: var(--spacing-large);
-    text-wrap: balance;
+	margin-bottom: var(--spacing-large);
+	text-wrap: balance;
 }
 
 @media (max-width: 960px) {
-    .hero .button-group {
-        display: grid;
-    }
+	.hero .button-group {
+		display: grid;
+	}
 }
 
 .hero .preview {
-    margin-bottom: var(--spacing-large);
-    display: flex;
-    justify-content: space-around;
+	margin-bottom: var(--spacing-large);
+	display: flex;
+	justify-content: space-around;
 }
 
 /* Responsive utilities
    ========================================================================== */
 
 .hide-sm {
-    display: none;
+	display: none;
 }
 
 @media (min-width: 640px) {
-    .show-md {
-        display: block;
-    }
+	.show-md {
+		display: block;
+	}
 
-    .hide-md {
-        display: none;
-    }
+	.hide-md {
+		display: none;
+	}
 }
 
 /* Input with icon
    ========================================================================== */
 
 .input-with-icon {
-    position: relative;
-    width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
+	.input-with-icon svg * {
+		stroke: #fff;
+	}
 
-    .input-with-icon svg * {
-        stroke: #fff;
-    }
-
-    .input-with-icon svg .oi-fill {
-        fill: #fff;
-        stroke: none;
-    }
-
+	.input-with-icon svg .oi-fill {
+		fill: #fff;
+		stroke: none;
+	}
 }
 
 .input-with-icon input {
-    border: 1px solid #CCC;
-    padding: .75rem .75rem .75rem 2.25rem;
-    width: 100%;
-    border-radius: var(--border-radius-tiny);
+	border: 1px solid #ccc;
+	padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+	width: 100%;
+	border-radius: var(--border-radius-tiny);
 }
 
 .input-with-icon svg {
-    opacity: 0.5;
-    width: 1.5rem;
-    height: 1.5rem;
+	opacity: 0.5;
+	width: 1.5rem;
+	height: 1.5rem;
 }
 
 .input-with-icon:has(input:focus) svg {
-    opacity: 1;
+	opacity: 1;
 }
 
 @media (prefers-color-scheme: dark) {
-    .responds-to-dark .input-with-icon input {
-        background: #222;
-        border: 1px solid #777;
-        color: #FFF;
-    }
+	.responds-to-dark .input-with-icon input {
+		background: #222;
+		border: 1px solid #777;
+		color: #fff;
+	}
 }
 
 .input-with-icon svg {
-    position: absolute;
-    left: .5rem;
-    top: .65rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 0.65rem;
 }
-
 
 /* Utility classes with direct mapping to CSS
    ========================================================================== */
 
 .flex {
-    display: flex;
+	display: flex;
 }
 
 .margin-0-auto {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .justify-content-space-between {
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .justify-content-center {
-    justify-content: center;
+	justify-content: center;
 }
 
 .align-items-center {
-    align-items: center;
+	align-items: center;
 }
 
 /* Utility layers
    ========================================================================== */
 
 .padding-small {
-    padding: var(--spacing-small);
+	padding: var(--spacing-small);
 }
 
 .padding-medium {
-    padding: var(--spacing-medium);
+	padding: var(--spacing-medium);
 }
 
 .padding-medium {
-    padding: var(--spacing-large);
+	padding: var(--spacing-large);
 }
 
 .padding-x-large {
-    padding: var(--spacing-x-large);
+	padding: var(--spacing-x-large);
 }
 
 .gap-small {
-    gap: var(--spacing-small);
+	gap: var(--spacing-small);
 }
 
 .gap-medium {
-    gap: var(--spacing-medium);
+	gap: var(--spacing-medium);
 }
 
 .gap-large {
-    gap: var(--spacing-large);
+	gap: var(--spacing-large);
 }
 
 .gap-x-large {
-    gap: var(--spacing-x-large);
+	gap: var(--spacing-x-large);
 }
 
 .margin-bottom-small {
-    margin-bottom: var(--spacing-small);
+	margin-bottom: var(--spacing-small);
 }
 
 .margin-bottom-medium {
-    margin-bottom: var(--spacing-medium);
+	margin-bottom: var(--spacing-medium);
 }
 
 .margin-bottom-large {
-    margin-bottom: var(--spacing-large);
+	margin-bottom: var(--spacing-large);
 }
 
 .margin-bottom-x-large {
-    margin-bottom: var(--spacing-x-large);
+	margin-bottom: var(--spacing-x-large);
 }
-
 
 .text-align-center {
-    text-align: center;
+	text-align: center;
 }
-
 
 /* Max width containers */
 
 .container {
-    max-width: 1140px;
+	max-width: 1140px;
 }
 
 .container-small {
-    max-width: 740px;
+	max-width: 740px;
 }
 
 /* Vertical containers (padded on top and bottom) */
 
 .vertical-container {
-    padding: var(--spacing-medium) 0;
+	padding: var(--spacing-medium) 0;
 }
 
 .vertical-container-large {
-    padding: var(--spacing-large) 0;
+	padding: var(--spacing-large) 0;
 }
 
 .vertical-container-x-large {
-    padding: var(--spacing-x-large) 0;
+	padding: var(--spacing-x-large) 0;
 }
 
 .vertical-container-xx-large {
-    padding: var(--spacing-xx-large) 0;
+	padding: var(--spacing-xx-large) 0;
 }
 
 .vertical-container-xxx-large {
-    padding: var(--spacing-xxx-large) 0;
+	padding: var(--spacing-xxx-large) 0;
 }
 
 /* Opacity
    ========================================================================== */
 
 .opacity-75 {
-    opacity: .75;
+	opacity: 0.75;
 }
 
 /* Classes related to modifying links inside
    ========================================================================== */
 
 .blacked-links a {
-    color: #000;
+	color: #000;
 }
 
 .muted-links a {
-    color: #999;
+	color: #999;
 }
 
 /* Classes related to colour
    ========================================================================== */
 
 .is-dark {
-    color: #FFF;
+	color: #fff;
 }
 
 .is-dark p {
-    opacity: .8;
+	opacity: 0.8;
 }
 
 .is-dark a {
-    color: #FFF;
+	color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
-    .responds-to-dark .bg-dark-grey {
-        background: #222;
-    }
+	.responds-to-dark .bg-dark-grey {
+		background: #222;
+	}
 }
 
 .is-dark .bg-black {
-    background: #000;
+	background: #000;
 }
 
 .is-dark .bg-dark-grey {
-    background: #222;
+	background: #222;
 }

@@ -35,26 +35,28 @@
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
-		<path
-			class="oi-vector"
-			d="M14.8749 11.4972C13.5189 10.025 9.6814 10.263 9.6814 14.1218C9.6814 17.9805 13.5794 17.839 14.8749 16.4326"
-			stroke={color}
-			stroke-width="1.48387"
-			stroke-linecap="round"
-		/>
-		<path
-			class="oi-line"
-			d="M9.125 15.0229H12.8347"
-			stroke={color}
-			stroke-width="1.48387"
-			stroke-linecap="round"
-		/>
-		<path
-			class="oi-line"
-			d="M9.125 13.0806H12.8347"
-			stroke={color}
-			stroke-width="1.48387"
-			stroke-linecap="round"
-		/>
+		<g id="Group 4">
+			<path
+				class="oi-vector"
+				d="M14.8749 11.4972C13.5189 10.025 9.6814 10.263 9.6814 14.1218C9.6814 17.9805 13.5794 17.839 14.8749 16.4326"
+				stroke={color}
+				stroke-width="1.48387"
+				stroke-linecap="round"
+			/>
+			<path
+				class="oi-line"
+				d="M9.125 15.0229H12.8347"
+				stroke={color}
+				stroke-width="1.48387"
+				stroke-linecap="round"
+			/>
+			<path
+				class="oi-line"
+				d="M9.125 13.0806H12.8347"
+				stroke={color}
+				stroke-width="1.48387"
+				stroke-linecap="round"
+			/>
+		</g>
 	</g>
 </svg>

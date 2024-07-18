@@ -19,7 +19,7 @@
 	<g class="oi-notification-check">
 		<path
 			class="oi-vector"
-			d="M12 4C8.68627 4 5.99998 6.68629 5.99998 10V15L3.99998 18H20L18 15V10C18 6.68629 15.3137 4 12 4Z"
+			d="M12 4C8.68626 4 5.99997 6.68629 5.99997 10V15L3.99997 18H20L18 15V10C18 6.68629 15.3137 4 12 4Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

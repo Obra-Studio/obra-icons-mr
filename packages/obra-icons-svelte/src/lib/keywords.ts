@@ -2160,6 +2160,14 @@ export default {
     "interface",
     "dashboard"
   ],
+  "database": [
+    "data",
+    "storage",
+    "information",
+    "record",
+    "file",
+    "repository"
+  ],
   "delete": [
     "remove",
     "erase",
@@ -3414,6 +3422,14 @@ export default {
     "map",
     "international"
   ],
+  "goblet": [
+    "cup",
+    "chalice",
+    "wineglass",
+    "beverage",
+    "drink",
+    "vessel"
+  ],
   "grid": [
     "table",
     "matrix",
@@ -3616,6 +3632,14 @@ export default {
     "angled",
     "tilted",
     "cursive"
+  ],
+  "joystick": [
+    "gamepad",
+    "controller",
+    "gaming",
+    "console",
+    "button",
+    "play"
   ],
   "kanban": [
     "board",
@@ -3992,6 +4016,14 @@ export default {
     "equation",
     "problem",
     "mathematics"
+  ],
+  "medal": [
+    "award",
+    "trophy",
+    "prize",
+    "achievement",
+    "honor",
+    "victory"
   ],
   "medcase": [
     "medical case",
@@ -5380,6 +5412,14 @@ export default {
     "strength",
     "indicator"
   ],
+  "signal-alt": [
+    "network",
+    "connection",
+    "wifi",
+    "wireless",
+    "antenna",
+    "bars"
+  ],
   "sitemap": [
     "structure",
     "navigation",
@@ -5691,6 +5731,16 @@ export default {
     "camera system",
     "dual cameras"
   ],
+  "swatches": [
+    "colour",
+    "swatch",
+    "colors",
+    "palette",
+    "paint",
+    "samples",
+    "shades",
+    "hue"
+  ],
   "switch": [
     "toggle",
     "button",
@@ -5815,16 +5865,16 @@ export default {
     "focus"
   ],
   "task-list": [
-    "to-do",
     "checklist",
+    "to-do",
     "agenda",
     "schedule",
     "tasks",
     "notes"
   ],
   "task-list-fill": [
-    "to-do",
     "checklist",
+    "to-do",
     "agenda",
     "schedule",
     "tasks",

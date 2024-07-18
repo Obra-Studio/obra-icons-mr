@@ -1,5 +1,4 @@
-Changelog Obra Icons
-====================
+# Changelog Obra Icons
 
 We use semantic versioning (semver)
 
@@ -31,6 +30,5 @@ Added Svelte package
 ## 1.0
 
 Initial release
-
 
 Note: because a changelog did not exist before 1.7, older entries might be unreliable.

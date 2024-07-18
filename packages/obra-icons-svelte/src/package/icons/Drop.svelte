@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M8.64489 15C8.98086 16.1289 9.87106 17.0191 10.9999 17.3551"
+			d="M8.64488 15C8.98086 16.1289 9.87105 17.0191 10.9999 17.3551"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

@@ -1,20 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="icon" media="(prefers-color-scheme:dark)"  href="%sveltekit.assets%/favicon-i.ico" type="image/x-icon" id="dark-scheme-icon" />
-		<link rel="icon" media="(prefers-color-scheme:light)" href="%sveltekit.assets%/favicon.ico" type="image/x-icon" id="light-scheme-icon" />
+		<link
+			rel="icon"
+			media="(prefers-color-scheme:dark)"
+			href="%sveltekit.assets%/favicon-i.ico"
+			type="image/x-icon"
+			id="dark-scheme-icon"
+		/>
+		<link
+			rel="icon"
+			media="(prefers-color-scheme:light)"
+			href="%sveltekit.assets%/favicon.ico"
+			type="image/x-icon"
+			id="light-scheme-icon"
+		/>
 		<script type="text/javascript">
-
 			matcher = window.matchMedia('(prefers-color-scheme: dark)');
 			matcher.addListener(onFaviconUpdate);
 			onFaviconUpdate();
 
 			function onFaviconUpdate() {
-				var lightSchemeIcon = document.querySelector('link#light-scheme-icon');
-				var darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+				var lightSchemeIcon = document.querySelector(
+					'link#light-scheme-icon',
+				);
+				var darkSchemeIcon = document.querySelector(
+					'link#dark-scheme-icon',
+				);
 				if (matcher.matches) {
 					document.head.append(darkSchemeIcon);
 					lightSchemeIcon.remove();
@@ -23,20 +38,30 @@
 					darkSchemeIcon.remove();
 				}
 			}
-
 		</script>
-		<link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png">
+		<link
+			rel="apple-touch-icon"
+			href="%sveltekit.assets%/apple-touch-icon.png"
+		/>
 
-		<meta property="og:title" content="Obra Icons">
-		<meta property="og:description" content="A simple, consistent set of icons, perfect for user interfaces.">
-		<meta property="og:image" content="%sveltekit.assets%//og-image.png">
+		<meta property="og:title" content="Obra Icons" />
+		<meta
+			property="og:description"
+			content="A simple, consistent set of icons, perfect for user interfaces."
+		/>
+		<meta property="og:image" content="%sveltekit.assets%//og-image.png" />
 
 		%sveltekit.head%
 	</head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KNCWPXZQV"></script>
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=G-2KNCWPXZQV"
+	></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 		gtag('js', new Date());
 
 		gtag('config', 'G-2KNCWPXZQV');
