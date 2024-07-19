@@ -105,7 +105,10 @@ import { IconArrowRight } from '$package';
 					<h2>Buy the Figma source file</h2>
 					<p>Buy the source file for direct import into Figma.</p>
 					<p>
-						This file contains the original vectors of the 750+ icons, with its icons categorized into different categories. Use it to extend or customize the set to your needs.
+						This file contains the original vectors of the 800+ icons, with its icons categorized into different categories. Use it to extend or customize the set to your needs.
+					</p>
+					<p>
+						As a bonus, you will also get access to the Obra Icons dev tools Figma plugin, which gives you access to exact same tools used to create the icon set. You can watch this <a href="https://www.youtube.com/watch?v=cg8-y-OXyI4">video</a> for more info.
 					</p>
 					<div class="button-group">
 						<a class="button" href="https://sowl.co/s/bdgsNv">
