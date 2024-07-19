@@ -3,38 +3,42 @@
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
 	import iconsCount from '$lib/count';
 
-		import { IconSearch } from '$package/index';
-		import { dev } from '$app/environment';
-		import { search } from '@orama/orama';
-		import { getSvg } from '$lib/svgs';
+	import { IconSearch } from '$package/index';
+	import { dev } from '$app/environment';
+	import { search } from '@orama/orama';
+	import { getSvg } from '$lib/svgs';
 
-		import Icon from '$lib/Icon.svelte';
-		import { page } from '$app/stores';
+	import Icon from '$lib/Icon.svelte';
+	import { page } from '$app/stores';
 
-		export let data;
+	export let data;
 
-		let icons = data.defaultSearch;
+	let icons = data.defaultSearch;
 
-		let searching = false;
-		let query: string = '';
-		let lastQuery: string = query;
+	let searching = false;
+	let query: string = '';
+	let lastQuery: string = query;
 
-		function input(event: { currentTarget: HTMLInputElement }) {
+	let color = '#000'
+	let strokeWeight = 2
+	let size = 36
+
+	function input(event: { currentTarget: HTMLInputElement }) {
 		query = event.currentTarget.value.trim();
 
 		if (query != lastQuery) {
-		console.log(`trying to search for "${query}"`);
-		find();
-	} else {
-		console.log(
-		`not repeating same search - q: "${query}" lq: "${lastQuery}"`,
-		);
-	}
+			console.log(`trying to search for "${query}"`);
+			find();
+		} else {
+			console.log(
+				`not repeating same search - q: "${query}" lq: "${lastQuery}"`,
+			);
+		}
 	}
 
-		let sc = 0;
+	let sc = 0;
 
-		async function find() {
+	async function find() {
 		if (searching) return;
 
 		const currentQuery = query;
@@ -43,17 +47,14 @@
 		sc++;
 		searching = true;
 
-		icons =
-		query.length == 0
-		? data.defaultSearch
-		: await search(data.searchDb, {
-		term: currentQuery,
-		properties: ['nameKebab', 'keywords'],
-		tolerance: 10,
-		limit: 50,
-		boost: {
-		keywords: 2,
-	},
+		icons =  query.length == 0 ? data.defaultSearch : await search(data.searchDb, {
+			term: currentQuery,
+			properties: ['nameKebab', 'keywords'],
+			tolerance: 10,
+			limit: 50,
+			boost: {
+			keywords: 2,
+		},
 	});
 
 		lastQuery = currentQuery;
@@ -72,11 +73,10 @@
 </svelte:head>
 
 
-
 <div class="is-dark">
 	<div class="bg-black">
 		<div class="container padding-medium margin-0-auto">
-			<div class="vertical-container-xx-large">
+			<div class="vertical-container-x-large">
 				<div class="hero">
 					<h2 class="text-align-center">
 						A simple, consistent set of icons, perfect for user
@@ -112,14 +112,41 @@
 <div class="responds-to-dark">
 	<div class="bg-dark-grey">
 		<div class="container padding-medium margin-0-auto">
-			<div class="input-with-icon">
-				<input
-					on:input={input}
-					placeholder="Search {iconsCount} Obra Icons..."
-					type="text"
-				/>
-
-				<IconSearch />
+			<div class="controls">
+				<div class="input-with-icon">
+					<input
+						on:input={input}
+						placeholder="Search {iconsCount} Obra Icons..."
+						type="text"
+					/>
+					<IconSearch />
+				</div>
+				<div class="sliders">
+					<div class="control-group">
+						<label id="weight">Weight</label>
+						<input
+							id="weight"
+							type="range"
+							bind:value={strokeWeight}
+							min="1"
+							step=".5"
+							max="2"
+						/>
+						<span class="count stroke-weight">{strokeWeight}</span>
+					</div>
+					<div class="control-group">
+						<label for="size">Size</label>
+						<input
+							id="size"
+							type="range"
+							bind:value={size}
+							min="16"
+							step="4"
+							max="64"
+						/>
+						<span class="count">{size}</span>
+					</div>
+				</div>
 			</div>
 
 			{#if dev && $page.url.searchParams.has('debug')}
@@ -137,6 +164,9 @@
 							{@const svg = getSvg(document.nameKebab)}
 							<Icon
 								{svg}
+								color={color}
+								strokeWeight={strokeWeight}
+								size={size}
 								nameKebab={document.nameKebab}
 								namePascal={document.namePascal}
 							/>
@@ -151,9 +181,77 @@
 </div>
 
 <style>
-    .icon-grid {
+
+    input[type='range']{ accent-color: #000; }
+
+    @media (prefers-color-scheme: dark) {
+        input[type='range']{ accent-color: #FFF; }
+	}
+
+	.icon-grid {
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
     }
+
+    label {
+        font-weight: 600;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        label, .count {
+            color: #FFF;
+        }
+    }
+
+
+    .sliders {
+        margin: 24px 0 0;
+		display: flex;
+		gap: 24px;
+		justify-content: center;
+	}
+
+
+    @media (max-width: 640px) {
+        .sliders input {
+            width: 70px;
+        }
+    }
+
+
+    @media (max-width: 390px) {
+        .sliders input {
+            width: 40px;
+        }
+    }
+
+    @media (max-width: 960px) {
+		.controls {
+            margin: 0 0 0;
+        }
+    }
+
+	@media (min-width: 960px) {
+        .controls {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+
+		.sliders {
+            margin: 0;
+        }
+	}
+
+	.control-group {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.stroke-weight {
+		width: 30px;
+	}
+
 </style>

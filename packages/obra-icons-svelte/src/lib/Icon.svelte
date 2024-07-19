@@ -6,6 +6,9 @@
 	export let svg: string;
 	export let nameKebab: string;
 	export let namePascal: string;
+	export let size
+	export let color
+	export let strokeWeight
 
 	let timeout: ReturnType<typeof setTimeout>;
 	let toast: string | null = null;
@@ -41,7 +44,15 @@
 </script>
 
 <li class="icon-item">
-	<div class="icon">{@html svg}</div>
+	<div
+		class="icon"
+		style="width: {size}px; height: {size}px"
+		class:stroke-weight-2={strokeWeight === 2}
+		class:stroke-weight-15={strokeWeight === 1.5}
+		class:stroke-weight-1={strokeWeight === 1}
+	>
+		{@html svg}
+	</div>
 
 	<span class="icon-name">{nameKebab}</span>
 
@@ -174,4 +185,16 @@
 
 		pointer-events: none;
 	}
+
+    .stroke-weight-15 :global(svg *) {
+        stroke-width: 1.5px;
+    }
+
+    .stroke-weight-1 :global(svg *) {
+        stroke-width: 1px;
+    }
+
+    .stroke-weight-2 :global(svg *) {
+		stroke-width: 2px;
+	 }
 </style>
