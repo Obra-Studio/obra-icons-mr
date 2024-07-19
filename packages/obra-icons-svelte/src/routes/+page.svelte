@@ -1,31 +1,89 @@
-<script>
+<script lang="ts">
 	import { IconArrowRight } from '$package';
-	import IconFigma from '$lib/components/icons/FigmaIcon.svelte';
-	import Preview from "$lib/components/Preview.svelte";
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
 	import iconsCount from '$lib/count';
+
+		import { IconSearch } from '$package/index';
+		import { dev } from '$app/environment';
+		import { search } from '@orama/orama';
+		import { getSvg } from '$lib/svgs';
+
+		import Icon from '$lib/Icon.svelte';
+		import { page } from '$app/stores';
+
+		export let data;
+
+		let icons = data.defaultSearch;
+
+		let searching = false;
+		let query: string = '';
+		let lastQuery: string = query;
+
+		function input(event: { currentTarget: HTMLInputElement }) {
+		query = event.currentTarget.value.trim();
+
+		if (query != lastQuery) {
+		console.log(`trying to search for "${query}"`);
+		find();
+	} else {
+		console.log(
+		`not repeating same search - q: "${query}" lq: "${lastQuery}"`,
+		);
+	}
+	}
+
+		let sc = 0;
+
+		async function find() {
+		if (searching) return;
+
+		const currentQuery = query;
+		console.debug(`searching for "${currentQuery}"`);
+
+		sc++;
+		searching = true;
+
+		icons =
+		query.length == 0
+		? data.defaultSearch
+		: await search(data.searchDb, {
+		term: currentQuery,
+		properties: ['nameKebab', 'keywords'],
+		tolerance: 10,
+		limit: 50,
+		boost: {
+		keywords: 2,
+	},
+	});
+
+		lastQuery = currentQuery;
+		searching = false;
+		sc--;
+
+		if (currentQuery != query) {
+		find();
+	}
+	}
 </script>
+
 
 <svelte:head>
 	<title>Home - Obra Icons</title>
 </svelte:head>
 
+
+
 <div class="is-dark">
 	<div class="bg-black">
 		<div class="container padding-medium margin-0-auto">
-			<div class="vertical-container-xxx-large">
+			<div class="vertical-container-xx-large">
 				<div class="hero">
-					<Preview />
 					<h2 class="text-align-center">
 						A simple, consistent set of icons, perfect for user
 						interfaces.
 					</h2>
 
 					<div class="justify-content-center button-group">
-						<a class="button inverse" href="/icons">
-							<span>Explore & download {iconsCount} icons for free</span>
-							<IconArrowRight />
-						</a>
 						<a
 							class="button inverse"
 							href="https://sowl.co/s/bdgsNv"
@@ -51,137 +109,51 @@
 	</div>
 </div>
 
-<div class="is-dark">
+<div class="responds-to-dark">
 	<div class="bg-dark-grey">
-		<div class="container padding-medium margin-0-auto is-dark">
-			<div class="vertical-container-xxx-large">
-				<h2 class="text-align-center">Why Obra Icons?</h2>
+		<div class="container padding-medium margin-0-auto">
+			<div class="input-with-icon">
+				<input
+					on:input={input}
+					placeholder="Search {iconsCount} Obra Icons..."
+					type="text"
+				/>
 
-				<ul class="advantages">
-					<li class="vertical-container-x-large">
-						<div class="image-holder">
-							<img
-								srcset="/illustration-quality.png 1x, /illustration-quality@2x.png 2x"
-								src="/illustration-quality.png"
-								alt="Super high quality"
+				<IconSearch />
+			</div>
+
+			{#if dev && $page.url.searchParams.has('debug')}
+				<p>Found {icons.hits.length} icons</p>
+				<p>Query: "{query}"</p>
+				<p>LQuery: "{lastQuery}"</p>
+				<p>Searching: {searching}</p>
+				<p>SC: {sc}</p>
+			{/if}
+
+			<div class="vertical-container-x-large">
+				{#if icons.hits}
+					<ul class="icon-grid">
+						{#each icons.hits as { document } (document.nameKebab)}
+							{@const svg = getSvg(document.nameKebab)}
+							<Icon
+								{svg}
+								nameKebab={document.nameKebab}
+								namePascal={document.namePascal}
 							/>
-						</div>
-
-						<div class="content">
-							<h3>Super high quality</h3>
-							<p>
-								Detailed vectors, consistent to the highest
-								level, with crisp details and consistent
-								rounding.
-							</p>
-						</div>
-					</li>
-
-					<li class="vertical-container-x-large">
-						<div class="image-holder">
-							<img
-								srcset="/illustration-weights.png 1x, /illustration-weights@2x.png 2x"
-								src="/illustration-weights.png"
-								alt="Multiple weights and sizes"
-							/>
-						</div>
-
-						<div class="content">
-							<h3>Multiple weights and sizes</h3>
-							<p>
-								Obra Icons are drawn at 2px stroke weight and in a 24x24 frame, and have been designed to work at 3 different stroke weights (1,
-								1.5 and 2px). Since the icons are vector-based and use specific line and vector dot drawing techniques, they also upscale easily to different sizes like 32 and 48px. This makes it easy to use the same icon set for different use cases - from system to illustrative.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="content">
-							<h3>Over 750 icons</h3>
-							<p>
-								The icon set contains many icons, so you won’t
-								run into the situation where you can’t find the
-								right icon for your needs. We selected the
-								essential icons for UI design evaluated against
-								tons of real-life UI design projects, and are
-								continuously growing the set.
-							</p>
-							<p>
-								Need a specific icon? <a
-									href="mailto:iconrequest@obra.studio"
-									>Let us know</a
-								>.
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="content">
-							<h3>Easy to use</h3>
-							<p>
-								Download an icon from the website, buy the files
-								for use in a design app or integrate in your
-								Svelte project using the npm package.
-							</p>
-
-							<p>
-								Need an integration in another framework? <a
-									href="mailto:iconrequest@obra.studio"
-									>Let us know</a
-								>.
-							</p>
-						</div>
-					</li>
-				</ul>
+						{/each}
+					</ul>
+				{:else}
+					<p class="text-align-center">No results found.</p>
+				{/if}
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container padding-medium margin-0-auto">
-	<div class="vertical-container-x-large">
-		<div class="columns buy-obra-icons">
-			<div class="column">
-				<div class="text-align-center">
-					<img
-						srcset="/illustration-buy-obra-files.png 1x, /illustration-buy-obra-files@2x.png 2x"
-						src="/illustration-buy-obra-files.png"
-						alt="Obra Icons Files"
-					/>
-				</div>
-			</div>
-
-			<div class="column">
-				<div class="content">
-					<h2>Buy the Figma source file</h2>
-					<p>Buy the source file for direct import into Figma.</p>
-					<p>
-						This file contains the original vectors of the 750+ icons, with its icons categorized into different categories. Use it to extend or customize the set to your needs.
-					</p>
-					<p>There are 2 options: buying via Figma or buying direct. The advantage of buying direct is that you can get notified of future updates. You can also receive a professional VAT invoice.</p>
-					<div class="button-group">
-						<a class="button" href="https://sowl.co/s/bdgsNv">
-							<span>Buy the file directly</span>
-							<IconArrowRight />
-						</a>
-						<a class="button" href="https://www.figma.com/community/file/1297284985156926365">
-							<span class="icon-fill-wrapper inverse">
-								<IconFigma />
-							</span>
-							<span>Buy via Figma community</span>
-							<IconArrowRight />
-						</a>
-					</div>
-
-					<div class="vertical-container blacked-links">
-						<p>
-							Need specific exports or file formats? <a
-								href="mailto:info@obra.studio"
-						>Let us know</a
-						>.
-						</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<style>
+    .icon-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+    }
+</style>

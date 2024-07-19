@@ -48,6 +48,17 @@ export default {
     "create",
     "insert"
   ],
+  "add-text-to-photo": [
+    "caption",
+    "overlay",
+    "text overlay",
+    "text on image",
+    "text on picture",
+    "text addition",
+    "plus",
+    "create",
+    "insert"
+  ],
   "airplay": [
     "stream",
     "cast",
@@ -377,6 +388,14 @@ export default {
     "account",
     "transaction"
   ],
+  "bao-bun": [
+    "steamed bun",
+    "Chinese bun",
+    "filled bun",
+    "dumpling",
+    "pork bun",
+    "meat bun"
+  ],
   "bar-chart": [
     "graph",
     "statistics",
@@ -424,6 +443,14 @@ export default {
     "code",
     "product",
     "inventory"
+  ],
+  "basketball": [
+    "ball",
+    "hoops",
+    "sports",
+    "NBA",
+    "basket",
+    "dribble"
   ],
   "bathroom": [
     "restroom",
@@ -680,6 +707,15 @@ export default {
     "bracket",
     "curly brackets"
   ],
+  "bread": [
+    "baguette",
+    "loaf",
+    "slice",
+    "bakery",
+    "wheat",
+    "toast",
+    "sandwich"
+  ],
   "briefcase": [
     "bag",
     "portfolio",
@@ -706,6 +742,14 @@ export default {
     "British money",
     "British currency"
   ],
+  "brocolli": [
+    "vegetable",
+    "green",
+    "healthy",
+    "food",
+    "nutrition",
+    "plant"
+  ],
   "brush": [
     "paintbrush",
     "art",
@@ -721,6 +765,14 @@ export default {
     "creepy-crawly",
     "infection",
     "glitch"
+  ],
+  "burger": [
+    "hamburger",
+    "sandwich",
+    "fast food",
+    "cheeseburger",
+    "beef",
+    "grill"
   ],
   "bus": [
     "vehicle",
@@ -1635,6 +1687,15 @@ export default {
     "shape",
     "ring"
   ],
+  "click-events": [
+    "analytics",
+    "interaction",
+    "mouse clicks",
+    "user actions",
+    "button presses",
+    "event handling",
+    "user interactions"
+  ],
   "clipboard-add": [
     "copy",
     "paste",
@@ -2042,6 +2103,15 @@ export default {
     "authorship",
     "rights"
   ],
+  "cornflakes": [
+    "pops",
+    "cereal",
+    "breakfast",
+    "flakes",
+    "grains",
+    "corn",
+    "food"
+  ],
   "cpu": [
     "processor",
     "computer",
@@ -2089,6 +2159,14 @@ export default {
     "cancel",
     "close",
     "terminate"
+  ],
+  "crosshair": [
+    "target",
+    "aim",
+    "sight",
+    "bullseye",
+    "marker",
+    "reticle"
   ],
   "crown": [
     "king",
@@ -2417,6 +2495,17 @@ export default {
     "note",
     "sheet"
   ],
+  "document-forward": [
+    "send",
+    "forward",
+    "share",
+    "transfer",
+    "pass",
+    "dispatch",
+    "file",
+    "paper",
+    "record"
+  ],
   "document-missing": [
     "file",
     "paper",
@@ -2533,6 +2622,15 @@ export default {
     "release",
     "let go",
     "plummet"
+  ],
+  "dumbell": [
+    "weight",
+    "lifting",
+    "exercise",
+    "fitness",
+    "gym",
+    "strength",
+    "barbell"
   ],
   "edit": [
     "modify",
@@ -2667,6 +2765,15 @@ export default {
     "euro sign",
     "euro symbol"
   ],
+  "events": [
+    "analytics",
+    "calendar",
+    "schedule",
+    "appointments",
+    "activities",
+    "occasions",
+    "meetings"
+  ],
   "expand": [
     "enlarge",
     "stretch",
@@ -2768,6 +2875,16 @@ export default {
     "emoticon",
     "add",
     "create"
+  ],
+  "face-identification": [
+    "face",
+    "id",
+    "facial recognition",
+    "face detection",
+    "biometric identification",
+    "face authentication",
+    "face verification",
+    "identity verification"
   ],
   "face-love": [
     "heart",
@@ -3430,6 +3547,14 @@ export default {
     "drink",
     "vessel"
   ],
+  "grain": [
+    "wheat",
+    "cereal",
+    "rice",
+    "corn",
+    "oats",
+    "barley"
+  ],
   "grid": [
     "table",
     "matrix",
@@ -3600,6 +3725,15 @@ export default {
     "communication",
     "received",
     "notifications"
+  ],
+  "inbox-alt": [
+    "email",
+    "message",
+    "mailbox",
+    "notification",
+    "envelope",
+    "communication",
+    "messages"
   ],
   "indian-rupee": [
     "currency",
@@ -3993,6 +4127,22 @@ export default {
     "write",
     "writing tool"
   ],
+  "markets": [
+    "trading",
+    "finance",
+    "economy",
+    "stocks",
+    "business",
+    "investing"
+  ],
+  "markets-alt": [
+    "finance",
+    "economy",
+    "trading",
+    "stocks",
+    "investing",
+    "business"
+  ],
   "mask": [
     "face covering",
     "disguise",
@@ -4008,6 +4158,26 @@ export default {
     "veil",
     "shield",
     "protection"
+  ],
+  "masonry": [
+    "dashboard",
+    "brickwork",
+    "stonework",
+    "construction",
+    "architecture",
+    "building",
+    "structure"
+  ],
+  "masonry-alt": [
+    "dashboard",
+    "brick",
+    "building",
+    "construction",
+    "architecture",
+    "wall",
+    "structure",
+    "brickwork",
+    "stonework"
   ],
   "math": [
     "numbers",
@@ -4048,6 +4218,14 @@ export default {
     "bullhorn",
     "amplifier",
     "public address"
+  ],
+  "megaphone-alt": [
+    "loudspeaker",
+    "announcement",
+    "speaker",
+    "communication",
+    "broadcast",
+    "publicity"
   ],
   "mention": [
     "at",
@@ -4150,6 +4328,14 @@ export default {
     "microphone",
     "audio",
     "sound"
+  ],
+  "microscope": [
+    "science",
+    "laboratory",
+    "research",
+    "biology",
+    "magnify",
+    "investigate"
   ],
   "minimize": [
     "reduce",
@@ -4455,6 +4641,14 @@ export default {
     "items",
     "bullet points"
   ],
+  "orders": [
+    "purchases",
+    "transactions",
+    "sales",
+    "buying",
+    "shopping",
+    "invoices"
+  ],
   "package": [
     "box",
     "parcel",
@@ -4502,6 +4696,14 @@ export default {
     "binder",
     "pin",
     "clamp"
+  ],
+  "passport": [
+    "travel document",
+    "identification",
+    "visa",
+    "immigration",
+    "international travel",
+    "official identification"
   ],
   "path-crossing": [
     "intersection",
@@ -4640,6 +4842,14 @@ export default {
     "visualization",
     "segment"
   ],
+  "pie-chart-single-part-filled": [
+    "chart",
+    "graph",
+    "statistics",
+    "data",
+    "visualization",
+    "segment"
+  ],
   "pig": [
     "animal",
     "swine",
@@ -4706,6 +4916,14 @@ export default {
     "thumbtack",
     "pinpoint",
     "flag"
+  ],
+  "pizza-slice": [
+    "pizza",
+    "food",
+    "slice",
+    "cheese",
+    "pepperoni",
+    "dinner"
   ],
   "plane": [
     "airplane",
@@ -4821,6 +5039,14 @@ export default {
     "lock",
     "key"
   ],
+  "pull-request": [
+    "merge",
+    "code",
+    "contribution",
+    "request",
+    "submit",
+    "merge request"
+  ],
   "qr-code-scan": [
     "barcode",
     "scan",
@@ -4933,6 +5159,14 @@ export default {
     "eliminate",
     "uncover"
   ],
+  "remove-background-alt": [
+    "delete",
+    "erase",
+    "clear",
+    "eliminate",
+    "strip",
+    "take away"
+  ],
   "rent": [
     "mortgage",
     "lease",
@@ -5040,6 +5274,14 @@ export default {
     "back",
     "reverse",
     "previous"
+  ],
+  "rice": [
+    "grain",
+    "food",
+    "staple",
+    "cereal",
+    "meal",
+    "cooking"
   ],
   "right-indent-text": [
     "align",
@@ -5260,6 +5502,17 @@ export default {
     "host",
     "machine"
   ],
+  "server-rack": [
+    "data center",
+    "network rack",
+    "server cabinet",
+    "IT infrastructure",
+    "rack mount",
+    "server storage",
+    "computer",
+    "host",
+    "machine"
+  ],
   "settings": [
     "options",
     "preferences",
@@ -5311,6 +5564,14 @@ export default {
     "distribute",
     "post"
   ],
+  "shell": [
+    "seashell",
+    "oyster",
+    "mollusk",
+    "beach",
+    "marine",
+    "coast"
+  ],
   "shield": [
     "protection",
     "security",
@@ -5345,6 +5606,14 @@ export default {
     "unlock",
     "shield",
     "guard"
+  ],
+  "shipping-fill": [
+    "delivery",
+    "transportation",
+    "shipment",
+    "logistics",
+    "cargo",
+    "freight"
   ],
   "shopping-basket": [
     "cart",
@@ -5404,6 +5673,23 @@ export default {
     "drawer",
     "sidebar menu"
   ],
+  "sidebar-fill-left": [
+    "menu",
+    "navigation",
+    "side panel",
+    "left panel",
+    "vertical menu",
+    "sidebar",
+    "panel"
+  ],
+  "sidebar-fill-right": [
+    "menu",
+    "navigation",
+    "panel",
+    "side",
+    "right",
+    "filled"
+  ],
   "signal": [
     "network",
     "connection",
@@ -5427,6 +5713,14 @@ export default {
     "outline",
     "diagram",
     "map"
+  ],
+  "sleep": [
+    "rest",
+    "nap",
+    "slumber",
+    "doze",
+    "snooze",
+    "bedtime"
   ],
   "slice": [
     "cut",
@@ -5453,6 +5747,7 @@ export default {
     "two sliders"
   ],
   "snap": [
+    "magnet",
     "photo",
     "picture",
     "capture",
@@ -5461,6 +5756,7 @@ export default {
     "image"
   ],
   "snap-horizontal": [
+    "magnet",
     "split",
     "divide",
     "separate",
@@ -5570,6 +5866,7 @@ export default {
     "numbers"
   ],
   "statistic-up": [
+    "insights",
     "increase",
     "growth",
     "upward",
@@ -6168,6 +6465,14 @@ export default {
     "parasol",
     "canopy"
   ],
+  "umbrella-alt": [
+    "rain",
+    "weather",
+    "protection",
+    "shelter",
+    "parasol",
+    "canopy"
+  ],
   "underline": [
     "line",
     "underscore",
@@ -6411,6 +6716,30 @@ export default {
     "approved",
     "legitimized"
   ],
+  "vertical-align-bottom": [
+    "down",
+    "bottom",
+    "align",
+    "position",
+    "vertical",
+    "baseline"
+  ],
+  "vertical-align-middle": [
+    "center",
+    "middle",
+    "vertical centering",
+    "align middle",
+    "vertical alignment",
+    "centered"
+  ],
+  "vertical-align-top": [
+    "align top",
+    "top alignment",
+    "vertical alignment top",
+    "upward alignment",
+    "align to top",
+    "top vertical alignment"
+  ],
   "vial": [
     "experiment",
     "bottle",
@@ -6600,6 +6929,15 @@ export default {
     "stream",
     "online",
     "conference"
+  ],
+  "weight": [
+    "lifting",
+    "scale",
+    "measurement",
+    "mass",
+    "heaviness",
+    "pounds",
+    "kilograms"
   ],
   "wifi": [
     "internet",

@@ -19,7 +19,7 @@
 	<g class="oi-map">
 		<path
 			class="oi-box"
-			d="M9.00001 4L3.68378 5.77208C3.27544 5.90819 3.00001 6.29033 3.00001 6.72076V18.6126C3.00001 19.2951 3.6687 19.7771 4.31623 19.5613L9.00001 18V4Z"
+			d="M9 4L3.68377 5.77208C3.27543 5.90819 3 6.29033 3 6.72076V18.6126C3 19.2951 3.6687 19.7771 4.31623 19.5613L9 18V4Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-box"
-			d="M15 6L9.00001 4V18L15 20V6Z"
+			d="M15 6L9 4V18L15 20V6Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

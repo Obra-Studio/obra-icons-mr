@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-statistic-up">
+	<g class="oi-statistic-up[insights]">
 		<path
 			class="oi-vector"
 			d="M7 14L11 10L15 14L21 8"
