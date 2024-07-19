@@ -87,15 +87,4 @@
 		stroke-width: 0.5px;
 	}
 
-	.icon-wrapper :global(svg .oi-dot) {
-		stroke-width: 4px;
-	}
-
-	.icon-wrapper :global(svg .oi-medium-dot) {
-		stroke-width: 3px;
-	}
-
-	.icon-wrapper :global(svg .oi-mini-dot) {
-		stroke-width: 2px;
-	}
 </style>

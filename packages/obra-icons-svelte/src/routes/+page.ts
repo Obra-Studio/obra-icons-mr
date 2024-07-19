@@ -4,6 +4,7 @@ import iconSearchData from '$lib/keywords';
 /**
  * Turns "align-center" to "IconAlignCenter"
  */
+
 function iconNamePascal(name: string) {
 	const pascal = name
 		.split('-')

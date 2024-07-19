@@ -92,7 +92,7 @@
 
 	.icon-item {
 		position: relative;
-		min-height: 160px;
+		min-height: 140px;
 
 		display: flex;
 		flex-direction: column;
@@ -100,7 +100,7 @@
 		align-items: center;
 		justify-content: center;
 
-		border: 1px solid #ccc;
+		border: 1px solid #CCC;
 		padding: 1.5rem;
 		text-align: center;
 		border-radius: 3px;

@@ -3,38 +3,36 @@
     import { fade } from 'svelte/transition';
     import { writable } from 'svelte/store';
 
-    let count = 1;
-    let maxLimit = 8;
+    let count = writable(1);
+    let maxLimit = writable(8);
     const device = writable('desktop');
 
     let interval;
 
     onMount(() => {
-        function checkDevice() {
-            device.set(window.innerWidth > 960 ? 'desktop' : 'mobile');
-        }
+      function checkDevice() {
+        device.set(window.innerWidth > 960 ? 'desktop' : 'mobile');
+      }
 
-        checkDevice();
+      checkDevice();
 
-        window.addEventListener('resize', checkDevice);
+      window.addEventListener('resize', checkDevice);
 
-        interval = setInterval(() => {
-            count = count < maxLimit ? count + 1 : 1;
-        }, 3000);
+      interval = setInterval(() => {
+        $count = $count < $maxLimit ? $count + 1 : 1;
+      }, 3000);
 
-        // Cleanup on component destruction
-        onDestroy(() => {
-            clearInterval(interval);
-            window.removeEventListener('resize', checkDevice);
-        });
+      return () => {
+        clearInterval(interval);
+        window.removeEventListener('resize', checkDevice);
+      };
     });
-
 </script>
 
 <div class="preview">
   {#key count}
     <div transition:fade={{ delay: 250, duration: 300 }}>
-      <img src={`/icons-${count}-${$device}.png`} alt="Obra Icons" />
+      <img src={`/icons-${$count}-${$device}.png`} alt="Obra Icons" />
     </div>
   {/key}
 </div>

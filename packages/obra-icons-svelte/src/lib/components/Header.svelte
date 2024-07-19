@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import NavItem from './NavItem.svelte';
+	const version = import.meta.env.VITE_APP_VERSION;
 </script>
 
 <header>
@@ -30,15 +31,15 @@
 									<li>
 										<NavItem
 											active={$page.url.pathname.startsWith(
-												'/icons',
+												'/about',
 											)}
-											href="/icons">Explore icons</NavItem
+											href="/about">About</NavItem
 										>
 									</li>
 								</ul>
 							</nav>
 						</div>
-						<p>1.13.0</p>
+						<p>{version}</p>
 				</div>
 			</div>
 		</div>
