@@ -10,6 +10,14 @@ export default {
     "diploma",
     "learning"
   ],
+  "accountant": [
+    "finance",
+    "bookkeeper",
+    "tax",
+    "money",
+    "numbers",
+    "financial"
+  ],
   "ad": [
     "advertisement",
     "promo",
@@ -348,6 +356,14 @@ export default {
     "3D visualization",
     "computer-generated reality"
   ],
+  "avocado": [
+    "fruit",
+    "green",
+    "healthy",
+    "guacamole",
+    "food",
+    "produce"
+  ],
   "backspace": [
     "delete",
     "erase",
@@ -380,6 +396,41 @@ export default {
     "account",
     "transaction"
   ],
+  "bank-alt": [
+    "bank",
+    "finance",
+    "money",
+    "financial institution",
+    "building",
+    "alternative bank",
+    "financial"
+  ],
+  "bank-card": [
+    "credit",
+    "debit",
+    "credit card",
+    "debit card",
+    "payment card",
+    "plastic card",
+    "banking card",
+    "ATM card",
+    "money",
+    "finance",
+    "financial"
+  ],
+  "bank-card-fill": [
+    "credit",
+    "debit",
+    "credit card",
+    "debit card",
+    "payment card",
+    "plastic card",
+    "banking card",
+    "ATM card",
+    "money",
+    "finance",
+    "financial"
+  ],
   "bank-fill": [
     "money",
     "finance",
@@ -387,6 +438,15 @@ export default {
     "savings",
     "account",
     "transaction"
+  ],
+  "bank-transactions": [
+    "finance",
+    "money",
+    "transaction",
+    "banking",
+    "payment",
+    "account",
+    "financial"
   ],
   "bao-bun": [
     "steamed bun",
@@ -1697,6 +1757,7 @@ export default {
     "user interactions"
   ],
   "clipboard-add": [
+    "medical",
     "copy",
     "paste",
     "document",
@@ -1998,14 +2059,6 @@ export default {
     "edit",
     "palette"
   ],
-  "color-swatches": [
-    "colors",
-    "palette",
-    "paint",
-    "samples",
-    "shades",
-    "selection"
-  ],
   "command": [
     "order",
     "instruction",
@@ -2127,22 +2180,6 @@ export default {
     "chip",
     "hardware",
     "microprocessor"
-  ],
-  "credit-card": [
-    "payment",
-    "debit card",
-    "bank card",
-    "plastic money",
-    "financial card",
-    "charge card"
-  ],
-  "credit-card-fill": [
-    "payment",
-    "debit card",
-    "bank card",
-    "plastic money",
-    "financial card",
-    "charge card"
   ],
   "crop": [
     "cut",
@@ -2316,6 +2353,14 @@ export default {
     "promotion",
     "rebate",
     "deal",
+    "markdown"
+  ],
+  "discount-alt": [
+    "sale",
+    "offer",
+    "price cut",
+    "rebate",
+    "promotion",
     "markdown"
   ],
   "discount-fill": [
@@ -2712,6 +2757,14 @@ export default {
     "inbox",
     "correspondence"
   ],
+  "employee-badge": [
+    "staff",
+    "worker",
+    "identification",
+    "ID card",
+    "personnel",
+    "employee"
+  ],
   "enter": [
     "input",
     "type",
@@ -2999,14 +3052,6 @@ export default {
     "star",
     "preference",
     "cherished"
-  ],
-  "favorite-fill-off": [
-    "favorite",
-    "bookmark",
-    "like",
-    "heart",
-    "unfavorite",
-    "unbookmark"
   ],
   "favorite-off": [
     "unfavorite",
@@ -3483,6 +3528,14 @@ export default {
     "video game",
     "console"
   ],
+  "gas": [
+    "fuel",
+    "petrol",
+    "gasoline",
+    "energy",
+    "power",
+    "combustible"
+  ],
   "gdpr": [
     "privacy",
     "data protection",
@@ -3490,6 +3543,14 @@ export default {
     "compliance",
     "security",
     "consent"
+  ],
+  "generate": [
+    "create",
+    "produce",
+    "make",
+    "generate",
+    "form",
+    "develop"
   ],
   "ghost": [
     "spirit",
@@ -3523,6 +3584,15 @@ export default {
     "birthday",
     "holiday"
   ],
+  "give": [
+    "care",
+    "hand",
+    "present",
+    "offer",
+    "provide",
+    "grant",
+    "donate"
+  ],
   "glasses": [
     "eyewear",
     "spectacles",
@@ -3530,6 +3600,15 @@ export default {
     "eyeglasses",
     "specs",
     "sunglasses"
+  ],
+  "glasses-alt": [
+    "eyeglasses",
+    "spectacles",
+    "vision",
+    "eyewear",
+    "alternative",
+    "alternate",
+    "shades"
   ],
   "globe": [
     "world",
@@ -3571,6 +3650,16 @@ export default {
     "gridiron",
     "checkerboard"
   ],
+  "hand-luggage": [
+    "bag",
+    "suitcase",
+    "carry-on",
+    "travel bag",
+    "cabin baggage",
+    "portable suitcase",
+    "handheld luggage",
+    "small suitcase"
+  ],
   "hand-move": [
     "drag",
     "slide",
@@ -3587,6 +3676,14 @@ export default {
     "mouse",
     "index"
   ],
+  "hanger": [
+    "clothes",
+    "wardrobe",
+    "garment",
+    "hook",
+    "closet",
+    "hang"
+  ],
   "hashtag": [
     "pound",
     "number sign",
@@ -3594,16 +3691,6 @@ export default {
     "sharp",
     "hash",
     "octothorpe"
-  ],
-  "hashtag-alt": [
-    "hashtag",
-    "tag",
-    "label",
-    "alternative",
-    "alternate",
-    "symbol",
-    "pound",
-    "number sign"
   ],
   "headphones": [
     "earphones",
@@ -3628,16 +3715,6 @@ export default {
     "passion",
     "cardiovascular",
     "valentine"
-  ],
-  "heart-fill-off": [
-    "heart",
-    "love",
-    "like",
-    "favorite",
-    "unfavorite",
-    "disable",
-    "affection",
-    "emotion"
   ],
   "heart-off": [
     "heart",
@@ -3750,6 +3827,14 @@ export default {
     "eternal",
     "unlimited",
     "never-ending"
+  ],
+  "invoices": [
+    "bills",
+    "payments",
+    "statements",
+    "receipts",
+    "financial",
+    "transactions"
   ],
   "iso": [
     "file",
@@ -4337,6 +4422,14 @@ export default {
     "magnify",
     "investigate"
   ],
+  "milk": [
+    "dairy",
+    "drink",
+    "beverage",
+    "cow",
+    "white",
+    "liquid"
+  ],
   "minimize": [
     "reduce",
     "shrink",
@@ -4689,6 +4782,15 @@ export default {
     "paint applicator",
     "painting equipment"
   ],
+  "palette": [
+    "color",
+    "colors",
+    "paint",
+    "art",
+    "brush",
+    "design",
+    "color wheel"
+  ],
   "paperclip": [
     "clip",
     "attachment",
@@ -4976,6 +5078,7 @@ export default {
     "commence"
   ],
   "pound": [
+    "british",
     "weight",
     "scale",
     "kilogram",
@@ -4990,6 +5093,15 @@ export default {
     "power down",
     "stop",
     "exit"
+  ],
+  "presentation": [
+    "keynote",
+    "slide",
+    "lecture",
+    "speech",
+    "talk",
+    "demonstration",
+    "show"
   ],
   "previous": [
     "back",
@@ -5031,6 +5143,15 @@ export default {
     "geometry",
     "prismatic"
   ],
+  "prism-alt": [
+    "prism",
+    "geometry",
+    "shape",
+    "light",
+    "refraction",
+    "crystal",
+    "triangle"
+  ],
   "private-door": [
     "door",
     "entrance",
@@ -5046,6 +5167,23 @@ export default {
     "request",
     "submit",
     "merge request"
+  ],
+  "puppy": [
+    "dog",
+    "pup",
+    "canine",
+    "pet",
+    "pooch",
+    "paw"
+  ],
+  "puzzle-piece": [
+    "plugin",
+    "puzzle",
+    "jigsaw",
+    "game",
+    "interlocking",
+    "piece",
+    "puzzle game"
   ],
   "qr-code-scan": [
     "barcode",
@@ -5145,6 +5283,7 @@ export default {
   ],
   "redo": [
     "refresh",
+    "reload",
     "repeat",
     "retry",
     "do again",
@@ -5403,14 +5542,6 @@ export default {
     "yardstick",
     "measuring stick"
   ],
-  "rupee": [
-    "currency",
-    "money",
-    "dollar",
-    "coin",
-    "banknote",
-    "cash"
-  ],
   "savings": [
     "money",
     "finance",
@@ -5572,6 +5703,17 @@ export default {
     "marine",
     "coast"
   ],
+  "shell-alt": [
+    "shell",
+    "command",
+    "terminal",
+    "console",
+    "prompt",
+    "bash",
+    "seashell",
+    "oyster",
+    "mollusk"
+  ],
   "shield": [
     "protection",
     "security",
@@ -5689,6 +5831,15 @@ export default {
     "side",
     "right",
     "filled"
+  ],
+  "sigma": [
+    "deviation",
+    "sum",
+    "math",
+    "mathematics",
+    "statistics",
+    "symbol",
+    "equation"
   ],
   "signal": [
     "network",
@@ -5995,6 +6146,15 @@ export default {
     "railway",
     "public transportation",
     "commute"
+  ],
+  "suitcase": [
+    "trolley",
+    "travel",
+    "luggage",
+    "bag",
+    "carry-on",
+    "case",
+    "traveling"
   ],
   "sun": [
     "sunny",
@@ -6377,6 +6537,16 @@ export default {
     "deposit",
     "withdraw"
   ],
+  "transfer-payment": [
+    "sepa",
+    "money",
+    "transaction",
+    "send",
+    "pay",
+    "exchange",
+    "transfer",
+    "move"
+  ],
   "trending-down": [
     "declining",
     "decreasing",
@@ -6482,6 +6652,8 @@ export default {
     "separator"
   ],
   "undo": [
+    "refresh",
+    "reload",
     "reverse",
     "revert",
     "cancel",
@@ -6602,15 +6774,6 @@ export default {
     "customer",
     "circle",
     "enclosed",
-    "people"
-  ],
-  "user-encircled-alt": [
-    "person",
-    "profile",
-    "avatar",
-    "account",
-    "user",
-    "circle",
     "people"
   ],
   "user-encircled-alt-2-fill": [
@@ -6938,6 +7101,14 @@ export default {
     "heaviness",
     "pounds",
     "kilograms"
+  ],
+  "wheelchair": [
+    "handicap",
+    "mobility",
+    "disabled",
+    "accessibility",
+    "chair",
+    "medical"
   ],
   "wifi": [
     "internet",

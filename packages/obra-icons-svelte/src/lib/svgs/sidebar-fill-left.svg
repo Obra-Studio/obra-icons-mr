@@ -8,9 +8,13 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g class="oi-sidebar-fill-left">
-		<path
+		<rect
 			class="oi-fill"
-			d="M5 3C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H10C11.1046 21 12 20.1046 12 19V5C12 3.89543 11.1046 3 10 3H5Z"
+			x="3"
+			y="3"
+			width="9"
+			height="18"
+			rx="1"
 			fill="black"
 		/>
 		<path

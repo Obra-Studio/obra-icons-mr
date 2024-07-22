@@ -16,31 +16,43 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-credit-card">
+	<g class="oi-glasses-alt">
 		<path
-			class="oi-box"
-			d="M20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z"
+			class="oi-vector"
+			d="M7.50003 4.5H5.85024C5.63999 4.5 5.45229 4.63077 5.38153 4.82876C4.03243 8.60399 1.83483 15.8348 3.00003 17"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-miterlimit="10"
 			stroke-linecap="round"
-			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M15.6707 4.5H17.3205C17.5307 4.5 17.7184 4.63077 17.7892 4.82876C19.1383 8.60399 21.3359 15.8348 20.1707 17"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
 		/>
 		<path
 			class="oi-line"
-			d="M3 9.6001L21 9.6001"
+			d="M9 17H14"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
-			stroke-linejoin="round"
 		/>
-		<path
-			class="oi-line"
-			d="M7 14H9"
+		<circle
+			class="oi-ellipse"
+			cx="6"
+			cy="17"
+			r="3"
 			stroke={color}
 			stroke-width={strokeWidth}
-			stroke-linecap="round"
-			stroke-linejoin="round"
+		/>
+		<circle
+			class="oi-ellipse"
+			cx="17"
+			cy="17"
+			r="3"
+			stroke={color}
+			stroke-width={strokeWidth}
 		/>
 	</g>
 </svg>

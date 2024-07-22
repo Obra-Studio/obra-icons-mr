@@ -2,6 +2,15 @@
 
 We use semantic versioning (semver)
 
+## 1.15
+
+* Add more icons for a total of 848
+* Fix a bug with where base keywords that referred to older icon names that are not used anymore where generating empty icons on the website overview 
+
+## 1.14
+
+* Add more icons for a total of 821
+
 ## 1.13
 
 Get started with releasing again, add 4 icons

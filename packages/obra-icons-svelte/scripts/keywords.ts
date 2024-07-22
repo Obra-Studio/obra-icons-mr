@@ -18,8 +18,8 @@ console.log('Finding icon names');
 //? Find all the icon svg files so we can use the names
 const icon_files = await readdir(SVG_OUT_DIR);
 
-//? Normalise the names and remove the .svg extension
-const icon_names = icon_files.map((name) => basename(name).slice(0, -4));
+// Normalize the names and remove the .svg extension
+const existing_icon_names = new Set(icon_files.map((name) => basename(name, '.svg')));
 
 console.log('Generating keywords');
 
@@ -28,7 +28,8 @@ type KeywordTuple = [name: string, keywords: string[]];
 //? Map the keywords icon_name:keywords
 const name_keywords: KeywordTuple[] = [];
 
-//? Try and load old keywords to prevent regenerating them
+
+// Try and load old keywords to prevent regenerating them
 try {
 	const keywords_data = await import(KEYWORDS_FILE);
 
@@ -39,8 +40,12 @@ try {
 	console.log(`Importing ${existing_keywords.length} existing keywords`);
 
 	for (const [name, keywords] of existing_keywords) {
-		console.log(`  Importing keywords for "${name}"`);
-		name_keywords.push([name, keywords]);
+		if (existing_icon_names.has(name)) {
+			console.log(`  Importing keywords for "${name}"`);
+			name_keywords.push([name, keywords]);
+		} else {
+			console.log(`  Skipping keywords for non-existent icon "${name}"`);
+		}
 	}
 } catch {
 	console.log('Unable to find existing keywords file');
@@ -50,7 +55,7 @@ let i = 0;
 
 //? Generate the keywords map in parallel
 await Promise.all(
-	icon_names.map(async (nameKebab) => {
+	Array.from(existing_icon_names).map(async (nameKebab) => {
 		if (name_keywords.find(([name]) => name == nameKebab)) {
 			console.log(`Skipping "${nameKebab}"`);
 			return;

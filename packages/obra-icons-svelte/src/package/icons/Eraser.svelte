@@ -19,7 +19,7 @@
 	<g class="oi-eraser">
 		<path
 			class="oi-line"
-			d="M8.5 20.913H19"
+			d="M8.5 20.9131H19"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

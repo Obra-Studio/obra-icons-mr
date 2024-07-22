@@ -19,7 +19,7 @@
 	<g class="oi-log-out">
 		<path
 			class="oi-line"
-			d="M21 12H9"
+			d="M21 12H9.00001"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -37,7 +37,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M10 20H5.00003C4.44775 20 4.00003 19.5523 4.00003 19L4.00003 5C4.00003 4.44771 4.44775 4 5.00003 4H10"
+			d="M10 20H5.00002C4.44773 20 4.00002 19.5523 4.00002 19L4.00002 5C4.00002 4.44771 4.44773 4 5.00002 4H10"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

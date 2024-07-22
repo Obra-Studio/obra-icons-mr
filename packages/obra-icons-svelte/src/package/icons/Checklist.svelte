@@ -19,7 +19,7 @@
 	<g class="oi-checklist">
 		<path
 			class="oi-line"
-			d="M19 12H10"
+			d="M19.0001 12H10.0001"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M19 17.0001H10"
+			d="M19.0001 17.0001H10.0001"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -37,7 +37,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M19 7H10"
+			d="M19.0001 7H10.0001"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

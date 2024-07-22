@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-undo">
+	<g class="oi-undo[refresh,reload]">
 		<path
 			class="oi-vector"
 			d="M5 13.5C5 17.6 8.4 21 12.5 21C16.6 21 20 17.6 20 13.5C20 9.4 16.6 6 12.5 6H8.5"
