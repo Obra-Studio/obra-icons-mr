@@ -36,6 +36,14 @@
 											href="/about">About</NavItem
 										>
 									</li>
+									<li>
+										<NavItem
+											active={$page.url.pathname.startsWith(
+												'/buy',
+											)}
+											href="/buy">Buy Obra Icons</NavItem
+										>
+									</li>
 								</ul>
 							</nav>
 						</div>
