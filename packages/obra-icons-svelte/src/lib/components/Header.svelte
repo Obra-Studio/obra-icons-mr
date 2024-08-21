@@ -13,7 +13,7 @@
 
 						<div class="flex align-items-center gap-large">
 							<h1 class="logo">
-								<a href="./">
+								<a href="/">
 									<img src="/logo-obra.svg" alt="Obra" />
 									<span> Icons</span>
 								</a>
