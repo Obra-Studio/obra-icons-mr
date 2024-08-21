@@ -98,7 +98,7 @@
 							<span class="icon-fill-wrapper">
 								<GithubIcon />
 							</span>
-							<span>Free Svelte package (MIT)</span>
+							<span>Svelte package</span>
 							<IconArrowRight />
 						</a>
 
@@ -204,7 +204,6 @@
         }
     }
 
-
     .sliders {
         margin: 24px 0 0;
 		display: flex;
@@ -226,6 +225,19 @@
         }
     }
 
+    .controls {
+        position: sticky;
+        padding: 24px;
+		background: #FFF;
+		z-index: 1;
+		top: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .controls {
+            background: #222;
+        }
+    }
     @media (max-width: 960px) {
 		.controls {
             margin: 0 0 0;
@@ -238,7 +250,9 @@
             gap: 24px;
             justify-content: center;
         }
+    }
 
+    @media (min-width: 960px) {
 		.sliders {
             margin: 0;
         }

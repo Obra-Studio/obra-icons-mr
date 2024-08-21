@@ -17,6 +17,9 @@ import { IconArrowRight } from '$package';
 			<div class="column">
 				<div class="content">
 					<h2>Buy the Figma source file</h2>
+
+					<p><span class="tag">$20</span></p>
+
 					<p>Buy the source file for direct import into Figma.</p>
 					<p>
 						This file contains the original vectors of the 820+ icons, with its icons categorized into different categories. Use it to extend or customize the set to your needs.
@@ -50,6 +53,13 @@ import { IconArrowRight } from '$package';
 
 	p a {
 		color: #000;
+	}
+
+	.tag {
+		background: #666;
+		color: #FFF;
+		padding: 4px;
+		border-radius: 4px;
 	}
 
 </style>

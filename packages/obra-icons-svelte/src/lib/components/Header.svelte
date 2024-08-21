@@ -41,7 +41,7 @@
 											active={$page.url.pathname.startsWith(
 												'/buy',
 											)}
-											href="/buy">Buy Obra Icons</NavItem
+											href="/buy">Buy</NavItem
 										>
 									</li>
 								</ul>

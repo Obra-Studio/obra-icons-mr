@@ -111,7 +111,6 @@
 		align-items: center;
 		justify-content: center;
 
-		border: 1px solid #CCC;
 		padding: 1.5rem;
 		text-align: center;
 		border-radius: 3px;
