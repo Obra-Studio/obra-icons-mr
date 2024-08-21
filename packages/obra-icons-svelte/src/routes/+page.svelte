@@ -20,7 +20,7 @@
 	let lastQuery: string = query;
 
 	let color = '#000'
-	let strokeWeight = 2
+	let strokeWeight = 1.5
 	let size = 36
 
 	function input(event: { currentTarget: HTMLInputElement }) {
@@ -88,7 +88,7 @@
 							class="button inverse"
 							href="https://sowl.co/s/bdgsNv"
 						>
-							<span>Buy source</span>
+							<span>Buy source ($20)</span>
 							<IconArrowRight />
 						</a>
 						<a
