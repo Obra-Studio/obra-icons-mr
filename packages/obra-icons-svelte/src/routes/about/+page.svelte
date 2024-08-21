@@ -1,6 +1,6 @@
-<script>
-import { IconArrowRight } from '$package';
-</script>
+<svelte:head>
+	<title>About - Obra Icons</title>
+</svelte:head>
 
 <div class="is-dark">
 	<div class="bg-dark-grey">

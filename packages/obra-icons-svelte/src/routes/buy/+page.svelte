@@ -1,6 +1,11 @@
 <script>
-import { IconArrowRight } from '$package';
+	import { IconArrowRight } from '$package';
 </script>
+
+<svelte:head>
+	<title>Buy - Obra Icons</title>
+</svelte:head>
+
 <div class="container padding-medium margin-0-auto">
 	<div class="vertical-container-x-large">
 		<div class="columns buy-obra-icons">
