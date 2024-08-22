@@ -2,6 +2,15 @@
 
 We use semantic versioning (semver)
 
+## 1.16
+
+* Fix issue with downloading SVGs not corresponding to the applied settings
+* Add custom styling for the sliders
+* Add an option to customize the colors of icons directly on the site
+* Move info about purchasing Obra icons to separate “Buy” pahge and improve content slightly
+* Add a blog to the marketing website
+* Add 2 new icons for a total of 850
+
 ## 1.15
 
 * Add more icons for a total of 848
