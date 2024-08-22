@@ -167,7 +167,7 @@
 		{#if icons.hits}
 			<ul class="icon-grid">
 				{#each icons.hits as { document } (document.nameKebab)}
-					{@const svg = getSvg(document.nameKebab, strokeWeight, color)}
+					{@const svg = getSvg(document.nameKebab, strokeWeight, color, size)}
 					<Icon
 						{svg}
 						color={color}
