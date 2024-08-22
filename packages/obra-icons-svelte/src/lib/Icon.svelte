@@ -9,6 +9,33 @@
 	export let size: number;
 	export let strokeWeight: number;
 
+	type ActionType = 'downloadSvg' | 'downloadPng' | 'copySvelteImport' | 'copySvg';
+	export let selectedAction: ActionType;
+
+	function copyToClipboard(text: string) {
+		navigator.clipboard.writeText(text).then(() => {
+			showToast('Copied!');
+		}, (err) => {
+			console.error('Could not copy text: ', err);
+			showToast('Failed to copy');
+		});
+	}
+
+	function executeChosenAction(selectedAction: ActionType) {
+		if (selectedAction == 'downloadSvg') {
+			console.log('Download da svg');
+			downloadIcon(nameKebab, svg, 'svg');
+		} else if (selectedAction == 'downloadPng') {
+			console.log('Download da png');
+			downloadIcon(nameKebab, svg, 'png');
+		} else if (selectedAction == 'copySvelteImport') {
+			console.log('copy paste da svelte import');
+			copyToClipboard(`import { ${namePascal} } from 'obra-icons-svelte'`);
+		} else if (selectedAction == 'copySvg') {
+			copyToClipboard(svg);
+		}
+	}
+
 	let timeout: ReturnType<typeof setTimeout>;
 	let toast: string | null = null;
 
@@ -26,68 +53,80 @@
 		clearTimeout(timeout);
 	});
 
-	function downloadSvg(name: string, svgData: string) {
-		//? Create a blob with our svg
-		const blob = new Blob([svgData], { type: 'image/svg+xml' });
-
-		//? Make an anchor tag that points to the blob
-		const anchor = document.createElement('a');
-		anchor.href = window.URL.createObjectURL(blob);
-		anchor.download = `${name}.svg`;
-
-		//? Download
-		anchor.click();
-
-		showToast('Downloaded!');
-	}
-
+	async function downloadIcon(name: string, svgData: string, format: 'svg' | 'png') {
+    if (format === 'svg') {
+        const blob = new Blob([svgData], { type: 'image/svg+xml' });
+        const url = window.URL.createObjectURL(blob);
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.download = `${name}.svg`;
+        anchor.click();
+        window.URL.revokeObjectURL(url);
+    } else if (format === 'png') {
+        const img = new Image();
+        img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            canvas.toBlob((blob) => {
+                const url = window.URL.createObjectURL(blob);
+                const anchor = document.createElement('a');
+                anchor.href = url;
+                anchor.download = `${name}.png`;
+                anchor.click();
+                window.URL.revokeObjectURL(url);
+            }, 'image/png');
+        };
+        img.src = 'data:image/svg+xml;base64,' + btoa(svgData);
+    }
+    showToast(`Downloaded ${format.toUpperCase()}!`);
+}
 </script>
 
 <li class="icon-item">
-	<div
+	<button
+		on:click={executeChosenAction(selectedAction)}
 		class="icon"
-		style="width: {size}px; height: {size}px"
+
 	>
-		{@html svg}
-	</div>
+		<div class="svg-holder" style="width: {size}px; height: {size}px">
+			{@html svg}
+		</div>
+	</button>
 
 	<span class="icon-name">{nameKebab}</span>
 
-	<div class="overlay">
-		<button class="button" on:click={() => downloadSvg(nameKebab, svg)}>
-			Download SVG
-		</button>
-
-		<button
-			class="button"
-			use:copy={svg}
-			on:svelte-copy={() => showToast('Copied!')}
-		>
-			Copy SVG
-		</button>
-
-		<button
-			class="button"
-			use:copy={`import { ${namePascal} } from 'obra-icons-svelte'`}
-			on:svelte-copy={() => showToast('Copied!')}
-		>
-			Copy Svelte import
-		</button>
-	</div>
-
-	{#if toast}
-		<div transition:fade class="toast">
-			<p>{toast}</p>
-		</div>
-	{/if}
 </li>
+
+{#if toast}
+	<div transition:fade class="toast">
+		<p>{toast}</p>
+	</div>
+{/if}
 
 <style>
 
 	.icon {
-		width: 36px;
-		height: 36px;
+		appearance: none;
+		border: none;
+		padding: 0;
+		border-radius: 15px;
+		background: none;
+		padding: 1.5rem;
 	}
+
+	.icon:hover {
+		background: rgba(0,0,0,0.1);
+	}
+
+    @media (prefers-color-scheme: dark) {
+        .icon:hover {
+            background: rgba(255,255,255,0.1);
+        }
+    }
+
 
 	.icon :global(svg) {
 		width: 100%;
@@ -97,19 +136,19 @@
 	.icon-name {
 		display: block;
 		font-size: 80%;
+		color: #808080;
 	}
 
 	.icon-item {
 		position: relative;
-		min-height: 140px;
 
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 
-		padding: 1.5rem;
+		padding: 1rem;
 		text-align: center;
 		border-radius: 15px;
 	}
@@ -151,7 +190,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 8px;
+		gap: 4px;
 
 		padding: 8px;
 		border-radius: 12px;

@@ -22,6 +22,7 @@
 	let color = '#000'
 	let strokeWeight = 1.5
 	let size = 36
+	let selectedActionOnClick = 'copySvg'
 
 	function input(event: { currentTarget: HTMLInputElement }) {
 		query = event.currentTarget.value.trim();
@@ -134,14 +135,6 @@
 					<span class="count stroke-weight">{strokeWeight}</span>
 				</div>
 				<div class="control-group">
-					<label for="color">Color</label>
-					<input
-						id="color"
-						type="color"
-						bind:value={color}
-					/>
-				</div>
-				<div class="control-group">
 					<label for="size">Size</label>
 					<input
 						id="size"
@@ -152,6 +145,26 @@
 						max="64"
 					/>
 					<span class="count">{size}</span>
+				</div>
+				<div class="control-group">
+					<label for="actionOnClick">Action on click</label>
+					<select
+						id="actionOnClick"
+						bind:value={selectedActionOnClick}
+					>
+						<option value="downloadSvg">Download SVG</option>
+						<option value="downloadPng">Download PNG</option>
+						<option value="copySvelteImport">Copy Svelte import</option>
+						<option value="copySvg">Copy SVG</option>
+					</select>
+				</div>
+				<div class="control-group">
+					<label for="color">Color</label>
+					<input
+						id="color"
+						type="color"
+						bind:value={color}
+					/>
 				</div>
 			</div>
 		</div>
@@ -169,8 +182,8 @@
 				{#each icons.hits as { document } (document.nameKebab)}
 					{@const svg = getSvg(document.nameKebab, strokeWeight, color, size)}
 					<Icon
+						selectedAction={selectedActionOnClick}
 						{svg}
-						color={color}
 						strokeWeight={strokeWeight}
 						size={size}
 						nameKebab={document.nameKebab}
@@ -243,7 +256,22 @@
 	}
 
     @media (max-width: 960px) {
-        .inner-controls input {
+        .inner-controls {
+            flex-wrap: wrap;
+        }
+
+		.control-group {
+			flex: 1 0 40%;
+		}
+
+    }
+
+	input[type="color"] {
+		min-width: 20px;
+	}
+
+    @media (max-width: 960px) {
+        .inner-controls input[type="range"] {
             width: 100%;
         }
     }
@@ -259,6 +287,10 @@
 		display: flex;
 		align-items: center;
 		gap: 10px;
+	}
+
+	.control-group label {
+		white-space: nowrap;
 	}
 
 	.stroke-weight {

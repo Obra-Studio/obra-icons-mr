@@ -10,6 +10,8 @@ We use semantic versioning (semver)
 * Move info about purchasing Obra icons to separate “Buy” pahge and improve content slightly
 * Add a blog to the marketing website
 * Add 2 new icons for a total of 850
+* Add a way to download PNGs
+* Change the interaction so that interaction on click is managed from the options on top
 
 ## 1.15
 
