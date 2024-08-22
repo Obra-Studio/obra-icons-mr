@@ -65,13 +65,13 @@
 		find();
 	}
 	}
-</script>
 
+
+</script>
 
 <svelte:head>
 	<title>Home - Obra Icons</title>
 </svelte:head>
-
 
 <div class="is-dark">
 	<div class="bg-black">
@@ -159,7 +159,7 @@
 		{#if icons.hits}
 			<ul class="icon-grid">
 				{#each icons.hits as { document } (document.nameKebab)}
-					{@const svg = getSvg(document.nameKebab)}
+					{@const svg = getSvg(document.nameKebab, strokeWeight)}
 					<Icon
 						{svg}
 						color={color}
@@ -263,6 +263,5 @@
 		margin: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
     }
-
 
 </style>

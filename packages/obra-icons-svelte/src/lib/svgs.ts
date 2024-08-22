@@ -3,7 +3,7 @@ export const svgs = import.meta.glob('./svgs/*.svg', {
 	eager: true,
 });
 
-function cleanSvg(svg: string) {
+function prepareSvg(svg: string, strokeWeight: number) {
 	return svg
 		.replace(
 			// need the \! or better-comments goes crazy
@@ -13,9 +13,10 @@ function cleanSvg(svg: string) {
 		)
 		.replace(/stroke="black"/g, 'stroke="currentColor"')
 		.replace(/fill="black"/g, 'fill="currentColor"')
+		.replace(/stroke-width="2"/g, `stroke-width="${strokeWeight}"`)
 		.trim();
 }
 
-export function getSvg(name: string) {
-	return cleanSvg(svgs[`./svgs/${name}.svg`] || '');
+export function getSvg(name: string, strokeWeight: number) {
+	return prepareSvg(svgs[`./svgs/${name}.svg`] || '', strokeWeight);
 }
