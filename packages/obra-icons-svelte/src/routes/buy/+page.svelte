@@ -9,7 +9,6 @@
 <div class="container padding-medium margin-0-auto">
 	<div class="vertical-container-x-large">
 		
-
 		<div class="columns buy-obra-icons">
 			<div class="column">
 				<div class="text-align-center">
@@ -23,7 +22,7 @@
 
 			<div class="column">
 				<div class="content">
-					<h2>Buy the Figma source file</h2>
+					<h2>Buy the Obra Icons Figma source file</h2>
 
 					<p><span class="tag">$20</span></p>
 

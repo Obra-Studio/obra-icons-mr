@@ -39,6 +39,14 @@
 									<li>
 										<NavItem
 											active={$page.url.pathname.startsWith(
+												'/blog',
+											)}
+											href="/blog">Blog</NavItem
+										>
+									</li>
+									<li>
+										<NavItem
+											active={$page.url.pathname.startsWith(
 												'/buy',
 											)}
 											href="/buy">Buy</NavItem

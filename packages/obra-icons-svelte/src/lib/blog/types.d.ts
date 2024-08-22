@@ -1,6 +1,7 @@
 export interface BlogFrontmatter {
 	title: string;
 	date: string;
+	tags: string;
 }
 
 export interface BlogMetadata {
