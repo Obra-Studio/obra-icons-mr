@@ -6,6 +6,7 @@
 
 <svelte:head>
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for Obra Icons Blog" href="/rss.xml">
+	<title>Blog - Obra Icons</title>
 </svelte:head>
 
 <div class="container padding-medium margin-0-auto">
