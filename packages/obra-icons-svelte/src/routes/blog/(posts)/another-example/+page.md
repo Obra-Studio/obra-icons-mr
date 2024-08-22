@@ -3,7 +3,7 @@
 
     export const metadata: BlogFrontmatter = {
         title: 'Another Example',
-        date: '2023-11-08'
+        date: '2024-08-21'
     }
 </script>
 

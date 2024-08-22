@@ -6,7 +6,7 @@
 	<div class="bg-dark-grey">
 		<div class="container padding-medium margin-0-auto is-dark">
 			<div class="vertical-container-xxx-large">
-				<h2 class="text-align-center">Why Obra Icons?</h2>
+				<h2 class="text-align-center">Why choose Obra Icons?</h2>
 
 				<ul class="advantages">
 					<li class="vertical-container-x-large">

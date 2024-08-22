@@ -1,5 +1,5 @@
 <script>
-	import { IconArrowRight } from '$package';
+	import { IconArrowRight, IconCheck } from '$package';
 </script>
 
 <svelte:head>
@@ -8,6 +8,8 @@
 
 <div class="container padding-medium margin-0-auto">
 	<div class="vertical-container-x-large">
+		
+
 		<div class="columns buy-obra-icons">
 			<div class="column">
 				<div class="text-align-center">
@@ -26,12 +28,19 @@
 					<p><span class="tag">$20</span></p>
 
 					<p>Buy the source file for direct import into Figma.</p>
+
+					<ul class="feature-list">
+						<li><IconCheck /> 820+ icons</li>
+						<li><IconCheck /> Categorized icons to easily find them</li>
+						<li><IconCheck /> Original vectors</li>
+						<li><IconCheck /> Drag and drop onto your Figma files to import</li>
+						<li><IconCheck /> Dev tools plugin with handy workflow shortcuts</li>
+					</ul>
+
 					<p>
-						This file contains the original vectors of the 820+ icons, with its icons categorized into different categories. Use it to extend or customize the set to your needs.
+						Use the source file to extend or customize the set to your needs.
 					</p>
-					<p>
-						As a bonus, you will also get access to the Obra Icons dev tools Figma plugin, which gives you access to exact same tools used to create the icon set. You can watch this <a href="https://www.youtube.com/watch?v=cg8-y-OXyI4">video</a> for more info.
-					</p>
+
 					<div class="button-group">
 						<a class="button" href="https://sowl.co/s/bdgsNv">
 							<span>Buy the source file</span>
@@ -47,6 +56,9 @@
 						>.
 						</p>
 					</div>
+					<p class="muted">
+						The download includes Obra Icons dev tools Figma plugin, which gives you access to the exact same tools used to create the icon set. You can watch this <a href="https://www.youtube.com/watch?v=cg8-y-OXyI4">video</a> for more info.
+					</p>
 
 				</div>
 			</div>
@@ -59,12 +71,34 @@
 	p a {
 		color: #000;
 	}
+	
+	.muted {
+		color: #666;
+	}
 
 	.tag {
 		background: #666;
 		color: #FFF;
 		padding: 4px;
 		border-radius: 4px;
+	}
+	
+	.feature-list {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		margin: 0;
+		padding: 0 0 1rem;
+		gap: .5rem;
+	}
+
+
+	.feature-list li {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: .5rem;
 	}
 
 </style>
