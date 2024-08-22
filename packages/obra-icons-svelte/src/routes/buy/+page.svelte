@@ -1,5 +1,5 @@
 <script>
-	import { IconArrowRight, IconCheck } from '$package';
+	import { IconArrowRight, IconCheck, IconCircleCheckFill } from '$package';
 </script>
 
 <svelte:head>
@@ -29,11 +29,11 @@
 					<p>Buy the source file for direct import into Figma.</p>
 
 					<ul class="feature-list">
-						<li><IconCheck /> 820+ icons</li>
-						<li><IconCheck /> Categorized icons to easily find them</li>
-						<li><IconCheck /> Original vectors</li>
-						<li><IconCheck /> Drag and drop onto your Figma files to import</li>
-						<li><IconCheck /> Dev tools plugin with handy workflow shortcuts</li>
+						<li><IconCircleCheckFill color="green" /> 820+ icons</li>
+						<li><IconCircleCheckFill color="green" /> Categorized icons to easily find them</li>
+						<li><IconCircleCheckFill color="green" /> Original vectors</li>
+						<li><IconCircleCheckFill color="green" /> Drag and drop onto your Figma files to import</li>
+						<li><IconCircleCheckFill color="green" /> Dev tools plugin with handy workflow shortcuts</li>
 					</ul>
 
 					<p>

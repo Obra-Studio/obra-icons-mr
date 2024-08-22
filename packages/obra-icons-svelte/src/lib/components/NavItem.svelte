@@ -3,23 +3,23 @@
 	export let active: boolean = false;
 </script>
 
-<a {href} aria-current={active} class="nav-item">
+<a {href} aria-current={active} class="nav-item" on:click>
 	<slot />
 </a>
 
 <style>
-	.nav-item {
-		text-decoration: none;
-		display: inline-block;
-		padding: 0.5rem 0.75rem;
-		border-radius: var(--border-radius-tiny);
-	}
+    .nav-item {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 1.5rem;
+    }
 
-	.nav-item:hover {
-		background: rgba(255, 255, 255, 0.2);
-	}
+    .nav-item:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
 
-	.nav-item[aria-current='true'] {
-		background: rgba(255, 255, 255, 0.2);
-	}
+    .nav-item[aria-current='true'] {
+        background: rgba(255, 255, 255, 0.2);
+    }
 </style>

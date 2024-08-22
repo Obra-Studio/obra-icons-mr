@@ -111,87 +111,110 @@
 
 <div class="responds-to-dark">
 	<div class="bg-dark-grey">
-		<div class="container padding-medium margin-0-auto">
-			<div class="controls">
-				<div class="input-with-icon">
-					<input
-						on:input={input}
-						placeholder="Search {iconsCount} Obra Icons..."
-						type="text"
-					/>
-					<IconSearch />
-				</div>
-				<div class="sliders">
-					<div class="control-group">
-						<label for="weight">Weight</label>
-						<input
-							id="weight"
-							type="range"
-							bind:value={strokeWeight}
-							min="1"
-							step=".5"
-							max="2"
-						/>
-						<span class="count stroke-weight">{strokeWeight}</span>
-					</div>
-					<div class="control-group">
-						<label for="size">Size</label>
-						<input
-							id="size"
-							type="range"
-							bind:value={size}
-							min="16"
-							step="4"
-							max="64"
-						/>
-						<span class="count">{size}</span>
-					</div>
-				</div>
+		<div class="controls">
+			<div class="input-with-icon">
+				<input
+					on:input={input}
+					placeholder="Search {iconsCount} icons for free..."
+					type="text"
+				/>
+				<IconSearch />
 			</div>
-
-			{#if dev && $page.url.searchParams.has('debug')}
-				<p>Found {icons.hits.length} icons</p>
-				<p>Query: "{query}"</p>
-				<p>LQuery: "{lastQuery}"</p>
-				<p>Searching: {searching}</p>
-				<p>SC: {sc}</p>
-			{/if}
-
-			<div class="vertical-container-x-large">
-				{#if icons.hits}
-					<ul class="icon-grid">
-						{#each icons.hits as { document } (document.nameKebab)}
-							{@const svg = getSvg(document.nameKebab)}
-							<Icon
-								{svg}
-								color={color}
-								strokeWeight={strokeWeight}
-								size={size}
-								nameKebab={document.nameKebab}
-								namePascal={document.namePascal}
-							/>
-						{/each}
-					</ul>
-				{:else}
-					<p class="text-align-center">No results found.</p>
-				{/if}
+			<div class="sliders">
+				<div class="control-group">
+					<label for="weight">Weight</label>
+					<input
+						id="weight"
+						type="range"
+						bind:value={strokeWeight}
+						min="1"
+						step=".5"
+						max="2"
+					/>
+					<span class="count stroke-weight">{strokeWeight}</span>
+				</div>
+				<div class="control-group">
+					<label for="size">Size</label>
+					<input
+						id="size"
+						type="range"
+						bind:value={size}
+						min="16"
+						step="4"
+						max="64"
+					/>
+					<span class="count">{size}</span>
+				</div>
 			</div>
 		</div>
+
+		{#if dev && $page.url.searchParams.has('debug')}
+			<p>Found {icons.hits.length} icons</p>
+			<p>Query: "{query}"</p>
+			<p>LQuery: "{lastQuery}"</p>
+			<p>Searching: {searching}</p>
+			<p>SC: {sc}</p>
+		{/if}
+
+		{#if icons.hits}
+			<ul class="icon-grid">
+				{#each icons.hits as { document } (document.nameKebab)}
+					{@const svg = getSvg(document.nameKebab)}
+					<Icon
+						{svg}
+						color={color}
+						strokeWeight={strokeWeight}
+						size={size}
+						nameKebab={document.nameKebab}
+						namePascal={document.namePascal}
+					/>
+				{/each}
+			</ul>
+		{:else}
+			<p class="text-align-center">No results found.</p>
+		{/if}
 	</div>
 </div>
 
 <style>
 
-    input[type='range']{ accent-color: #000; }
-
-    @media (prefers-color-scheme: dark) {
-        input[type='range']{ accent-color: #FFF; }
+    input[type='range']{
+		accent-color: #000;
 	}
 
-	.icon-grid {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+    @media (prefers-color-scheme: dark) {
+        input[type='range'] {
+			accent-color: #FFF;
+		}
+	}
+
+    .controls {
+        position: sticky;
+        padding: 1rem;
+        background: #FFF;
+        z-index: 1;
+        top: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .controls {
+            background: #222;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+    @media (max-width: 960px) {
+        .controls {
+            margin: 0 0 0;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .controls {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
     }
 
     label {
@@ -205,50 +228,15 @@
     }
 
     .sliders {
-        margin: 24px 0 0;
+        margin: 1.5rem 0 0;
 		display: flex;
-		gap: 24px;
+		gap: 1.5rem;
 		justify-content: center;
 	}
 
-
-    @media (max-width: 640px) {
-        .sliders input {
-            width: 70px;
-        }
-    }
-
-
-    @media (max-width: 390px) {
-        .sliders input {
-            width: 40px;
-        }
-    }
-
-    .controls {
-        position: sticky;
-        padding: 24px;
-		background: #FFF;
-		z-index: 1;
-		top: 0;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .controls {
-            background: #222;
-        }
-    }
     @media (max-width: 960px) {
-		.controls {
-            margin: 0 0 0;
-        }
-    }
-
-	@media (min-width: 960px) {
-        .controls {
-            display: flex;
-            gap: 24px;
-            justify-content: center;
+        .sliders input {
+            width: 100%;
         }
     }
 
@@ -259,6 +247,7 @@
 	}
 
 	.control-group {
+		width: 100%;
 		display: flex;
 		align-items: center;
 		gap: 10px;
@@ -267,5 +256,13 @@
 	.stroke-weight {
 		width: 30px;
 	}
+
+    .icon-grid {
+        display: grid;
+        gap: 1rem;
+		margin: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+    }
+
 
 </style>

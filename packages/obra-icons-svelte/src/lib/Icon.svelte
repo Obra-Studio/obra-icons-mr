@@ -112,13 +112,13 @@
 
 		padding: 1.5rem;
 		text-align: center;
-		border-radius: 3px;
+		border-radius: 15px;
 	}
 
 	@media (prefers-color-scheme: dark) {
 		.icon-item {
 			border-color: #555;
-			color: #fff;
+			color: #FFF;
 		}
 
 		:global(svg *) {
@@ -155,6 +155,7 @@
 		gap: 8px;
 
 		padding: 8px;
+		border-radius: 12px;
 	}
 
 	.overlay .button {

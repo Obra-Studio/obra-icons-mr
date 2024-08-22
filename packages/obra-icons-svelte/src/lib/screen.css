@@ -92,14 +92,14 @@ body {
 h1 {
 	font-size: 2.25rem; /* 36px */
 	line-height: 1.1;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 h2,
 .drop-down-heading-visually h1 {
 	font-size: 1.75rem; /* 28px */
 	line-height: 1.1;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 h3,
@@ -142,13 +142,7 @@ code {
 }
 
 .logo img {
-	width: 3rem;
-}
-
-@media (min-width: 640px) {
-	.logo img {
-		width: 4rem;
-	}
+	width: 3.25rem;
 }
 
 /* Content
@@ -193,7 +187,7 @@ code {
 .button {
 	border: none;
 	font-size: inherit;
-	padding: 0.75rem;
+	padding: 0.75rem 1.5rem;
 	background: #000;
 	font-weight: 600;
 	color: #fff;
@@ -202,17 +196,11 @@ code {
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	border-radius: var(--border-radius-tiny);
+	border-radius: 1.5rem;
 }
 
 .button:active {
-	scale: 0.96;
-}
-
-@media (min-width: 640px) {
-	.button {
-		padding: 0.5rem 0.75rem;
-	}
+	scale: 0.975;
 }
 
 .button.inverse {
@@ -347,21 +335,7 @@ code {
 	display: flex;
 	gap: var(--spacing-small);
 	align-items: center;
-	flex-direction: column;
-}
-
-.button-group .button {
-	width: 100%;
-}
-
-@media (min-width: 640px) {
-	.button-group {
-		flex-direction: row;
-	}
-
-	.button-group .button {
-		width: auto;
-	}
+	flex-direction: row;
 }
 
 /* Hero
@@ -370,12 +344,6 @@ code {
 .hero h2 {
 	margin-bottom: var(--spacing-large);
 	text-wrap: balance;
-}
-
-@media (max-width: 960px) {
-	.hero .button-group {
-		display: grid;
-	}
 }
 
 .hero .preview {
@@ -422,15 +390,35 @@ code {
 
 .input-with-icon input {
 	border: 1px solid #ccc;
-	padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+	padding: 0.75rem 0.75rem 0.75rem 2.5rem;
 	width: 100%;
-	border-radius: var(--border-radius-tiny);
+	border-radius: 1.5rem;
+}
+
+.input-with-icon input:focus-visible {
+	outline: 0;
+	border-color: #000;
+	box-shadow: 0 0 0 1px #000;
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.input-with-icon input:focus-visible {
+		border-color: #000;
+		border-color: #FFF;
+		box-shadow: 0 0 0 1px #FFF;
+	}
+
 }
 
 .input-with-icon svg {
 	opacity: 0.5;
 	width: 1.5rem;
 	height: 1.5rem;
+	position: absolute;
+	left: 0.75rem;
+	top: 0.65rem;
 }
 
 .input-with-icon:has(input:focus) svg {
@@ -445,11 +433,7 @@ code {
 	}
 }
 
-.input-with-icon svg {
-	position: absolute;
-	left: 0.5rem;
-	top: 0.65rem;
-}
+
 
 /* Utility classes with direct mapping to CSS
    ========================================================================== */
