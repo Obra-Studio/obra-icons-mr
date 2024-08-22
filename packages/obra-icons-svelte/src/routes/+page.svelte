@@ -123,7 +123,7 @@
 				</div>
 				<div class="sliders">
 					<div class="control-group">
-						<label id="weight">Weight</label>
+						<label for="weight">Weight</label>
 						<input
 							id="weight"
 							type="range"

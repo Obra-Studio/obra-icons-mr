@@ -7,7 +7,6 @@
 	export let nameKebab: string;
 	export let namePascal: string;
 	export let size
-	export let color
 	export let strokeWeight
 
 	let timeout: ReturnType<typeof setTimeout>;
