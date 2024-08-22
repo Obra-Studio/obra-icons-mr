@@ -120,7 +120,7 @@
 				/>
 				<IconSearch />
 			</div>
-			<div class="sliders">
+			<div class="inner-controls">
 				<div class="control-group">
 					<label for="weight">Weight</label>
 					<input
@@ -132,6 +132,14 @@
 						max="2"
 					/>
 					<span class="count stroke-weight">{strokeWeight}</span>
+				</div>
+				<div class="control-group">
+					<label for="color">Color</label>
+					<input
+						id="color"
+						type="color"
+						bind:value={color}
+					/>
 				</div>
 				<div class="control-group">
 					<label for="size">Size</label>
@@ -159,7 +167,7 @@
 		{#if icons.hits}
 			<ul class="icon-grid">
 				{#each icons.hits as { document } (document.nameKebab)}
-					{@const svg = getSvg(document.nameKebab, strokeWeight)}
+					{@const svg = getSvg(document.nameKebab, strokeWeight, color)}
 					<Icon
 						{svg}
 						color={color}
@@ -227,7 +235,7 @@
         }
     }
 
-    .sliders {
+    .inner-controls {
         margin: 1.5rem 0 0;
 		display: flex;
 		gap: 1.5rem;
@@ -235,13 +243,13 @@
 	}
 
     @media (max-width: 960px) {
-        .sliders input {
+        .inner-controls input {
             width: 100%;
         }
     }
 
     @media (min-width: 960px) {
-		.sliders {
+		.inner-controls {
             margin: 0;
         }
 	}
