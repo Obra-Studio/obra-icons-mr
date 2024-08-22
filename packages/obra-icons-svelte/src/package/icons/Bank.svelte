@@ -19,7 +19,7 @@
 	<g class="oi-bank">
 		<path
 			class="oi-line"
-			d="M6 10V17"
+			d="M6 10.5V16.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -35,7 +35,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M10 10V17"
+			d="M10 10.5V16.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -43,7 +43,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M14 10V17"
+			d="M14 10.5V16.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -51,7 +51,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M18 10V17"
+			d="M18 10.5V16.5"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

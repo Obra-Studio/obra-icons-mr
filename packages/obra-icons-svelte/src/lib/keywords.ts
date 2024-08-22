@@ -3,6 +3,7 @@
 export default {
   "academic-cap": [
     "university",
+    "academy",
     "graduation",
     "education",
     "hat",
@@ -28,6 +29,7 @@ export default {
   ],
   "add": [
     "plus",
+    "more",
     "create",
     "insert",
     "include",
@@ -43,7 +45,8 @@ export default {
     "corner",
     "plus",
     "create",
-    "insert"
+    "insert",
+    "more"
   ],
   "add-roundrect-fill": [
     "rectangle",
@@ -54,7 +57,8 @@ export default {
     "corner",
     "plus",
     "create",
-    "insert"
+    "insert",
+    "more"
   ],
   "add-text-to-photo": [
     "caption",
@@ -65,7 +69,8 @@ export default {
     "text addition",
     "plus",
     "create",
-    "insert"
+    "insert",
+    "more"
   ],
   "airplay": [
     "stream",
@@ -983,6 +988,7 @@ export default {
     "appointment"
   ],
   "calendar-remove": [
+    "deadline",
     "delete",
     "remove",
     "cancel",
@@ -994,6 +1000,7 @@ export default {
     "planner"
   ],
   "calendar-remove-fill": [
+    "deadline",
     "delete",
     "remove",
     "cancel",
@@ -2363,6 +2370,14 @@ export default {
     "promotion",
     "markdown"
   ],
+  "discount-alt-fill": [
+    "sale",
+    "offer",
+    "price cut",
+    "rebate",
+    "promotion",
+    "markdown"
+  ],
   "discount-fill": [
     "sale",
     "offer",
@@ -3660,6 +3675,16 @@ export default {
     "handheld luggage",
     "small suitcase"
   ],
+  "hand-luggage-fill": [
+    "bag",
+    "suitcase",
+    "carry-on",
+    "travel bag",
+    "cabin baggage",
+    "portable suitcase",
+    "handheld luggage",
+    "small suitcase"
+  ],
   "hand-move": [
     "drag",
     "slide",
@@ -4687,6 +4712,7 @@ export default {
     "out of service"
   ],
   "options-horizontal": [
+    "more",
     "menu",
     "settings",
     "list",
@@ -4703,11 +4729,11 @@ export default {
     "circle"
   ],
   "options-vertical": [
+    "more",
     "menu",
     "list",
     "vertical dots",
     "settings",
-    "more",
     "expand"
   ],
   "options-vertical-encircled": [
@@ -5591,6 +5617,7 @@ export default {
     "elect"
   ],
   "send": [
+    "paper-plane",
     "deliver",
     "transmit",
     "forward",
@@ -5605,7 +5632,8 @@ export default {
     "transmit",
     "forward",
     "share",
-    "deliver"
+    "deliver",
+    "paper-plane"
   ],
   "server": [
     "computer",
@@ -6663,6 +6691,7 @@ export default {
   ],
   "university-hat-simple": [
     "education",
+    "academy",
     "graduation",
     "cap",
     "diploma",
@@ -6823,6 +6852,7 @@ export default {
     "person"
   ],
   "users": [
+    "group",
     "people",
     "persons",
     "members",
