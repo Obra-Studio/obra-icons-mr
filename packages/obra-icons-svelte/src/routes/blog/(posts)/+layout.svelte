@@ -23,7 +23,6 @@
 	</header>
 
 	<div class="content">
-
 		<slot />
 	</div>
 </article>

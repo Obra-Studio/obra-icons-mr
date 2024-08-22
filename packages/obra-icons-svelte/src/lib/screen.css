@@ -170,7 +170,8 @@ code {
 	padding: 0 0 0.75rem;
 }
 
-.content ul {
+.content ul,
+.content ol {
 	padding: 0 0 1.5rem 1.5rem;
 }
 
@@ -606,3 +607,18 @@ code {
 .is-dark .bg-dark-grey {
 	background: #222;
 }
+
+/* Video container
+   ========================================================================== */
+
+ .video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+ }
+
+.video-container-wrapper {
+	padding: 0 0 1rem;
+ }
+   
