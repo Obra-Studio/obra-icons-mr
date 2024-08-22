@@ -142,7 +142,7 @@
 						bind:value={size}
 						min="16"
 						step="4"
-						max="64"
+						max="128"
 					/>
 					<span class="count">{size}</span>
 				</div>
@@ -302,7 +302,7 @@
         display: grid;
         gap: 1rem;
 		margin: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     }
 
 </style>
