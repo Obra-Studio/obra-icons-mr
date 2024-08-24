@@ -717,3 +717,56 @@ input[type="range"]:focus::-moz-range-thumb{
 	color: #06124a;
 	border-bottom: 1px solid #bfc8ef;
 }
+
+/* Select holder
+   ========================================================================== */
+
+.select-holder {
+	position: relative;
+}
+
+.select-holder svg {
+	position: absolute;
+	right: .5rem;
+	top: .55rem;
+}
+
+.select-holder select {
+	appearance: none;
+	border: 1px solid #ccc;
+	padding: 0.75rem 0.75rem 0.75rem;
+	border-radius: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	.select-holder select {
+		border: 1px solid #4D4D4D;
+		color: #FFF;
+		background: #222;
+	}
+}
+
+.select-holder select:focus-visible {
+	outline: 0;
+	border-color: #000;
+	box-shadow: 0 0 0 1px #000;
+}
+
+@media (prefers-color-scheme: dark) {
+	.select-holder select:focus-visible {
+		border-color: #FFF;
+		box-shadow: 0 0 0 1px #FFF;
+	}
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.select-holder svg * {
+		stroke: #fff;
+	}
+
+	.select-holder svg .oi-fill {
+		fill: #fff;
+		stroke: none;
+	}
+}

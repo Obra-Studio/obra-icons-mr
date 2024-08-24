@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { IconArrowRight } from '$package';
+	import { IconArrowRight, IconCaretDownFill } from '$package';
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
 	import iconsCount from '$lib/count';
 
@@ -148,16 +148,19 @@
 				</div>
 				<div class="control-group">
 					<label for="actionOnClick">Action on click</label>
-					<select
-						id="actionOnClick"
-						bind:value={selectedActionOnClick}
-					>
-						<option value="copySvg">Copy SVG</option>
-						<option value="downloadSvg">Download SVG</option>
-						<option value="copyPng">Copy PNG</option>
-						<option value="downloadPng">Download PNG</option>
-						<option value="copySvelteImport">Copy Svelte import</option>
-					</select>
+					<div class="select-holder">
+						<select
+							id="actionOnClick"
+							bind:value={selectedActionOnClick}
+						>
+							<option value="copySvg">Copy SVG</option>
+							<option value="downloadSvg">Download SVG</option>
+							<option value="copyPng">Copy PNG</option>
+							<option value="downloadPng">Download PNG</option>
+							<option value="copySvelteImport">Copy Svelte import</option>
+						</select>
+						<IconCaretDownFill />
+					</div>
 				</div>
 				<div class="control-group">
 					<label for="color">Color</label>
