@@ -193,10 +193,10 @@
 						nameKebab={document.nameKebab}
 						namePascal={document.namePascal}
 					/>
+				{:else}
+					<p class="text-align-center no-results">No results found.</p>
 				{/each}
 			</ul>
-		{:else}
-			<p class="text-align-center">No results found.</p>
 		{/if}
 	</div>
 </div>
@@ -306,6 +306,17 @@
         gap: 1rem;
 		margin: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    }
+
+	.no-results {
+        grid-column: -1 / 1;
+        padding: 4rem;
+	}
+
+    @media (prefers-color-scheme: dark) {
+        .no-results {
+            color: #FFF;
+        }
     }
 
 </style>
