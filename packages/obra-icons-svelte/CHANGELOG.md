@@ -2,6 +2,17 @@
 
 We use semantic versioning (semver)
 
+## 1.16.2
+
+* Improve keywords
+* Fix some minor drawing mistakes
+
+## 1.16.1
+
+* Fix a bug with icon grid on website
+* Improve keywords
+* Fix some minor drawing mistakes
+
 ## 1.16
 
 * Fix issue with downloading SVGs not corresponding to the applied settings

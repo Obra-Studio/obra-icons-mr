@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-markets" clip-path="url(#clip0_620_24618)">
+	<g class="oi-markets" clip-path="url(#clip0_624_29885)">
 		<path
 			class="oi-fill"
 			d="M10.1428 8.30604C8.98231 7.0513 11.2262 4.00589 12.5 2.00002L17 3.5C17.7075 7.12765 11.5934 9.87447 10.1428 8.30604Z"
@@ -50,7 +50,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_620_24618">
+		<clipPath class="clip0_624_29885">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

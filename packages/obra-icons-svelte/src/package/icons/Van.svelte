@@ -35,10 +35,18 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M21 16V11H3V16H21Z"
+			d="M5 16H3V11H21V16H18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M9 16H14"
+			stroke={color}
+			stroke-width={strokeWidth}
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>

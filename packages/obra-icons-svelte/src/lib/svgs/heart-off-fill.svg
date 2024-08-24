@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-heart-off-fill">
+	<g class="oi-heart-off-fill[unlike,like]">
 		<path
 			class="oi-fill"
 			fill-rule="evenodd"

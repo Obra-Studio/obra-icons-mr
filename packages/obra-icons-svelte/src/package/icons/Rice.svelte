@@ -19,7 +19,7 @@
 	<g class="oi-rice">
 		<path
 			class="oi-vector"
-			d="M12.9736 4C15.2731 4 17.1981 5.47162 17.6916 7.44471C19.4508 7.81529 21.0517 9.40134 21.5 11H3.5C3.5 8.54624 5.45972 6.22146 8.13315 6.22146C8.34478 6.22146 8.55324 6.23393 8.7577 6.2581C9.58885 4.90993 11.1655 4 12.9736 4Z"
+			d="M2 11C2 16.5228 6.47715 21 12 21C13.0452 21 14.053 20.8396 15 20.5422C19.0571 19.2679 22 15.4776 22 11H2Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -28,6 +28,14 @@
 		<path
 			class="oi-line"
 			d="M9 21H15.5"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M12.4736 4C14.7731 4 16.6981 5.47162 17.1916 7.44471C18.9508 7.81529 20.5517 9.40134 21 11H3C3 8.19814 5.48155 5.92987 8.2577 6.2581C9.08885 4.90993 10.6655 4 12.4736 4Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
