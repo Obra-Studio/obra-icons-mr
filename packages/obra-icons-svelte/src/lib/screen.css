@@ -184,19 +184,24 @@ code {
 /* Button
    ========================================================================== */
 
-.button {
+.button.button {
 	border: none;
 	font-size: inherit;
 	padding: 0.75rem 1.5rem;
 	background: #000;
 	font-weight: 600;
-	color: #fff;
+	color: #FFF;
 	display: inline-flex;
 	gap: var(--spacing-tiny);
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
 	border-radius: 1.5rem;
+}
+
+.button:hover,
+.button:active {
+	color: #FFF;
 }
 
 .button:active {
@@ -696,4 +701,19 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]:focus::-moz-range-thumb{
 	outline: 3px solid #808080;
 	outline-offset: 0.125rem;
+}
+
+/* Links in blog posts
+   ========================================================================== */
+
+.content a {
+	color: #2038a3;
+	text-decoration: none;
+	border-bottom: 1px solid #8090d8;
+}
+
+.content a:hover,
+.content a:active {
+	color: #06124a;
+	border-bottom: 1px solid #bfc8ef;
 }
