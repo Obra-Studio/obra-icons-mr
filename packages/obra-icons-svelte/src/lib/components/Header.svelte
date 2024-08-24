@@ -11,7 +11,7 @@
 
 	onMount(() => {
 		if (browser) {
-			$: windowWidth = window.innerWidth;
+			windowWidth = window.innerWidth;
 		}
 	});
 

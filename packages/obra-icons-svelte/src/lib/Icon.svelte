@@ -6,7 +6,6 @@
 	export let nameKebab: string;
 	export let namePascal: string;
 	export let size: number;
-	export let strokeWeight: number;
 
 	type ActionType = 'downloadSvg' | 'downloadPng' | 'copySvelteImport' | 'copySvg' | 'copyPng';
 	export let selectedAction: ActionType;

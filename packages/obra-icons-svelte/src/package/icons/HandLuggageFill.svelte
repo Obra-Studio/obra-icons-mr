@@ -17,11 +17,11 @@
 >
 	<g class="oi-hand-luggage-fill">
 		<path
-			class="oi-vector"
-			d="M14.5 6C14.5 4.89543 13.4926 4 12.25 4C11.0074 4 10 4.89543 10 6"
-			stroke={color}
-			stroke-width={strokeWidth}
-			stroke-linecap="round"
+			class="oi-fill"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M12.25 5C11.4457 5 11 5.55519 11 6C11 6.55228 10.5523 7 10 7C9.44772 7 9 6.55228 9 6C9 4.23567 10.5691 3 12.25 3C13.9309 3 15.5 4.23567 15.5 6C15.5 6.55228 15.0523 7 14.5 7C13.9477 7 13.5 6.55228 13.5 6C13.5 5.55519 13.0543 5 12.25 5Z"
+			fill={color}
 		/>
 		<path
 			class="oi-fill"

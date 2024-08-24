@@ -52,7 +52,7 @@
 		"prettier-plugin-svelte": "^3.0.3",
 		"publint": "^0.1.9",
 		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.3",
+		"svelte-check": "^3.5.2",
 		"svelte-copy": "^1.4.1",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
