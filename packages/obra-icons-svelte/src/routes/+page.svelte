@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { IconArrowRight, IconCaretDownFill } from '$package';
+	import { IconArrowRight, IconCaretDownFill, IconCircleClose } from '$package';
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
 	import iconsCount from '$lib/count';
 
@@ -10,6 +10,7 @@
 
 	import Icon from '$lib/Icon.svelte';
 	import { page } from '$app/stores';
+	import SearchInput from '$lib/components/SearchInput.svelte';
 
 	export let data;
 
@@ -113,14 +114,10 @@
 <div class="responds-to-dark">
 	<div class="bg-dark-grey">
 		<div class="controls">
-			<div class="input-with-icon">
-				<input
-					on:input={input}
-					placeholder="Search {iconsCount} icons for free..."
-					type="text"
-				/>
-				<IconSearch />
-			</div>
+			<SearchInput
+				placeholder="Search {iconsCount} icons for free..."
+				on:input={input}
+		  	/>
 			<div class="inner-controls">
 				<div class="control-group">
 					<label for="weight">Weight</label>

@@ -2,6 +2,10 @@
 
 We use semantic versioning (semver)
 
+## 1.16.3
+
+* Add a clear button to the search input
+
 ## 1.16.2
 
 * Improve keywords
