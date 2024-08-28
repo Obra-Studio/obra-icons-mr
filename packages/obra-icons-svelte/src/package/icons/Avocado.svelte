@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-avocado" clip-path="url(#clip0_624_30012)">
+	<g class="oi-avocado" clip-path="url(#clip0_626_46063)">
 		<circle
 			class="oi-ellipse"
 			cx="12"
@@ -33,7 +33,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_624_30012">
+		<clipPath class="clip0_626_46063">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

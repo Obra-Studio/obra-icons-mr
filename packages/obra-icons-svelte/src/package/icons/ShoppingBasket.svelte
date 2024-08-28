@@ -19,7 +19,7 @@
 	<g class="oi-shopping-basket">
 		<path
 			class="oi-box"
-			d="M7.00003 3H17L20 7H4.00003L7.00003 3Z"
+			d="M7.00002 3H17L20 7H4.00002L7.00002 3Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -35,7 +35,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M15.5 11C15.5 12.933 13.933 14.5 12 14.5C10.067 14.5 8.50003 12.933 8.50003 11"
+			d="M15.5 11C15.5 12.933 13.933 14.5 12 14.5C10.067 14.5 8.50002 12.933 8.50002 11"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

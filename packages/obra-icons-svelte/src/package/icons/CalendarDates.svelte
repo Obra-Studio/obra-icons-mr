@@ -19,7 +19,7 @@
 	<g class="oi-calendar-dates">
 		<path
 			class="oi-vector"
-			d="M4.00001 6C4.00001 5.44772 4.44773 5 5.00001 5H19C19.5523 5 20 5.44772 20 6V19C20 19.5523 19.5523 20 19 20H5.00001C4.44773 20 4.00001 19.5523 4.00001 19V6Z"
+			d="M4.00002 6C4.00002 5.44772 4.44773 5 5.00002 5H19C19.5523 5 20 5.44772 20 6V19C20 19.5523 19.5523 20 19 20H5.00002C4.44773 20 4.00002 19.5523 4.00002 19V6Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -36,7 +36,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M3.99996 10L20 10"
+			d="M3.99995 10L20 10"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

@@ -337,6 +337,14 @@ export default {
     "rise",
     "upward"
   ],
+  "article": [
+    "news",
+    "story",
+    "report",
+    "publication",
+    "blog",
+    "write"
+  ],
   "atom": [
     "molecule",
     "particle",
@@ -344,6 +352,15 @@ export default {
     "science",
     "chemistry",
     "atomic"
+  ],
+  "atom-alt": [
+    "react",
+    "molecule",
+    "science",
+    "chemistry",
+    "nuclear",
+    "particle",
+    "element"
   ],
   "attachment": [
     "paperclip",
@@ -368,6 +385,15 @@ export default {
     "guacamole",
     "food",
     "produce"
+  ],
+  "axis": [
+    "xyz",
+    "line",
+    "bar",
+    "graph",
+    "chart",
+    "coordinate",
+    "vector"
   ],
   "backspace": [
     "delete",
@@ -612,6 +638,15 @@ export default {
     "noticeboard",
     "bulletin board",
     "white board"
+  ],
+  "boarding-pass": [
+    "travel",
+    "ticket",
+    "flight pass",
+    "travel document",
+    "boarding card",
+    "plane ticket",
+    "passenger pass"
   ],
   "boat": [
     "ship",
@@ -1214,6 +1249,22 @@ export default {
     "project",
     "send",
     "transmit"
+  ],
+  "cell-signal": [
+    "network",
+    "signal strength",
+    "cellular",
+    "bars",
+    "reception",
+    "wireless"
+  ],
+  "cell-signal-low": [
+    "weak signal",
+    "poor reception",
+    "low bars",
+    "no service",
+    "limited connectivity",
+    "signal strength"
   ],
   "chat-ai": [
     "conversation",
@@ -2244,6 +2295,24 @@ export default {
     "headpiece",
     "coronet"
   ],
+  "cube-on-axis": [
+    "xyz",
+    "3d",
+    "cube",
+    "box",
+    "3D shape",
+    "geometry",
+    "object",
+    "axis"
+  ],
+  "cursor": [
+    "pointer",
+    "arrow",
+    "mouse",
+    "hand",
+    "select",
+    "click"
+  ],
   "cyclist": [
     "biker",
     "rider",
@@ -2331,6 +2400,7 @@ export default {
     "instruments"
   ],
   "diamond": [
+    "engagement",
     "gem",
     "jewel",
     "precious stone",
@@ -3053,22 +3123,24 @@ export default {
     "wide-tip marker"
   ],
   "favorite": [
+    "star",
     "like",
     "heart",
     "bookmark",
-    "star",
     "preference",
     "cherished"
   ],
   "favorite-fill": [
+    "star",
     "like",
     "heart",
     "bookmark",
-    "star",
     "preference",
     "cherished"
   ],
   "favorite-off": [
+    "unstar",
+    "star",
     "unfavorite",
     "remove",
     "dislike",
@@ -3080,6 +3152,8 @@ export default {
     "bookmark"
   ],
   "favorite-off-fill": [
+    "unstar",
+    "star",
     "unfavorite",
     "remove",
     "dislike",
@@ -3543,6 +3617,14 @@ export default {
     "video game",
     "console"
   ],
+  "gantt-chart": [
+    "timeline",
+    "project schedule",
+    "bar chart",
+    "project management",
+    "task timeline",
+    "project timeline"
+  ],
   "gas": [
     "fuel",
     "petrol",
@@ -3726,6 +3808,7 @@ export default {
     "headset"
   ],
   "heart": [
+    "like",
     "love",
     "affection",
     "emotion",
@@ -3734,6 +3817,7 @@ export default {
     "valentine"
   ],
   "heart-fill": [
+    "like",
     "love",
     "affection",
     "emotion",
@@ -3742,9 +3826,10 @@ export default {
     "valentine"
   ],
   "heart-off": [
+    "unlike",
+    "like",
     "heart",
     "love",
-    "like",
     "dislike",
     "unfavorite",
     "remove",
@@ -3752,9 +3837,10 @@ export default {
     "emotion"
   ],
   "heart-off-fill": [
+    "unlike",
+    "like",
     "heart",
     "love",
-    "like",
     "dislike",
     "unfavorite",
     "remove",
@@ -4063,6 +4149,14 @@ export default {
     "plunge",
     "slump"
   ],
+  "line-chart-fill": [
+    "graph",
+    "trend",
+    "data",
+    "statistics",
+    "analytics",
+    "plot"
+  ],
   "line-chart-up": [
     "graph",
     "trend",
@@ -4252,6 +4346,22 @@ export default {
     "stocks",
     "investing",
     "business"
+  ],
+  "marquee-selection": [
+    "select",
+    "highlight",
+    "drag",
+    "lasso",
+    "rectangle",
+    "box"
+  ],
+  "marriage-ring": [
+    "wedding ring",
+    "engagement ring",
+    "band",
+    "promise ring",
+    "jewelry",
+    "love"
   ],
   "mask": [
     "face covering",
@@ -4496,6 +4606,15 @@ export default {
     "sky",
     "crescent"
   ],
+  "moon-star": [
+    "night",
+    "celestial",
+    "sky",
+    "astronomy",
+    "heavenly",
+    "cosmic",
+    "lunar"
+  ],
   "mountains": [
     "hills",
     "peaks",
@@ -4695,6 +4814,14 @@ export default {
     "message",
     "reminder"
   ],
+  "number-field": [
+    "numeric",
+    "input",
+    "textbox",
+    "digit",
+    "entry",
+    "form"
+  ],
   "office": [
     "workplace",
     "business",
@@ -4826,6 +4953,7 @@ export default {
     "clamp"
   ],
   "passport": [
+    "travel",
     "travel document",
     "identification",
     "visa",
@@ -5061,7 +5189,25 @@ export default {
     "aeroplane",
     "aircraft"
   ],
+  "plane-fill": [
+    "airplane",
+    "jet",
+    "aviation",
+    "flight",
+    "aeroplane",
+    "aircraft"
+  ],
   "plane-tilt": [
+    "airplane",
+    "tilted",
+    "angled",
+    "slanted",
+    "inclined",
+    "aeroplane",
+    "jet",
+    "aviation"
+  ],
+  "plane-tilt-fill": [
     "airplane",
     "tilted",
     "angled",
@@ -5274,6 +5420,22 @@ export default {
     "drizzle",
     "storm",
     "wet"
+  ],
+  "ranking": [
+    "rating",
+    "score",
+    "position",
+    "order",
+    "ranking",
+    "top"
+  ],
+  "ranking-fill": [
+    "rating",
+    "score",
+    "position",
+    "order",
+    "ranking",
+    "top"
   ],
   "receipt": [
     "bill",
@@ -5723,6 +5885,14 @@ export default {
     "distribute",
     "post"
   ],
+  "share-fill": [
+    "send",
+    "distribute",
+    "post",
+    "forward",
+    "exchange",
+    "spread"
+  ],
   "shell": [
     "seashell",
     "oyster",
@@ -5818,6 +5988,14 @@ export default {
     "eliminate",
     "exclude"
   ],
+  "short-answer": [
+    "brief",
+    "concise",
+    "succinct",
+    "to the point",
+    "summary",
+    "quick"
+  ],
   "shuffle": [
     "mix",
     "randomize",
@@ -5885,6 +6063,14 @@ export default {
     "antenna",
     "bars"
   ],
+  "signature": [
+    "sign",
+    "autograph",
+    "seal",
+    "mark",
+    "symbol",
+    "stamp"
+  ],
   "sitemap": [
     "structure",
     "navigation",
@@ -5908,6 +6094,14 @@ export default {
     "segment",
     "piece",
     "section"
+  ],
+  "slider": [
+    "bar",
+    "toggle",
+    "control",
+    "adjust",
+    "scroll",
+    "slide"
   ],
   "sliders": [
     "adjust",
@@ -6184,6 +6378,14 @@ export default {
     "case",
     "traveling"
   ],
+  "summary": [
+    "overview",
+    "recap",
+    "synopsis",
+    "brief",
+    "outline",
+    "abstract"
+  ],
   "sun": [
     "sunny",
     "daylight",
@@ -6323,6 +6525,14 @@ export default {
     "strip",
     "band",
     "ribbon"
+  ],
+  "take-screen-control": [
+    "screen capture",
+    "screen recording",
+    "screen sharing",
+    "screen grab",
+    "screen management",
+    "screen manipulation"
   ],
   "takeaway-coffee": [
     "coffee",
@@ -7182,6 +7392,14 @@ export default {
     "glassware",
     "wine",
     "champagne"
+  ],
+  "workflow": [
+    "process",
+    "procedure",
+    "flow",
+    "sequence",
+    "steps",
+    "progress"
   ],
   "world": [
     "globe",

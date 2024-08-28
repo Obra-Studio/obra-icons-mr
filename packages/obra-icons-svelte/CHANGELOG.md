@@ -2,6 +2,10 @@
 
 We use semantic versioning (semver)
 
+## 1.17.0
+
+* Add 25 new icons to the set
+
 ## 1.16.3
 
 * Add a clear button to the search input
