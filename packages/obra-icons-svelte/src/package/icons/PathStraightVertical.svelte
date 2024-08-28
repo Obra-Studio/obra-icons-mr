@@ -19,7 +19,7 @@
 	<g class="oi-path-straight-vertical">
 		<path
 			class="oi-line"
-			d="M7.8 5.40002V19.8"
+			d="M7.79999 5.40002V19.8"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

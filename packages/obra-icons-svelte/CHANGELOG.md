@@ -1,6 +1,11 @@
 # Changelog Obra Icons
 
-We use semantic versioning (semver)
+We use semantic versioning (semver).
+
+## 1.18.0
+
+* Add 15 new icons to the set
+* Slight bug fixes to marketing site
 
 ## 1.17.0
 

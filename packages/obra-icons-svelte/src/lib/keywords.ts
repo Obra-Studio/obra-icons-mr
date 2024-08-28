@@ -345,6 +345,54 @@ export default {
     "blog",
     "write"
   ],
+  "article-alt": [
+    "blog",
+    "post",
+    "news",
+    "story",
+    "text",
+    "write",
+    "report"
+  ],
+  "article-alt-fill": [
+    "blog",
+    "post",
+    "news",
+    "story",
+    "text",
+    "write",
+    "report"
+  ],
+  "article-alt-mirrored": [
+    "opposite",
+    "flipped",
+    "reversed",
+    "mirror",
+    "alternate",
+    "alternative",
+    "news",
+    "story",
+    "report"
+  ],
+  "article-alt-mirrored-fill": [
+    "opposite",
+    "flipped",
+    "reversed",
+    "mirror",
+    "alternate",
+    "alternative",
+    "news",
+    "story",
+    "report"
+  ],
+  "article-fill": [
+    "news",
+    "story",
+    "report",
+    "publication",
+    "blog",
+    "write"
+  ],
   "atom": [
     "molecule",
     "particle",
@@ -1258,6 +1306,14 @@ export default {
     "reception",
     "wireless"
   ],
+  "cell-signal-high": [
+    "network",
+    "signal strength",
+    "bars",
+    "reception",
+    "wireless",
+    "connection"
+  ],
   "cell-signal-low": [
     "weak signal",
     "poor reception",
@@ -1265,6 +1321,14 @@ export default {
     "no service",
     "limited connectivity",
     "signal strength"
+  ],
+  "cell-signal-medium": [
+    "signal",
+    "network",
+    "bars",
+    "reception",
+    "wireless",
+    "connection"
   ],
   "chat-ai": [
     "conversation",
@@ -2109,6 +2173,14 @@ export default {
     "iced drink",
     "chilled drink"
   ],
+  "collaboration": [
+    "teamwork",
+    "cooperation",
+    "partnership",
+    "group",
+    "joint effort",
+    "working together"
+  ],
   "color-filter": [
     "color",
     "filter",
@@ -2407,6 +2479,23 @@ export default {
     "crystal",
     "sparkler",
     "gemstone"
+  ],
+  "dining": [
+    "restaurant",
+    "food",
+    "eat",
+    "meal",
+    "table",
+    "dinner"
+  ],
+  "dining-menu": [
+    "restaurant",
+    "food",
+    "menu",
+    "dinner",
+    "cuisine",
+    "meal",
+    "eat"
   ],
   "disconnect": [
     "unplug",
@@ -3923,6 +4012,14 @@ export default {
     "communication",
     "messages"
   ],
+  "income": [
+    "earnings",
+    "revenue",
+    "salary",
+    "wages",
+    "profit",
+    "money"
+  ],
   "indian-rupee": [
     "currency",
     "money",
@@ -3970,6 +4067,14 @@ export default {
     "console",
     "button",
     "play"
+  ],
+  "justice": [
+    "fairness",
+    "equity",
+    "law",
+    "righteousness",
+    "balance",
+    "equality"
   ],
   "kanban": [
     "board",
@@ -6164,6 +6269,14 @@ export default {
     "filter",
     "group"
   ],
+  "spade": [
+    "shovel",
+    "digging tool",
+    "gardening tool",
+    "playing card",
+    "ace",
+    "sharp"
+  ],
   "sparkles": [
     "ai",
     "glitter",
@@ -6205,6 +6318,14 @@ export default {
     "velocity",
     "gauge",
     "speed indicator"
+  ],
+  "split": [
+    "divide",
+    "separate",
+    "break",
+    "cut",
+    "splitting",
+    "part"
   ],
   "station-wagon": [
     "car",
@@ -7277,6 +7398,14 @@ export default {
     "payment",
     "alternative",
     "cash"
+  ],
+  "warning-hexagon": [
+    "alert",
+    "caution",
+    "danger",
+    "error",
+    "exclamation",
+    "stop"
   ],
   "warning-triangle": [
     "alert",

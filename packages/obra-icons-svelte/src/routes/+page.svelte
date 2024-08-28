@@ -20,7 +20,7 @@
 	let query: string = '';
 	let lastQuery: string = query;
 
-	let color = '#000'
+	let color = '#000000'
 	let strokeWeight = 1.5
 	let size = 36
 	let selectedActionOnClick = 'copySvg'
@@ -185,7 +185,6 @@
 					<Icon
 						selectedAction={selectedActionOnClick}
 						{svg}
-						strokeWeight={strokeWeight}
 						size={size}
 						nameKebab={document.nameKebab}
 						namePascal={document.namePascal}
