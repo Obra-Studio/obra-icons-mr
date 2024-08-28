@@ -101,11 +101,6 @@
 			color: #FFF;
 		}
 
-		:global(svg *) {
-			stroke: #fff;
-			stroke-width: 1.5px;
-		}
-
 		.icon-item :global(svg .oi-fill) {
 			fill: #fff;
 			stroke: none;
@@ -115,5 +110,7 @@
 			stroke: #fff;
 		}
 	}
+
+
 
 </style>
