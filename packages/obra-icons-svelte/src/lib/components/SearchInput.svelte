@@ -54,6 +54,12 @@
         top: 0.65rem;
     }
 
+    @media (prefers-color-scheme: dark) {
+        .input-with-icon .search-holder :global(svg *) {
+            stroke: #fff;
+        }
+    }
+
     .input-with-icon .clear {
         position: absolute;
         right: 0.75rem;
@@ -67,6 +73,12 @@
         justify-content: center;
         width: 2rem;
         height: 2rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .input-with-icon .clear :global(svg *) {
+            stroke: #fff;
+        }
     }
 
     .input-with-icon .clear :global(svg) {

@@ -300,7 +300,7 @@
     .icon-grid {
         display: grid;
         gap: 1rem;
-		margin: 1rem;
+		padding: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     }
 
