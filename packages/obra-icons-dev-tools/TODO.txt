@@ -1,0 +1,1 @@
+* Add a button to set all strokes to center aligned

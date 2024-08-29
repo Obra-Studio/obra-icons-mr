@@ -1,0 +1,12 @@
+{
+  "name": "obra-icons-dev-tools",
+  "version": "1.0.0",
+  "description": "Dev tools for https://icons.obra.studio/",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

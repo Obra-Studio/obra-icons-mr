@@ -1,0 +1,363 @@
+<style>
+:root {
+    /* Figma vars are too complex, here is a simple mapping of common colours */
+    --gray-7: #191919;
+    --gray-6: #2C2C2C;
+    --gray-5: #565656;
+    --gray-4: #7F7F7F;
+    --gray-3: #B2B2B2;
+    --gray-2: #DDDDDD;
+    --gray-1: #F0F0F0;
+    --blue-4: #007BE5;
+    --blue-3: #4597F7;
+    --blue-1: #E1F3FF;
+    --red-4: #E05534;
+    --red-1: #FBE9E4;
+
+
+    --font-family: Inter, Arial, sans-serif;
+    --font-size-body: 11px;
+    --border-radius-small: 2px;
+    --border-radius-med: 5px;
+    
+    /* Semantic */
+    --primary-color: var(--blue-4);
+    --field-border-color: var(--gray-3);
+    --focus-ring-color: var(--primary-color);
+    --semantic-text-muted: var(--gray-4);
+    --semantic-text-body: var(--gray-6);
+    --semantic-text-heading: var(--gray-7);
+    --semantic-text-label: var(--gray-7);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Semantic remapping for dark mode */
+  :root {
+      --primary-color: var(--blue-3);
+      --field-border-color: var(--gray-5);
+      --text-color: #FFF;
+      --semantic-text-muted: var(--gray-4);
+      --semantic-text-body: var(--gray-3);
+      --semantic-text-heading: #FFF;
+      --semantic-text-label: #FFF;
+  }
+
+  body {
+      color: var(--gray-3);
+      background: var(--gray-7);
+  }
+
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+  padding: 8px;
+}
+
+#app h4:first-child {
+  margin-top: 0;
+}
+
+/* a */
+
+a {
+  font-size: var(--font-size-body);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a svg * {
+   stroke: var(--primary-color);
+}
+
+
+/* Button */
+
+.button {
+    border: none;
+    color: #222;
+    padding: 6px 12px;
+    border-radius: var(--border-radius-med);
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    line-height: 1.3;
+    background: #F5F5F5;
+}
+
+.button:hover {
+  background: #E6E6E6;
+}
+
+.button.block {
+    width: 100%;
+}
+
+.button[disabled] {
+    opacity: .3;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:focus-visible {
+    border-color: var(--focus-ring-color);
+    box-shadow: 0 0 0 1px var(--focus-ring-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .button {
+        background: var(--gray-6);
+        color: #FFF;
+    }
+
+  .button:hover {
+    background: var(--gray-5);
+  }
+}
+
+.block {
+    width: 100%;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.button-group.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap-8 {
+  gap: .5rem
+}
+
+</style>
+
+<div id="app">
+  
+
+  <h4>Production actions - Dev</h4>
+
+  <p>Select the frame called “Obra Icons - Original source”.</p>
+
+  <div class="button-group vertical">
+    <button class="block button secondary" id="createDevCopy">Create dev copy</button>
+  </div>
+
+  <summary>
+    <details>
+      <p>Note: you might have to click this button twice to get it to work.</p>
+      <p>The dev copy serves as the base for the SVG import. Use the ID on the top right of the generated artboard to use with your SVG import code. For example <code>pnpm run generate:icons 565:116138</code></p>
+    </details>
+  </summary>
+
+  <h4>Production actions - Releases - SendOwl</h4>
+
+  <summary>
+    <details>
+      <p>Select the frame called “Obra Icons - Original source” and click the button to create a design copy. This runs practically every one of the “production actions” to make a copy that can be used as a base for icons  in a design system.</p>
+    </details>
+  </summary>
+
+  <div class="button-group vertical">
+    <button class="block button secondary" id="createDesignCopy">Create design copy</button>
+  </div>
+
+  <h4>Production actions - Design</h4>
+
+  <h4>Clean up initial creation</h4>
+
+  <div class="button-group vertical">
+    <button class="block button secondary" id="removeAllTopLevelTextLayers">Remove all top-level text layers</button>
+    <button class="block button secondary" id="removeBitmapImages">Remove bitmap Images</button>
+  </div>
+
+  <h4>Prepare for export</h4>
+
+  <div class="button-group vertical">
+    <div class="button-group">
+      <button class="block button secondary" id="setStrokeWeightButton">Set stroke weight to 1px</button>
+      <button class="block button secondary" id="setStrokeWeight2pxButton">Set stroke weight to 2px</button>
+    </div>
+    <button class="block button secondary" id="setConstraintsScale">Set all constraints to scale</button>
+    <div class="button-group">
+      <button class="block button secondary" id="autoColourNamedLayers">Auto-colour named layers</button>
+      <button class="block button secondary" id="harmonizeStrokesAndFills">Colour black</button>
+    </div>
+
+
+    <div class="button-group">
+      <button class="block button secondary" id="snapPixel">Snap to pixel</button>
+      <button class="block button secondary" id="snapHalfPixel">Snap to half pixel</button>
+    </div>
+
+  </div>
+
+  <h4>Vector tools</h4>
+
+  <div id="toleranceValue">Tolerance: 1</div>
+  <div class="flex align-items-center gap-8">
+    <input type="range" id="toleranceSlider" min="1" max="500" value="1">
+    <button class="button primary" id="applyButton">Simplify path</button>
+  </div>
+
+
+  <h4>Prepare for production</h4>
+  <div class="button-group vertical">
+    <button class="block button secondary" id="mergeAutoLayoutGroups">Merge auto layout groups</button>
+    <button class="block button secondary" id="deleteKeyShapes">Delete keyshapes</button>
+  </div>
+
+  <h4>Production actions - To do</h4>
+  <div class="button-group vertical">
+    <button class="block button secondary" id="outlineAutomatically" disabled>Outline icons automatically</button>
+    <p>Please use <a href="https://www.figma.com/community/plugin/1255914175202017737/VectorSymbols">VectorSymbols</a> for now until this feature is implemented.</p>
+  </div>
+
+  <h4>Debugging</h4>
+
+  <div class="button-group vertical">
+    <button class="block button secondary" id="reportFillAndStroke">Report on icons that have layers that both have a fill and a stroke</button>
+    <button class="block button secondary" id="reportOnGroups">Report on icons that have groups inside them</button>
+  </div>
+
+
+  <button class="block button secondary" id="reportOnDuplicateIcons">Report on duplicate icons</button>
+  <p>Select the top level artboard. Script will attempt to scan duplicate names for all 24x24 frames.</p>
+
+</div>
+
+<script>
+
+    // When the buttons are clicked, send messages to the plugin code
+    document.getElementById('reportFillAndStroke').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'report-fill-and-stroke' } }, '*');
+    };
+
+    document.getElementById('createDevCopy').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'create-dev-copy' } }, '*');
+    };
+    
+    document.getElementById('createDesignCopy').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'create-design-copy' } }, '*');
+    };
+
+    document.getElementById('mergeAutoLayoutGroups').onclick = () => {
+        parent.postMessage({ pluginMessage: { type: 'merge-auto-layout-groups' } }, '*');
+    };
+
+    document.getElementById('deleteKeyShapes').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'delete-key-shapes' } }, '*');
+    };
+
+    document.getElementById('harmonizeStrokesAndFills').onclick = () => {
+        parent.postMessage({ pluginMessage: { type: 'harmonize-strokes-and-fills' } }, '*');
+    };
+    
+    document.getElementById('setConstraintsScale').onclick = () => {
+        parent.postMessage({ pluginMessage: { type: 'set-constraints-scale' } }, '*');
+    };
+
+    document.getElementById('removeAllTopLevelTextLayers').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'remove-all-top-level-text-layers' } }, '*');
+    };
+
+    document.getElementById('removeBitmapImages').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'remove-all-bitmap-images' } }, '*');
+    };
+
+    document.getElementById('outlineAutomatically').onclick = () => {
+        parent.postMessage({ pluginMessage: { type: 'outline-automatically' } }, '*');
+    };
+
+    document.getElementById('autoColourNamedLayers').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'auto-colour-named-layers' } }, '*');
+    };
+
+    document.getElementById('reportOnGroups').onclick = () => {
+        parent.postMessage({ pluginMessage: { type: 'report-on-groups' } }, '*');
+    };
+    
+    document.getElementById('reportOnDuplicateIcons').onclick = () => {
+        parent.postMessage({ pluginMessage: { type: 'report-on-duplicate-icons' } }, '*');
+    };
+
+    document.getElementById('setStrokeWeightButton').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'set-stroke-weight', weight: 1 } }, '*')
+    }
+
+    document.getElementById('setStrokeWeight2pxButton').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'set-stroke-weight', weight: 2 } }, '*')
+    }
+
+    document.getElementById('snapPixel').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'snap-pixel' } }, '*');
+    };
+
+    document.getElementById('snapHalfPixel').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'snap-half-pixel' } }, '*');
+    };
+
+    const slider = document.getElementById('toleranceSlider');
+    const valueDisplay = document.getElementById('toleranceValue');
+    const applyButton = document.getElementById('applyButton');
+
+    slider.oninput = function() {
+      valueDisplay.textContent = `Tolerance: ${this.value}`;
+    }
+
+    applyButton.onclick = function() {
+      parent.postMessage({ pluginMessage: { type: 'apply-simplify', tolerance: parseInt(slider.value) } }, '*');
+    }
+
+    /* This code dynamically resizes the window based on the height of domELtargetNode */
+    const domEltargetNode = document.getElementById('app');
+
+    const callback = function (mutationsList, observer) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === 'attributes') {
+          const newHeight = domEltargetNode.clientHeight;
+          parent.postMessage(
+            {
+              pluginMessage: {
+                type: 'resizeWindow',
+                height: newHeight + 30,
+              },
+            },
+            '*',
+          );
+        }
+      }
+    };
+
+    const observer = new MutationObserver(callback);
+    observer.observe(domEltargetNode, {
+      attributes: true,
+      childList: false,
+      subtree: true,
+    });
+
+    // Trigger the callback function manually to handle the initial load
+    callback([{ type: 'attributes' }], null);
+
+
+</script>
