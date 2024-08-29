@@ -855,6 +855,38 @@ export default {
     "bracket",
     "curly brackets"
   ],
+  "brand-facebook": [
+    "facebook",
+    "social media",
+    "networking",
+    "logo",
+    "social network",
+    "blue F"
+  ],
+  "brand-instagram": [
+    "instagram",
+    "social media",
+    "photo sharing",
+    "camera",
+    "app",
+    "logo"
+  ],
+  "brand-threads": [
+    "logo",
+    "fashion",
+    "clothing",
+    "apparel",
+    "style",
+    "design"
+  ],
+  "brand-whatsapp": [
+    "whatsapp",
+    "messaging",
+    "chat",
+    "communication",
+    "social media",
+    "phone"
+  ],
   "bread": [
     "baguette",
     "loaf",
@@ -2098,6 +2130,17 @@ export default {
     "hazy",
     "dull"
   ],
+  "cloudy-combo-fill": [
+    "weather",
+    "cloud",
+    "sun",
+    "rain",
+    "storm",
+    "combination",
+    "overcast",
+    "partly cloudy",
+    "cloud-covered"
+  ],
   "cloudy-fill": [
     "overcast",
     "partly cloudy",
@@ -2561,6 +2604,14 @@ export default {
     "divide",
     "segment",
     "break"
+  ],
+  "divorce": [
+    "separation",
+    "split",
+    "breakup",
+    "end",
+    "dissolution",
+    "parting"
   ],
   "document": [
     "file",
@@ -4634,6 +4685,14 @@ export default {
     "inbox",
     "notification",
     "speech bubble"
+  ],
+  "messages": [
+    "chat",
+    "inbox",
+    "conversations",
+    "notifications",
+    "mail",
+    "communication"
   ],
   "mic": [
     "microphone",

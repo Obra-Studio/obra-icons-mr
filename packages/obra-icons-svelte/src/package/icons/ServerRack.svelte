@@ -57,14 +57,14 @@
 		/>
 		<path
 			class="oi-line"
-			d="M11.494 8.5H17.0337"
+			d="M11.494 8.5H17.0336"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-line"
-			d="M11.494 15.5H17.0337"
+			d="M11.494 15.5H17.0336"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

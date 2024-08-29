@@ -5,7 +5,6 @@
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
-  export let strokeWidth = 2
 </script>
 
 <svg
@@ -16,10 +15,11 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-collaboration">
+	<g class="oi-cloudy-combo-fill">
 		<path
-			class="oi-vector"
-			d="M3.9621 5.13087C6.0449 3.08968 9.42178 3.08968 11.5046 5.13087L12 5.6164L12.4954 5.13087C14.5782 3.08968 17.9551 3.08968 20.0379 5.13087C22.1207 7.17205 22.1207 10.4815 20.0379 12.5227L12 20.4L3.9621 12.5227C1.8793 10.4815 1.8793 7.17205 3.9621 5.13087Z"
+			class="oi-combo-fill"
+			d="M3 16C3 18.2091 4.79086 20 7 20H16C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C15.9666 10 15.9334 10.0003 15.9002 10.001C15.4373 7.71825 13.4193 6 11 6C8.23858 6 6 8.23858 6 11C6 11.3768 6.04169 11.7439 6.12071 12.097C4.33457 12.4976 3 14.0929 3 16Z"
+			fill="#E38F52"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -28,9 +28,12 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M11.981 5.61768L9.09002 8.50862C8.40088 9.19775 8.40088 10.3151 9.09002 11.0042V11.0042C9.77915 11.6933 10.8965 11.6933 11.5856 11.0042L13.9592 8.6306L18.9504 13.6218"
+			d="M19.9178 8.81066C19.9717 8.54887 20 8.27774 20 8C20 5.79086 18.2091 4 16 4C15.4381 4 14.9032 4.11587 14.418 4.32503"
 			stroke={color}
 			stroke-width={strokeWidth}
+			stroke-miterlimit="10"
+			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

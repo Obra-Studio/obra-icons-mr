@@ -7,10 +7,10 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-send[paper-plane]" clip-path="url(#clip0_642_9358)">
+	<g class="oi-messages">
 		<path
 			class="oi-vector"
-			d="M21.4919 2.70063L15.1279 21.7925L10.1782 14.0143L2.40001 9.06459L21.4919 2.70063Z"
+			d="M14 5H4C3.44772 5 3 5.44772 3 6V12.9375C3 13.4898 3.44772 13.9375 4 13.9375H7V16L11 13.9375H14C14.5523 13.9375 15 13.4898 15 12.9375V6C15 5.44772 14.5523 5 14 5Z"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -18,8 +18,8 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
-			d="M10.1787 14.0146L21.4924 2.70093"
+			class="oi-vector"
+			d="M18 8H20C20.5523 8 21 8.44772 21 9V15.9375C21 16.4898 20.5523 16.9375 20 16.9375H17V19L13 16.9375H11"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -27,9 +27,4 @@
 			stroke-linejoin="round"
 		/>
 	</g>
-	<defs>
-		<clipPath class="clip0_642_9358">
-			<rect width="24" height="24" fill="white" />
-		</clipPath>
-	</defs>
 </svg>
