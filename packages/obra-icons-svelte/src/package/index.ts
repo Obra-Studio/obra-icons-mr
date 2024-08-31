@@ -111,6 +111,7 @@ export { default as IconBritishPound } from './icons/BritishPound.svelte';
 export { default as IconBrocolli } from './icons/Brocolli.svelte';
 export { default as IconBrush } from './icons/Brush.svelte';
 export { default as IconBug } from './icons/Bug.svelte';
+export { default as IconBugComboFill } from './icons/BugComboFill.svelte';
 export { default as IconBurger } from './icons/Burger.svelte';
 export { default as IconBus } from './icons/Bus.svelte';
 export { default as IconBusFill } from './icons/BusFill.svelte';

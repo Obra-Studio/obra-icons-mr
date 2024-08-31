@@ -5,6 +5,7 @@
 <script lang="ts">
   export let size = 24
   export let color = 'currentColor'
+  export let strokeWidth = 2
 </script>
 
 <svg
@@ -19,7 +20,7 @@
 		<path
 			class="oi-combo-fill"
 			d="M3 16C3 18.2091 4.79086 20 7 20H16C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C15.9666 10 15.9334 10.0003 15.9002 10.001C15.4373 7.71825 13.4193 6 11 6C8.23858 6 6 8.23858 6 11C6 11.3768 6.04169 11.7439 6.12071 12.097C4.33457 12.4976 3 14.0929 3 16Z"
-			fill="#E38F52"
+			fill={color}
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

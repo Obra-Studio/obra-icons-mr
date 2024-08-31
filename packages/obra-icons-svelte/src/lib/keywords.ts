@@ -946,6 +946,16 @@ export default {
     "infection",
     "glitch"
   ],
+  "bug-combo-fill": [
+    "insect",
+    "combination",
+    "insect combination",
+    "bug fusion",
+    "hybrid bug",
+    "mixed bug",
+    "pest",
+    "beetle"
+  ],
   "burger": [
     "hamburger",
     "sandwich",

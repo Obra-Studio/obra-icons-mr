@@ -10,7 +10,7 @@
 	<g class="oi-close[x]">
 		<path
 			class="oi-line"
-			d="M18.0001 6L6.00008 18"
+			d="M18.0001 6L6.00009 18"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -18,7 +18,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M6.00008 6L18.0001 18"
+			d="M6.00009 6L18.0001 18"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"

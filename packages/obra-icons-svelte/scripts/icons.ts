@@ -170,7 +170,7 @@ for (const chunk of split(base_icons, 100)) {
 
 			const svgSvelte = svg
 				// Remove keywords from the overall group (g) element
-				.replace(/<g class="oi-(.*)\[(.*)\]">/g, '<g class="oi-$1">')
+				.replace(/<g class="oi(.*)\[.*]">/g, '<g class="oi$1">')
 				// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
 				.replace(/(width|height)="24"(?! stroke-width)/g, '$1={size}')
 				// Turn stroke="black" into stroke={color}
@@ -233,7 +233,9 @@ for (let { svg, svgSvelte, name } of icons) {
 	console.log(`  Writing Icon "${name}"`);
 
 	let svelte_component = '';
-	if (name.endsWith('-fill')) {
+	if (name.endsWith('-combo-fill')) {
+		svelte_component = svelte_template_stroke(svgSvelte);
+	} else if (name.endsWith('-fill')) {
 		svelte_component = svelte_template_fill(svgSvelte);
 	} else {
 		svelte_component = svelte_template_stroke(svgSvelte);

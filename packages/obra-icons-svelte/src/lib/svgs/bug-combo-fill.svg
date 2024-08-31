@@ -7,28 +7,67 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-sunset">
+	<g class="oi-bug-combo-fill">
 		<path
 			class="oi-line"
-			d="M21 20H3"
+			d="M3 13H6"
 			stroke="black"
 			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-ellipse"
-			d="M9.00001 20.0004C7.78556 19.0882 7.00001 17.6358 7.00001 16C7.00001 13.2386 9.23858 11 12 11C14.7614 11 17 13.2386 17 16C17 17.6358 16.2145 19.0882 15 20.0004"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
 			class="oi-line"
-			d="M18.364 9.63605L17.6569 10.3432"
+			d="M18 13H21"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M9 6.99988V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V6.99988"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M6 9C4.34315 9 3 7.65685 3 6"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M18 9C19.6569 9 21 7.65685 21 6"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M6 17C4.34315 17 3 18.3431 3 20"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-vector"
+			d="M18 17C19.6569 17 21 18.3431 21 20"
+			stroke="black"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			class="oi-combo-fill"
+			d="M6 11V15C6 17.6124 7.66962 19.8349 10 20.6586L10 8C10 7.44772 9.54533 6.98717 9.01012 7.12343C7.27976 7.56394 6 9.13252 6 11Z"
+			fill="black"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -36,44 +75,9 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-line"
-			d="M4.00001 16L3.00001 16"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-line"
-			d="M21 16L20 16"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-line"
-			d="M6.34314 10.3431L5.63603 9.63603"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-line"
-			d="M12 8L12 3"
-			stroke="black"
-			stroke-width="2"
-			stroke-miterlimit="10"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		/>
-		<path
-			class="oi-incomplete-triangle"
-			d="M14 6L12 8L9.99998 6"
+			class="oi-combo-fill"
+			d="M17.5 11V15C17.5 17.6124 15.8304 19.8349 13.5 20.6586L13.5 8C13.5 7.44772 13.9547 6.98717 14.4899 7.12343C16.2202 7.56394 17.5 9.13252 17.5 11Z"
+			fill="black"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"

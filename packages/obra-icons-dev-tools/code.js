@@ -671,7 +671,17 @@ function setColors(node) {
             node.type === "STAR"
         ) && node.name != "oi-fill"
     ) {
-        node.strokes = [{ type: "SOLID", color: {r: 0, g: 0, b: 0} }];
+
+        if (
+            node.name === "oi-combo-fill"
+        ) {
+            node.strokes = [{ type: "SOLID", color: {r: 0, g: 0, b: 0} }];
+            if (node.fills.length > 0) {
+                node.fills = [{ type: "SOLID", color: {r: 0, g: 0, b: 0} }];
+            }
+        } else {
+            node.strokes = [{ type: "SOLID", color: {r: 0, g: 0, b: 0} }];
+        }
     }
 
     if (
@@ -1111,6 +1121,7 @@ const colorVariableNames = [
     'oi-incomplete-triangle',
     'oi-vector',
     'oi-fill',
+    'oi-combo-fill',
     'oi-triangle',
     'oi-mini-dot',
     'oi-medium-dot',
