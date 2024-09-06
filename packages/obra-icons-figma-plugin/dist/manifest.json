@@ -1,7 +1,8 @@
 {
-  "id": "Obra Icons",
+  "id": "obra-icons-figma-plugin",
   "main": "main.js",
   "ui": "ui.html",
+  "name": "Obra Icons",
   "editorType": [
     "figma",
     "figjam"
@@ -14,6 +15,5 @@
       "*"
     ]
   },
-  "name": "Obra Icons",
   "api": "1.0.0"
 }

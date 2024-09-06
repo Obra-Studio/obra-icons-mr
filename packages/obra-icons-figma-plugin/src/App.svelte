@@ -5,14 +5,37 @@
       .filter(([name]) => name.startsWith('Icon'))
       .map(([name, component]) => ({ name, component }));
 
+      
     function handleIconClick(name: string, component: any) {
       const tempDiv = document.createElement('div');
       new component({ target: tempDiv, props: { size: 24 } });
       const svgString = tempDiv.innerHTML;
       console.log(svgString);
-      parent.postMessage({ type: 'paste-icon', iconName: name, svgString }, '*');
+
+      parent.postMessage(
+        {
+          pluginMessage: { type: 'paste-icon', iconName: name, svgString },
+          pluginId: '*'
+        },
+        '*'
+      );
+      }
 </script>
   
+  <div class="control-group">
+    <label for="strokeWeight">Stroke Weight</label>
+    <input
+        id="strokeWeight"
+        type="range"
+        min="1"
+        max="10"
+        step="0.5"
+        value="2"
+    />
+    <span id="strokeWeightValue">2</span>
+  </div>
+
+
   <div class="icon-grid">
     {#each iconList as { name, component }}
       <div class="icon-item" on:click={() => handleIconClick(name, component)}>
