@@ -20,10 +20,10 @@
 		<rect
 			class="oi-vector"
 			x="19.1043"
-			y="3.19897"
+			y="3.19904"
 			width="3"
 			height="22.9208"
-			transform="rotate(45 19.1043 3.19897)"
+			transform="rotate(45 19.1043 3.19904)"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-send[paper-plane]" clip-path="url(#clip0_642_108691)">
+	<g class="oi-send[paper-plane]" clip-path="url(#clip0_663_97480)">
 		<path
 			class="oi-vector"
 			d="M21.4919 2.70063L15.1279 21.7925L10.1782 14.0143L2.40001 9.06459L21.4919 2.70063Z"
@@ -37,7 +37,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_642_108691">
+		<clipPath class="clip0_663_97480">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

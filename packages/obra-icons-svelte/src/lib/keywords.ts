@@ -88,6 +88,14 @@ export default {
     "wake-up",
     "siren"
   ],
+  "alien": [
+    "extraterrestrial",
+    "creature",
+    "Martian",
+    "space being",
+    "ET",
+    "visitor"
+  ],
   "align-group-bottom": [
     "bottom-align",
     "align to bottom",
@@ -434,6 +442,14 @@ export default {
     "food",
     "produce"
   ],
+  "axe": [
+    "weapon",
+    "tool",
+    "chop",
+    "blade",
+    "hatchet",
+    "cut"
+  ],
   "axis": [
     "xyz",
     "line",
@@ -442,6 +458,33 @@ export default {
     "chart",
     "coordinate",
     "vector"
+  ],
+  "baby": [
+    "infant",
+    "child",
+    "toddler",
+    "newborn",
+    "babyhood",
+    "nursery"
+  ],
+  "baby-carriage": [
+    "stroller",
+    "pram",
+    "pushchair",
+    "baby buggy",
+    "infant carriage",
+    "baby stroller",
+    "infant",
+    "child",
+    "toddler"
+  ],
+  "backpack": [
+    "bag",
+    "knapsack",
+    "rucksack",
+    "satchel",
+    "pack",
+    "travel"
   ],
   "backspace": [
     "delete",
@@ -582,6 +625,14 @@ export default {
     "code",
     "product",
     "inventory"
+  ],
+  "baseball-cap": [
+    "hat",
+    "cap",
+    "headwear",
+    "headgear",
+    "baseball hat",
+    "ball cap"
   ],
   "basketball": [
     "ball",
@@ -855,7 +906,7 @@ export default {
     "bracket",
     "curly brackets"
   ],
-  "brand-facebook": [
+  "brand-facebook-fill": [
     "facebook",
     "social media",
     "networking",
@@ -863,7 +914,7 @@ export default {
     "social network",
     "blue F"
   ],
-  "brand-instagram": [
+  "brand-instagram-fill": [
     "instagram",
     "social media",
     "photo sharing",
@@ -871,7 +922,7 @@ export default {
     "app",
     "logo"
   ],
-  "brand-threads": [
+  "brand-threads-fill": [
     "logo",
     "fashion",
     "clothing",
@@ -879,7 +930,7 @@ export default {
     "style",
     "design"
   ],
-  "brand-whatsapp": [
+  "brand-whatsapp-fill": [
     "whatsapp",
     "messaging",
     "chat",
@@ -1004,6 +1055,14 @@ export default {
     "corporate",
     "business"
   ],
+  "butterfly": [
+    "insect",
+    "flutter",
+    "wings",
+    "caterpillar",
+    "moth",
+    "flying"
+  ],
   "cake": [
     "dessert",
     "pastry",
@@ -1063,6 +1122,15 @@ export default {
     "confirm",
     "date",
     "planner"
+  ],
+  "calendar-combo-fill": [
+    "schedule",
+    "planner",
+    "agenda",
+    "appointment",
+    "event",
+    "meeting",
+    "date"
   ],
   "calendar-dates": [
     "calendar",
@@ -1195,6 +1263,14 @@ export default {
     "image",
     "snapshot",
     "shoot"
+  ],
+  "campfire": [
+    "fire",
+    "bonfire",
+    "flame",
+    "outdoor",
+    "camping",
+    "burn"
   ],
   "car": [
     "vehicle",
@@ -1332,6 +1408,22 @@ export default {
     "elevate",
     "ascend"
   ],
+  "carrot": [
+    "vegetable",
+    "orange",
+    "root",
+    "food",
+    "healthy",
+    "vegan"
+  ],
+  "cassette-tape": [
+    "music",
+    "audio",
+    "recording",
+    "tape",
+    "retro",
+    "vintage"
+  ],
   "cast": [
     "stream",
     "broadcast",
@@ -1339,6 +1431,14 @@ export default {
     "project",
     "send",
     "transmit"
+  ],
+  "castle-turret": [
+    "fortress",
+    "tower",
+    "stronghold",
+    "bastion",
+    "citadel",
+    "keep"
   ],
   "cell-signal": [
     "network",
@@ -1371,6 +1471,14 @@ export default {
     "reception",
     "wireless",
     "connection"
+  ],
+  "chart-scatter": [
+    "scatterplot",
+    "graph",
+    "data",
+    "plot",
+    "scatter chart",
+    "scatter diagram"
   ],
   "chat-ai": [
     "conversation",
@@ -1463,6 +1571,38 @@ export default {
     "agenda",
     "inventory",
     "schedule"
+  ],
+  "cheers": [
+    "celebrate",
+    "toast",
+    "happiness",
+    "joy",
+    "clink",
+    "drink"
+  ],
+  "cheese": [
+    "dairy",
+    "cheddar",
+    "swiss",
+    "mozzarella",
+    "gouda",
+    "brie"
+  ],
+  "chef-hat": [
+    "cook",
+    "culinary",
+    "chef",
+    "restaurant",
+    "kitchen",
+    "food"
+  ],
+  "cherries": [
+    "fruit",
+    "red",
+    "berries",
+    "cherry",
+    "sweet",
+    "juicy"
   ],
   "chevron-double-down": [
     "arrow",
@@ -1911,6 +2051,14 @@ export default {
     "shape",
     "ring"
   ],
+  "circuitry": [
+    "electronics",
+    "wiring",
+    "circuits",
+    "technology",
+    "electricity",
+    "components"
+  ],
   "click-events": [
     "analytics",
     "interaction",
@@ -2323,6 +2471,14 @@ export default {
     "contact list",
     "address list"
   ],
+  "cookie": [
+    "biscuit",
+    "treat",
+    "snack",
+    "sweet",
+    "dessert",
+    "baked good"
+  ],
   "copy": [
     "duplicate",
     "replicate",
@@ -2429,6 +2585,14 @@ export default {
     "geometry",
     "object",
     "axis"
+  ],
+  "currency-eth": [
+    "ethereum",
+    "crypto",
+    "digital",
+    "money",
+    "blockchain",
+    "ether"
   ],
   "cursor": [
     "pointer",
@@ -2549,6 +2713,14 @@ export default {
     "cuisine",
     "meal",
     "eat"
+  ],
+  "disco-ball": [
+    "party",
+    "dance",
+    "glitter",
+    "mirror ball",
+    "nightclub",
+    "celebration"
   ],
   "disconnect": [
     "unplug",
@@ -2885,6 +3057,14 @@ export default {
     "store",
     "import"
   ],
+  "dress": [
+    "clothing",
+    "garment",
+    "apparel",
+    "outfit",
+    "fashion",
+    "attire"
+  ],
   "drop": [
     "water",
     "fall",
@@ -2935,6 +3115,25 @@ export default {
     "revise",
     "alter",
     "amend"
+  ],
+  "egg": [
+    "food",
+    "breakfast",
+    "chicken",
+    "oval",
+    "shell",
+    "protein"
+  ],
+  "egg-cracked": [
+    "broken",
+    "damaged",
+    "smashed",
+    "cracked",
+    "shattered",
+    "fractured",
+    "food",
+    "breakfast",
+    "chicken"
   ],
   "eject": [
     "remove",
@@ -3232,6 +3431,14 @@ export default {
     "kin",
     "clan"
   ],
+  "fan": [
+    "cooling",
+    "ventilator",
+    "air",
+    "blower",
+    "wind",
+    "breeze"
+  ],
   "fast-forward": [
     "skip",
     "advance",
@@ -3363,6 +3570,17 @@ export default {
     "ignite",
     "combust"
   ],
+  "fire-extinguisher": [
+    "firefighter",
+    "safety",
+    "emergency",
+    "extinguish",
+    "firefighter helmet",
+    "fire safety",
+    "flame",
+    "burn",
+    "blaze"
+  ],
   "fire-fill": [
     "flame",
     "burn",
@@ -3485,6 +3703,16 @@ export default {
     "bloom",
     "daisy"
   ],
+  "flower-alt": [
+    "flower",
+    "blossom",
+    "plant",
+    "floral",
+    "nature",
+    "alternate",
+    "petal",
+    "flora"
+  ],
   "flower-fill": [
     "blossom",
     "petal",
@@ -3492,6 +3720,16 @@ export default {
     "plant",
     "bloom",
     "daisy"
+  ],
+  "flower-lotus": [
+    "lotus flower",
+    "blossom",
+    "water lily",
+    "aquatic plant",
+    "floral symbol",
+    "zen",
+    "petal",
+    "flora"
   ],
   "fog": [
     "mist",
@@ -3865,6 +4103,28 @@ export default {
     "map",
     "international"
   ],
+  "globe-hemisphere-east": [
+    "eastern hemisphere",
+    "globe east",
+    "world east",
+    "globe hemisphere east",
+    "globe eastern",
+    "world hemisphere east",
+    "world",
+    "earth",
+    "planet"
+  ],
+  "globe-hemisphere-west": [
+    "west hemisphere",
+    "western globe",
+    "left hemisphere",
+    "globe west",
+    "western hemisphere",
+    "westward hemisphere",
+    "world",
+    "earth",
+    "planet"
+  ],
   "goblet": [
     "cup",
     "chalice",
@@ -3948,6 +4208,14 @@ export default {
     "sharp",
     "hash",
     "octothorpe"
+  ],
+  "head-circuit": [
+    "brain",
+    "mind",
+    "intelligence",
+    "cognition",
+    "thought",
+    "neurology"
   ],
   "headphones": [
     "earphones",
@@ -4190,6 +4458,14 @@ export default {
     "typing",
     "computer",
     "text"
+  ],
+  "knife": [
+    "cutlery",
+    "blade",
+    "sharp",
+    "kitchen",
+    "cooking",
+    "utensil"
   ],
   "language": [
     "tongue",
@@ -4545,6 +4821,28 @@ export default {
     "shield",
     "protection"
   ],
+  "mask-happy": [
+    "smile",
+    "happy face",
+    "joy",
+    "laughter",
+    "emoticon",
+    "cheerful",
+    "face covering",
+    "disguise",
+    "costume"
+  ],
+  "mask-sad": [
+    "sad face",
+    "unhappy",
+    "crying",
+    "emoticon",
+    "depressed",
+    "gloomy",
+    "face covering",
+    "disguise",
+    "costume"
+  ],
   "masonry": [
     "dashboard",
     "brickwork",
@@ -4805,6 +5103,46 @@ export default {
     "mounts",
     "climbs"
   ],
+  "mouse": [
+    "rodent",
+    "computer",
+    "click",
+    "cursor",
+    "point",
+    "scroll"
+  ],
+  "mouse-left-click": [
+    "click",
+    "select",
+    "press",
+    "left-click",
+    "activate",
+    "choose",
+    "rodent",
+    "computer"
+  ],
+  "mouse-middle-click": [
+    "middle button",
+    "scroll wheel",
+    "click wheel",
+    "center click",
+    "third button",
+    "wheel click",
+    "rodent",
+    "computer",
+    "click"
+  ],
+  "mouse-right-click": [
+    "context menu",
+    "secondary click",
+    "right button",
+    "mouse options",
+    "popup menu",
+    "right-click action",
+    "rodent",
+    "computer",
+    "click"
+  ],
   "move": [
     "shift",
     "transfer",
@@ -5044,6 +5382,23 @@ export default {
     "vertical dots",
     "circle",
     "encircled"
+  ],
+  "orange": [
+    "fruit",
+    "color",
+    "citrus",
+    "tangerine",
+    "juice",
+    "sunset"
+  ],
+  "orange-slice": [
+    "fruit",
+    "citrus",
+    "orange fruit",
+    "slice of orange",
+    "orange segment",
+    "orange wedge",
+    "color"
   ],
   "ordered-list": [
     "list",
@@ -5407,6 +5762,16 @@ export default {
     "botanical",
     "garden"
   ],
+  "plant-leaves": [
+    "greenery",
+    "foliage",
+    "flora",
+    "botanical",
+    "nature",
+    "leafy",
+    "flower",
+    "tree"
+  ],
   "play": [
     "start",
     "begin",
@@ -5422,6 +5787,14 @@ export default {
     "activate",
     "launch",
     "commence"
+  ],
+  "potted-plant": [
+    "plant",
+    "flower",
+    "pot",
+    "indoor",
+    "greenery",
+    "houseplant"
   ],
   "pound": [
     "british",
@@ -5547,6 +5920,14 @@ export default {
     "remark",
     "quotation"
   ],
+  "rabbit": [
+    "bunny",
+    "hare",
+    "bunny rabbit",
+    "bunny hop",
+    "lapin (French for rabbit)",
+    "bunny ears"
+  ],
   "radio": [
     "music",
     "broadcast",
@@ -5586,6 +5967,14 @@ export default {
     "music",
     "broadcast",
     "station"
+  ],
+  "radioactive": [
+    "hazard",
+    "danger",
+    "toxic",
+    "nuclear",
+    "radioactivity",
+    "warning"
   ],
   "rain": [
     "shower",
@@ -5904,6 +6293,14 @@ export default {
     "yardstick",
     "measuring stick"
   ],
+  "sailboat": [
+    "boat",
+    "yacht",
+    "ship",
+    "vessel",
+    "sailing",
+    "cruise"
+  ],
   "savings": [
     "money",
     "finance",
@@ -6170,6 +6567,14 @@ export default {
     "summary",
     "quick"
   ],
+  "shrimp": [
+    "seafood",
+    "prawn",
+    "crustacean",
+    "shellfish",
+    "crab",
+    "lobster"
+  ],
   "shuffle": [
     "mix",
     "randomize",
@@ -6314,6 +6719,23 @@ export default {
     "picture",
     "capture"
   ],
+  "sneaker": [
+    "shoe",
+    "footwear",
+    "trainer",
+    "athletic shoe",
+    "running shoe",
+    "sneaks"
+  ],
+  "sneaker-move": [
+    "shoe",
+    "footwear",
+    "run",
+    "walk",
+    "step",
+    "motion",
+    "trainer"
+  ],
   "snow": [
     "winter",
     "cold",
@@ -6329,6 +6751,22 @@ export default {
     "cold",
     "snow",
     "crystal"
+  ],
+  "solar-panel": [
+    "solar energy",
+    "renewable energy",
+    "solar power",
+    "solar cell",
+    "green energy",
+    "sustainability"
+  ],
+  "solar-roof": [
+    "solar panel",
+    "roofing",
+    "sustainable energy",
+    "renewable power",
+    "green roof",
+    "solar tiles"
   ],
   "sort": [
     "arrange",
@@ -6387,6 +6825,14 @@ export default {
     "velocity",
     "gauge",
     "speed indicator"
+  ],
+  "spinner-ball": [
+    "loading",
+    "circle",
+    "wait",
+    "progress",
+    "spin",
+    "round"
   ],
   "split": [
     "divide",
@@ -6500,6 +6946,14 @@ export default {
     "gale",
     "hurricane",
     "cyclone"
+  ],
+  "strategy": [
+    "plan",
+    "tactics",
+    "approach",
+    "method",
+    "scheme",
+    "gameplan"
   ],
   "strikethrough": [
     "cross out",
@@ -6643,6 +7097,14 @@ export default {
     "steel",
     "cutlass",
     "saber"
+  ],
+  "sword-alt": [
+    "sword",
+    "blade",
+    "weapon",
+    "medieval",
+    "knight",
+    "combat"
   ],
   "table": [
     "desk",
@@ -6885,6 +7347,14 @@ export default {
     "chronometer",
     "time"
   ],
+  "tire": [
+    "wheel",
+    "tyre",
+    "rubber",
+    "car",
+    "vehicle",
+    "transport"
+  ],
   "toggle-off": [
     "disable",
     "switch off",
@@ -6901,6 +7371,25 @@ export default {
     "power",
     "toggle"
   ],
+  "toilet": [
+    "bathroom",
+    "restroom",
+    "lavatory",
+    "WC",
+    "commode",
+    "loo"
+  ],
+  "toilet-paper": [
+    "bathroom tissue",
+    "roll",
+    "loo roll",
+    "TP",
+    "hygiene paper",
+    "toilet tissue",
+    "bathroom",
+    "restroom",
+    "lavatory"
+  ],
   "tooth": [
     "teeth",
     "dental",
@@ -6916,6 +7405,14 @@ export default {
     "coach",
     "sightseeing",
     "excursion"
+  ],
+  "tractor": [
+    "vehicle",
+    "farm",
+    "agriculture",
+    "machine",
+    "harvester",
+    "plow"
   ],
   "trademark-registered": [
     "trademark",
@@ -7379,6 +7876,15 @@ export default {
     "film",
     "clip"
   ],
+  "virus": [
+    "covid",
+    "malware",
+    "infection",
+    "bug",
+    "cyber threat",
+    "computer virus",
+    "trojan"
+  ],
   "volume-1": [
     "sound",
     "audio",
@@ -7468,6 +7974,14 @@ export default {
     "alternative",
     "cash"
   ],
+  "warehouse": [
+    "storage",
+    "depot",
+    "facility",
+    "stockroom",
+    "distribution",
+    "inventory"
+  ],
   "warning-hexagon": [
     "alert",
     "caution",
@@ -7548,6 +8062,23 @@ export default {
     "chair",
     "medical"
   ],
+  "wheelchair-alt": [
+    "disabled",
+    "handicap",
+    "accessibility",
+    "mobility",
+    "wheelchair",
+    "assistive"
+  ],
+  "wheelchair-motion": [
+    "wheelchair",
+    "movement",
+    "mobility",
+    "rolling",
+    "accessible",
+    "disabled",
+    "handicap"
+  ],
   "wifi": [
     "internet",
     "wireless",
@@ -7582,6 +8113,14 @@ export default {
     "screen",
     "interface",
     "display"
+  ],
+  "wine": [
+    "drink",
+    "alcohol",
+    "beverage",
+    "grape",
+    "vino",
+    "red"
   ],
   "wine-glass": [
     "drink",
@@ -7649,6 +8188,14 @@ export default {
     "Japan",
     "yen symbol",
     "yen sign"
+  ],
+  "yinyang": [
+    "balance",
+    "harmony",
+    "opposites",
+    "duality",
+    "zen",
+    "symbol"
   ],
   "yuan": [
     "currency",

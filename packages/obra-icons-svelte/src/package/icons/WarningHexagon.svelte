@@ -19,7 +19,7 @@
 	<g class="oi-warning-hexagon">
 		<path
 			class="oi-vector"
-			d="M12 2L20.6603 7V17L12 22L3.33975 17V7L12 2Z"
+			d="M12 2L20.6602 7V17L12 22L3.33972 17V7L12 2Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
