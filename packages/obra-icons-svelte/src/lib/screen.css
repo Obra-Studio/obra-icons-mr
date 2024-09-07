@@ -731,3 +731,12 @@ input[type="range"]:focus::-moz-range-thumb{
 		stroke: none;
 	}
 }
+
+
+.tag {
+	background-color: #666;
+	color: #FFF;
+	font-size: 0.8rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 15px;
+}

@@ -10,6 +10,12 @@ A simple, consistent set of icons, perfect for user interfaces. Obra Icons consi
 npm install obra-icons-svelte
 ```
 
+(or pnpm i, yarn add...)
+
+## Which icons are available?
+
+For a full reference, see the list at [Obra Icons homepage](https://icons.obra.studio/).
+
 ## Importing an icon
 
 ```svelte
@@ -44,6 +50,3 @@ Next to this, the inner elements are also targetable, with the following class n
 -   `oi-medium-dot`: Medium dots
 -   `oi-dot`: Regular dots
 
-## Which icons are available?
-
-For a full reference, see the list at [Obra Icons website](https://icons.obra.studio/icons).
