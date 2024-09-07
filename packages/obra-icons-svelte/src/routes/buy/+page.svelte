@@ -30,10 +30,9 @@
 
 					<ul class="feature-list">
 						<li><IconCircleCheckFill color="green" /> 950+ icons</li>
-						<li><IconCircleCheckFill color="green" /> Categorized icons to easily find them</li>
-						<li><IconCircleCheckFill color="green" /> Original vectors</li>
+						<li><IconCircleCheckFill color="green" /> Categorized into different categories</li>
+						<li><IconCircleCheckFill color="green" /> Original vectors with editable strokes</li>
 						<li><IconCircleCheckFill color="green" /> Drag and drop onto your Figma files to import</li>
-						<li><IconCircleCheckFill color="green" /> Dev tools plugin with handy workflow shortcuts</li>
 					</ul>
 
 					<p>
@@ -48,6 +47,9 @@
 					</div>
 
 					<div class="vertical-container blacked-links">
+						<p>
+							Purchases are handled through LemonSqueezy (acquired by Stripe), wish will give you a clear VAT invoice for business record purposes.
+						</p>
 						<p>
 							Need specific exports or file formats? <a
 							href="mailto:info@obra.studio"

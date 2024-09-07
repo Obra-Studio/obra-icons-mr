@@ -153,9 +153,7 @@
 								bind:value={selectedActionOnClick}
 							>
 								<option value="copySvg">Copy SVG</option>
-								<option value="downloadSvg">Download SVG</option>
 								<option value="copyPng">Copy PNG</option>
-								<option value="downloadPng">Download PNG</option>
 								<option value="copySvelteImport">Copy Svelte import</option>
 							</select>
 							<IconCaretDownFill />

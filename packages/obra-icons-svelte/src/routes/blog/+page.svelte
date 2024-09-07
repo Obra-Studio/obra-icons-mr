@@ -53,11 +53,10 @@
 	}
 
 	.blog-post {
-		margin-bottom: 4rem;
 		padding-bottom: 2rem;
 		border-bottom: 1px solid #eee;
 		max-width: 700px;
-		margin: 0 auto;	
+		margin: 0 auto 2rem;
 	}
 
 	.blog-post:last-child {

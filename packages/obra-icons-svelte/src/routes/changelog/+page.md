@@ -1,8 +1,8 @@
-# Changelog Obra Icons
+# Changelog
 
 We use semantic versioning (semver).
 
-## 2.0.0
+## 2.0.0 (September 2, 2024)
 
 * [BREAKING] Remove WebCamFill
 * [BREAKING] Change TruckAlt to be Truck, and delete original truck icon
@@ -54,7 +54,7 @@ We use semantic versioning (semver).
 ## 1.15
 
 * Add more icons for a total of 848
-* Fix a bug with where base keywords that referred to older icon names that are not used anymore where generating empty icons on the website overview 
+* Fix a bug with where base keywords that referred to older icon names that are not used anymore where generating empty icons on the website overview
 
 ## 1.14
 
@@ -86,11 +86,9 @@ Added manual keyword logic
 
 ## 1.1-1.5
 
-Added over 200 icons
-Added Svelte package
+* Added over 200 icons
+* Added Svelte package
 
 ## 1.0
 
-Initial release
-
-Note: because a changelog did not exist before 1.7, older entries might be unreliable.
+* Initial release (Around november 2023)

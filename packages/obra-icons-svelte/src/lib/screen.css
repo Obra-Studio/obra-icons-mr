@@ -209,6 +209,10 @@ code {
 	border: none;
 }
 
+.center {
+	text-align: center;
+}
+
 .button:active {
 	scale: 0.975;
 }

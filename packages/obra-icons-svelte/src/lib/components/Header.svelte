@@ -56,6 +56,7 @@
 									<li><NavItem on:click={closeMenu} href="/about" active={$page.url.pathname.startsWith('/about')}>About</NavItem></li>
 									<li><NavItem on:click={closeMenu} href="/blog" active={$page.url.pathname.startsWith('/blog')}>Blog</NavItem></li>
 									<li><NavItem on:click={closeMenu} href="/buy" active={$page.url.pathname.startsWith('/buy')}>Buy</NavItem></li>
+									<li><NavItem on:click={closeMenu} href="/changelog" active={$page.url.pathname.startsWith('/changelog')}>Changelog</NavItem></li>
 								</ul>
 						</nav>
 						{/if}
