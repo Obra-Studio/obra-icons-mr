@@ -27,8 +27,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="6"
-			y="9"
+			x="5.95001"
+			y="8.9502"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -45,8 +45,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="7"
-			y="12"
+			x="6.94995"
+			y="11.95"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -54,8 +54,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="6"
-			y="15"
+			x="5.95001"
+			y="14.9502"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -63,8 +63,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="18"
-			y="15"
+			x="17.95"
+			y="14.9502"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -72,8 +72,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="10"
-			y="12"
+			x="9.94995"
+			y="11.95"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -81,8 +81,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="13"
-			y="12"
+			x="12.95"
+			y="11.95"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -90,8 +90,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="16"
-			y="12"
+			x="15.95"
+			y="11.95"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -99,8 +99,8 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="9"
-			y="9"
+			x="8.94995"
+			y="8.94995"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -108,8 +108,8 @@
 		/>
 		<rect
 			class="oi-mini-square_10"
-			x="12"
-			y="9"
+			x="11.95"
+			y="8.9502"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -117,8 +117,8 @@
 		/>
 		<rect
 			class="oi-mini-square_11"
-			x="15"
-			y="9"
+			x="14.95"
+			y="8.9502"
 			width="0.1"
 			height="0.1"
 			stroke={color}
@@ -126,8 +126,8 @@
 		/>
 		<rect
 			class="oi-mini-square_12"
-			x="18"
-			y="9"
+			x="17.95"
+			y="8.9502"
 			width="0.1"
 			height="0.1"
 			stroke={color}

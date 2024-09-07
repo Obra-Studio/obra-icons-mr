@@ -24,12 +24,12 @@
 				<div class="content">
 					<h2>Buy the Obra Icons Figma source file</h2>
 
-					<p><span class="tag">$20</span></p>
+					<p><span class="tag">€15</span></p>
 
 					<p>Buy the source file for direct import into Figma.</p>
 
 					<ul class="feature-list">
-						<li><IconCircleCheckFill color="green" /> 820+ icons</li>
+						<li><IconCircleCheckFill color="green" /> 950+ icons</li>
 						<li><IconCircleCheckFill color="green" /> Categorized icons to easily find them</li>
 						<li><IconCircleCheckFill color="green" /> Original vectors</li>
 						<li><IconCircleCheckFill color="green" /> Drag and drop onto your Figma files to import</li>
@@ -41,7 +41,7 @@
 					</p>
 
 					<div class="button-group">
-						<a class="button" href="https://sowl.co/s/bdgsNv">
+						<a class="button" href="https://obra.lemonsqueezy.com/buy/f8b657b2-719c-42ee-bc71-04786eb182bc">
 							<span>Buy the source file</span>
 							<IconArrowRight />
 						</a>
@@ -55,9 +55,6 @@
 						>.
 						</p>
 					</div>
-					<p class="muted">
-						The download includes Obra Icons dev tools Figma plugin, which gives you access to the exact same tools used to create the icon set. You can watch this <a href="https://www.youtube.com/watch?v=cg8-y-OXyI4">video</a> for more info.
-					</p>
 
 				</div>
 			</div>
@@ -69,10 +66,6 @@
 
 	p a {
 		color: #000;
-	}
-	
-	.muted {
-		color: #666;
 	}
 
 	.tag {

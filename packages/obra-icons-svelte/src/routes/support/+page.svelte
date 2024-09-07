@@ -21,7 +21,7 @@
 				When you purchase Obra Icons Files, the payment and invoicing is
 				handled through <a href="https://stripe.com/">Stripe</a>. The
 				digital goods will be delivered to you via
-				<a href="https://www.sendowl.com/">SendOwl</a> upon payment. Missing
+				<a href="https://www.lemonsqueezy.com/">LemonSqueezy</a> upon payment. Missing
 				the delivery? Contact us!
 			</p>
 

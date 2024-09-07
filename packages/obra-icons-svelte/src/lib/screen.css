@@ -184,7 +184,8 @@ code {
 /* Button
    ========================================================================== */
 
-.button.button {
+.button,
+.content .button {
 	border: none;
 	font-size: inherit;
 	padding: 0.75rem 1.5rem;
@@ -200,8 +201,12 @@ code {
 }
 
 .button:hover,
-.button:active {
+.button:active,
+.content .button:hover,
+.content .button:active{
 	color: #FFF;
+	text-decoration: none;
+	border: none;
 }
 
 .button:active {

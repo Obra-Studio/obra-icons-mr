@@ -30,14 +30,14 @@
 			class="oi-vector"
 			d="M9.59695 10.5926C10.1013 9.88086 11.6315 9.72399 12.2121 10.6654C12.4108 11.2976 12.0659 11.6739 11.2294 12.5178L9.69239 13.8282C9.59664 13.9098 9.65437 14.0665 9.7802 14.0665H12.3312"
 			stroke={color}
-			stroke-width="1.35347"
+			stroke-width="1.5"
 			stroke-linecap="round"
 		/>
 		<path
 			class="oi-vector"
 			d="M7.12427 14.0615V10.3219C7.12427 10.202 6.97993 10.1413 6.89426 10.2251L6 11.1004"
 			stroke={color}
-			stroke-width="1.35347"
+			stroke-width="1.5"
 			stroke-linecap="round"
 		/>
 	</g>

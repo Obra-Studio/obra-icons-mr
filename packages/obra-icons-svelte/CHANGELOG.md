@@ -2,6 +2,17 @@
 
 We use semantic versioning (semver).
 
+
+## 2.0.0
+
+* [BREAKING] Remove WebCamFill
+* [BREAKING] Change TruckAlt to be Truck, and delete original truck icon
+* Fix visual artifacts in several icons
+
+## 1.19.0
+
+* Add 63 new icons to the set
+
 ## 1.18.1
 
 * Important bugfix to the previewing and display of icons on the marketing website. Icons containing “point dots” (vectors paths drawn on almost the same coordinate, with a rounded stroke, to have an exactly aligned dot somewhere) where previously displayed incorrectly. A change in how the stroke-widths of the SVG paths are calculated fixes this issue.

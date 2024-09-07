@@ -22,7 +22,7 @@
 
 	let color = '#000000'
 	let strokeWeight = 1.5
-	let size = 36
+	let size = 24
 	let selectedActionOnClick = 'copySvg'
 
 	function input(event: { currentTarget: HTMLInputElement }) {
@@ -88,9 +88,9 @@
 					<div class="justify-content-center button-group">
 						<a
 							class="button inverse"
-							href="https://sowl.co/s/bdgsNv"
+							href="https://obra.lemonsqueezy.com/buy/f8b657b2-719c-42ee-bc71-04786eb182bc"
 						>
-							<span>Buy source ($20)</span>
+							<span>Buy source (€15)</span>
 							<IconArrowRight />
 						</a>
 						<a
@@ -143,29 +143,32 @@
 					/>
 					<span class="count">{size}</span>
 				</div>
-				<div class="control-group">
-					<label for="actionOnClick">Action on click</label>
-					<div class="select-holder">
-						<select
-							id="actionOnClick"
-							bind:value={selectedActionOnClick}
-						>
-							<option value="copySvg">Copy SVG</option>
-							<option value="downloadSvg">Download SVG</option>
-							<option value="copyPng">Copy PNG</option>
-							<option value="downloadPng">Download PNG</option>
-							<option value="copySvelteImport">Copy Svelte import</option>
-						</select>
-						<IconCaretDownFill />
+				<div class="control-group flex">
+
+					<div class="control-group-inner">
+						<label for="actionOnClick">Action on click</label>
+						<div class="select-holder">
+							<select
+								id="actionOnClick"
+								bind:value={selectedActionOnClick}
+							>
+								<option value="copySvg">Copy SVG</option>
+								<option value="downloadSvg">Download SVG</option>
+								<option value="copyPng">Copy PNG</option>
+								<option value="downloadPng">Download PNG</option>
+								<option value="copySvelteImport">Copy Svelte import</option>
+							</select>
+							<IconCaretDownFill />
+						</div>
 					</div>
-				</div>
-				<div class="control-group">
-					<label for="color">Color</label>
-					<input
-						id="color"
-						type="color"
-						bind:value={color}
-					/>
+					<div class="control-group-inner">
+						<label for="color">Color</label>
+						<input
+							id="color"
+							type="color"
+							bind:value={color}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -265,6 +268,16 @@
 		}
 
     }
+
+    .control-group.flex {
+        display: flex;
+    }
+
+	.control-group-inner {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
 
 	input[type="color"] {
 		min-width: 20px;

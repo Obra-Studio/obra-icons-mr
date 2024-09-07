@@ -196,8 +196,10 @@ a svg * {
   <div class="button-group vertical">
     <div class="button-group">
       <button class="block button secondary" id="setStrokeWeightButton">Set stroke weight to 1px</button>
+      <button class="block button secondary" id="setStrokeWeight15pxButton">Set stroke weight to 1.5px</button>
       <button class="block button secondary" id="setStrokeWeight2pxButton">Set stroke weight to 2px</button>
     </div>
+
     <button class="block button secondary" id="setConstraintsScale">Set all constraints to scale</button>
     <div class="button-group">
       <button class="block button secondary" id="autoColourNamedLayers">Auto-colour named layers</button>
@@ -303,6 +305,10 @@ a svg * {
 
     document.getElementById('setStrokeWeightButton').onclick = () => {
       parent.postMessage({ pluginMessage: { type: 'set-stroke-weight', weight: 1 } }, '*')
+    }
+
+    document.getElementById('setStrokeWeight15pxButton').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'set-stroke-weight', weight: 1.5 } }, '*')
     }
 
     document.getElementById('setStrokeWeight2pxButton').onclick = () => {

@@ -28,30 +28,30 @@
 		<rect
 			class="oi-medium-square"
 			x="10"
-			y="13.0707"
+			y="11.3208"
 			width="0.1"
 			height="0.1"
-			transform="rotate(-45 10 13.0707)"
+			transform="rotate(-45 10 11.3208)"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>
 		<rect
 			class="oi-medium-square"
-			x="13"
-			y="14.0707"
+			x="13.5"
+			y="13.5708"
 			width="0.1"
 			height="0.1"
-			transform="rotate(-45 13 14.0707)"
+			transform="rotate(-45 13.5 13.5708)"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>
 		<rect
 			class="oi-medium-square"
-			x="12"
-			y="17.0707"
+			x="11.5"
+			y="16.8208"
 			width="0.1"
 			height="0.1"
-			transform="rotate(-45 12 17.0707)"
+			transform="rotate(-45 11.5 16.8208)"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>

@@ -16,7 +16,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-wheelchair-alt" clip-path="url(#clip0_663_101012)">
+	<g class="oi-wheelchair-alt" clip-path="url(#clip0_664_161856)">
 		<path
 			class="oi-vector"
 			d="M9.75 6.75V12.75H18L21 18.75L23.25 18"
@@ -43,7 +43,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_663_101012">
+		<clipPath class="clip0_664_161856">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

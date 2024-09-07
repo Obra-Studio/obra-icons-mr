@@ -7,12 +7,13 @@ function prepareSvg(svg: string, strokeWeight: number, color: string, size: numb
     const colorAttribute = color || 'currentColor';
 
     // Define the initial stroke widths for each class
+    // The dots not matching the square values is NOT an error
     const classStrokeWidths = {
         'oi-mini-dot': 2,
-        'oi-dot': 4,
         'oi-medium-dot': 3,
-        'oi-mini-square': 2,
-        'oi-medium-square': 3,
+        'oi-dot': 4,
+        'oi-mini-square': 1.5,
+        'oi-medium-square': 2,
         'oi-square': 4
     };
 

@@ -17,35 +17,32 @@
 	class="obra-icon"
 >
 	<g class="oi-discount-alt">
-		<path
-			class="oi-medium-dot"
-			d="M9 11.5H9.012"
-			stroke={color}
-			stroke-width={strokeWidth*1.5}
-			stroke-linecap="round"
-		/>
-		<path
-			class="oi-medium-dot"
-			d="M14 16.5H14.012"
-			stroke={color}
-			stroke-width={strokeWidth*1.5}
-			stroke-linecap="round"
-		/>
+		<g id="Group 8">
+			<path
+				class="oi-medium-dot"
+				d="M10 11.5H10.012"
+				stroke={color}
+				stroke-width={strokeWidth*1.5}
+				stroke-linecap="round"
+			/>
+			<path
+				class="oi-medium-dot"
+				d="M14.5 16H14.512"
+				stroke={color}
+				stroke-width={strokeWidth*1.5}
+				stroke-linecap="round"
+			/>
+		</g>
 		<path
 			class="oi-line"
-			d="M9.14624 16.5962L14.096 11.6464"
+			d="M9.5 16.5L14.4497 11.5503"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 		<path
-			class="oi-fill"
-			d="M10.2676 6.5H13.7324C13.8996 6.5 14.0557 6.41645 14.1484 6.27735L15.4818 4.27735C15.7033 3.94507 15.4651 3.5 15.0657 3.5H8.93426C8.53491 3.5 8.29671 3.94507 8.51823 4.27735L9.85157 6.27735C9.9443 6.41645 10.1004 6.5 10.2676 6.5Z"
-			fill={color}
-		/>
-		<path
 			class="oi-vector"
-			d="M7.01405 20C6.82466 20 6.65156 19.8951 6.57154 19.7235C4.27281 14.7929 4.59264 7 11.6025 7C18.6005 7 18.9493 14.7825 16.6341 19.7228C16.5538 19.8943 16.3803 20 16.1909 20H7.01405Z"
+			d="M10.0749 7.21313L8.51823 4.77735C8.29672 4.44507 8.53491 4 8.93426 4H15.0657C15.4651 4 15.7033 4.44507 15.4818 4.77735L13.9186 7.21313M6.81534 19.7235C6.89777 19.8951 7.07607 20 7.27114 20H16.7371C16.9243 20 17.0962 19.8967 17.1777 19.7281C19.5652 14.788 19.2082 7 11.9974 7C4.777 7 4.44757 14.7929 6.81534 19.7235Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

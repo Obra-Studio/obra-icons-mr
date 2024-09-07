@@ -27,7 +27,7 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
+			class="oi-vector"
 			d="M20 11.5713L15.571 11.5713C13.9142 11.5713 12.571 10.2281 12.571 8.57129L12.571 4"
 			stroke={color}
 			stroke-width={strokeWidth}

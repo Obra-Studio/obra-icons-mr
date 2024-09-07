@@ -477,10 +477,7 @@ function createDesignCopy() {
 
     // Call harmonizeStrokesAndFills with the Icons frame as an argument
     harmonizeStrokesAndFills(iconsFrame);
-
-    // Adjust layer names for design copy
-    adjustLayerNamesForDesignCopy(iconsFrame)
-
+    
     // Call deleteKeyShapes with the Icons frame as an argument
     deleteKeyShapes(iconsFrame);
 
@@ -772,31 +769,44 @@ function removeObraIconsPrefix(str) {
     return str.replace(/^oi-/, '');
 }
 
-function adjustLayerNamesForDesignCopy(selection) {
-    // Ensure selection is an array
-    const nodes = Array.isArray(selection) ? selection : [selection];
-
-    for (const node of nodes) {
-        if ('name' in node) {
-            node.name = removeObraIconsPrefix(removeBracketedContent(node.name));
-        }
-
-        if ('children' in node) {
-            adjustLayerNamesForDesignCopy(node.children);
-        }
-    }
-}
-
 /*
  * Action - Stroke weight
  */
-
 function setStrokeWeight(selection = figma.currentPage.selection, weight) {
     if (!selection || selection.length === 0) {
         console.error('No selection provided');
         figma.notify('Error: No layers selected');
         return;
     }
+
+    // Define the stroke widths based on the provided weight
+    const classStrokeWidths = {
+        1: {
+            'oi-mini-dot': 1,
+            'oi-medium-dot': 1.5,
+            'oi-dot': 2,
+            'oi-mini-square': 1,
+            'oi-medium-square': 1,
+            'oi-square': 2
+        },
+        1.5: {
+            'oi-mini-dot': 1.5,
+            'oi-medium-dot': 2,
+            'oi-dot': 3,
+            'oi-mini-square': 1,
+            'oi-medium-square': 1.5,
+            'oi-square': 3
+        },
+        2: {
+            'oi-mini-dot': 2,
+            'oi-medium-dot': 3,
+            'oi-dot': 4,
+            'oi-mini-square': 1.5,
+            'oi-medium-square': 2,
+            'oi-square': 4
+        }
+    };
+
 
     let count = 0;
 
@@ -808,8 +818,15 @@ function setStrokeWeight(selection = figma.currentPage.selection, weight) {
             return;
         }
 
+        let strokeWeight = weight; // Default to the provided weight
+
+        // Check if the node name matches any in classStrokeWidths for the given weight
+        if (classStrokeWidths[weight] && node.name in classStrokeWidths[weight]) {
+            strokeWeight = classStrokeWidths[weight][node.name]; // Set weight based on class
+        }
+
         if ('strokes' in node && node.strokes.length > 0) {
-            node.strokeWeight = weight;
+            node.strokeWeight = strokeWeight;
             count++;
         }
 
@@ -827,7 +844,6 @@ function setStrokeWeight(selection = figma.currentPage.selection, weight) {
 
     figma.notify(`Updated stroke weight to ${weight}px for ${count} layer${count !== 1 ? 's' : ''}`);
 }
-
 
 // Square distance between two points a and b
 function squareDistance(a, b) {
