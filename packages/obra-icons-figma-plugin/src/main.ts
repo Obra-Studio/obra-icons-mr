@@ -1,20 +1,43 @@
-
 export default function() {
-  // You're plugin main code here...
-  figma.showUI(__html__, { width: 300, height: 400, themeColors: true })
+  // Your plugin main code here...
+  figma.showUI(__html__, { width: 300, height: 400, themeColors: true });
 
   figma.ui.onmessage = async (msg) => {
     if (msg.type === 'paste-icon') {
       const iconName = msg.iconName;
-      console.log(iconName)
       const svgString = msg.svgString;
-      console.log(svgString)
+      const strokeWeight = msg.strokeWeight || 2; // Default to 2 if not provided
+      const iconSize = msg.iconSize || 24; // Default to 24 if not provided
+
+      function prepareSvg(svgString, strokeWeight) {
+        return svgString.replace(/stroke-width="2"/g, `stroke-width="${strokeWeight}"`);
+      }
 
       if (svgString) {
-        const node = figma.createNodeFromSvg(svgString);
+        const preparedSvgString = prepareSvg(svgString, strokeWeight);
+        const node = figma.createNodeFromSvg(preparedSvgString);
         node.name = iconName.slice(4); // Remove 'Icon' prefix
+
+        // Calculate the position
+        let x, y;
+        if (figma.currentPage.selection.length > 0) {
+          const selectedNode = figma.currentPage.selection[0];
+          const bounds = selectedNode.absoluteBoundingBox;
+          x = bounds.x + (bounds.width - iconSize) / 2;
+          y = bounds.y + (bounds.height - iconSize) / 2;
+        } else {
+          // Center in viewport if no selection
+          const viewportBounds = figma.viewport.bounds;
+          x = viewportBounds.x + (viewportBounds.width - iconSize) / 2;
+          y = viewportBounds.y + (viewportBounds.height - iconSize) / 2;
+        }
+
+        node.resize(iconSize, iconSize); // Resize the node based on iconSize
+        node.x = x;
+        node.y = y;
+
+        // Removed unnecessary group wrapping
         figma.currentPage.appendChild(node);
-        figma.viewport.scrollAndZoomIntoView([node]);
         figma.notify(`Pasted ${iconName.slice(4)} icon`);
       } else {
         figma.notify(`Icon ${iconName} not found`, { error: true });
@@ -22,4 +45,3 @@ export default function() {
     }
   };
 }
-

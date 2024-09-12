@@ -72,15 +72,33 @@ function main_default() {
   figma.showUI(__html__, { width: 300, height: 400, themeColors: true });
   figma.ui.onmessage = (msg) => __async(this, null, function* () {
     if (msg.type === "paste-icon") {
+      let prepareSvg2 = function(svgString2, strokeWeight2) {
+        return svgString2.replace(/stroke-width="2"/g, `stroke-width="${strokeWeight2}"`);
+      };
+      var prepareSvg = prepareSvg2;
       const iconName = msg.iconName;
-      console.log(iconName);
       const svgString = msg.svgString;
-      console.log(svgString);
+      const strokeWeight = msg.strokeWeight || 2;
+      const iconSize = msg.iconSize || 24;
       if (svgString) {
-        const node = figma.createNodeFromSvg(svgString);
+        const preparedSvgString = prepareSvg2(svgString, strokeWeight);
+        const node = figma.createNodeFromSvg(preparedSvgString);
         node.name = iconName.slice(4);
+        let x, y;
+        if (figma.currentPage.selection.length > 0) {
+          const selectedNode = figma.currentPage.selection[0];
+          const bounds = selectedNode.absoluteBoundingBox;
+          x = bounds.x + (bounds.width - iconSize) / 2;
+          y = bounds.y + (bounds.height - iconSize) / 2;
+        } else {
+          const viewportBounds = figma.viewport.bounds;
+          x = viewportBounds.x + (viewportBounds.width - iconSize) / 2;
+          y = viewportBounds.y + (viewportBounds.height - iconSize) / 2;
+        }
+        node.resize(iconSize, iconSize);
+        node.x = x;
+        node.y = y;
         figma.currentPage.appendChild(node);
-        figma.viewport.scrollAndZoomIntoView([node]);
         figma.notify(`Pasted ${iconName.slice(4)} icon`);
       } else {
         figma.notify(`Icon ${iconName} not found`, { error: true });
@@ -89,6 +107,6 @@ function main_default() {
   });
 }
 
-// ../../../../../../private/var/folders/my/fzg_t78s6x3fvx3kqqpxl78m0000gn/T/temp_1724878474659.js
+// ../../../../../../private/var/folders/my/fzg_t78s6x3fvx3kqqpxl78m0000gn/T/temp_1726166815838.js
 saveFigmaStyles();
 main_default();
