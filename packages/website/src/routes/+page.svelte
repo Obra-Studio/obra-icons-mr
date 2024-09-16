@@ -1,8 +1,5 @@
 <script lang="ts">
-	import {
-		IconArrowRight,
-		IconCaretDownFill,
-	} from 'obra-icons-svelte';
+	import { IconArrowRight, IconCaretDownFill } from 'obra-icons-svelte';
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
 	import iconsCount from '$lib/count';
 

@@ -19,7 +19,9 @@ export async function copyPngToClipboard(svgData: string): Promise<void> {
 			ctx.drawImage(img, 0, 0);
 
 			try {
-				const blob = await new Promise<Blob>((resolve) => canvas.toBlob(resolve, 'image/png'));
+				const blob = await new Promise<Blob>((resolve) =>
+					canvas.toBlob(resolve, 'image/png'),
+				);
 				const item = new ClipboardItem({ 'image/png': blob });
 				await navigator.clipboard.write([item]);
 				resolve();
@@ -32,8 +34,11 @@ export async function copyPngToClipboard(svgData: string): Promise<void> {
 	});
 }
 
-
-export async function downloadIcon(name: string, svgData: string, format: 'svg' | 'png'): Promise<void> {
+export async function downloadIcon(
+	name: string,
+	svgData: string,
+	format: 'svg' | 'png',
+): Promise<void> {
 	if (format === 'svg') {
 		const blob = new Blob([svgData], { type: 'image/svg+xml' });
 		const url = window.URL.createObjectURL(blob);

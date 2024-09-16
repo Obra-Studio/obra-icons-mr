@@ -8,18 +8,18 @@
 </a>
 
 <style>
-    .nav-item {
-        text-decoration: none;
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        border-radius: 1.5rem;
-    }
+	.nav-item {
+		text-decoration: none;
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		border-radius: 1.5rem;
+	}
 
-    .nav-item:hover {
-        background: rgba(255, 255, 255, 0.2);
-    }
+	.nav-item:hover {
+		background: rgba(255, 255, 255, 0.2);
+	}
 
-    .nav-item[aria-current='true'] {
-        background: rgba(255, 255, 255, 0.2);
-    }
+	.nav-item[aria-current='true'] {
+		background: rgba(255, 255, 255, 0.2);
+	}
 </style>

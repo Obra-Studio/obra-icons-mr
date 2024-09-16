@@ -1,5 +1,9 @@
 <script lang="ts">
-	import { copyToClipboard, copyPngToClipboard, downloadIcon } from './clipboardAndDownloadUtils';
+	import {
+		copyToClipboard,
+		copyPngToClipboard,
+		downloadIcon,
+	} from './clipboardAndDownloadUtils';
 	import Toast from '$lib/components/Toast.svelte';
 
 	export let svg: string;
@@ -7,7 +11,12 @@
 	export let namePascal: string;
 	export let size: number;
 
-	type ActionType = 'downloadSvg' | 'downloadPng' | 'copySvelteImport' | 'copySvg' | 'copyPng';
+	type ActionType =
+		| 'downloadSvg'
+		| 'downloadPng'
+		| 'copySvelteImport'
+		| 'copySvg'
+		| 'copyPng';
 	export let selectedAction: ActionType;
 
 	let toastMessage: string | null = null;
@@ -21,7 +30,9 @@
 				await downloadIcon(nameKebab, svg, 'png');
 				toastMessage = 'Downloaded PNG!';
 			} else if (selectedAction == 'copySvelteImport') {
-				await copyToClipboard(`import { ${namePascal} } from 'obra-icons-svelte'`);
+				await copyToClipboard(
+					`import { ${namePascal} } from 'obra-icons-svelte'`,
+				);
 				toastMessage = 'Copied Svelte import!';
 			} else if (selectedAction == 'copySvg') {
 				await copyToClipboard(svg);
@@ -50,7 +61,6 @@
 <Toast message={toastMessage} />
 
 <style>
-
 	.icon {
 		appearance: none;
 		border: none;
@@ -60,15 +70,14 @@
 	}
 
 	.icon:hover {
-		background: rgba(0,0,0,0.1);
+		background: rgba(0, 0, 0, 0.1);
 	}
 
-    @media (prefers-color-scheme: dark) {
-        .icon:hover {
-            background: rgba(255,255,255,0.1);
-        }
-    }
-
+	@media (prefers-color-scheme: dark) {
+		.icon:hover {
+			background: rgba(255, 255, 255, 0.1);
+		}
+	}
 
 	.icon :global(svg) {
 		width: 100%;
@@ -98,7 +107,7 @@
 	@media (prefers-color-scheme: dark) {
 		.icon-item {
 			border-color: #555;
-			color: #FFF;
+			color: #fff;
 		}
 
 		.icon-item :global(svg .oi-fill) {
@@ -110,7 +119,4 @@
 			stroke: #fff;
 		}
 	}
-
-
-
 </style>

@@ -40,8 +40,15 @@
 						<div class="content">
 							<h3>Multiple weights and sizes</h3>
 							<p>
-								Obra Icons are drawn at 2px stroke weight and in a 24x24 frame, and have been designed to work at 3 different stroke weights (1,
-								1.5 and 2px). Since the icons are vector-based and use specific line and vector dot drawing techniques, they also upscale easily to different sizes like 32 and 48px. This makes it easy to use the same icon set for different use cases - from icons in buttons to illustrative purposes.
+								Obra Icons are drawn at 2px stroke weight and in
+								a 24x24 frame, and have been designed to work at
+								3 different stroke weights (1, 1.5 and 2px).
+								Since the icons are vector-based and use
+								specific line and vector dot drawing techniques,
+								they also upscale easily to different sizes like
+								32 and 48px. This makes it easy to use the same
+								icon set for different use cases - from icons in
+								buttons to illustrative purposes.
 							</p>
 						</div>
 					</li>
@@ -58,9 +65,9 @@
 							</p>
 							<p>
 								Need a specific icon? <a
-								href="mailto:iconrequest@obra.studio"
-							>Let us know</a
-							>.
+									href="mailto:iconrequest@obra.studio"
+									>Let us know</a
+								>.
 							</p>
 						</div>
 					</li>
@@ -75,9 +82,9 @@
 
 							<p>
 								Need an integration in another framework? <a
-								href="mailto:iconrequest@obra.studio"
-							>Let us know</a
-							>.
+									href="mailto:iconrequest@obra.studio"
+									>Let us know</a
+								>.
 							</p>
 						</div>
 					</li>
