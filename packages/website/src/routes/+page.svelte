@@ -88,13 +88,6 @@
 					<div class="justify-content-center button-group">
 						<a
 							class="button inverse"
-							href="https://sowl.co/s/bdgsNv"
-						>
-							<span>Buy source ($20)</span>
-							<IconArrowRight />
-						</a>
-						<a
-							class="button inverse"
 							href="https://www.npmjs.com/package/obra-icons-svelte"
 						>
 							<span class="icon-fill-wrapper">
