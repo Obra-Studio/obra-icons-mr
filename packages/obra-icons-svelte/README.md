@@ -2,7 +2,7 @@
 
 Obra Icons for <a href="https://svelte.dev/">Svelte</a>.
 
-A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 750 icons.
+A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 950 icons.
 
 ## Installation
 
@@ -22,7 +22,7 @@ npm install obra-icons-svelte
 
 Use the `size`, `color` and `strokeWidth` props to customize the icon.
 
-```svelte
+```
 <IconActivity size={24} color="red" strokeWidth={1} />
 ```
 
@@ -32,18 +32,18 @@ Every SVG contains an `obra-icon` class on the top level SVG element, that you c
 
 Next to this, the inner elements are also targetable, with the following class names:
 
--   `oi-fill`: Fill layers
--   `oi-vector`: Vector layers
--   `oi-ellipse`: Ellipse layers
--   `oi-box`: Box layers
--   `oi-triangle`: Triangle layers
--   `oi-incomplete-triangle`: Incomplete triangle layers
--   `oi-mini-square`: Mini square layers
--   `oi-line`: Line layers
--   `oi-mini-dot`: Mini dots
--   `oi-medium-dot`: Medium dots
--   `oi-dot`: Regular dots
+- `oi-fill`: Fill layers
+- `oi-vector`: Vector layers
+- `oi-ellipse`: Ellipse layers
+- `oi-box`: Box layers
+- `oi-triangle`: Triangle layers
+- `oi-incomplete-triangle`: Incomplete triangle layers
+- `oi-mini-square`: Mini square layers
+- `oi-line`: Line layers
+- `oi-mini-dot`: Mini dots
+- `oi-medium-dot`: Medium dots
+- `oi-dot`: Regular dots
 
 ## Which icons are available?
 
-For a full reference, see the list at [Obra Icons website](https://icons.obra.studio/icons).
+For a full reference, see the list at [Obra Icons website](https://icons.obra.studio/).
