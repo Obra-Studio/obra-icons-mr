@@ -94,13 +94,23 @@
 							<IconArrowRight />
 						</a>
 						<a
-							href="https://github.com/Obra-Studio/obra-icons-svelte"
 							class="button inverse"
+							href="https://www.npmjs.com/package/obra-icons-svelte"
 						>
 							<span class="icon-fill-wrapper">
 								<GithubIcon />
 							</span>
 							<span>Svelte package</span>
+							<IconArrowRight />
+						</a>
+						<a
+							class="button inverse"
+							href="https://www.npmjs.com/package/obra-icons-react"
+						>
+							<span class="icon-fill-wrapper">
+								<GithubIcon />
+							</span>
+							<span>React package</span>
 							<IconArrowRight />
 						</a>
 					</div>
@@ -114,31 +124,31 @@
 	<div class="bg-dark-grey">
 		<div class="controls">
 			<SearchInput
-				placeholder="Search {iconsCount} icons for free..."
 				on:input={input}
+				placeholder="Search {iconsCount} icons for free..."
 			/>
 			<div class="inner-controls">
 				<div class="control-group">
 					<label for="weight">Weight</label>
 					<input
-						id="weight"
-						type="range"
 						bind:value={strokeWeight}
+						id="weight"
+						max="2"
 						min="1"
 						step=".5"
-						max="2"
+						type="range"
 					/>
 					<span class="count stroke-weight">{strokeWeight}</span>
 				</div>
 				<div class="control-group">
 					<label for="size">Size</label>
 					<input
-						id="size"
-						type="range"
 						bind:value={size}
+						id="size"
+						max="128"
 						min="16"
 						step="4"
-						max="128"
+						type="range"
 					/>
 					<span class="count">{size}</span>
 				</div>
@@ -146,8 +156,8 @@
 					<label for="actionOnClick">Action on click</label>
 					<div class="select-holder">
 						<select
-							id="actionOnClick"
 							bind:value={selectedActionOnClick}
+							id="actionOnClick"
 						>
 							<option value="copySvg">Copy SVG</option>
 							<option value="downloadSvg">Download SVG</option>
@@ -165,7 +175,7 @@
 				</div>
 				<div class="control-group">
 					<label for="color">Color</label>
-					<input id="color" type="color" bind:value={color} />
+					<input bind:value={color} id="color" type="color" />
 				</div>
 			</div>
 		</div>
@@ -230,6 +240,7 @@
 			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 		}
 	}
+
 	@media (max-width: 960px) {
 		.controls {
 			margin: 0 0 0;
