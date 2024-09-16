@@ -938,6 +938,7 @@ export { default as IconWatch } from './icons/Watch.svelte';
 export { default as IconWavesLight } from './icons/WavesLight.svelte';
 export { default as IconWavesMedium } from './icons/WavesMedium.svelte';
 export { default as IconWebcam } from './icons/Webcam.svelte';
+export { default as IconWebcamFill } from './icons/WebcamFill.svelte';
 export { default as IconWeight } from './icons/Weight.svelte';
 export { default as IconWheelchair } from './icons/Wheelchair.svelte';
 export { default as IconWheelchairAlt } from './icons/WheelchairAlt.svelte';

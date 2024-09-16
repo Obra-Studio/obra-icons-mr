@@ -3,7 +3,7 @@
 import type { FillIconProps } from '../types';
 import React, { forwardRef } from 'react';
 
-const MoonFill = forwardRef<SVGSVGElement, FillIconProps>(
+const WebcamFill = forwardRef<SVGSVGElement, FillIconProps>(
 	({ size = 24, color = 'currentColor', ...props }, ref) => {
 		return (
 			<svg
@@ -16,12 +16,12 @@ const MoonFill = forwardRef<SVGSVGElement, FillIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-moon-fill">
+				<g className="oi-webcam-fill">
 					<path
 						className="oi-fill"
 						fill-rule="evenodd"
 						clip-rule="evenodd"
-						d="M9.36077 3.29292C9.6659 3.59804 9.74089 4.06447 9.54678 4.44985C9.04068 5.45471 8.75521 6.59037 8.75521 7.79559C8.75521 11.9097 12.0903 15.2448 16.2044 15.2448C17.4097 15.2448 18.5453 14.9594 19.5502 14.4532C19.9356 14.2591 20.402 14.3341 20.7071 14.6393C21.0122 14.9444 21.0872 15.4108 20.8931 15.7962C19.3396 18.8806 16.1428 21 12.4492 21C7.23056 21 3 16.7695 3 11.5508C3 7.85721 5.11941 4.66041 8.20384 3.10691C8.58923 2.91281 9.05565 2.9878 9.36077 3.29292Z"
+						d="M4 5C2.89543 5 2 5.89543 2 7V17C2 18.1046 2.89543 19 4 19H14C15.1046 19 16 18.1046 16 17V14.8685L20.4453 17.8321C20.7522 18.0366 21.1467 18.0557 21.4719 17.8817C21.797 17.7077 22 17.3688 22 17V7C22 6.63121 21.797 6.29235 21.4719 6.11833C21.1467 5.94431 20.7522 5.96338 20.4453 6.16795L16 9.13148V7C16 5.89543 15.1046 5 14 5H4Z"
 						fill={color}
 					/>
 				</g>
@@ -30,4 +30,4 @@ const MoonFill = forwardRef<SVGSVGElement, FillIconProps>(
 	},
 );
 
-export default MoonFill;
+export default WebcamFill;

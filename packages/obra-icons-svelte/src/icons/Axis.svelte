@@ -41,7 +41,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M2.41425 21.0001L11.9144 13"
+			d="M2.41424 21.0001L11.9144 13"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

@@ -18,7 +18,7 @@ const WheelchairAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 			>
 				<g
 					className="oi-wheelchair-alt"
-					clip-path="url(#clip0_671_13476)"
+					clip-path="url(#clip0_674_27560)"
 				>
 					<path
 						className="oi-vector"
@@ -46,7 +46,7 @@ const WheelchairAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_671_13476">
+					<clipPath className="clip0_674_27560">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-joystick" clip-path="url(#clip0_671_13176)">
+	<g class="oi-joystick" clip-path="url(#clip0_674_27260)">
 		<path
 			class="oi-vector"
 			d="M12.071 10L21.1421 13.0711L12.071 16.1421L2.99998 13.0711L12.071 10Z"
@@ -47,7 +47,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_671_13176">
+		<clipPath class="clip0_674_27260">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

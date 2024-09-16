@@ -16,7 +16,7 @@ const Dress = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-dress" clip-path="url(#clip0_671_13049)">
+				<g className="oi-dress" clip-path="url(#clip0_674_27133)">
 					<path
 						className="oi-line"
 						d="M15 3.30188V0.75"
@@ -51,7 +51,7 @@ const Dress = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_671_13049">
+					<clipPath className="clip0_674_27133">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

@@ -13,7 +13,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-previous-fill" clip-path="url(#clip0_671_12183)">
+	<g class="oi-previous-fill" clip-path="url(#clip0_674_26260)">
 		<path
 			class="oi-fill"
 			fill-rule="evenodd"
@@ -33,7 +33,7 @@
 		</g>
 	</g>
 	<defs>
-		<clipPath class="clip0_671_12183">
+		<clipPath class="clip0_674_26260">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

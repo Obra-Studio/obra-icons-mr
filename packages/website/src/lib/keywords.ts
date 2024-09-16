@@ -938,6 +938,15 @@ export default {
     "social media",
     "phone"
   ],
+  "brand-x": [
+    "twitter",
+    "logo",
+    "company",
+    "branding",
+    "identity",
+    "symbol",
+    "mark"
+  ],
   "bread": [
     "baguette",
     "loaf",
@@ -7512,21 +7521,13 @@ export default {
     "transport",
     "delivery"
   ],
-  "truck-alt": [
+  "truck-fill": [
     "vehicle",
-    "delivery",
-    "transport",
     "lorry",
     "pickup",
-    "cargo"
-  ],
-  "truck-alt-fill": [
-    "vehicle",
-    "delivery",
+    "van",
     "transport",
-    "lorry",
-    "pickup",
-    "cargo"
+    "delivery"
   ],
   "tulip": [
     "flower",

@@ -938,6 +938,7 @@ export { default as IconWatch } from './icons/Watch';
 export { default as IconWavesLight } from './icons/WavesLight';
 export { default as IconWavesMedium } from './icons/WavesMedium';
 export { default as IconWebcam } from './icons/Webcam';
+export { default as IconWebcamFill } from './icons/WebcamFill';
 export { default as IconWeight } from './icons/Weight';
 export { default as IconWheelchair } from './icons/Wheelchair';
 export { default as IconWheelchairAlt } from './icons/WheelchairAlt';

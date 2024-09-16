@@ -27,7 +27,7 @@ const SneakerMove = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M9.12281 10.5L5.02499 6.40125"
+						d="M9.12284 10.5L5.02502 6.40125"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
