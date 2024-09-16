@@ -5,8 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:icons": "pnpm --filter obra-icons-svelte -r dev",
-    "formatSvelte": "prettier --write --plugin prettier-plugin-svelte **.svelte"
+    "dev:website": "pnpm --filter obra-icons-website -r dev",
+    "package": "pnpm -r package",
+    "format": "pnpm -r format",
+    "build": "pnpm -r build"
   },
   "engines": {
     "node": ">=16.14",
