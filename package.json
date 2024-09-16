@@ -6,7 +6,7 @@
     "generate:keywords": "pnpm -r generate:keywords",
     "generate:icons": "pnpm -r generate:icons",
     "dev:website": "pnpm --filter obra-icons-website -r dev",
-    "build:website": "pnpm --filter obra-icons-website -r build",
+    "build:website": "exit 1",
     "package": "pnpm -r package",
     "format": "pnpm -r format",
     "build": "pnpm -r build"
