@@ -37,8 +37,11 @@ export const react: Package = {
 	prettier_parser: 'typescript',
 	generate(svg, name_pascal, type) {
 		svg = svg
-			.replace(/class=/g, 'className=')
 			.replace('<svg', '<svg ref={ref}')
+			.replaceAll('class=', 'className=')
+			.replaceAll('stroke-width=', 'strokeWidth=')
+			.replaceAll('stroke-linecap=', 'strokeLinecap=')
+			.replaceAll('stroke-linejoin=', 'strokeLinejoin=')
 			.replace(
 				'className="obra-icon"',
 				"{...props} className={`obra-icon ${props?.className || ''}`}",
