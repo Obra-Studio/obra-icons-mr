@@ -4,7 +4,6 @@
 	import NavItem from './NavItem.svelte';
 	import { onMount } from 'svelte';
 	import { IconMenu } from 'obra-icons-svelte';
-	const version = import.meta.env.VITE_APP_VERSION;
 
 	let menuShown = false;
 	let windowWidth = 0;
@@ -44,7 +43,7 @@
 					<div class="flex align-items-center gap-large">
 						<h1 class="logo">
 							<a href="/">
-								<img src="/logo-obra.svg" alt="Obra" />
+								<img alt="Obra" src="/logo-obra.svg" />
 								<span> Icons</span>
 							</a>
 						</h1>
@@ -57,8 +56,8 @@
 											on:click={closeMenu}
 											href="/"
 											active={$page.url.pathname === '/'}
-											>Home</NavItem
-										>
+											>Home
+										</NavItem>
 									</li>
 									<li>
 										<NavItem
@@ -66,8 +65,9 @@
 											href="/about"
 											active={$page.url.pathname.startsWith(
 												'/about',
-											)}>About</NavItem
-										>
+											)}
+											>About
+										</NavItem>
 									</li>
 									<li>
 										<NavItem
@@ -75,8 +75,9 @@
 											href="/blog"
 											active={$page.url.pathname.startsWith(
 												'/blog',
-											)}>Blog</NavItem
-										>
+											)}
+											>Blog
+										</NavItem>
 									</li>
 									<li>
 										<NavItem
@@ -84,8 +85,9 @@
 											href="/buy"
 											active={$page.url.pathname.startsWith(
 												'/buy',
-											)}>Buy</NavItem
-										>
+											)}
+											>Buy
+										</NavItem>
 									</li>
 								</ul>
 							</nav>
@@ -93,7 +95,6 @@
 					</div>
 
 					<div class="flex align-items-center gap-large">
-						<p>{version}</p>
 						<button class="mobile-menu-trigger" on:click={showMenu}>
 							<IconMenu />
 							Menu
