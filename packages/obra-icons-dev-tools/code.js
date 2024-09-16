@@ -857,29 +857,35 @@ function convertToVariantSet() {
 		}
 	  }
 
-	  if (name.includes('-fill')) {
-		// Clone the contents of the respective stroke variant
-		const strokeVariantName = name.replace('-fill', '-stroke');
-		const strokeVariant = parentFrame.findChild(n => n.name === strokeVariantName);
+	//   if (name.includes('-fill')) {
+	// 	// Clone the contents of the respective stroke variant
+	// 	const strokeVariantName = name.replace('-fill', '-stroke');
+	// 	const strokeVariant = parentFrame.findChild(n => n.name === strokeVariantName);
 		
-		if (strokeVariant) {
-		  strokeVariant.children.forEach(child => {
-			if (child.name !== 'Key shape template') {
-			  const clonedChild = child.clone();
-			  frame.appendChild(clonedChild);
-			}
-		  });
+	// 	if (strokeVariant) {
+	// 	  strokeVariant.children.forEach(child => {
+	// 		if (child.name !== 'Key shape template') {
+	// 		  const clonedChild = child.clone();
+	// 		  frame.appendChild(clonedChild);
+	// 		}
+	// 	  });
 
-		} else {
-		  console.warn(`Stroke variant ${strokeVariantName} not found for ${name}`);
-		}
-	  }
+	// 	} else {
+	// 	  console.warn(`Stroke variant ${strokeVariantName} not found for ${name}`);
+	// 	}
+	//   }
   
 	  parentFrame.appendChild(frame);
 	});
+
+	let originalFrameX = originalFrameX.x
+	let originalFrameY = originalFrameY.y
   
 	// Replace the original frame with the new parent frame
 	originalFrame.parent.insertChild(originalFrame.parent.children.indexOf(originalFrame), parentFrame);
+
+	parentFrame.x = originalFrameX
+	parentFrame.y = originalFrameY
   
 	// Zoom to the new parent frame
 	figma.viewport.scrollAndZoomIntoView([parentFrame]);
@@ -1345,7 +1351,7 @@ function autoColourNamedLayers() {
 			const matchingVariable = colorVariables.find(
 				(variable) => variable.name === node.name,
 			);
-
+	
 			if (matchingVariable) {
 				if (
 					'fills' in node &&
@@ -1354,11 +1360,13 @@ function autoColourNamedLayers() {
 				) {
 					// For fills
 					const fills = clone(node.fills);
-					fills[0] = figma.variables.setBoundVariableForPaint(
-						fills[0],
-						'color',
-						matchingVariable,
-					);
+					fills.forEach((fill, index) => {
+						fills[index] = figma.variables.setBoundVariableForPaint(
+							fill,
+							'color',
+							matchingVariable,
+						);
+					});
 					node.fills = fills;
 					appliedCount++;
 				}
@@ -1369,17 +1377,19 @@ function autoColourNamedLayers() {
 				) {
 					// For strokes
 					const strokes = clone(node.strokes);
-					strokes[0] = figma.variables.setBoundVariableForPaint(
-						strokes[0],
-						'color',
-						matchingVariable,
-					);
+					strokes.forEach((stroke, index) => {
+						strokes[index] = figma.variables.setBoundVariableForPaint(
+							stroke,
+							'color',
+							matchingVariable,
+						);
+					});
 					node.strokes = strokes;
 					appliedCount++;
 				}
 			}
 		}
-
+	
 		// Recursively process children if the node is a container (like a frame or group)
 		if ('children' in node) {
 			for (const child of node.children) {
