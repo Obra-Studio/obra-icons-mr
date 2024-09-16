@@ -10,7 +10,7 @@
   "engines": {
     "pnpm": "^9.10.0",
     "npm": "forbidden, use pnpm",
-    "node": "^22.5.0"
+    "node": "^22.5.0||^20.11.0"
   },
   "devDependencies": {
     "@types/node": "20",
