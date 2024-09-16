@@ -47,6 +47,7 @@ export const react: Package = {
 
 		return `
 		//${FILE_WARNING}
+
 		import type { ${props_type} } from '../types';
 		import React, { forwardRef } from 'react';
 
