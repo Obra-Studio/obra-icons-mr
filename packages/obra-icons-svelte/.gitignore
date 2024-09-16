@@ -6,4 +6,4 @@ node_modules
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-keywords-overrides.json
+.svelte-kit
