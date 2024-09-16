@@ -30,17 +30,10 @@
 			<li>
 				<article class="blog-post">
 					<header style="margin: 0 0 2rem;">
-						<header style="margin: 0 0 2rem;">
-							<h2>
-								<a href="/blog/{post.slug}">{post.title}</a>
-							</h2>
-							<p class="date">{formatDate(post.date)}</p>
-							{#if post.tags}
-								<p>
-									<span class="tag">{post.tags}</span>
-								</p>
-							{/if}
-						</header>
+						<h2>
+							<a href="/blog/{post.slug}">{post.title}</a>
+						</h2>
+						<p class="date">{formatDate(post.date)}</p>
 						{#if post.tags}
 							<p>
 								<span class="tag">{post.tags}</span>
