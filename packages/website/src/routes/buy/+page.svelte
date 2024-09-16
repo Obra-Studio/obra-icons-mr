@@ -16,9 +16,9 @@
 			<div class="column">
 				<div class="text-align-center">
 					<img
-						srcset="/illustration-buy-obra-files.png 1x, /illustration-buy-obra-files@2x.png 2x"
-						src="/illustration-buy-obra-files.png"
 						alt="Obra Icons Files"
+						src="/illustration-buy-obra-files.png"
+						srcset="/illustration-buy-obra-files.png 1x, /illustration-buy-obra-files@2x.png 2x"
 					/>
 				</div>
 			</div>
@@ -33,22 +33,24 @@
 
 					<ul class="feature-list">
 						<li>
-							<IconCircleCheckFill color="green" /> 820+ icons
+							<IconCircleCheckFill color="green" />
+							950+ icons
 						</li>
 						<li>
-							<IconCircleCheckFill color="green" /> Categorized icons
-							to easily find them
+							<IconCircleCheckFill color="green" />
+							Categorized icons to easily find them
 						</li>
 						<li>
-							<IconCircleCheckFill color="green" /> Original vectors
+							<IconCircleCheckFill color="green" />
+							Original vectors
 						</li>
 						<li>
-							<IconCircleCheckFill color="green" /> Drag and drop onto
-							your Figma files to import
+							<IconCircleCheckFill color="green" />
+							Drag and drop onto your Figma files to import
 						</li>
 						<li>
-							<IconCircleCheckFill color="green" /> Dev tools plugin
-							with handy workflow shortcuts
+							<IconCircleCheckFill color="green" />
+							Dev tools plugin with handy workflow shortcuts
 						</li>
 					</ul>
 

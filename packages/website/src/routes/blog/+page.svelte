@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { formatDate } from '$lib/blog/utils.js';
 	import { IconRss } from 'obra-icons-svelte';
+
 	export let data;
 </script>
 
 <svelte:head>
 	<link
-		rel="alternate"
-		type="application/rss+xml"
-		title="RSS Feed for Obra Icons Blog"
 		href="/rss.xml"
+		rel="alternate"
+		title="RSS Feed for Obra Icons Blog"
+		type="application/rss+xml"
 	/>
 	<title>Blog - Obra Icons</title>
 </svelte:head>
@@ -18,7 +19,7 @@
 	<div class="blog-header">
 		<h1 class="blog-title">Blog</h1>
 
-		<a href="/rss.xml" class="rss" aria-label="RSS Feed">
+		<a aria-label="RSS Feed" class="rss" href="/rss.xml">
 			<IconRss size={16} strokeWidth={3} />
 			RSS feed
 		</a>
@@ -29,8 +30,17 @@
 			<li>
 				<article class="blog-post">
 					<header style="margin: 0 0 2rem;">
-						<h2><a href="/blog/{post.slug}">{post.title}</a></h2>
-						<p class="date">{formatDate(post.date)}</p>
+						<header style="margin: 0 0 2rem;">
+							<h2>
+								<a href="/blog/{post.slug}">{post.title}</a>
+							</h2>
+							<p class="date">{formatDate(post.date)}</p>
+							{#if post.tags}
+								<p>
+									<span class="tag">{post.tags}</span>
+								</p>
+							{/if}
+						</header>
 						{#if post.tags}
 							<p>
 								<span class="tag">{post.tags}</span>

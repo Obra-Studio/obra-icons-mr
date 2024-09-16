@@ -79,16 +79,26 @@
 											>Blog
 										</NavItem>
 									</li>
-									<!--									<li>-->
-									<!--										<NavItem-->
-									<!--											on:click={closeMenu}-->
-									<!--											href="/buy"-->
-									<!--											active={$page.url.pathname.startsWith(-->
-									<!--												'/buy',-->
-									<!--											)}-->
-									<!--											>Buy-->
-									<!--										</NavItem>-->
-									<!--									</li>-->
+									<li>
+										<NavItem
+											on:click={closeMenu}
+											href="/buy"
+											active={$page.url.pathname.startsWith(
+												'/buy',
+											)}
+											>Buy
+										</NavItem>
+									</li>
+									<li>
+										<NavItem
+											on:click={closeMenu}
+											href="/changelog"
+											active={$page.url.pathname.startsWith(
+												'/changelog',
+											)}
+											>Changelog
+										</NavItem>
+									</li>
 								</ul>
 							</nav>
 						{/if}

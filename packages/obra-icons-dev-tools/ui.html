@@ -170,7 +170,7 @@
 		</details>
 	</summary>
 
-	<h4>Production actions - Releases - SendOwl</h4>
+	<h4>Production actions - Releases</h4>
 
 	<summary>
 		<details>
@@ -258,7 +258,7 @@
 	// When the buttons are clicked, send messages to the plugin code
 
 	document.getElementById('unionAndFlatten').onclick = () => {
-    	parent.postMessage({ pluginMessage: { type: 'union-and-flatten' } }, '*');
+		parent.postMessage({ pluginMessage: { type: 'union-and-flatten' } }, '*');
 	};
 
 	document.getElementById('reportFillAndStroke').onclick = () => {
@@ -331,7 +331,7 @@
 	};
 
 	document.getElementById('convertToVariantSet').onclick = () => {
-  		parent.postMessage({ pluginMessage: { type: 'convert-to-variant-set' } }, '*');
+		parent.postMessage({ pluginMessage: { type: 'convert-to-variant-set' } }, '*');
 	};
 
 	const slider = document.getElementById('toleranceSlider');

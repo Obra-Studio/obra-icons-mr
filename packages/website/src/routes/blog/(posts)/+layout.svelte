@@ -6,10 +6,10 @@
 
 <svelte:head>
 	<link
-		rel="alternate"
-		type="application/rss+xml"
-		title="RSS Feed for Obra Icons Blog"
 		href="/rss.xml"
+		rel="alternate"
+		title="RSS Feed for Obra Icons Blog"
+		type="application/rss+xml"
 	/>
 	<title>{data.title} - Blog - Obra Icons</title>
 </svelte:head>
@@ -17,7 +17,7 @@
 <article class="container">
 	<header>
 		<p class="back-link">
-			<a href="/blog">&larr; Back to blog</a>
+			<a href="/blog">&larr; Back to overview</a>
 		</p>
 
 		<h1>{data.title}</h1>
@@ -39,14 +39,6 @@
 	.container {
 		max-width: 700px;
 		margin: 2rem auto;
-	}
-
-	.tag {
-		background-color: #666;
-		color: #fff;
-		font-size: 0.8rem;
-		padding: 0.25rem 0.5rem;
-		border-radius: 15px;
 	}
 
 	header {

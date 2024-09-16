@@ -167,6 +167,11 @@ h4,
     list-style: none;
 }
 
+.center {
+    text-align: center;
+}
+
+
 /* Button
    ========================================================================== */
 
@@ -1037,6 +1042,15 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
         z-index: 1;
     }
 
+}
+
+
+.tag {
+    background-color: #666;
+    color: #FFF;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
 }
 
 

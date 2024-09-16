@@ -13,7 +13,7 @@ We added a React package to Obra Icons. Now it's possible to use Obra Icons easi
 To install:
 
 ```
-npm i --save obra-icons-react
+npm i obra-icons-react
 ```
 
 To use ([example on CodeSandbox](https://codesandbox.io/p/sandbox/j62vlt)):

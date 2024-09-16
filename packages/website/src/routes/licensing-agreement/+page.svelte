@@ -132,7 +132,7 @@
 			<h2>Digital goods delivery</h2>
 
 			<p>
-				We use <a href="https://www.sendowl.com/">SendOwl</a>
+				We use <a href="https://www.lemonsqueezy.com/">LemonSqueezy</a>
 				for digital goods delivery. You can read their Terms of use and Privacy
 				Policy on their site.
 			</p>
