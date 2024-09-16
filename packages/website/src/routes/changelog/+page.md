@@ -2,13 +2,15 @@
 
 We use semantic versioning (semver).
 
-# 1.21.0 (September 16, 2024)
+## 1.21.0
+
+September 16, 2024
 
 * Publish React package, see our blog post
 * Add functionality to copy React import from website
 * Add changelog to website
 
-# 1.20.0
+## 1.20.0
 
 * Fix visual artifacts in several icons
 * Change TruckAlt to be Truck, and delete original truck icon.
