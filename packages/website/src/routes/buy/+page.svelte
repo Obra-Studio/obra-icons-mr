@@ -16,9 +16,9 @@
 			<div class="column">
 				<div class="text-align-center">
 					<img
-						srcset="/illustration-buy-obra-files.png 1x, /illustration-buy-obra-files@2x.png 2x"
-						src="/illustration-buy-obra-files.png"
 						alt="Obra Icons Files"
+						src="/illustration-buy-obra-files.png"
+						srcset="/illustration-buy-obra-files.png 1x, /illustration-buy-obra-files@2x.png 2x"
 					/>
 				</div>
 			</div>
@@ -33,14 +33,16 @@
 
 					<ul class="feature-list">
 						<li>
-							<IconCircleCheckFill color="green" /> 820+ icons
+							<IconCircleCheckFill color="green" />
+							950+ icons
 						</li>
 						<li>
-							<IconCircleCheckFill color="green" /> Categorized icons
-							to easily find them
+							<IconCircleCheckFill color="green" />
+							Categorized icons to easily find them
 						</li>
 						<li>
-							<IconCircleCheckFill color="green" /> Original vectors
+							<IconCircleCheckFill color="green" />
+							Original vectors
 						</li>
 						<li>
 							<IconCircleCheckFill color="green" />
@@ -54,7 +56,10 @@
 					</p>
 
 					<div class="button-group">
-						<a class="button" href="https://obra.lemonsqueezy.com/buy/6f465f44-70ac-401f-b0a4-8910a2270aeb">
+						<a
+							class="button"
+							href="https://obra.lemonsqueezy.com/buy/6f465f44-70ac-401f-b0a4-8910a2270aeb"
+						>
 							<span>Buy the source file</span>
 							<IconArrowRight />
 						</a>

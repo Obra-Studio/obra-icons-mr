@@ -132,7 +132,7 @@
 
 			<p>
 				Obra Icons - Marketing website<br />
-				Located online at https://icons.mono.company
+				Located online at https://icons.obra.studio
 			</p>
 
 			<h2>Published by</h2>
