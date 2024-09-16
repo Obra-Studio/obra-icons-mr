@@ -65,7 +65,7 @@ interface BaseIcon {
 }
 
 interface Icon extends BaseIcon {
-	svgTemplate: string;
+	svg_template: string;
 	svg: string;
 }
 
@@ -163,7 +163,7 @@ for (const chunk of split(base_icons, 100)) {
 				// Turn id="oi_vector_2" -> class="oi-vector"
 				.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
 
-			const svgTemplate = svg
+			const svg_template = svg
 				// Remove keywords from the overall group (g) element
 				.replace(/<g class="oi(.*)\[.*]">/g, '<g class="oi$1">')
 				// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
@@ -185,7 +185,7 @@ for (const chunk of split(base_icons, 100)) {
 			//? Add each icon to the icons array
 			icons.push({
 				...base_icon,
-				svgTemplate,
+				svg_template,
 				svg,
 			});
 		}),
@@ -206,18 +206,19 @@ for (const { svg, name } of icons) {
 	);
 }
 
+//? Fn to write a pkg type
 async function write_pkg(path: string, pkg: Package) {
 	console.log(`  Writing package ${pkg.name}`);
 
-	for (const { svgTemplate, name } of icons) {
+	for (const { svg_template, name } of icons) {
 		console.log(`    Writing ${pkg.name} package icon "${name}"`);
 
 		const name_pascal = icon_name_to_pascal(name);
 
 		const raw_component =
 			name.endsWith('-fill') && !name.endsWith('-combo-fill')
-				? pkg.generate(svgTemplate, name_pascal, 'fill')
-				: pkg.generate(svgTemplate, name_pascal, 'stroke');
+				? pkg.generate(svg_template, name_pascal, 'fill')
+				: pkg.generate(svg_template, name_pascal, 'stroke');
 
 		const component = await format(raw_component, pkg.prettier_parser);
 
