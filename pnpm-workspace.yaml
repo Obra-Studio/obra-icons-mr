@@ -1,4 +1,2 @@
 packages:
-  - 'packages/obra-icons-svelte'
-  - 'packages/obra-icons-figma-plugin'
-  - 'packages/obra-icons-dev-tools'
+    - 'packages/*'
