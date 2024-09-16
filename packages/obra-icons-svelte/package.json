@@ -1,6 +1,7 @@
 {
   "name": "obra-icons-svelte",
   "version": "1.20.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "pnpm run package",
