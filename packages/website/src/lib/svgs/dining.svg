@@ -42,7 +42,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M16 16.5V18.5"
+			d="M15.5 16.5V18.5"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
@@ -57,16 +57,16 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
-			d="M21.5 13.5H18C16.8954 13.5 16 14.3954 16 15.5V16H21.5V13.5Z"
+			class="oi-vector"
+			d="M3 13.5H6.5C7.60457 13.5 8.5 14.3954 8.5 15.5V16H3V13.5Z"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
-			d="M3 13.5H6.5C7.60457 13.5 8.5 14.3954 8.5 15.5V16H3V13.5Z"
+			class="oi-vector"
+			d="M21 13.5H17.5C16.3954 13.5 15.5 14.3954 15.5 15.5V16H21V13.5Z"
 			stroke="black"
 			stroke-width="2"
 			stroke-linecap="round"

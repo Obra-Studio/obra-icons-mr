@@ -17,7 +17,7 @@
 			stroke-linejoin="round"
 		/>
 		<path
-			class="oi-box"
+			class="oi-vector"
 			d="M12 17H4C2.89543 17 2 16.1046 2 15V5C2 3.89543 2.89543 3 4 3H20C21.1046 3 22 3.89543 22 5V10"
 			stroke="black"
 			stroke-width="2"

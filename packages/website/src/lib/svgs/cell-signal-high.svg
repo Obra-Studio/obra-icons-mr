@@ -8,7 +8,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g class="oi-cell-signal-high">
-		<path class="oi-fill" d="M19 4L4 20H19V4Z" fill="black" />
+		<path class="oi-fill" d="M19 4.5L4 19H19V4.5Z" fill="black" />
 		<path
 			class="oi-vector"
 			d="M19 4L4 19H19V4Z"
