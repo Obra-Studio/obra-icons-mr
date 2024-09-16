@@ -11,9 +11,22 @@
         new component({ target: tempDiv, props: { size: iconProperties.size, strokeWeight: iconProperties.strokeWeight } });
         const svgString = tempDiv.innerHTML;
 
+        const formattedName = name
+            .slice(4) // Remove 'Icon' prefix
+            .split(/(?=[A-Z])/) // Split on capital letters
+            .map(word => word.toLowerCase()) // Convert each word to lowercase
+            .join(' ') // Join words with spaces
+            .trim(); // Remove any leading/trailing spaces
+
         parent.postMessage(
             {
-                pluginMessage: { type: 'paste-icon', iconName: name, svgString, strokeWeight: iconProperties.strokeWeight, iconSize: iconProperties.size },
+                pluginMessage: {
+                    type: 'paste-icon',
+                    iconName: formattedName,
+                    svgString,
+                    strokeWeight: iconProperties.strokeWeight,
+                    iconSize: iconProperties.size
+                },
                 pluginId: '*',
             },
             '*',

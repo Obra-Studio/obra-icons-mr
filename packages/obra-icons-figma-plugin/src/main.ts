@@ -16,29 +16,39 @@ export default function() {
       if (svgString) {
         const preparedSvgString = prepareSvg(svgString, strokeWeight);
         const node = figma.createNodeFromSvg(preparedSvgString);
-        node.name = iconName.slice(4); // Remove 'Icon' prefix
+        node.name = iconName
 
         // Calculate the position
         let x, y;
+
         if (figma.currentPage.selection.length > 0) {
           const selectedNode = figma.currentPage.selection[0];
           const bounds = selectedNode.absoluteBoundingBox;
           x = bounds.x + (bounds.width - iconSize) / 2;
           y = bounds.y + (bounds.height - iconSize) / 2;
+
+          if (selectedNode.type === 'FRAME') {
+            // For frames, use relative positioning
+            x = (bounds.width - iconSize) / 2;
+            y = (bounds.height - iconSize) / 2;
+            selectedNode.appendChild(node);
+          } else {
+            // For other node types, use absolute positioning
+            figma.currentPage.appendChild(node);
+          }
         } else {
           // Center in viewport if no selection
           const viewportBounds = figma.viewport.bounds;
           x = viewportBounds.x + (viewportBounds.width - iconSize) / 2;
           y = viewportBounds.y + (viewportBounds.height - iconSize) / 2;
+          figma.currentPage.appendChild(node);
         }
-
+        
         node.resize(iconSize, iconSize); // Resize the node based on iconSize
         node.x = x;
         node.y = y;
 
-        // Removed unnecessary group wrapping
-        figma.currentPage.appendChild(node);
-        figma.notify(`Pasted ${iconName.slice(4)} icon`);
+        figma.notify(`✅ Pasted ${msg.iconName} icon`);
       } else {
         figma.notify(`Icon ${iconName} not found`, { error: true });
       }
