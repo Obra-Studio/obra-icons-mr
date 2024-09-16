@@ -1,16 +1,19 @@
+import 'dotenv/config';
 import type { GETImageResponse, GETNodesResponse } from './types.d';
-import { FILE_WARNING, icon_name_to_pascal } from './utils';
+import { FILE_WARNING, format, icon_name_to_pascal } from './utils';
 import { writeFile, mkdir, rm } from 'node:fs/promises';
-import * as prettier from 'prettier';
+import type { Package } from './icon-pkgs';
+import * as pkgs from './icon-pkgs';
+import { env } from 'node:process';
+import { join } from 'node:path';
 import { ofetch } from 'ofetch';
 import split from 'just-split';
 import {
-	SVG_OUT_DIR,
-	SVELTE_OUT_DIR,
-	EXPORTS_REL,
-	EXPORTS_FILE,
-	ICON_COUNT_FILE,
 	KEYWORDS_OVERRIDES_FILE,
+	ICON_COUNT_FILE,
+	SVG_OUT_DIR,
+	SVELTE_PKG,
+	REACT_PKG,
 } from './paths';
 
 console.time('generate icons');
@@ -19,7 +22,7 @@ const figma = ofetch.create({
 	retry: 3,
 	baseURL: 'https://api.figma.com/v1',
 	headers: {
-		'X-FIGMA-TOKEN': import.meta.env.SCRIPTS_FIGMA_API_KEY,
+		'X-FIGMA-TOKEN': env.SCRIPTS_FIGMA_API_KEY!,
 	},
 });
 
@@ -38,13 +41,15 @@ if (!NODE_ID || !NODE_ID.includes(':')) {
 
 console.log('\nCleaning Output Directories');
 
-//? Clean & Create svg output directory
-await rm(SVG_OUT_DIR, { recursive: true, force: true });
-await mkdir(SVG_OUT_DIR, { recursive: true });
-
-//? Clean & Create svelte output directory
-await rm(SVELTE_OUT_DIR, { recursive: true, force: true });
-await mkdir(SVELTE_OUT_DIR, { recursive: true });
+//? Clean & create output directories
+for (const dir of [
+	join(SVELTE_PKG, './src/icons'),
+	join(REACT_PKG, './src/icons'),
+	SVG_OUT_DIR,
+]) {
+	await rm(dir, { recursive: true, force: true });
+	await mkdir(dir, { recursive: true });
+}
 
 console.log('\nFinding Frames');
 
@@ -60,8 +65,8 @@ interface BaseIcon {
 }
 
 interface Icon extends BaseIcon {
+	svgTemplate: string;
 	svg: string;
-	svgSvelte: string;
 }
 
 const base_icons: BaseIcon[] = [];
@@ -150,25 +155,15 @@ for (const chunk of split(base_icons, 100)) {
 			const raw_svg = await ofetch(link, { responseType: 'text' });
 
 			//? Format the svg with prettier
-			let svg = await prettier.format(raw_svg, {
-				singleQuote: true,
-				quoteProps: 'as-needed',
-				trailingComma: 'all',
-				bracketSpacing: true,
-				arrowParens: 'always',
-				semi: true,
-				useTabs: true,
-				tabWidth: 4,
-				parser: 'html',
-			});
+			let svg = await format(raw_svg, 'html');
 
-			//? Remove weird whitespace
-			svg = svg.trim();
+			svg = svg
+				// Remove weird whitespace
+				.trim()
+				// Turn id="oi_vector_2" -> class="oi-vector"
+				.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
 
-			//? Turn id="oi_vector_2" -> class="oi-vector"
-			svg = svg.replace(/id="([^ "]+?)(?:_\d)?"/g, 'class="$1"');
-
-			const svgSvelte = svg
+			const svgTemplate = svg
 				// Remove keywords from the overall group (g) element
 				.replace(/<g class="oi(.*)\[.*]">/g, '<g class="oi$1">')
 				// Turn width="24" and height="24" into width={size} and height={size}, but don't match "stroke-width"
@@ -190,8 +185,8 @@ for (const chunk of split(base_icons, 100)) {
 			//? Add each icon to the icons array
 			icons.push({
 				...base_icon,
+				svgTemplate,
 				svg,
-				svgSvelte,
 			});
 		}),
 	);
@@ -200,78 +195,59 @@ for (const chunk of split(base_icons, 100)) {
 //? Sort the array in place (mutates)
 icons.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1));
 
-//? Generate the svelte component from an svg
+//? Write the svgs
+for (const { svg, name } of icons) {
+	console.log(`  Writing svg "${name}"`);
 
-const svelte_template_stroke = (svgSvelte: string) => `<!-- ${FILE_WARNING} -->
-
-<svelte:options namespace="svg" />
-
-<script lang="ts">
-  export let size = 24
-  export let color = 'currentColor'
-  export let strokeWidth = 2
-</script>
-
-${svgSvelte}
-`;
-
-const svelte_template_fill = (svgSvelte: string) => `<!-- ${FILE_WARNING} -->
-
-<svelte:options namespace="svg" />
-
-<script lang="ts">
-  export let size = 24
-  export let color = 'currentColor'
-</script>
-
-${svgSvelte}
-`;
-
-console.log('\nWriting Icons');
-
-for (let { svg, svgSvelte, name } of icons) {
-	console.log(`  Writing Icon "${name}"`);
-
-	let svelte_component = '';
-	if (name.endsWith('-combo-fill')) {
-		svelte_component = svelte_template_stroke(svgSvelte);
-	} else if (name.endsWith('-fill')) {
-		svelte_component = svelte_template_fill(svgSvelte);
-	} else {
-		svelte_component = svelte_template_stroke(svgSvelte);
-	}
-
-	const pascal_name = icon_name_to_pascal(name);
-
-	//? Write the svg file
 	await writeFile(
 		`${SVG_OUT_DIR}/${name}.svg`,
 		`<!-- ${FILE_WARNING} -->\n\n${svg}`,
 		'utf-8',
 	);
+}
 
-	//? Write the svelte component
+async function write_pkg(path: string, pkg: Package) {
+	console.log(`  Writing package ${pkg.name}`);
+
+	for (const { svgTemplate, name } of icons) {
+		console.log(`    Writing ${pkg.name} package icon "${name}"`);
+
+		const name_pascal = icon_name_to_pascal(name);
+
+		const raw_component =
+			name.endsWith('-fill') && !name.endsWith('-combo-fill')
+				? pkg.generate(svgTemplate, name_pascal, 'fill')
+				: pkg.generate(svgTemplate, name_pascal, 'stroke');
+
+		const component = await format(raw_component, pkg.prettier_parser);
+
+		//? Write the component
+		await writeFile(
+			`${path}/src/icons/${name_pascal}.${pkg.file_ext}`,
+			component,
+			'utf-8',
+		);
+	}
+
+	console.log('    Generating exports');
+
+	//? Generate the export statements
+	const export_statements = icons.map(({ name }) => {
+		const name_pascal = icon_name_to_pascal(name);
+		return `export { default as Icon${name_pascal} } from './icons/${name_pascal}.${pkg.file_ext}';`;
+	});
+
+	//? Write out the ts file
 	await writeFile(
-		`${SVELTE_OUT_DIR}/${pascal_name}.svelte`,
-		svelte_component,
+		join(path, './src/index.ts'),
+		`//${FILE_WARNING}\n${export_statements.join('\n')}\n`,
 		'utf-8',
 	);
 }
 
-console.log('\nGenerating exports');
-
-//? Generate the export statements
-const export_statements = icons.map(({ name }) => {
-	const pascal_name = icon_name_to_pascal(name);
-	return `export { default as Icon${pascal_name} } from '${EXPORTS_REL}/${pascal_name}.svelte';`;
-});
-
-//? Write out the ts file
-await writeFile(
-	EXPORTS_FILE,
-	`//${FILE_WARNING}\n${export_statements.join('\n')}\n`,
-	'utf-8',
-);
+console.log('\nWriting Icons');
+await write_pkg(SVELTE_PKG, pkgs.svelte);
+await write_pkg(REACT_PKG, pkgs.react);
 
 //? Write the icon count
 await writeFile(

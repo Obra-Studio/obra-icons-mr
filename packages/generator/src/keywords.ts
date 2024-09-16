@@ -1,6 +1,8 @@
+import 'dotenv/config';
 import { KEYWORDS_FILE, KEYWORDS_OVERRIDES_FILE, SVG_OUT_DIR } from './paths';
 import { writeFile, readFile, readdir } from 'fs/promises';
 import { FILE_WARNING } from './utils';
+import { env } from 'node:process';
 import { basename } from 'path';
 import OpenAI from 'openai';
 import './types.d';
@@ -9,7 +11,7 @@ console.time('generate keywords');
 
 //? Create the OpenAI client
 const openai = new OpenAI({
-	apiKey: import.meta.env.SCRIPTS_OPENAI_KEY,
+	apiKey: env.SCRIPTS_OPENAI_KEY,
 	timeout: 60 * 1000,
 });
 
@@ -19,7 +21,9 @@ console.log('Finding icon names');
 const icon_files = await readdir(SVG_OUT_DIR);
 
 // Normalize the names and remove the .svg extension
-const existing_icon_names = new Set(icon_files.map((name) => basename(name, '.svg')));
+const existing_icon_names = new Set(
+	icon_files.map((name) => basename(name, '.svg')),
+);
 
 console.log('Generating keywords');
 
@@ -27,7 +31,6 @@ type KeywordTuple = [name: string, keywords: string[]];
 
 //? Map the keywords icon_name:keywords
 const name_keywords: KeywordTuple[] = [];
-
 
 // Try and load old keywords to prevent regenerating them
 try {

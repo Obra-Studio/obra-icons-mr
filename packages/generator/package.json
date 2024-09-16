@@ -3,24 +3,23 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "generate:icons": "vite-node --config 'src/vite-node.config.ts' src/icons.ts",
-        "generate:keywords": "vite-node --config 'src/vite-node.config.ts' src/keywords.ts",
+        "generate:icons": "tsx src/icons.ts",
+        "generate:keywords": "tsx src/keywords.ts",
         "generate": "bash src/generate.sh"
     },
     "engines": {
         "pnpm": "^8.0.0",
         "npm": "forbidden, use pnpm",
-        "node": "^20"
+        "node": "^20.11.0"
     },
     "devDependencies": {
         "@types/node": "20",
-        "desm": "^1.3.1",
+        "dotenv": "^16.4.5",
         "just-split": "^3.2.0",
         "ofetch": "^1.3.4",
         "openai": "^4.61.0",
         "prettier": "^3.0.3",
         "prettier-plugin-svelte": "^3.0.3",
-        "tsx": "^4.19.1",
-        "vite-node": "^2.1.1"
+        "tsx": "^4.19.1"
     }
 }

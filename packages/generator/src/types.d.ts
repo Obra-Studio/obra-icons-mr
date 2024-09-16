@@ -1,14 +1,3 @@
-declare global {
-	interface ImportMeta {
-		readonly env: ImportMetaEnv;
-	}
-
-	interface ImportMetaEnv {
-		readonly SCRIPTS_FIGMA_API_KEY: string;
-		readonly SCRIPTS_OPENAI_KEY: string;
-	}
-}
-
 export interface GETImageResponse {
 	err: string | null;
 	images: Record<string, string>;
