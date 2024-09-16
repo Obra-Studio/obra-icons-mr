@@ -1,3 +1,13 @@
+<script lang="ts" context="module">
+	export type ActionType =
+		| 'downloadSvg'
+		| 'downloadPng'
+		| 'copySvelteImport'
+		| 'copyReactImport'
+		| 'copySvg'
+		| 'copyPng';
+</script>
+
 <script lang="ts">
 	import {
 		copyToClipboard,
@@ -11,18 +21,43 @@
 	export let namePascal: string;
 	export let size: number;
 
-	type ActionType =
-		| 'downloadSvg'
-		| 'downloadPng'
-		| 'copySvelteImport'
-		| 'copySvg'
-		| 'copyPng';
 	export let selectedAction: ActionType;
 
 	let toastMessage: string | null = null;
 
 	async function executeChosenAction(selectedAction: ActionType) {
 		try {
+			switch (selectedAction) {
+				case 'downloadSvg':
+					await downloadIcon(nameKebab, svg, 'svg');
+					toastMessage = 'Downloaded SVG!';
+					break;
+				case 'downloadPng':
+					await downloadIcon(nameKebab, svg, 'png');
+					toastMessage = 'Downloaded PNG!';
+					break;
+				case 'copySvelteImport':
+					await copyToClipboard(
+						`import { ${namePascal} } from 'obra-icons-svelte'`,
+					);
+					toastMessage = 'Copied Svelte import!';
+					break;
+				case 'copyReactImport':
+					await copyToClipboard(
+						`import { ${namePascal} } from 'obra-icons-react'`,
+					);
+					toastMessage = 'Copied React import!';
+					break;
+				case 'copySvg':
+					await copyToClipboard(svg);
+					toastMessage = 'Copied SVG!';
+					break;
+				case 'copyPng':
+					await copyPngToClipboard(svg);
+					toastMessage = 'Copied PNG to clipboard!';
+					break;
+			}
+
 			if (selectedAction == 'downloadSvg') {
 				await downloadIcon(nameKebab, svg, 'svg');
 				toastMessage = 'Downloaded SVG!';

@@ -7,7 +7,7 @@
 	import { search } from '@orama/orama';
 	import { getSvg } from '$lib/svgs';
 
-	import Icon from '$lib/Icon.svelte';
+	import Icon, { type ActionType } from '$lib/Icon.svelte';
 	import { page } from '$app/stores';
 	import SearchInput from '$lib/components/SearchInput.svelte';
 
@@ -22,7 +22,7 @@
 	let color = '#000000';
 	let strokeWeight = 1.5;
 	let size = 36;
-	let selectedActionOnClick = 'copySvg';
+	let selectedActionOnClick: ActionType = 'copySvg';
 
 	function input(event: { currentTarget: HTMLInputElement }) {
 		query = event.currentTarget.value.trim();
@@ -153,9 +153,12 @@
 							<option value="downloadSvg">Download SVG</option>
 							<option value="copyPng">Copy PNG</option>
 							<option value="downloadPng">Download PNG</option>
-							<option value="copySvelteImport"
-								>Copy Svelte import</option
-							>
+							<option value="copySvelteImport">
+								Copy Svelte import
+							</option>
+							<option value="copyReactImport">
+								Copy React import
+							</option>
 						</select>
 						<IconCaretDownFill />
 					</div>
