@@ -232,10 +232,12 @@ async function write_pkg(path: string, pkg: Package) {
 	console.log('    Generating exports');
 
 	//? Generate the export statements
-	const export_statements = icons.map(({ name }) => {
-		const name_pascal = icon_name_to_pascal(name);
-		return `export { default as Icon${name_pascal} } from './icons/${name_pascal}${pkg.name == 'react' ? '' : `.${pkg.file_ext}`}';`;
-	});
+	const export_statements = icons
+		.map(({ name }) => {
+			const name_pascal = icon_name_to_pascal(name);
+			return `export { default as Icon${name_pascal} } from './icons/${name_pascal}${pkg.name == 'react' ? '' : `.${pkg.file_ext}`}';`;
+		})
+		.concat(pkg.additional_exports || []);
 
 	//? Write out the ts file
 	await writeFile(

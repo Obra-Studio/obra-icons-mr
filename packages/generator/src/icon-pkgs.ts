@@ -9,6 +9,7 @@ export interface Package {
 		name_pascal: string,
 		type: 'stroke' | 'fill',
 	) => string;
+	additional_exports?: string[];
 }
 
 export const svelte: Package = {
@@ -62,4 +63,7 @@ export const react: Package = {
 		export default ${name_pascal};
 		`;
 	},
+	additional_exports: [
+		"export type { FillIconProps, StrokeIconProps } from './types';",
+	],
 };
