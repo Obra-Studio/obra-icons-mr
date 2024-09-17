@@ -1,7 +1,6 @@
 /*
- * General - get children nodes
+ * General - function get children nodes
  */
-
 
 function getChildrenNodes(node) {
   let childrenNodes = []
@@ -19,9 +18,8 @@ function getChildrenNodes(node) {
   return childrenNodes
 }
 
-
 /*
- * Debug actions - Scan for layers that both have a stroke and a fill
+ * Set constraints of selection
  */
 
 function setConstraintsScale(sel) {

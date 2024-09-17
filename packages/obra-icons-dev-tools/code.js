@@ -856,40 +856,14 @@ function convertToVariantSet() {
 		  setStrokeWeight([frame], 1);
 		}
 	  }
-
-	//   if (name.includes('-fill')) {
-	// 	// Clone the contents of the respective stroke variant
-	// 	const strokeVariantName = name.replace('-fill', '-stroke');
-	// 	const strokeVariant = parentFrame.findChild(n => n.name === strokeVariantName);
-		
-	// 	if (strokeVariant) {
-	// 	  strokeVariant.children.forEach(child => {
-	// 		if (child.name !== 'Key shape template') {
-	// 		  const clonedChild = child.clone();
-	// 		  frame.appendChild(clonedChild);
-	// 		}
-	// 	  });
-
-	// 	} else {
-	// 	  console.warn(`Stroke variant ${strokeVariantName} not found for ${name}`);
-	// 	}
-	//   }
   
 	  parentFrame.appendChild(frame);
 	});
 
-	let originalFrameX = originalFrameX.x
-	let originalFrameY = originalFrameY.y
-  
+
 	// Replace the original frame with the new parent frame
 	originalFrame.parent.insertChild(originalFrame.parent.children.indexOf(originalFrame), parentFrame);
 
-	parentFrame.x = originalFrameX
-	parentFrame.y = originalFrameY
-  
-	// Zoom to the new parent frame
-	figma.viewport.scrollAndZoomIntoView([parentFrame]);
-  
 	figma.notify('Icon converted to variant set successfully!');
   }
 
