@@ -3,6 +3,7 @@
 <script lang="ts">
 	export let size = 24;
 	export let color = 'currentColor';
+	export let strokeWidth = null;
 </script>
 
 <svg
@@ -13,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-previous-fill" clip-path="url(#clip0_686_85430)">
+	<g class="oi-previous-fill" clip-path="url(#clip0_689_32969)">
 		<path
 			class="oi-fill"
 			fill-rule="evenodd"
@@ -33,7 +34,7 @@
 		</g>
 	</g>
 	<defs>
-		<clipPath class="clip0_686_85430">
+		<clipPath class="clip0_689_32969">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

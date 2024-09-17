@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-layers">
+	<g class="oi-layers[stack]">
 		<path
 			class="oi-box"
 			d="M12 3L21 8L12 13L3 8L12 3Z"

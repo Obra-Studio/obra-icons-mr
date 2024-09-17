@@ -19,7 +19,7 @@ const PottedPlant = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-potted-plant">
 					<path
 						className="oi-vector"
-						d="M13.5262 10.4738C11.175 6.55407 14.31 2.63532 20.9728 3.0272C21.3647 9.69001 17.4459 12.825 13.5262 10.4738Z"
+						d="M13.5263 10.4738C11.175 6.55407 14.31 2.63532 20.9728 3.0272C21.3647 9.69001 17.4459 12.825 13.5263 10.4738Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

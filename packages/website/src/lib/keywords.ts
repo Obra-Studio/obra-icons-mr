@@ -224,6 +224,14 @@ export default {
     "assessment",
     "inspection"
   ],
+  "angle": [
+    "corner",
+    "slope",
+    "bend",
+    "tilt",
+    "inclination",
+    "oblique"
+  ],
   "animate": [
     "move",
     "motion",
@@ -510,6 +518,14 @@ export default {
     "clear",
     "cancel"
   ],
+  "balloon": [
+    "party",
+    "celebration",
+    "air",
+    "inflate",
+    "floating",
+    "festive"
+  ],
   "ban": [
     "prohibit",
     "forbid",
@@ -698,6 +714,14 @@ export default {
     "charge",
     "medium"
   ],
+  "bed": [
+    "sleep",
+    "rest",
+    "mattress",
+    "bedroom",
+    "nap",
+    "relax"
+  ],
   "bedroom": [
     "room",
     "sleeping",
@@ -705,6 +729,14 @@ export default {
     "interior",
     "home",
     "rest"
+  ],
+  "bezier-curve": [
+    "curve",
+    "line",
+    "path",
+    "spline",
+    "shape",
+    "vector"
   ],
   "bill": [
     "invoice",
@@ -872,6 +904,38 @@ export default {
     "tag",
     "pin"
   ],
+  "boolean-subtract": [
+    "minus",
+    "subtract",
+    "decrease",
+    "reduce",
+    "take away",
+    "deduct"
+  ],
+  "boolean-subtract-square": [
+    "minus",
+    "subtract",
+    "difference",
+    "square",
+    "box",
+    "remove"
+  ],
+  "boolean-union": [
+    "merge",
+    "combine",
+    "join",
+    "unite",
+    "fusion",
+    "aggregate"
+  ],
+  "boolean-union-square": [
+    "boolean",
+    "union",
+    "square",
+    "merge",
+    "combine",
+    "intersect"
+  ],
   "box": [
     "container",
     "package",
@@ -914,6 +978,22 @@ export default {
     "bracket",
     "curly brackets"
   ],
+  "brand-apple-fill": [
+    "apple logo",
+    "fruit",
+    "technology",
+    "company",
+    "iPhone",
+    "Mac"
+  ],
+  "brand-dropbox-fill": [
+    "cloud",
+    "storage",
+    "file",
+    "folder",
+    "upload",
+    "download"
+  ],
   "brand-facebook-fill": [
     "facebook",
     "social media",
@@ -922,6 +1002,22 @@ export default {
     "social network",
     "blue F"
   ],
+  "brand-github-mascot-fill": [
+    "github",
+    "octocat",
+    "mascot",
+    "logo",
+    "cat",
+    "code"
+  ],
+  "brand-google-fill": [
+    "google",
+    "search",
+    "internet",
+    "web",
+    "engine",
+    "technology"
+  ],
   "brand-instagram-fill": [
     "instagram",
     "social media",
@@ -929,6 +1025,14 @@ export default {
     "camera",
     "app",
     "logo"
+  ],
+  "brand-open-ai": [
+    "logo",
+    "symbol",
+    "emblem",
+    "mark",
+    "identity",
+    "sign"
   ],
   "brand-threads-fill": [
     "logo",
@@ -987,6 +1091,14 @@ export default {
     "wheat",
     "toast",
     "sandwich"
+  ],
+  "bridge": [
+    "overpass",
+    "crossing",
+    "viaduct",
+    "span",
+    "connection",
+    "link"
   ],
   "briefcase": [
     "bag",
@@ -1119,6 +1231,14 @@ export default {
     "caterpillar",
     "moth",
     "flying"
+  ],
+  "cable-car": [
+    "gondola",
+    "tram",
+    "ski lift",
+    "ropeway",
+    "cableway",
+    "aerial tramway"
   ],
   "cake": [
     "dessert",
@@ -1368,6 +1488,14 @@ export default {
     "transportation",
     "auto",
     "alternative car"
+  ],
+  "cards": [
+    "deck",
+    "playing cards",
+    "game",
+    "hand",
+    "poker",
+    "casino"
   ],
   "caret-down": [
     "arrow",
@@ -2372,6 +2500,23 @@ export default {
     "hazy",
     "dull"
   ],
+  "clover": [
+    "shamrock",
+    "plant",
+    "leaf",
+    "luck",
+    "green",
+    "Irish"
+  ],
+  "club": [
+    "cards",
+    "group",
+    "team",
+    "organization",
+    "association",
+    "society",
+    "community"
+  ],
   "cocktail": [
     "martini",
     "drink",
@@ -2422,6 +2567,15 @@ export default {
     "drink",
     "mug",
     "caffeine"
+  ],
+  "coffee-bean": [
+    "coffee",
+    "bean",
+    "caffeine",
+    "drink",
+    "mug",
+    "brew",
+    "beverage"
   ],
   "coffee-cup": [
     "coffee",
@@ -2795,6 +2949,64 @@ export default {
     "sparkler",
     "gemstone"
   ],
+  "diamond-cards": [
+    "diamonds",
+    "playing cards",
+    "suits",
+    "deck",
+    "gambling",
+    "casino",
+    "engagement",
+    "gem"
+  ],
+  "dice-five": [
+    "dice",
+    "game",
+    "random",
+    "chance",
+    "roll",
+    "luck"
+  ],
+  "dice-four": [
+    "four dice",
+    "four-sided dice",
+    "quad dice",
+    "four dots",
+    "four spots",
+    "four sides"
+  ],
+  "dice-one": [
+    "dice",
+    "die",
+    "one",
+    "1",
+    "single",
+    "number"
+  ],
+  "dice-six": [
+    "dice",
+    "six-sided",
+    "cube",
+    "random",
+    "gambling",
+    "chance"
+  ],
+  "dice-three": [
+    "dice",
+    "three",
+    "number",
+    "random",
+    "game",
+    "chance"
+  ],
+  "dice-two": [
+    "dice",
+    "two dice",
+    "pair of dice",
+    "double dice",
+    "dice roll",
+    "dice game"
+  ],
   "dining": [
     "restaurant",
     "food",
@@ -2892,6 +3104,14 @@ export default {
     "end",
     "dissolution",
     "parting"
+  ],
+  "dna": [
+    "genetics",
+    "biology",
+    "molecule",
+    "double helix",
+    "gene",
+    "chromosome"
   ],
   "document": [
     "file",
@@ -3163,6 +3383,22 @@ export default {
     "fashion",
     "attire"
   ],
+  "dresser": [
+    "cabinet",
+    "wardrobe",
+    "chest",
+    "closet",
+    "furniture",
+    "storage"
+  ],
+  "drone": [
+    "quadcopter",
+    "unmanned aerial vehicle",
+    "flying robot",
+    "remote-controlled aircraft",
+    "aerial drone",
+    "autonomous flying device"
+  ],
   "drop": [
     "water",
     "fall",
@@ -3189,6 +3425,14 @@ export default {
     "gym",
     "strength",
     "barbell"
+  ],
+  "ear": [
+    "hearing",
+    "auditory",
+    "sound",
+    "listening",
+    "earlobe",
+    "auricle"
   ],
   "edit": [
     "modify",
@@ -3619,6 +3863,14 @@ export default {
     "heart",
     "bookmark"
   ],
+  "film-slate": [
+    "clapperboard",
+    "movie slate",
+    "film clapper",
+    "clapboard",
+    "film slate",
+    "movie clapper"
+  ],
   "filter": [
     "sort",
     "refine",
@@ -3686,6 +3938,17 @@ export default {
     "inferno",
     "ignite",
     "combust"
+  ],
+  "fire-truck": [
+    "fire engine",
+    "firefighter",
+    "emergency vehicle",
+    "fire department",
+    "rescue truck",
+    "fire apparatus",
+    "flame",
+    "burn",
+    "blaze"
   ],
   "fish": [
     "aquatic",
@@ -3828,6 +4091,14 @@ export default {
     "zen",
     "petal",
     "flora"
+  ],
+  "flying-saucer": [
+    "UFO",
+    "alien spaceship",
+    "flying disc",
+    "extraterrestrial craft",
+    "flying object",
+    "spacecraft"
   ],
   "fog": [
     "mist",
@@ -4003,6 +4274,25 @@ export default {
     "text dimension",
     "character size"
   ],
+  "football": [
+    "soccer",
+    "ball",
+    "sports",
+    "game",
+    "field",
+    "team"
+  ],
+  "football-helmet": [
+    "helmet",
+    "football",
+    "headgear",
+    "protective gear",
+    "sports equipment",
+    "gridiron helmet",
+    "soccer",
+    "ball",
+    "sports"
+  ],
   "fork-left": [
     "branch",
     "left fork",
@@ -4079,6 +4369,14 @@ export default {
     "zoom",
     "resize"
   ],
+  "function": [
+    "operation",
+    "feature",
+    "capability",
+    "task",
+    "method",
+    "procedure"
+  ],
   "funnel-ascending": [
     "filter",
     "sort",
@@ -4111,6 +4409,14 @@ export default {
     "task timeline",
     "project timeline"
   ],
+  "garage": [
+    "carport",
+    "parking",
+    "automobile",
+    "vehicle",
+    "shed",
+    "storage"
+  ],
   "gas": [
     "fuel",
     "petrol",
@@ -4118,6 +4424,22 @@ export default {
     "energy",
     "power",
     "combustible"
+  ],
+  "gas-can": [
+    "fuel",
+    "petrol",
+    "gasoline",
+    "container",
+    "refuel",
+    "gasoline can"
+  ],
+  "gas-pump": [
+    "fuel",
+    "petrol",
+    "gasoline",
+    "fill",
+    "refuel",
+    "station"
   ],
   "gavel": [
     "legal",
@@ -4239,6 +4561,14 @@ export default {
     "drink",
     "vessel"
   ],
+  "gradient": [
+    "color",
+    "blend",
+    "fade",
+    "shade",
+    "hue",
+    "tone"
+  ],
   "grain": [
     "wheat",
     "cereal",
@@ -4271,6 +4601,22 @@ export default {
     "garden",
     "nature",
     "botanical"
+  ],
+  "guitar": [
+    "music",
+    "instrument",
+    "strings",
+    "acoustic",
+    "electric",
+    "rock"
+  ],
+  "hammer": [
+    "tool",
+    "mallet",
+    "sledgehammer",
+    "construction",
+    "carpentry",
+    "handy"
   ],
   "hand-luggage": [
     "bag",
@@ -4429,6 +4775,14 @@ export default {
     "programming",
     "development"
   ],
+  "ice-cream": [
+    "dessert",
+    "cone",
+    "sundae",
+    "frozen",
+    "treat",
+    "gelato"
+  ],
   "image": [
     "picture",
     "photo",
@@ -4497,6 +4851,14 @@ export default {
     "report",
     "analysis"
   ],
+  "invoice": [
+    "bill",
+    "receipt",
+    "statement",
+    "payment",
+    "transaction",
+    "purchase"
+  ],
   "invoices": [
     "bills",
     "payments",
@@ -4520,6 +4882,23 @@ export default {
     "angled",
     "tilted",
     "cursive"
+  ],
+  "jar": [
+    "container",
+    "bottle",
+    "vessel",
+    "canister",
+    "pot",
+    "jug"
+  ],
+  "jar-label": [
+    "container",
+    "bottle",
+    "canister",
+    "tag",
+    "sticker",
+    "label",
+    "vessel"
   ],
   "joystick": [
     "gamepad",
@@ -4889,6 +5268,14 @@ export default {
     "sorcery",
     "magician"
   ],
+  "mailbox": [
+    "letterbox",
+    "postbox",
+    "mail slot",
+    "mail drop",
+    "mailbox",
+    "postal box"
+  ],
   "map": [
     "location",
     "navigation",
@@ -4939,6 +5326,7 @@ export default {
     "box"
   ],
   "marriage-ring": [
+    "diamond",
     "wedding ring",
     "engagement ring",
     "band",
@@ -5142,6 +5530,14 @@ export default {
     "notifications",
     "mail",
     "communication"
+  ],
+  "meteor": [
+    "space rock",
+    "shooting star",
+    "celestial body",
+    "comet",
+    "asteroid",
+    "cosmic"
   ],
   "mic": [
     "microphone",
@@ -6318,6 +6714,14 @@ export default {
     "reverse",
     "previous"
   ],
+  "rewrite": [
+    "add-user",
+    "new-user",
+    "user-create",
+    "user-plus",
+    "user-account",
+    "user-profile"
+  ],
   "rice": [
     "grain",
     "food",
@@ -6930,12 +7334,22 @@ export default {
     "group"
   ],
   "spade": [
+    "cards",
     "shovel",
     "digging tool",
     "gardening tool",
     "playing card",
     "ace",
     "sharp"
+  ],
+  "spade-tool": [
+    "shovel",
+    "gardening tool",
+    "digging tool",
+    "spade",
+    "hand tool",
+    "landscaping tool",
+    "cards"
   ],
   "sparkles": [
     "ai",
@@ -6978,6 +7392,14 @@ export default {
     "velocity",
     "gauge",
     "speed indicator"
+  ],
+  "sphere": [
+    "ball",
+    "globe",
+    "circle",
+    "orb",
+    "round",
+    "sphere"
   ],
   "spinner-ball": [
     "loading",
