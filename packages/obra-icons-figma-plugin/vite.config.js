@@ -13,6 +13,7 @@ export default defineConfig(
                     'src/**/*.svelte',
                     '.plugma/**/*.svelte',
                     'node_modules/plugma/frameworks/svelte/**/*.svelte',
+                    'node_modules/obra-icons-svelte/**/*.svelte',
                 ],
             }),
         ],
@@ -23,6 +24,9 @@ export default defineConfig(
         },
         resolve: {
             preserveSymlinks: true,
+        },
+        optimizeDeps: {
+            include: ['obra-icons-svelte'],
         },
     })
 )
