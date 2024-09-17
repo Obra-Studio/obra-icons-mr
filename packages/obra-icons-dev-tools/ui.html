@@ -149,6 +149,88 @@
         gap: .5rem
     }
 
+	/* Input range
+	========================================================================== */
+
+	/* Range input */
+	:root {
+		--slider-thumb-bg: #000;
+		--slider-track-bg: #DDD;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--slider-thumb-bg: white;
+			--slider-track-bg: #666;
+		}
+	}
+	
+	input[type="range"] {
+		-webkit-appearance: none;
+		height: 4px;
+		border: none;
+		border-radius: 2px;
+		background: var(--slider-thumb-bg);
+		outline: none;
+	}
+
+	input[type="range"]:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px var(--semantic-focus-ring);
+	}
+
+	input[type="range"]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: var(--slider-thumb-bg);
+		cursor: pointer;
+		position: relative;
+		bottom: 6px;
+	}
+
+	input[type="range"]::-moz-range-thumb {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: var(--slider-thumb-bg);
+		cursor: pointer;
+	}
+
+	input[type="range"]::-ms-thumb {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: var(--slider-thumb-bg);
+		cursor: pointer;
+	}
+
+	input[type="range"]::-webkit-slider-runnable-track {
+		height: 4px;
+		border-radius: 5px;
+		background: var(--slider-track-bg);
+	}
+
+	input[type="range"]::-moz-range-track {
+		height: 8px;
+		border-radius: 5px;
+		background: var(--slider-track-bg);
+	}
+
+	input[type="range"]::-ms-track {
+		height: 8px;
+		border-radius: 5px;
+		background: var(--slider-track-bg);
+		border: none;
+		color: transparent;
+	}
+
+	input[type="range"]:focus {
+		outline: none;
+	}
+
 </style>
 
 <div id="app">
