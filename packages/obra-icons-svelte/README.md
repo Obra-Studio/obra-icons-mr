@@ -14,7 +14,7 @@ npm install obra-icons-svelte
 
 ```svelte
 <script>
-	import { IconActivity } from 'obra-icons-svelte';
+	import { IconAdd } from 'obra-icons-svelte';
 </script>
 ```
 
@@ -23,7 +23,7 @@ npm install obra-icons-svelte
 Use the `size`, `color` and `strokeWidth` props to customize the icon.
 
 ```
-<IconActivity size={24} color="red" strokeWidth={1} />
+<IconAdd size={24} color="red" strokeWidth={1} />
 ```
 
 # Targeting with CSS
@@ -32,17 +32,17 @@ Every SVG contains an `obra-icon` class on the top level SVG element, that you c
 
 Next to this, the inner elements are also targetable, with the following class names:
 
--   `oi-fill`: Fill layers
--   `oi-vector`: Vector layers
--   `oi-ellipse`: Ellipse layers
--   `oi-box`: Box layers
--   `oi-triangle`: Triangle layers
--   `oi-incomplete-triangle`: Incomplete triangle layers
--   `oi-mini-square`: Mini square layers
--   `oi-line`: Line layers
--   `oi-mini-dot`: Mini dots
--   `oi-medium-dot`: Medium dots
--   `oi-dot`: Regular dots
+- `oi-fill`: Fill layers
+- `oi-vector`: Vector layers
+- `oi-ellipse`: Ellipse layers
+- `oi-box`: Box layers
+- `oi-triangle`: Triangle layers
+- `oi-incomplete-triangle`: Incomplete triangle layers
+- `oi-mini-square`: Mini square layers
+- `oi-line`: Line layers
+- `oi-mini-dot`: Mini dots
+- `oi-medium-dot`: Medium dots
+- `oi-dot`: Regular dots
 
 ## Which icons are available?
 

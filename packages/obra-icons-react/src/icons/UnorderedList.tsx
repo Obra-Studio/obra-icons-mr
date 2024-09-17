@@ -19,7 +19,7 @@ const UnorderedList = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-unordered-list">
 					<path
 						className="oi-line"
-						d="M19 12H10"
+						d="M19.0001 12H10.0001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -28,7 +28,7 @@ const UnorderedList = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M19 17.0001H10"
+						d="M19.0001 17.0001H10.0001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -37,7 +37,7 @@ const UnorderedList = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M19 7H10"
+						d="M19.0001 7H10.0001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

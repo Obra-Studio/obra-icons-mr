@@ -67,7 +67,7 @@ const LightbulbOn = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M9.20953 17H14.7839"
+						d="M9.20952 17H14.7839"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

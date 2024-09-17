@@ -19,7 +19,7 @@ const Repeat = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-repeat">
 					<path
 						className="oi-vector"
-						d="M20 6L8 6C5.79086 6 4 7.79086 4 10L4 12"
+						d="M20 6L8.00002 6C5.79088 6 4.00002 7.79086 4.00002 10L4.00002 12"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -37,7 +37,7 @@ const Repeat = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M4 18L16 18C18.2091 18 20 16.2091 20 14L20 12"
+						d="M3.99998 18L16 18C18.2091 18 20 16.2091 20 14L20 12"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -46,7 +46,7 @@ const Repeat = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M7 21L4 18L7 15"
+						d="M6.99997 21L3.99997 18L6.99997 15"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

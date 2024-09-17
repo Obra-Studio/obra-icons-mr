@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-eye">
+	<g id="oi-eye[visibility, on]">
 		<path
 			class="oi-vector"
 			d="M3 12C7 4 17 4 21 12C17 20 7 20 3 12Z"

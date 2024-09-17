@@ -14,10 +14,10 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-joystick" clip-path="url(#clip0_674_27260)">
+	<g class="oi-joystick" clip-path="url(#clip0_686_86436)">
 		<path
 			class="oi-vector"
-			d="M12.071 10L21.1421 13.0711L12.071 16.1421L2.99998 13.0711L12.071 10Z"
+			d="M12.0711 10L21.1421 13.0711L12.0711 16.1421L3 13.0711L12.0711 10Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linejoin="round"
@@ -40,14 +40,14 @@
 		/>
 		<path
 			class="oi-line"
-			d="M12.071 12.5V8"
+			d="M12.0711 12.5V8"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_674_27260">
+		<clipPath class="clip0_686_86436">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

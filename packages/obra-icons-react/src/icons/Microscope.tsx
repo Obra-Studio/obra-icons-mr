@@ -19,12 +19,12 @@ const Microscope = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-microscope">
 					<rect
 						className="oi-box"
-						x="7.23352"
+						x="7.23349"
 						y="2.61517"
 						width="4.72741"
 						height="8.27297"
 						rx="1"
-						transform="rotate(15 7.23352 2.61517)"
+						transform="rotate(15 7.23349 2.61517)"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

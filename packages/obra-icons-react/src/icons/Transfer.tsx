@@ -19,7 +19,7 @@ const Transfer = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-transfer">
 					<path
 						className="oi-vector"
-						d="M2.39999 15L13.2 15M2.39999 15L6.59999 19.2M2.39999 15L6.59999 10.8"
+						d="M2.39996 15L13.2 15M2.39996 15L6.59996 19.2M2.39996 15L6.59996 10.8"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

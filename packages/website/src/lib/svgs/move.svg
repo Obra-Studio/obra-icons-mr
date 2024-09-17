@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-move">
+	<g class="oi-move[transform]">
 		<path
 			class="oi-vector"
 			d="M6 9L3 12L6 15"

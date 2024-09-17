@@ -18,7 +18,7 @@ const Orange = forwardRef<SVGSVGElement, StrokeIconProps>(
 			>
 				<g className="oi-orange">
 					<path
-						className="oi-vector"
+						className="oi-ellipse"
 						d="M12 21.75C16.1421 21.75 19.5 18.3921 19.5 14.25C19.5 10.1079 16.1421 6.75 12 6.75C7.85786 6.75 4.5 10.1079 4.5 14.25C4.5 18.3921 7.85786 21.75 12 21.75Z"
 						stroke={color}
 						strokeWidth={strokeWidth}

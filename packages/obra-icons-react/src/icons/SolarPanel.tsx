@@ -27,7 +27,7 @@ const SolarPanel = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M6.16595 3.91595L7.2272 4.9772"
+						d="M6.16594 3.91595L7.22719 4.9772"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

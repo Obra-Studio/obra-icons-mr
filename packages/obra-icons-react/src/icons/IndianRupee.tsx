@@ -18,7 +18,7 @@ const IndianRupee = forwardRef<SVGSVGElement, StrokeIconProps>(
 			>
 				<g className="oi-indian-rupee">
 					<path
-						className="Vector"
+						className="oi-vector"
 						d="M13.5 20L8 14.6667H10.75C13.6744 14.6667 16.25 12.3076 16.25 9.33333C16.25 6.35903 13.6744 4 10.75 4"
 						stroke={color}
 						strokeWidth={strokeWidth}

@@ -16,13 +16,13 @@
 >
 	<g class="oi-medal">
 		<path
-			id="Vector 75"
+			class="oi-vector"
 			d="M9.5 2.5H7.25L11.5 12.5H14L9.5 2.5Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 		/>
 		<path
-			id="Vector 76"
+			class="oi-vector"
 			d="M14.75 2.5H17L12.75 12.5H10.25L14.75 2.5Z"
 			stroke={color}
 			stroke-width={strokeWidth}

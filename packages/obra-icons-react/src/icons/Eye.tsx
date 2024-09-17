@@ -16,7 +16,7 @@ const Eye = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-eye">
+				<g id="oi-eye[visibility, on]">
 					<path
 						className="oi-vector"
 						d="M3 12C7 4 17 4 21 12C17 20 7 20 3 12Z"

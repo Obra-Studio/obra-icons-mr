@@ -401,6 +401,14 @@ export default {
     "blog",
     "write"
   ],
+  "aspect-ratio": [
+    "proportion",
+    "scale",
+    "ratio",
+    "dimension",
+    "size",
+    "width"
+  ],
   "atom": [
     "molecule",
     "particle",
@@ -930,6 +938,14 @@ export default {
     "style",
     "design"
   ],
+  "brand-tiktok-fill": [
+    "social media",
+    "video sharing",
+    "app",
+    "logo",
+    "music",
+    "entertainment"
+  ],
   "brand-whatsapp-fill": [
     "whatsapp",
     "messaging",
@@ -938,7 +954,7 @@ export default {
     "social media",
     "phone"
   ],
-  "brand-x": [
+  "brand-x-fill": [
     "twitter",
     "logo",
     "company",
@@ -946,6 +962,22 @@ export default {
     "identity",
     "symbol",
     "mark"
+  ],
+  "brand-youtube-fill": [
+    "video",
+    "play",
+    "media",
+    "broadcast",
+    "channel",
+    "stream"
+  ],
+  "brandy": [
+    "liquor",
+    "alcohol",
+    "drink",
+    "beverage",
+    "spirits",
+    "cognac"
   ],
   "bread": [
     "baguette",
@@ -997,6 +1029,22 @@ export default {
     "draw",
     "stroke",
     "color"
+  ],
+  "budget": [
+    "finance",
+    "money",
+    "spending",
+    "savings",
+    "economy",
+    "expenses"
+  ],
+  "budget-alt": [
+    "finance",
+    "money",
+    "economy",
+    "savings",
+    "spending",
+    "financial"
   ],
   "bug": [
     "insect",
@@ -1480,6 +1528,14 @@ export default {
     "reception",
     "wireless",
     "connection"
+  ],
+  "chair": [
+    "seat",
+    "furniture",
+    "stool",
+    "bench",
+    "armchair",
+    "lounge"
   ],
   "chart-scatter": [
     "scatterplot",
@@ -2316,6 +2372,14 @@ export default {
     "hazy",
     "dull"
   ],
+  "cocktail": [
+    "martini",
+    "drink",
+    "beverage",
+    "alcohol",
+    "mixed drink",
+    "mocktail"
+  ],
   "code": [
     "programming",
     "script",
@@ -2368,12 +2432,21 @@ export default {
     "hot"
   ],
   "coin": [
+    "coins",
     "money",
     "currency",
     "cash",
     "dollar",
     "cent",
     "coinage"
+  ],
+  "coins": [
+    "money",
+    "currency",
+    "cash",
+    "dollar",
+    "coinage",
+    "change"
   ],
   "cold-drink": [
     "beverage",
@@ -2513,6 +2586,14 @@ export default {
     "corn",
     "food"
   ],
+  "couch": [
+    "sofa",
+    "lounge",
+    "settee",
+    "furniture",
+    "seat",
+    "cushion"
+  ],
   "cpu": [
     "processor",
     "computer",
@@ -2639,6 +2720,14 @@ export default {
     "risk",
     "warning",
     "loss"
+  ],
+  "dark-mode": [
+    "night mode",
+    "dark theme",
+    "dark color scheme",
+    "low light",
+    "dimmed",
+    "black background"
   ],
   "dashboard": [
     "gauge",
@@ -4030,6 +4119,14 @@ export default {
     "power",
     "combustible"
   ],
+  "gavel": [
+    "legal",
+    "hammer",
+    "judge",
+    "law",
+    "court",
+    "justice"
+  ],
   "gdpr": [
     "privacy",
     "data protection",
@@ -4166,6 +4263,15 @@ export default {
     "gridiron",
     "checkerboard"
   ],
+  "growing-leaves": [
+    "co2",
+    "plants",
+    "greenery",
+    "foliage",
+    "garden",
+    "nature",
+    "botanical"
+  ],
   "hand-luggage": [
     "bag",
     "suitcase",
@@ -4282,6 +4388,15 @@ export default {
     "fitness",
     "beats"
   ],
+  "high-definition": [
+    "hd",
+    "HD",
+    "high-res",
+    "high-quality",
+    "crisp",
+    "sharp",
+    "clear"
+  ],
   "history": [
     "past",
     "record",
@@ -4373,6 +4488,14 @@ export default {
     "eternal",
     "unlimited",
     "never-ending"
+  ],
+  "insights": [
+    "analytics",
+    "data",
+    "statistics",
+    "metrics",
+    "report",
+    "analysis"
   ],
   "invoices": [
     "bills",
@@ -4531,6 +4654,15 @@ export default {
     "text formatting",
     "spacing",
     "margin"
+  ],
+  "legal": [
+    "gavel",
+    "law",
+    "justice",
+    "court",
+    "legislation",
+    "regulation",
+    "compliance"
   ],
   "life": [
     "living",
@@ -5153,6 +5285,7 @@ export default {
     "click"
   ],
   "move": [
+    "transform",
     "shift",
     "transfer",
     "relocate",
@@ -5350,6 +5483,17 @@ export default {
     "desk",
     "building",
     "professional"
+  ],
+  "office-chair": [
+    "chair",
+    "desk chair",
+    "work chair",
+    "seating",
+    "office seating",
+    "task chair",
+    "workplace",
+    "business",
+    "company"
   ],
   "offline": [
     "disconnected",
@@ -6916,6 +7060,14 @@ export default {
     "marker",
     "note"
   ],
+  "stool": [
+    "chair",
+    "seat",
+    "bench",
+    "perch",
+    "ottoman",
+    "step"
+  ],
   "stop": [
     "halt",
     "cease",
@@ -7365,6 +7517,7 @@ export default {
     "transport"
   ],
   "toggle-off": [
+    "mode",
     "disable",
     "switch off",
     "deactivate",
@@ -7373,6 +7526,7 @@ export default {
     "power off"
   ],
   "toggle-on": [
+    "mode",
     "switch",
     "activate",
     "enable",

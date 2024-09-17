@@ -3,7 +3,6 @@
 <script lang="ts">
 	export let size = 24;
 	export let color = 'currentColor';
-	export let strokeWidth = 2;
 </script>
 
 <svg
@@ -14,7 +13,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-brand-x">
+	<g class="oi-brand-x-fill">
 		<path
 			class="oi-fill"
 			d="M13.7142 10.6226L20.4162 3H18.8286L13.0068 9.61729L8.3604 3H3L10.0278 13.0075L3 21H4.5876L10.7316 14.0104L15.6396 21H21M5.1606 4.17142H7.5996L18.8274 19.8861H16.3878"

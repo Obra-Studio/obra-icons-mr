@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-pizza-slice" clip-path="url(#clip0_674_25645)">
+	<g class="oi-pizza-slice" clip-path="url(#clip0_686_84782)">
 		<path
 			class="oi-vector"
 			d="M8.97362 3.63478C12.0296 4.45363 14.7868 6.13152 16.9182 8.46956C19.0497 10.8076 20.4662 13.7077 20.9996 16.8262L4.69142 19.6162L8.97362 3.63478Z"
@@ -49,7 +49,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_674_25645">
+		<clipPath class="clip0_686_84782">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

@@ -43,9 +43,15 @@ importers:
 
   packages/obra-icons-figma-plugin:
     dependencies:
+      '@orama/orama':
+        specifier: '=1.2.8'
+        version: 1.2.8
       obra-icons-svelte:
         specifier: workspace:*
         version: link:../obra-icons-svelte
+      obra-icons-website:
+        specifier: workspace:*
+        version: link:../website
     devDependencies:
       '@figma/plugin-typings':
         specifier: ^1.88.0

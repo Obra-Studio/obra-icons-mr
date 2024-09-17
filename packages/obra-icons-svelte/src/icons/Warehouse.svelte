@@ -49,7 +49,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M3 8.67847V18"
+			d="M3 8.67844V18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -57,7 +57,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M21 4.82153V18"
+			d="M21 4.82156V18"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

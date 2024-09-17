@@ -87,7 +87,7 @@
 		const results = await search(searchDb, {
 			term,
 			properties: ['nameKebab', 'keywords'],
-			limit: 50,
+			limit: 2000,
 			boost: {
 				keywords: 2,
 			},

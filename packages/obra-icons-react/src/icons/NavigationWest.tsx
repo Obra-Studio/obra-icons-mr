@@ -19,7 +19,7 @@ const NavigationWest = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-navigation-west">
 					<path
 						className="oi-vector"
-						d="M4.2 11.4L19.8 17.4L16.5158 11.4L19.8 5.40003L4.2 11.4Z"
+						d="M4.20001 11.4L19.8 17.4L16.5158 11.4L19.8 5.40003L4.20001 11.4Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

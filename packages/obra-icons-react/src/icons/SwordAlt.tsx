@@ -43,7 +43,7 @@ const SwordAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M7.72874 12.2278L14.25 3.75H20.25V9.75L11.7722 16.2712"
+						d="M7.72876 12.2278L14.25 3.75H20.25V9.75L11.7722 16.2712"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

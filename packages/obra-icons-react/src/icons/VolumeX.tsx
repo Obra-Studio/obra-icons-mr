@@ -19,7 +19,7 @@ const VolumeX = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-volume-x">
 					<path
 						className="oi-vector"
-						d="M11 5L6 9H2V15H6L11 19V5Z"
+						d="M10.9999 5L5.99994 9H1.99994V15H5.99994L10.9999 19V5Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

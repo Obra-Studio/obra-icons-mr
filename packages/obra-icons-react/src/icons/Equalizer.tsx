@@ -19,7 +19,7 @@ const Equalizer = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-equalizer">
 					<path
 						className="oi-vector"
-						d="M5.00003 18.1401L6.19953 18.1056"
+						d="M5 18.1401L6.1995 18.1056"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -45,7 +45,7 @@ const Equalizer = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M5.00002 11.9714L13.2 11.9369"
+						d="M5 11.9714L13.2 11.9369"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -61,7 +61,7 @@ const Equalizer = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M5.00002 6.00012L6.19952 5.96562"
+						d="M5 6.00012L6.1995 5.96562"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -77,7 +77,7 @@ const Equalizer = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<circle
 						className="oi-ellipse"
-						cx="9.00002"
+						cx="9"
 						cy="6"
 						r="2"
 						stroke={color}

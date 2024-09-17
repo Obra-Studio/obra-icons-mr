@@ -27,7 +27,7 @@ const ShareAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M8.59003 13.51L15.42 17.49"
+						d="M8.59 13.51L15.42 17.49"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

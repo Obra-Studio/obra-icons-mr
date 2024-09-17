@@ -30,7 +30,7 @@ const Business = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M3 21H21"
+						d="M3.00002 21H21"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

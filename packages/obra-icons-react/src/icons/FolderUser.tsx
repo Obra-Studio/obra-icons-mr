@@ -19,7 +19,7 @@ const FolderUser = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-folder-user">
 					<path
 						className="oi-vector"
-						d="M3 6C3 5.44772 3.44772 5 4 5H9L11 7H20C20.5523 7 21 7.44772 21 8V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6Z"
+						d="M3.00002 6C3.00002 5.44772 3.44773 5 4.00002 5H9.00002L11 7H20C20.5523 7 21 7.44772 21 8V18C21 18.5523 20.5523 19 20 19H4.00002C3.44773 19 3.00002 18.5523 3.00002 18V6Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

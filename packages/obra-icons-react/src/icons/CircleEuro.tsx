@@ -27,7 +27,7 @@ const CircleEuro = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M16.0199 8.08473C13.7169 5.78179 7.19995 6.15404 7.19995 12.1904C7.19995 18.2268 13.8197 18.0054 16.0199 15.8052"
+						d="M16.0199 8.08473C13.717 5.78179 7.20001 6.15404 7.20001 12.1904C7.20001 18.2268 13.8198 18.0054 16.0199 15.8052"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

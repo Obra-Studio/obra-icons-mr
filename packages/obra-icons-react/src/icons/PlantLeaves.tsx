@@ -19,7 +19,7 @@ const PlantLeaves = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-plant-leaves">
 					<path
 						className="oi-vector"
-						d="M12.9881 14.0118C9.99563 9.02341 13.9856 4.03591 22.4653 4.53466C22.9688 13.0143 17.9766 17.0043 12.9881 14.0118Z"
+						d="M12.9881 14.0118C9.99561 9.02341 13.9856 4.03591 22.4653 4.53466C22.9687 13.0143 17.9765 17.0043 12.9881 14.0118Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -27,7 +27,7 @@ const PlantLeaves = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M8.29406 15.0441C10.4316 11.4816 7.58156 7.91905 1.52438 8.27436C1.16813 14.3316 4.73156 17.1816 8.29406 15.0441Z"
+						d="M8.29405 15.0441C10.4315 11.4816 7.58155 7.91905 1.52436 8.27436C1.16811 14.3316 4.73155 17.1816 8.29405 15.0441Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

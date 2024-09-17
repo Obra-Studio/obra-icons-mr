@@ -19,7 +19,7 @@ const Iso = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-iso">
 					<path
 						className="oi-vector"
-						d="M10.973 9.35975C9.12149 8.29919 6.95082 8.35952 6.46108 10.2406C6.28133 11.3839 7.48293 11.761 8.94173 12.128C11.1985 12.6958 11.3003 13.4114 11.0988 14.2671C10.8327 15.3976 8.83387 16.3703 6.28133 14.8244"
+						d="M10.973 9.35975C9.12153 8.29919 6.95087 8.35952 6.46113 10.2406C6.28137 11.3839 7.48297 11.761 8.94177 12.128C11.1985 12.6958 11.3003 13.4114 11.0989 14.2671C10.8327 15.3976 8.83392 16.3703 6.28137 14.8244"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -28,7 +28,7 @@ const Iso = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M2.46706 8.55737L2.46706 15.4427"
+						d="M2.46704 8.55737L2.46704 15.4427"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

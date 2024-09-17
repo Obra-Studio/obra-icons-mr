@@ -13,7 +13,7 @@ npm install obra-icons-react
 ## Importing an icon
 
 ```tsx
-import { IconActivity } from 'obra-icons-react';
+import { IconAdd } from 'obra-icons-react';
 ```
 
 ## Customizing an icon
@@ -21,7 +21,7 @@ import { IconActivity } from 'obra-icons-react';
 Use the `size`, `color` and `strokeWidth` props to customize the icon.
 
 ```
-<IconActivity size={24} color="red" strokeWidth={1} />
+<IconAdd size={24} color="red" strokeWidth={1} />
 ```
 
 # Targeting with CSS

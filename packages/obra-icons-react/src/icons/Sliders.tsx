@@ -19,7 +19,7 @@ const Sliders = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-sliders">
 					<path
 						className="oi-line"
-						d="M4.0001 21V14"
+						d="M4.00012 21V14"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -27,7 +27,7 @@ const Sliders = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M4.0001 10V3"
+						d="M4.00012 10V3"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -67,7 +67,7 @@ const Sliders = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M1.0001 14H7.0001"
+						d="M1.00012 14H7.00012"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

@@ -73,7 +73,7 @@ const Sunset = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M12 8L12 3"
+						d="M11.9999 8L11.9999 3"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

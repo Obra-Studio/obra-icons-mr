@@ -57,14 +57,14 @@ const ServerRack = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M11.494 8.5H17.0336"
+						d="M11.494 8.5H17.0337"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 					/>
 					<path
 						className="oi-line"
-						d="M11.494 15.5H17.0336"
+						d="M11.494 15.5H17.0337"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

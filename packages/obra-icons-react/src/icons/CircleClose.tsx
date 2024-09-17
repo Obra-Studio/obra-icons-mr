@@ -19,7 +19,7 @@ const CircleClose = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-circle-close">
 					<path
 						className="oi-line"
-						d="M15.5 8.5L8.50001 15.5"
+						d="M15.5 8.5L8.5 15.5"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -28,7 +28,7 @@ const CircleClose = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M15.5 15.5L8.50001 8.5"
+						d="M15.5 15.5L8.5 8.5"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -37,7 +37,7 @@ const CircleClose = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-ellipse"
-						d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02943 3 2.99999 7.02944 2.99999 12C2.99999 16.9706 7.02943 21 12 21Z"
+						d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

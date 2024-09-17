@@ -43,7 +43,7 @@ const Axis = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M2.41424 21.0001L11.9144 13"
+						d="M2.41426 21.0001L11.9144 13"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
