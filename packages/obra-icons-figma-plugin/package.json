@@ -26,9 +26,10 @@
   },
   "plugma": {
     "manifest": {
-      "id": "Obra Icons",
+      "id": "1417969026159731234",
       "main": "src/main.ts",
       "ui": "src/ui.ts",
+      "documentAccess": "dynamic-page",
       "name": "Obra Icons",
       "editorType": [
         "figma",
