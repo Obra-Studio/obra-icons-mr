@@ -23,6 +23,7 @@ html, body {
   --background-color: var(--figma-color-bg);
   --text-color: var(--figma-color-text);
   --semantic-divider-color: #F3F3F3;
+  --control-background: #fff;
   --semantic-focus-ring: #000;
   --icon-hover-background: #ebebeb;
   --slider-thumb-bg: #000;
@@ -80,6 +81,8 @@ body {
   background-color: var(--control-background);
   color: var(--control-text-color);
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 .control-group {
@@ -138,6 +141,11 @@ input[type="range"] {
   border-radius: 2px;
   background: var(--slider-thumb-bg); 
   outline: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--semantic-focus-ring);
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -225,6 +233,8 @@ input[type="range"]:focus {
 .stroke-button:focus-visible {
   outline: 0;
   box-shadow: 0 0 0 2px var(--semantic-focus-ring);
+  position: relative;
+  z-index: 1;
 }
 
 .stroke-button.active {
@@ -236,6 +246,53 @@ input[type="range"]:focus {
       background-color: #666; 
   }
 }
+
+/* Search holder
+   ========================================================================== */
+
+.search-holder {
+  position: relative;
+}
+
+.clear-search {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--control-text-color);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.clear-search:hover,
+.clear-search:focus {
+  opacity: 1;
+}
+
+.clear-search:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--semantic-focus-ring);
+}
+
+/* No results
+   ========================================================================== */
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 20px;
+  color: var(--control-text-color);
+ 
+}
+
+/* Utilities
+   ========================================================================== */
 
 .accessible-text {
   position: absolute;

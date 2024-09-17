@@ -20,7 +20,9 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "obra-icons-svelte": "workspace:*"
+    "obra-icons-svelte": "workspace:*",
+    "@orama/orama": "=1.2.8",
+    "obra-icons-website": "workspace:*"
   },
   "plugma": {
     "manifest": {

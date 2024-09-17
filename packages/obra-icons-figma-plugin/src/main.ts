@@ -3,7 +3,21 @@ export default function() {
   figma.showUI(__html__, { width: 300, height: 400, themeColors: true });
 
   figma.ui.onmessage = async (msg) => {
-    if (msg.type === 'paste-icon') {
+    if (msg.type === 'load-settings') {
+      const size = await figma.clientStorage.getAsync('iconSize');
+      const strokeWeight = await figma.clientStorage.getAsync('strokeWeight');
+      figma.ui.postMessage({ type: 'load-settings-result', size, strokeWeight });
+    } else if (msg.type === 'save-stroke-weight') {
+      await figma.clientStorage.setAsync('strokeWeight', msg.weight);
+    } else if (msg.type === 'save-icon-size') {
+      try {
+          await figma.clientStorage.setAsync('iconSize', msg.size);
+          console.log('Icon size saved successfully');
+      } catch (error) {
+          console.error('Failed to save icon size:', error);
+          figma.notify('Failed to save icon size', { error: true });
+      }
+    } else if (msg.type === 'paste-icon') {
       const iconName = msg.iconName;
       const svgString = msg.svgString;
       const strokeWeight = msg.strokeWeight || 2; // Default to 2 if not provided
