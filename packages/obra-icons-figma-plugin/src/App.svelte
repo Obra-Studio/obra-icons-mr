@@ -107,38 +107,39 @@
 		searchIcons();
 	}
 
-	function handleIconClick(name: string, component: any) {
-		const tempDiv = document.createElement('div');
-		new component({
-			target: tempDiv,
-			props: {
-				size: iconProperties.size.value,
-				strokeWeight: iconProperties.strokeWeight.value,
-			},
-		});
-		const svgString = tempDiv.innerHTML;
+    function handleIconClick(name: string, component: any) {
+        const tempDiv = document.createElement('div');
+        const isFillIcon = name.endsWith('Fill');
+        new component({
+            target: tempDiv,
+            props: {
+                size: iconProperties.size.value,
+                ...(isFillIcon ? {} : { strokeWidth: iconProperties.strokeWeight.value }),
+            },
+        });
+        const svgString = tempDiv.innerHTML;
 
-		const formattedName = name
-			.slice(4) // Remove 'Icon' prefix
-			.split(/(?=[A-Z])/) // Split on capital letters
-			.map((word) => word.toLowerCase()) // Convert each word to lowercase
-			.join(' ') // Join words with spaces
-			.trim(); // Remove any leading/trailing spaces
+        const formattedName = name
+            .slice(4)
+            .split(/(?=[A-Z])/)
+            .map((word) => word.toLowerCase())
+            .join(' ')
+            .trim();
 
-		parent.postMessage(
-			{
-				pluginMessage: {
-					type: 'paste-icon',
-					iconName: formattedName,
-					svgString,
-					strokeWeight: iconProperties.strokeWeight.value,
-					iconSize: iconProperties.size.value,
-				},
-				pluginId: '*',
-			},
-			'*',
-		);
-	}
+        parent.postMessage(
+            {
+                pluginMessage: {
+                    type: 'paste-icon',
+                    iconName: formattedName,
+                    svgString,
+                    strokeWeight: isFillIcon ? undefined : iconProperties.strokeWeight.value,
+                    iconSize: iconProperties.size.value,
+                },
+                pluginId: '*',
+            },
+            '*'
+        );
+    }
 
 	// Listen for messages from the plugin
 	$: window.onmessage = (event) => {
@@ -304,7 +305,7 @@
 				<svelte:component
 					this={component}
 					size={iconProperties.size.value}
-					strokeWidth={iconProperties.strokeWeight.value}
+					{...(!name.endsWith('Fill') && { strokeWidth: iconProperties.strokeWeight.value })}
 				/>
 			</button>
 		{/each}

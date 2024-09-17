@@ -23,7 +23,7 @@ export const svelte: Package = {
         <script lang="ts">
             export let size = 24
             export let color = 'currentColor'
-            ${type == 'stroke' ? 'export let strokeWidth = 2' : ''}
+            ${type == 'stroke' ? 'export let strokeWidth = 2' : 'export let strokeWidth = null'}
         </script>
 
         ${svg}
