@@ -20,6 +20,8 @@ html, body {
     --control-background: #fff;
     --semantic-focus-ring: #000;
     --icon-hover-background: #ebebeb;
+    --input-bg: #FFF;
+    --input-border: #DDD;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +32,8 @@ html, body {
         --control-background: #2a2a2a;
         --semantic-focus-ring: #fff;
         --icon-hover-background: #4a4a4a;
+        --input-bg: var(--lvl-1-bg);
+        --input-border: #444;
     }
 }
 
@@ -160,7 +164,6 @@ button.icon-item:focus {
 /* Input range
    ========================================================================== */
 
-/* Range input */
 :root {
     --slider-thumb-bg: #000;
     --slider-track-bg: #DDD;
@@ -183,10 +186,7 @@ input[type="range"] {
     outline: none;
 }
 
-input[type="range"]:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
-}
+
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -238,6 +238,7 @@ input[type="range"]::-ms-track {
 
 input[type="range"]:focus {
     outline: none;
+    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
 }
 
 /* Search holder
@@ -348,26 +349,34 @@ input[type="range"]:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 0.0625rem solid var(--figma-color-border);
+    border: 0.0625rem solid var(--input-border);
     border-radius: 0.25rem;
     pointer-events: none;
+}
+
+.color-input.color-does-not-equal-main-bg + .color-input-border {
+    border-color: transparent;
 }
 
 .color-hex-input {
     width: var(--color-hex-input-width);
     height: var(--color-input-size);
-    border: 0.0625rem solid var(--figma-color-border);
+    border: 0.0625rem solid var(--input-border);
     border-radius: 0.25rem;
-    padding: 0 0.5rem;
+    padding: .625rem 0.5rem;
     font-size: 0.6875rem;
-    background-color: var(--figma-color-bg);
-    color: var(--figma-color-text);
+    background-color: var(--input-bg);
+    color: var(--color-text);
 }
+
+
 
 .color-hex-input:focus {
     outline: none;
-    border-color: var(--figma-color-border-brand-strong);
+    border-color: transparent;
+    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
 }
+
 
 /* Radio button
    ========================================================================== */
@@ -427,4 +436,13 @@ input[type="range"]:focus {
     .radio-buttons input[type="radio"]:checked + span {
         background-color: #666;
     }
+}
+
+.warning-message {
+    color: #ff6b6b;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(255, 107, 107, 0.1);
+    border-radius: 0.25rem;
 }

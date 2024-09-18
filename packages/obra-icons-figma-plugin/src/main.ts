@@ -7,33 +7,35 @@ export default function () {
     figma.ui.onmessage = async (msg) => {
 
         if (msg.type === 'load-settings') {
-          const size = await figma.clientStorage.getAsync('iconSize')
-          const strokeWeight = await figma.clientStorage.getAsync('strokeWeight')
-          const color = await figma.clientStorage.getAsync('iconColor')
-          figma.ui.postMessage({
-              type: 'load-settings-result',
-              size,
-              strokeWeight,
-              color
-          })
-      }
+            const size = await figma.clientStorage.getAsync('iconSize')
+            const strokeWeight = await figma.clientStorage.getAsync('strokeWeight')
+            const color = await figma.clientStorage.getAsync('iconColor')
+            console.log('Loading settings:', { size, strokeWeight, color })
+            figma.ui.postMessage({
+                type: 'load-settings-result',
+                size,
+                strokeWeight,
+                color
+            })
+        }
 
       if (msg.type === 'save-icon-color') {
-          await figma.clientStorage.setAsync('iconColor', msg.color)
-          console.log(msg.color)
-      }
-
-      if (msg.type === 'load-custom-color') {
-          const color = await figma.clientStorage.getAsync('iconColor')
-          console.log(color)
-          figma.ui.postMessage({
-              type: 'load-custom-color-result',
-              color,
-          })
+          try {
+            await figma.clientStorage.setAsync('iconColor', msg.color)
+            console.log('Saved icon color:', msg.color)
+        } catch (error) {
+            console.error('Failed to save icon color:', error)
+            figma.notify('Failed to save icon color', { error: true })
+        }
       }
 
       if (msg.type === 'save-stroke-weight') {
-          await figma.clientStorage.setAsync('strokeWeight', msg.weight)
+            try {
+                await figma.clientStorage.setAsync('strokeWeight', msg.weight)
+            } catch (error) {
+                console.error('Failed to save icon weight:', error)
+                figma.notify('Failed to save icon weight', { error: true })
+            }
       }
 
       if (msg.type === 'save-icon-size') {

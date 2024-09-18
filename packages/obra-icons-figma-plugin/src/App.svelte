@@ -51,8 +51,6 @@
         },
     }
 
-    $: iconProperties.color.value = iconProperties.color.value || (isDarkMode ? '#FFFFFF' : '#000000')
-
     let iconType: 'all' | 'stroke' | 'fill' = 'all';
 
     function loadSavedSettings() {
@@ -96,23 +94,7 @@
   
     onMount(async () => {
         await initializeSearchDb()
-
-        // Load custom color from clientStorage
-        const customColor = await new Promise(resolve => {
-            parent.postMessage(
-                { pluginMessage: { type: 'load-custom-color' }, pluginId: '*' },
-                '*'
-            )
-            window.onmessage = (event) => {
-                console.log('getting event')
-                if (event.data.pluginMessage && event.data.pluginMessage.type === 'load-custom-color-result') {
-                    resolve(event.data.pluginMessage.color)
-                }
-            }
-        })
-
-        // Set initial color based on preference order
-        iconProperties.color.value = customColor || (isDarkMode ? '#FFFFFF' : '#000000')
+        loadSavedSettings()
     })
 
     async function performSearch(term: string) {
@@ -196,27 +178,28 @@
     // Listen for messages from the plugin
     $: window.onmessage = (event) => {
         if (event.data.pluginMessage) {
-            const { type, size, strokeWeight } = event.data.pluginMessage
+            const { type, size, strokeWeight, color } = event.data.pluginMessage;
             if (type === 'load-settings-result') {
                 if (size !== undefined) {
-                    iconProperties.size.value = size
+                    iconProperties.size.value = size;
                 }
                 if (strokeWeight !== undefined) {
-                    iconProperties.strokeWeight.value = strokeWeight
+                    iconProperties.strokeWeight.value = strokeWeight;
                 }
-                if (color !== undefined) {
-                    iconProperties.color.value = color
+                if (color !== undefined && color !== iconProperties.color.value) { 
+                    iconProperties.color.value = color;
                 }
             }
         }
-    }
-
-    loadSavedSettings()
+    };
 
     $: searchIcons = async () => {
         const results = await performSearch(searchTerm)
             filteredIcons = searchTerm ? results : shuffleArray(results)
     }
+
+    let previousColor = '#000000';
+    let isIconColorInvisible = false;
 
     $: {
         if (iconType) {
@@ -236,7 +219,8 @@
             )
         }
 
-        if (iconProperties.color) {
+        if (iconProperties.color.value && iconProperties.color.value !== previousColor) {
+            previousColor = iconProperties.color.value;
             parent.postMessage(
                 {
                     pluginMessage: {
@@ -246,8 +230,23 @@
                     pluginId: '*',
                 },
                 '*'
-            )
+            );
         }
+
+        // Check if the icon color might be invisible
+        isIconColorInvisible = (isDarkMode && iconProperties.color.value === '#000000') ||
+                           (!isDarkMode && iconProperties.color.value === '#ffffff');
+    }
+
+    async function setStrokeWeight(weight: number) {
+        iconProperties.strokeWeight.value = weight
+        parent.postMessage(
+            {
+                pluginMessage: { type: 'save-stroke-weight', weight },
+                pluginId: '*',
+            },
+            '*'
+        )
     }
 
     // Dragging control related
@@ -261,17 +260,6 @@
         draggingControl = control
         startX = event.clientX
         event.preventDefault()
-    }
-
-    async function setStrokeWeight(weight: number) {
-        iconProperties.strokeWeight.value = weight
-        parent.postMessage(
-            {
-                pluginMessage: { type: 'save-stroke-weight', weight },
-                pluginId: '*',
-            },
-            '*'
-        )
     }
 
     function onMouseMove(event: MouseEvent) {
@@ -354,6 +342,7 @@
                     id="iconColor"
                     type="color"
                     class="color-input"
+                    class:color-does-not-equal-main-bg={iconProperties.color.value != (isDarkMode ? '#282828' : '#ffffff')}
                 />
                 <div class="color-input-border"></div>
             </div>
@@ -364,6 +353,9 @@
                 pattern="^#[0-9A-Fa-f]{6}$"
                 class="color-hex-input"
             />
+
+            {iconProperties.color.value}
+            
         </div>
     </div>
 
@@ -406,6 +398,12 @@
         </button>
     {/if}
 </div>
+
+{#if isIconColorInvisible}
+    <div class="warning-message">
+        Warning: The current icon color may not be visible in the current color scheme. Please hover below.
+    </div>
+{/if}
 
 <div class="icon-grid">
     {#if filteredIcons.length > 0}
