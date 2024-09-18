@@ -2,11 +2,17 @@
 
 We use semantic versioning (semver).
 
+## 1.22.0
+
+September 17, 2024
+
+* Added over 50 new icons
+
 ## 1.21.0
 
 September 16, 2024
 
-* Publish React package, see our blog post
+* Publish React package, see our [blog post](blog/react-package)
 * Add functionality to copy React import from website
 * Add changelog to website
 

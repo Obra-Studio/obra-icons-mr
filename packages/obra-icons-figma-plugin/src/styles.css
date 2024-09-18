@@ -1,13 +1,5 @@
-:root {
-    font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
-    font-display: optional;
-    font-size: 68.75%; /* 11/16 */
-}
-
-body {
-    background-color: var(--figma-color-bg);
-    color: var(--figma-color-text);
-}
+/* Reset
+   ========================================================================== */
 
 *, *:before, *:after {
     box-sizing: border-box;
@@ -18,80 +10,94 @@ html, body {
     padding: 0;
 }
 
+/* Custom properties
+   ========================================================================== */
+
 :root {
-    --slider-thumb-size: 12px;
-    --background-color: var(--figma-color-bg);
-    --text-color: var(--figma-color-text);
+    --text-color: #000;
+    --lvl-1-bg: #FFF;
     --semantic-divider-color: #F3F3F3;
     --control-background: #fff;
     --semantic-focus-ring: #000;
     --icon-hover-background: #ebebeb;
-    --slider-thumb-bg: #000;
-    --slider-track-bg: #DDD;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --text-color: #FFF;
+        --lvl-1-bg: #282828;
         --semantic-divider-color: #555;
         --control-background: #2a2a2a;
-        --control-text-color: #ffffff;
         --semantic-focus-ring: #fff;
-        --icon-background: #3a3a3a;
         --icon-hover-background: #4a4a4a;
-        --slider-thumb-bg: white;
-        --slider-track-bg: #666;
     }
 }
 
+/* Base
+   ========================================================================== */
+
 body {
-    background-color: var(--background-color);
     color: var(--text-color);
+    background: var(--lvl-1-bg);
+    font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+    font-display: optional;
+    font-size: 0.6875rem;
 }
+
+/* Search holder
+   ========================================================================== */
 
 .search-holder {
     position: relative;
-    border-bottom: 1px solid var(--semantic-divider-color);
-
-    svg {
-        position: absolute;
-        top: 8px;
-        left: 6px;
-        opacity: .5;
-    }
-
-    input {
-        border: none;
-        background: none;
-        font-size: 11px;
-        border-radius: 0;
-        padding: 10px 8px 8px 24px;
-        color: var(--control-text-color);
-        width: 100%;
-
-        &:focus-visible {
-            outline: 0;
-            box-shadow: 0 0 0 2px var(--semantic-focus-ring);
-        }
-    }
+    border-bottom: 0.0625rem solid var(--semantic-divider-color);
 }
+
+.search-holder svg {
+    position: absolute;
+    top: 0.625rem;
+    left: 0.375rem;
+    opacity: .5;
+    color: var(--control-text-color);
+}
+
+.search-holder input {
+    border: none;
+    background: none;
+    border-radius: 0;
+    font-size: 0.6875rem;
+    margin: 0.125rem;
+    padding: 0.625rem 0.5rem 0.5rem 1.5rem;
+    color: var(--control-text-color);
+    width: calc(100% - 0.25rem);
+}
+
+.search-holder input:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
+}
+
+/* Controls
+   ========================================================================== */
 
 .controls {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 4px;
-    border-bottom: 1px solid var(--semantic-divider-color);
-    padding: 4px 8px;
-    background-color: var(--control-background);
+    gap: 0.25rem;
+    border-bottom: 0.0625rem solid var(--semantic-divider-color);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--lvl-1-bg);
     color: var(--control-text-color);
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 
 .control-group {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .control-group label {
@@ -100,27 +106,42 @@ body {
     color: var(--control-text-color);
 }
 
+.control-group .legend {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.control-group .fieldset {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .control-group input {
     flex-grow: 0;
 }
 
+/* Icon grid
+   ========================================================================== */
+
 .icon-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    gap: 8px;
-    padding: 4px;
+    grid-template-columns: repeat(auto-fill, minmax(3.75rem, 1fr));
+    gap: 0.5rem;
+    padding: 0.25rem;
 }
 
 button.icon-item {
-    font-size: 10px;
+    font-size: 0.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     appearance: none;
     border: none;
-    padding: 12px 16px;
-    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
     background: none;
     color: var(--control-text-color);
 }
@@ -133,22 +154,38 @@ button.icon-item:focus {
 
 .icon-item:focus-visible {
     outline: 0;
-    box-shadow: 0 0 0 2px var(--semantic-focus-ring);
+    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
+}
+
+/* Input range
+   ========================================================================== */
+
+/* Range input */
+:root {
+    --slider-thumb-bg: #000;
+    --slider-track-bg: #DDD;
+    --slider-thumb-size: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --slider-thumb-bg: white;
+        --slider-track-bg: #666;
+    }
 }
 
 input[type="range"] {
     -webkit-appearance: none;
-    height: 4px;
-    max-width: 80px;
-    border: none;;
-    border-radius: 2px;
+    height: 0.25rem;
+    border: none;
+    border-radius: 0.125rem;
     background: var(--slider-thumb-bg);
     outline: none;
 }
 
 input[type="range"]:focus {
     outline: none;
-    box-shadow: 0 0 0 2px var(--semantic-focus-ring);
+    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -160,7 +197,7 @@ input[type="range"]::-webkit-slider-thumb {
     background: var(--slider-thumb-bg);
     cursor: pointer;
     position: relative;
-    bottom: 4px;
+    bottom: 0.25rem;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -180,20 +217,20 @@ input[type="range"]::-ms-thumb {
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-    height: 4px;
-    border-radius: 5px;
+    height: 0.25rem;
+    border-radius: 0.3125rem;
     background: var(--slider-track-bg);
 }
 
 input[type="range"]::-moz-range-track {
-    height: 8px;
-    border-radius: 5px;
+    height: 0.5rem;
+    border-radius: 0.3125rem;
     background: var(--slider-track-bg);
 }
 
 input[type="range"]::-ms-track {
-    height: 8px;
-    border-radius: 5px;
+    height: 0.5rem;
+    border-radius: 0.3125rem;
     background: var(--slider-track-bg);
     border: none;
     color: transparent;
@@ -201,53 +238,6 @@ input[type="range"]::-ms-track {
 
 input[type="range"]:focus {
     outline: none;
-}
-
-.stroke-weight-buttons {
-    display: flex;
-    gap: 1px;
-}
-
-.stroke-button {
-    background: #f0f0f0;
-    border: none;
-    padding: 4px 12px;
-    font-size: 11px;
-    transition: background 0.3s, border-color 0.3s; /* Smooth transition */
-}
-
-@media (prefers-color-scheme: dark) {
-    .stroke-button {
-        background: #444;
-        color: var(--control-text-color);
-    }
-}
-
-.stroke-button:first-child {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-
-.stroke-button:last-child {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-.stroke-button:focus-visible {
-    outline: 0;
-    box-shadow: 0 0 0 2px var(--semantic-focus-ring);
-    position: relative;
-    z-index: 1;
-}
-
-.stroke-button.active {
-    background-color: #d0d0d0; /* Change this to your desired active color */
-}
-
-@media (prefers-color-scheme: dark) {
-    .stroke-button.active {
-        background-color: #666;
-    }
 }
 
 /* Search holder
@@ -259,7 +249,7 @@ input[type="range"]:focus {
 
 .clear-search {
     position: absolute;
-    right: 30px;
+    right: 1.875rem;
     top: 0;
     background: none;
     border: none;
@@ -280,32 +270,161 @@ input[type="range"]:focus {
 
 .clear-search:focus-visible {
     outline: 0;
-    box-shadow: 0 0 0 2px var(--semantic-focus-ring);
+    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
 }
 
-/* No results
+/* No results state
    ========================================================================== */
 
 .no-results {
     grid-column: 1 / -1;
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
     color: var(--control-text-color);
-
 }
+
 
 /* Utilities
    ========================================================================== */
 
 .accessible-text {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    margin: -0.0625rem;
     padding: 0;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
     white-space: nowrap;
     color: transparent;
+}
+
+
+/* Color input
+   ========================================================================== */
+
+:root {
+    --color-input-size: 1rem;
+}
+
+.color-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.color-input-wrapper {
+    position: relative;
+    width: var(--color-input-size);
+    height: var(--color-input-size);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.color-input {
+    position: absolute;
+    top: -0.125rem;
+    left: -0.125rem;
+    width: calc(var(--color-input-size) + 0.25rem);
+    height: calc(var(--color-input-size) + 0.25rem);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color-input::-webkit-color-swatch {
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.color-input-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0.0625rem solid var(--figma-color-border);
+    border-radius: 0.25rem;
+    pointer-events: none;
+}
+
+.color-hex-input {
+    width: var(--color-hex-input-width);
+    height: var(--color-input-size);
+    border: 0.0625rem solid var(--figma-color-border);
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    font-size: 0.6875rem;
+    background-color: var(--figma-color-bg);
+    color: var(--figma-color-text);
+}
+
+.color-hex-input:focus {
+    outline: none;
+    border-color: var(--figma-color-border-brand-strong);
+}
+
+/* Radio button
+   ========================================================================== */
+
+   .radio-buttons {
+    display: flex;
+    gap: 0.0625rem;
+}
+
+.radio-buttons label {
+    position: relative;
+}
+
+.radio-buttons input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-buttons span {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.6875rem;
+    transition: background 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.radio-buttons label:first-child span {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.radio-buttons label:last-child span {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.radio-buttons input[type="radio"]:checked + span {
+    background-color: #d0d0d0;
+}
+
+.radio-buttons input[type="radio"]:focus-visible + span {
+    outline: 0;
+    box-shadow: 0 0 0 0.125rem var(--semantic-focus-ring);
+    position: relative;
+    z-index: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .radio-buttons span {
+        background: #444;
+        color: var(--control-text-color);
+    }
+
+    .radio-buttons input[type="radio"]:checked + span {
+        background-color: #666;
+    }
 }

@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "plugma dev",
+    "dev": "plugma dev -p 3000",
     "build": "plugma build"
   },
   "devDependencies": {

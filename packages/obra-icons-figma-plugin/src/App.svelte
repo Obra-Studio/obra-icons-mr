@@ -1,130 +1,180 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+    import { onMount } from 'svelte'
 
-	import * as Icons from 'obra-icons-svelte';
+    import { iconNamePascal, shuffleArray } from './utilities'
 
-	import { create, insert, search } from '@orama/orama';
+    import * as Icons from 'obra-icons-svelte'
 
-	import iconSearchData from 'obra-icons-website/src/lib/keywords';
+    import { create, insert, search } from '@orama/orama'
 
-	let searchDb: any;
-	let filteredIcons: { name: string; component: any }[] = [];
+    import iconSearchData from 'obra-icons-website/src/lib/keywords'
 
-	// Icons used in the UI
-	import {
-		IconSearch,
-		IconStrokeWidth,
-		IconCircleClose,
-	} from 'obra-icons-svelte';
+    let searchDb: any
+    let filteredIcons: { name: string; component: any }[] = []
 
-	let searchTerm = '';
+    // Icons used in the UI
+    import {
+        IconSearch,
+        IconStrokeWidth,
+        IconCircleClose,
+    } from 'obra-icons-svelte'
 
-	// Defaults
-	let iconProperties = {
-		size: {
-			value: 24,
-			min: 16,
-			max: 64,
-			step: 4,
-		},
-		strokeWeight: {
-			value: 1.5,
-			min: 1,
-			max: 2,
-			step: 0.5,
-		},
-	};
+    let searchTerm = ''
 
-	function loadSavedSettings() {
-		parent.postMessage(
-			{
-				pluginMessage: { type: 'load-settings' },
-				pluginId: '*',
-			},
-			'*',
-		);
-	}
+    let isDarkMode: boolean
 
-	function iconNamePascal(name: string) {
-		const pascal = name
-			.split('-')
-			.map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
-			.join('');
+    $: {
+        if (typeof window !== 'undefined') {
+            isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                isDarkMode = e.matches
+            })
+        }
+    }
 
-		return `Icon${pascal}`;
-	}
+    // Defaults
+    let iconProperties = {
+        size: {
+            value: 24,
+            min: 16,
+            max: 64,
+            step: 4,
+        },
+        strokeWeight: {
+            value: 1.5,
+            min: 1,
+            max: 2,
+            step: 0.5,
+        },
+        color: {
+            value: '#000000',
+        },
+    }
 
-	const iconList = Object.entries(Icons)
-		.filter(([name]) => name.startsWith('Icon'))
-		.map(([name, component]) => ({ name, component }));
+    $: iconProperties.color.value = iconProperties.color.value || (isDarkMode ? '#FFFFFF' : '#000000')
 
-	onMount(async () => {
-		searchDb = await create({
-			schema: {
-				nameKebab: 'string',
-				namePascal: 'string',
-				keywords: 'string[]',
-			},
-		});
+    let iconType: 'all' | 'stroke' | 'fill' = 'all';
 
-		const entries = Object.entries(iconSearchData);
+    function loadSavedSettings() {
+        parent.postMessage(
+            {
+                pluginMessage: { type: 'load-settings' },
+                pluginId: '*',
+            },
+            '*'
+        )
+    }
 
-		for (const [nameKebab, keywords] of entries) {
-			await insert(searchDb, {
-				namePascal: iconNamePascal(nameKebab),
-				nameKebab,
-				keywords,
-			});
-		}
+    const iconList = Object.entries(Icons)
+        .filter(([name]) => name.startsWith('Icon'))
+        .map(([name, component]) => ({ name, component }))
 
-		// Initial search to populate filteredIcons
-		filteredIcons = await performSearch('');
-	});
 
-	async function performSearch(term: string) {
-		if (!searchDb) return [];
+    async function initializeSearchDb() {
+        searchDb = await create({
+            schema: {
+                nameKebab: 'string',
+                namePascal: 'string',
+                keywords: 'string[]',
+            },
+        })
 
-		const results = await search(searchDb, {
-			term,
-			properties: ['nameKebab', 'keywords'],
-			limit: 2000,
-			boost: {
-				keywords: 2,
-			},
-		});
+        const entries = Object.entries(iconSearchData)
 
-		return results.hits.map((hit) => ({
-			name: hit.document.namePascal,
-			component: Icons[hit.document.namePascal],
-		}));
-	}
+        for (const [nameKebab, keywords] of entries) {
+            await insert(searchDb, {
+                namePascal: iconNamePascal(nameKebab),
+                nameKebab,
+                keywords,
+            })
+        }
 
-	$: searchIcons = async () => {
-		filteredIcons = await performSearch(searchTerm);
-	};
+        // Initial search to populate filteredIcons with shuffled results
+        filteredIcons = shuffleArray(await performSearch(''))
+    }
 
-	$: {
-		searchIcons();
-	}
+  
+    onMount(async () => {
+        await initializeSearchDb()
+
+        // Load custom color from clientStorage
+        const customColor = await new Promise(resolve => {
+            parent.postMessage(
+                { pluginMessage: { type: 'load-custom-color' }, pluginId: '*' },
+                '*'
+            )
+            window.onmessage = (event) => {
+                console.log('getting event')
+                if (event.data.pluginMessage && event.data.pluginMessage.type === 'load-custom-color-result') {
+                    resolve(event.data.pluginMessage.color)
+                }
+            }
+        })
+
+        // Set initial color based on preference order
+        iconProperties.color.value = customColor || (isDarkMode ? '#FFFFFF' : '#000000')
+    })
+
+    async function performSearch(term: string) {
+        if (!searchDb) return iconList;  // Return all icons if searchDb is not ready
+
+        const results = await search(searchDb, {
+            term,
+            properties: ['nameKebab', 'keywords'],
+            limit: 2000,
+            boost: {
+                keywords: 2,
+            },
+        });
+
+        return results.hits
+            .map((hit) => ({
+                name: hit.document.namePascal,
+                component: Icons[hit.document.namePascal],
+            }))
+            .filter((icon) => {
+                const isFilledIcon = icon.name.endsWith('Fill');
+                switch (iconType) {
+                    case 'stroke':
+                        return !isFilledIcon;
+                    case 'fill':
+                        return isFilledIcon;
+                    default:
+                        return true;
+                }
+            });
+    }
+
+    $: searchIcons = async () => {
+        const results = await performSearch(searchTerm)
+        filteredIcons = searchTerm ? results : shuffleArray(results)
+    }
+
+    $: {
+        searchIcons()
+    }
 
     function handleIconClick(name: string, component: any) {
-        const tempDiv = document.createElement('div');
-        const isFillIcon = name.endsWith('Fill');
+        const tempDiv = document.createElement('div')
+        const isFillIcon = name.endsWith('Fill')
         new component({
             target: tempDiv,
             props: {
                 size: iconProperties.size.value,
-                ...(isFillIcon ? {} : { strokeWidth: iconProperties.strokeWeight.value }),
+                color: iconProperties.color.value,
+                ...(isFillIcon
+                    ? {}
+                    : { strokeWidth: iconProperties.strokeWeight.value }),
             },
-        });
-        const svgString = tempDiv.innerHTML;
+        })
+        const svgString = tempDiv.innerHTML
 
         const formattedName = name
             .slice(4)
             .split(/(?=[A-Z])/)
             .map((word) => word.toLowerCase())
             .join(' ')
-            .trim();
+            .trim()
 
         parent.postMessage(
             {
@@ -132,186 +182,257 @@
                     type: 'paste-icon',
                     iconName: formattedName,
                     svgString,
-                    strokeWeight: isFillIcon ? undefined : iconProperties.strokeWeight.value,
+                    strokeWeight: isFillIcon
+                        ? undefined
+                        : iconProperties.strokeWeight.value,
                     iconSize: iconProperties.size.value,
+                    iconColor: iconProperties.color.value,
                 },
                 pluginId: '*',
             },
             '*'
-        );
+        )
+    }
+    // Listen for messages from the plugin
+    $: window.onmessage = (event) => {
+        if (event.data.pluginMessage) {
+            const { type, size, strokeWeight } = event.data.pluginMessage
+            if (type === 'load-settings-result') {
+                if (size !== undefined) {
+                    iconProperties.size.value = size
+                }
+                if (strokeWeight !== undefined) {
+                    iconProperties.strokeWeight.value = strokeWeight
+                }
+                if (color !== undefined) {
+                    iconProperties.color.value = color
+                }
+            }
+        }
     }
 
-	// Listen for messages from the plugin
-	$: window.onmessage = (event) => {
-		if (event.data.pluginMessage) {
-			const { type, size, strokeWeight } = event.data.pluginMessage;
-			if (type === 'load-settings-result') {
-				if (size !== undefined) {
-					iconProperties.size.value = size;
-				}
-				if (strokeWeight !== undefined) {
-					iconProperties.strokeWeight.value = strokeWeight;
-				}
-			}
-		}
-	};
+    loadSavedSettings()
 
-	loadSavedSettings();
+    $: searchIcons = async () => {
+        const results = await performSearch(searchTerm)
+            filteredIcons = searchTerm ? results : shuffleArray(results)
+    }
 
-	$: filteredIcons = iconList.filter((icon) =>
-		icon.name.toLowerCase().includes(searchTerm.toLowerCase()),
-	);
+    $: {
+        if (iconType) {
+            searchIcons()
+        }
 
-	$: {
-		if (iconProperties.size) {
-			parent.postMessage(
-				{
-					pluginMessage: {
-						type: 'save-icon-size',
-						size: iconProperties.size.value,
-					},
-					pluginId: '*',
-				},
-				'*',
-			);
-		}
-	}
+        if (iconProperties.size) {
+            parent.postMessage(
+                {
+                    pluginMessage: {
+                        type: 'save-icon-size',
+                        size: iconProperties.size.value,
+                    },
+                    pluginId: '*',
+                },
+                '*'
+            )
+        }
 
-	// Dragging control related
+        if (iconProperties.color) {
+            parent.postMessage(
+                {
+                    pluginMessage: {
+                        type: 'save-icon-color',
+                        color: iconProperties.color.value,
+                    },
+                    pluginId: '*',
+                },
+                '*'
+            )
+        }
+    }
 
-	let draggingControl: 'size' | 'stroke' | null = null;
-	let isDragging = false;
-	let startX = 0;
+    // Dragging control related
 
-	function onMouseDown(event: MouseEvent, control: 'size' | 'stroke') {
-		isDragging = true;
-		draggingControl = control;
-		startX = event.clientX;
-		event.preventDefault();
-	}
+    let draggingControl: 'size' | 'stroke' | null = null
+    let isDragging = false
+    let startX = 0
 
-	async function setStrokeWeight(weight: number) {
-		iconProperties.strokeWeight.value = weight;
-		parent.postMessage(
-			{
-				pluginMessage: { type: 'save-stroke-weight', weight },
-				pluginId: '*',
-			},
-			'*',
-		);
-	}
+    function onMouseDown(event: MouseEvent, control: 'size' | 'stroke') {
+        isDragging = true
+        draggingControl = control
+        startX = event.clientX
+        event.preventDefault()
+    }
 
-	function onMouseMove(event: MouseEvent) {
-		if (isDragging) {
-			const deltaX = event.clientX - startX;
-			if (draggingControl === 'size') {
-				iconProperties.size.value += Math.round(deltaX);
-				iconProperties.size.value =
-					Math.round(
-						iconProperties.size.value / iconProperties.size.step,
-					) * iconProperties.size.step; // Round to nearest step
-				iconProperties.size.value = Math.min(
-					Math.max(
-						iconProperties.size.value,
-						iconProperties.size.min,
-					),
-					iconProperties.size.max,
-				);
-			}
-			startX = event.clientX;
-		}
-	}
+    async function setStrokeWeight(weight: number) {
+        iconProperties.strokeWeight.value = weight
+        parent.postMessage(
+            {
+                pluginMessage: { type: 'save-stroke-weight', weight },
+                pluginId: '*',
+            },
+            '*'
+        )
+    }
 
-	function onMouseUp() {
-		isDragging = false;
-		draggingControl = null;
-	}
+    function onMouseMove(event: MouseEvent) {
+        if (isDragging) {
+            const deltaX = event.clientX - startX
+            if (draggingControl === 'size') {
+                iconProperties.size.value += Math.round(deltaX)
+                iconProperties.size.value =
+                    Math.round(
+                        iconProperties.size.value / iconProperties.size.step
+                    ) * iconProperties.size.step // Round to nearest step
+                iconProperties.size.value = Math.min(
+                    Math.max(
+                        iconProperties.size.value,
+                        iconProperties.size.min
+                    ),
+                    iconProperties.size.max
+                )
+            }
+            startX = event.clientX
+        }
+    }
+
+    function onMouseUp() {
+        isDragging = false
+        draggingControl = null
+    }
 </script>
 
 <div class="controls">
-	<div class="control-group">
-		<label for="iconSize">Size</label>
-		<input
-			bind:value={iconProperties.size.value}
-			id="iconSize"
-			max={iconProperties.size.max}
-			min={iconProperties.size.min}
-			step={iconProperties.size.step}
-			type="range"
-		/>
-		<span
-			on:mousedown={(event) => onMouseDown(event, 'size')}
-			on:mousemove={onMouseMove}
-			on:mouseup={onMouseUp}
-			style="cursor: ew-resize;"
-		>
+    <div class="control-group">
+        <label for="iconSize">Size</label>
+        <input
+            bind:value={iconProperties.size.value}
+            id="iconSize"
+            max={iconProperties.size.max}
+            min={iconProperties.size.min}
+            step={iconProperties.size.step}
+            type="range"
+        />
+        <span
+            on:mousedown={(event) => onMouseDown(event, 'size')}
+            on:mousemove={onMouseMove}
+            on:mouseup={onMouseUp}
+            style="cursor: ew-resize;"
+        >
             {iconProperties.size.value}px
         </span>
-	</div>
+    </div>
 
-	<div class="control-group">
-		<label>
-			<IconStrokeWidth size={16} />
-			<span class="accessible-text">Stroke weight</span>
-		</label>
-		<div class="stroke-weight-buttons">
-			<button
-				class="stroke-button {iconProperties.strokeWeight.value === 1
-                    ? 'active'
-                    : ''}"
-				on:click={() => setStrokeWeight(1)}
-			>1
-			</button>
-			<button
-				class="stroke-button {iconProperties.strokeWeight.value === 1.5
-                    ? 'active'
-                    : ''}"
-				on:click={() => setStrokeWeight(1.5)}
-			>1.5
-			</button>
-			<button
-				class="stroke-button {iconProperties.strokeWeight.value === 2
-                    ? 'active'
-                    : ''}"
-				on:click={() => setStrokeWeight(2)}
-			>2
-			</button>
-		</div>
-	</div>
+    <div class="control-group">
+        <!-- We would use fieldset, but it can't be flexed -->
+        <div aria-describedby="iconType" class="fieldset" role="group">
+            <div class="legend" id="iconType">
+                Icon type
+            </div>
+            <div class="radio-buttons">
+                <label>
+                    <input type="radio" name="iconType" value="all" bind:group={iconType}>
+                    <span>All</span>
+                </label>
+                <label>
+                    <input type="radio" name="iconType" value="stroke" bind:group={iconType}>
+                    <span>Stroke</span>
+                </label>
+                <label>
+                    <input type="radio" name="iconType" value="fill" bind:group={iconType}>
+                    <span>Fill</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label for="iconColor">Color</label>
+        <div class="color-control">
+            <div class="color-input-wrapper">
+                <input
+                    bind:value={iconProperties.color.value}
+                    id="iconColor"
+                    type="color"
+                    class="color-input"
+                />
+                <div class="color-input-border"></div>
+            </div>
+            <input
+                bind:value={iconProperties.color.value}
+                type="text"
+                placeholder="#000000"
+                pattern="^#[0-9A-Fa-f]{6}$"
+                class="color-hex-input"
+            />
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div aria-describedby="iconStrokeWeight" class="fieldset" role="group">
+            <div class="legend" id="iconStrokeWeight">
+                <IconStrokeWidth size={16} />
+                <span>Stroke weight</span>
+            </div>
+            <div class="radio-buttons">
+                <label>
+                    <input type="radio" name="strokeWeight" value={1} bind:group={iconProperties.strokeWeight.value} on:change={() => setStrokeWeight(1)}>
+                    <span>1</span>
+                </label>
+                <label>
+                    <input type="radio" name="strokeWeight" value={1.5} bind:group={iconProperties.strokeWeight.value} on:change={() => setStrokeWeight(1.5)}>
+                    <span>1.5</span>
+                </label>
+                <label>
+                    <input type="radio" name="strokeWeight" value={2} bind:group={iconProperties.strokeWeight.value} on:change={() => setStrokeWeight(2)}>
+                    <span>2</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <div class="search-holder">
-	<IconSearch size={16} />
-	<input
-		bind:value={searchTerm}
-		placeholder="Enter your search term&hellip;"
-		type="text"
-	/>
-	{#if searchTerm}
-		<button class="clear-search" on:click={() => (searchTerm = '')}>
-			<IconCircleClose size={16} />
-			<span class="accessible-text">Clear search</span>
-		</button>
-	{/if}
+    <IconSearch size={16} />
+    <input
+        bind:value={searchTerm}
+        placeholder="Enter your search term&hellip;"
+        type="text"
+    />
+    {#if searchTerm}
+        <button class="clear-search" on:click={() => (searchTerm = '')}>
+            <IconCircleClose size={16} />
+            <span class="accessible-text">Clear search</span>
+        </button>
+    {/if}
 </div>
 
 <div class="icon-grid">
-	{#if filteredIcons.length > 0}
-		{#each filteredIcons as { name, component }}
-			<button
-				class="icon-item"
-				on:click={() => handleIconClick(name, component)}
-			>
-				<svelte:component
-					this={component}
-					size={iconProperties.size.value}
-					{...(!name.endsWith('Fill') && { strokeWidth: iconProperties.strokeWeight.value })}
-				/>
-			</button>
-		{/each}
-	{:else}
-		<p class="no-results">No icons found matching "{searchTerm}"</p>
-	{/if}
+    {#if filteredIcons.length > 0}
+        {#each filteredIcons as { name, component }}
+            <button
+                class="icon-item"
+                on:click={() => handleIconClick(name, component)}
+            >
+                {#if !name.endsWith('Fill')}
+                    <svelte:component
+                        this={component}
+                        size={iconProperties.size.value}
+                        color={iconProperties.color.value}
+                        strokeWidth={iconProperties.strokeWeight.value}
+                    />
+                {:else}
+                    <svelte:component
+                        this={component}
+                        size={iconProperties.size.value}
+                        color={iconProperties.color.value}
+                    />
+                {/if}
+            </button>
+        {/each}
+    {:else}
+        <p class="no-results">No icons found matching "{searchTerm}"</p>
+    {/if}
 </div>
 
 <svelte:window on:mousemove={onMouseMove} on:mouseup={onMouseUp} />
