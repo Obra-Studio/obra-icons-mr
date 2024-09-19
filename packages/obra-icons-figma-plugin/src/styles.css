@@ -111,15 +111,15 @@ body {
 }
 
 .control-group .legend {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .control-group .fieldset {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .control-group input {
@@ -185,8 +185,6 @@ input[type="range"] {
     background: var(--slider-thumb-bg);
     outline: none;
 }
-
-
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -370,7 +368,6 @@ input[type="range"]:focus {
 }
 
 
-
 .color-hex-input:focus {
     outline: none;
     border-color: transparent;
@@ -381,7 +378,7 @@ input[type="range"]:focus {
 /* Radio button
    ========================================================================== */
 
-   .radio-buttons {
+.radio-buttons {
     display: flex;
     gap: 0.0625rem;
 }
