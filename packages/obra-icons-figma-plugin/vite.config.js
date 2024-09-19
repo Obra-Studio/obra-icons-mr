@@ -17,11 +17,6 @@ export default defineConfig(
                 ],
             }),
         ],
-        build: {
-            rollupOptions: {
-                external: ['obra-icons-website/src/lib/keywords'],
-            },
-        },
         resolve: {
             preserveSymlinks: true,
         },
