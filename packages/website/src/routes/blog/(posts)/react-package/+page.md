@@ -4,7 +4,7 @@
     export const metadata: BlogFrontmatter = {
         title: 'New: React package',
         date: '2024-09-16',
-        tags: 'package'
+        tags: ['package']
     };
 </script>
 

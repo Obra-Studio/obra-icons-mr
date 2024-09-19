@@ -4,8 +4,8 @@
     export const metadata: BlogFrontmatter = {
         title: 'Obra Icons tutorial',
         date: '2024-08-22',
-        tags: 'tutorial'
-    }
+        tags: ['tutorial']
+    };
 </script>
 
 <div class="video-container-wrapper">

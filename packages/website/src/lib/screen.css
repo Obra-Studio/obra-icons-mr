@@ -1048,11 +1048,66 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
 
 
 .tag {
-    background-color: #666;
-    color: #FFF;
+    background-color: #EEE;
+    color: #333;
     font-size: 0.8rem;
     padding: 0.25rem 0.5rem;
     border-radius: 15px;
 }
 
+.blog-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.rss {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.blog-post {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.blog-post header {
+    margin: 0 0 1.5rem;
+}
+
+.blog-post .meta {
+    display: flex;
+    gap: 1rem;
+}
+
+.blog-post .tag-list {
+    display: flex;
+    gap: .25rem;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.blog-post h2 {
+    margin-bottom: 0.5rem;
+}
+
+.blog-post h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-post h2 a:hover {
+    text-decoration: underline;
+}
+
+.blog-post .meta .date {
+    color: #999;
+}

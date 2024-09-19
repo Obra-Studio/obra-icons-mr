@@ -29,16 +29,24 @@
 		{#each data.posts as post}
 			<li>
 				<article class="blog-post">
-					<header style="margin: 0 0 2rem;">
+					<header>
 						<h2>
 							<a href="/blog/{post.slug}">{post.title}</a>
 						</h2>
-						<p class="date">{formatDate(post.date)}</p>
-						{#if post.tags}
-							<p>
-								<span class="tag">{post.tags}</span>
-							</p>
-						{/if}
+						<ul class="meta">
+							<li class="date">{formatDate(post.date)}</li>
+							{#if post.tags}
+								<li>
+									<ul class="tag-list">
+										{#each post.tags as tag}
+											<li>
+												<span class="tag">{tag}</span>
+											</li>
+										{/each}
+									</ul>
+								</li>
+							{/if}
+						</ul>
 					</header>
 					<div class="content">
 						{@html post.content}
@@ -48,50 +56,3 @@
 		{/each}
 	</ul>
 </div>
-
-<style>
-	.blog-header {
-		margin-bottom: 2rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.rss {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		text-decoration: none;
-		color: #000;
-	}
-
-	.blog-post {
-		margin-bottom: 4rem;
-		padding-bottom: 2rem;
-		border-bottom: 1px solid #eee;
-		max-width: 700px;
-		margin: 0 auto;
-	}
-
-	.blog-post:last-child {
-		border-bottom: none;
-	}
-
-	h2 {
-		margin-bottom: 0.5rem;
-	}
-
-	h2 a {
-		text-decoration: none;
-		color: inherit;
-	}
-
-	h2 a:hover {
-		text-decoration: underline;
-	}
-
-	.date {
-		color: #999;
-		margin-bottom: 1rem;
-	}
-</style>

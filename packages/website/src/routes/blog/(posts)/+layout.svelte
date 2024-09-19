@@ -14,26 +14,36 @@
 	<title>{data.title} - Blog - Obra Icons</title>
 </svelte:head>
 
-<article class="container">
-	<header>
-		<p class="back-link">
-			<a href="/blog">&larr; Back to overview</a>
-		</p>
+<div class="container">
+	<p class="back-link">
+		<a href="/blog">&larr; Back to overview</a>
+	</p>
 
-		<h1>{data.title}</h1>
-		<p>{formatDate(data.date)}</p>
-
-		{#if data.tags}
-			<p>
-				<span class="tag">{data.tags}</span>
-			</p>
-		{/if}
-	</header>
-
-	<div class="content">
-		<slot />
-	</div>
-</article>
+	<article class="blog-post">
+		<header>
+			<h2>
+				<a href="/blog/{data.slug}">{data.title}</a>
+			</h2>
+			<ul class="meta">
+				<li class="date">{formatDate(data.date)}</li>
+				{#if data.tags}
+					<li>
+						<ul class="tag-list">
+							{#each data.tags as tag}
+								<li>
+									<span class="tag">{tag}</span>
+								</li>
+							{/each}
+						</ul>
+					</li>
+				{/if}
+			</ul>
+		</header>
+		<div class="content">
+			{@html data.content}
+		</div>
+	</article>
+</div>
 
 <style>
 	.container {

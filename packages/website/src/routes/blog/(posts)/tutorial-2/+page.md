@@ -4,8 +4,8 @@
     export const metadata: BlogFrontmatter = {
         title: 'Obra Icons tutorial 2: Advanced icon',
         date: '2024-08-23',
-        tags: 'tutorial'
-    }
+        tags: ['tutorial']
+    };
 </script>
 
 <div class="video-container-wrapper">
@@ -24,9 +24,12 @@
 
 Today I recorded another tutorial video, where we try to make a more advanced icon based on a reference.
 
-The <a href="/blog/tutorial-1">video from yesterday</a> focuses on on some basics. At the end of the video we ended up with a document icon. This video focusses on the techniques needed to create a butterfly icon.
+The <a href="/blog/tutorial-1">video from yesterday</a> focuses on on some basics. At the end of the video we ended up
+with a document icon. This video focusses on the techniques needed to create a butterfly icon.
 
-I want to apologize for the roughness of above videos, I am making them more for myself and as a reference to some people I am working with than an actual professionally produced tutorial. They are helping me to figure out what should be shown in a tutorial. As you can see in above video, sometimes when creating an icon, the struggle is real.
+I want to apologize for the roughness of above videos, I am making them more for myself and as a reference to some
+people I am working with than an actual professionally produced tutorial. They are helping me to figure out what should
+be shown in a tutorial. As you can see in above video, sometimes when creating an icon, the struggle is real.
 
 This new video goes through some more advanced technique techniques including
 

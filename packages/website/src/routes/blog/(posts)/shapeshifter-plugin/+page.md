@@ -4,10 +4,12 @@
     export const metadata: BlogFrontmatter = {
         title: 'ShapeShifter plugin for Figma',
         date: '2024-08-21',
-        tags: 'workflow'
-    }
+        tags: ['workflow']
+    };
 </script>
 
 <img src="/shape-shifter.png" alt="ShapeShifter plugin for Figma" />
 
-Fresh from the plugin press, this <a href="https://www.figma.com/community/plugin/1406930998097962760/shape-shifter">plugin</a> by Vijay Verma provides some shortcuts to easily access important vector tools In Figma. This can help as a bit of a bandaid, since Figma's UI team inexplicably decided to hide the vector tools behind extra clicks in UI3.
+Fresh from the plugin press, this <a href="https://www.figma.com/community/plugin/1406930998097962760/shape-shifter">
+plugin</a> by Vijay Verma provides some shortcuts to easily access important vector tools In Figma. This can help as a
+bit of a bandaid, since Figma's UI team inexplicably decided to hide the vector tools behind extra clicks in UI3.
