@@ -5,7 +5,7 @@
     import { colorStore, predefinedColors, customColors } from './store';
     import { toUpperCase } from './utilities'
 
-    let selectedColor = $colorStore;
+    $: selectedColor = $colorStore;
     let isOpen = false;
     let isManagingCustomColors = false;
     let isImportingColors = false;
@@ -25,7 +25,7 @@
     }
 
     function selectColor(color) {
-        $colorStore = toUpperCase(color);
+        colorStore.set(toUpperCase(color));
         isOpen = false;
     }
   
