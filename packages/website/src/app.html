@@ -1,72 +1,120 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 
-		<link
-			rel="icon"
-			media="(prefers-color-scheme:dark)"
-			href="%sveltekit.assets%/favicon-i.ico"
-			type="image/x-icon"
-			id="dark-scheme-icon"
-		/>
-		<link
-			rel="icon"
-			media="(prefers-color-scheme:light)"
-			href="%sveltekit.assets%/favicon.ico"
-			type="image/x-icon"
-			id="light-scheme-icon"
-		/>
-		<script type="text/javascript">
-			matcher = window.matchMedia('(prefers-color-scheme: dark)');
-			matcher.addListener(onFaviconUpdate);
-			onFaviconUpdate();
+	<link
+		href="%sveltekit.assets%/favicon-i.ico"
+		id="dark-scheme-icon"
+		media="(prefers-color-scheme:dark)"
+		rel="icon"
+		type="image/x-icon"
+	/>
+	<link
+		href="%sveltekit.assets%/favicon.ico"
+		id="light-scheme-icon"
+		media="(prefers-color-scheme:light)"
+		rel="icon"
+		type="image/x-icon"
+	/>
+	<script type="text/javascript">
+		matcher = window.matchMedia('(prefers-color-scheme: dark)');
+		matcher.addListener(onFaviconUpdate);
+		onFaviconUpdate();
 
-			function onFaviconUpdate() {
-				var lightSchemeIcon = document.querySelector(
-					'link#light-scheme-icon',
-				);
-				var darkSchemeIcon = document.querySelector(
-					'link#dark-scheme-icon',
-				);
-				if (matcher.matches) {
-					document.head.append(darkSchemeIcon);
-					lightSchemeIcon.remove();
-				} else {
-					document.head.append(lightSchemeIcon);
-					darkSchemeIcon.remove();
-				}
+		function onFaviconUpdate() {
+			var lightSchemeIcon = document.querySelector(
+				'link#light-scheme-icon',
+			);
+			var darkSchemeIcon = document.querySelector(
+				'link#dark-scheme-icon',
+			);
+			if (matcher.matches) {
+				document.head.append(darkSchemeIcon);
+				lightSchemeIcon.remove();
+			} else {
+				document.head.append(lightSchemeIcon);
+				darkSchemeIcon.remove();
 			}
-		</script>
-		<link
-			rel="apple-touch-icon"
-			href="%sveltekit.assets%/apple-touch-icon.png"
-		/>
-
-		<meta property="og:title" content="Obra Icons" />
-		<meta
-			property="og:description"
-			content="A simple, consistent set of icons, perfect for user interfaces."
-		/>
-		<meta property="og:image" content="%sveltekit.assets%/og-image.png" />
-
-		%sveltekit.head%
-	</head>
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-2KNCWPXZQV"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
 		}
-		gtag('js', new Date());
-
-		gtag('config', 'G-2KNCWPXZQV');
 	</script>
-	<body data-sveltekit-preload-data="hover">
-		%sveltekit.body%
-	</body>
+	<link
+		href="%sveltekit.assets%/apple-touch-icon.png"
+		rel="apple-touch-icon"
+	/>
+
+	<meta content="Obra Icons" property="og:title" />
+	<meta
+		content="A simple, consistent set of icons, perfect for user interfaces."
+		property="og:description"
+	/>
+	<meta content="%sveltekit.assets%/og-image.png" property="og:image" />
+
+	%sveltekit.head%
+</head>
+<script
+	async
+	src="https://www.googletagmanager.com/gtag/js?id=G-2KNCWPXZQV"
+></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag('js', new Date());
+
+	gtag('config', 'G-2KNCWPXZQV');
+</script>
+<body data-sveltekit-preload-data="hover">
+%sveltekit.body%
+
+<script>
+	window.intercomSettings = {
+		api_base: 'https://api-iam.intercom.io',
+		app_id: 'zdoyy8zp',
+	};
+</script>
+
+
+<script>
+	// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/zdoyy8zp'
+	(function() {
+		var w = window;
+		var ic = w.Intercom;
+		if (typeof ic === 'function') {
+			ic('reattach_activator');
+			ic('update', w.intercomSettings);
+		} else {
+			var d = document;
+			var i = function() {
+				i.c(arguments);
+			};
+			i.q = [];
+			i.c = function(args) {
+				i.q.push(args);
+			};
+			w.Intercom = i;
+			var l = function() {
+				var s = d.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'https://widget.intercom.io/widget/zdoyy8zp';
+				var x = d.getElementsByTagName('script')[0];
+				x.parentNode.insertBefore(s, x);
+			};
+			if (document.readyState === 'complete') {
+				l();
+			} else if (w.attachEvent) {
+				w.attachEvent('onload', l);
+			} else {
+				w.addEventListener('load', l, false);
+			}
+		}
+	})();
+</script>
+
+</body>
 </html>
