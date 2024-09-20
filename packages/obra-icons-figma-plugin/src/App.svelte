@@ -2,12 +2,26 @@
 	import { onMount } from 'svelte';
 
 	import { iconNamePascal, shuffleArray } from './utilities';
-
+	import { colorStore } from './store';
 	import * as Icons from 'obra-icons-svelte';
 
 	import { create, insert, search } from '@orama/orama';
 
 	import iconSearchData from 'obra-icons-website/src/lib/keywords';
+	import ColorPicker from './ColorPicker.svelte';
+
+	function saveColorToClientStorage(color: string) {
+		parent.postMessage(
+			{
+				pluginMessage: {
+					type: 'save-icon-color',
+					color: color,
+				},
+				pluginId: '*',
+			},
+			'*'
+		);
+	}
 
 	let searchDb: any;
 	let filteredIcons: { name: string; component: any }[] = [];
@@ -36,7 +50,7 @@
 	let iconProperties = {
 		size: {
 			value: 24,
-			min: 16,
+			min: 12,
 			max: 64,
 			step: 4,
 		},
@@ -50,6 +64,11 @@
 			value: '#000000',
 		},
 	};
+
+	let color;
+	colorStore.subscribe(value => {
+	    color = value;
+	});
 
 	let iconType: 'all' | 'stroke' | 'fill' = 'all';
 
@@ -139,11 +158,12 @@
 	function handleIconClick(name: string, component: any) {
 		const tempDiv = document.createElement('div');
 		const isFillIcon = name.endsWith('Fill');
+
 		new component({
 			target: tempDiv,
 			props: {
 				size: iconProperties.size.value,
-				color: iconProperties.color.value,
+				color: $colorStore,
 				...(isFillIcon
 					? {}
 					: { strokeWidth: iconProperties.strokeWeight.value }),
@@ -168,7 +188,7 @@
 						? undefined
 						: iconProperties.strokeWeight.value,
 					iconSize: iconProperties.size.value,
-					iconColor: iconProperties.color.value,
+					iconColor: $colorStore,
 				},
 				pluginId: '*',
 			},
@@ -187,8 +207,9 @@
 				if (strokeWeight !== undefined) {
 					iconProperties.strokeWeight.value = strokeWeight;
 				}
-				if (color !== undefined && color !== iconProperties.color.value) {
+				if (color !== undefined) {
 					iconProperties.color.value = color;
+					previousColor = color;
 				}
 			}
 		}
@@ -221,21 +242,12 @@
 		}
 
 		if (iconProperties.color.value && iconProperties.color.value !== previousColor) {
-			previousColor = iconProperties.color.value;
-			parent.postMessage(
-				{
-					pluginMessage: {
-						type: 'save-icon-color',
-						color: iconProperties.color.value,
-					},
-					pluginId: '*',
-				},
-				'*',
-			);
-		}
+	        previousColor = iconProperties.color.value;
+        	saveColorToClientStorage(iconProperties.color.value);
+    	}
 
 		// Check if the icon color might be invisible
-		isIconColorInvisible = (isDarkMode && iconProperties.color.value === '#000000') ||
+		isIconColorInvisible = (isDarkMode && $colorStore === '#000000') ||
 			(!isDarkMode && iconProperties.color.value === '#ffffff');
 	}
 
@@ -291,6 +303,14 @@
 </script>
 
 <div class="controls">
+
+	<div class="control-group">
+		<label for="iconColor">Color</label>
+		<div class="color-control">
+			<ColorPicker />
+		</div>
+	</div>
+
 	<div class="control-group">
 		<label for="iconSize">Size</label>
 		<input
@@ -311,8 +331,7 @@
         </span>
 	</div>
 
-	<div class="control-group">
-		<!-- We would use fieldset, but it can't be flexed -->
+	<!-- <div class="control-group">
 		<div aria-describedby="iconType" class="fieldset" role="group">
 			<div class="legend" id="iconType">
 				Icon type
@@ -332,37 +351,13 @@
 				</label>
 			</div>
 		</div>
-	</div>
-
-	<div class="control-group">
-		<label for="iconColor">Color</label>
-		<div class="color-control">
-			<div class="color-input-wrapper">
-				<input
-					bind:value={iconProperties.color.value}
-					class="color-input"
-					class:color-does-not-equal-main-bg={iconProperties.color.value != (isDarkMode ? '#282828' : '#ffffff')}
-					id="iconColor"
-					type="color"
-				/>
-				<div class="color-input-border"></div>
-			</div>
-			<input
-				bind:value={iconProperties.color.value}
-				class="color-hex-input"
-				pattern="^#[0-9A-Fa-f]{6}$"
-				placeholder="#000000"
-				type="text"
-			/>
-
-		</div>
-	</div>
+	</div> -->
 
 	<div class="control-group">
 		<div aria-describedby="iconStrokeWeight" class="fieldset" role="group">
 			<div class="legend" id="iconStrokeWeight">
 				<IconStrokeWidth size={16} />
-				<span>Stroke weight</span>
+				<!-- <span>Stroke weight</span> -->
 			</div>
 			<div class="radio-buttons">
 				<label>
@@ -419,14 +414,14 @@
 						<svelte:component
 							this={component}
 							size={iconProperties.size.value}
-							color={iconProperties.color.value}
+							color={$colorStore}
 							strokeWidth={iconProperties.strokeWeight.value}
 						/>
 					{:else}
 						<svelte:component
 							this={component}
 							size={iconProperties.size.value}
-							color={iconProperties.color.value}
+							color={$colorStore}
 						/>
 					{/if}
 				</button>

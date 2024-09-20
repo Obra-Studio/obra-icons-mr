@@ -5,16 +5,19 @@ export default function () {
     figma.showUI(__html__, { width: 420, height: 400, themeColors: true })
 
     figma.ui.onmessage = async (msg) => {
+
         if (msg.type === 'load-settings') {
             const size = await figma.clientStorage.getAsync('iconSize')
-            const strokeWeight =
-                await figma.clientStorage.getAsync('strokeWeight')
+            const strokeWeight = await figma.clientStorage.getAsync('strokeWeight')
             const color = await figma.clientStorage.getAsync('iconColor')
+            const customColors = await figma.clientStorage.getAsync('customColors')
+
             figma.ui.postMessage({
                 type: 'load-settings-result',
                 size,
                 strokeWeight,
                 color,
+                customColors
             })
         }
 
@@ -25,6 +28,29 @@ export default function () {
             } catch (error) {
                 console.error('Failed to save icon color:', error)
                 figma.notify('Failed to save icon color', { error: true })
+            }
+        }
+
+        if (msg.type === 'save-custom-colors') {
+            try {
+                await figma.clientStorage.setAsync('customColors', msg.colors);
+                console.log('Saved custom colors:', msg.colors);
+            } catch (error) {
+                console.error('Failed to save custom colors:', error);
+                figma.notify('Failed to save custom colors', { error: true });
+            }
+        }
+        
+        if (msg.type === 'load-custom-colors') {
+            try {
+                const colors = await figma.clientStorage.getAsync('customColors');
+                figma.ui.postMessage({
+                    type: 'load-custom-colors-result',
+                    colors,
+                });
+            } catch (error) {
+                console.error('Failed to load custom colors:', error);
+                figma.notify('Failed to load custom colors', { error: true });
             }
         }
 
@@ -83,7 +109,6 @@ export default function () {
                         selectedNode.type === 'FRAME' ||
                         selectedNode.type === 'GROUP'
                     ) {
-                        console.log('Selected frame or group')
                         if (
                             selectedNode.width === iconSize &&
                             selectedNode.height === iconSize
