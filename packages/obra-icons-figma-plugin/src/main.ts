@@ -5,19 +5,20 @@ export default function () {
     figma.showUI(__html__, { width: 420, height: 400, themeColors: true })
 
     figma.ui.onmessage = async (msg) => {
-
         if (msg.type === 'load-settings') {
             const size = await figma.clientStorage.getAsync('iconSize')
-            const strokeWeight = await figma.clientStorage.getAsync('strokeWeight')
+            const strokeWeight =
+                await figma.clientStorage.getAsync('strokeWeight')
             const color = await figma.clientStorage.getAsync('iconColor')
-            const customColors = await figma.clientStorage.getAsync('customColors')
+            const customColors =
+                await figma.clientStorage.getAsync('customColors')
 
             figma.ui.postMessage({
                 type: 'load-settings-result',
                 size,
                 strokeWeight,
                 color,
-                customColors
+                customColors,
             })
         }
 
@@ -33,24 +34,25 @@ export default function () {
 
         if (msg.type === 'save-custom-colors') {
             try {
-                await figma.clientStorage.setAsync('customColors', msg.colors);
-                console.log('Saved custom colors:', msg.colors);
+                await figma.clientStorage.setAsync('customColors', msg.colors)
+                console.log('Saved custom colors:', msg.colors)
             } catch (error) {
-                console.error('Failed to save custom colors:', error);
-                figma.notify('Failed to save custom colors', { error: true });
+                console.error('Failed to save custom colors:', error)
+                figma.notify('Failed to save custom colors', { error: true })
             }
         }
-        
+
         if (msg.type === 'load-custom-colors') {
             try {
-                const colors = await figma.clientStorage.getAsync('customColors');
+                const colors =
+                    await figma.clientStorage.getAsync('customColors')
                 figma.ui.postMessage({
                     type: 'load-custom-colors-result',
                     colors,
-                });
+                })
             } catch (error) {
-                console.error('Failed to load custom colors:', error);
-                figma.notify('Failed to load custom colors', { error: true });
+                console.error('Failed to load custom colors:', error)
+                figma.notify('Failed to load custom colors', { error: true })
             }
         }
 
@@ -75,12 +77,14 @@ export default function () {
         if (msg.type === 'paste-icon') {
             const iconName = msg.iconName
             const svgString = msg.svgString
+
             const strokeWeight = msg.strokeWeight || 2
             const iconSize = msg.iconSize || 24
             const iconColor = msg.iconColor || '#000000'
 
             function prepareSvg(svgString, strokeWeight, color) {
                 return svgString
+                .replace(/<g class="[^"]*">([\s\S]*?)<\/g>/g, '$1')
                     .replace(
                         /stroke-width="2"/g,
                         `stroke-width="${strokeWeight}"`
@@ -95,6 +99,7 @@ export default function () {
                     strokeWeight,
                     iconColor
                 )
+
                 const node = figma.createNodeFromSvg(preparedSvgString)
                 node.name = iconName
 
@@ -104,7 +109,7 @@ export default function () {
                 if (figma.currentPage.selection.length > 0) {
                     const selectedNode = figma.currentPage.selection[0]
                     const bounds = selectedNode.absoluteBoundingBox
-                    console.log(bounds)
+
                     if (
                         selectedNode.type === 'FRAME' ||
                         selectedNode.type === 'GROUP'
@@ -125,8 +130,8 @@ export default function () {
                         }
                     } else {
                         // Paste below the selected node
-                        x = bounds.x
-                        y = bounds.y + bounds.height + ICON_SPACING
+                        x = selectedNode.x
+                        y = selectedNode.y + bounds.height + ICON_SPACING
                         parentNode = selectedNode.parent
                     }
                 } else {
@@ -142,6 +147,7 @@ export default function () {
                 node.resize(iconSize, iconSize)
                 node.x = x
                 node.y = y
+
                 parentNode.appendChild(node)
 
                 // Temporarily select the node to scroll into view

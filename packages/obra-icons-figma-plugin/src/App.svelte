@@ -19,7 +19,7 @@
 				},
 				pluginId: '*',
 			},
-			'*'
+			'*',
 		);
 	}
 
@@ -67,7 +67,7 @@
 
 	let color;
 	colorStore.subscribe(value => {
-	    color = value;
+		color = value;
 	});
 
 	let iconType: 'all' | 'stroke' | 'fill' = 'all';
@@ -169,6 +169,7 @@
 					: { strokeWidth: iconProperties.strokeWeight.value }),
 			},
 		});
+
 		const svgString = tempDiv.innerHTML;
 
 		const formattedName = name
@@ -242,9 +243,9 @@
 		}
 
 		if (iconProperties.color.value && iconProperties.color.value !== previousColor) {
-	        previousColor = iconProperties.color.value;
-        	saveColorToClientStorage(iconProperties.color.value);
-    	}
+			previousColor = iconProperties.color.value;
+			saveColorToClientStorage(iconProperties.color.value);
+		}
 
 		// Check if the icon color might be invisible
 		isIconColorInvisible = (isDarkMode && $colorStore === '#000000') ||
@@ -361,17 +362,20 @@
 			</div>
 			<div class="radio-buttons">
 				<label>
-					<input bind:group={iconProperties.strokeWeight.value} name="strokeWeight" on:change={() => setStrokeWeight(1)} type="radio"
+					<input bind:group={iconProperties.strokeWeight.value} name="strokeWeight"
+						   on:change={() => setStrokeWeight(1)} type="radio"
 						   value={1}>
 					<span>1</span>
 				</label>
 				<label>
-					<input bind:group={iconProperties.strokeWeight.value} name="strokeWeight" on:change={() => setStrokeWeight(1.5)} type="radio"
+					<input bind:group={iconProperties.strokeWeight.value} name="strokeWeight"
+						   on:change={() => setStrokeWeight(1.5)} type="radio"
 						   value={1.5}>
 					<span>1.5</span>
 				</label>
 				<label>
-					<input bind:group={iconProperties.strokeWeight.value} name="strokeWeight" on:change={() => setStrokeWeight(2)} type="radio"
+					<input bind:group={iconProperties.strokeWeight.value} name="strokeWeight"
+						   on:change={() => setStrokeWeight(2)} type="radio"
 						   value={2}>
 					<span>2</span>
 				</label>
