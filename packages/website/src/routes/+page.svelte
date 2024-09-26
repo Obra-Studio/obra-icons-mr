@@ -43,7 +43,6 @@
 		if (searching) return;
 
 		const currentQuery = query;
-		console.debug(`searching for "${currentQuery}"`);
 
 		sc++;
 		searching = true;
