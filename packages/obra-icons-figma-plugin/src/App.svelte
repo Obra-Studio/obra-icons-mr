@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import { iconNamePascal, shuffleArray } from './utilities';
+	import { iconNamePascal } from './utilities';
 	import { colorStore } from './store';
 	import * as Icons from 'obra-icons-svelte';
 
@@ -107,7 +107,7 @@
 		}
 
 		// Initial search to populate filteredIcons with shuffled results
-		filteredIcons = shuffleArray(await performSearch(''));
+		filteredIcons = await performSearch('');
 	}
 
 
