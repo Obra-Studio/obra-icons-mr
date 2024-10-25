@@ -2,13 +2,15 @@
 
 Obra Icons for <a href="https://svelte.dev/">Svelte</a>.
 
-A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 950 icons.
+A simple, consistent set of icons, perfect for user interfaces. Obra Icons consists of more than 1000 icons.
 
 ## Installation
 
 ```bash
 npm install obra-icons-svelte
 ```
+
+This package works with Svelte 3/4/5.
 
 ## Importing an icon
 
