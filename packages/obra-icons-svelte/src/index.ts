@@ -129,7 +129,7 @@ export { default as IconBrandGithubMascotFill } from './icons/BrandGithubMascotF
 export { default as IconBrandGoogleFill } from './icons/BrandGoogleFill.svelte';
 export { default as IconBrandInstagramFill } from './icons/BrandInstagramFill.svelte';
 export { default as IconBrandMastodonFill } from './icons/BrandMastodonFill.svelte';
-export { default as IconBrandOpenAi } from './icons/BrandOpenAi.svelte';
+export { default as IconBrandOpenAiFill } from './icons/BrandOpenAiFill.svelte';
 export { default as IconBrandThreadsFill } from './icons/BrandThreadsFill.svelte';
 export { default as IconBrandTiktokFill } from './icons/BrandTiktokFill.svelte';
 export { default as IconBrandWhatsappFill } from './icons/BrandWhatsappFill.svelte';

@@ -34,7 +34,7 @@
 					<ul class="feature-list">
 						<li>
 							<IconCircleCheckFill color="green" />
-							950+ icons
+							1030 icons
 						</li>
 						<li>
 							<IconCircleCheckFill color="green" />
@@ -72,14 +72,6 @@
 							>.
 						</p>
 					</div>
-					<p class="muted">
-						The download includes Obra Icons dev tools Figma plugin,
-						which gives you access to the exact same tools used to
-						create the icon set. You can watch this <a
-							href="https://www.youtube.com/watch?v=cg8-y-OXyI4"
-							>video</a
-						> for more info.
-					</p>
 				</div>
 			</div>
 		</div>

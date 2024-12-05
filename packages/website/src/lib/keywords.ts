@@ -1091,7 +1091,7 @@ export default {
     "mammoth",
     "community"
   ],
-  "brand-open-ai": [
+  "brand-open-ai-fill": [
     "logo",
     "symbol",
     "emblem",

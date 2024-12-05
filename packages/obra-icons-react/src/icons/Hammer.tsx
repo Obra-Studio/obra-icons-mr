@@ -16,7 +16,7 @@ const Hammer = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-hammer" clip-path="url(#clip0_794_41867)">
+				<g className="oi-hammer" clip-path="url(#clip0_794_57210)">
 					<path
 						className="oi-line"
 						d="M10.125 10.875L13.125 13.875"
@@ -43,7 +43,7 @@ const Hammer = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_794_41867">
+					<clipPath className="clip0_794_57210">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

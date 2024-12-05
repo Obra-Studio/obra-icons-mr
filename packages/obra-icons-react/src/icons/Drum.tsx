@@ -21,7 +21,7 @@ const Drum = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-line"
 						d="M3 3.49988L10.2 10.6995"
 						stroke={color}
-						strokeWidth="1.79996"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -29,7 +29,7 @@ const Drum = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-line"
 						d="M20.9998 3.49988L13.7998 10.6995"
 						stroke={color}
-						strokeWidth="1.79996"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -37,7 +37,7 @@ const Drum = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-ellipse"
 						d="M12 14.3002C16.9706 14.3002 21 12.2856 21 9.80044C21 7.31528 16.9706 5.30066 12 5.30066C7.02944 5.30066 3 7.31528 3 9.80044C3 12.2856 7.02944 14.3002 12 14.3002Z"
 						stroke={color}
-						strokeWidth="1.79996"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -45,7 +45,7 @@ const Drum = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-line"
 						d="M7.5 13.7592V20.8688"
 						stroke={color}
-						strokeWidth="1.79996"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -53,7 +53,7 @@ const Drum = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-line"
 						d="M12 14.3002V21.4998"
 						stroke={color}
-						strokeWidth="1.79996"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -61,7 +61,7 @@ const Drum = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-line"
 						d="M16.5 13.7592V20.8688"
 						stroke={color}
-						strokeWidth="1.79996"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -69,7 +69,7 @@ const Drum = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-vector"
 						d="M3 9.80066V17.0003C3 18.1937 3.94821 19.3383 5.63604 20.1821C7.32387 21.026 9.61305 21.5001 12 21.5001C14.3869 21.5001 16.6761 21.026 18.364 20.1821C20.0518 19.3383 21 18.1937 21 17.0003V9.80066"
 						stroke={color}
-						strokeWidth="1.79996"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>

@@ -16,7 +16,7 @@ const Markets = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-markets" clip-path="url(#clip0_794_40986)">
+				<g className="oi-markets" clip-path="url(#clip0_794_56329)">
 					<path
 						className="oi-fill"
 						d="M10.1428 8.30604C8.98231 7.0513 11.2262 4.00589 12.5 2.00002L17 3.5C17.7075 7.12765 11.5934 9.87447 10.1428 8.30604Z"
@@ -50,7 +50,7 @@ const Markets = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_794_40986">
+					<clipPath className="clip0_794_56329">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

@@ -21,7 +21,7 @@ const Webhook = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-vector"
 						d="M17.4 16.9822H12.009C11.019 16.9822 10.254 17.8283 9.777 18.6923C9.39941 19.4008 8.79581 19.9628 8.06216 20.2889C7.32851 20.615 6.50691 20.6865 5.72796 20.492C4.94902 20.2975 4.25744 19.8482 3.76315 19.2155C3.26887 18.5829 3.00025 17.8031 3 17.0002C3.009 16.3702 3.18 15.7402 3.513 15.2002"
 						stroke={color}
-						strokeWidth="1.80002"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -29,7 +29,7 @@ const Webhook = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-vector"
 						d="M6.6001 17.0009L9.4171 11.7988C9.8941 10.9258 9.5071 9.83676 8.9671 9.00874C8.71223 8.60112 8.54158 8.14659 8.46522 7.67195C8.38886 7.19731 8.40833 6.71218 8.52249 6.24519C8.63665 5.7782 8.84318 5.3388 9.12989 4.95292C9.41661 4.56704 9.77771 4.2425 10.1919 3.99844C10.6061 3.75438 11.0649 3.59574 11.5414 3.53189C12.0179 3.46804 12.5023 3.50027 12.9661 3.62668C13.4299 3.75309 13.8637 3.97111 14.2419 4.26789C14.6201 4.56467 14.935 4.93419 15.1681 5.35465"
 						stroke={color}
-						strokeWidth="1.80002"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
@@ -37,7 +37,7 @@ const Webhook = forwardRef<SVGSVGElement, StrokeIconProps>(
 						className="oi-vector"
 						d="M12 7.1001L14.817 12.2572C15.294 13.1303 16.41 13.4003 17.4 13.4003C18.3548 13.4003 19.2705 13.7796 19.9456 14.4547C20.6207 15.1299 21 16.0455 21 17.0004C21 17.9552 20.6207 18.8709 19.9456 19.546C19.2705 20.2212 18.3548 20.6004 17.4 20.6004"
 						stroke={color}
-						strokeWidth="1.80002"
+						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 						strokeLinejoin="round"
 					/>
