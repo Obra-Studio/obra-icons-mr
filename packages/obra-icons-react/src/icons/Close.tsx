@@ -19,7 +19,7 @@ const Close = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-close">
 					<path
 						className="oi-line"
-						d="M18.0001 6L6.00012 18"
+						d="M18.0001 6L6.00006 18"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -27,7 +27,7 @@ const Close = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M6.00012 6L18.0001 18"
+						d="M6.00006 6L18.0001 18"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

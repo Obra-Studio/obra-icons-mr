@@ -19,7 +19,7 @@ const ReorderAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-reorder-alt">
 					<path
 						className="oi-dot"
-						d="M7.99402 6H8.00602"
+						d="M7.99399 6H8.00599"
 						stroke={color}
 						strokeWidth={strokeWidth * 2}
 						strokeLinecap="round"
@@ -33,7 +33,7 @@ const ReorderAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-dot"
-						d="M7.99402 12H8.00602"
+						d="M7.99399 12H8.00599"
 						stroke={color}
 						strokeWidth={strokeWidth * 2}
 						strokeLinecap="round"
@@ -47,7 +47,7 @@ const ReorderAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-dot"
-						d="M7.99402 18H8.00602"
+						d="M7.99399 18H8.00599"
 						stroke={color}
 						strokeWidth={strokeWidth * 2}
 						strokeLinecap="round"

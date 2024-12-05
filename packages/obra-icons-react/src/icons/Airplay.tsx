@@ -27,7 +27,7 @@ const Airplay = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-triangle"
-						d="M12 15L17 21H7L12 15Z"
+						d="M12.0001 15L17.0001 21H7.00006L12.0001 15Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

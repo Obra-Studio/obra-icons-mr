@@ -27,7 +27,7 @@ const AlignText4Right = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M21 6H3"
+						d="M21 6H3.00002"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -35,7 +35,7 @@ const AlignText4Right = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M21 14H3"
+						d="M21 14H3.00002"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

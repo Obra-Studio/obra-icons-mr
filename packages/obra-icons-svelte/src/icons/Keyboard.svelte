@@ -25,7 +25,7 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="5.95"
+			x="5.95001"
 			y="8.9502"
 			width="0.1"
 			height="0.1"
@@ -52,7 +52,7 @@
 		/>
 		<rect
 			class="oi-mini-square"
-			x="5.95"
+			x="5.95001"
 			y="14.9502"
 			width="0.1"
 			height="0.1"

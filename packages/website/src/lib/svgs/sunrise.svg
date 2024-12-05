@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-sunrise">
+	<g class="oi-sunrise[sun]">
 		<path
 			class="oi-line"
 			d="M21 20H3"
@@ -64,7 +64,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M12.0001 3V8"
+			d="M12 3V8"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"

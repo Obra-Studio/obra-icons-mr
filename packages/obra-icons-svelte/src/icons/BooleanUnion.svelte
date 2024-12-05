@@ -17,7 +17,7 @@
 	<g class="oi-boolean-union">
 		<path
 			class="oi-vector"
-			d="M9.23625 11.4862L12.5138 14.7637"
+			d="M9.23621 11.4862L12.5137 14.7637"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -25,7 +25,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M11.4863 9.23624L14.7638 12.5137"
+			d="M11.4862 9.23624L14.7637 12.5137"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -73,7 +73,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M7.03968 2.53967L13.0397 8.53967"
+			d="M7.03967 2.53967L13.0397 8.53967"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -81,7 +81,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M4.22718 4.22717L10.2272 10.2272"
+			d="M4.22717 4.22717L10.2272 10.2272"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -89,7 +89,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M2.53875 7.03876L8.53875 13.0388"
+			d="M2.5387 7.03876L8.5387 13.0388"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

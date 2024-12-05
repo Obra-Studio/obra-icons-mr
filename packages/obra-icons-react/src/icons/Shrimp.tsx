@@ -51,7 +51,7 @@ const Shrimp = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M8.96251 15.0515L2.58282 12.1509"
+						d="M8.9625 15.0515L2.58281 12.1509"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -59,7 +59,7 @@ const Shrimp = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M8.68971 16.6144L4.70721 19.4588"
+						d="M8.68968 16.6144L4.70718 19.4588"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

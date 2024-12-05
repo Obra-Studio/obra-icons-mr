@@ -33,7 +33,7 @@ const OptionsHorizontalEncircled = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-medium-dot"
-						d="M7.25598 11.7499L7.25598 11.7619"
+						d="M7.256 11.7499L7.256 11.7619"
 						stroke={color}
 						strokeWidth={strokeWidth * 1.5}
 						strokeLinecap="round"

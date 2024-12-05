@@ -19,7 +19,7 @@ const History = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-history">
 					<path
 						className="oi-vector"
-						d="M12 7.19995L12 12.0999C12 12.3761 12.2239 12.5999 12.5 12.5999L16.8 12.5999"
+						d="M12 7.19995L12 12.0999C12 12.3761 12.2238 12.5999 12.5 12.5999L16.8 12.5999"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

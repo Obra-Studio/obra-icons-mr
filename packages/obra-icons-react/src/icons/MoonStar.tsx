@@ -16,7 +16,7 @@ const MoonStar = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g id="oi-moon-star[dark, night]">
+				<g id="oi-moon-star[dark, night,weather]">
 					<path
 						className="oi-vector"
 						d="M19 16.3463C17.8588 16.9211 16.5694 17.2448 15.2044 17.2448C10.5381 17.2448 6.75521 13.4619 6.75521 8.79556C6.75521 7.43059 7.07889 6.14121 7.65367 5C4.89346 6.3902 3 9.24937 3 12.5508C3 17.2172 6.78285 21 11.4492 21C14.7506 21 17.6098 19.1065 19 16.3463Z"

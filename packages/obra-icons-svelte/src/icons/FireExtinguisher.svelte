@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-fire-extinguisher" clip-path="url(#clip0_689_34788)">
+	<g class="oi-fire-extinguisher" clip-path="url(#clip0_794_41627)">
 		<path
 			class="oi-vector"
 			d="M15.75 22.5H9.75C9.55109 22.5 9.36032 22.421 9.21967 22.2803C9.07902 22.1397 9 21.9489 9 21.75V9.75C9 8.75544 9.39509 7.80161 10.0983 7.09835C10.8016 6.39509 11.7554 6 12.75 6C13.7446 6 14.6984 6.39509 15.4017 7.09835C16.1049 7.80161 16.5 8.75544 16.5 9.75V21.75C16.5 21.9489 16.421 22.1397 16.2803 22.2803C16.1397 22.421 15.9489 22.5 15.75 22.5Z"
@@ -57,7 +57,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_689_34788">
+		<clipPath class="clip0_794_41627">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

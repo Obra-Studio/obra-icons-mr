@@ -73,7 +73,7 @@ const Sunrise = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M12.0001 3V8"
+						d="M12 3V8"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

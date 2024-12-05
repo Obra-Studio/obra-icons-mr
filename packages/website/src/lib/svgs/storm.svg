@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-storm">
+	<g class="oi-storm[weather]">
 		<path
 			class="oi-vector"
 			d="M12 13L10 17H14L12 21"

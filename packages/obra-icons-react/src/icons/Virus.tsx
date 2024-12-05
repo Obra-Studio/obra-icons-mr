@@ -89,7 +89,7 @@ const Virus = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M17.8341 6.16594L19.5 4.5"
+						d="M17.834 6.16594L19.5 4.5"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -97,7 +97,7 @@ const Virus = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M19.5 19.5L17.8341 17.834"
+						d="M19.5 19.5L17.834 17.834"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

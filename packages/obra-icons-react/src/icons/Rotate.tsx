@@ -37,7 +37,7 @@ const Rotate = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M15.9999 8.44336L12.9999 5.44336L15.9999 2.44336"
+						d="M16 8.44336L13 5.44336L16 2.44336"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

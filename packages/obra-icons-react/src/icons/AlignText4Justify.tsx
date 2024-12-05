@@ -19,7 +19,7 @@ const AlignText4Justify = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-align-text-4-justify">
 					<path
 						className="oi-line"
-						d="M21.0001 10H3.00012"
+						d="M21.0001 10H3.00011"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -27,7 +27,7 @@ const AlignText4Justify = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M21.0001 6H3.00012"
+						d="M21.0001 6H3.00011"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -35,7 +35,7 @@ const AlignText4Justify = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M21.0001 14H3.00012"
+						d="M21.0001 14H3.00011"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -43,7 +43,7 @@ const AlignText4Justify = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M21.0001 18H3.00012"
+						d="M21.0001 18H3.00011"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

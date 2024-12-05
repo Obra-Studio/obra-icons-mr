@@ -19,7 +19,7 @@ const CalendarDates = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-calendar-dates">
 					<path
 						className="oi-vector"
-						d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V6Z"
+						d="M4.00002 6C4.00002 5.44772 4.44773 5 5.00002 5H19C19.5523 5 20 5.44772 20 6V19C20 19.5523 19.5523 20 19 20H5.00002C4.44773 20 4.00002 19.5523 4.00002 19V6Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -36,7 +36,7 @@ const CalendarDates = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M3.99997 10L20 10"
+						d="M3.99995 10L20 10"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

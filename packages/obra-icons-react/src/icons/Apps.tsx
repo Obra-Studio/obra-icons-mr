@@ -49,12 +49,12 @@ const Apps = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<rect
 						className="oi-vector"
-						x="12.5503"
+						x="12.5502"
 						y="6.50006"
 						width="7"
 						height="7"
 						rx="1"
-						transform="rotate(-45 12.5503 6.50006)"
+						transform="rotate(-45 12.5502 6.50006)"
 						stroke={color}
 						strokeWidth={strokeWidth}
 					/>

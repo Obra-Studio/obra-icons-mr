@@ -66,7 +66,7 @@ const Sun = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M4 12L3 12"
+						d="M4.00002 12L3.00002 12"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

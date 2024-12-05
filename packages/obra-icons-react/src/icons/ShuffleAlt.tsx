@@ -27,7 +27,7 @@ const ShuffleAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M3.99999 20L21 3"
+						d="M4 20L21 3"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -51,7 +51,7 @@ const ShuffleAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M3.99999 4L8.99999 9"
+						d="M4 4L9 9"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

@@ -19,7 +19,7 @@ const GlassesAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-glasses-alt">
 					<path
 						className="oi-vector"
-						d="M7.5 4.5H5.85021C5.63996 4.5 5.45226 4.63077 5.3815 4.82876C4.0324 8.60399 1.8348 15.8348 3 17"
+						d="M7.50003 4.5H5.85024C5.63999 4.5 5.45229 4.63077 5.38153 4.82876C4.03243 8.60399 1.83483 15.8348 3.00003 17"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

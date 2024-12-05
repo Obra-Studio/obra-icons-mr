@@ -19,7 +19,7 @@ const CalendarWait = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-calendar-wait">
 					<path
 						className="oi-vector"
-						d="M10.5 20H5.00002C4.44773 20 4.00002 19.5523 4.00002 19V6C4.00002 5.44772 4.44773 5 5.00002 5H19C19.5523 5 20 5.44772 20 6V10"
+						d="M10.5 20H5.00001C4.44773 20 4.00001 19.5523 4.00001 19V6C4.00001 5.44772 4.44773 5 5.00001 5H19C19.5523 5 20 5.44772 20 6V10"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

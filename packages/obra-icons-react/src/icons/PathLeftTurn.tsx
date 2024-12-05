@@ -19,7 +19,7 @@ const PathLeftTurn = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-path-left-turn">
 					<path
 						className="oi-line"
-						d="M8.1333 5.06673L11.4514 8.38487C11.9201 8.8535 12.6799 8.8535 13.1485 8.38487L16.4666 5.06673"
+						d="M8.13333 5.06673L11.4515 8.38487C11.9201 8.8535 12.6799 8.8535 13.1485 8.38487L16.4667 5.06673"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -33,7 +33,7 @@ const PathLeftTurn = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M8.40002 19.8L19.8 8.40003"
+						d="M8.4 19.8L19.8 8.40003"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

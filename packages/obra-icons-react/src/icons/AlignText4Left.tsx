@@ -19,7 +19,7 @@ const AlignText4Left = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-align-text-4-left">
 					<path
 						className="oi-line"
-						d="M16.9999 10H2.99988"
+						d="M16.9999 10H2.9999"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -27,7 +27,7 @@ const AlignText4Left = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M20.9999 6H2.99988"
+						d="M20.9999 6H2.9999"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -35,7 +35,7 @@ const AlignText4Left = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M20.9999 14H2.99988"
+						d="M20.9999 14H2.9999"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -43,7 +43,7 @@ const AlignText4Left = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M16.9999 18H2.99988"
+						d="M16.9999 18H2.9999"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

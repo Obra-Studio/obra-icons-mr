@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-puppy[dog]">
+	<g class="oi-puppy[dog,animal]">
 		<path
 			class="oi-medium-dot"
 			d="M14 13H14.012"

@@ -18,7 +18,7 @@ const Cursor = forwardRef<SVGSVGElement, StrokeIconProps>(
 			>
 				<g
 					className="oi-cursor[pointer]"
-					clip-path="url(#clip0_689_34455)"
+					clip-path="url(#clip0_794_41294)"
 				>
 					<path
 						className="oi-vector"
@@ -30,7 +30,7 @@ const Cursor = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_689_34455">
+					<clipPath className="clip0_794_41294">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

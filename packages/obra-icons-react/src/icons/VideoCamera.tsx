@@ -19,7 +19,7 @@ const VideoCamera = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-video-camera">
 					<path
 						className="oi-vector"
-						d="M20.4672 8.15137L15.079 12.0001L20.4672 15.8489V8.15137Z"
+						d="M20.4673 8.15137L15.079 12.0001L20.4673 15.8489V8.15137Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -27,7 +27,7 @@ const VideoCamera = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M13.5395 6.61169H5.07222C4.22197 6.61169 3.53271 7.30095 3.53271 8.1512V15.8487C3.53271 16.699 4.22197 17.3882 5.07222 17.3882H13.5395C14.3897 17.3882 15.079 16.699 15.079 15.8487V8.1512C15.079 7.30095 14.3897 6.61169 13.5395 6.61169Z"
+						d="M13.5395 6.61169H5.07225C4.222 6.61169 3.53275 7.30095 3.53275 8.1512V15.8487C3.53275 16.699 4.222 17.3882 5.07225 17.3882H13.5395C14.3898 17.3882 15.079 16.699 15.079 15.8487V8.1512C15.079 7.30095 14.3898 6.61169 13.5395 6.61169Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

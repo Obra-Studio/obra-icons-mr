@@ -25,7 +25,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M21 6H3"
+			d="M21 6H3.00002"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -33,7 +33,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M21 14H3"
+			d="M21 14H3.00002"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

@@ -738,6 +738,14 @@ export default {
     "shape",
     "vector"
   ],
+  "biceps-flexed": [
+    "muscle",
+    "arm",
+    "strength",
+    "power",
+    "fitness",
+    "exercise"
+  ],
   "bill": [
     "invoice",
     "payment",
@@ -761,6 +769,15 @@ export default {
     "financial",
     "money",
     "accounts"
+  ],
+  "bird": [
+    "animal",
+    "avian",
+    "feathered creature",
+    "fowl",
+    "winged animal",
+    "songbird",
+    "flying creature"
   ],
   "bluetooth": [
     "wireless",
@@ -978,6 +995,14 @@ export default {
     "bracket",
     "curly brackets"
   ],
+  "brand-apple-app-store-fill": [
+    "brand",
+    "apple",
+    "app",
+    "store",
+    "application",
+    "download"
+  ],
   "brand-apple-fill": [
     "apple logo",
     "fruit",
@@ -985,6 +1010,30 @@ export default {
     "company",
     "iPhone",
     "Mac"
+  ],
+  "brand-apple-intelligence-fill": [
+    "brand",
+    "apple",
+    "intelligence",
+    "smart",
+    "technology",
+    "innovation"
+  ],
+  "brand-apple-music-fill": [
+    "music",
+    "apple",
+    "streaming",
+    "songs",
+    "playlist",
+    "tunes"
+  ],
+  "brand-bluesky-fill": [
+    "brand",
+    "blue",
+    "sky",
+    "company",
+    "logo",
+    "business"
   ],
   "brand-dropbox-fill": [
     "cloud",
@@ -1001,6 +1050,14 @@ export default {
     "logo",
     "social network",
     "blue F"
+  ],
+  "brand-github-fill": [
+    "github",
+    "code",
+    "repository",
+    "version control",
+    "open source",
+    "collaboration"
   ],
   "brand-github-mascot-fill": [
     "github",
@@ -1025,6 +1082,14 @@ export default {
     "camera",
     "app",
     "logo"
+  ],
+  "brand-mastodon-fill": [
+    "elephant",
+    "social media",
+    "network",
+    "logo",
+    "mammoth",
+    "community"
   ],
   "brand-open-ai": [
     "logo",
@@ -1225,6 +1290,7 @@ export default {
     "business"
   ],
   "butterfly": [
+    "animal",
     "insect",
     "flutter",
     "wings",
@@ -2392,8 +2458,8 @@ export default {
     "audio"
   ],
   "cloud": [
-    "sky",
     "weather",
+    "sky",
     "storage",
     "data",
     "internet",
@@ -2444,8 +2510,8 @@ export default {
     "storage"
   ],
   "cloud-fill": [
-    "sky",
     "weather",
+    "sky",
     "storage",
     "data",
     "internet",
@@ -2474,6 +2540,7 @@ export default {
     "storage"
   ],
   "cloudy": [
+    "weather",
     "overcast",
     "partly cloudy",
     "cloud-covered",
@@ -2493,6 +2560,7 @@ export default {
     "cloud-covered"
   ],
   "cloudy-fill": [
+    "weather",
     "overcast",
     "partly cloudy",
     "cloud-covered",
@@ -3367,14 +3435,6 @@ export default {
     "import",
     "record"
   ],
-  "download": [
-    "save",
-    "retrieve",
-    "get",
-    "transfer",
-    "store",
-    "import"
-  ],
   "dress": [
     "clothing",
     "garment",
@@ -3391,6 +3451,14 @@ export default {
     "furniture",
     "storage"
   ],
+  "drill": [
+    "power tool",
+    "drilling machine",
+    "electric drill",
+    "hand drill",
+    "drilling equipment",
+    "drill bit"
+  ],
   "drone": [
     "quadcopter",
     "unmanned aerial vehicle",
@@ -3401,6 +3469,7 @@ export default {
   ],
   "drop": [
     "water",
+    "weather",
     "fall",
     "drip",
     "descend",
@@ -3410,12 +3479,21 @@ export default {
   ],
   "drop-fill": [
     "water",
+    "weather",
     "fall",
     "drip",
     "descend",
     "release",
     "let go",
     "plummet"
+  ],
+  "drum": [
+    "percussion",
+    "instrument",
+    "snare",
+    "beat",
+    "music",
+    "drummer"
   ],
   "dumbell": [
     "weight",
@@ -3610,14 +3688,6 @@ export default {
     "extend",
     "grow",
     "widen"
-  ],
-  "export": [
-    "download",
-    "save",
-    "transfer",
-    "share",
-    "backup",
-    "extract"
   ],
   "external-link": [
     "link",
@@ -3951,6 +4021,7 @@ export default {
     "blaze"
   ],
   "fish": [
+    "animal",
     "aquatic",
     "marine",
     "swim",
@@ -4101,6 +4172,7 @@ export default {
     "spacecraft"
   ],
   "fog": [
+    "weather",
     "mist",
     "haze",
     "smog",
@@ -4401,6 +4473,22 @@ export default {
     "video game",
     "console"
   ],
+  "game-controller-alt": [
+    "gamepad",
+    "controller",
+    "joystick",
+    "gaming",
+    "video game",
+    "play"
+  ],
+  "game-controller-nes": [
+    "gamepad",
+    "controller",
+    "NES controller",
+    "video game controller",
+    "retro controller",
+    "gaming controller"
+  ],
   "gantt-chart": [
     "timeline",
     "project schedule",
@@ -4561,6 +4649,14 @@ export default {
     "drink",
     "vessel"
   ],
+  "goldfish": [
+    "animal",
+    "fish",
+    "pet",
+    "aquarium",
+    "swim",
+    "water"
+  ],
   "gradient": [
     "color",
     "blend",
@@ -4688,6 +4784,8 @@ export default {
   ],
   "heart": [
     "like",
+    "review",
+    "testimonial",
     "love",
     "affection",
     "emotion",
@@ -4697,6 +4795,8 @@ export default {
   ],
   "heart-fill": [
     "like",
+    "review",
+    "testimonial",
     "love",
     "affection",
     "emotion",
@@ -4713,7 +4813,9 @@ export default {
     "unfavorite",
     "remove",
     "affection",
-    "emotion"
+    "emotion",
+    "review",
+    "testimonial"
   ],
   "heart-off-fill": [
     "unlike",
@@ -4724,7 +4826,9 @@ export default {
     "unfavorite",
     "remove",
     "affection",
-    "emotion"
+    "emotion",
+    "review",
+    "testimonial"
   ],
   "heartrate": [
     "heart",
@@ -5608,6 +5712,7 @@ export default {
   ],
   "moon-fill": [
     "dark",
+    "weather",
     "night",
     "lunar",
     "celestial",
@@ -6438,6 +6543,7 @@ export default {
   ],
   "puppy": [
     "dog",
+    "animal",
     "pup",
     "canine",
     "pet",
@@ -6470,12 +6576,22 @@ export default {
     "quotation"
   ],
   "rabbit": [
+    "animal",
     "bunny",
     "hare",
     "bunny rabbit",
     "bunny hop",
     "lapin (French for rabbit)",
     "bunny ears"
+  ],
+  "rabbit-face": [
+    "animal",
+    "bunny",
+    "rabbit",
+    "hare",
+    "bunny face",
+    "rabbit head",
+    "bunny icon"
   ],
   "radio": [
     "music",
@@ -6526,6 +6642,7 @@ export default {
     "warning"
   ],
   "rain": [
+    "weather",
     "shower",
     "downpour",
     "precipitation",
@@ -6580,15 +6697,6 @@ export default {
     "mask",
     "hide",
     "remove"
-  ],
-  "redo": [
-    "refresh",
-    "reload",
-    "repeat",
-    "retry",
-    "do again",
-    "start over",
-    "replay"
   ],
   "remove-background": [
     "delete",
@@ -6857,6 +6965,22 @@ export default {
     "vessel",
     "sailing",
     "cruise"
+  ],
+  "salad": [
+    "greens",
+    "vegetables",
+    "lettuce",
+    "healthy",
+    "fresh",
+    "bowl"
+  ],
+  "satellite": [
+    "space",
+    "orbit",
+    "communication",
+    "telescope",
+    "dish",
+    "transmission"
   ],
   "savings": [
     "money",
@@ -7294,14 +7418,15 @@ export default {
     "trainer"
   ],
   "snow": [
+    "weather",
     "winter",
     "cold",
     "frozen",
     "ice",
-    "weather",
     "snowflake"
   ],
   "snowflake": [
+    "weather",
     "winter",
     "ice",
     "frost",
@@ -7523,6 +7648,7 @@ export default {
     "storefront"
   ],
   "storm": [
+    "weather",
     "thunderstorm",
     "rainstorm",
     "tempest",
@@ -7622,6 +7748,7 @@ export default {
     "bright"
   ],
   "sunrise": [
+    "sun",
     "morning",
     "dawn",
     "sun up",
@@ -7630,6 +7757,7 @@ export default {
     "first light"
   ],
   "sunset": [
+    "sun",
     "evening",
     "dusk",
     "twilight",
@@ -7728,38 +7856,6 @@ export default {
     "iPad",
     "electronic",
     "portable"
-  ],
-  "tag": [
-    "label",
-    "marker",
-    "badge",
-    "sign",
-    "symbol",
-    "identifier"
-  ],
-  "tag-fill": [
-    "label",
-    "marker",
-    "badge",
-    "sign",
-    "symbol",
-    "identifier"
-  ],
-  "tag-horizontal": [
-    "label",
-    "badge",
-    "marker",
-    "strip",
-    "band",
-    "ribbon"
-  ],
-  "tag-horizontal-fill": [
-    "label",
-    "badge",
-    "marker",
-    "strip",
-    "band",
-    "ribbon"
   ],
   "take-screen-control": [
     "screen capture",
@@ -8153,16 +8249,6 @@ export default {
     "decoration",
     "separator"
   ],
-  "undo": [
-    "refresh",
-    "reload",
-    "reverse",
-    "revert",
-    "cancel",
-    "backtrack",
-    "revoke",
-    "reset"
-  ],
   "university-hat-simple": [
     "education",
     "academy",
@@ -8203,14 +8289,6 @@ export default {
     "unordered items",
     "unordered bullet points",
     "unordered elements"
-  ],
-  "upload": [
-    "import",
-    "attach",
-    "send",
-    "submit",
-    "load",
-    "transfer"
   ],
   "user": [
     "people",
@@ -8366,6 +8444,14 @@ export default {
     "security",
     "treasure",
     "deposit"
+  ],
+  "vegan": [
+    "plant-based",
+    "vegetarian",
+    "cruelty-free",
+    "herbivorous",
+    "non-dairy",
+    "animal-free"
   ],
   "verified": [
     "confirmed",
@@ -8583,6 +8669,14 @@ export default {
     "triangle",
     "error"
   ],
+  "washing-machine": [
+    "laundry",
+    "washer",
+    "cleaning",
+    "appliance",
+    "clothes",
+    "laundromat"
+  ],
   "watch": [
     "timepiece",
     "wristwatch",
@@ -8621,6 +8715,16 @@ export default {
     "stream",
     "online",
     "conference"
+  ],
+  "webhook": [
+    "api",
+    "push",
+    "notification",
+    "callback",
+    "web callback",
+    "event handler",
+    "web event",
+    "web notification"
   ],
   "weight": [
     "lifting",
@@ -8676,6 +8780,7 @@ export default {
     "network"
   ],
   "wind": [
+    "weather",
     "breeze",
     "gust",
     "air",

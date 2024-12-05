@@ -19,7 +19,7 @@ const NotificationOff = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-notification-off">
 					<path
 						className="oi-vector"
-						d="M12 4C8.68629 4 6 6.68629 6 10V15L4 18H20L18 15V10C18 6.68629 15.3137 4 12 4Z"
+						d="M12 4C8.68626 4 5.99997 6.68629 5.99997 10V15L3.99997 18H20L18 15V10C18 6.68629 15.3137 4 12 4Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
