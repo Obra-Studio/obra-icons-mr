@@ -18,7 +18,7 @@ const Send = forwardRef<SVGSVGElement, StrokeIconProps>(
 			>
 				<g
 					className="oi-send[paper-plane]"
-					clip-path="url(#clip0_794_52829)"
+					clip-path="url(#clip0_795_22165)"
 				>
 					<path
 						className="oi-vector"
@@ -40,7 +40,7 @@ const Send = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_794_52829">
+					<clipPath className="clip0_795_22165">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

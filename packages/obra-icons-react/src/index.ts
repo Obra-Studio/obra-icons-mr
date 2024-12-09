@@ -128,6 +128,7 @@ export { default as IconBrandGithubFill } from './icons/BrandGithubFill';
 export { default as IconBrandGithubMascotFill } from './icons/BrandGithubMascotFill';
 export { default as IconBrandGoogleFill } from './icons/BrandGoogleFill';
 export { default as IconBrandInstagramFill } from './icons/BrandInstagramFill';
+export { default as IconBrandLinkedinFill } from './icons/BrandLinkedinFill';
 export { default as IconBrandMastodonFill } from './icons/BrandMastodonFill';
 export { default as IconBrandOpenAiFill } from './icons/BrandOpenAiFill';
 export { default as IconBrandThreadsFill } from './icons/BrandThreadsFill';

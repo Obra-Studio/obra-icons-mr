@@ -16,7 +16,7 @@ const PizzaSlice = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-pizza-slice" clip-path="url(#clip0_794_54443)">
+				<g className="oi-pizza-slice" clip-path="url(#clip0_795_23779)">
 					<path
 						className="oi-vector"
 						d="M8.97362 3.63478C12.0296 4.45363 14.7868 6.13152 16.9182 8.46956C19.0497 10.8076 20.4662 13.7077 20.9996 16.8262L4.69142 19.6162L8.97362 3.63478Z"
@@ -51,7 +51,7 @@ const PizzaSlice = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_794_54443">
+					<clipPath className="clip0_795_23779">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

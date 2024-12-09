@@ -16,7 +16,7 @@ const Sailboat = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-sailboat" clip-path="url(#clip0_794_57100)">
+				<g className="oi-sailboat" clip-path="url(#clip0_795_26439)">
 					<path
 						className="oi-vector"
 						d="M1.5 16.5H22.5L19.725 19.9688C19.6548 20.0565 19.5658 20.1273 19.4645 20.1759C19.3632 20.2246 19.2523 20.2499 19.14 20.25H4.86C4.74765 20.2499 4.63675 20.2246 4.5355 20.1759C4.43424 20.1273 4.34522 20.0565 4.275 19.9688L1.5 16.5Z"
@@ -43,7 +43,7 @@ const Sailboat = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_794_57100">
+					<clipPath className="clip0_795_26439">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

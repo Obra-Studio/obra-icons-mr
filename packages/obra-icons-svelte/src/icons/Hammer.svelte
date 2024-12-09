@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-hammer" clip-path="url(#clip0_794_57210)">
+	<g class="oi-hammer" clip-path="url(#clip0_795_26549)">
 		<path
 			class="oi-line"
 			d="M10.125 10.875L13.125 13.875"
@@ -41,7 +41,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_794_57210">
+		<clipPath class="clip0_795_26549">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

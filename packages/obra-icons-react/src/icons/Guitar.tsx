@@ -16,7 +16,7 @@ const Guitar = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-guitar" clip-path="url(#clip0_794_57251)">
+				<g className="oi-guitar" clip-path="url(#clip0_795_26590)">
 					<path
 						className="oi-vector"
 						d="M19.125 1.125L22.875 4.875"
@@ -75,7 +75,7 @@ const Guitar = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_794_57251">
+					<clipPath className="clip0_795_26590">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

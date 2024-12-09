@@ -1028,6 +1028,7 @@ export default {
     "tunes"
   ],
   "brand-bluesky-fill": [
+    "bluesky",
     "brand",
     "blue",
     "sky",
@@ -1082,6 +1083,14 @@ export default {
     "camera",
     "app",
     "logo"
+  ],
+  "brand-linkedin-fill": [
+    "linkedin",
+    "business",
+    "professional",
+    "network",
+    "connect",
+    "job"
   ],
   "brand-mastodon-fill": [
     "elephant",

@@ -2,6 +2,12 @@
 
 We use semantic versioning (semver).
 
+## 1.23.0
+
+Dec 9, 2024
+
+* Added new social media icons, among others icons for Bluesky, LinkedIn, Github and Mastodon
+
 ## 1.22.0
 
 September 17, 2024
