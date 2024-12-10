@@ -34,7 +34,7 @@
 					<ul class="feature-list">
 						<li>
 							<IconCircleCheckFill color="green" />
-							1030 icons
+							1048 icons
 						</li>
 						<li>
 							<IconCircleCheckFill color="green" />
