@@ -1,7 +1,7 @@
 <script lang="ts">
 
     import { onMount, onDestroy } from 'svelte';
-    import { IconAdd, IconDelete, IconClose, IconUpload } from 'obra-icons-svelte';
+    import { IconAdd, IconDelete, IconClose, IconCloudUpload } from 'obra-icons-svelte';
     import { colorStore, predefinedColors, customColors } from './store';
     import { toUpperCase } from './utilities'
 
@@ -200,7 +200,7 @@
           </button>
         </div>
         <button on:click={openImportDialog} class="icon-button import">
-          <IconUpload size={12} />
+          <IconCloudUpload size={12} />
           <span>Import colors</span>
         </button>
         <div class="custom-color-list">
@@ -233,7 +233,7 @@
         <p>Paste hex codes, one per line:</p>
         <textarea bind:value={importColors} placeholder="#RRGGBB"></textarea>
         <button on:click={importCustomColors} class="icon-button">
-          <IconUpload size={12} />
+          <IconCloudUpload size={12} />
           <span>Import colors</span>
         </button>
         {#if importError}

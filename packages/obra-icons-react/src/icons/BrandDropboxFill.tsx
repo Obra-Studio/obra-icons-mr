@@ -17,32 +17,32 @@ const BrandDropboxFill = forwardRef<SVGSVGElement, FillIconProps>(
 				className={`obra-icon ${props?.className || ''}`}
 			>
 				<g
-					className="oi-brand-dropbox-fill"
-					clip-path="url(#clip0_795_25475)"
+					className="oi-brand-dropbox-fill[dropbox]"
+					clip-path="url(#clip0_797_40995)"
 				>
 					<path
 						className="oi-fill"
-						d="M5.92342 2.39368L-0.0763073 6.20922L5.92342 10.0248L11.9241 6.20922L17.9239 10.0248L23.9236 6.20922L17.9239 2.39368L11.9241 6.20922L5.92342 2.39368Z"
+						d="M5.92343 2.39368L-0.0762939 6.20922L5.92343 10.0248L11.9241 6.20922L17.9239 10.0248L23.9236 6.20922L17.9239 2.39368L11.9241 6.20922L5.92343 2.39368Z"
 						fill={color}
 					/>
 					<path
 						className="oi-fill"
-						d="M5.92342 17.6562L-0.0763073 13.8406L5.92342 10.025L11.9241 13.8406L5.92342 17.6562Z"
+						d="M5.92343 17.6562L-0.0762939 13.8406L5.92343 10.025L11.9241 13.8406L5.92343 17.6562Z"
 						fill={color}
 					/>
 					<path
 						className="oi-fill"
-						d="M11.9242 13.8406L17.924 10.025L23.9236 13.8406L17.924 17.6562L11.9242 13.8406Z"
+						d="M11.9242 13.8406L17.924 10.025L23.9237 13.8406L17.924 17.6562L11.9242 13.8406Z"
 						fill={color}
 					/>
 					<path
 						className="oi-fill"
-						d="M11.9242 22.743L5.92345 18.9275L11.9242 15.1119L17.9239 18.9275L11.9242 22.743Z"
+						d="M11.9242 22.743L5.92346 18.9275L11.9242 15.1119L17.9239 18.9275L11.9242 22.743Z"
 						fill={color}
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_795_25475">
+					<clipPath className="clip0_797_40995">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

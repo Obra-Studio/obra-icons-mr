@@ -19,7 +19,7 @@ const ShieldOff = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-shield-off">
 					<path
 						className="oi-vector"
-						d="M3.00002 3L20 20"
+						d="M3 3L20 20"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

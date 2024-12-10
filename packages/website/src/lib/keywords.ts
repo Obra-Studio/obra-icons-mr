@@ -1037,6 +1037,7 @@ export default {
     "business"
   ],
   "brand-dropbox-fill": [
+    "dropbox",
     "cloud",
     "storage",
     "file",
@@ -1093,6 +1094,8 @@ export default {
     "job"
   ],
   "brand-mastodon-fill": [
+    "mastodon",
+    "fediverse",
     "elephant",
     "social media",
     "network",
@@ -1101,6 +1104,7 @@ export default {
     "community"
   ],
   "brand-open-ai-fill": [
+    "openai",
     "logo",
     "symbol",
     "emblem",
@@ -1117,6 +1121,7 @@ export default {
     "design"
   ],
   "brand-tiktok-fill": [
+    "tiktok",
     "social media",
     "video sharing",
     "app",
@@ -3444,6 +3449,14 @@ export default {
     "import",
     "record"
   ],
+  "download": [
+    "save",
+    "retrieve",
+    "get",
+    "transfer",
+    "store",
+    "import"
+  ],
   "dress": [
     "clothing",
     "garment",
@@ -3697,6 +3710,14 @@ export default {
     "extend",
     "grow",
     "widen"
+  ],
+  "export": [
+    "download",
+    "save",
+    "transfer",
+    "share",
+    "backup",
+    "extract"
   ],
   "external-link": [
     "link",
@@ -7866,6 +7887,38 @@ export default {
     "electronic",
     "portable"
   ],
+  "tag": [
+    "label",
+    "marker",
+    "badge",
+    "sign",
+    "symbol",
+    "identifier"
+  ],
+  "tag-fill": [
+    "label",
+    "marker",
+    "badge",
+    "sign",
+    "symbol",
+    "identifier"
+  ],
+  "tag-horizontal": [
+    "label",
+    "badge",
+    "marker",
+    "strip",
+    "band",
+    "ribbon"
+  ],
+  "tag-horizontal-fill": [
+    "label",
+    "badge",
+    "marker",
+    "strip",
+    "band",
+    "ribbon"
+  ],
   "take-screen-control": [
     "screen capture",
     "screen recording",
@@ -8298,6 +8351,14 @@ export default {
     "unordered items",
     "unordered bullet points",
     "unordered elements"
+  ],
+  "upload": [
+    "import",
+    "attach",
+    "send",
+    "submit",
+    "load",
+    "transfer"
   ],
   "user": [
     "people",

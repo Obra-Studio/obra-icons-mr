@@ -19,7 +19,7 @@ const Pin = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-pin">
 					<path
 						className="oi-vector"
-						d="M17.8094 15C17.8094 15 17.8094 13 16.1496 11L16.1497 3H7.8504L7.85034 11C6.19049 13 6.19049 15 6.19049 15H17.8094Z"
+						d="M17.8095 15C17.8095 15 17.8095 13 16.1496 11L16.1497 3H7.85042L7.85036 11C6.19051 13 6.19051 15 6.19051 15H17.8095Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

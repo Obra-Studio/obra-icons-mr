@@ -86,7 +86,6 @@
 		.filter(([name]) => name.startsWith('Icon'))
 		.map(([name, component]) => ({ name, component }));
 
-
 	async function initializeSearchDb() {
 		searchDb = await create({
 			schema: {
@@ -217,8 +216,8 @@
 	};
 
 	$: searchIcons = async () => {
-		const results = await performSearch(searchTerm);
-		filteredIcons = searchTerm ? results : shuffleArray(results);
+    	const results = await performSearch(searchTerm);
+    	filteredIcons = results;
 	};
 
 	let previousColor = '#000000';

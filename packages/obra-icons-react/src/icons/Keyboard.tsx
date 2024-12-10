@@ -27,7 +27,7 @@ const Keyboard = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<rect
 						className="oi-mini-square"
-						x="5.95001"
+						x="5.95"
 						y="8.9502"
 						width="0.1"
 						height="0.1"
@@ -54,7 +54,7 @@ const Keyboard = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<rect
 						className="oi-mini-square"
-						x="5.95001"
+						x="5.95"
 						y="14.9502"
 						width="0.1"
 						height="0.1"

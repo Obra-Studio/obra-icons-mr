@@ -71,7 +71,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M12 3V8"
+			d="M12.0001 3V8"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

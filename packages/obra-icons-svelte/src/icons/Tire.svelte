@@ -41,7 +41,7 @@
 		/>
 		<path
 			class="oi-incomplete-triangle"
-			d="M3.78564 10.9031L7.50002 8.25L10.5722 10.4447"
+			d="M3.78561 10.9031L7.49999 8.25L10.5722 10.4447"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -49,7 +49,7 @@
 		/>
 		<path
 			class="oi-incomplete-triangle"
-			d="M4.39221 16.47L7.50002 14.25L11.311 16.9716"
+			d="M4.39218 16.47L7.49999 14.25L11.3109 16.9716"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

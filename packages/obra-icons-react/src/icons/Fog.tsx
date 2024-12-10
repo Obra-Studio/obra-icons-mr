@@ -37,7 +37,7 @@ const Fog = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M3.00002 10H14"
+						d="M3 10H14"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -64,7 +64,7 @@ const Fog = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M3.00002 18H5.00002"
+						d="M3 18H5"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

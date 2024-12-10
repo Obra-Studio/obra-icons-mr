@@ -17,7 +17,7 @@
 	<g class="oi-layers">
 		<path
 			class="oi-box"
-			d="M12 3L21 8L12 13L3 8L12 3Z"
+			d="M12 3L21 8L12 13L2.99999 8L12 3Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -26,7 +26,7 @@
 		/>
 		<path
 			class="oi-box"
-			d="M21 12L12 17L3 12"
+			d="M21 12L12 17L2.99999 12"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
@@ -35,7 +35,7 @@
 		/>
 		<path
 			class="oi-box"
-			d="M21 16L12 21L3 16"
+			d="M21 16L12 21L2.99999 16"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

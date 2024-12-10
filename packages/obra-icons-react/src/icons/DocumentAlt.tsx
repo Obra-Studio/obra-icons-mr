@@ -37,7 +37,7 @@ const DocumentAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M15 13L9 13"
+						d="M15 13L8.99997 13"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -55,7 +55,7 @@ const DocumentAlt = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M15 17L9 17"
+						d="M15 17L8.99997 17"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

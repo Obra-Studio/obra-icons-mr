@@ -16,10 +16,10 @@ const Joystick = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-joystick" clip-path="url(#clip0_795_25517)">
+				<g className="oi-joystick" clip-path="url(#clip0_797_41037)">
 					<path
 						className="oi-vector"
-						d="M12.071 10L21.1421 13.0711L12.071 16.1421L2.99998 13.0711L12.071 10Z"
+						d="M12.0711 10L21.1421 13.0711L12.0711 16.1421L3.00001 13.0711L12.0711 10Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinejoin="round"
@@ -42,14 +42,14 @@ const Joystick = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M12.071 12.5V8"
+						d="M12.0711 12.5V8"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_795_25517">
+					<clipPath className="clip0_797_41037">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

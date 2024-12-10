@@ -19,7 +19,7 @@ const ExternalLink = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-external-link">
 					<path
 						className="oi-line"
-						d="M20 4L8.99998 15"
+						d="M20 4L8.99999 15"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

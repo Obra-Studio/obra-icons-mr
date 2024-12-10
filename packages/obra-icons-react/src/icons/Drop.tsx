@@ -19,7 +19,7 @@ const Drop = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-drop">
 					<path
 						className="oi-vector"
-						d="M12 21C8.13401 21 5 17.866 5 14C5 9 12 3 12 3C12 3 19 9 19 14C19 17.866 15.866 21 12 21Z"
+						d="M12 21C8.13399 21 4.99998 17.866 4.99998 14C4.99998 9 12 3 12 3C12 3 19 9 19 14C19 17.866 15.866 21 12 21Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -28,7 +28,7 @@ const Drop = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M8.6449 15C8.98087 16.1289 9.87107 17.0191 11 17.3551"
+						d="M8.64488 15C8.98086 16.1289 9.87105 17.0191 10.9999 17.3551"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

@@ -28,7 +28,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M15 13L9 13"
+			d="M15 13L8.99997 13"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"
@@ -46,7 +46,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M15 17L9 17"
+			d="M15 17L8.99997 17"
 			stroke="black"
 			stroke-width="2"
 			stroke-miterlimit="10"

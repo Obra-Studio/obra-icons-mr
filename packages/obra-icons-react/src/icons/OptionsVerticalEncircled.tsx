@@ -19,21 +19,21 @@ const OptionsVerticalEncircled = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-options-vertical-encircled">
 					<path
 						className="oi-medium-dot"
-						d="M12.0119 16.5057L11.9999 16.5057"
+						d="M12.0118 16.5057L11.9998 16.5057"
 						stroke={color}
 						strokeWidth={strokeWidth * 1.5}
 						strokeLinecap="round"
 					/>
 					<path
 						className="oi-medium-dot"
-						d="M12.0119 11.7499L11.9999 11.7499"
+						d="M12.0118 11.7499L11.9998 11.7499"
 						stroke={color}
 						strokeWidth={strokeWidth * 1.5}
 						strokeLinecap="round"
 					/>
 					<path
 						className="oi-medium-dot"
-						d="M12.0119 7.00574L11.9999 7.00574"
+						d="M12.0118 7.00574L11.9998 7.00574"
 						stroke={color}
 						strokeWidth={strokeWidth * 1.5}
 						strokeLinecap="round"

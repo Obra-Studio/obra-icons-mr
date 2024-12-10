@@ -17,7 +17,7 @@
 	<g class="oi-shield-off">
 		<path
 			class="oi-vector"
-			d="M3.00002 3L20 20"
+			d="M3 3L20 20"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

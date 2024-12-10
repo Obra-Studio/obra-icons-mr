@@ -16,7 +16,7 @@ const FireTruck = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-fire-truck" clip-path="url(#clip0_795_26535)">
+				<g className="oi-fire-truck" clip-path="url(#clip0_797_42055)">
 					<path
 						className="oi-ellipse"
 						d="M18 20.25C19.2426 20.25 20.25 19.2426 20.25 18C20.25 16.7574 19.2426 15.75 18 15.75C16.7574 15.75 15.75 16.7574 15.75 18C15.75 19.2426 16.7574 20.25 18 20.25Z"
@@ -115,7 +115,7 @@ const FireTruck = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_795_26535">
+					<clipPath className="clip0_797_42055">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

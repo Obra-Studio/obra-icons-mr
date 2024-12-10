@@ -33,7 +33,7 @@
 		/>
 		<circle
 			class="oi-ellipse"
-			cx="9"
+			cx="9.00006"
 			cy="18.14"
 			r="2"
 			stroke={color}

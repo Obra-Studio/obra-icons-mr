@@ -19,7 +19,7 @@ const LogOut = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-log-out">
 					<path
 						className="oi-line"
-						d="M21 12H9.00001"
+						d="M21 12H9"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

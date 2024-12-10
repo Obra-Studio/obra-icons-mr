@@ -17,7 +17,7 @@
 	<g class="oi-navigation-south">
 		<path
 			class="oi-vector"
-			d="M12 19.2L18 3.59995L12 6.88416L6.00001 3.59995L12 19.2Z"
+			d="M12 19.2L18 3.59995L12 6.88416L6 3.59995L12 19.2Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

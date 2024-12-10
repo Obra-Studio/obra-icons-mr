@@ -2,6 +2,12 @@
 
 We use semantic versioning (semver).
 
+## 1.23.1
+
+Dec 10, 2024
+
+* Fixed bug that removed Export, Download, Upload, Tag and Tag Horizontal icons by accident
+
 ## 1.23.0
 
 Dec 9, 2024

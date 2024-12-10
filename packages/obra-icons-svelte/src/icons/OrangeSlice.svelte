@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-orange-slice" clip-path="url(#clip0_795_23621)">
+	<g class="oi-orange-slice" clip-path="url(#clip0_797_39141)">
 		<path
 			class="oi-vector"
 			d="M23.25 8.25C23.25 11.2337 22.0647 14.0952 19.955 16.205C17.8452 18.3147 14.9837 19.5 12 19.5C9.01631 19.5 6.15483 18.3147 4.04505 16.205C1.93526 14.0952 0.75 11.2337 0.75 8.25H23.25Z"
@@ -49,7 +49,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M12 8.25L6.16595 14.0841"
+			d="M12 8.25L6.16594 14.0841"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -57,7 +57,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_795_23621">
+		<clipPath class="clip0_797_39141">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

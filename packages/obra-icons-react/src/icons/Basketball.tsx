@@ -27,7 +27,7 @@ const Basketball = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M6.60021 19.2179C7.76688 16.7179 12.1479 12.1935 20.9479 12.9935"
+						d="M6.60019 19.2179C7.76686 16.7179 12.1479 12.1935 20.9479 12.9935"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -35,7 +35,7 @@ const Basketball = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M3.07773 10.3859C6.07773 11.2192 13.3251 11.5831 18.5251 5.98309"
+						d="M3.0777 10.3859C6.0777 11.2192 13.325 11.5831 18.525 5.98309"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

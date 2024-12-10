@@ -17,7 +17,7 @@
 	<g class="oi-external-link">
 		<path
 			class="oi-line"
-			d="M20 4L8.99998 15"
+			d="M20 4L8.99999 15"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"
