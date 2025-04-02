@@ -54,8 +54,8 @@ importers:
         version: link:../website
     devDependencies:
       '@figma/plugin-typings':
-        specifier: ^1.88.0
-        version: 1.100.0
+        specifier: ^1.109.0
+        version: 1.109.0
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.0.0
         version: 3.1.2(svelte@4.2.19)(vite@5.4.6(@types/node@22.10.1))
@@ -797,8 +797,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@figma/plugin-typings@1.100.0':
-    resolution: {integrity: sha512-Dqp+yTkAjqH1cuGMhOdn7lOXTrPrjqa0sAxa5QJnsxCaBI6tjmtk5n/l/H8iv8uQ9Of0ienUoLiIrVTxgiMkdg==}
+  '@figma/plugin-typings@1.109.0':
+    resolution: {integrity: sha512-6l628rOQGNd5ZD3Bru36/NK+PSKmHpsrWz0NMwUYZ8AIyfIl6sCJRc8+OhAy9+WkDXq/Dx3BYiBStjmCJ8O3Lw==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -3752,7 +3752,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@figma/plugin-typings@1.100.0': {}
+  '@figma/plugin-typings@1.109.0': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:

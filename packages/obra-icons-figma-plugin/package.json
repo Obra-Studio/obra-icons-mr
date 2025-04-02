@@ -1,49 +1,52 @@
 {
-  "name": "obra-icons-figma-plugin",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "plugma dev -p 3000",
-    "build": "plugma build"
-  },
-  "devDependencies": {
-    "@figma/plugin-typings": "^1.88.0",
-    "@sveltejs/vite-plugin-svelte": "^3.0.0",
-    "@tsconfig/svelte": "^5.0.2",
-    "esbuild": "^0.23.1",
-    "plugma": "^1.2.8",
-    "prettier": "^3.0.3",
-    "svelte": "^4.2.3",
-    "svelte-check": "^4.0.2",
-    "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.4.6"
-  },
-  "dependencies": {
-    "@orama/orama": "=1.2.8",
-    "obra-icons-svelte": "workspace:*",
-    "obra-icons-website": "workspace:*"
-  },
-  "plugma": {
-    "manifest": {
-      "id": "1417969026159731234",
-      "main": "src/main.ts",
-      "ui": "src/ui.ts",
-      "documentAccess": "dynamic-page",
-      "name": "Obra Icons",
-      "editorType": [
-        "figma",
-        "figjam"
-      ],
-      "networkAccess": {
-        "allowedDomains": [
-          "none"
-        ],
-        "devAllowedDomains": [
-          "*"
-        ]
-      }
+    "name": "obra-icons-figma-plugin",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "plugma dev -p 3000",
+        "preview": "plugma preview -p 3000",
+        "build": "plugma build",
+        "release": "plugma release"
+    },
+    "devDependencies": {
+        "@figma/plugin-typings": "^1.109.0",
+        "@sveltejs/vite-plugin-svelte": "^3.0.0",
+        "@tsconfig/svelte": "^5.0.2",
+        "esbuild": "^0.23.1",
+        "plugma": "^1.2.8",
+        "prettier": "^3.0.3",
+        "svelte": "^4.2.3",
+        "svelte-check": "^4.0.2",
+        "tslib": "^2.6.2",
+        "typescript": "^5.2.2",
+        "vite": "^5.4.6"
+    },
+    "dependencies": {
+        "@orama/orama": "=1.2.8",
+        "obra-icons-svelte": "workspace:*",
+        "obra-icons-website": "workspace:*"
+    },
+    "plugma": {
+        "manifest": {
+            "id": "1417969026159731234",
+            "main": "src/main.ts",
+            "ui": "src/ui.ts",
+            "documentAccess": "dynamic-page",
+            "name": "Obra Icons",
+            "editorType": [
+                "figma",
+                "figjam",
+                "slides"
+            ],
+            "networkAccess": {
+                "allowedDomains": [
+                    "none"
+                ],
+                "devAllowedDomains": [
+                    "*"
+                ]
+            }
+        }
     }
-  }
 }

@@ -1,3 +1,11 @@
+function prepareSvg(svgString: string, strokeWeight: number, color: string) {
+    return svgString
+        .replace(/<g class="[^"]*">([\s\S]*?)<\/g>/g, '$1')
+        .replace(/stroke-width="2"/g, `stroke-width="${strokeWeight}"`)
+        .replace(/stroke="[^"]*"/g, `stroke="${color}"`)
+        .replace(/fill="[^"]*"(?!.*<\/svg>)/g, `fill="${color}"`)
+}
+
 export default function () {
     let lastIconPosition = { x: 0, y: 0 }
     const ICON_SPACING = 10 // Spacing between icons
@@ -82,17 +90,6 @@ export default function () {
             const iconSize = msg.iconSize || 24
             const iconColor = msg.iconColor || '#000000'
 
-            function prepareSvg(svgString, strokeWeight, color) {
-                return svgString
-                .replace(/<g class="[^"]*">([\s\S]*?)<\/g>/g, '$1')
-                    .replace(
-                        /stroke-width="2"/g,
-                        `stroke-width="${strokeWeight}"`
-                    )
-                    .replace(/stroke="[^"]*"/g, `stroke="${color}"`)
-                    .replace(/fill="[^"]*"(?!.*<\/svg>)/g, `fill="${color}"`)
-            }
-
             if (svgString) {
                 const preparedSvgString = prepareSvg(
                     svgString,
@@ -105,6 +102,14 @@ export default function () {
 
                 let x, y
                 let parentNode
+                let targetNode
+                let focusedSlide: SlideNode | null = null
+
+                if (figma.editorType === 'slides') {
+                    console.log('Running in Slides')
+                    focusedSlide = figma.currentPage.focusedSlide ?? null
+                    console.log(focusedSlide, figma.currentPage.selection)
+                }
 
                 if (figma.currentPage.selection.length > 0) {
                     const selectedNode = figma.currentPage.selection[0]
@@ -112,27 +117,32 @@ export default function () {
 
                     if (
                         selectedNode.type === 'FRAME' ||
-                        selectedNode.type === 'GROUP'
+                        selectedNode.type === 'GROUP' ||
+                        selectedNode.type === 'SLIDE'
                     ) {
                         if (
                             selectedNode.width === iconSize &&
                             selectedNode.height === iconSize
                         ) {
-                            // If the selected frame has the same size as the icon, paste below
-                            x = bounds.x
-                            y = bounds.y + bounds.height + ICON_SPACING
-                            parentNode = selectedNode.parent
+                            if (bounds) {
+                                // If the selected frame has the same size as the icon, paste below
+                                x = bounds.x
+                                y = bounds.y + bounds.height + ICON_SPACING
+                                targetNode = selectedNode.parent
+                            }
                         } else {
                             // Paste inside the selected frame
                             x = 0
                             y = 0
-                            parentNode = selectedNode
+                            targetNode = selectedNode
                         }
                     } else {
-                        // Paste below the selected node
-                        x = selectedNode.x
-                        y = selectedNode.y + bounds.height + ICON_SPACING
-                        parentNode = selectedNode.parent
+                        if (bounds) {
+                            // Paste below the selected node
+                            x = selectedNode.x
+                            y = selectedNode.y + bounds.height + ICON_SPACING
+                            targetNode = selectedNode.parent
+                        }
                     }
                 } else {
                     // Center in viewport if no selection
@@ -141,14 +151,17 @@ export default function () {
                     y =
                         viewportBounds.y +
                         (viewportBounds.height - iconSize) / 2
-                    parentNode = figma.currentPage
+
+                    targetNode = figma.currentPage.parent
                 }
 
                 node.resize(iconSize, iconSize)
-                node.x = x
-                node.y = y
+                node.x = x ?? 0
+                node.y = y ?? 0
 
-                parentNode.appendChild(node)
+                if (targetNode) {
+                    targetNode.appendChild(node)
+                }
 
                 // Temporarily select the node to scroll into view
                 figma.currentPage.selection = [node]

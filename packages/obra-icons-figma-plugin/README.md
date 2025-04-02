@@ -32,9 +32,13 @@ This plugin was created with [Plugma](https://github.com/gavinmcfarland/plugma) 
 
 1. Manage `manifest` details from inside `package.json`.
 
-### Preview
+### Browser Preview
 
-Open [http://localhost:\<port\>](http://localhost:3000) to preview your plugin in different browsers.
+Run this command to preview your plugin in the browser during development.
+
+```shell
+pnpm preview
+```
 
 _Make sure the plugin is open in the Figma desktop app._
 
