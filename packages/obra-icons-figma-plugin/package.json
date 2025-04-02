@@ -12,7 +12,7 @@
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tsconfig/svelte": "^5.0.2",
     "esbuild": "^0.23.1",
-    "plugma": "^0.0.40",
+    "plugma": "^1.2.8",
     "prettier": "^3.0.3",
     "svelte": "^4.2.3",
     "svelte-check": "^4.0.2",

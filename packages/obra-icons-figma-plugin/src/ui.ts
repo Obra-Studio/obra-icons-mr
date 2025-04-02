@@ -1,5 +1,8 @@
-import { mount } from "plugma/frameworks/svelte/mount";
-import App from "./App.svelte";
-import "./styles.css";
+import App from './App.svelte'
+import './styles.css'
 
-export default mount(App);
+let app = new App({
+    target: document.getElementById('app')!,
+})
+
+export default app
