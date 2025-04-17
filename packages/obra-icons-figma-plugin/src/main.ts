@@ -75,8 +75,14 @@ export default function () {
         }
 
         if (msg.type === 'paste-icon') {
+
             const iconName = msg.iconName
             const svgString = msg.svgString
+
+            
+            function formatIconName(name: string): string {
+                return name.toLowerCase().replace(/\s+/g, '-');
+            }
 
             const strokeWeight = msg.strokeWeight || 2
             const iconSize = msg.iconSize || 24
@@ -101,7 +107,7 @@ export default function () {
                 )
 
                 const node = figma.createNodeFromSvg(preparedSvgString)
-                node.name = iconName
+                node.name = formatIconName(iconName)
 
                 let x, y
                 let parentNode
