@@ -17,7 +17,7 @@
     "npm": "forbidden, use pnpm"
   },
   "devDependencies": {
-    "@types/node": "^20.17.9"
+    "@types/node": "^20.17.30"
   },
   "packageManager": "pnpm@9.10.0",
   "volta": {
