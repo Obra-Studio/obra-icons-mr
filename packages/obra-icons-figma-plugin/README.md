@@ -46,8 +46,8 @@ _Make sure the plugin is open in the Figma desktop app._
 
 Before publishing, make sure to create a build:
 
-```
-npm run build
+```shell
+pnpm build
 ```
 
 Now you can publish the plugin from the Figma desktop app.
