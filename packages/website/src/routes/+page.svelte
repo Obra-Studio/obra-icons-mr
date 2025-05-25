@@ -87,14 +87,6 @@
 					<div class="justify-content-center button-group">
 						<a
 							class="button inverse"
-							href="https://obra.lemonsqueezy.com/buy/6f465f44-70ac-401f-b0a4-8910a2270aeb"
-						>
-							<span>Buy source file</span>
-							<IconArrowRight />
-						</a>
-
-						<a
-							class="button inverse"
 							href="https://www.npmjs.com/package/obra-icons-svelte"
 						>
 							<span class="icon-fill-wrapper">
