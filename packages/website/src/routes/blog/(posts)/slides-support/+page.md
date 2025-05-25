@@ -2,7 +2,7 @@
     import type { BlogFrontmatter } from '$lib/blog/types'
 
     export const metadata: BlogFrontmatter = {
-        title: 'Figma plugin',
+        title: 'Plugin support for Figma Slides',
         date: '2025-04-17',
         tags: ['plugin','figma','figma-slides']
     }
