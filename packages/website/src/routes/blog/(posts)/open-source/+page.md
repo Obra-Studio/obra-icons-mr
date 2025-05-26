@@ -2,7 +2,7 @@
     import type { BlogFrontmatter } from '$lib/blog/types'
 
     export const metadata: BlogFrontmatter = {
-        title: 'Open source: React package',
+        title: 'We are now fully open source',
         date: '2025-05-24',
         tags: ['package']
     }
