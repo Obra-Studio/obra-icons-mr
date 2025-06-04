@@ -21,9 +21,9 @@
 
 	<article class="blog-post">
 		<header>
-			<h2>
-				<a href="/blog/{data.slug}">{data.title}</a>
-			</h2>
+			<h1>
+				{data.title}
+			</h1>
 			<ul class="meta">
 				<li class="date">{formatDate(data.date)}</li>
 				{#if data.tags}
@@ -49,6 +49,11 @@
 	.container {
 		max-width: 700px;
 		margin: 2rem auto;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+		margin-bottom: 0.5rem;
 	}
 
 	header {
