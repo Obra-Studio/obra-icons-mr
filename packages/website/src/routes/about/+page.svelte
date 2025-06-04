@@ -12,9 +12,9 @@
 					<li class="vertical-container-x-large">
 						<div class="image-holder">
 							<img
-								srcset="/illustration-quality.png 1x, /illustration-quality@2x.png 2x"
-								src="/illustration-quality.png"
 								alt="Super high quality"
+								src="/illustration-quality.png"
+								srcset="/illustration-quality.png 1x, /illustration-quality@2x.png 2x"
 							/>
 						</div>
 
@@ -31,9 +31,9 @@
 					<li class="vertical-container-x-large">
 						<div class="image-holder">
 							<img
-								srcset="/illustration-weights.png 1x, /illustration-weights@2x.png 2x"
-								src="/illustration-weights.png"
 								alt="Multiple weights and sizes"
+								src="/illustration-weights.png"
+								srcset="/illustration-weights.png 1x, /illustration-weights@2x.png 2x"
 							/>
 						</div>
 
@@ -54,7 +54,7 @@
 					</li>
 					<li>
 						<div class="content">
-							<h3>Over 800 icons</h3>
+							<h3>Over 1000 icons</h3>
 							<p>
 								The icon set contains many icons, so you won’t
 								run into the situation where you can’t find the
@@ -77,7 +77,10 @@
 							<p>
 								Download an icon from the website, buy the files
 								for use in a design app or integrate in your
-								Svelte project using the npm package.
+								[Svelte](https://www.npmjs.com/package/obra-icons-svelte)
+								or [React
+								project](https://www.npmjs.com/package/obra-icons-react)
+								using the npm packages.
 							</p>
 
 							<p>
