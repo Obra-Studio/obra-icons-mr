@@ -16,7 +16,7 @@
 	let icons = data.defaultSearch;
 
 	let searching = false;
-	let query: string = '';
+	let query = '';
 	let lastQuery: string = query;
 
 	let color = '#000000';
@@ -24,8 +24,8 @@
 	let size = 36;
 	let selectedActionOnClick: ActionType = 'copySvg';
 
-	function input(event: { currentTarget: HTMLInputElement }) {
-		query = event.currentTarget.value.trim();
+	function input(event: Event) {
+		query = (event.currentTarget as HTMLInputElement).value.trim();
 
 		if (query != lastQuery) {
 			console.log(`trying to search for "${query}"`);
@@ -55,9 +55,6 @@
 						properties: ['nameKebab', 'keywords'],
 						tolerance: 10,
 						limit: 50,
-						boost: {
-							keywords: 2,
-						},
 					});
 
 		lastQuery = currentQuery;

@@ -26,7 +26,7 @@
 			</h1>
 			<ul class="meta">
 				<li class="date">{formatDate(data.date)}</li>
-				{#if data.tags}
+				{#if data.tags.length}
 					<li>
 						<ul class="tag-list">
 							{#each data.tags as tag}
@@ -40,6 +40,7 @@
 			</ul>
 		</header>
 		<div class="content">
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			{@html data.content}
 		</div>
 	</article>

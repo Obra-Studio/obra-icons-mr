@@ -1,76 +1,74 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 
-	<link
-		href="%sveltekit.assets%/favicon-i.ico"
-		id="dark-scheme-icon"
-		media="(prefers-color-scheme:dark)"
-		rel="icon"
-		type="image/x-icon"
-	/>
-	<link
-		href="%sveltekit.assets%/favicon.ico"
-		id="light-scheme-icon"
-		media="(prefers-color-scheme:light)"
-		rel="icon"
-		type="image/x-icon"
-	/>
-	<script type="text/javascript">
-		matcher = window.matchMedia('(prefers-color-scheme: dark)');
-		matcher.addListener(onFaviconUpdate);
-		onFaviconUpdate();
+		<link
+			href="%sveltekit.assets%/favicon-i.ico"
+			id="dark-scheme-icon"
+			media="(prefers-color-scheme:dark)"
+			rel="icon"
+			type="image/x-icon"
+		/>
+		<link
+			href="%sveltekit.assets%/favicon.ico"
+			id="light-scheme-icon"
+			media="(prefers-color-scheme:light)"
+			rel="icon"
+			type="image/x-icon"
+		/>
+		<script type="text/javascript">
+			matcher = window.matchMedia('(prefers-color-scheme: dark)');
+			matcher.addListener(onFaviconUpdate);
+			onFaviconUpdate();
 
-		function onFaviconUpdate() {
-			var lightSchemeIcon = document.querySelector(
-				'link#light-scheme-icon',
-			);
-			var darkSchemeIcon = document.querySelector(
-				'link#dark-scheme-icon',
-			);
-			if (matcher.matches) {
-				document.head.append(darkSchemeIcon);
-				lightSchemeIcon.remove();
-			} else {
-				document.head.append(lightSchemeIcon);
-				darkSchemeIcon.remove();
+			function onFaviconUpdate() {
+				var lightSchemeIcon = document.querySelector(
+					'link#light-scheme-icon',
+				);
+				var darkSchemeIcon = document.querySelector(
+					'link#dark-scheme-icon',
+				);
+				if (matcher.matches) {
+					document.head.append(darkSchemeIcon);
+					lightSchemeIcon.remove();
+				} else {
+					document.head.append(lightSchemeIcon);
+					darkSchemeIcon.remove();
+				}
 			}
+		</script>
+		<link
+			href="%sveltekit.assets%/apple-touch-icon.png"
+			rel="apple-touch-icon"
+		/>
+
+		<meta content="Obra Icons" property="og:title" />
+		<meta
+			content="A simple, consistent set of icons, perfect for user interfaces."
+			property="og:description"
+		/>
+		<meta content="%sveltekit.assets%/og-image.png" property="og:image" />
+
+		%sveltekit.head%
+	</head>
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=G-2KNCWPXZQV"
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
 		}
+
+		gtag('js', new Date());
+
+		gtag('config', 'G-2KNCWPXZQV');
 	</script>
-	<link
-		href="%sveltekit.assets%/apple-touch-icon.png"
-		rel="apple-touch-icon"
-	/>
-
-	<meta content="Obra Icons" property="og:title" />
-	<meta
-		content="A simple, consistent set of icons, perfect for user interfaces."
-		property="og:description"
-	/>
-	<meta content="%sveltekit.assets%/og-image.png" property="og:image" />
-
-	%sveltekit.head%
-</head>
-<script
-	async
-	src="https://www.googletagmanager.com/gtag/js?id=G-2KNCWPXZQV"
-></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-
-	gtag('js', new Date());
-
-	gtag('config', 'G-2KNCWPXZQV');
-</script>
-<body data-sveltekit-preload-data="hover">
-
-%sveltekit.body%
-
-</body>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>
