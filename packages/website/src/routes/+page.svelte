@@ -1,70 +1,16 @@
 <script lang="ts">
 	import { IconArrowRight, IconCaretDownFill } from 'obra-icons-svelte';
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
+	import SearchInput from '$lib/components/SearchInput.svelte';
+	import Icon, { type ActionType } from '$lib/Icon.svelte';
+	import { iconSearch } from '$lib/icon-search';
 	import iconsCount from '$lib/count';
-
-	import { dev } from '$app/environment';
-	import { search } from '@orama/orama';
 	import { getSvg } from '$lib/svgs';
 
-	import Icon, { type ActionType } from '$lib/Icon.svelte';
-	import { page } from '$app/stores';
-	import SearchInput from '$lib/components/SearchInput.svelte';
-
-	export let data;
-
-	let icons = data.defaultSearch;
-
-	let searching = false;
-	let query = '';
-	let lastQuery: string = query;
-
-	let color = '#000000';
-	let strokeWeight = 1.5;
-	let size = 36;
 	let selectedActionOnClick: ActionType = 'copySvg';
-
-	function input(event: Event) {
-		query = (event.currentTarget as HTMLInputElement).value.trim();
-
-		if (query != lastQuery) {
-			console.log(`trying to search for "${query}"`);
-			find();
-		} else {
-			console.log(
-				`not repeating same search - q: "${query}" lq: "${lastQuery}"`,
-			);
-		}
-	}
-
-	let sc = 0;
-
-	async function find() {
-		if (searching) return;
-
-		const currentQuery = query;
-
-		sc++;
-		searching = true;
-
-		icons =
-			query.length == 0
-				? data.defaultSearch
-				: await search(data.searchDb, {
-						term: currentQuery,
-						properties: ['nameKebab', 'keywords'],
-						tolerance: 10,
-						limit: 50,
-					});
-
-		lastQuery = currentQuery;
-		searching = false;
-		sc--;
-
-		if (currentQuery != query) {
-			find();
-		}
-	}
+	let strokeWeight = 1.5;
+	let color = '#000000';
+	let size = 36;
 </script>
 
 <svelte:head>
@@ -112,10 +58,7 @@
 <div class="responds-to-dark">
 	<div class="bg-dark-grey">
 		<div class="controls">
-			<SearchInput
-				on:input={input}
-				placeholder="Search {iconsCount} icons for free..."
-			/>
+			<SearchInput placeholder="Search {iconsCount} icons for free..." />
 			<div class="inner-controls">
 				<div class="control-group">
 					<label for="weight">Weight</label>
@@ -169,37 +112,20 @@
 			</div>
 		</div>
 
-		{#if dev && $page.url.searchParams.has('debug')}
-			<p>Found {icons.hits.length} icons</p>
-			<p>Query: "{query}"</p>
-			<p>LQuery: "{lastQuery}"</p>
-			<p>Searching: {searching}</p>
-			<p>SC: {sc}</p>
-		{/if}
-
-		{#if icons.hits}
-			<ul class="icon-grid">
-				{#each icons.hits as { document } (document.nameKebab)}
-					{@const svg = getSvg(
-						document.nameKebab,
-						strokeWeight,
-						color,
-						size,
-					)}
-					<Icon
-						selectedAction={selectedActionOnClick}
-						{svg}
-						{size}
-						nameKebab={document.nameKebab}
-						namePascal={document.namePascal}
-					/>
-				{:else}
-					<p class="text-align-center no-results">
-						No results found.
-					</p>
-				{/each}
-			</ul>
-		{/if}
+		<ul class="icon-grid">
+			{#each $iconSearch as icon (icon.nameKebab)}
+				{@const svg = getSvg(icon.nameKebab, strokeWeight, color, size)}
+				<Icon
+					selectedAction={selectedActionOnClick}
+					{svg}
+					{size}
+					nameKebab={icon.nameKebab}
+					namePascal={icon.namePascal}
+				/>
+			{:else}
+				<p class="text-align-center no-results">No results found.</p>
+			{/each}
+		</ul>
 	</div>
 </div>
 
