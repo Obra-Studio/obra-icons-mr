@@ -17,4 +17,4 @@ Helping software companies get to the next design level.
 
 https://obra.studio/
 
-License: MIT. 
+License: MIT.
