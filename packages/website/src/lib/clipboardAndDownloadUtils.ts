@@ -15,12 +15,12 @@ export async function copyPngToClipboard(svgData: string): Promise<void> {
 			const canvas = document.createElement('canvas');
 			canvas.width = img.width;
 			canvas.height = img.height;
-			const ctx = canvas.getContext('2d');
+			const ctx = canvas.getContext('2d')!;
 			ctx.drawImage(img, 0, 0);
 
 			try {
 				const blob = await new Promise<Blob>((resolve) =>
-					canvas.toBlob(resolve, 'image/png'),
+					canvas.toBlob((blob) => resolve(blob!), 'image/png'),
 				);
 				const item = new ClipboardItem({ 'image/png': blob });
 				await navigator.clipboard.write([item]);
@@ -48,16 +48,16 @@ export async function downloadIcon(
 		anchor.click();
 		window.URL.revokeObjectURL(url);
 	} else if (format === 'png') {
-		return new Promise((resolve, reject) => {
+		return new Promise((resolve) => {
 			const img = new Image();
 			img.onload = () => {
 				const canvas = document.createElement('canvas');
 				canvas.width = img.width;
 				canvas.height = img.height;
-				const ctx = canvas.getContext('2d');
+				const ctx = canvas.getContext('2d')!;
 				ctx.drawImage(img, 0, 0);
 				canvas.toBlob((blob) => {
-					const url = window.URL.createObjectURL(blob);
+					const url = window.URL.createObjectURL(blob!);
 					const anchor = document.createElement('a');
 					anchor.href = url;
 					anchor.download = `${name}.png`;

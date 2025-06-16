@@ -12,7 +12,6 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@orama/orama": "=1.2.8",
 		"@sveltejs/adapter-auto": "^3.2.5",
 		"@sveltejs/adapter-cloudflare": "^4.7.2",
 		"@sveltejs/kit": "^2.5.28",
@@ -26,6 +25,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
 		"feed": "^4.2.2",
+		"fuse.js": "^7.1.0",
 		"mdsvex": "^0.12.3",
 		"obra-icons-svelte": "workspace:^",
 		"prettier": "^3.0.3",

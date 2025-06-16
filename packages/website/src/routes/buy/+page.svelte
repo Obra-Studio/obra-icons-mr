@@ -1,9 +1,5 @@
 <script>
-	import {
-		IconArrowRight,
-		IconCheck,
-		IconCircleCheckFill,
-	} from 'obra-icons-svelte';
+	import { IconArrowRight, IconCircleCheckFill } from 'obra-icons-svelte';
 </script>
 
 <svelte:head>
@@ -81,10 +77,6 @@
 <style>
 	p a {
 		color: #000;
-	}
-
-	.muted {
-		color: #666;
 	}
 
 	.tag {

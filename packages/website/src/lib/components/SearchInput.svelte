@@ -1,21 +1,26 @@
-<script>
+<script lang="ts">
 	import { IconSearch, IconCircleClose } from 'obra-icons-svelte';
+	import { iconSearch } from '$lib/icon-search';
 
-	export let placeholder = '';
-	export let value = '';
+	export let placeholder: string;
 
-	function clearInput() {
-		value = '';
-	}
+	let value = '';
 </script>
 
 <div class="input-with-icon">
-	<input bind:value on:input {placeholder} type="text" />
+	<input
+		on:input={(event) => iconSearch.search(event.currentTarget.value)}
+		bind:value
+		{placeholder}
+		type="text"
+	/>
+
 	<div class="search-holder">
 		<IconSearch />
 	</div>
+
 	{#if value}
-		<button aria-label="Clear" class="clear" on:click={clearInput}>
+		<button aria-label="Clear" class="clear" on:click={() => (value = '')}>
 			<IconCircleClose />
 		</button>
 	{/if}
@@ -68,6 +73,7 @@
 		justify-content: center;
 		width: 2rem;
 		height: 2rem;
+		cursor: pointer;
 	}
 
 	@media (prefers-color-scheme: dark) {
