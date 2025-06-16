@@ -1,6 +1,6 @@
 # obra-icons-mr
 
-Monorepo for Obra Icons.
+Monorepo for [Obra Icons](https://icons.obra.studio/).
 
 This monorepo uses pnpm to manage multiple packages. Please look inside the `packages` folder to see
 
