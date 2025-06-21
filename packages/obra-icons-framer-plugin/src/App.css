@@ -1,0 +1,12 @@
+/* Obra Icons Framer Plugin CSS */
+
+.obra-icons-plugin {
+    padding: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+  }
+    

@@ -1,0 +1,9 @@
+{
+  "id": "5ec1f9",
+  "name": "Obra Icons",
+  "description": "Add beautiful, customizable icons to your Framer projects",
+  "modes": [
+    "canvas"
+  ],
+  "icon": "/icon.svg"
+}
