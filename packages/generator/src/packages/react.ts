@@ -1,40 +1,12 @@
-import { FILE_WARNING } from './utils';
+import { FILE_WARNING } from '../utils';
+import { definePackage } from './types';
 
-export interface Package {
-	name: string;
-	file_ext: string;
-	prettier_parser: string;
-	generate: (
-		svg_template: string,
-		name_pascal: string,
-		type: 'stroke' | 'fill',
-	) => string;
-	additional_exports?: string[];
-}
-
-export const svelte: Package = {
-	name: 'svelte',
-	file_ext: 'svelte',
-	prettier_parser: 'svelte',
-	generate(svg, name_pascal, type) {
-		return `
-		<!-- ${FILE_WARNING} -->
-
-        <script lang="ts">
-            export let size = 24
-            export let color = 'currentColor'
-            ${type == 'stroke' ? 'export let strokeWidth = 2' : ''}
-        </script>
-
-        ${svg}
-        `;
-	},
-};
-
-export const react: Package = {
+export default definePackage({
 	name: 'react',
 	file_ext: 'tsx',
+	import_ext: '',
 	prettier_parser: 'typescript',
+
 	generate(svg, name_pascal, type) {
 		svg = svg
 			.replace('<svg', '<svg ref={ref}')
@@ -66,7 +38,8 @@ export const react: Package = {
 		export default ${name_pascal};
 		`;
 	},
+
 	additional_exports: [
 		"export type { FillIconProps, StrokeIconProps } from './types';",
 	],
-};
+});
