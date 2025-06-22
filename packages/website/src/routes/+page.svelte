@@ -3,14 +3,14 @@
 	import GithubIcon from '$lib/components/icons/GithubIcon.svelte';
 	import SearchInput from '$lib/components/SearchInput.svelte';
 	import Icon, { type ActionType } from '$lib/Icon.svelte';
-	import { iconSearch } from '$lib/icon-search';
+	import { iconSearch } from '$lib/icon-search.svelte';
 	import iconsCount from '$lib/count';
 	import { getSvg } from '$lib/svgs';
 
-	let selectedActionOnClick: ActionType = 'copySvg';
-	let strokeWeight = 1.5;
-	let color = '#000000';
-	let size = 36;
+	let selectedActionOnClick = $state<ActionType>('copySvg');
+	let strokeWeight = $state(1.5);
+	let color = $state('#000000');
+	let size = $state(36);
 </script>
 
 <svelte:head>
@@ -113,7 +113,7 @@
 		</div>
 
 		<ul class="icon-grid">
-			{#each $iconSearch as icon (icon.nameKebab)}
+			{#each iconSearch.results as icon (icon.nameKebab)}
 				{@const svg = getSvg(icon.nameKebab, strokeWeight, color, size)}
 				<Icon
 					selectedAction={selectedActionOnClick}

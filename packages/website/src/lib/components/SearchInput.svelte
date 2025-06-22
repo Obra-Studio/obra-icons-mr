@@ -1,16 +1,17 @@
 <script lang="ts">
 	import { IconSearch, IconCircleClose } from 'obra-icons-svelte';
-	import { iconSearch } from '$lib/icon-search';
+	import { iconSearch } from '$lib/icon-search.svelte';
 
-	export let placeholder: string;
+	interface Props {
+		placeholder: string;
+	}
 
-	let value = '';
+	let { placeholder }: Props = $props();
 </script>
 
 <div class="input-with-icon">
 	<input
-		on:input={(event) => iconSearch.search(event.currentTarget.value)}
-		bind:value
+		oninput={(event) => iconSearch.search(event.currentTarget.value)}
 		{placeholder}
 		type="text"
 	/>
@@ -19,8 +20,12 @@
 		<IconSearch />
 	</div>
 
-	{#if value}
-		<button aria-label="Clear" class="clear" on:click={() => (value = '')}>
+	{#if iconSearch.query}
+		<button
+			aria-label="Clear"
+			class="clear"
+			onclick={() => iconSearch.clear()}
+		>
 			<IconCircleClose />
 		</button>
 	{/if}
@@ -87,14 +92,14 @@
 		height: 1.5rem;
 	}
 
-	.input-with-icon:has(input:focus) :global(svg) {
+	.input-with-icon:has(:global(input:focus)) :global(svg) {
 		opacity: 1;
 	}
 
 	@media (prefers-color-scheme: dark) {
-		.input-with-icon svg * {
+		/* .input-with-icon svg * {
 			stroke: #fff;
-		}
+		} */
 
 		.input-with-icon :global(svg .oi-fill) {
 			fill: #fff;

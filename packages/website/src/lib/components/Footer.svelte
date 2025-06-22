@@ -1,6 +1,6 @@
 <script>
 	import NavItem from './NavItem.svelte';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 </script>
 
 <footer>
@@ -17,21 +17,21 @@
 				<li>
 					<NavItem
 						href="/licensing-agreement"
-						active={$page.url.pathname === '/licensing-agreement'}
+						active={page.url.pathname === '/licensing-agreement'}
 						>Licensing agreement</NavItem
 					>
 				</li>
 				<li>
 					<NavItem
 						href="/privacy-policy"
-						active={$page.url.pathname === '/privacy-policy'}
+						active={page.url.pathname === '/privacy-policy'}
 						>Privacy policy</NavItem
 					>
 				</li>
 				<li>
 					<NavItem
 						href="/support"
-						active={$page.url.pathname === '/support'}
+						active={page.url.pathname === '/support'}
 						>Support</NavItem
 					>
 				</li>

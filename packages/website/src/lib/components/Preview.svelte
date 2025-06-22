@@ -1,7 +1,7 @@
 <script>
-	import { onMount, onDestroy } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { writable } from 'svelte/store';
+	import { onMount } from 'svelte';
 
 	let count = writable(1);
 	let maxLimit = writable(8);

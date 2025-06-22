@@ -1,10 +1,18 @@
 <script lang="ts">
-	export let href: string;
-	export let active: boolean = false;
+	import type { Snippet } from 'svelte';
+
+	interface Props {
+		href: string;
+		active?: boolean;
+		children: Snippet;
+		onclick?: () => void;
+	}
+
+	let { href, active = false, children, onclick }: Props = $props();
 </script>
 
-<a {href} aria-current={active} class="nav-item" on:click>
-	<slot />
+<a {href} aria-current={active} class="nav-item" {onclick}>
+	{@render children()}
 </a>
 
 <style>

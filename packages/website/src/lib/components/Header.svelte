@@ -1,37 +1,26 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { browser } from '$app/environment';
-	import NavItem from './NavItem.svelte';
-	import { onMount } from 'svelte';
+	import { innerWidth } from 'svelte/reactivity/window';
 	import { IconMenu } from 'obra-icons-svelte';
+	import NavItem from './NavItem.svelte';
+	import { page } from '$app/state';
 
-	let menuShown = false;
-	let windowWidth = 0;
-
-	onMount(() => {
-		if (browser) {
-			windowWidth = window.innerWidth;
-		}
-	});
-
-	$: if (browser && windowWidth <= 700) {
-		menuShown = false;
-	} else {
-		menuShown = true;
-	}
+	let menuShown = $derived(
+		typeof innerWidth.current === 'number' && innerWidth.current <= 700,
+	);
 
 	function showMenu() {
 		menuShown = !menuShown;
 	}
 
 	function closeMenu() {
-		if (windowWidth <= 700) {
+		if (
+			typeof innerWidth.current === 'number' &&
+			innerWidth.current <= 700
+		) {
 			menuShown = false;
 		}
 	}
 </script>
-
-<svelte:window bind:innerWidth={windowWidth} />
 
 <header>
 	<div class="is-dark">
@@ -53,40 +42,44 @@
 								<ul class="main-menu">
 									<li>
 										<NavItem
-											on:click={closeMenu}
+											onclick={closeMenu}
 											href="/"
-											active={$page.url.pathname === '/'}
-											>Home
+											active={page.url.pathname === '/'}
+										>
+											Home
 										</NavItem>
 									</li>
 									<li>
 										<NavItem
-											on:click={closeMenu}
+											onclick={closeMenu}
 											href="/about"
-											active={$page.url.pathname.startsWith(
+											active={page.url.pathname.startsWith(
 												'/about',
 											)}
-											>About
+										>
+											About
 										</NavItem>
 									</li>
 									<li>
 										<NavItem
-											on:click={closeMenu}
+											onclick={closeMenu}
 											href="/blog"
-											active={$page.url.pathname.startsWith(
+											active={page.url.pathname.startsWith(
 												'/blog',
 											)}
-											>Blog
+										>
+											Blog
 										</NavItem>
 									</li>
 									<li>
 										<NavItem
-											on:click={closeMenu}
+											onclick={closeMenu}
 											href="/changelog"
-											active={$page.url.pathname.startsWith(
+											active={page.url.pathname.startsWith(
 												'/changelog',
 											)}
-											>Changelog
+										>
+											Changelog
 										</NavItem>
 									</li>
 								</ul>
@@ -95,7 +88,7 @@
 					</div>
 
 					<div class="flex align-items-center gap-large">
-						<button class="mobile-menu-trigger" on:click={showMenu}>
+						<button class="mobile-menu-trigger" onclick={showMenu}>
 							<IconMenu />
 							Menu
 						</button>

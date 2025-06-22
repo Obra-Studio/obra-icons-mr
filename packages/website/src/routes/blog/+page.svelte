@@ -2,7 +2,7 @@
 	import { formatDate } from '$lib/blog/utils.js';
 	import { IconRss } from 'obra-icons-svelte';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -26,7 +26,7 @@
 	</div>
 
 	<ul>
-		{#each data.posts as post}
+		{#each data.posts as post (post.slug)}
 			<li>
 				<article class="blog-post">
 					<header>
@@ -38,7 +38,7 @@
 							{#if post.tags}
 								<li>
 									<ul class="tag-list">
-										{#each post.tags as tag}
+										{#each post.tags as tag (tag)}
 											<li>
 												<span class="tag">{tag}</span>
 											</li>
@@ -49,6 +49,7 @@
 						</ul>
 					</header>
 					<div class="content">
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html post.content}
 					</div>
 				</article>

@@ -1,4 +1,4 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
 	export type ActionType =
 		| 'downloadSvg'
 		| 'downloadPng'
@@ -16,14 +16,17 @@
 	} from './clipboardAndDownloadUtils';
 	import Toast from '$lib/components/Toast.svelte';
 
-	export let svg: string;
-	export let nameKebab: string;
-	export let namePascal: string;
-	export let size: number;
+	interface Props {
+		svg: string;
+		nameKebab: string;
+		namePascal: string;
+		size: number;
+		selectedAction: ActionType;
+	}
 
-	export let selectedAction: ActionType;
+	let { svg, nameKebab, namePascal, size, selectedAction }: Props = $props();
 
-	let toastMessage: string | null = null;
+	let toastMessage: string | null = $state(null);
 
 	async function executeChosenAction(selectedAction: ActionType) {
 		try {
@@ -84,8 +87,9 @@
 </script>
 
 <li class="icon-item">
-	<button on:click={() => executeChosenAction(selectedAction)} class="icon">
+	<button onclick={() => executeChosenAction(selectedAction)} class="icon">
 		<div class="svg-holder" style="width: {size}px; height: {size}px">
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			{@html svg}
 		</div>
 	</button>

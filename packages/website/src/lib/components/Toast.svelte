@@ -1,17 +1,16 @@
-<!-- Toast.svelte -->
 <script lang="ts">
+	import { onDestroy, untrack } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import { onMount, onDestroy } from 'svelte';
 
-	export let message: string | null = null;
-	export let duration: number = 2000;
-
-	let visible = false;
-	let timeout: ReturnType<typeof setTimeout>;
-
-	$: if (message) {
-		showToast();
+	interface Props {
+		message?: string | null;
+		duration?: number;
 	}
+
+	let { message = null, duration = 2000 }: Props = $props();
+
+	let visible = $state(false);
+	let timeout: ReturnType<typeof setTimeout>;
 
 	function showToast() {
 		visible = true;
@@ -23,6 +22,12 @@
 
 	onDestroy(() => {
 		clearTimeout(timeout);
+	});
+
+	$effect(() => {
+		if (message) {
+			untrack(() => showToast());
+		}
 	});
 </script>
 
