@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { posts } from '../posts.js';
+import { posts } from '../posts';
 
 export async function load({ url }) {
 	const slug = url.pathname.split('/').pop();

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { formatDate } from '$lib/blog/utils.js';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -29,7 +29,7 @@
 				{#if data.tags.length}
 					<li>
 						<ul class="tag-list">
-							{#each data.tags as tag}
+							{#each data.tags as tag (tag)}
 								<li>
 									<span class="tag">{tag}</span>
 								</li>

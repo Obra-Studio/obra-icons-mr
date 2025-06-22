@@ -1,0 +1,9 @@
+name = "obra-icons"
+compatibility_date = "2025-06-22"
+compatibility_flags = ["nodejs_compat"]
+
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+[vars]
+NODE_VERSION = "22"
+PNPM_VERSION = "9"
