@@ -20,8 +20,7 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "rm -rf ./dist",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "vue-tsc -b && vite build"
   },
   "engines": {
     "pnpm": "^9.10.0",
