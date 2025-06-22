@@ -18,7 +18,7 @@ const FireExtinguisher = forwardRef<SVGSVGElement, StrokeIconProps>(
 			>
 				<g
 					className="oi-fire-extinguisher"
-					clip-path="url(#clip0_797_41829)"
+					clip-path="url(#clip0_2603_14911)"
 				>
 					<path
 						className="oi-vector"
@@ -62,7 +62,7 @@ const FireExtinguisher = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_797_41829">
+					<clipPath className="clip0_2603_14911">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

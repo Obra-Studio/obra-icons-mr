@@ -160,7 +160,6 @@ export { default as IconCake } from './icons/Cake.svelte';
 export { default as IconCakeAlt } from './icons/CakeAlt.svelte';
 export { default as IconCalculator } from './icons/Calculator.svelte';
 export { default as IconCalculatorFill } from './icons/CalculatorFill.svelte';
-export { default as IconCalendar } from './icons/Calendar.svelte';
 export { default as IconCalendarCheck } from './icons/CalendarCheck.svelte';
 export { default as IconCalendarCheckFill } from './icons/CalendarCheckFill.svelte';
 export { default as IconCalendarComboFill } from './icons/CalendarComboFill.svelte';

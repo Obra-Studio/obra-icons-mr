@@ -44,7 +44,7 @@
 		/>
 		<path
 			class="oi-line"
-			d="M8.50001 14L6.50001 20"
+			d="M8.5 14L6.5 20"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

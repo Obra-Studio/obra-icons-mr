@@ -19,7 +19,7 @@ const TrendingDown = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-trending-down">
 					<path
 						className="oi-vector"
-						d="M20.0418 16.7882L12.4604 9.20678L8.47013 13.197L2.4848 7.21167"
+						d="M20.0418 16.7882L12.4604 9.20678L8.47019 13.197L2.48486 7.21167"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

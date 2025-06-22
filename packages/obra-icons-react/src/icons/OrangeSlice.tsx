@@ -18,7 +18,7 @@ const OrangeSlice = forwardRef<SVGSVGElement, StrokeIconProps>(
 			>
 				<g
 					className="oi-orange-slice"
-					clip-path="url(#clip0_797_39141)"
+					clip-path="url(#clip0_2603_12223)"
 				>
 					<path
 						className="oi-vector"
@@ -54,7 +54,7 @@ const OrangeSlice = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M12 8.25L6.16594 14.0841"
+						d="M12 8.25L6.16592 14.0841"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -62,7 +62,7 @@ const OrangeSlice = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_797_39141">
+					<clipPath className="clip0_2603_12223">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

@@ -1,0 +1,87 @@
+:root {
+    --color-bg: #242424;
+    --color-fg: rgba(255, 255, 255, 0.87);
+    --color-control-dark: #1a1a1a;
+    --color-control-light: #f9f9f9;
+    --color-control: var(--color-control-dark);
+    --color-accent: #646cff;
+    --color-accent-active: #535bf2;
+
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+
+    color-scheme: light dark;
+    color: var(--color-fg);
+    background-color: var(--color-bg);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    font-weight: 500;
+    color: var(--color-accent);
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: var(--color-accent-active);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+label {
+    margin-right: 1em;
+}
+
+button, select {
+    border-radius: .5rem;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--color-control);
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+    &:hover {
+        border-color: var(--color-accent);
+    }
+
+    &:focus, &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 0;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-fg: #213547;
+        --color-bg: #ffffff;
+        --color-control: var(--color-control-light);
+        --color-accent-active: #747bff;
+    }
+}

@@ -2,10 +2,6 @@ import { join } from 'node:path';
 
 const WEBSITE = join(import.meta.dirname, '../../website');
 
-//? Configure the obra icons packages
-export const SVELTE_PKG = join(import.meta.dirname, '../../obra-icons-svelte');
-export const REACT_PKG = join(import.meta.dirname, '../../obra-icons-react');
-
 //? Configure where the raw svgs are writen
 export const SVG_OUT_DIR = join(WEBSITE, './src/lib/svgs');
 

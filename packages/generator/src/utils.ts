@@ -1,3 +1,5 @@
+import readline from 'readline/promises';
+import { stdin, stdout } from 'node:process';
 import svelte from 'prettier-plugin-svelte';
 import * as prettier from 'prettier';
 
@@ -30,4 +32,11 @@ export async function format(source: string, parser: string) {
 		tabWidth: 4,
 		parser,
 	});
+}
+
+export async function prompt(question: string): Promise<string> {
+	const rl = readline.createInterface({ input:stdin, output:stdout });
+	const answer = await rl.question(`${question}: `);
+	rl.close();
+	return answer.trim();
 }

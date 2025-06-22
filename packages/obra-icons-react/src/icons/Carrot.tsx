@@ -59,7 +59,7 @@ const Carrot = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M9.78754 6.7876L13.5 10.5001"
+						d="M9.7876 6.7876L13.5001 10.5001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

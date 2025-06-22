@@ -19,7 +19,7 @@ const ClickEvents = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-click-events">
 					<path
 						className="oi-line"
-						d="M4.30616 3.55603L7.75518 7.00505"
+						d="M4.30617 3.55603L7.75518 7.00505"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

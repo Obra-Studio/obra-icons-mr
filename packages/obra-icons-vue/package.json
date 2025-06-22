@@ -1,0 +1,43 @@
+{
+  "name": "obra-icons-vue",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/obra-icons-vue.umd.cjs",
+  "module": "./dist/obra-icons-vue.js",
+  "types": "./dist/types/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/obra-icons-vue.js",
+      "require": "./dist/obra-icons-vue.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/types/src/demo"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "rm -rf ./dist",
+    "build": "vue-tsc -b && vite build"
+  },
+  "engines": {
+    "pnpm": "^9.10.0",
+    "npm": "forbidden, use pnpm",
+    "node": "^22.5.0||^20.11.0"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.2.10"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0 || ^2.7.0"
+  }
+}

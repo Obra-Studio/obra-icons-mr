@@ -13,7 +13,10 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-brand-dropbox-fill[dropbox]" clip-path="url(#clip0_797_40995)">
+	<g
+		class="oi-brand-dropbox-fill[dropbox]"
+		clip-path="url(#clip0_2603_14077)"
+	>
 		<path
 			class="oi-fill"
 			d="M5.92343 2.39368L-0.0762939 6.20922L5.92343 10.0248L11.9241 6.20922L17.9239 10.0248L23.9236 6.20922L17.9239 2.39368L11.9241 6.20922L5.92343 2.39368Z"
@@ -36,7 +39,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_797_40995">
+		<clipPath class="clip0_2603_14077">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

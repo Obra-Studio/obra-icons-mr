@@ -31,7 +31,7 @@ const HighDefinition = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M5.96867 9L5.96867 11.8618M5.96867 14.7236L5.96867 11.8618M10.4317 9V11.8618M10.4317 14.7236V11.8618M5.96867 11.8618H10.4317"
+						d="M5.96866 9L5.96866 11.8618M5.96866 14.7236L5.96866 11.8618M10.4317 9V11.8618M10.4317 14.7236V11.8618M5.96866 11.8618H10.4317"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="2.16568"
@@ -40,7 +40,7 @@ const HighDefinition = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M13.2524 14.8039V9H15.2292C16.9562 9 18.0313 10.5974 18.0313 11.9031C18.0313 13.5352 17.0763 14.8039 15.2292 14.8039H13.2524Z"
+						d="M13.2523 14.8039V9H15.2292C16.9562 9 18.0313 10.5974 18.0313 11.9031C18.0313 13.5352 17.0763 14.8039 15.2292 14.8039H13.2523Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="2.16568"

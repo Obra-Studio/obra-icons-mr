@@ -18,7 +18,7 @@ const BrandDropboxFill = forwardRef<SVGSVGElement, FillIconProps>(
 			>
 				<g
 					className="oi-brand-dropbox-fill[dropbox]"
-					clip-path="url(#clip0_797_40995)"
+					clip-path="url(#clip0_2603_14077)"
 				>
 					<path
 						className="oi-fill"
@@ -42,7 +42,7 @@ const BrandDropboxFill = forwardRef<SVGSVGElement, FillIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_797_40995">
+					<clipPath className="clip0_2603_14077">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

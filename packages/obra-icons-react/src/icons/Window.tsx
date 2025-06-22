@@ -44,7 +44,7 @@ const Window = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-mini-dot"
-						d="M9.28 7H9.292"
+						d="M9.28001 7H9.29201"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

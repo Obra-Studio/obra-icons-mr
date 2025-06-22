@@ -37,7 +37,7 @@ const Ruler = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M15.4623 12.8839L14.4017 11.8232"
+						d="M15.4623 12.8839L14.4016 11.8232"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="2.16568"

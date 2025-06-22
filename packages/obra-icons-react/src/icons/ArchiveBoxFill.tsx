@@ -19,8 +19,6 @@ const ArchiveBoxFill = forwardRef<SVGSVGElement, FillIconProps>(
 				<g className="oi-archive-box-fill">
 					<path
 						className="oi-fill"
-						fill-rule="evenodd"
-						clip-rule="evenodd"
 						d="M21 9V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V9H21ZM9 11C8.44772 11 8 11.4477 8 12C8 12.5523 8.44772 13 9 13H15C15.5523 13 16 12.5523 16 12C16 11.4477 15.5523 11 15 11H9Z"
 						fill={color}
 					/>
