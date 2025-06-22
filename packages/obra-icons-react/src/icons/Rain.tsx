@@ -46,7 +46,7 @@ const Rain = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M8.50001 14L6.50001 20"
+						d="M8.5 14L6.5 20"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

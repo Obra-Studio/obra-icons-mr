@@ -18,7 +18,7 @@ const PreviousFill = forwardRef<SVGSVGElement, FillIconProps>(
 			>
 				<g
 					className="oi-previous-fill"
-					clip-path="url(#clip0_797_39961)"
+					clip-path="url(#clip0_2603_13043)"
 				>
 					<path
 						className="oi-fill"
@@ -39,7 +39,7 @@ const PreviousFill = forwardRef<SVGSVGElement, FillIconProps>(
 					</g>
 				</g>
 				<defs>
-					<clipPath className="clip0_797_39961">
+					<clipPath className="clip0_2603_13043">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

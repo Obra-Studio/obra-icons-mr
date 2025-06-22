@@ -17,7 +17,7 @@
 	<g class="oi-html">
 		<path
 			class="oi-vector"
-			d="M8.99996 16L4.99996 12L8.99996 8"
+			d="M8.99997 16L4.99997 12L8.99997 8"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-miterlimit="10"

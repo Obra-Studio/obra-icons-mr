@@ -28,7 +28,7 @@ const CloudUpload = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-incomplete-triangle"
-						d="M9.99999 12L12 10L14 12"
+						d="M9.99998 12L12 10L14 12"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

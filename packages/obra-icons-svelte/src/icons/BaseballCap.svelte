@@ -33,7 +33,7 @@
 		/>
 		<path
 			class="oi-vector"
-			d="M8.2875 11.7131C8.67844 6.32156 12 3 12 3C12 3 15.3216 6.32156 15.7125 11.7131"
+			d="M8.28751 11.7131C8.67844 6.32156 12 3 12 3C12 3 15.3216 6.32156 15.7125 11.7131"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"

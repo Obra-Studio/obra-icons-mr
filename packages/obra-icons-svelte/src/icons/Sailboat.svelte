@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-sailboat" clip-path="url(#clip0_797_41959)">
+	<g class="oi-sailboat" clip-path="url(#clip0_2603_15041)">
 		<path
 			class="oi-vector"
 			d="M1.5 16.5H22.5L19.725 19.9688C19.6548 20.0565 19.5658 20.1273 19.4645 20.1759C19.3632 20.2246 19.2523 20.2499 19.14 20.25H4.86C4.74765 20.2499 4.63675 20.2246 4.5355 20.1759C4.43424 20.1273 4.34522 20.0565 4.275 19.9688L1.5 16.5Z"
@@ -41,7 +41,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_797_41959">
+		<clipPath class="clip0_2603_15041">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

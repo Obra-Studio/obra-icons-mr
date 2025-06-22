@@ -35,7 +35,7 @@ const Coins = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M6.86615 10.9724V14.2074"
+						d="M6.86609 10.9724V14.2074"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
