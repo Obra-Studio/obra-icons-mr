@@ -4,20 +4,20 @@
 	import NavItem from './NavItem.svelte';
 	import { page } from '$app/state';
 
-	let menuShown = $derived(
+	let mobile = $derived(
 		typeof innerWidth.current === 'number' && innerWidth.current <= 700,
 	);
 
+	// For mobile nav
+	let open = $derived(false);
+
 	function showMenu() {
-		menuShown = !menuShown;
+		open = !open;
 	}
 
 	function closeMenu() {
-		if (
-			typeof innerWidth.current === 'number' &&
-			innerWidth.current <= 700
-		) {
-			menuShown = false;
+		if (mobile) {
+			open = false;
 		}
 	}
 </script>
@@ -37,54 +37,52 @@
 							</a>
 						</h1>
 
-						{#if menuShown}
-							<nav>
-								<ul class="main-menu">
-									<li>
-										<NavItem
-											onclick={closeMenu}
-											href="/"
-											active={page.url.pathname === '/'}
-										>
-											Home
-										</NavItem>
-									</li>
-									<li>
-										<NavItem
-											onclick={closeMenu}
-											href="/about"
-											active={page.url.pathname.startsWith(
-												'/about',
-											)}
-										>
-											About
-										</NavItem>
-									</li>
-									<li>
-										<NavItem
-											onclick={closeMenu}
-											href="/blog"
-											active={page.url.pathname.startsWith(
-												'/blog',
-											)}
-										>
-											Blog
-										</NavItem>
-									</li>
-									<li>
-										<NavItem
-											onclick={closeMenu}
-											href="/changelog"
-											active={page.url.pathname.startsWith(
-												'/changelog',
-											)}
-										>
-											Changelog
-										</NavItem>
-									</li>
-								</ul>
-							</nav>
-						{/if}
+						<nav>
+							<ul class="main-menu" class:open>
+								<li>
+									<NavItem
+										onclick={closeMenu}
+										href="/"
+										active={page.url.pathname === '/'}
+									>
+										Home
+									</NavItem>
+								</li>
+								<li>
+									<NavItem
+										onclick={closeMenu}
+										href="/about"
+										active={page.url.pathname.startsWith(
+											'/about',
+										)}
+									>
+										About
+									</NavItem>
+								</li>
+								<li>
+									<NavItem
+										onclick={closeMenu}
+										href="/blog"
+										active={page.url.pathname.startsWith(
+											'/blog',
+										)}
+									>
+										Blog
+									</NavItem>
+								</li>
+								<li>
+									<NavItem
+										onclick={closeMenu}
+										href="/changelog"
+										active={page.url.pathname.startsWith(
+											'/changelog',
+										)}
+									>
+										Changelog
+									</NavItem>
+								</li>
+							</ul>
+						</nav>
 					</div>
 
 					<div class="flex align-items-center gap-large">
@@ -123,6 +121,10 @@
 			padding: 1rem;
 			border-radius: 1.5rem;
 			background: #333;
+
+			&:not(&.open) {
+				display: none;
+			}
 		}
 
 		.main-menu li {
