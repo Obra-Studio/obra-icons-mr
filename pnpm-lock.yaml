@@ -273,6 +273,9 @@ importers:
       publint:
         specifier: ^0.3.12
         version: 0.3.12
+      runed:
+        specifier: ^0.29.1
+        version: 0.29.1(svelte@5.34.7)
       svelte:
         specifier: ^5.34.7
         version: 5.34.7
@@ -3508,6 +3511,11 @@ packages:
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
+
+  runed@0.29.1:
+    resolution: {integrity: sha512-RGQEB8ZiWv4OvzBJhbMj2hMgRM8QrEptzTrDr7TDfkHaRePKjiUka4vJ9QHGY+8s87KymNvFoZAxFdQ4jtZNcA==}
+    peerDependencies:
+      svelte: ^5.7.0
 
   rxjs@7.8.2:
     resolution: {integrity: sha512-dhKf903U/PQZY6boNNtAGdWbG85WAbjT/1xYoZIC7FAY0yWapOBQVsVrDl58W86//e1VpMNBtRV4MaXfdMySFA==}
@@ -7007,6 +7015,11 @@ snapshots:
   run-parallel@1.2.0:
     dependencies:
       queue-microtask: 1.2.3
+
+  runed@0.29.1(svelte@5.34.7):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.34.7
 
   rxjs@7.8.2:
     dependencies:

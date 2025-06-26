@@ -32,6 +32,7 @@
 		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.4.0",
 		"publint": "^0.3.12",
+		"runed": "^0.29.1",
 		"svelte": "^5.34.7",
 		"svelte-check": "^4.2.2",
 		"svelte-copy": "^2.0.0",

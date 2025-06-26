@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { innerWidth } from 'svelte/reactivity/window';
 	import { IconMenu } from 'obra-icons-svelte';
+	import { onClickOutside } from 'runed';
 	import NavItem from './NavItem.svelte';
 	import { page } from '$app/state';
 
@@ -20,6 +21,14 @@
 			open = false;
 		}
 	}
+
+	function clickOutside(node: HTMLElement) {
+		const handler = onClickOutside(node, closeMenu);
+
+		return () => {
+			handler.stop();
+		};
+	}
 </script>
 
 <header>
@@ -37,7 +46,7 @@
 							</a>
 						</h1>
 
-						<nav>
+						<nav {@attach clickOutside}>
 							<ul class="main-menu" class:open>
 								<li>
 									<NavItem
