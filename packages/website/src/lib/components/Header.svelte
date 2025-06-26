@@ -110,6 +110,7 @@
 		align-items: center;
 		justify-content: center;
 		border-radius: 1.5rem;
+		cursor: pointer;
 	}
 
 	@media (max-width: 700px) {
