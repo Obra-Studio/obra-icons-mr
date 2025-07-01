@@ -404,8 +404,11 @@ h4,
     padding: var(--spacing-medium);
 }
 
-.padding-medium {
-    padding: var(--spacing-large);
+/* Mobile responsive padding */
+@media (max-width: 639px) {
+    .padding-medium {
+        padding: var(--spacing-small);
+    }
 }
 
 .padding-x-large {
