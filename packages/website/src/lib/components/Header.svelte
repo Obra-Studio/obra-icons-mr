@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { innerWidth } from 'svelte/reactivity/window';
-	import { IconMenu } from 'obra-icons-svelte';
+	import { IconMenu, IconBrandGithubFill } from 'obra-icons-svelte';
 	import { onClickOutside } from 'runed';
 	import NavItem from './NavItem.svelte';
 	import { page } from '$app/state';
@@ -95,6 +95,15 @@
 					</div>
 
 					<div class="flex align-items-center gap-large">
+						<a
+							href="https://github.com/Obra-Studio/obra-icons-mr"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="github-link"
+							title="View on GitHub"
+						>
+							<IconBrandGithubFill />
+						</a>
 						<button class="mobile-menu-trigger" onclick={showMenu}>
 							<IconMenu />
 							Menu
@@ -107,6 +116,20 @@
 </header>
 
 <style>
+	.github-link {
+		color: #fff;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		transition: background-color 0.2s ease;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.github-link:hover {
+		background: rgba(255, 255, 255, 0.1);
+	}
+
 	.mobile-menu-trigger {
 		appearance: none;
 		background: none;
