@@ -2,6 +2,7 @@
 	import { IconMenu, IconBrandGithubFill } from 'obra-icons-svelte';
 	import NavItem from './NavItem.svelte';
 	import { page } from '$app/state';
+	import { onClickOutside } from 'runed';
 
 	let open = $state(0);
 
@@ -10,6 +11,15 @@
 	}
 
 	function closeMenu() {
+		open = false;
+	}
+
+	function clickOutside(node: HTMLElement) {
+		const handler = onClickOutside(node, closeMenu);
+
+		return () => {
+			handler.stop();
+		};
 		open = false;
 	}
 </script>
@@ -29,7 +39,7 @@
 							</a>
 						</h1>
 
-						<nav>
+						<nav {@attach clickOutside}>
 							<ul class="main-menu" class:open>
 								<li>
 									<NavItem
