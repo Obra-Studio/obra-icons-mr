@@ -20,12 +20,15 @@
 <div class="is-dark">
 	<div class="bg-black">
 		<div class="container padding-medium margin-0-auto">
-			<div class="vertical-container-x-large">
+			<div class="vertical-container-large">
 				<div class="hero">
 					<h2 class="text-align-center">
 						A simple, consistent set of icons, perfect for user
 						interfaces.
 					</h2>
+					<p class="text-align-center">
+						MIT licensed • {iconsCount} icons
+					</p>
 
 					<div class="justify-content-center button-group">
 						<a
@@ -58,7 +61,7 @@
 <div class="responds-to-dark">
 	<div class="bg-dark-grey">
 		<div class="controls">
-			<SearchInput placeholder="Search {iconsCount} icons for free..." />
+			<SearchInput placeholder="Search icons..." />
 			<div class="inner-controls">
 				<div class="control-group">
 					<label for="weight">Weight</label>
@@ -245,5 +248,16 @@
 		.no-results {
 			color: #fff;
 		}
+	}
+
+	.hero {
+		gap: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero h2 {
+		margin: 0;
 	}
 </style>
