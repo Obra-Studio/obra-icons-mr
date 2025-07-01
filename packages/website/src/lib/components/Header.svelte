@@ -142,13 +142,12 @@
 
 	@media (max-width: 700px) {
 		.mobile-menu-trigger {
-			display: inline-flex;
+			display: flex;
 		}
 	}
 
 	@media (max-width: 700px) {
 		.main-menu {
-			display: none;
 			position: fixed;
 			width: 12rem;
 			right: 1.5rem;
@@ -156,10 +155,17 @@
 			padding: 1rem;
 			border-radius: 1.5rem;
 			background: #333;
+			visibility: hidden;
+			opacity: 0;
+			transition:
+				visibility 0s,
+				opacity 0.2s;
 		}
 
 		.main-menu.open {
-			display: block;
+			visibility: visible;
+			opacity: 1;
+			z-index: 1;
 		}
 
 		.main-menu li {
