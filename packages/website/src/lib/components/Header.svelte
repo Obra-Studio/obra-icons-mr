@@ -1,33 +1,16 @@
 <script lang="ts">
-	import { innerWidth } from 'svelte/reactivity/window';
 	import { IconMenu, IconBrandGithubFill } from 'obra-icons-svelte';
-	import { onClickOutside } from 'runed';
 	import NavItem from './NavItem.svelte';
 	import { page } from '$app/state';
 
-	let mobile = $derived(
-		typeof innerWidth.current === 'number' && innerWidth.current <= 700,
-	);
+	let open = $state(0);
 
-	// For mobile nav
-	let open = $derived(false);
-
-	function showMenu() {
+	function toggleMenu() {
 		open = !open;
 	}
 
 	function closeMenu() {
-		if (mobile) {
-			open = false;
-		}
-	}
-
-	function clickOutside(node: HTMLElement) {
-		const handler = onClickOutside(node, closeMenu);
-
-		return () => {
-			handler.stop();
-		};
+		open = false;
 	}
 </script>
 
@@ -46,46 +29,46 @@
 							</a>
 						</h1>
 
-						<nav {@attach clickOutside}>
+						<nav>
 							<ul class="main-menu" class:open>
 								<li>
 									<NavItem
-										onclick={closeMenu}
-										href="/"
 										active={page.url.pathname === '/'}
+										href="/"
+										onclick={closeMenu}
 									>
 										Home
 									</NavItem>
 								</li>
 								<li>
 									<NavItem
-										onclick={closeMenu}
-										href="/about"
 										active={page.url.pathname.startsWith(
 											'/about',
 										)}
+										href="/about"
+										onclick={closeMenu}
 									>
 										About
 									</NavItem>
 								</li>
 								<li>
 									<NavItem
-										onclick={closeMenu}
-										href="/blog"
 										active={page.url.pathname.startsWith(
 											'/blog',
 										)}
+										href="/blog"
+										onclick={closeMenu}
 									>
 										Blog
 									</NavItem>
 								</li>
 								<li>
 									<NavItem
-										onclick={closeMenu}
-										href="/changelog"
 										active={page.url.pathname.startsWith(
 											'/changelog',
 										)}
+										href="/changelog"
+										onclick={closeMenu}
 									>
 										Changelog
 									</NavItem>
@@ -96,15 +79,19 @@
 
 					<div class="flex align-items-center gap-large">
 						<a
-							href="https://github.com/Obra-Studio/obra-icons-mr"
-							target="_blank"
-							rel="noopener noreferrer"
 							class="github-link"
+							href="https://github.com/Obra-Studio/obra-icons-mr"
+							rel="noopener noreferrer"
+							target="_blank"
 							title="View on GitHub"
 						>
 							<IconBrandGithubFill />
 						</a>
-						<button class="mobile-menu-trigger" onclick={showMenu}>
+						<button
+							class="mobile-menu-trigger"
+							class:open
+							onclick={toggleMenu}
+						>
 							<IconMenu />
 							Menu
 						</button>
@@ -145,19 +132,34 @@
 		cursor: pointer;
 	}
 
+	.mobile-menu-trigger.open {
+		box-shadow: 0 0 0 2px #fff;
+	}
+
+	.mobile-menu-trigger:hover {
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	@media (max-width: 700px) {
+		.mobile-menu-trigger {
+			display: inline-flex;
+		}
+	}
+
 	@media (max-width: 700px) {
 		.main-menu {
+			display: none;
 			position: fixed;
 			width: 12rem;
 			right: 1.5rem;
-			top: 4.5rem;
+			top: 5.5rem;
 			padding: 1rem;
 			border-radius: 1.5rem;
 			background: #333;
+		}
 
-			&:not(&.open) {
-				display: none;
-			}
+		.main-menu.open {
+			display: block;
 		}
 
 		.main-menu li {
@@ -169,14 +171,6 @@
 			padding: 0.75rem 1.25rem;
 			border-radius: 1.5rem;
 		}
-
-		.mobile-menu-trigger {
-			display: inline-flex;
-		}
-	}
-
-	.mobile-menu-trigger:hover {
-		background: rgba(255, 255, 255, 0.2);
 	}
 
 	@media (min-width: 700px) {
