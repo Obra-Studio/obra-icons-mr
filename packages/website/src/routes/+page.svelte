@@ -26,6 +26,9 @@
 						A simple, consistent set of icons, perfect for user
 						interfaces.
 					</h2>
+					<p class="text-align-center hero-subtitle">
+						Open source and MIT licensed
+					</p>
 
 					<div class="justify-content-center button-group">
 						<a
@@ -245,5 +248,11 @@
 		.no-results {
 			color: #fff;
 		}
+	}
+
+	.hero-subtitle {
+		opacity: 0.8;
+		margin-top: var(--spacing-small);
+		font-size: 1.1rem;
 	}
 </style>
