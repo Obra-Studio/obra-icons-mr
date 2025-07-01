@@ -10,7 +10,7 @@
 	let selectedActionOnClick = $state<ActionType>('copySvg');
 	let strokeWeight = $state(1.5);
 	let color = $state('#000000');
-	let size = $state(36);
+	let size = $state(24);
 </script>
 
 <svelte:head>
@@ -88,7 +88,7 @@
 					<span class="count">{size}</span>
 				</div>
 				<div class="control-group">
-					<label for="actionOnClick">Actionx</label>
+					<label for="actionOnClick">Action</label>
 					<div class="select-holder">
 						<select
 							bind:value={selectedActionOnClick}
