@@ -2,8 +2,9 @@
 	import { IconMenu, IconBrandGithubFill } from 'obra-icons-svelte';
 	import NavItem from './NavItem.svelte';
 	import { page } from '$app/state';
+	import { onClickOutside } from 'runed';
 
-	let open = $state(0);
+	let open = $state(false);
 
 	function toggleMenu() {
 		open = !open;
@@ -11,6 +12,24 @@
 
 	function closeMenu() {
 		open = false;
+	}
+
+	function clickOutside(node: HTMLElement) {
+		const handler = onClickOutside(node, (event) => {
+			if (
+				event.target instanceof HTMLElement &&
+				event.target.classList.contains('mobile-menu-trigger')
+			) {
+				// Skip the menu toggle button to prevent closing then re-opening
+				return;
+			}
+
+			closeMenu();
+		});
+
+		return () => {
+			handler.stop();
+		};
 	}
 </script>
 
@@ -29,7 +48,7 @@
 							</a>
 						</h1>
 
-						<nav>
+						<nav {@attach clickOutside}>
 							<ul class="main-menu" class:open>
 								<li>
 									<NavItem
