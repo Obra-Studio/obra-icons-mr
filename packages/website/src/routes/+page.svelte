@@ -88,7 +88,7 @@
 					<span class="count">{size}</span>
 				</div>
 				<div class="control-group">
-					<label for="actionOnClick">Action on click</label>
+					<label for="actionOnClick">Actionx</label>
 					<div class="select-holder">
 						<select
 							bind:value={selectedActionOnClick}
