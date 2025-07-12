@@ -7,9 +7,7 @@ const sizes = Array(10)
 	.fill(0)
 	.map((_, i) => 12 * (i + 1));
 
-const strokeWidths = Array(3)
-	.fill(0)
-	.map((_, i) => i + 1);
+const strokeWidths = [1, 1.5, 2];
 
 const size = ref(sizes[3]);
 const color = ref<Color>('Black');
