@@ -12,7 +12,6 @@
     "build": "pnpm -r build"
   },
   "engines": {
-    "node": "^22.5.0||^20.11.0",
     "pnpm": "^9.10.0",
     "npm": "forbidden, use pnpm"
   },
