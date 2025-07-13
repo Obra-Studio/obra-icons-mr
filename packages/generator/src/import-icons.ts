@@ -18,15 +18,21 @@ const figma = ofetch.create({
 	},
 });
 
-//? Configure figma file and frame locations
-
 const FILE_ID =
 	env.SCRIPTS_FIGMA_FILE_ID ||
-	(await prompt('Enter Figma file ID (e.g. "jEkeNggsUIB8cAWKRudyP2")'));
+	(await (async () => {
+		const choice = await prompt(
+			'Choose Figma file:\n  1. Default (jEkeNggsUIB8cAWKRudyP2)\n  2. Custom ID\nEnter choice (1 or 2): ',
+		);
 
-if (!FILE_ID) {
-	throw new Error(`Invalid Figma file ID`);
-}
+		if (choice === '1' || choice === '') {
+			return 'jEkeNggsUIB8cAWKRudyP2';
+		} else if (choice === '2') {
+			return await prompt('Enter custom Figma file ID: ');
+		} else {
+			throw new Error('Invalid choice. Please enter 1 or 2.');
+		}
+	})());
 
 //? You can get the id from figma.currentPage.selection[0].id via console
 const NODE_ID =
@@ -122,9 +128,7 @@ for (const chunk of split(icons, 100)) {
 			const link = images[icon.id];
 			if (!link) throw new Error(`No link for ${icon.id}`);
 
-			console.log(
-				`      Downloading Icon (${icon.id}) "${icon.name}"`,
-			);
+			console.log(`      Downloading Icon (${icon.id}) "${icon.name}"`);
 
 			//? Fetch the svg data from the link
 			const raw_svg = await ofetch(link, { responseType: 'text' });
