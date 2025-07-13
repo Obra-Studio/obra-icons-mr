@@ -1,7 +1,7 @@
 {
   "name": "obra-icons-vue",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.23.1",
   "license": "MIT",
   "type": "module",
   "main": "./dist/obra-icons-vue.umd.cjs",
