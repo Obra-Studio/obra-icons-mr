@@ -19,7 +19,7 @@ const Message = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-message">
 					<path
 						className="oi-vector"
-						d="M20 5H4C3.44771 5 3 5.44772 3 6V17C3 17.5523 3.44771 18 4 18H9L12 21L15 18H20C20.5523 18 21 17.5523 21 17V6C21 5.44772 20.5523 5 20 5Z"
+						d="M20 5H4C3.44772 5 3 5.44772 3 6V17C3 17.5523 3.44772 18 4 18H9L12 21L15 18H20C20.5523 18 21 17.5523 21 17V6C21 5.44772 20.5523 5 20 5Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"
@@ -37,7 +37,7 @@ const Message = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M17 9.5H6.99999"
+						d="M17 9.5H6.99998"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						stroke-miterlimit="10"

@@ -14,7 +14,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-guitar" clip-path="url(#clip0_797_42110)">
+	<g class="oi-guitar" clip-path="url(#clip0_2603_15192)">
 		<path
 			class="oi-vector"
 			d="M19.125 1.125L22.875 4.875"
@@ -73,7 +73,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_797_42110">
+		<clipPath class="clip0_2603_15192">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

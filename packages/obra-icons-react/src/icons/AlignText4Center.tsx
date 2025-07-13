@@ -19,7 +19,7 @@ const AlignText4Center = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-align-text-4-center">
 					<path
 						className="oi-line"
-						d="M18 10H6"
+						d="M18 10H6.00001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -27,7 +27,7 @@ const AlignText4Center = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M21 6H3"
+						d="M21 6H3.00001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -35,7 +35,7 @@ const AlignText4Center = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M21 14H3"
+						d="M21 14H3.00001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -43,7 +43,7 @@ const AlignText4Center = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M18 18H6"
+						d="M18 18H6.00001"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

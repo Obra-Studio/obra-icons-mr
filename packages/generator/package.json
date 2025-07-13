@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate:icons": "tsx src/icons.ts",
+    "import:icons": "tsx src/import-icons.ts",
+    "generate:packages": "tsx src/generate-pkgs.ts",
     "generate:keywords": "tsx src/keywords.ts",
-    "generate": "bash src/generate.sh"
+    "generate": "pnpm import:icons && pnpm generate:packages && pnpm generate:keywords"
   },
   "engines": {
     "pnpm": "^9.10.0",

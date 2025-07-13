@@ -19,7 +19,7 @@ const PathStraightVertical = forwardRef<SVGSVGElement, StrokeIconProps>(
 				<g className="oi-path-straight-vertical">
 					<path
 						className="oi-line"
-						d="M7.80005 5.40002V19.8"
+						d="M7.8 5.40002V19.8"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
