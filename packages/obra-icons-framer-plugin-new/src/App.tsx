@@ -248,7 +248,7 @@ const iconKeywords: Record<string, string[]> = {
 	workspace: ["medical", "health", "office", "work", "environment"],
 	desk: ["medical", "health", "furniture", "work", "office"],
 	chair: ["medical", "health", "furniture", "seat", "sitting"],
-	table: ["medical", "health", "furniture", "surface", "work"],
+	"table-furniture": ["medical", "health", "furniture", "surface", "work"],
 	storage: ["medical", "health", "warehouse", "facility", "space"],
 	warehouse: ["medical", "health", "storage", "facility", "industrial"],
 	factory: ["medical", "health", "industrial", "manufacturing", "production"],
