@@ -29,10 +29,10 @@ import { renderToStaticMarkup } from 'react-dom/server';
 
 interface IconEntry {
 	name: string; // "academic-cap"
-	pascal_name: string; // "IconAcademicCap"
+	pascal_name: string;
 	Icon: React.ComponentType<any>;
 	keywords: string[];
-	type: 'stroke' | 'fill'; // Add icon type
+	type: 'stroke' | 'fill';
 }
 
 type StrokeWidthOption = { key: string; value: number };
@@ -97,8 +97,9 @@ function IconGrid(props: {
 	searchQuery: string;
 	strokeWidth: number;
 	iconType: 'all' | 'stroke' | 'fill';
+	iconColor: string;
 }) {
-	const { searchQuery, strokeWidth, iconType } = props;
+	const { searchQuery, strokeWidth, iconType, iconColor } = props;
 
 	const isAllowedToAddSVG = useIsAllowedTo('addSVG');
 
@@ -134,7 +135,7 @@ function IconGrid(props: {
 			const { Icon } = entry;
 
 			const svg = renderToStaticMarkup(
-				<Icon size={32} color={'black'} strokeWidth={strokeWidth} />,
+				<Icon size={24} color={iconColor} strokeWidth={strokeWidth} />,
 			);
 
 			await framer.addSVG({
@@ -142,13 +143,13 @@ function IconGrid(props: {
 				name: 'Icon',
 			});
 		},
-		[strokeWidth],
+		[strokeWidth, iconColor],
 	);
 
 	if (filteredIcons.length === 0) {
 		return (
 			<div className="error-container">
-				<p>No Results</p>
+				<p>No results.</p>
 			</div>
 		);
 	}
@@ -180,7 +181,7 @@ function IconGrid(props: {
 								svg: renderToStaticMarkup(
 									<Icon
 										size={32}
-										color={'var(--framer-color-text)'}
+										color={iconColor}
 										strokeWidth={strokeWidth}
 									/>,
 								),
@@ -188,7 +189,7 @@ function IconGrid(props: {
 						>
 							<Icon
 								size={32}
-								color={'var(--framer-color-text)'}
+								color={iconColor}
 								strokeWidth={strokeWidth}
 							/>
 						</Draggable>
@@ -203,6 +204,7 @@ export function App() {
 	const [strokeWidth, setStrokeWidth] = useState<number>(1.5);
 	const [searchQuery, setSearchQuery] = useState('');
 	const [iconType, setIconType] = useState<'all' | 'stroke' | 'fill'>('all');
+	const [iconColor, setIconColor] = useState<string>('#000000');
 
 	return (
 		<>
@@ -216,6 +218,13 @@ export function App() {
 					placeholder="Search…"
 				/>
 				<div className="dropdowns-container">
+					<input 
+						type="color" 
+						style={{ width: 30 }} 
+						value={iconColor}
+						onChange={(e) => setIconColor(e.target.value)}
+					/>
+
 					<select
 						className="type-selector"
 						value={iconType}
@@ -253,6 +262,7 @@ export function App() {
 						searchQuery={searchQuery}
 						strokeWidth={strokeWidth}
 						iconType={iconType}
+						iconColor={iconColor}
 					/>
 				</Suspense>
 			</div>
