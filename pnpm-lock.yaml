@@ -160,8 +160,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       obra-icons-react:
-        specifier: workspace:*
-        version: link:../obra-icons-react
+        specifier: ^1.23.1
+        version: 1.23.1
       obra-icons-website:
         specifier: workspace:*
         version: link:../website
@@ -3413,6 +3413,9 @@ packages:
   object-inspect@1.13.2:
     resolution: {integrity: sha512-IRZSRuzJiynemAXPYtPe5BoI/RESNYR7TYm50MC5Mqbd3Jmw5y790sErYw3V6SryFJD64b74qQQs9wn5Bg/k3g==}
     engines: {node: '>= 0.4'}
+
+  obra-icons-react@1.23.1:
+    resolution: {integrity: sha512-jbn/1zqBipS3aOd5tTb3JLjWz49pwA0NCEmc/GMvHJG75Tn+jp4KBI4BG032BfYEGl3sYld7RCcRByPle3uymg==}
 
   ofetch@1.3.4:
     resolution: {integrity: sha512-KLIET85ik3vhEfS+3fDlc/BAZiAp+43QEC/yCo5zkNoY2YaKvNkOaFr/6wCFgFH1kuYQM5pMNi0Tg8koiIemtw==}
@@ -7458,6 +7461,8 @@ snapshots:
       boolbase: 1.0.0
 
   object-inspect@1.13.2: {}
+
+  obra-icons-react@1.23.1: {}
 
   ofetch@1.3.4:
     dependencies:
