@@ -93,16 +93,6 @@ const icons: ReadonlyArray<IconEntry> = Object.entries(Icons)
 		};
 	});
 
-const fuse = new Fuse(icons, {
-	keys: [
-		{ name: 'name', weight: 4 },
-		{ name: 'pascal_name', weight: 4 },
-		'keywords',
-	],
-	threshold: 0.2,
-	useExtendedSearch: true,
-});
-
 function IconGrid(props: {
 	searchQuery: string;
 	strokeWidth: number;

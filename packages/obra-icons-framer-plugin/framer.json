@@ -1,7 +1,9 @@
 {
     "id": "7aad7a",
     "name": "Obra Icons",
-    "description": "Add beautiful, customizable icons to your Framer projects",
-    "modes": ["canvas"],
+    "description": "A simple, consistent set of icons, perfect for user interfaces",
+    "modes": [
+        "canvas"
+    ],
     "icon": "/icon.png"
 }
