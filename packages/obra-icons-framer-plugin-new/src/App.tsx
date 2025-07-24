@@ -32,6 +32,7 @@ interface IconEntry {
 	pascal_name: string; // "IconAcademicCap"
 	Icon: React.ComponentType<any>;
 	keywords: string[];
+	type: 'stroke' | 'fill'; // Add icon type
 }
 
 type StrokeWidthOption = { key: string; value: number };
@@ -51,6 +52,23 @@ const strokeWidthOptions: StrokeWidthOption[] = [
 	},
 ];
 
+type IconTypeOption = { key: string; value: 'all' | 'stroke' | 'fill' };
+
+const iconTypeOptions: IconTypeOption[] = [
+	{
+		key: 'All',
+		value: 'all',
+	},
+	{
+		key: 'Stroke',
+		value: 'stroke',
+	},
+	{
+		key: 'Fill',
+		value: 'fill',
+	},
+];
+
 // Create icon data from the Obra icons
 const icons: ReadonlyArray<IconEntry> = Object.entries(Icons)
 	.filter(([name]) => name.startsWith('Icon'))
@@ -62,12 +80,16 @@ const icons: ReadonlyArray<IconEntry> = Object.entries(Icons)
 			.toLowerCase()
 			.replace(/^-/, '');
 
+		// Determine icon type based on name
+		const type = name.endsWith('Fill') ? 'fill' : 'stroke';
+
 		return {
 			name: kebabName,
 			pascal_name: name,
 			Icon: Icon as React.ComponentType<any>,
 			keywords:
 				(iconSearchData as Record<string, string[]>)[kebabName] || [],
+			type,
 		};
 	});
 
@@ -81,19 +103,41 @@ const fuse = new Fuse(icons, {
 	useExtendedSearch: true,
 });
 
-function IconGrid(props: { searchQuery: string; strokeWidth: number }) {
-	const { searchQuery, strokeWidth } = props;
+function IconGrid(props: {
+	searchQuery: string;
+	strokeWidth: number;
+	iconType: 'all' | 'stroke' | 'fill';
+}) {
+	const { searchQuery, strokeWidth, iconType } = props;
 
 	const isAllowedToAddSVG = useIsAllowedTo('addSVG');
 
 	const deferredQuery = useDeferredValue(searchQuery);
 
 	const filteredIcons = useMemo(() => {
-		const query = deferredQuery.trim().toLowerCase();
-		if (!query) return icons;
+		// Filter by icon type first
+		let filtered = icons;
+		if (iconType !== 'all') {
+			filtered = filtered.filter((icon) => icon.type === iconType);
+		}
 
-		return fuse.search(query).map((value) => value.item);
-	}, [deferredQuery]);
+		// Then filter by search query
+		const query = deferredQuery.trim().toLowerCase();
+		if (!query) return filtered;
+
+		// Create a new Fuse instance with the type-filtered icons
+		const typeFilteredFuse = new Fuse(filtered, {
+			keys: [
+				{ name: 'name', weight: 4 },
+				{ name: 'pascal_name', weight: 4 },
+				'keywords',
+			],
+			threshold: 0.2,
+			useExtendedSearch: true,
+		});
+
+		return typeFilteredFuse.search(query).map((value) => value.item);
+	}, [deferredQuery, iconType]);
 
 	const handleIconClick = useCallback(
 		async (entry: IconEntry) => {
@@ -168,6 +212,7 @@ function IconGrid(props: { searchQuery: string; strokeWidth: number }) {
 export function App() {
 	const [strokeWidth, setStrokeWidth] = useState<number>(1.5);
 	const [searchQuery, setSearchQuery] = useState('');
+	const [iconType, setIconType] = useState<'all' | 'stroke' | 'fill'>('all');
 
 	return (
 		<>
@@ -180,6 +225,21 @@ export function App() {
 					onChange={(e) => setSearchQuery(e.target.value)}
 					placeholder="Search…"
 				/>
+				<select
+					className="type-selector"
+					value={iconType}
+					onChange={(e) => {
+						setIconType(
+							e.target.value as 'all' | 'stroke' | 'fill',
+						);
+					}}
+				>
+					{iconTypeOptions.map((option) => (
+						<option key={option.key} value={option.value}>
+							{option.key}
+						</option>
+					))}
+				</select>
 				<select
 					className="weight-selector"
 					value={strokeWidth}
@@ -200,6 +260,7 @@ export function App() {
 					<IconGrid
 						searchQuery={searchQuery}
 						strokeWidth={strokeWidth}
+						iconType={iconType}
 					/>
 				</Suspense>
 			</div>
