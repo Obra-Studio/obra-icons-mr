@@ -38,15 +38,15 @@ type StrokeWidthOption = { key: string; value: number };
 
 const strokeWidthOptions: StrokeWidthOption[] = [
 	{
-		key: 'Thin',
+		key: 'Thin (1px)',
 		value: 1,
 	},
 	{
-		key: 'Regular',
+		key: 'Regular (1.5px)',
 		value: 1.5,
 	},
 	{
-		key: 'Bold',
+		key: 'Bold (2px)',
 		value: 2,
 	},
 ];
