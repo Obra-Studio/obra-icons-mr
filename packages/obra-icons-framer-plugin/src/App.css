@@ -6,12 +6,15 @@
 	gap: 10px;
 }
 
-.weight-selector {
-	width: 100%;
+.dropdowns-container {
+	display: flex;
+	gap: 10px;
 }
 
+.weight-selector,
 .type-selector {
-	width: 100%;
+	flex-shrink: 1;
+	flex-grow: 1;
 }
 
 .error-container {

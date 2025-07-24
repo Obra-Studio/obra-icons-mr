@@ -225,34 +225,36 @@ export function App() {
 					onChange={(e) => setSearchQuery(e.target.value)}
 					placeholder="Search…"
 				/>
-				<select
-					className="type-selector"
-					value={iconType}
-					onChange={(e) => {
-						setIconType(
-							e.target.value as 'all' | 'stroke' | 'fill',
-						);
-					}}
-				>
-					{iconTypeOptions.map((option) => (
-						<option key={option.key} value={option.value}>
-							{option.key}
-						</option>
-					))}
-				</select>
-				<select
-					className="weight-selector"
-					value={strokeWidth}
-					onChange={(e) => {
-						setStrokeWidth(Number(e.target.value));
-					}}
-				>
-					{strokeWidthOptions.map((option) => (
-						<option key={option.key} value={option.value}>
-							{option.key}
-						</option>
-					))}
-				</select>
+				<div className="dropdowns-container">
+					<select
+						className="type-selector"
+						value={iconType}
+						onChange={(e) => {
+							setIconType(
+								e.target.value as 'all' | 'stroke' | 'fill',
+							);
+						}}
+					>
+						{iconTypeOptions.map((option) => (
+							<option key={option.key} value={option.value}>
+								{option.key}
+							</option>
+						))}
+					</select>
+					<select
+						className="weight-selector"
+						value={strokeWidth}
+						onChange={(e) => {
+							setStrokeWidth(Number(e.target.value));
+						}}
+					>
+						{strokeWidthOptions.map((option) => (
+							<option key={option.key} value={option.value}>
+								{option.key}
+							</option>
+						))}
+					</select>
+				</div>
 			</div>
 
 			<div className="grid-container">
