@@ -6,8 +6,8 @@ A comprehensive Framer plugin that brings the entire Obra Icons library to your 
 
 -   **1000+ Icons**: Access to the complete Obra Icons library
 -   **Smart Search**: Powerful search functionality with keyword matching
--   **Customizable**: Adjust size, stroke weight, and color
--   **Color Picker**: Built-in color picker with custom color management
+-   **Customizable**: Adjust size and stroke weight
+-   **Drag & Drop**: Drag icons directly onto your canvas
 -   **Responsive**: Optimized for the Framer plugin interface
 
 ## Installation
@@ -52,8 +52,7 @@ pnpm pack
 3. Customize the icon properties:
     - **Size**: Adjust from 12px to 64px
     - **Stroke Weight**: Choose from 1, 1.5, or 2
-    - **Color**: Use the color picker or add custom colors
-4. Click any icon to add it to your canvas
+4. Click any icon to add it to your canvas or drag it directly
 
 ## Features in Detail
 
@@ -61,17 +60,12 @@ pnpm pack
 
 -   Type keywords to find icons quickly
 -   Search results are ranked by relevance
--   Clear search button to reset results
+-   Search by icon name or related keywords
 
 ### Customization Options
 
--   **Size Control**: Responsive slider for precise sizing
--   **Stroke Weight**: Radio buttons for stroke thickness
--   **Color Management**:
-    -   Predefined color palette
-    -   Custom color picker
-    -   Save and manage custom colors
-    -   Import color lists
+-   **Stroke Weight Control**: Choose between Thin (1px), Regular (1.5px), or Bold (2px)
+-   **Icon Rendering**: High-quality SVG icons with proper color and stroke application
 
 ### Icon Rendering
 
@@ -82,11 +76,23 @@ pnpm pack
 
 ## Architecture
 
-The plugin is built with:
+This plugin is built with:
 
 -   **React**: For the user interface
 -   **TypeScript**: For type safety
--   **Orama**: For fast, client-side search
--   **Framer Plugin API**: For canvas integration
+-   **Vite**: For fast development and building
+-   **Fuse.js**: For fuzzy search functionality
+-   **Obra Icons React**: The icon library
 
-Learn more: https://www.framer.com/developers/plugins/introduction
+## Icon Library
+
+This plugin uses the [Obra Icons React](https://www.npmjs.com/package/obra-icons-react) package, which provides:
+
+-   1000+ beautifully designed icons
+-   Consistent stroke-based design
+-   MIT licensed
+-   Optimized for web use
+
+## License
+
+MIT License - see the LICENSE file for details.
