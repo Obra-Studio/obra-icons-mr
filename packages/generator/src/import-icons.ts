@@ -37,7 +37,9 @@ const FILE_ID =
 //? You can get the id from figma.currentPage.selection[0].id via console
 const NODE_ID =
 	process.argv[2] ||
-	(await prompt('Enter Figma node ID (e.g. "297:186836")'));
+	(await prompt(
+		'Enter Figma node ID (e.g. "297:186836"). You can find the node id by running the Figma Plugin Obra Icons dev tools, and running the Create dev copy action while selecting the icons source frame.',
+	));
 
 if (!NODE_ID || !NODE_ID.includes(':')) {
 	throw new Error(`Invalid Figma node id`);
