@@ -3,8 +3,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "generate:keywords": "pnpm -r --filter obra-icons-generator generate:keywords",
     "generate:icons": "pnpm -r --filter obra-icons-generator import:icons",
+    "generate:keywords": "pnpm -r --filter obra-icons-generator generate:keywords",
     "generate:packages": "pnpm -r generate:packages",
     "dev:website": "pnpm --filter obra-icons-website -r dev",
     "build:website": "pnpm --filter obra-icons-website -r build",
