@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/blog/utils.js';
+	import Callout from '$lib/components/Callout.svelte';
 
 	let { data } = $props();
 </script>
@@ -18,7 +19,6 @@
 	<p class="back-link">
 		<a href="/blog">&larr; Back to overview</a>
 	</p>
-
 	<article class="blog-post">
 		<header>
 			<h1>
@@ -43,6 +43,8 @@
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			{@html data.content}
 		</div>
+
+		<Callout />
 	</article>
 </div>
 

@@ -1119,3 +1119,17 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
 .blog-post .meta .date {
     color: #999;
 }
+
+/* Callout
+   ========================================================================== */
+
+.callout {
+    padding: 1.5rem;
+    background: #EEE;
+    border-radius: 8px;
+}
+
+.callout p:only-child {
+    margin: 0;
+    padding: 0;
+}

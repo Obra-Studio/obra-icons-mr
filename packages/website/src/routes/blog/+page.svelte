@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { formatDate } from '$lib/blog/utils.js';
 	import { IconRss } from 'obra-icons-svelte';
+	import Callout from '$lib/components/Callout.svelte';
 
 	let { data } = $props();
 </script>
@@ -24,6 +25,8 @@
 			RSS feed
 		</a>
 	</div>
+
+	<Callout />
 
 	<ul>
 		{#each data.posts as post (post.slug)}
