@@ -19,7 +19,7 @@ export default {
 		xmlns="http://www.w3.org/2000/svg"
 		class="obra-icon"
 	>
-		<g class="oi-guitar" clip-path="url(#clip0_2603_15192)">
+		<g class="oi-guitar" clip-path="url(#clip0_944_30750)">
 			<path
 				class="oi-vector"
 				d="M19.125 1.125L22.875 4.875"
@@ -78,7 +78,7 @@ export default {
 			/>
 		</g>
 		<defs>
-			<clipPath class="clip0_2603_15192">
+			<clipPath class="clip0_944_30750">
 				<rect :width="size" :height="size" fill="white" />
 			</clipPath>
 		</defs>

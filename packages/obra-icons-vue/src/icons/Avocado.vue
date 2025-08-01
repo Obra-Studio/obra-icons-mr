@@ -19,7 +19,7 @@ export default {
 		xmlns="http://www.w3.org/2000/svg"
 		class="obra-icon"
 	>
-		<g class="oi-avocado" clip-path="url(#clip0_2603_12354)">
+		<g class="oi-avocado" clip-path="url(#clip0_944_27892)">
 			<circle
 				class="oi-ellipse"
 				cx="12"
@@ -36,7 +36,7 @@ export default {
 			/>
 		</g>
 		<defs>
-			<clipPath class="clip0_2603_12354">
+			<clipPath class="clip0_944_27892">
 				<rect :width="size" :height="size" fill="white" />
 			</clipPath>
 		</defs>

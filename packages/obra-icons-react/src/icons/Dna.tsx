@@ -67,7 +67,7 @@ const Dna = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M18 2.25V4.82812C17.9996 5.88699 17.75 6.93089 17.2715 7.87548C16.793 8.82007 16.0991 9.63884 15.2456 10.2656"
+						d="M18 2.25V4.82812C17.9995 5.88699 17.75 6.93089 17.2715 7.87548C16.793 8.82007 16.099 9.63884 15.2456 10.2656"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

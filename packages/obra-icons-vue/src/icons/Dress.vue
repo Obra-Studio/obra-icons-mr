@@ -19,7 +19,7 @@ export default {
 		xmlns="http://www.w3.org/2000/svg"
 		class="obra-icon"
 	>
-		<g class="oi-dress" clip-path="url(#clip0_2603_13944)">
+		<g class="oi-dress" clip-path="url(#clip0_944_29487)">
 			<path
 				class="oi-line"
 				d="M15 3.30188V0.75"
@@ -54,7 +54,7 @@ export default {
 			/>
 		</g>
 		<defs>
-			<clipPath class="clip0_2603_13944">
+			<clipPath class="clip0_944_29487">
 				<rect :width="size" :height="size" fill="white" />
 			</clipPath>
 		</defs>

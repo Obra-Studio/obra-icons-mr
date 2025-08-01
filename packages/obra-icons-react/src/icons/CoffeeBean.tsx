@@ -16,13 +16,10 @@ const CoffeeBean = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g
-					className="oi-coffee-bean"
-					clip-path="url(#clip0_2603_15382)"
-				>
+				<g className="oi-coffee-bean" clip-path="url(#clip0_944_30940)">
 					<path
 						className="oi-vector"
-						d="M17.231 17.2311C21.2755 13.1866 22.2122 7.56584 19.3231 4.67682C16.4341 1.78779 10.8134 2.72448 6.7689 6.76897C2.72442 10.8135 1.78773 16.4342 4.67675 19.3232C7.56578 22.2122 13.1865 21.2755 17.231 17.2311Z"
+						d="M17.231 17.2311C21.2755 13.1866 22.2122 7.56584 19.3231 4.67682C16.4341 1.78779 10.8134 2.72448 6.76889 6.76897C2.7244 10.8135 1.78771 16.4342 4.67674 19.3232C7.56576 22.2122 13.1865 21.2755 17.231 17.2311Z"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -38,7 +35,7 @@ const CoffeeBean = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_2603_15382">
+					<clipPath className="clip0_944_30940">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

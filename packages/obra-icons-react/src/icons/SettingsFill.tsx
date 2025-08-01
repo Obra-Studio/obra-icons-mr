@@ -18,7 +18,7 @@ const SettingsFill = forwardRef<SVGSVGElement, FillIconProps>(
 			>
 				<g
 					className="oi-settings-fill"
-					clip-path="url(#clip0_2603_10812)"
+					clip-path="url(#clip0_944_26350)"
 				>
 					<path
 						className="oi-fill"
@@ -27,7 +27,7 @@ const SettingsFill = forwardRef<SVGSVGElement, FillIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_2603_10812">
+					<clipPath className="clip0_944_26350">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

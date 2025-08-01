@@ -19,7 +19,7 @@ export default {
 		xmlns="http://www.w3.org/2000/svg"
 		class="obra-icon"
 	>
-		<g class="oi-fire-truck" clip-path="url(#clip0_2603_15137)">
+		<g class="oi-fire-truck" clip-path="url(#clip0_944_30695)">
 			<path
 				class="oi-ellipse"
 				d="M18 20.25C19.2426 20.25 20.25 19.2426 20.25 18C20.25 16.7574 19.2426 15.75 18 15.75C16.7574 15.75 15.75 16.7574 15.75 18C15.75 19.2426 16.7574 20.25 18 20.25Z"
@@ -118,7 +118,7 @@ export default {
 			/>
 		</g>
 		<defs>
-			<clipPath class="clip0_2603_15137">
+			<clipPath class="clip0_944_30695">
 				<rect :width="size" :height="size" fill="white" />
 			</clipPath>
 		</defs>

@@ -20,7 +20,7 @@ export default {
 	>
 		<g
 			class="oi-brand-dropbox-fill[dropbox]"
-			clip-path="url(#clip0_2603_14077)"
+			clip-path="url(#clip0_944_29620)"
 		>
 			<path
 				class="oi-fill"
@@ -44,7 +44,7 @@ export default {
 			/>
 		</g>
 		<defs>
-			<clipPath class="clip0_2603_14077">
+			<clipPath class="clip0_944_29620">
 				<rect :width="size" :height="size" fill="white" />
 			</clipPath>
 		</defs>

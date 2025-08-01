@@ -839,6 +839,7 @@ export default {
     "darker"
   ],
   "bolt": [
+    "zap",
     "lightning",
     "electricity",
     "thunder",
@@ -847,6 +848,7 @@ export default {
     "quick"
   ],
   "bolt-fill": [
+    "zap",
     "lightning",
     "electricity",
     "thunder",
@@ -1053,6 +1055,24 @@ export default {
     "social network",
     "blue F"
   ],
+  "brand-figma": [
+    "figma",
+    "design",
+    "logo",
+    "software",
+    "tool",
+    "application",
+    "interface"
+  ],
+  "brand-framer-fill": [
+    "framer",
+    "logo",
+    "design",
+    "mockup",
+    "branding",
+    "frame",
+    "template"
+  ],
   "brand-github-fill": [
     "github",
     "code",
@@ -1102,6 +1122,24 @@ export default {
     "logo",
     "mammoth",
     "community"
+  ],
+  "brand-npm": [
+    "npmjs",
+    "npm",
+    "node",
+    "package",
+    "manager",
+    "javascript",
+    "brand"
+  ],
+  "brand-obra": [
+    "obra",
+    "building",
+    "construction",
+    "architecture",
+    "estate",
+    "property",
+    "real estate"
   ],
   "brand-open-ai-fill": [
     "openai",
@@ -1351,14 +1389,6 @@ export default {
     "mathematics",
     "adding machine",
     "number cruncher"
-  ],
-  "calendar": [
-    "date",
-    "schedule",
-    "planner",
-    "agenda",
-    "event",
-    "appointment"
   ],
   "calendar-check": [
     "schedule",
@@ -4861,6 +4891,7 @@ export default {
     "testimonial"
   ],
   "heartrate": [
+    "activity",
     "heart",
     "pulse",
     "cardio",
@@ -7370,11 +7401,12 @@ export default {
     "map"
   ],
   "sleep": [
+    "snooze",
+    "zzz",
     "rest",
     "nap",
     "slumber",
     "doze",
-    "snooze",
     "bedtime"
   ],
   "slice": [
@@ -7571,6 +7603,14 @@ export default {
     "cut",
     "splitting",
     "part"
+  ],
+  "sprout": [
+    "plant",
+    "growth",
+    "seedling",
+    "green",
+    "nature",
+    "budding"
   ],
   "station-wagon": [
     "car",

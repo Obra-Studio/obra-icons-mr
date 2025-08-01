@@ -7,7 +7,7 @@
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<g class="oi-sleep">
+	<g class="oi-sleep[snooze,zzz]">
 		<path
 			class="oi-vector"
 			d="M5 3H11.8376C11.9534 3 12.0216 3.13001 11.9558 3.22532L5.15555 13.0762C5.08975 13.1716 5.15797 13.3016 5.2738 13.3016H12.1114"

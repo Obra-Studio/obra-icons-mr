@@ -16,7 +16,7 @@ const Avocado = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-avocado" clip-path="url(#clip0_2603_12354)">
+				<g className="oi-avocado" clip-path="url(#clip0_944_27892)">
 					<circle
 						className="oi-ellipse"
 						cx="12"
@@ -33,7 +33,7 @@ const Avocado = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_2603_12354">
+					<clipPath className="clip0_944_27892">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

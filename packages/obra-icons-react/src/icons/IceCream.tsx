@@ -16,7 +16,7 @@ const IceCream = forwardRef<SVGSVGElement, StrokeIconProps>(
 				{...props}
 				className={`obra-icon ${props?.className || ''}`}
 			>
-				<g className="oi-ice-cream" clip-path="url(#clip0_2603_15201)">
+				<g className="oi-ice-cream" clip-path="url(#clip0_944_30759)">
 					<path
 						className="oi-vector"
 						d="M5.25 9C5.25 7.20979 5.96116 5.4929 7.22703 4.22703C8.4929 2.96116 10.2098 2.25 12 2.25C13.7902 2.25 15.5071 2.96116 16.773 4.22703C18.0388 5.4929 18.75 7.20979 18.75 9V9.75C19.1478 9.75 19.5294 9.90804 19.8107 10.1893C20.092 10.4706 20.25 10.8522 20.25 11.25C20.25 11.6478 20.092 12.0294 19.8107 12.3107C19.5294 12.592 19.1478 12.75 18.75 12.75H5.25C4.85218 12.75 4.47064 12.592 4.18934 12.3107C3.90804 12.0294 3.75 11.6478 3.75 11.25C3.75 10.8522 3.90804 10.4706 4.18934 10.1893C4.47064 9.90804 4.85218 9.75 5.25 9.75V9Z"
@@ -27,7 +27,7 @@ const IceCream = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M13.7681 20.1562L9.53531 12.75"
+						d="M13.7681 20.1562L9.53532 12.75"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -51,7 +51,7 @@ const IceCream = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_2603_15201">
+					<clipPath className="clip0_944_30759">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

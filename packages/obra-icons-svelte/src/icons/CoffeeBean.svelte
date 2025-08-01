@@ -14,10 +14,10 @@
 	xmlns="http://www.w3.org/2000/svg"
 	class="obra-icon"
 >
-	<g class="oi-coffee-bean" clip-path="url(#clip0_2603_15382)">
+	<g class="oi-coffee-bean" clip-path="url(#clip0_944_30940)">
 		<path
 			class="oi-vector"
-			d="M17.231 17.2311C21.2755 13.1866 22.2122 7.56584 19.3231 4.67682C16.4341 1.78779 10.8134 2.72448 6.7689 6.76897C2.72442 10.8135 1.78773 16.4342 4.67675 19.3232C7.56578 22.2122 13.1865 21.2755 17.231 17.2311Z"
+			d="M17.231 17.2311C21.2755 13.1866 22.2122 7.56584 19.3231 4.67682C16.4341 1.78779 10.8134 2.72448 6.76889 6.76897C2.7244 10.8135 1.78771 16.4342 4.67674 19.3232C7.56576 22.2122 13.1865 21.2755 17.231 17.2311Z"
 			stroke={color}
 			stroke-width={strokeWidth}
 			stroke-linecap="round"
@@ -33,7 +33,7 @@
 		/>
 	</g>
 	<defs>
-		<clipPath class="clip0_2603_15382">
+		<clipPath class="clip0_944_30940">
 			<rect width={size} height={size} fill="white" />
 		</clipPath>
 	</defs>

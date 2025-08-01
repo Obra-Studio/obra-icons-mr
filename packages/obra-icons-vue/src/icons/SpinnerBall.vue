@@ -38,7 +38,7 @@ export default {
 			/>
 			<path
 				class="oi-vector"
-				d="M16.6313 19.7184C8.10002 16.14 15.8981 7.85999 7.36877 4.28156"
+				d="M16.6312 19.7184C8.09999 16.14 15.8981 7.85999 7.36874 4.28156"
 				:stroke="color"
 				:stroke-width="strokeWidth"
 				stroke-linecap="round"
@@ -46,7 +46,7 @@ export default {
 			/>
 			<path
 				class="oi-vector"
-				d="M16.3688 4.1297C17.5313 13.3059 6.46878 10.6941 7.63128 19.875"
+				d="M16.3687 4.1297C17.5312 13.3059 6.46875 10.6941 7.63125 19.875"
 				:stroke="color"
 				:stroke-width="strokeWidth"
 				stroke-linecap="round"

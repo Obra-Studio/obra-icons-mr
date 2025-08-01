@@ -18,7 +18,7 @@ const DiscountFill = forwardRef<SVGSVGElement, FillIconProps>(
 			>
 				<g
 					className="oi-discount-fill"
-					clip-path="url(#clip0_2603_9417)"
+					clip-path="url(#clip0_944_24955)"
 				>
 					<path
 						className="oi-fill"
@@ -27,7 +27,7 @@ const DiscountFill = forwardRef<SVGSVGElement, FillIconProps>(
 					/>
 				</g>
 				<defs>
-					<clipPath className="clip0_2603_9417">
+					<clipPath className="clip0_944_24955">
 						<rect width={size} height={size} fill="white" />
 					</clipPath>
 				</defs>

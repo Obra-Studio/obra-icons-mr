@@ -51,7 +51,7 @@ const MouseLeftClick = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-line"
-						d="M5.60342 5.60345L10.5 10.5"
+						d="M5.60344 5.60345L10.5 10.5"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

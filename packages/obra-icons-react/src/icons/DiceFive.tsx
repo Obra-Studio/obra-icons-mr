@@ -27,7 +27,7 @@ const DiceFive = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-mini-dot"
-						d="M11.9958 11.9958L12.0042 12.0042"
+						d="M11.9957 11.9958L12.0042 12.0042"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"

@@ -59,7 +59,7 @@ const BezierCurve = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M14.2294 7.80469C15.715 8.22274 17.0537 9.04856 18.094 10.1886C19.1342 11.3286 19.8343 12.7371 20.115 14.2547"
+						d="M14.2294 7.80469C15.7149 8.22274 17.0537 9.04856 18.094 10.1886C19.1342 11.3286 19.8343 12.7371 20.115 14.2547"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
@@ -67,7 +67,7 @@ const BezierCurve = forwardRef<SVGSVGElement, StrokeIconProps>(
 					/>
 					<path
 						className="oi-vector"
-						d="M3.88499 14.2547C4.16575 12.7372 4.86591 11.3287 5.90615 10.1887C6.94638 9.04869 8.2851 8.22284 9.77062 7.80469"
+						d="M3.88501 14.2547C4.16577 12.7372 4.86593 11.3287 5.90616 10.1887C6.94639 9.04869 8.28511 8.22284 9.77064 7.80469"
 						stroke={color}
 						strokeWidth={strokeWidth}
 						strokeLinecap="round"
