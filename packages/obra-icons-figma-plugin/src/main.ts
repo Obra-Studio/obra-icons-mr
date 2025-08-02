@@ -6,6 +6,10 @@ function prepareSvg(svgString: string, strokeWeight: number, color: string) {
         .replace(/fill="[^"]*"(?!.*<\/svg>)/g, `fill="${color}"`)
 }
 
+function formatIconName(name: string): string {
+    return name.toLowerCase().replace(/\s+/g, '-')
+}
+
 export default function () {
     let lastIconPosition = { x: 0, y: 0 }
     const ICON_SPACING = 10 // Spacing between icons
@@ -83,14 +87,8 @@ export default function () {
         }
 
         if (msg.type === 'paste-icon') {
-
             const iconName = msg.iconName
             const svgString = msg.svgString
-
-            
-            function formatIconName(name: string): string {
-                return name.toLowerCase().replace(/\s+/g, '-');
-            }
 
             const strokeWeight = msg.strokeWeight || 2
             const iconSize = msg.iconSize || 24
@@ -107,14 +105,11 @@ export default function () {
                 node.name = formatIconName(iconName)
 
                 let x, y
-                let parentNode
                 let targetNode
                 let focusedSlide: SlideNode | null = null
 
                 if (figma.editorType === 'slides') {
-                    console.log('Running in Slides')
                     focusedSlide = figma.currentPage.focusedSlide ?? null
-                    console.log(focusedSlide, figma.currentPage.selection)
                 }
 
                 if (figma.currentPage.selection.length > 0) {
@@ -151,14 +146,14 @@ export default function () {
                         }
                     }
                 } else {
-                    // Center in viewport if no selection
+                    // Center in viewport if no selection - append to current page
                     const viewportBounds = figma.viewport.bounds
                     x = viewportBounds.x + (viewportBounds.width - iconSize) / 2
                     y =
                         viewportBounds.y +
                         (viewportBounds.height - iconSize) / 2
 
-                    targetNode = figma.currentPage.parent
+                    targetNode = figma.currentPage
                 }
 
                 node.resize(iconSize, iconSize)
