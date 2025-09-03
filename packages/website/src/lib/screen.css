@@ -1127,6 +1127,7 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
     padding: 1.5rem;
     background: #EEE;
     border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
 
 .callout p:only-child {
