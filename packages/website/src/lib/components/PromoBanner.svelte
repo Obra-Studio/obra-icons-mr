@@ -5,9 +5,9 @@
 {#if !dismissed}
 	<div class="promo-banner">
 		<div class="promo-banner-content">
-			<span class="promo-badge">50% OFF</span>
+			<span class="promo-badge">25% OFF</span>
 			<span class="promo-text">
-				Obra shadcn/ui Figma Kit — half price all of April
+				Obra shadcn/ui Figma Kit — 25% off all of May
 			</span>
 			<a
 				class="promo-cta"
