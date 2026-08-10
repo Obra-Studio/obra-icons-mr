@@ -9,12 +9,23 @@
 	import { iconSearch } from '$lib/icon-search.svelte';
 	import iconsCount from '$lib/count';
 	import { getSvg } from '$lib/svgs';
+	import { onClickOutside } from 'runed';
 
 	let selectedActionOnClick = $state<ActionType>('copySvg');
 	let strokeWeight = $state(1.5);
 	let color = $state('#000000');
 	let size = $state(24);
 	let packageDropdownOpen = $state(false);
+
+	function packageDropdownClickOutside(node: HTMLElement) {
+		const handler = onClickOutside(node, () => {
+			packageDropdownOpen = false;
+		});
+
+		return () => {
+			handler.stop();
+		};
+	}
 </script>
 
 <svelte:head>
@@ -35,7 +46,7 @@
 					</p>
 
 					<div class="justify-content-center button-group">
-						<div class="package-dropdown">
+						<div class="package-dropdown" {@attach packageDropdownClickOutside}>
 							<button
 								class="button inverse"
 								onclick={() => (packageDropdownOpen = !packageDropdownOpen)}
@@ -320,6 +331,10 @@
 		.hero :global(.button-group .button) {
 			width: 100%;
 		}
+
+		.package-dropdown {
+			width: 100%;
+		}
 	}
 
 	.package-dropdown {
@@ -329,14 +344,14 @@
 	.package-dropdown-menu {
 		position: absolute;
 		top: calc(100% + 0.5rem);
-		left: 50%;
-		transform: translateX(-50%);
+		left: 0;
+		width: 100%;
 		background: #fff;
 		border-radius: 1rem;
 		padding: 0.5rem;
 		display: flex;
 		flex-direction: column;
-		min-width: 10rem;
+		box-sizing: border-box;
 		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 		z-index: 10;
 	}
