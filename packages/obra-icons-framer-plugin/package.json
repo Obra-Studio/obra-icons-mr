@@ -15,19 +15,19 @@
         "check-typescript": "run g:check-typescript"
     },
     "dependencies": {
-        "obra-icons-react": "^1.23.1",
-        "framer-plugin": "^3.3.2",
-        "fuse.js": "^7.1.0",
+        "framer-plugin": "^3.10.3",
+        "fuse.js": "^7.5.0",
+        "obra-icons-react": "^1.24.0",
+        "obra-icons-website": "workspace:*",
         "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "obra-icons-website": "workspace:*"
+        "react-dom": "^18.3.1"
     },
     "devDependencies": {
-        "@types/react": "^18.3.23",
+        "@types/react": "^18.3.31",
         "@types/react-dom": "^18.3.7",
         "@vitejs/plugin-react-swc": "^3.11.0",
-        "vite": "^7.0.5",
-        "vite-plugin-framer": "^1.0.7",
-        "vite-plugin-mkcert": "^1.17.8"
+        "vite": "^7.3.6",
+        "vite-plugin-framer": "^1.1.1",
+        "vite-plugin-mkcert": "^1.17.12"
     }
 }
