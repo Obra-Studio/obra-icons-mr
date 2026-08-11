@@ -1,0 +1,28 @@
+{
+	"name": "portfolio-item",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"format": "prettier --write .",
+		"screenshots": "node screenshots/capture.mjs"
+	},
+	"dependencies": {
+		"obra-icons-svelte": "workspace:^"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^5.1.0",
+		"@tsconfig/svelte": "^5.0.4",
+		"playwright": "^1.62.1",
+		"prettier": "^3.5.3",
+		"prettier-plugin-svelte": "^3.4.0",
+		"svelte": "^5.34.7",
+		"svelte-check": "^4.2.2",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5"
+	}
+}

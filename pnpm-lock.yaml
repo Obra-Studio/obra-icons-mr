@@ -200,6 +200,40 @@ importers:
         specifier: ^2.2.12
         version: 2.2.12(typescript@5.8.3)
 
+  packages/portfolio-item:
+    dependencies:
+      obra-icons-svelte:
+        specifier: workspace:^
+        version: link:../obra-icons-svelte
+    devDependencies:
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^5.1.0
+        version: 5.1.1(svelte@5.56.8(@typescript-eslint/types@8.67.0))(vite@6.4.3(@types/node@22.14.1)(jiti@2.7.0)(tsx@4.23.12))
+      '@tsconfig/svelte':
+        specifier: ^5.0.4
+        version: 5.0.8
+      playwright:
+        specifier: ^1.62.1
+        version: 1.62.1
+      prettier:
+        specifier: ^3.5.3
+        version: 3.9.6
+      prettier-plugin-svelte:
+        specifier: ^3.4.0
+        version: 3.5.2(prettier@3.9.6)(svelte@5.56.8(@typescript-eslint/types@8.67.0))
+      svelte:
+        specifier: ^5.34.7
+        version: 5.56.8(@typescript-eslint/types@8.67.0)
+      svelte-check:
+        specifier: ^4.2.2
+        version: 4.7.5(picomatch@4.0.5)(svelte@5.56.8(@typescript-eslint/types@8.67.0))(typescript@5.9.3)
+      typescript:
+        specifier: ^5.8.3
+        version: 5.9.3
+      vite:
+        specifier: ^6.3.5
+        version: 6.4.3(@types/node@22.14.1)(jiti@2.7.0)(tsx@4.23.12)
+
   packages/website:
     devDependencies:
       '@eslint/compat':
@@ -2716,6 +2750,11 @@ packages:
   fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
+  fsevents@2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -3230,6 +3269,16 @@ packages:
 
   pkg-types@2.3.1:
     resolution: {integrity: sha512-y+ichcgc2LrADuhLNAx8DFjVfgz91pRxfZdI3UDhxHvcVEZsenLO+7XaU5vOp0u/7V/wZ+plyuQxtrDlZJ+yeg==}
+
+  playwright-core@1.62.1:
+    resolution: {integrity: sha512-wPYSwEBJY9GHraISXqyqtx0na0LpO3XEX7jNDhntbex7tzUS7kLnZsOlFruFJB4Hi/rhDMjXGqHewDZ68nYZVw==}
+    engines: {node: '>=20'}
+    hasBin: true
+
+  playwright@1.62.1:
+    resolution: {integrity: sha512-0M+L3LAD8/nm554LOla9Ayx0j0tmFZ0FBcoQ7F1VuVHpM/XpiC8RcDzBQB8W5+hA8L22THxELzeF+2WcUzvcLg==}
+    engines: {node: '>=20'}
+    hasBin: true
 
   plugma@1.2.10:
     resolution: {integrity: sha512-iM/eaH2UkZ+Zn4MybhEANNEfqmDUkz+9D8QyEYOZ624OMQ7sCSUWARhsW+Cc0yq8Mv4Im1RPkAd4mYetgDDUSA==}
@@ -6369,6 +6418,9 @@ snapshots:
 
   fs.realpath@1.0.0: {}
 
+  fsevents@2.3.2:
+    optional: true
+
   fsevents@2.3.3:
     optional: true
 
@@ -6830,6 +6882,14 @@ snapshots:
       confbox: 0.2.4
       exsolve: 1.1.1
       pathe: 2.0.3
+
+  playwright-core@1.62.1: {}
+
+  playwright@1.62.1:
+    dependencies:
+      playwright-core: 1.62.1
+    optionalDependencies:
+      fsevents: 2.3.2
 
   plugma@1.2.10(@types/node@22.14.1)(rollup@4.62.4):
     dependencies:

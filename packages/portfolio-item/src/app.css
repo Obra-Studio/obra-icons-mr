@@ -1,0 +1,60 @@
+:root {
+	color-scheme: light;
+
+	--oi-page-bg: #e9e9e7;
+	--oi-toolbar-text: #4a4a44;
+	--oi-tabs-bg: #dcdcd8;
+	--oi-tab-text: #6b6b64;
+	--oi-tab-hover-text: #0a0a0a;
+	--oi-tab-active-bg: #0a0a0a;
+	--oi-tab-active-text: #fff;
+	--oi-control-text: #6b6b64;
+	--oi-select-border: #cfcfc8;
+	--oi-select-bg: #fff;
+	--oi-select-text: #0a0a0a;
+	--oi-shadow: rgba(0, 0, 0, 0.25);
+
+	--oi-surface: #fbfbfa;
+	--oi-surface-border: #dcdcd8;
+	--oi-ink: #0a0a0a;
+	--oi-muted: #8a8a84;
+	--oi-label: #57574f;
+	--oi-hairline: #e3e3df;
+	--oi-hairline-soft: #ecece8;
+	--oi-grid-bg: #ffffff;
+	--oi-grid-border: #cfcfc8;
+	--oi-grid-major: #d8d8d2;
+	--oi-grid-minor: #ecece8;
+	--oi-safe-zone: #c7c7bf;
+	--oi-guide-accent: rgba(76, 111, 255, 0.55);
+	--oi-guide-accent-soft: rgba(76, 111, 255, 0.35);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:
+		Inter,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif;
+	background: var(--oi-page-bg);
+	color: var(--oi-ink);
+}
+
+button,
+select {
+	font: inherit;
+}
