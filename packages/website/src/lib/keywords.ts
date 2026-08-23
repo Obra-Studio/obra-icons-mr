@@ -1053,6 +1053,22 @@ export default {
     "social network",
     "blue F"
   ],
+  "brand-figma-fill": [
+    "figma",
+    "design",
+    "logo",
+    "ui",
+    "interface",
+    "tool"
+  ],
+  "brand-framer-fill": [
+    "framer",
+    "design",
+    "logo",
+    "prototype",
+    "motion",
+    "tool"
+  ],
   "brand-github-fill": [
     "github",
     "code",
@@ -1102,6 +1118,22 @@ export default {
     "logo",
     "mammoth",
     "community"
+  ],
+  "brand-npm-fill": [
+    "npmjs",
+    "npm",
+    "package",
+    "registry",
+    "node",
+    "javascript"
+  ],
+  "brand-obra-fill": [
+    "obra",
+    "logo",
+    "brand",
+    "studio",
+    "mark",
+    "emblem"
   ],
   "brand-open-ai-fill": [
     "openai",
@@ -7571,6 +7603,14 @@ export default {
     "cut",
     "splitting",
     "part"
+  ],
+  "sprout": [
+    "plant",
+    "seedling",
+    "grow",
+    "leaf",
+    "nature",
+    "garden"
   ],
   "station-wagon": [
     "car",
