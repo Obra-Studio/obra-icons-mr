@@ -6,16 +6,15 @@
 	<div class="promo-banner">
 		<div class="promo-banner-content">
 			<span class="promo-text">
-				Obra shadcn/ui 2.0 launch offer — use code TWOPOINTZERO for 20%
-				off Obra shadcn/ui Pro 2.0
+				Our free shadcn/ui kit for Figma has been updated to 2.2.0.
 			</span>
 			<a
 				class="promo-cta"
-				href="https://shadcn.obra.studio/"
+				href="https://www.figma.com/community/file/1514746685758799870/shadcn-ui-kit-community-edition-2-2-0-by-obra"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				Get the deal &rarr;
+				Get the Community Edition &rarr;
 			</a>
 		</div>
 		<button
