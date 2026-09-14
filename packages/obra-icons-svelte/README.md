@@ -20,6 +20,21 @@ This package works with Svelte 3/4/5.
 </script>
 ```
 
+The package is marked `sideEffects: false`, so a bundler tree-shakes the barrel
+and only the icons you import end up in your build.
+
+If you would rather skip the barrel altogether — which keeps dev servers from
+compiling all ~1000 icon components — import each icon from its own subpath:
+
+```svelte
+<script>
+	import IconAdd from 'obra-icons-svelte/icons/Add';
+</script>
+```
+
+Note that subpath imports give you the bare component name (`Add`), not the
+prefixed export name (`IconAdd`), so name the local binding yourself.
+
 ## Customizing an icon
 
 Use the `size`, `color` and `strokeWidth` props to customize the icon.

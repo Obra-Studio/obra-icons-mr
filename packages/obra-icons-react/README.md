@@ -16,6 +16,16 @@ npm install obra-icons-react
 import { IconAdd } from 'obra-icons-react';
 ```
 
+Every icon is also available on its own subpath, which skips the barrel
+entirely and keeps dev servers from processing all ~1000 icon components:
+
+```tsx
+import IconAdd from 'obra-icons-react/icons/Add';
+```
+
+Subpath imports give you the component under its bare name (`Add`) rather than
+the prefixed barrel export (`IconAdd`), so name the local binding yourself.
+
 ## Customizing an icon
 
 Use the `size`, `color` and `strokeWidth` props to customize the icon.

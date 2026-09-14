@@ -1,6 +1,6 @@
 {
 	"name": "obra-icons-react",
-	"version": "1.24.0",
+	"version": "1.25.0",
 	"license": "MIT",
 	"type": "module",
 	"sideEffects": false,
@@ -16,8 +16,20 @@
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
-			"import": "./dist/index.mjs"
-		}
+			"import": "./dist/index.mjs",
+			"default": "./dist/index.mjs"
+		},
+		"./icons/*.mjs": {
+			"types": "./dist/icons/*.d.ts",
+			"import": "./dist/icons/*.mjs",
+			"default": "./dist/icons/*.mjs"
+		},
+		"./icons/*": {
+			"types": "./dist/icons/*.d.ts",
+			"import": "./dist/icons/*.mjs",
+			"default": "./dist/icons/*.mjs"
+		},
+		"./package.json": "./package.json"
 	},
 	"files": [
 		"dist"

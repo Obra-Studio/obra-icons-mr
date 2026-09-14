@@ -1,34 +1,49 @@
 {
   "name": "obra-icons-vue",
-  "version": "1.23.3",
+  "version": "1.25.0",
   "license": "MIT",
   "type": "module",
+  "sideEffects": false,
   "main": "./dist/obra-icons-vue.umd.cjs",
-  "module": "./dist/obra-icons-vue.js",
+  "module": "./dist/index.js",
   "types": "./dist/types/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/obra-icons-vue.js",
+      "types": "./dist/types/src/index.d.ts",
+      "import": "./dist/index.js",
       "require": "./dist/obra-icons-vue.umd.cjs"
-    }
+    },
+    "./icons/*.vue": {
+      "types": "./dist/types/src/icons/*.vue.d.ts",
+      "import": "./dist/icons/*.vue.js",
+      "default": "./dist/icons/*.vue.js"
+    },
+    "./icons/*": {
+      "types": "./dist/types/src/icons/*.vue.d.ts",
+      "import": "./dist/icons/*.vue.js",
+      "default": "./dist/icons/*.vue.js"
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist",
-    "!dist/types/src/demo"
+    "!dist/types/src/demo",
+    "!dist/types/**/*.tsbuildinfo"
   ],
   "scripts": {
     "dev": "vite",
     "prebuild": "rm -rf ./dist",
-    "build": "vue-tsc -b && vite build"
-  },
-  "dependencies": {
-    "vue": "^3.5.41"
+    "build": "vue-tsc -b && vite build && vite build --config vite.config.umd.ts",
+    "package": "pnpm run build && publint",
+    "prepublishOnly": "pnpm run package"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/tsconfig": "^0.7.0",
+    "publint": "^0.3.23",
     "typescript": "~5.8.3",
     "vite": "^6.4.3",
+    "vue": "^3.5.41",
     "vue-tsc": "^2.2.12"
   },
   "peerDependencies": {

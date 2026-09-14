@@ -1,8 +1,9 @@
 {
   "name": "obra-icons-svelte",
-  "version": "1.23.1",
+  "version": "1.25.0",
   "license": "MIT",
   "type": "module",
+  "sideEffects": false,
   "scripts": {
     "build": "pnpm run package",
     "package": "svelte-package --input src && publint",
@@ -16,8 +17,20 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "svelte": "./dist/index.js"
-    }
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./icons/*.svelte": {
+      "types": "./dist/icons/*.svelte.d.ts",
+      "svelte": "./dist/icons/*.svelte",
+      "default": "./dist/icons/*.svelte"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.svelte.d.ts",
+      "svelte": "./dist/icons/*.svelte",
+      "default": "./dist/icons/*.svelte"
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist",

@@ -2,6 +2,16 @@
 
 We use semantic versioning (semver).
 
+## 1.25.0
+
+September 14, 2026
+
+* Every icon can now be imported on its own, in all three packages: `import IconAdd from 'obra-icons-svelte/icons/Add'`. Importing from the package root keeps working — this is for when you want to skip the barrel entirely and stop dev servers processing all ~1000 components.
+* All three packages are now marked side-effect free, so bundlers can drop the icons you do not use.
+* Vue: the ESM build is no longer a single 1.8 MB file — each icon is its own module. `require()` and script-tag users still get the UMD bundle.
+* Vue: `vue` is no longer a hard dependency (it was already a peer dependency), so installing the package no longer pulls a second copy of Vue into your app.
+* The three packages are back on a single version number after drifting apart.
+
 ## 1.23.1
 
 Dec 10, 2024
