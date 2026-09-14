@@ -24,6 +24,18 @@ This package works with Vue 2 and 3.
 </template>
 ```
 
+Every icon is also available on its own subpath, which skips the barrel
+entirely and keeps dev servers from processing all ~1000 icon components:
+
+```vue
+<script setup>
+	import IconAdd from 'obra-icons-vue/icons/Add';
+</script>
+```
+
+Subpath imports give you the component under its bare name (`Add`) rather than
+the prefixed barrel export (`IconAdd`), so name the local binding yourself.
+
 As you can see, you can use the `size`, `color` and `strokeWidth` props to customize the icon.
 
 # Targeting with CSS

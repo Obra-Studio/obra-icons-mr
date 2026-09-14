@@ -179,10 +179,6 @@ importers:
         version: 5.9.3
 
   packages/obra-icons-vue:
-    dependencies:
-      vue:
-        specifier: ^3.5.41
-        version: 3.5.41(typescript@5.8.3)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.2.4
@@ -190,12 +186,18 @@ importers:
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.8.3)(vue@3.5.41(typescript@5.8.3))
+      publint:
+        specifier: ^0.3.23
+        version: 0.3.23
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
       vite:
         specifier: ^6.4.3
         version: 6.4.3(@types/node@22.14.1)(jiti@2.7.0)(tsx@4.23.12)
+      vue:
+        specifier: ^3.5.41
+        version: 3.5.41(typescript@5.8.3)
       vue-tsc:
         specifier: ^2.2.12
         version: 2.2.12(typescript@5.8.3)
@@ -2607,6 +2609,7 @@ packages:
   eslint@9.39.5:
     resolution: {integrity: sha512-DgZS62aPLXKlnxILS/AYCoRvHaZeXceIzlXPkkGGzJWSow1aEk0lbTlxUSlyjC8jcaKxAdOnTDz+o1JFSBsyjw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
